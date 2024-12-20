@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Synthesizer")(type "KiCad")(uri "${KIPRJMOD}/Synthesizer.kicad_sym")(options "")(descr ""))
+  (lib (name "adf4350")(type "KiCad")(uri "${KIPRJMOD}/Datasheets/adf4350.kicad_sym")(options "")(descr ""))
+)
