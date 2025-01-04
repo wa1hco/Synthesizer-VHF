@@ -3389,7 +3389,7 @@
 				)
 			)
 		)
-		(symbol "Regulator_Linear:LM78M05_TO252"
+		(symbol "Regulator_Linear:MC78L05_SOT89"
 			(pin_names
 				(offset 0.254)
 			)
@@ -3404,8 +3404,8 @@
 					)
 				)
 			)
-			(property "Value" "LM78M05_TO252"
-				(at 0 3.175 0)
+			(property "Value" "MC78L05_SOT89"
+				(at -0.635 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3413,8 +3413,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
-				(at 0 5.715 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3423,7 +3423,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MC78M00-D.PDF"
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MC78L00A-D.PDF"
 				(at 0 -1.27 0)
 				(effects
 					(font
@@ -3432,7 +3432,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Positive 500mA 35V Linear Regulator, Fixed Output 5V, TO-252 (D-PAK)"
+			(property "Description" "Positive 100mA 30V Linear Regulator, Fixed Output 5V, SOT-89"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3441,7 +3441,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Voltage Regulator 500mA Positive"
+			(property "ki_keywords" "Voltage Regulator 100mA Positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3450,7 +3450,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?252*"
+			(property "ki_fp_filters" "SOT?89*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3459,7 +3459,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "LM78M05_TO252_0_1"
+			(symbol "MC78L05_SOT89_0_1"
 				(rectangle
 					(start -5.08 1.905)
 					(end 5.08 -5.08)
@@ -3472,11 +3472,11 @@
 					)
 				)
 			)
-			(symbol "LM78M05_TO252_1_1"
-				(pin power_in line
-					(at -7.62 0 0)
+			(symbol "MC78L05_SOT89_1_1"
+				(pin power_out line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "VI"
+					(name "OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3509,10 +3509,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 7.62 0 180)
+				(pin power_in line
+					(at -7.62 0 0)
 					(length 2.54)
-					(name "VO"
+					(name "IN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3646,7 +3646,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at -1.27 -12.7 90)
 					(length 2.54)
 					(name "GND"
@@ -4586,102 +4586,6 @@
 				)
 			)
 		)
-		(symbol "power:PWR_FLAG"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-		)
 	)
 	(junction
 		(at 212.09 97.79)
@@ -4942,12 +4846,6 @@
 		(uuid "c66635ed-20a2-4e21-9e7a-b09694206e2f")
 	)
 	(junction
-		(at 54.61 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c93bc186-fb87-4e95-8159-2b2ce27b0af9")
-	)
-	(junction
 		(at 45.72 229.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4978,7 +4876,7 @@
 		(uuid "e4bf25c0-e079-41e6-8d21-3659a6be90e0")
 	)
 	(junction
-		(at 39.37 105.41)
+		(at 48.26 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ef4f6fa9-f55e-493d-91ee-5f889cfba871")
@@ -5032,20 +4930,12 @@
 		(uuid "38484622-7bdf-45c9-8025-01c5c1809f54")
 	)
 	(no_connect
-		(at 133.35 224.79)
-		(uuid "51a6e40d-fa4d-48c9-97a8-3930ee5234ca")
-	)
-	(no_connect
 		(at 214.63 64.77)
 		(uuid "6e774966-de15-45e5-85a1-3097bf818871")
 	)
 	(no_connect
 		(at 44.45 242.57)
 		(uuid "8ad0c954-d8dd-4520-8343-0d7862825599")
-	)
-	(no_connect
-		(at 133.35 227.33)
-		(uuid "9a02fe5a-e250-4089-a288-38c49a192444")
 	)
 	(no_connect
 		(at 133.35 229.87)
@@ -5130,6 +5020,16 @@
 			(type default)
 		)
 		(uuid "09613b5f-f68d-413b-83d9-c5e2d193ce77")
+	)
+	(wire
+		(pts
+			(xy 133.35 224.79) (xy 142.24 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c8166b9-0211-41cc-9d9e-ab32c7eea77d")
 	)
 	(wire
 		(pts
@@ -5643,7 +5543,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 105.41) (xy 39.37 106.68)
+			(xy 48.26 105.41) (xy 48.26 106.68)
 		)
 		(stroke
 			(width 0)
@@ -5663,7 +5563,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 105.41) (xy 41.91 105.41)
+			(xy 48.26 105.41) (xy 50.8 105.41)
 		)
 		(stroke
 			(width 0)
@@ -5760,6 +5660,16 @@
 			(type default)
 		)
 		(uuid "4ca83adf-c2c1-49e6-9afb-eb9bd90347fd")
+	)
+	(wire
+		(pts
+			(xy 133.35 227.33) (xy 142.24 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cb62e6b-2bef-48a2-adff-8484f96a67be")
 	)
 	(wire
 		(pts
@@ -6303,16 +6213,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 107.95) (xy 29.21 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f2c3184-a000-4bcd-b568-a7acbcc93abf")
-	)
-	(wire
-		(pts
 			(xy 311.15 115.57) (xy 317.5 115.57)
 		)
 		(stroke
@@ -6323,7 +6223,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 105.41) (xy 39.37 105.41)
+			(xy 38.1 105.41) (xy 48.26 105.41)
 		)
 		(stroke
 			(width 0)
@@ -6673,26 +6573,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 105.41) (xy 109.22 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c02a84a8-46ef-4621-9a0c-7bafed236b77")
-	)
-	(wire
-		(pts
-			(xy 54.61 105.41) (xy 60.96 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c114b32e-b855-4449-8dca-177358d6ff56")
-	)
-	(wire
-		(pts
 			(xy 54.61 217.17) (xy 54.61 219.71)
 		)
 		(stroke
@@ -6853,7 +6733,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 105.41) (xy 54.61 105.41)
+			(xy 58.42 105.41) (xy 60.96 105.41)
 		)
 		(stroke
 			(width 0)
@@ -7040,6 +6920,16 @@
 			(type default)
 		)
 		(uuid "e03f3d79-65eb-4345-9ec5-e56fcddc62e4")
+	)
+	(wire
+		(pts
+			(xy 92.71 105.41) (xy 109.22 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0683766-ab9c-4beb-8568-8b061ca93daa")
 	)
 	(wire
 		(pts
@@ -7466,6 +7356,17 @@
 		)
 		(uuid "1745b663-6d98-46ba-b693-8384563873ab")
 	)
+	(label "CTS\\"
+		(at 133.35 227.33 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "20f13d4c-6b88-47e8-b5b9-8b4122105eb1")
+	)
 	(label "LD"
 		(at 68.58 149.86 0)
 		(fields_autoplaced yes)
@@ -7687,7 +7588,7 @@
 		(uuid "875b5826-7a0a-4b08-9d46-9af936b0043c")
 	)
 	(label "12V"
-		(at 29.21 105.41 0)
+		(at 38.1 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7773,6 +7674,17 @@
 			(justify left bottom)
 		)
 		(uuid "aebf4423-02b4-4891-a093-8232d08c2e23")
+	)
+	(label "RTS\\"
+		(at 133.35 224.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "af1b52fd-9d61-42a9-9933-45825cd1a676")
 	)
 	(label "5V"
 		(at 109.22 105.41 0)
@@ -8739,7 +8651,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 45.72 105.41 180)
+		(at 54.61 105.41 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8747,7 +8659,7 @@
 		(dnp no)
 		(uuid "1644b1ff-8ed7-43ad-a780-f86e34d6e0a5")
 		(property "Reference" "D1"
-			(at 46.0375 99.06 0)
+			(at 54.9275 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8755,7 +8667,7 @@
 			)
 		)
 		(property "Value" "D_Schottky"
-			(at 43.434 101.6 0)
+			(at 52.324 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8763,7 +8675,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
-			(at 45.72 105.41 0)
+			(at 54.61 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8772,7 +8684,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 45.72 105.41 0)
+			(at 54.61 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8781,7 +8693,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 45.72 105.41 0)
+			(at 54.61 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8790,7 +8702,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 45.72 105.41 0)
+			(at 54.61 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8799,7 +8711,7 @@
 			)
 		)
 		(property "LCSC" "C143772"
-			(at 77.47 81.28 0)
+			(at 86.36 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9413,7 +9325,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 39.37 110.49 0)
+		(at 48.26 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9421,7 +9333,7 @@
 		(dnp no)
 		(uuid "222ad869-f1a2-4c03-a8a4-60d72e7f2107")
 		(property "Reference" "C1"
-			(at 35.052 108.458 0)
+			(at 43.942 108.458 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9430,7 +9342,7 @@
 			)
 		)
 		(property "Value" "330n 50V"
-			(at 34.036 113.03 0)
+			(at 42.926 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9439,7 +9351,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 40.3352 114.3 0)
+			(at 49.2252 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9448,7 +9360,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 110.49 0)
+			(at 48.26 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9457,7 +9369,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 39.37 110.49 0)
+			(at 48.26 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9466,7 +9378,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 1.27 139.7 0)
+			(at 10.16 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9860,24 +9772,24 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 21.59 105.41 0)
-		(mirror y)
+		(at 33.02 107.95 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "2d10ce5a-f85d-4c7b-becb-914b748b9e8d")
 		(property "Reference" "J1"
-			(at 21.59 111.76 0)
+			(at 33.02 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 19.05 107.9499 0)
+		(property "Value" "Screw_Terminal_01x12"
+			(at 30.48 105.4101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9887,7 +9799,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal"
-			(at 21.59 105.41 0)
+			(at 33.02 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9896,7 +9808,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 21.59 105.41 0)
+			(at 33.02 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9905,7 +9817,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 21.59 105.41 0)
+			(at 33.02 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9913,8 +9825,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5188442"
-			(at 299.72 168.91 0)
+		(property "LCSC" "C5188451"
+			(at 311.15 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10624,6 +10536,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:MC78L05_SOT89")
+		(at 68.58 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43d442f2-79f0-4a97-8c90-2ce56f242141")
+		(property "Reference" "U1"
+			(at 68.58 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MC78L05_TO-252"
+			(at 68.58 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
+			(at 68.58 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MC78L00A-D.PDF"
+			(at 68.58 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Positive 100mA 30V Linear Regulator, Fixed Output 5V, SOT-89"
+			(at 68.58 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C42738"
+			(at 16.51 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab1bac97-1d21-4cd9-a004-2256d954f35c")
+		)
+		(pin "3"
+			(uuid "f21a3611-3c1e-4d52-91c4-1727eb17bc74")
+		)
+		(pin "2"
+			(uuid "89c6b04d-2363-4a05-a84e-bf5256e715ce")
+		)
+		(instances
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 231.14 73.66 0)
 		(unit 1)
@@ -10686,6 +10679,74 @@
 			(project "Synthesizer"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 410.21 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4626f412-b0e5-4e97-ba17-2cb6bdae022f")
+		(property "Reference" "#PWR048"
+			(at 410.21 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 410.2099 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 410.21 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 410.21 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 410.21 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6b3cfb0-45c0-48a8-994c-7c7a7f0cf458")
+		)
+		(instances
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -11183,7 +11244,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 39.37 114.3 0)
+		(at 48.26 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11192,7 +11253,7 @@
 		(fields_autoplaced yes)
 		(uuid "54f83d0b-38be-4649-a4c9-6388c0330629")
 		(property "Reference" "#PWR022"
-			(at 39.37 120.65 0)
+			(at 48.26 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11201,7 +11262,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 39.37 119.38 0)
+			(at 48.26 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11210,7 +11271,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 114.3 0)
+			(at 48.26 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11219,7 +11280,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 114.3 0)
+			(at 48.26 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11228,7 +11289,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 39.37 114.3 0)
+			(at 48.26 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11243,87 +11304,6 @@
 			(project "Synthesizer"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:LM78M05_TO252")
-		(at 68.58 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "55535294-3d39-4647-aec9-5141819b45ba")
-		(property "Reference" "U1"
-			(at 68.58 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM7805A"
-			(at 68.58 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
-			(at 68.58 99.695 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2210101800_HANSCHIP-semiconductor-LM78M05ACKTPRG_C5145267.pdf"
-			(at 68.58 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Positive 500mA 35V Linear Regulator, Fixed Output 5V, TO-252 (D-PAK)"
-			(at 68.58 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C5145267"
-			(at 68.58 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "50934dbb-7245-446f-aa06-7ddd1ea24226")
-		)
-		(pin "1"
-			(uuid "34159512-5df8-4090-af73-e14e7270a294")
-		)
-		(pin "2"
-			(uuid "35e29688-a6c8-4337-a6b2-23f46248ef6f")
-		)
-		(instances
-			(project ""
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -13549,7 +13529,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 29.21 107.95 0)
+		(at 38.1 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13558,7 +13538,7 @@
 		(fields_autoplaced yes)
 		(uuid "838eac6f-d1ec-4422-80c7-0c75eebbad68")
 		(property "Reference" "#PWR032"
-			(at 29.21 114.3 0)
+			(at 38.1 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13567,7 +13547,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 29.2099 111.76 90)
+			(at 38.0999 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13577,7 +13557,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 107.95 0)
+			(at 38.1 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13586,7 +13566,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 107.95 0)
+			(at 38.1 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13595,7 +13575,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 107.95 0)
+			(at 38.1 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16347,7 +16327,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-523"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 45.085 240.03 0)
 			(effects
 				(font
@@ -16648,7 +16628,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-523"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 67.945 234.95 0)
 			(effects
 				(font
@@ -17640,72 +17620,6 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "R27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 54.61 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d5f40e58-cbb8-444e-a50b-ef72161dd271")
-		(property "Reference" "#FLG02"
-			(at 54.61 103.505 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 54.61 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 54.61 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 54.61 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 54.61 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "54c4cf1d-a8d9-42c2-a381-9ba5967adb24")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#FLG02")
 					(unit 1)
 				)
 			)

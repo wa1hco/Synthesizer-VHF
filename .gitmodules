@@ -1,0 +1,3 @@
+[submodule "adf435x"]
+	path = adf435x
+	url = https://github.com/Ho-Ro/adf435x.git
