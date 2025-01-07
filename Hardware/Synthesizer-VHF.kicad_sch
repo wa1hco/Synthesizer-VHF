@@ -13358,7 +13358,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120p"
+		(property "Value" "100p"
 			(at 345.694 100.33 0)
 			(effects
 				(font
@@ -17528,7 +17528,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120p"
+		(property "Value" "100p"
 			(at 360.934 100.33 0)
 			(effects
 				(font

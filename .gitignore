@@ -29,3 +29,7 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+# generated for jlcpcb
+Hardware/jlcpcb/
+Hardware/CN0311-DesignSupport/
