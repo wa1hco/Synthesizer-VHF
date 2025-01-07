@@ -7,6 +7,7 @@
 *.bck
 *.kicad_pcb-bak
 *.kicad_sch-bak
+*.kicad_sch_old
 *-backups
 *.kicad_prl
 *.sch-bak
@@ -33,3 +34,5 @@ fp-info-cache
 # generated for jlcpcb
 Hardware/jlcpcb/
 Hardware/CN0311-DesignSupport/
+Hardware/CN0147-DesignSupport/
+Hardware/MAX2870_EVKIT/
