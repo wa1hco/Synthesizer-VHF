@@ -7699,7 +7699,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2290"
+		(property "LCSC" "C364550"
 			(at 158.75 289.56 0)
 			(effects
 				(font
@@ -7768,6 +7768,15 @@
 		)
 		(property "Description" "Crystal Clock Oscillator, SMD package 2.5x2.0 mm"
 			(at 187.96 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C20623084"
+			(at 184.404 120.396 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7850,7 +7859,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15195"
+		(property "LCSC" "C1525"
 			(at 196.85 -194.31 0)
 			(effects
 				(font
@@ -7987,6 +7996,15 @@
 		)
 		(property "Description" "150mA Fixed 3.3V, 5.5V in, TSOT-23-5 Regulator"
 			(at 290.068 81.788 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C29149"
+			(at 288.29 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8236,9 +8254,9 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0c428903-4e79-428a-a721-66457cc5962d")
 		(property "Reference" "R18"
 			(at 316.992 161.036 90)
@@ -8719,7 +8737,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C32949"
+		(property "LCSC" "C1546"
 			(at 487.68 -236.22 0)
 			(effects
 				(font
@@ -8931,7 +8949,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C105871"
 			(at 532.13 2.54 0)
 			(effects
 				(font
@@ -9076,7 +9094,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C282682"
 			(at 1.27 139.7 0)
 			(effects
 				(font
@@ -9153,7 +9171,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C11702"
 			(at 91.948 169.418 0)
 			(effects
 				(font
@@ -9299,7 +9317,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1671"
+		(property "LCSC" "C1567"
 			(at -6.35 386.08 0)
 			(effects
 				(font
@@ -9601,7 +9619,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C23186"
+		(property "LCSC" "C105872"
 			(at -80.01 269.24 0)
 			(effects
 				(font
@@ -9680,7 +9698,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C1525"
 			(at -6.35 386.08 0)
 			(effects
 				(font
@@ -9758,7 +9776,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15195"
+		(property "LCSC" "C1525"
 			(at -5.08 290.83 0)
 			(effects
 				(font
@@ -10405,6 +10423,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C29149"
+			(at 240.03 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "d0c474c9-195e-42c4-964d-f4f2ef001bf1")
 		)
@@ -10549,7 +10576,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C11702"
 			(at 67.818 214.63 0)
 			(effects
 				(font
@@ -11053,7 +11080,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C1525"
 			(at 16.51 139.7 0)
 			(effects
 				(font
@@ -11130,7 +11157,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C11702"
 			(at 98.298 169.418 0)
 			(effects
 				(font
@@ -11597,7 +11624,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C23186"
+		(property "LCSC" "C105872"
 			(at -77.47 167.64 0)
 			(effects
 				(font
@@ -12045,9 +12072,9 @@
 		(at 204.47 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6cde9d57-7d1b-43f8-88b6-187260d5cebe")
 		(property "Reference" "R26"
 			(at 207.772 136.144 0)
@@ -12246,7 +12273,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C12530"
+		(property "LCSC" "C52923"
 			(at 48.26 163.83 0)
 			(effects
 				(font
@@ -12322,7 +12349,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17477"
+		(property "LCSC" "C17168"
 			(at 0 330.2 0)
 			(effects
 				(font
@@ -12466,7 +12493,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C11702"
 			(at 148.336 250.19 0)
 			(effects
 				(font
@@ -12689,7 +12716,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15195"
+		(property "LCSC" "C1525"
 			(at 400.05 401.32 0)
 			(effects
 				(font
@@ -12767,7 +12794,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C52923"
 			(at 3.81 163.83 0)
 			(effects
 				(font
@@ -12912,7 +12939,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C12530"
+		(property "LCSC" "C52923"
 			(at 54.61 163.83 0)
 			(effects
 				(font
@@ -13133,7 +13160,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C23345"
+		(property "LCSC" "C93929"
 			(at -50.8 135.89 0)
 			(effects
 				(font
@@ -13311,7 +13338,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ADF4350"
+		(property "Value" "ADF4351"
 			(at 300.6441 102.87 0)
 			(effects
 				(font
@@ -13329,7 +13356,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4350.pdf"
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4351.pdf"
 			(at 299.72 172.466 0)
 			(effects
 				(font
@@ -13338,7 +13365,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "137.5-4400MHz fractional-N PLL, LFCSP-32"
+		(property "Description" "Wideband Synthesizerwith Integrated VCO"
 			(at 291.338 180.086 0)
 			(effects
 				(font
@@ -13347,7 +13374,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C98705"
+		(property "LCSC" "C654681"
 			(at 0 261.62 0)
 			(effects
 				(font
@@ -13737,7 +13764,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2290"
+		(property "LCSC" "C364550"
 			(at 165.1 289.56 0)
 			(effects
 				(font
@@ -13948,7 +13975,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1525"
+		(property "LCSC" "C32949"
 			(at 483.87 8.89 0)
 			(effects
 				(font
@@ -14248,7 +14275,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1671"
+		(property "LCSC" "C1567"
 			(at 151.13 386.08 0)
 			(effects
 				(font
@@ -14619,7 +14646,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C72038"
+		(property "LCSC" "C434449"
 			(at 293.37 401.32 0)
 			(effects
 				(font
@@ -14900,7 +14927,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1525"
+		(property "LCSC" "C32949"
 			(at -21.59 288.29 0)
 			(effects
 				(font
@@ -15120,7 +15147,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C11702"
 			(at 145.034 215.646 0)
 			(effects
 				(font
@@ -15508,7 +15535,7 @@
 				)
 			)
 		)
-		(property "Value" "White"
+		(property "Value" "blue"
 			(at 80.518 215.9 90)
 			(effects
 				(font
@@ -15544,7 +15571,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2290"
+		(property "LCSC" "C364550"
 			(at 200.66 281.94 0)
 			(effects
 				(font
@@ -15620,7 +15647,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C11702"
 			(at 145.288 209.296 0)
 			(effects
 				(font
@@ -15835,7 +15862,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C32949"
+		(property "LCSC" "C1546"
 			(at 495.3 -228.6 0)
 			(effects
 				(font
@@ -15981,7 +16008,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C116949"
+		(property "LCSC" "C22395574"
 			(at -99.06 189.23 0)
 			(effects
 				(font
@@ -16282,7 +16309,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C116949"
+		(property "LCSC" "C22395574"
 			(at 207.01 166.37 0)
 			(effects
 				(font
@@ -16426,7 +16453,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C72038"
+		(property "LCSC" "C434449"
 			(at 302.26 410.21 0)
 			(effects
 				(font
@@ -16772,7 +16799,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15195"
+		(property "LCSC" "C1525"
 			(at 10.16 226.06 0)
 			(effects
 				(font
@@ -17364,7 +17391,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C23345"
+		(property "LCSC" "C93929"
 			(at -53.34 321.31 0)
 			(effects
 				(font
@@ -17847,7 +17874,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C1525"
 			(at 2.54 201.93 0)
 			(effects
 				(font
@@ -17925,7 +17952,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C12530"
+		(property "LCSC" "C52923"
 			(at 1.27 163.83 0)
 			(effects
 				(font
@@ -18304,7 +18331,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15195"
+		(property "LCSC" "C1525"
 			(at 386.08 387.35 0)
 			(effects
 				(font
@@ -18448,7 +18475,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C11702"
 			(at 148.336 242.57 0)
 			(effects
 				(font
@@ -18671,7 +18698,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C1525"
 			(at -2.54 337.82 0)
 			(effects
 				(font
@@ -18749,7 +18776,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15195"
+		(property "LCSC" "C1525"
 			(at 180.34 -177.8 0)
 			(effects
 				(font
@@ -18905,7 +18932,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15195"
+		(property "LCSC" "C32949"
 			(at 1.27 290.83 0)
 			(effects
 				(font

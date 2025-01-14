@@ -131,7 +131,7 @@
         "min_track_width": 0.127,
         "min_via_annular_width": 0.075,
         "min_via_diameter": 0.35,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -241,9 +241,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "power_pin_not_driven|3340100|1168400|fd3dbfd6-5439-4795-a2fe-e540311d1e24|00000000-0000-0000-0000-000000000000|/a4b38a6b-9d72-449e-ac14-b68a50e767e1|/a4b38a6b-9d72-449e-ac14-b68a50e767e1|"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -504,7 +502,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
+    "bom_export_filename": "BOM_test",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",

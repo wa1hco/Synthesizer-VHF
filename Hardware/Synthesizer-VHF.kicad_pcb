@@ -290,7 +290,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15195"
+		(property "LCSC" "C1525"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -1187,7 +1187,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C1525"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1846,7 +1846,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2290"
+		(property "LCSC" "C364550"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2087,7 +2087,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C11702"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2304,7 +2304,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C11702"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2737,8 +2737,8 @@
 				)
 			)
 		)
-		(property "LCSC" "C15195"
-			(at 0 0 360)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "81161528-c70e-4249-9e6d-97cbf0fc6951")
@@ -2953,7 +2953,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2290"
+		(property "LCSC" "C364550"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4374,7 +4374,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C32949"
+		(property "LCSC" "C1546"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -4590,7 +4590,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C282682"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4821,7 +4821,7 @@
 		(path "/0c428903-4e79-428a-a721-66457cc5962d")
 		(sheetname "Root")
 		(sheetfile "Synthesizer-VHF.kicad_sch")
-		(attr smd exclude_from_pos_files)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -5260,7 +5260,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1671"
+		(property "LCSC" "C1567"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5908,7 +5908,7 @@
 				)
 			)
 		)
-		(property "Value" "White"
+		(property "Value" "blue"
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5959,7 +5959,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2290"
+		(property "LCSC" "C364550"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6416,7 +6416,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C11702"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7098,7 +7098,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23186"
+		(property "LCSC" "C105872"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7315,7 +7315,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23345"
+		(property "LCSC" "C93929"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7697,7 +7697,7 @@
 				)
 			)
 		)
-		(property "Value" "ADF4350"
+		(property "Value" "ADF4351"
 			(at 0 3.75 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7722,7 +7722,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4350.pdf"
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4351.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7735,7 +7735,7 @@
 				)
 			)
 		)
-		(property "Description" "137.5-4400MHz fractional-N PLL, LFCSP-32"
+		(property "Description" "Wideband Synthesizerwith Integrated VCO"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7748,7 +7748,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C98705"
+		(property "LCSC" "C654681"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8369,7 +8369,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1525"
+		(property "LCSC" "C32949"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8802,7 +8802,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15195"
+		(property "LCSC" "C1525"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -9017,7 +9017,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C17477"
+		(property "LCSC" "C17168"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -9244,7 +9244,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C105871"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -9460,7 +9460,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C1525"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9904,7 +9904,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C11702"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10846,7 +10846,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C72038"
+		(property "LCSC" "C434449"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11303,7 +11303,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C52923"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -11747,7 +11747,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C12530"
+		(property "LCSC" "C52923"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -11963,7 +11963,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1525"
+		(property "LCSC" "C32949"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -12179,7 +12179,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15195"
+		(property "LCSC" "C1525"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12396,7 +12396,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C1525"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12551,7 +12551,7 @@
 		(descr "SOT, 5 Pin (~), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U8"
-			(at 0 -2.4 360)
+			(at 0 -2.4 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "358534e3-fd75-4ad7-91cb-8322288f5ca7")
@@ -12563,7 +12563,7 @@
 			)
 		)
 		(property "Value" "ADP150AUJZ-3.3-R7"
-			(at 0 2.4 360)
+			(at 0 2.4 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "94f0e72e-1f61-4216-a083-1cf167c963fa")
@@ -12575,7 +12575,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "726267d1-8daa-4b35-8517-613d7cae67d9")
@@ -12587,7 +12587,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adp150.pdf"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "67ef28d3-4691-404f-92e6-2e603e8a6edc")
@@ -12599,7 +12599,7 @@
 			)
 		)
 		(property "Description" "150mA Fixed 3.3V, 5.5V in, TSOT-23-5 Regulator"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "40492ff8-71f5-4ebd-903c-472645f50ea6")
@@ -12770,7 +12770,7 @@
 			(uuid "b8ac32a0-5cdb-48d0-a0c5-1ec0d9172e81")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "e5342cbc-9550-4386-aa59-b23da236508a")
 			(effects
@@ -13127,7 +13127,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15195"
+		(property "LCSC" "C1525"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -13943,7 +13943,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15195"
+		(property "LCSC" "C32949"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -14159,7 +14159,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1671"
+		(property "LCSC" "C1567"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14639,7 +14639,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C116949"
+		(property "LCSC" "C22395574"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14928,7 +14928,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C11702"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15145,7 +15145,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15195"
+		(property "LCSC" "C1525"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -15378,7 +15378,7 @@
 		(path "/97a7d45a-8ffb-477b-8f7d-1769b0de2d85")
 		(sheetname "Root")
 		(sheetfile "Synthesizer-VHF.kicad_sch")
-		(attr smd exclude_from_pos_files)
+		(attr smd)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -15805,7 +15805,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C1525"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16022,7 +16022,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23186"
+		(property "LCSC" "C105872"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16177,7 +16177,7 @@
 		(descr "SOT, 5 Pin (~), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U7"
-			(at 0 -2.4 360)
+			(at 0 -2.4 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "d81083f8-2014-445c-9952-b9f3ad8a7e6e")
@@ -16189,7 +16189,7 @@
 			)
 		)
 		(property "Value" "ADP150AUJZ-3.3-R7"
-			(at 0 2.4 360)
+			(at 0 2.4 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "73f02fc9-1104-4e79-9b56-53111b407993")
@@ -16201,7 +16201,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a9cf039b-554b-43ae-ae00-d7902cd01851")
@@ -16213,7 +16213,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adp150.pdf"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "45c00506-494a-444c-9fba-f9a29d7e2207")
@@ -16225,7 +16225,7 @@
 			)
 		)
 		(property "Description" "150mA Fixed 3.3V, 5.5V in, TSOT-23-5 Regulator"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2d734a05-011a-47dc-804d-8040ae0dcde3")
@@ -16396,7 +16396,7 @@
 			(uuid "f8c0c603-dbe8-4fc7-a04e-13d4d1362e7a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "57d7e279-9e57-4a7a-b8c9-e2cf1dcba8ea")
 			(effects
@@ -16537,7 +16537,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C12530"
+		(property "LCSC" "C52923"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -16969,7 +16969,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C32949"
+		(property "LCSC" "C1546"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -17185,7 +17185,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C12530"
+		(property "LCSC" "C52923"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -18148,7 +18148,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C11702"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18365,7 +18365,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C11702"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18588,7 +18588,7 @@
 		(path "/6cde9d57-7d1b-43f8-88b6-187260d5cebe")
 		(sheetname "Root")
 		(sheetfile "Synthesizer-VHF.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -19015,7 +19015,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23345"
+		(property "LCSC" "C93929"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20301,7 +20301,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C116949"
+		(property "LCSC" "C22395574"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21746,7 +21746,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C72038"
+		(property "LCSC" "C434449"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29280,39 +29280,39 @@
 			(pts
 				(xy 149.451894 87.895185) (xy 149.491587 87.936379) (xy 149.568988 88.067258) (xy 149.568994 88.067266)
 				(xy 149.683414 88.181686) (xy 149.683423 88.181693) (xy 149.689974 88.185567) (xy 149.734243 88.230299)
-				(xy 149.758592 88.272472) (xy 149.958592 88.472472) (xy 150.065742 88.579622) (xy 150.196972 88.655388)
-				(xy 150.248338 88.669151) (xy 150.307999 88.705516) (xy 150.338528 88.768363) (xy 150.330233 88.837738)
-				(xy 150.285748 88.891616) (xy 150.219196 88.912891) (xy 150.216245 88.912926) (xy 150.095896 88.912926)
-				(xy 150.041862 88.915822) (xy 150.041861 88.915822) (xy 149.902457 88.951402) (xy 149.90245 88.951404)
-				(xy 149.863558 88.967514) (xy 149.768709 89.019306) (xy 149.6634 89.117352) (xy 149.589988 89.241084)
-				(xy 149.589983 89.241093) (xy 149.573886 89.279954) (xy 149.573879 89.279973) (xy 149.573876 89.279981)
-				(xy 149.558171 89.324498) (xy 149.555873 89.331013) (xy 149.535398 89.473427) (xy 149.535398 89.573428)
-				(xy 149.538294 89.627461) (xy 149.538294 89.627465) (xy 149.553961 89.688847) (xy 149.556929 89.734295)
-				(xy 149.550825 89.785132) (xy 149.545398 89.830324) (xy 149.545398 90.016528) (xy 149.549418 90.05)
-				(xy 149.556459 90.108643) (xy 149.556459 90.138209) (xy 149.553395 90.163728) (xy 149.545398 90.230324)
-				(xy 149.545398 90.230329) (xy 149.545398 90.28546) (xy 149.525713 90.352499) (xy 149.509079 90.373141)
-				(xy 149.300385 90.581834) (xy 149.300383 90.581837) (xy 149.224617 90.713065) (xy 149.185398 90.859436)
-				(xy 149.185398 90.949359) (xy 149.165713 91.016398) (xy 149.149079 91.03704) (xy 148.215688 91.97043)
-				(xy 148.154365 92.003915) (xy 148.084673 91.998931) (xy 148.040326 91.97043) (xy 147.916181 91.846285)
-				(xy 147.882696 91.784962) (xy 147.88768 91.71527) (xy 147.929552 91.659337) (xy 147.960529 91.642422)
-				(xy 148.092086 91.593354) (xy 148.092093 91.59335) (xy 148.207187 91.50719) (xy 148.20719 91.507187)
-				(xy 148.29335 91.392093) (xy 148.293354 91.392086) (xy 148.343596 91.257379) (xy 148.343598 91.257372)
-				(xy 148.349999 91.197844) (xy 148.35 91.197827) (xy 148.35 90.55) (xy 147.433012 90.55) (xy 147.465925 90.492993)
-				(xy 147.5 90.365826) (xy 147.5 90.234174) (xy 147.465925 90.107007) (xy 147.433012 90.05) (xy 148.35 90.05)
-				(xy 148.35 89.402172) (xy 148.349999 89.402155) (xy 148.343598 89.342627) (xy 148.343596 89.34262)
-				(xy 148.293354 89.207913) (xy 148.29335 89.207906) (xy 148.20719 89.092812) (xy 148.207187 89.092809)
-				(xy 148.092093 89.006649) (xy 148.092086 89.006645) (xy 147.957379 88.956403) (xy 147.957372 88.956401)
-				(xy 147.897844 88.95) (xy 147.25 88.95) (xy 147.25 89.866988) (xy 147.192993 89.834075) (xy 147.065826 89.8)
-				(xy 146.934174 89.8) (xy 146.807007 89.834075) (xy 146.75 89.866988) (xy 146.75 88.95) (xy 146.102155 88.95)
-				(xy 146.042627 88.956401) (xy 146.04262 88.956403) (xy 145.907913 89.006645) (xy 145.907906 89.006649)
-				(xy 145.792812 89.092809) (xy 145.74734 89.153552) (xy 145.691406 89.195422) (xy 145.621714 89.200406)
-				(xy 145.560392 89.16692) (xy 145.526907 89.105597) (xy 145.524074 89.07924) (xy 145.524074 88.563692)
-				(xy 145.543759 88.496653) (xy 145.596563 88.450898) (xy 145.665721 88.440954) (xy 145.682664 88.444614)
-				(xy 145.730581 88.458536) (xy 145.766884 88.461393) (xy 145.766892 88.461393) (xy 146.236256 88.461393)
-				(xy 146.236264 88.461393) (xy 146.272567 88.458536) (xy 146.272569 88.458535) (xy 146.272571 88.458535)
-				(xy 146.368598 88.430636) (xy 146.427969 88.413387) (xy 146.526492 88.355119) (xy 146.542166 88.347289)
-				(xy 146.545335 88.345977) (xy 146.620914 88.295477) (xy 146.668256 88.263845) (xy 147.020281 87.911818)
-				(xy 147.081604 87.878334) (xy 147.107962 87.8755) (xy 149.384855 87.8755)
+				(xy 149.758592 88.272472) (xy 150.065742 88.579622) (xy 150.196972 88.655388) (xy 150.248338 88.669151)
+				(xy 150.307999 88.705516) (xy 150.338528 88.768363) (xy 150.330233 88.837738) (xy 150.285748 88.891616)
+				(xy 150.219196 88.912891) (xy 150.216245 88.912926) (xy 150.095896 88.912926) (xy 150.041862 88.915822)
+				(xy 150.041861 88.915822) (xy 149.902457 88.951402) (xy 149.90245 88.951404) (xy 149.863558 88.967514)
+				(xy 149.768709 89.019306) (xy 149.6634 89.117352) (xy 149.589988 89.241084) (xy 149.589983 89.241093)
+				(xy 149.573886 89.279954) (xy 149.573879 89.279973) (xy 149.573876 89.279981) (xy 149.558171 89.324498)
+				(xy 149.555873 89.331013) (xy 149.535398 89.473427) (xy 149.535398 89.573428) (xy 149.538294 89.627461)
+				(xy 149.538294 89.627465) (xy 149.553961 89.688847) (xy 149.556929 89.734295) (xy 149.550825 89.785132)
+				(xy 149.545398 89.830324) (xy 149.545398 90.016528) (xy 149.549418 90.05) (xy 149.556459 90.108643)
+				(xy 149.556459 90.138209) (xy 149.553395 90.163728) (xy 149.545398 90.230324) (xy 149.545398 90.230329)
+				(xy 149.545398 90.28546) (xy 149.525713 90.352499) (xy 149.509079 90.373141) (xy 149.300385 90.581834)
+				(xy 149.300383 90.581837) (xy 149.224617 90.713065) (xy 149.185398 90.859436) (xy 149.185398 90.949359)
+				(xy 149.165713 91.016398) (xy 149.149079 91.03704) (xy 148.215688 91.97043) (xy 148.154365 92.003915)
+				(xy 148.084673 91.998931) (xy 148.040326 91.97043) (xy 147.916181 91.846285) (xy 147.882696 91.784962)
+				(xy 147.88768 91.71527) (xy 147.929552 91.659337) (xy 147.960529 91.642422) (xy 148.092086 91.593354)
+				(xy 148.092093 91.59335) (xy 148.207187 91.50719) (xy 148.20719 91.507187) (xy 148.29335 91.392093)
+				(xy 148.293354 91.392086) (xy 148.343596 91.257379) (xy 148.343598 91.257372) (xy 148.349999 91.197844)
+				(xy 148.35 91.197827) (xy 148.35 90.55) (xy 147.433012 90.55) (xy 147.465925 90.492993) (xy 147.5 90.365826)
+				(xy 147.5 90.234174) (xy 147.465925 90.107007) (xy 147.433012 90.05) (xy 148.35 90.05) (xy 148.35 89.402172)
+				(xy 148.349999 89.402155) (xy 148.343598 89.342627) (xy 148.343596 89.34262) (xy 148.293354 89.207913)
+				(xy 148.29335 89.207906) (xy 148.20719 89.092812) (xy 148.207187 89.092809) (xy 148.092093 89.006649)
+				(xy 148.092086 89.006645) (xy 147.957379 88.956403) (xy 147.957372 88.956401) (xy 147.897844 88.95)
+				(xy 147.25 88.95) (xy 147.25 89.866988) (xy 147.192993 89.834075) (xy 147.065826 89.8) (xy 146.934174 89.8)
+				(xy 146.807007 89.834075) (xy 146.75 89.866988) (xy 146.75 88.95) (xy 146.102155 88.95) (xy 146.042627 88.956401)
+				(xy 146.04262 88.956403) (xy 145.907913 89.006645) (xy 145.907906 89.006649) (xy 145.792812 89.092809)
+				(xy 145.74734 89.153552) (xy 145.691406 89.195422) (xy 145.621714 89.200406) (xy 145.560392 89.16692)
+				(xy 145.526907 89.105597) (xy 145.524074 89.07924) (xy 145.524074 88.563692) (xy 145.543759 88.496653)
+				(xy 145.596563 88.450898) (xy 145.665721 88.440954) (xy 145.682664 88.444614) (xy 145.730581 88.458536)
+				(xy 145.766884 88.461393) (xy 145.766892 88.461393) (xy 146.236256 88.461393) (xy 146.236264 88.461393)
+				(xy 146.272567 88.458536) (xy 146.272569 88.458535) (xy 146.272571 88.458535) (xy 146.368598 88.430636)
+				(xy 146.427969 88.413387) (xy 146.526492 88.355119) (xy 146.542166 88.347289) (xy 146.545335 88.345977)
+				(xy 146.620914 88.295477) (xy 146.668256 88.263845) (xy 147.020281 87.911818) (xy 147.081604 87.878334)
+				(xy 147.107962 87.8755) (xy 149.384855 87.8755)
 			)
 		)
 		(filled_polygon
