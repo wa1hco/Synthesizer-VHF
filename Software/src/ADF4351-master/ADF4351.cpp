@@ -1,26 +1,41 @@
-#include <SPI.h>
+#include <Arduino.h>
 
 // de SQ3SWF 2019
+
+// modified for bit banging SPI by wa1hco 2025
+//                               name     arduino  seesaw
+const int SCKPin   = PIN_PC1;  // CLK         11      R 10
+const int MOSIPin  = PIN_PC0;  // DATA        10      R  9
+const int SSPin    = PIN_PB0;  // LE           9      L 10
+const int RF_ENPin = PIN_PC3;  // RF Enable   13
+const int MUXPin   = PIN_PC2;  // MUX input   12
+const int LDPin    = PIN_PA1;  // Lock Detect 14
+const int CEPin    = PIN_PB1;  // Chip Enable  9 
+const int LEDD7Pin = PIN_PA2;  // LED D7      15
+const int LEDD8Pin = PIN_PA3;  // LED D8      16
+const int J6_3Pin  = PIN_PB4;  // J3_3         5
+const int J6_2Pin  = PIN_PB5;  // J3_2         4
+
 
 #define SHL(x,y) ((uint32_t)1<<y)*x
 
 #define REF_CLK 25000000
-uint8_t slave_select_pin = 9;
+uint8_t slave_select_pin = SSPin;
 unsigned long long frequency = 1000000000;
 
 // Register 0: VCO to PFD divide by N, N = INT + FRAC/MOD 
-uint16_t INT=0;   // 16 bit integer
-uint16_t FRAC=0;  // 12 bit fraction
+uint16_t INT  = 0;   // 16 bit integer
+uint16_t FRAC = 0;   // 12 bit fraction
 
 // Register 1: 
-uint8_t phase_adj;       // 1 bit
-uint8_t prescaler = 0;   // 1 bit
-uint16_t phase = 1;      // 12 bit PHASE counter, double buffered
-uint16_t MOD = 4095;     // 12 bit MOD, double buffered
+uint8_t  phase_adj;          // 1 bit
+uint8_t  prescaler = 0;      // 1 bit
+uint16_t phase     = 1;      // 12 bit PHASE counter, double buffered
+uint16_t MOD       = 4095;   // 12 bit MOD, double buffered
 
 // Register 2:
-uint8_t low_noise_spur;  // 2 bits
-uint8_t muxout = 3;          // 3 bits, 0 float, 1 DVdd, 2 DGND, 3 R out, 4 N out, 5 analod LD, 6 digital LD, reserved
+uint8_t low_noise_spur;       // 2 bits
+uint8_t muxout      = 1; // 3 bits, 0 float, 1 DVdd, 2 DGND, 3 R out, 4 N out, 5 analod LD, 6 digital LD, reserved
 uint8_t ref_doubler = 0; // 1 bit 
 uint8_t rdiv2 = 1;       // 1 bit RDIV/2
 uint16_t r_counter = 10; // 10 bit R counter, double buffered
@@ -87,21 +102,42 @@ void prepare_registers() {
   
 }
 
+void bitBangData(byte _send)  // This function transmit the data via bitbanging
+{
+  for(int i=0; i<8; i++)  // 8 bits in a byte
+  {
+    digitalWrite(MOSIPin, bitRead(_send, i)); //Serial.print(bitRead(_send, i));   // Set MOSI
+    digitalWrite(J6_3Pin, bitRead(_send, i)); //Serial.print(bitRead(_send, i));   // Set MOSI
+    digitalWrite(SCKPin,  HIGH);                  // SCK high
+    digitalWrite(J6_2Pin, HIGH);
+    //bitWrite(_receive, i, digitalRead(MISOPin)); // Capture MISO
+    digitalWrite(SCKPin,  LOW);                   // SCK low
+    digitalWrite(J6_2Pin, LOW);
+  } 
+  //Serial.println();
+  return;        // Return the received data
+}
+
 void sendRegisterToAdf(uint16_t reg_id) {
   
   digitalWrite(slave_select_pin, LOW);
   delayMicroseconds(10);
-  SPI.transfer((uint8_t)(reg[reg_id] >> 24));
-  SPI.transfer((uint8_t)(reg[reg_id] >> 16));
-  SPI.transfer((uint8_t)(reg[reg_id] >> 8));
-  SPI.transfer((uint8_t)(reg[reg_id]));
+
+  bitBangData((uint8_t)(reg[reg_id] >> 24)); //Serial.printHex(reg[reg_id]>>24);
+  bitBangData((uint8_t)(reg[reg_id] >> 16)); //Serial.printHex(reg[reg_id]>>16);
+  bitBangData((uint8_t)(reg[reg_id] >> 8));  //Serial.printHex(reg[reg_id]>>8);
+  bitBangData((uint8_t)(reg[reg_id]));       //Serial.printHexln(reg[reg_id]);
+
+  //SPI.transfer((uint8_t)(reg[reg_id] >> 24));
+  //SPI.transfer((uint8_t)(reg[reg_id] >> 16));
+  //SPI.transfer((uint8_t)(reg[reg_id] >> 8));
+  //SPI.transfer((uint8_t)(reg[reg_id]));
   
   digitalWrite(slave_select_pin, HIGH);
   delayMicroseconds(5);
   digitalWrite(slave_select_pin, LOW);
 
   delayMicroseconds(2500);
-
 }
 
 void updateAllRegisters() {
@@ -117,13 +153,29 @@ void updateAllRegisters() {
 void setup() {
   pinMode (slave_select_pin, OUTPUT);
   digitalWrite(slave_select_pin, LOW);
-  
-  SPI.setDataMode(SPI_MODE0);
-  SPI.setBitOrder(MSBFIRST);
-  SPI.setClockDivider(SPI_CLOCK_DIV128);
-  SPI.begin();
 
-  Serial.begin(9600);
+  //pinMode(MISOPin, INPUT);
+  pinMode(SCKPin,   OUTPUT); // CLK
+  pinMode(MOSIPin,  OUTPUT); // Data
+  pinMode(SSPin,    OUTPUT); // LE
+  pinMode(RF_ENPin, OUTPUT); // RF enable
+  pinMode(CEPin,    OUTPUT); // Chip Enable
+  pinMode(LEDD7Pin, OUTPUT);
+  pinMode(LEDD8Pin, OUTPUT);
+  pinMode(J6_3Pin,  OUTPUT);
+  pinMode(J6_2Pin,  OUTPUT);
+
+  pinMode(LDPin,    INPUT);
+  pinMode(MUXPin,   INPUT);
+
+  digitalWrite(SSPin,    HIGH); 
+  digitalWrite(CEPin,    HIGH);
+  digitalWrite(RF_ENPin, HIGH);
+
+  digitalWrite(LEDD7Pin, digitalRead(LDPin));
+  digitalWrite(LEDD8Pin, digitalRead(MUXPin));
+  
+  Serial.begin(57600);
   
   delay(500);
 
