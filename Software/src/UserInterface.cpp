@@ -33,6 +33,17 @@
 //  reffreq
 //  spi_settings
 
+// register and related functions
+//   assemble variables into register bit fields
+//   save registers in eeprom
+//   restore registers from eeprom
+//   save variables in eeprom
+//   restore variables from eeprom
+//   extract variables from register values
+// Choices
+//   1) save only assembled registers, add extract function
+//   2) save only register bit field variables, Config.N Config.refclk, etc.
+
 #include <SerialReadLine.h>
 #include <stdlib.h>
 #include <errno.h>
@@ -120,6 +131,9 @@ void UserConfig() {
 
   Token = Tokens[0];  // first token on user cmd line
   CmdChar = (char) tolower(Token[0]); // first char of first token
+  if (strcmp(Token, "freq")) {
+  //  FreqCmd();
+  }
   if (CmdChar == 's') {
     if (StepCmd()) UpdateConfig();
   }
@@ -151,12 +165,9 @@ void UserConfig() {
 } // UserConfig() 
 
 // called when line available starting with Tokens[0] is step command
-// Get StepIdx, StepArg, and msec if necessary
-bool StepCmd() {
+// Get frequency
+uint32_t FreqCmd() {
   char * endptr;
-  long lmsec;
-  int msec;
-  uint8_t StepIdx;
   char * Token;
 
   Token = Tokens[1];
@@ -164,63 +175,23 @@ bool StepCmd() {
     Serial.println("Token NULL, incomplete command");
     return false;
   }
-  // get the step index from 0 to 3
-  long lStepIdx = strtol(Token, &endptr, 10);
+  // get the frequency, first check errors
+  uint32_t ulFreq = strtoul(Token, &endptr, 10);
   if (errno == ERANGE) {
-    Serial.println("GetStepIdx: strtol() ERANGE");
+    Serial.println("FreqCmd: strtol() ERANGE");
     return false;
   } 
   if (endptr == Token) {
-    Serial.println("GetStepIdx: (endptr == Token), no conversion");
+    Serial.println("FreqCmd: (endptr == Token), no conversion");
     return false;
   }
   if (*endptr != '\0') {
-    snprintf(Msg, 80, "GetStepIdx: Token %x, '%s', endptr %x, '%s', ", Token, endptr, endptr);
+    snprintf(Msg, 80, "FreqCmd: Token %x, '%s', endptr %x, '%s', ", Token, endptr, endptr);
     Serial.println(Msg);
     return false;
   } 
-  if ((lStepIdx < 0) | (lStepIdx > 3)) {
-    Serial.println("step: StepIdx out of range 0:3");
-    return false;
-  }
-  StepIdx = (uint8_t) lStepIdx;
-
-  // get step argument
-  Token = Tokens[2];
-  if (Token == NULL) { // if missing argument
-    Serial.println("step: missing step argument {r, t, o, c}");
-    return false;
-  } 
-  char StepArg = (char) tolower(Token[0]);
-  if (StepArg == 't') {
-    msec = Get_msec(Tokens[3]);
-    if (msec < 0) {
-      return false;
-    } else {
-      Config.Step[StepIdx].Tx_msec = msec;
-      return true;
-    }    
-  }
-  if (StepArg == 'r') {
-    msec = Get_msec(Tokens[3]);
-    if (msec < 0) {
-      return false;
-    } else {
-      Config.Step[StepIdx].Rx_msec = msec;
-      return true;
-    }
-  }  
-  if (StepArg == 'o') {
-    Config.Step[StepIdx].RxPolarity = OPEN;
-    return true;
-  } 
-  if (StepArg == 'c') {
-    Config.Step[StepIdx].RxPolarity = CLOSED;
-    return true;
-  } 
-  Serial.println("no valid argument");
-  return false; // no valid argument
-} // StepCmd()
+  return ulFreq;
+}
 
 // get msec Tx or Rx delay msec, 0 to 255
 int Get_msec(char * Token) {  
@@ -252,11 +223,11 @@ bool RTScmd() {
   // Token not NULL
   char ArgChar = (tolower(Token[0])); // on first character...
   if (ArgChar == 'e') {
-    Config.RTSEnable = true;
+  //  Config.RTSEnable = true;
     return true;
   }
   if (ArgChar == 'd') {
-    Config.RTSEnable = false;
+  //  Config.RTSEnable = false;
     return true;
   }
   return false; // didn't find 'd' or 'e' argument  
@@ -271,11 +242,11 @@ bool CTScmd() {
   // Token not NULL
   char ArgChar = (tolower(Token[0]));  // on first character...
   if (ArgChar == 'e') {
-    Config.RTSEnable = true;
+  //  Config.RTSEnable = true;
     return true;
   }
   if (ArgChar == 'd') {
-    Config.RTSEnable = false;
+  //  Config.RTSEnable = false;
     return true;
   }
   return false;  
@@ -288,19 +259,7 @@ bool TimeoutCmd() {
     Serial.println("timeout: incomplete command");
     return false;
   } 
-  // token not NULL, check time value
-  unsigned long ulTimeout = strtoul(Token, &endptr, 10); // try to get timeout value
-  if (endptr == Token) {  // check if not interpreted
-    snprintf(Msg, 80, "UserInterface: user entry -%s- not an (unsigned long)", Token);
-    Serial.println(Msg);
-    return false;
-  } 
-  if (ulTimeout > 255) { // check if too large
-    snprintf(Msg, 80, "case timeout: specified time %lu > 255", ulTimeout);
-    Serial.println(Msg);
-    return false;
-  }
-  Config.Timeout = (uint16_t) ulTimeout;
+
   needCmdPrompt = true;
 }
 
@@ -329,7 +288,7 @@ void FlushLines() {
 void UpdateConfig() {
     Config.CRC16 = CalcCRC(Config);  // update CRC16
     PutConfig(0, Config);  // write changed bytes of config to EEPROM
-    SequencerSetOutputs(); // update the output immediately
+//
     needCmdPrompt = true;
 } // UpdateConfig()
 

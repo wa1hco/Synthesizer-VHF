@@ -42,16 +42,8 @@ uint16_t CalcCRC(sConfig_t Config) {
 // delays specifiec in msec after key asserted
 sConfig_t InitDefaultConfig() {
   sConfig_t Config;
-  Config.frequency         = 222 - 28; // MHz
-  Config.feedback_sel; 
-  Config.noise_mode;
-  Config.MOD;
-  Config.muxout;
-  Config.r_counter;
-  Config.rdif2;
-  Config.ref_clk;
-  Config.ref_doubler;
-  Config.rf_div_sel;
+  Config.frequency         = 50200000;  // Hz, 50.2 MHz
+  Config.ref_clk           = 25000000;  // Hz, 25 MHz
   Config.reg                = reg;
   Config.CRC16              = CalcCRC(Config);
 
@@ -59,44 +51,24 @@ sConfig_t InitDefaultConfig() {
   return Config;
 }
 
-// pretty print the memory configuration on serial port
+// pretty print synthesizer configuration on serial port
 void PrintConfig(sConfig_t Config) {
-  Serial.println("Tiny Sequencer, (c) wa1hco, V0.5, Creative Commons\n");
-  for(int ii = 0; ii < 4; ii++) {
-    char Polarity_str[15] = "              ";
-    if (Config.Step[ii].RxPolarity == OPEN) {
-      strcpy(Polarity_str, "OPEN on RX");
-    } else {
-      strcpy(Polarity_str, "CLOSED on RX");
-    }
-    snprintf(Msg, 80, "Step %d, Contacts %s, TX delay %d, RX delay %d", ii, Polarity_str, Config.Step[ii].Tx_msec, Config.Step[ii].Rx_msec);
-    Serial.println(Msg);
+  Serial.println("ADF4351 Synthesizer, (c) wa1hco, V0.1, Creative Commons\n");
+
+  for(int ii = 0; ii < 6; ii++) {  // for each register
+    snprintf(Msg, 80, "Reg %d ", ii);
+    Serial.print(Msg);
+    byte b = reg[ii] >> 24; snprintf(Msg, 80, "%b %x ", b, b); Serial.print(Msg);    
+    b = reg[ii] >> 16; snprintf(Msg, 80, "%b %x ", b, b); Serial.print(Msg);    
+    b = reg[ii] >>  6; snprintf(Msg, 80, "%b %x ", b, b); Serial.print(Msg);    
+    b = reg[ii]      ; snprintf(Msg, 80, "%b %x ", b, b); Serial.print(Msg);    
+    Serial.println();
+
+    snprintf(Msg, 80, "frequency %ul, ref_clk %ul", frequency, ref_clk);  Serial.println();
   }
 
-  Serial.print("RTS   ");
-  if (Config.RTSEnable == true){
-    Serial.print("Enabled, ");
-  } else {
-    Serial.print("Disabled, ");
-  }
   Serial.println();
 
-  Serial.print("CTS   ");
-  if (Config.CTSEnable == true){
-    Serial.print("Enabled");
-  } else {
-    Serial.print("Disabled");
-  }
-  Serial.println();
-
-  Serial.print("Tx Timer ");
-  uint16_t Timeout = Config.Timeout;
-  if (Timeout == 0) {
-    Serial.println("Disabled");
-  } else {
-    Serial.print(Timeout);
-    Serial.println(" sec");
-  }
 
   // DEBUG
   Serial.print("CRC ");
