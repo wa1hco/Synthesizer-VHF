@@ -8,6 +8,7 @@
 #include "HardwareConfig.h"
 #include "Global.h"
 
+
 // Config structure functions
 // read, write, put, verify, print
 
@@ -44,8 +45,10 @@ sConfig_t InitDefaultConfig() {
   sConfig_t Config;
   Config.frequency         = 50200000;  // Hz, 50.2 MHz
   Config.ref_clk           = 25000000;  // Hz, 25 MHz
-  Config.reg                = reg;
-  Config.CRC16              = CalcCRC(Config);
+  for (int ii = 0; ii < 6; ii++) {
+    Config.reg[ii] = reg[ii];
+  }
+  Config.CRC16             = CalcCRC(Config);
 
   PrintConfig(Config);
   return Config;
@@ -56,9 +59,10 @@ void PrintConfig(sConfig_t Config) {
   Serial.println("ADF4351 Synthesizer, (c) wa1hco, V0.1, Creative Commons\n");
 
   for(int ii = 0; ii < 6; ii++) {  // for each register
+    byte b;
     snprintf(Msg, 80, "Reg %d ", ii);
     Serial.print(Msg);
-    byte b = reg[ii] >> 24; snprintf(Msg, 80, "%b %x ", b, b); Serial.print(Msg);    
+    b = reg[ii] >> 24; snprintf(Msg, 80, "%b %x ", b, b); Serial.print(Msg);    
     b = reg[ii] >> 16; snprintf(Msg, 80, "%b %x ", b, b); Serial.print(Msg);    
     b = reg[ii] >>  6; snprintf(Msg, 80, "%b %x ", b, b); Serial.print(Msg);    
     b = reg[ii]      ; snprintf(Msg, 80, "%b %x ", b, b); Serial.print(Msg);    

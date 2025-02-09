@@ -1,0 +1,25 @@
+Given frequency request and reference clock, find settings
+determine if integer N will work
+output is a multiple of pfd, which is a division from refclk
+
+RFout = Fpfd * (INT + FRAC/MOD)
+Fpfd = ref_clk * ((1 * D) / (R * (1 + T)))
+D is doubler bit
+R is 10 bit counter
+T is div / 2 bit
+
+Integer N synthesizer
+Given frequency and ref_clk, find greatest common divisor
+Binary GCD algorithm looks good
+Test if Fpfd can be set to GCD
+Fpfd has to be greater than about 125 KHz
+
+Fractional N synthesizer
+Fout = Fpfd * INT + Fpfd * FRAC / MOD
+find the greatest fpfd * INT less than Fout
+INT = Fout/Fpfd
+Ffrac = Fout - (Fpfd * INT) // Ffrac is always less than Fpfd
+Ffrac = Fpfd * FRAC / MOD
+FRAC / MOD = Ffrac/Fpfd 
+
+vary INT, FRAC, MOD, R and look at all the frequencies that can be accessed

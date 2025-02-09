@@ -4,6 +4,7 @@
 #include <Arduino.h>
 #include "Config.h"
 
+
 // declare useful macros
 #define SHL(x,y) ((uint32_t)1<<y)*x
 extern uint32_t ref_cll;
@@ -12,11 +13,14 @@ extern uint32_t ref_cll;
 extern sConfig_t Config;
 extern char      Msg[];
 
-extern uint32_t frequency;
-extern uint32_t pfd_freq;
+extern uint32_t frequency;            // setting
+extern uint32_t ref_clk;              // configuration
+
+extern uint32_t pfd_freq;             // derived
 
 extern uint32_t reg[6];               // 6 32 bit values
 
+// Register fields
 // Register 0: VCO to PFD, divide by N, N = INT + FRAC/MOD 
 extern uint16_t INT;                  // 16 bit integer  {23, 75} to 65535
 extern uint16_t FRAC;                 // 12 bit fraction 0 to (MOD - 1)

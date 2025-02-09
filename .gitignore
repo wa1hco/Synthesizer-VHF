@@ -4,7 +4,6 @@ Software/.vscode/c_cpp_properties.json
 Software/.vscode/launch.json
 Software/.vscode/ipch
 Software/output.map
-
 Hardware/jlcpcb/
 Hardware/production/
 Hardware/Synthesizer-VHF.bak

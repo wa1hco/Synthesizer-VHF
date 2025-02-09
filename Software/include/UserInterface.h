@@ -8,5 +8,7 @@
 
 // public functions
 void UserConfig();
+uint32_t binaryGCD(uint32_t u, uint32_t v);
+uint32_t FreqCmd();
 
 #endif

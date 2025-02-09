@@ -58,12 +58,7 @@
 char Line[LINELEN + 1];   // Line of user text needs to be available to multiple functions
 
 // parse functions, return false on error, true on Config change
-bool StepCmd();             
-bool RTScmd();
-bool CTScmd();
-bool TimeoutCmd();
 bool InitCmd(char * Token);
-int Get_msec(char * Token); // Supports StepCmd, returns 0:255 msec or -1 for error
 
 // other commands
 bool BootCmd();
@@ -77,6 +72,52 @@ void PrintHelp();           // flush anything in the input buffer
 static char * Tokens[MAX_TOKENS_PER_LINE];
 static bool needCmdPrompt = true;
 
+/**
+* Stein's Algorithm .
+* @author Andrei Ciobanu
+* @date DEC 12, 2010
+* https://github.com/nomemory/blog-stein-algorithm-c/blob/main/b_gcd_iterative.c
+*/
+
+uint32_t b_gcd(uint32_t num1, uint32_t num2)
+{
+	uint32_t pof2, tmp;
+	if (!num1 || !num2) {
+		return (num1 | num2);
+	}
+
+	// pof2 is the greatest power of 2 deviding both numbers .
+	// We will use pof2 to multiply the returning number .
+	pof2 = 0;
+	while(!(num1 & 1) && !(num2 & 1)) {
+		// gcd(even1, even1) = pof2 * gcd(even1/pof2, even2/pof2)
+		num1 >>=1;
+		num2 >>=1;
+		pof2++;
+	}
+
+	do {
+		while (!(num1 & 1)) {
+			num1 >>=1;
+		}
+		while (!(num2 & 1)) {
+			num2 >>=1;
+		}
+		// At this point we know for sure that
+		// num1 and num2 are odd
+		if (num1 >= num2) {
+			num1 = (num1 - num2) >> 1;
+		}
+		else {
+			tmp = num1;
+			num1 = (num2 - num1) >> 1;
+			num2 = tmp;
+		}
+	} while (!(num1 == num2 || num1 == 0));
+
+	return (num2 << pof2);
+}
+
 void UserConfig() {
   static char * Token;
   uint8_t TokenCnt;
@@ -88,10 +129,11 @@ void UserConfig() {
   static char    CmdChar;  // used for token processing
 
   if (needCmdPrompt) {
+    Serial.println("UserConfig: ");
     PrintConfig(Config);
     FlushLines();
     needCmdPrompt = false;
-    snprintf(Msg, 80, "%s", "Command list: Step, RTS, CTS, Timeout, Display, Init, Boot, Help");
+    snprintf(Msg, 80, "%s", "Command list: freq, rf, aux, ...");
     Serial.println(Msg);
   }
 
@@ -129,33 +171,29 @@ void UserConfig() {
   }
   Serial.println();
 
-  Token = Tokens[0];  // first token on user cmd line
-  CmdChar = (char) tolower(Token[0]); // first char of first token
-  if (strcmp(Token, "freq")) {
-  //  FreqCmd();
+  if (strcmp(Tokens[0], "freq") == 0) {
+    frequency = FreqCmd();
+    // set variables from frequency
+    uint32_t GCD = b_gcd(frequency, ref_clk);
+    snprintf(Msg, 80, "FreqCmd: freq %ul, ref %ul, GCD %ul", frequency, ref_clk, GCD);
   }
-  if (CmdChar == 's') {
-    if (StepCmd()) UpdateConfig();
+  else if (strcmp(Tokens[0], "ref") == 0) {
+    Serial.println("UserConfig: ref cmd");
+    // refCmd()) UpdateConfig();
   }
-  else if (CmdChar == 'r') {
-    if (RTScmd()) UpdateConfig();
+  else if (strcmp(Tokens[0], "rf") == 0) {
+    Serial.println("UserConfig: rf cmd");
+  }  
+  else if (strcmp(Tokens[0], "aux") == 0) {
+    Serial.println("UserConfig: aux cmd");
   }
-  else if (CmdChar == 'c') {
-    if (CTScmd()) UpdateConfig();
-  }
-  else if (CmdChar == 't') {
-    if (TimeoutCmd()) UpdateConfig();
-  }
-  else if (CmdChar == 'd') {
-    PrintConfig(Config);
-  }
-  else if (CmdChar == 'i') {
+  else if (strcmp(Tokens[0], "Init") == 0) {
     if (InitCmd(Tokens[0])) UpdateConfig;    // require whole token
   }
-  else if (CmdChar == 'b') {
+  else if (strcmp(Tokens[0], "Boot") == 0) {
     BootCmd();
   }
-  else if (CmdChar == 'h') {
+  else if (strcmp(Tokens[0], "help") == 0) {
     PrintHelp();
   }
   else {
@@ -164,7 +202,7 @@ void UserConfig() {
   }
 } // UserConfig() 
 
-// called when line available starting with Tokens[0] is step command
+// called when line available starting with Tokens[0] is freq command
 // Get frequency
 uint32_t FreqCmd() {
   char * endptr;
@@ -252,17 +290,6 @@ bool CTScmd() {
   return false;  
 }
 
-bool TimeoutCmd() {
-  char * endptr;
-  char * Token = Tokens[1];  // 
-  if (Token == NULL) { // no time value waiting
-    Serial.println("timeout: incomplete command");
-    return false;
-  } 
-
-  needCmdPrompt = true;
-}
-
 bool BootCmd() {
   if (strcmp(Tokens[0], "Boot") == 0) { // require whole token
     _PROTECTED_WRITE(RSTCTRL.SWRR,1); // magic boot command
@@ -309,12 +336,7 @@ void PrintHelp() {
   Serial.println("The user enters command and parameters, MCU echos after end of line");
   Serial.println("Input is one line at a time");
   Serial.println("Entry is case insensitive, with two exceptions");
-  Serial.println("Commands and alpha arguments check only the first letter, see examples");  
   Serial.println("Top level configuration commands: S(tep), R(TS), C(TS), T(imeout)"); 
-  Serial.println("  Step {Step number 0 to 3} {T(x) delay, R(x) delay, O(pen) on rx, C(losed) on rx}");
-  Serial.println("  RTS {E(nable), D(isable)}");
-  Serial.println("  CTS {E(nable), D(isable)}");
-  Serial.println("  Timeout 0 to 255 seconds, Tx timeout, 0 means disable");
   Serial.println("Top level Info commands: D(isplay), Boot, Init, H(elp)");
   Serial.println("  Display, print working configuration");
   Serial.println("  Init, spelled out, initialize configuration to programmed defaults");
@@ -322,12 +344,6 @@ void PrintHelp() {
   Serial.println("  Help, print this text");
   Serial.println("Changes are automatically written to EEPROM");
   Serial.println("Examples...");
-  Serial.println("  's 0 t 100' step 0 tx delay 100 msec");
-  Serial.println("  'step 0 tx 100' step 0 tx delay 100 msec, long form");
-  Serial.println("  's 3 o, step 3 Open on Rx");
-  Serial.println("  'r e', RTS enable");
-  Serial.println("  't 120', tx timeout 120 seconds");
-  Serial.println("  't 0', tx timeout disabled");
   Serial.println("  'd', display configuration");
   Serial.println("  'Init', case sensitive, spelled out, initialize to programmed defaults");
   Serial.println("  'Boot', case Sensitive, spelled out, reboot using software reset");

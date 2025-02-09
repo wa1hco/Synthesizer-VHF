@@ -5,6 +5,7 @@
 #include "HardwareConfig.h"
 #include "UserInterface.h"
 #include "Global.h"
+#include "rational_approximation.h"
 
 // de SQ3SWF 2019
 // modified by wa1hco 2025
@@ -17,80 +18,139 @@
 #define SHL(x,y) ((uint32_t)1<<y)*x
 
 char Msg[120];
+sConfig_t Config;
 
 // fpfd = REFin * (1 + dbl) / (R * (1 + divby2)))
 // RFout = fpfd * (INT + (FRAC/MOD))
 // INT 23 to 65535 for 4/5 prescaler, 75 to 65535 for 8/9 prescalar
 
-uint32_t frequency            = 50300000; 
-uint32_t ref_clk              = 25000000;
+// declare user configuration
+uint32_t frequency;           // output frequency
+// declare board configuration
+uint32_t ref_clk;             // reference clock
 
-// create the register array
-uint32_t reg[6]               = {0,0,0,0,0,0}; // 6 32 bit values
+// declare derived configuration
+uint32_t pfd_freq;
+
+// declare the register array
+uint32_t reg[6];              // 6 32 bit values
+
+// declare global register fields
+// Register 0: VCO to PFD, divide by N, N = INT + FRAC/MOD 
+uint16_t INT;                 // 16 bit integer {23, 75} to 65535
+uint16_t FRAC;                // 12 bit fraction 0 to (MOD - 1)
+
+// Values for register fields
+// Register 1: 
+uint8_t  phase_adj;           //  1 bit
+uint8_t  prescaler;           //  1 bit 0 4/5 up to 3.6GHz, 1 8/9 up to 
+uint16_t phase;               // 12 bits PHASE counter, double buffered, recommended value
+uint16_t MOD;                 // 12 bits MOD, double buffered
+
+// Register 2:
+uint8_t  noise_mode;          //  2 bits 0 low noise, 3 low spur
+uint8_t  muxout;              //  3 bits 0 float, 1 DVdd, 2 DGND, 3 R out, 4 N out, 5 analog LD, 6 digital LD, reserved
+uint8_t  ref_doubler;         //  1 bit 
+uint8_t  ref_by_2;            //  1 bit RDIV/2
+uint16_t r_counter;           // 10 bits R counter, double buffered
+uint8_t  dbl_buf;             //  1 bit 0 disabled, 1 enabled
+uint8_t  charge_pump_current; //  4 bits 0 .31 mA, 7 2.5 mA, 15 5.0 mA, assuming 5.1K resistor
+uint8_t  ldf;                 //  1 bit lock det function 0 FRAC-N, 1 INT-N
+uint8_t  ldp;                 //  1 bit lock det precision 0 10 ns, 1 6 ns
+uint8_t  pd_polarity;         //  1 bit 0 negative, 1 positive
+uint8_t  powerdown;           //  1 bit 0 disabled, 1 enabled
+uint8_t  cp_three_state;      //  1 bit 0 disabled, 1 enabled
+uint8_t  counter_reset;       //  1 bit 0 disabled, 1 enabled
+
+// Register 3:
+uint8_t  band_sel_clk_mode;   //  1 bit 0 low, 1 high
+uint8_t  anti_backlash_pw;    //  1 bit antibacklash pulse 0 6 ns (frac N), 1 3 ns (int N)
+uint8_t  chg_cancel;          //  1 bit charge pump cancelation 0 disabled, 1 enabled (int N)
+uint8_t  cycle_slip_reduce;   //  1 bit cycle slip 0 disabled, 1 enabled
+uint8_t  clk_div_mode;        //  2 bits 0 div off, 1 fast lock, 2 resync, 3 reserved
+uint16_t clock_divider;       // 12 bits clock divider value
+
+// Register 4:
+uint8_t  feedback_sel;        //   1 bit 0 divided, 1 fundamental
+uint8_t  rf_div_sel;          //   3 bits 0 /1, 1 /2, 2 /4, 3 /8 4 /16, 5 /32, 6 /64, 7 reserved
+uint8_t  band_select_clkdiv;  //   8 bits band select 1 to 255
+uint8_t  vco_pwrdown;         //   1 bit power 0 up, 1 down
+uint8_t  mute_till_ld;        //   1 bit mute till LD 0 disabled, 1 enabled
+uint8_t  aux_out_sel;         //   1 bit 0 divided out, 1 fundamental
+uint8_t  aux_out_ena;         //   1 bit 0 disabled, 1 enabled
+uint8_t  aux_out_pwr;         //   2 bits 0 -4 dBm, 1 -1 dBm, 2 +2 dBm, 3 +5 dBm
+uint8_t  rf_out_ena;          //   1 bit 0 disabled, 1 enabled
+uint8_t  rf_out_pwr;          //   2 bits 0 -4 dBm, 1 -1 dBm, 2 +2 dBm, 3 +5 dBm
+
+// Register 5:
+uint8_t  ld_pinmode;          //   2 bits, 0 low, 1 digital LD, 2 low, 3 high
 
 // Initialize the register fields in global variables
 void InitFields() {
+  frequency            =      50200000; // 50.2 MHz
+  ref_clk              =      25000000; // 25 MHz
   // Register 0: VCO to PFD, divide by N, N = INT + FRAC/MOD 
-  uint16_t INT                  =      0;   // 16 bit integer  {23, 75} to 65535
-  uint16_t FRAC                 =      0;   // 12 bit fraction 0 to (MOD - 1)
+  INT                  =      0;   // 16 bit integer  {23, 75} to 65535
+  FRAC                 =      0;   // 12 bit fraction 0 to (MOD - 1)
 
   // Values for register fields
   // Register 1: 
-  uint8_t  phase_adj            =      0;  //  1 bit
-  uint8_t  prescaler            =      0;  //  1 bit 0 4/5 up to 3.6GHz, 1 8/9 up to 
-  uint16_t phase                =      1;  // 12 bits PHASE counter, double buffered, recommended value
-  uint16_t MOD                  =   4095;  // 12 bits MOD, double buffered
+  phase_adj            =      0;  //  1 bit
+  prescaler            =      0;  //  1 bit 0 4/5 up to 3.6GHz, 1 8/9 up to 
+  phase                =      1;  // 12 bits PHASE counter, double buffered, recommended value
+  MOD                  =   4095;  // 12 bits MOD, double buffered
 
   // Register 2:
-  uint8_t  noise_mode           =      0;  //  2 bits 0 low noise, 3 low spur
-  uint8_t  muxout               =      3;  //  3 bits 0 float, 1 DVdd, 2 DGND, 3 R out, 4 N out, 5 analog LD, 6 digital LD, reserved
-  uint8_t  ref_doubler          =      0;  //  1 bit 
-  uint8_t  ref_by_2             =      1;  //  1 bit RDIV/2
-  uint16_t r_counter            =     10;  // 10 bits R counter, double buffered
-  uint8_t  dbl_buf              =      0;  //  1 bit 0 disabled, 1 enabled
-  uint8_t  charge_pump_current  = 0b0111;  //  4 bits 0 .31 mA, 7 2.5 mA, 15 5.0 mA, assuming 5.1K resistor
-  uint8_t  ldf                  =      1;  //  1 bit lock det function 0 FRAC-N, 1 INT-N
-  uint8_t  ldp                  =      0;  //  1 bit lock det precision 0 10 ns, 1 6 ns
-  uint8_t  pd_polarity          =      1;  //  1 bit 0 negative, 1 positive
-  uint8_t  powerdown            =      0;  //  1 bit 0 disabled, 1 enabled
-  uint8_t  cp_three_state       =      0;  //  1 bit 0 disabled, 1 enabled
-  uint8_t  counter_reset        =      0;  //  1 bit 0 disabled, 1 enabled
+  noise_mode           =      0;  //  2 bits 0 low noise, 3 low spur
+  muxout               =      3;  //  3 bits 0 float, 1 DVdd, 2 DGND, 3 R out, 4 N out, 5 analog LD, 6 digital LD, reserved
+  ref_doubler          =      0;  //  1 bit 
+  ref_by_2             =      1;  //  1 bit RDIV/2
+  r_counter            =     10;  // 10 bits R counter, double buffered
+  dbl_buf              =      0;  //  1 bit 0 disabled, 1 enabled
+  charge_pump_current  = 0b0111;  //  4 bits 0 .31 mA, 7 2.5 mA, 15 5.0 mA, assuming 5.1K resistor
+  ldf                  =      1;  //  1 bit lock det function 0 FRAC-N, 1 INT-N
+  ldp                  =      0;  //  1 bit lock det precision 0 10 ns, 1 6 ns
+  pd_polarity          =      1;  //  1 bit 0 negative, 1 positive
+  powerdown            =      0;  //  1 bit 0 disabled, 1 enabled
+  cp_three_state       =      0;  //  1 bit 0 disabled, 1 enabled
+  counter_reset        =      0;  //  1 bit 0 disabled, 1 enabled
 
   // Register 3:
-  uint8_t  band_sel_clk_mode    =      0;  //  1 bit 0 low, 1 high
-  uint8_t  anti_backlash_pw     =      0;  //  1 bit antibacklash pulse 0 6 ns (frac N), 1 3 ns (int N)
-  uint8_t  chg_cancel           =      0;  //  1 bit charge pump cancelation 0 disabled, 1 enabled (int N)
-  uint8_t  cycle_slip_reduce    =      0;  //  1 bit cycle slip 0 disabled, 1 enabled
-  uint8_t  clk_div_mode         =      0;  //  2 bits 0 div off, 1 fast lock, 2 resync, 3 reserved
-  uint16_t clock_divider        =    150;  // 12 bits clock divider value
+  band_sel_clk_mode    =      0;  //  1 bit 0 low, 1 high
+  anti_backlash_pw     =      0;  //  1 bit antibacklash pulse 0 6 ns (frac N), 1 3 ns (int N)
+  chg_cancel           =      0;  //  1 bit charge pump cancelation 0 disabled, 1 enabled (int N)
+  cycle_slip_reduce    =      0;  //  1 bit cycle slip 0 disabled, 1 enabled
+  clk_div_mode         =      0;  //  2 bits 0 div off, 1 fast lock, 2 resync, 3 reserved
+  clock_divider        =    150;  // 12 bits clock divider value
 
   // Register 4:
-  uint8_t  feedback_sel         =      1;  //   1 bit 0 divided, 1 fundamental
-  uint8_t  rf_div_sel           =      5;  //   3 bits 0 /1, 1 /2, 2 /4, 3 /8 4 /16, 5 /32, 6 /64, 7 reserved
-  uint8_t  band_select_clkdiv   =      4;  //   8 bits band select 1 to 255
-  uint8_t  vco_pwrdown          =      0;  //   1 bit power 0 up, 1 down
-  uint8_t  mute_till_ld         =      1;  //   1 bit mute till LD 0 disabled, 1 enabled
-  uint8_t  aux_out_sel          =      0;  //   1 bit 0 divided out, 1 fundamental
-  uint8_t  aux_out_ena          =      1;  //   1 bit 0 disabled, 1 enabled
-  uint8_t  aux_out_pwr          =      3;  //   2 bits 0 -4 dBm, 1 -1 dBm, 2 +2 dBm, 3 +5 dBm
-  uint8_t  rf_out_ena           =      1;  //   1 bit 0 disabled, 1 enabled
-  uint8_t  rf_out_pwr           =      3;  //   2 bits 0 -4 dBm, 1 -1 dBm, 2 +2 dBm, 3 +5 dBm
+  feedback_sel         =      1;  //   1 bit 0 divided, 1 fundamental
+  rf_div_sel           =      5;  //   3 bits 0 /1, 1 /2, 2 /4, 3 /8 4 /16, 5 /32, 6 /64, 7 reserved
+  band_select_clkdiv   =      4;  //   8 bits band select 1 to 255
+  vco_pwrdown          =      0;  //   1 bit power 0 up, 1 down
+  mute_till_ld         =      1;  //   1 bit mute till LD 0 disabled, 1 enabled
+  aux_out_sel          =      0;  //   1 bit 0 divided out, 1 fundamental
+  aux_out_ena          =      1;  //   1 bit 0 disabled, 1 enabled
+  aux_out_pwr          =      3;  //   2 bits 0 -4 dBm, 1 -1 dBm, 2 +2 dBm, 3 +5 dBm
+  rf_out_ena           =      1;  //   1 bit 0 disabled, 1 enabled
+  rf_out_pwr           =      3;  //   2 bits 0 -4 dBm, 1 -1 dBm, 2 +2 dBm, 3 +5 dBm
 
   // Register 5:
-  uint8_t  ld_pinmode           =      1;  //   2 bits, 0 low, 1 digital LD, 2 low, 3 high
+  ld_pinmode           =      1;  //   2 bits, 0 low, 1 digital LD, 2 low, 3 high
 
-  uint32_t pfd_freq             = (ref_clk * (1 + ref_doubler )) / (r_counter * ((1 + ref_by_2)));
+  pfd_freq             = (ref_clk * (1 + ref_doubler )) / (r_counter * ((1 + ref_by_2)));
 }
 
 // assemble register fields
 void assemble_registers() {
-  if(frequency >= 2200000000) rf_div_sel = 0;
-  if(frequency  < 2200000000) rf_div_sel = 1;
-  if(frequency  < 1100000000) rf_div_sel = 2;
-  if(frequency  <  550000000) rf_div_sel = 3;
-  if(frequency  <  275000000) rf_div_sel = 4;
-  if(frequency  <  137500000) rf_div_sel = 5;
-  if(frequency  <   68750000) rf_div_sel = 6;
+  // 38.375 to 68.75 MHz fed to N counter from 2200 to 4400 MHz VCO
+  if(frequency >= 2200000000ul) rf_div_sel = 0;
+  if(frequency  < 2200000000ul) rf_div_sel = 1;
+  if(frequency  < 1100000000ul) rf_div_sel = 2;
+  if(frequency  <  550000000ul) rf_div_sel = 3;
+  if(frequency  <  275000000ul) rf_div_sel = 4;
+  if(frequency  <  137500000ul) rf_div_sel = 5;
+  if(frequency  <   68750000ul) rf_div_sel = 6; 
   
   // calculate VCO to PFD divide by N
   INT  =   (frequency * (1 << rf_div_sel)) / pfd_freq;
@@ -247,11 +307,12 @@ void updateAllRegisters() {
 
 void setup() {
 
-  InitPins();
+  InitPins();    // initialize hardware pins.
+  InitFields();  // initialize variables for register fields.
 
   Serial.begin(57600);
   
-  delay(500);
+  delay(7000);
 
   // read saved registers from eeprom
   // check checksum
@@ -260,7 +321,9 @@ void setup() {
   // display global variable and register status
 
   assemble_registers();
+
   updateAllRegisters();
+
 }
 
 char key, cwmode=0;
@@ -268,7 +331,7 @@ char key, cwmode=0;
 void loop() {
 
   UserConfig();
-
+/*
   while (Serial.available() == 0) {}
   key = Serial.read();
   Serial.print("key ");
@@ -332,6 +395,7 @@ void loop() {
     assemble_registers();
     updateAllRegisters();
   }
+*/
 
   // LED debug
   digitalWrite(LEDD7Pin, digitalRead(LDPin));
