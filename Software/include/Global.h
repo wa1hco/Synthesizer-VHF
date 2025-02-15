@@ -7,28 +7,28 @@
 
 // declare useful macros
 #define SHL(x,y) ((uint32_t)1<<y)*x
-extern uint32_t ref_cll;
 
 // declare the global variables
 extern sConfig_t Config;
 extern char      Msg[];
 
-extern uint32_t frequency;            // setting
-extern uint32_t ref_clk;              // configuration
+extern uint32_t  Fvco;                // vco out, input to rf_div_sel divider
+extern uint32_t  Fout;                // user setting
+extern uint32_t  Fref;                // configuration
 
-extern uint32_t pfd_freq;             // derived
+extern uint32_t  Fpfd;                // Fref / R and other factors
 
-extern uint32_t reg[6];               // 6 32 bit values
+extern uint32_t  reg[6];              // 6 32 bit values
 
 // Register fields
 // Register 0: VCO to PFD, divide by N, N = INT + FRAC/MOD 
-extern uint16_t INT;                  // 16 bit integer  {23, 75} to 65535
-extern uint16_t FRAC;                 // 12 bit fraction 0 to (MOD - 1)
+extern uint16_t  INT;                 // 16 bit integer  {23, 75} to 65535
+extern uint16_t  FRAC;                // 12 bit fraction 0 to (MOD - 1)
 
 // Values for register fields
 // Register 1: 
 extern uint8_t  phase_adj;            //  1 bit
-extern uint8_t  prescaler;            //  1 bit 0 4/5 up to 3.6GHz, 1 8/9 up to 
+extern uint8_t  prescaler;            //  1 bit 0 4/5 Fvco < 3.6 GHz, 1 8/9 Fvco > 3.6 GHz 
 extern uint16_t phase;                // 12 bits PHASE counter, double buffered, recommended value
 extern uint16_t MOD;                  // 12 bits MOD, double buffered
 
@@ -49,7 +49,7 @@ extern uint8_t  counter_reset;        //  1 bit 0 disabled, 1 enabled
 
 // Register 3:
 extern uint8_t  band_sel_clk_mode;    //  1 bit 0 low, 1 high
-extern uint8_t  anti_backlash_pw;     //  1 bit antibacklash pulse 0 6 ns (frac N), 1 3 ns (int N)
+extern uint8_t  abp;                  //  1 bit antibacklash pulse 0 6 ns (frac N), 1 3 ns (int N)
 extern uint8_t  chg_cancel;           //  1 bit charge pump cancelation 0 disabled, 1 enabled (int N)
 extern uint8_t  cycle_slip_reduce;    //  1 bit cycle slip 0 disabled, 1 enabled
 extern uint8_t  clk_div_mode;         //  2 bits 0 div off, 1 fast lock, 2 resync, 3 reserved

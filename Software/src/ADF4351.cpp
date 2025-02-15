@@ -25,12 +25,13 @@ sConfig_t Config;
 // INT 23 to 65535 for 4/5 prescaler, 75 to 65535 for 8/9 prescalar
 
 // declare user configuration
-uint32_t frequency;           // output frequency
+uint32_t Fout;           // output frequency
+
 // declare board configuration
-uint32_t ref_clk;             // reference clock
+uint32_t Fref;             // reference clock
 
 // declare derived configuration
-uint32_t pfd_freq;
+uint32_t Fpfd;
 
 // declare the register array
 uint32_t reg[6];              // 6 32 bit values
@@ -64,7 +65,7 @@ uint8_t  counter_reset;       //  1 bit 0 disabled, 1 enabled
 
 // Register 3:
 uint8_t  band_sel_clk_mode;   //  1 bit 0 low, 1 high
-uint8_t  anti_backlash_pw;    //  1 bit antibacklash pulse 0 6 ns (frac N), 1 3 ns (int N)
+uint8_t  abp;                 //  1 bit antibacklash pulse 0 6 ns (frac N), 1 3 ns (int N)
 uint8_t  chg_cancel;          //  1 bit charge pump cancelation 0 disabled, 1 enabled (int N)
 uint8_t  cycle_slip_reduce;   //  1 bit cycle slip 0 disabled, 1 enabled
 uint8_t  clk_div_mode;        //  2 bits 0 div off, 1 fast lock, 2 resync, 3 reserved
@@ -87,8 +88,8 @@ uint8_t  ld_pinmode;          //   2 bits, 0 low, 1 digital LD, 2 low, 3 high
 
 // Initialize the register fields in global variables
 void InitFields() {
-  frequency            =      50200000; // 50.2 MHz
-  ref_clk              =      25000000; // 25 MHz
+  Fout                 =      50200000; // 50.2 MHz
+  Fref                 =      25000000; // 25 MHz
   // Register 0: VCO to PFD, divide by N, N = INT + FRAC/MOD 
   INT                  =      0;   // 16 bit integer  {23, 75} to 65535
   FRAC                 =      0;   // 12 bit fraction 0 to (MOD - 1)
@@ -104,7 +105,7 @@ void InitFields() {
   noise_mode           =      0;  //  2 bits 0 low noise, 3 low spur
   muxout               =      3;  //  3 bits 0 float, 1 DVdd, 2 DGND, 3 R out, 4 N out, 5 analog LD, 6 digital LD, reserved
   ref_doubler          =      0;  //  1 bit 
-  ref_by_2             =      1;  //  1 bit RDIV/2
+  ref_by_2             =      0;  //  1 bit RDIV/2
   r_counter            =     10;  // 10 bits R counter, double buffered
   dbl_buf              =      0;  //  1 bit 0 disabled, 1 enabled
   charge_pump_current  = 0b0111;  //  4 bits 0 .31 mA, 7 2.5 mA, 15 5.0 mA, assuming 5.1K resistor
@@ -117,18 +118,18 @@ void InitFields() {
 
   // Register 3:
   band_sel_clk_mode    =      0;  //  1 bit 0 low, 1 high
-  anti_backlash_pw     =      0;  //  1 bit antibacklash pulse 0 6 ns (frac N), 1 3 ns (int N)
+  abp                  =      0;  //  1 bit antibacklash pulse 0 6 ns (frac N), 1 3 ns (int N)
   chg_cancel           =      0;  //  1 bit charge pump cancelation 0 disabled, 1 enabled (int N)
   cycle_slip_reduce    =      0;  //  1 bit cycle slip 0 disabled, 1 enabled
   clk_div_mode         =      0;  //  2 bits 0 div off, 1 fast lock, 2 resync, 3 reserved
   clock_divider        =    150;  // 12 bits clock divider value
 
   // Register 4:
-  feedback_sel         =      1;  //   1 bit 0 divided, 1 fundamental
+  feedback_sel         =      0;  //   1 bit 0 divided, 1 fundamental
   rf_div_sel           =      5;  //   3 bits 0 /1, 1 /2, 2 /4, 3 /8 4 /16, 5 /32, 6 /64, 7 reserved
   band_select_clkdiv   =      4;  //   8 bits band select 1 to 255
   vco_pwrdown          =      0;  //   1 bit power 0 up, 1 down
-  mute_till_ld         =      1;  //   1 bit mute till LD 0 disabled, 1 enabled
+  mute_till_ld         =      0;  //   1 bit mute till LD 0 disabled, 1 enabled
   aux_out_sel          =      0;  //   1 bit 0 divided out, 1 fundamental
   aux_out_ena          =      1;  //   1 bit 0 disabled, 1 enabled
   aux_out_pwr          =      3;  //   2 bits 0 -4 dBm, 1 -1 dBm, 2 +2 dBm, 3 +5 dBm
@@ -137,32 +138,127 @@ void InitFields() {
 
   // Register 5:
   ld_pinmode           =      1;  //   2 bits, 0 low, 1 digital LD, 2 low, 3 high
+}
 
-  pfd_freq             = (ref_clk * (1 + ref_doubler )) / (r_counter * ((1 + ref_by_2)));
+void calculate_fields() {
+  // divide vco range down to include output frequency
+  if(Fout >= 2200000000ul) rf_div_sel = 0;
+  if(Fout  < 2200000000ul) rf_div_sel = 1;
+  if(Fout  < 1100000000ul) rf_div_sel = 2;
+  if(Fout  <  550000000ul) rf_div_sel = 3;
+  if(Fout  <  275000000ul) rf_div_sel = 4;
+  if(Fout  <  137500000ul) rf_div_sel = 5;
+  if(Fout  <   68750000ul) rf_div_sel = 6; 
+  
+  // Fvco 2200 to 4400 MHz 
+  uint32_t Fvco = Fout * (1 << rf_div_sel);
+  float target;
+
+  // Fpfd common frequency after N and R dividers
+
+  bool IntN = true; // is integer N mode feasible
+
+  // find a greatest common divsor between Fout and Fref, integer N mode
+  uint32_t Fpfd = binaryGCD(Fout, Fref);
+  uint16_t Ffrac;
+  INT = Fout / Fpfd;
+  uint16_t R = Fref / Fpfd;
+
+  if (Fpfd > 125000) {
+    band_select_clkdiv = Fpfd / 125000;
+    if (band_select_clkdiv > 256) {
+      Serial.print("calculate_fields: band_select_clkdiv ");
+      Serial.print(band_select_clkdiv);
+      Serial.println("greater than 255");
+    }
+  }
+  
+  if (R > 1023) {
+    snprintf(Msg, 80, "calculate_fields: R %d > 1023", R);
+    Serial.println(Msg);
+    IntN = false;
+  }
+  else if (INT > 65356) {
+    snprintf(Msg, 80, "calculate_fields: INT %d > 65536", INT);
+    Serial.println(Msg);
+    IntN = false;
+  }
+  else if (Fpfd > 32000000) {
+    snprintf(Msg, 80, "calculate_fields: Fpdf %d > 32 MHz", Fpfd);
+    Serial.println(Msg);
+    IntN = false;
+  } 
+  else if (Fpfd < 100000) {
+    snprintf(Msg, 80, "calculate_fields: Fpdf %d < 100000", Fpfd);
+    Serial.println(Msg);
+    IntN = false;
+  }
+  else {
+    IntN = true;
+  }
+
+  if (IntN) {
+    Serial.println("calculate_fields: Integer N possible");
+    // calculate VCO to PFD divide by N
+    FRAC = 0;
+    ldf = 1; // monitor 40 pfd cycles
+    ldp = 1; // 6 ns
+    band_sel_clk_mode = 0; // Fpfd <= 125 KHz
+    abp = 1; // antibacklash pulse width 3 ns.
+  }
+  else  { // fractional N required
+    Serial.println("calculate_fields: Fractional N required");
+    ldf = 0; // monitor 5 pfd cycles
+    ldp = 0; // 10 ns
+
+    R = 25; // initial default for fractional N
+    Fpfd = Fref / (uint32_t) R;
+
+    band_sel_clk_mode = 1; // Fpfd > 125 KHz, band select clock divider <= 254
+    abp = 0; // antibacklash pulse width 6 ns
+
+    INT = Fout / Fpfd;         // floor(Fout/Fpfd)
+    Ffrac = (uint16_t) (Fout - (uint32_t) INT * Fpfd); // remainder
+    target = (float) Ffrac / (float) Fpfd;
+    rational_t result = rational_approximation(target, 4095);
+    // scale denominator up as much as possible
+    uint16_t scale = (uint16_t) 4095 / result.denominator; // floor, rounded down 
+    FRAC = scale * result.numerator;
+    MOD  = scale * result.denominator;  
+    snprintf(Msg, 80, "ass_reg: num %d, denom %d", result.numerator, result.denominator);
+    Serial.println(Msg);
+  }
+
+  snprintf(Msg, 80, "calculate_fields(): Fout %lu, Fpfd %lu, INT %d, R %d", Fout, Fpfd, INT, R);
+  Serial.print(Msg);
+  if(!IntN){
+    snprintf(Msg, 80, ", Ffrac %d, target %f, FRAC %d, MOD %d", Ffrac, target, FRAC, MOD);
+    Serial.print(Msg);
+  }
+  Serial.println();  
 }
 
 // assemble register fields
 void assemble_registers() {
   // 38.375 to 68.75 MHz fed to N counter from 2200 to 4400 MHz VCO
-  if(frequency >= 2200000000ul) rf_div_sel = 0;
-  if(frequency  < 2200000000ul) rf_div_sel = 1;
-  if(frequency  < 1100000000ul) rf_div_sel = 2;
-  if(frequency  <  550000000ul) rf_div_sel = 3;
-  if(frequency  <  275000000ul) rf_div_sel = 4;
-  if(frequency  <  137500000ul) rf_div_sel = 5;
-  if(frequency  <   68750000ul) rf_div_sel = 6; 
-  
-  // calculate VCO to PFD divide by N
-  INT  =   (frequency * (1 << rf_div_sel)) / pfd_freq;
-  FRAC = (((frequency * (1 << rf_div_sel)) % pfd_freq) * 4095) / pfd_freq;
-  
+  if(Fout >= 2200000000ul) rf_div_sel = 0;
+  if(Fout  < 2200000000ul) rf_div_sel = 1;
+  if(Fout  < 1100000000ul) rf_div_sel = 2;
+  if(Fout  <  550000000ul) rf_div_sel = 3;
+  if(Fout  <  275000000ul) rf_div_sel = 4;
+  if(Fout  <  137500000ul) rf_div_sel = 5;
+  if(Fout  <   68750000ul) rf_div_sel = 6; 
+    
   // Positions for register fields
   // assemble the register fragments into register array
   //Serial.println("prep_reg: ");
   reg[0] = SHL(INT,                15) | // 16 bits /N from VCO to PFD
            SHL(FRAC,                3) | // 12 bits
            0b000;;
-  //Serial.printHexln(reg[0]);
+
+  snprintf(Msg, 80, "assemble_registers: INT %d, FRAC %d, reg[0] %lx", INT, FRAC, reg[0]);
+  Serial.println(Msg);
+
   reg[1] = SHL(phase_adj,          28) | //  1 bit 0 off, 1 on
            SHL(prescaler,          27) | //  1 bit 0 4/5, 1 8/9
            SHL(phase,              15) | // 12 bits 
@@ -185,7 +281,7 @@ void assemble_registers() {
            0b010;
   //Serial.printHexln(reg[2]);
   reg[3] = SHL(band_sel_clk_mode,  23) | //  1
-           SHL(anti_backlash_pw,   22) | //  1
+           SHL(abp,                22) | //  1
            SHL(chg_cancel,         21) | //  1
            SHL(cycle_slip_reduce,  18) | //  1
            SHL(clk_div_mode,       15) | //  2 bits
@@ -235,7 +331,7 @@ void disassemble_registers() {
   counter_reset        = (reg[2] >>  3) & 0x01;
   
   band_sel_clk_mode    = (reg[3] >> 23) & 0x01;
-  anti_backlash_pw     = (reg[3] >> 22) & 0x01; 
+  abp                  = (reg[3] >> 22) & 0x01; 
   chg_cancel           = (reg[3] >> 21) & 0x01; 
   cycle_slip_reduce    = (reg[3] >> 18) & 0x01; 
   clk_div_mode         = (reg[3] >> 15) & 0x03;
@@ -260,53 +356,49 @@ void bitBangData(byte _send)  // This function transmit the data via bitbanging
   for(int i=7; i>=0; i--)  // 8 bits in a byte
   {
     // #define  bitRead(value, bit) (((value) >> (bit)) & 0x01)
-    digitalWrite(MOSIPin, bitRead(_send, i)); Serial.print(bitRead(_send, i));   // Set MOSI
-    digitalWrite(J6_3Pin, bitRead(_send, i)); // set test port
+    digitalWrite(MOSIPin, bitRead(_send, i));      // Set MOSI
+    digitalWrite(J6_3Pin, bitRead(_send, i));      // set test port
 
-    digitalWrite(SCKPin,  HIGH);                  // SCK high
+    digitalWrite(SCKPin,  HIGH);                   // SCK high
     digitalWrite(J6_2Pin, HIGH);
 
-    //bitWrite(_receive, i, digitalRead(MISOPin)); // Capture MISO
-    digitalWrite(SCKPin,  LOW);                   // SCK low
+    digitalWrite(SCKPin,  LOW);                    // SCK low
     digitalWrite(J6_2Pin, LOW);
   } 
-  Serial.print(" ");
-  return;        // Return the received data
+  return;
 }
 
 void sendRegisterToAdf(uint16_t reg_id) {
   digitalWrite(SSPin, LOW);
   delayMicroseconds(10);
 
-  bitBangData((uint8_t)(reg[reg_id] >> 24)); Serial.printHex((uint8_t) (reg[reg_id] >> 24)); Serial.print(" ");
-  bitBangData((uint8_t)(reg[reg_id] >> 16)); Serial.printHex((uint8_t) (reg[reg_id] >> 16)); Serial.print(" ");
-  bitBangData((uint8_t)(reg[reg_id] >> 8));  Serial.printHex((uint8_t) (reg[reg_id] >>  8)); Serial.print(" ");
-  bitBangData((uint8_t)(reg[reg_id]     ));  Serial.printHex((uint8_t) (reg[reg_id]      )); Serial.print(" ");
+  //bitBangData((uint8_t)(reg[reg_id] >> 24)); Serial.printHex((uint8_t) (reg[reg_id] >> 24)); Serial.print(" ");
+  //bitBangData((uint8_t)(reg[reg_id] >> 16)); Serial.printHex((uint8_t) (reg[reg_id] >> 16)); Serial.print(" ");
+  //bitBangData((uint8_t)(reg[reg_id] >> 8));  Serial.printHex((uint8_t) (reg[reg_id] >>  8)); Serial.print(" ");
+  //bitBangData((uint8_t)(reg[reg_id]     ));  Serial.printHex((uint8_t) (reg[reg_id]      )); Serial.print(" ");
+  //Serial.println();
   
   digitalWrite(SSPin, HIGH);
   delayMicroseconds(5);
   digitalWrite(SSPin, LOW);
   delayMicroseconds(2500);
-  Serial.println();
 }
 
 void updateAllRegisters() {
   for(int i=5; i>=0; i--) {
     sendRegisterToAdf(i);
   }
-  Serial.println();
-  Serial.print("FREQ: "); Serial.print((uint32_t)frequency);
-  Serial.println();
+  //Serial.println();
+  //Serial.print("FREQ: "); Serial.print((uint32_t)Fout);
+  //Serial.println();
 
-  uint32_t pfd_freq = (ref_clk * (ref_doubler + 1)) / (r_counter * (ref_by_2 + 1));
-  Serial.print("r_counter ");
-  Serial.print(r_counter);
-  Serial.print(" pfd_freq ");
-  Serial.println(pfd_freq);
+  //Serial.print("r_counter ");
+  //Serial.print(r_counter);
+  //Serial.print(" Fpfd ");
+  //Serial.println(Fpfd);
 }
 
 void setup() {
-
   InitPins();    // initialize hardware pins.
   InitFields();  // initialize variables for register fields.
 
@@ -314,42 +406,42 @@ void setup() {
   
   delay(7000);
 
+  //test_rational_approx();
+
   // read saved registers from eeprom
   // check checksum
   // if good, disassemble register fields into global variables
   // if bad, initialize global variables from program defaults, save to eeprom
   // display global variable and register status
 
+  calculate_fields();
   assemble_registers();
-
   updateAllRegisters();
-
 }
 
 char key, cwmode=0;
 
 void loop() {
+//  UserConfig();
 
-  UserConfig();
-/*
   while (Serial.available() == 0) {}
   key = Serial.read();
   Serial.print("key ");
   Serial.println(key);
 
-  if(key =='x') frequency -= 10;
-  if(key =='c') frequency += 10;
-  if(key =='s') frequency -= 100;
-  if(key =='d') frequency += 100;
-  if(key =='w') frequency -= 1000;
-  if(key =='e') frequency += 1000;
-  if(key =='2') frequency -= 10000; // 10K
-  if(key =='3') frequency += 10000;
-  if(key =='1') frequency -= 100000; // 100K
-  if(key =='4') frequency += 100000;
-  if(key =='5') frequency -= 10000000; // 10M
-  if(key =='6') frequency += 10000000;
-  if(key =='/') rf_out_ena     = 1 - rf_out_ena; // invert
+  if(key =='x') Fout -= 10;
+  if(key =='c') Fout += 10;
+  if(key =='s') Fout -= 100;
+  if(key =='d') Fout += 100;
+  if(key =='w') Fout -= 1000;
+  if(key =='e') Fout += 1000;
+  if(key =='2') Fout -= 10000; // 10K
+  if(key =='3') Fout += 10000;
+  if(key =='1') Fout -= 100000; // 100K
+  if(key =='4') Fout += 100000;
+  if(key =='5') Fout -= 10000000; // 10M
+  if(key =='6') Fout += 10000000;
+  if(key =='/') rf_out_ena = 1 - rf_out_ena; // invert
 
   if(key == 'm') {
     muxout = (muxout + 1) % 8;
@@ -385,17 +477,18 @@ void loop() {
   if(key == 'p') {
     Serial.println();
     powerdown = (uint8_t) !((bool) powerdown); // invert power down bit
-    Serial.print("!powerdown ");
+    Serial.print("powerdown ");
     Serial.println(powerdown);
     assemble_registers();  // prepare all, but only use [2]
     Serial.print("reg[2] ");
-    Serial.println(reg[2]);
+    Serial.println(reg[2], HEX);
     sendRegisterToAdf(2); // prints bits and hex
-  } else {
-    assemble_registers();
-    updateAllRegisters();
-  }
-*/
+  } 
+  
+  calculate_fields();
+  assemble_registers();
+  updateAllRegisters();
+  PrintConfig();    
 
   // LED debug
   digitalWrite(LEDD7Pin, digitalRead(LDPin));

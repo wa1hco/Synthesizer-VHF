@@ -30,24 +30,25 @@
 // steps are taken at once.
 
 
-rational_t rational_approximation(double target, uint32_t maxdenom)
-{
+rational_t rational_approximation(float target, uint16_t maxdenom) {
   rational_t retval;
-  double mediant;  // float does not have enough resolution
+  float mediant;  // float does not have enough resolution
                    // to deal with single-digit differences
                    // between numbers above 10^8.
-  double N, Ndenom, Ndenom_min;
-  uint32_t a = 0, b = 1, c = 1, d = 1, ac, bd, Nint;
+  float N, Ndenom, Ndenom_min;
+  uint16_t a = 0, b = 1, c = 1, d = 1, ac, bd, Nint;
   const int maxIter = 100;
 
   if(target > 1) {
     // Invalid
+    Serial.println("rat_approx: target > 1");
     retval.numerator = 1;
     retval.denominator = 1;
     return retval;
   }
   if(target < 0) {
     // Invalid
+    Serial.println("rat_approx: target < 0");
     retval.numerator = 0;
     retval.denominator = 1;
     return retval;
@@ -57,8 +58,8 @@ rational_t rational_approximation(double target, uint32_t maxdenom)
   }
 
   mediant = 0;
-  Ndenom_min = 1/((double) 10*maxdenom);
-  int ii = 0;
+  Ndenom_min = 1/((float) 10*maxdenom);
+  uint16_t ii = 0;
   // Farey approximation loop
   while(1) {
     ac = a+c;
@@ -66,7 +67,7 @@ rational_t rational_approximation(double target, uint32_t maxdenom)
     if(bd > maxdenom || ii > maxIter) {
       // The denominator has become too big, or too many iterations.
         // Select the best of a/b and c/d.
-      if(target - a/(double)b < c/(double)d - target) {
+      if(target - a/(float)b < c/(float)d - target) {
         ac = a;
         bd = b;
       } else {
@@ -76,12 +77,12 @@ rational_t rational_approximation(double target, uint32_t maxdenom)
       break;
     }
     ii++;
-    mediant = ac/(double)bd;
+    mediant = ac/(float)bd;
     if(target < mediant) {
       // Discard c/d since the mediant is closer to the target.
       // How many times in a row should we do that?
       // N = (c - target*d)/(target*b - a), but need to check for division by zero
-      Ndenom = target * (double)b - (double)a;
+      Ndenom = target * (float)b - (float)a;
       if(Ndenom < Ndenom_min) {
         // Division by zero, or close to it!
         // This means that a/b is a very good approximation
@@ -92,7 +93,7 @@ rational_t rational_approximation(double target, uint32_t maxdenom)
         bd = b;
         break;
       }
-      N = (c - target * (double)d)/Ndenom;
+      N = (c - target * (float)d)/Ndenom;
       Nint = floor(N);
       if(Nint < 1) {
         // Nint should be at least 1, a rounding error may cause N to be just less than that
@@ -101,7 +102,7 @@ rational_t rational_approximation(double target, uint32_t maxdenom)
       // Check if the denominator will become too large
       if(d + Nint*b > maxdenom) {
         // Limit N, as the denominator would otherwise become too large
-        N = (maxdenom - d)/(double)b;
+        N = (maxdenom - d)/(float)b;
         Nint = floor(N);
       }
       // Fast forward to a good c/d.
@@ -112,7 +113,7 @@ rational_t rational_approximation(double target, uint32_t maxdenom)
       // Discard a/b since the mediant is closer to the target.
       // How many times in a row should we do that?
       // N = (target*b - a)/(c - target*d), but need to check for division by zero
-      Ndenom = (double)c - target * (double)d;
+      Ndenom = (float)c - target * (float)d;
       if(Ndenom < Ndenom_min) {
         // Division by zero, or close to it!
         // This means that c/d is a very good approximation
@@ -123,7 +124,7 @@ rational_t rational_approximation(double target, uint32_t maxdenom)
         bd = d;
         break;
       }
-      N = (target * (double)b - a)/Ndenom;
+      N = (target * (float)b - a)/Ndenom;
       Nint = floor(N);
       if(Nint < 1) {
         // Nint should be at least 1, a rounding error may cause N to be just less than that
@@ -132,7 +133,7 @@ rational_t rational_approximation(double target, uint32_t maxdenom)
       // Check if the denominator will become too large
       if(b + Nint*d > maxdenom) {
         // Limit N, as the denominator would otherwise become too large
-        N = (maxdenom - b)/(double)d;
+        N = (maxdenom - b)/(float)d;
         Nint = floor(N);
       }
       // Fast forward to a good a/b.

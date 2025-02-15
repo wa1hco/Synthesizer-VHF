@@ -118,6 +118,45 @@ uint32_t b_gcd(uint32_t num1, uint32_t num2)
 	return (num2 << pof2);
 }
 
+void printBinary(byte value) {
+  for (int i = 7; i >= 0; i--) {
+    Serial.print(bitRead(value, i)); // Reads and prints each bit
+  }
+}
+
+// pretty print synthesizer configuration on serial port
+void PrintConfig() {
+  Serial.println("ADF4351 Synthesizer, (c) wa1hco, V0.1, Creative Commons");
+  for(int ii = 0; ii < 6; ii++) {  // for each register
+    byte b;
+    Serial.print("Reg "); 
+    Serial.print(ii);
+    Serial.print(" ");
+    b = (uint8_t) (reg[ii] >> 24); printBinary(b); Serial.print(" "); Serial.printHex(b); Serial.print(" ");
+    b = (uint8_t) (reg[ii] >> 16); printBinary(b); Serial.print(" "); Serial.printHex(b); Serial.print(" ");
+    b = (uint8_t) (reg[ii] >>  8); printBinary(b); Serial.print(" "); Serial.printHex(b); Serial.print(" ");
+    b = (uint8_t) (reg[ii]      ); printBinary(b); Serial.print(" "); Serial.printHex(b); Serial.print(" ");
+    Serial.println();
+  } 
+  snprintf(Msg, 120, "      Fout %lu, Fpfd %lu", Fout, Fpfd);            Serial.println(Msg);
+  snprintf(Msg, 120, "Reg 0 INT       %d, FRAC   %d",  INT, FRAC);       Serial.println(Msg);
+  snprintf(Msg, 120, "Reg 1 prescaler %d, MOD    %d",  prescaler, MOD);  Serial.println(Msg);
+  snprintf(Msg, 120, "Reg 2 nm        %d, muxout %d, ref*2   %d, ref/2        %d, R       %d, cpc %d, ldf %d, ldp %d", 
+                           noise_mode, muxout, ref_doubler, ref_by_2, r_counter, charge_pump_current, ldf, ldp); Serial.println(Msg);
+  snprintf(Msg, 120, "Reg 3 bs_mode   %d, abp    %d, clk_div %d, ", 
+                           band_sel_clk_mode, abp, chg_cancel, clock_divider); Serial.println(Msg);
+  snprintf(Msg, 120, "Reg 4 rf_dev    %d, band_sel_div %d, mute_ld %d, aux %d, rf %d", 
+                           1<<rf_div_sel, band_select_clkdiv, mute_till_ld, aux_out_ena, rf_out_ena); Serial.println(Msg);
+  snprintf(Msg, 120, "Reg 5 ld_pinmode %d", ld_pinmode); Serial.println(Msg);
+
+  // DEBUG
+  Serial.print("CRC ");
+  Serial.print(Config.CRC16, HEX);
+  Serial.println();
+
+} // PrintConfig()
+
+
 void UserConfig() {
   static char * Token;
   uint8_t TokenCnt;
@@ -130,7 +169,7 @@ void UserConfig() {
 
   if (needCmdPrompt) {
     Serial.println("UserConfig: ");
-    PrintConfig(Config);
+    PrintConfig();
     FlushLines();
     needCmdPrompt = false;
     snprintf(Msg, 80, "%s", "Command list: freq, rf, aux, ...");
@@ -172,10 +211,10 @@ void UserConfig() {
   Serial.println();
 
   if (strcmp(Tokens[0], "freq") == 0) {
-    frequency = FreqCmd();
+    Fout = FreqCmd();
     // set variables from frequency
-    uint32_t GCD = b_gcd(frequency, ref_clk);
-    snprintf(Msg, 80, "FreqCmd: freq %ul, ref %ul, GCD %ul", frequency, ref_clk, GCD);
+    uint32_t GCD = b_gcd(Fout, Fref);
+    snprintf(Msg, 80, "FreqCmd: freq %ul, ref %ul, GCD %ul", Fout, Fref, GCD);
   }
   else if (strcmp(Tokens[0], "ref") == 0) {
     Serial.println("UserConfig: ref cmd");
@@ -203,7 +242,7 @@ void UserConfig() {
 } // UserConfig() 
 
 // called when line available starting with Tokens[0] is freq command
-// Get frequency
+// Get Fout
 uint32_t FreqCmd() {
   char * endptr;
   char * Token;
@@ -213,7 +252,7 @@ uint32_t FreqCmd() {
     Serial.println("Token NULL, incomplete command");
     return false;
   }
-  // get the frequency, first check errors
+  // get the Fout, first check errors
   uint32_t ulFreq = strtoul(Token, &endptr, 10);
   if (errno == ERANGE) {
     Serial.println("FreqCmd: strtol() ERANGE");

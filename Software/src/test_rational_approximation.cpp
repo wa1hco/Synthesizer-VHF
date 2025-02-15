@@ -55,7 +55,8 @@ void test_rational_approx()
       if(result.iterations > test[ii].maxiter) {
         Serial.printf("Too many iterations (max %lu) ", test[ii].maxiter);
       }
-      Serial.printf("Expected %lu/%lu\n", test[ii].expected_numerator, test[ii].expected_denominator);
+      Serial.printf("Expected %lu/%lu", test[ii].expected_numerator, test[ii].expected_denominator);
+      Serial.println();
     }
   } // for each test
 } // test_rational_approx()

@@ -10,5 +10,6 @@
 void UserConfig();
 uint32_t binaryGCD(uint32_t u, uint32_t v);
 uint32_t FreqCmd();
+void     PrintConfig(); // pretty print config on serial port
 
 #endif
