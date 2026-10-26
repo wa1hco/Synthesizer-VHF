@@ -1,0 +1,37 @@
+A rational approximation algorithm that takes a rational number pair as input and 
+produces an approximation with a smaller denominator is the continued fraction method. 
+This algorithm is efficient and widely used for finding the best rational 
+approximations with smaller denominators13. Here's how the algorithm works:
+
+    Convert the input rational number (a/b) into a continued fraction expansion.
+    Generate convergents by truncating the continued fraction at different points.
+    Evaluate each convergent to find the best approximation with a smaller denominator.
+
+The process can be described more formally as follows:
+
+    Input: Rational number a/b
+    Initialize: p₀ = a, p₁ = b, q₀ = 1, q₁ = 0
+    While p₁ ≠ 0:
+        Calculate quotient and remainder: d = p₀ // p₁, r = p₀ % p₁
+        Update: p₀ = p₁, p₁ = r, q₀ = q₁, q₁ = q₀ - d * q₁
+    The convergents are given by the pairs (p₀, q₀) at each step
+
+Each convergent represents a rational approximation, and as you progress through 
+the algorithm, you'll find approximations with increasingly smaller denominators
+(https://sites.math.rutgers.edu/~sk1233/courses/ANT-F14/lec2.pdf). 
+The algorithm naturally produces the best rational approximations, meaning 
+that each approximation is better than any other fraction with a smaller denominator
+  (
+    https://www.reddit.com/r/math/comments/umjvgb/is_there_an_efficient_algorithm_to_find_the/
+    https://en.wikipedia.org/wiki/Continued_fraction#Best_rational_approximations
+    https://doc.sagemath.org/pdf/en/reference/diophantine_approximation/diophantine_approximation.pdf
+  ). 
+This method is particularly effective because:
+
+    It generates all best appr
+
+    oximations of the first kind6.
+    It's efficient, avoiding the need for exhaustive searches5.
+    It provides a systematic way to find approximations with decreasing denominator sizes3.
+
+By using this algorithm, you can find rational approximations to your input fraction that have smaller denominators while maintaining the best possible accuracy for those denominator sizes.

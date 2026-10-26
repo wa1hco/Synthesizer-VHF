@@ -1,7 +1,5 @@
-# For PCBs designed using KiCad: https://www.kicad.org/
-# Format documentation: https://kicad.org/help/file-formats/
-
-# Temporary files
+# KiCad temporary files
+# https://www.kicad.org/
 *.000
 *.bak
 *.bck
@@ -19,20 +17,25 @@ _autosave-*
 fp-info-cache
 ~*.lck
 \#auto_saved_files#
+*.kicad_*.lck
 
-# Netlist files (exported from Eeschema)
+# Netlist, autorouter, and exported BOM files
 *.net
-
-# Autorouter files (exported from Pcbnew)
 *.dsn
 *.ses
-
-# Exported BOM files
 *.xml
 *.csv
 
-# generated for jlcpcb
-Hardware/jlcpcb/
-Hardware/CN0311-DesignSupport/
-Hardware/CN0147-DesignSupport/
-Hardware/MAX2870_EVKIT/
+# Generated fabrication output. Files already tracked under hardware/jlcpcb/ stay in git.
+hardware/jlcpcb/
+hardware/production/
+hardware/*.bak
+hardware/*-backups/
+
+# PlatformIO
+software/.pio
+software/.vscode/.browse.c_cpp.db*
+software/.vscode/c_cpp_properties.json
+software/.vscode/launch.json
+software/.vscode/ipch
+software/output.map

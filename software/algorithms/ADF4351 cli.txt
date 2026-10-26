@@ -1,0 +1,79 @@
+Control program for ADF4350/1 eval board
+
+options:
+  -h, --help            show this help message and exit
+  --device-type DEVICE_TYPE
+                        default = 1
+  --freq FREQ, -f FREQ  default = 50.0
+  --ref-freq REF_FREQ   default = 25.0
+  --r-counter R_COUNTER
+                        default = 250
+  --ref-doubler         default = False
+  --ref-div2            default = False
+  --feedback-select FEEDBACK_SELECT
+                        default = 1
+  --band-select-clock-divider BAND_SELECT_CLOCK_DIVIDER
+                        default = None
+  --band-select-clock-mode BAND_SELECT_CLOCK_MODE
+                        default = 0
+  --int INT             default = 100
+  --frac FRAC           default = 0
+  --mod MOD             default = 2
+  --phase-value PHASE_VALUE
+                        default = None
+  --prescaler-4-5       default = False
+  --low-noise-spur-mode LOW_NOISE_SPUR_MODE
+                        default = 0
+  --mux-out MUX_OUT     default = 0
+  --double-buff-r4      default = False
+  --charge-pump-current CHARGE_PUMP_CURRENT
+                        default = 2.5
+  --ldp LDP             default = 10.0
+  --pd-polarity PD_POLARITY
+                        default = 1
+  --powerdown           default = False
+  --cp-three-state      default = False
+  --counter-reset       default = False
+  --abp ABP             default = 10
+  --charge-cancel       default = False
+  --csr                 default = False
+  --clk-div-mode CLK_DIV_MODE
+                        default = 0
+  --clock-divider-value CLOCK_DIVIDER_VALUE
+                        default = 150
+  --output-divider OUTPUT_DIVIDER
+                        default = 1
+  --vco-powerdown       default = False
+  --mute-till-lock-detect
+                        default = False
+  --aux-output-select AUX_OUTPUT_SELECT
+                        default = 0
+  --aux-output-enable   default = False
+  --aux-output-power AUX_OUTPUT_POWER
+                        default = -4.0
+  --output-disable      default = False
+  --output-power OUTPUT_POWER
+                        default = 5.0
+  --ld-pin-mode LD_PIN_MODE
+                        default = 1
+  --r0 R0
+  --r1 R1
+  --r2 R2
+  --r3 R3
+  --r4 R4
+  --r5 R5
+  --interface INTERFACE
+
+
+                        INTERFACE: FX2 (default), BusPirate, tinyADF, NONE
+  --lock-detect         query adf435x digital lock detect state
+  -v                    increase verbosity
+  -V, --version         show adf435x version and exit
+  --init-none           clear init settings and exit
+  --init-stand-alone    set current settings as init for no-USB mode and exit
+  --init-always         set current settings as init for power-on and exit
+
+
+./adf435xctl --freq=1000
+./adf435xctl --freq=1000 --lock-detect
+./adf435xctl --freq=1000 --lock-detect && echo SUCCESS

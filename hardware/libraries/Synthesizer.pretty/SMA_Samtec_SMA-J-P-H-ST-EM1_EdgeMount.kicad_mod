@@ -1,0 +1,479 @@
+(footprint "SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Connector SMA, 0Hz to 20GHz, 50Ohm, Edge Mount (http://suddendocs.samtec.com/prints/sma-j-p-x-st-em1-mkt.pdf)")
+	(tags "SMA Straight Samtec Edge Mount")
+	(property "Reference" "J4"
+		(at -1.9375 -5 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "24a95b16-1a06-4042-9a6f-3f5f0c385394")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "RFOUTB"
+		(at -3.3 0.3 -90)
+		(layer "F.Fab")
+		(uuid "31c82718-9d71-4f91-aee2-999a61fc50f5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+		(at 0 0 90)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6531bf89-4e14-4a52-b75e-e98e2a4a71fe")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 90)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "93dbbb32-c5b3-49df-83c4-aa718f394439")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+		(at 0 0 90)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "56043cc2-66b5-4049-b361-ff7e161f52ee")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.76 -0.25)
+		(end -2.76 0.25)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2aedfe30-1de0-4575-b388-81176840ce56")
+	)
+	(fp_line
+		(start -2.76 0.25)
+		(end -2.26 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b7a42fc7-4b5e-4f7c-864a-32b5218074ba")
+	)
+	(fp_line
+		(start -2.26 0)
+		(end -2.76 -0.25)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "94598e43-16cc-4216-9a8e-fd26d2d622a1")
+	)
+	(fp_line
+		(start -1.71 -0.9)
+		(end -1.71 -1.84)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8f766ae9-7e24-42b0-a193-398e35f5c9fd")
+	)
+	(fp_line
+		(start -1.71 1.9)
+		(end -1.71 0.95)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6cdfd30a-5318-4557-b0f3-b5e3c45f64f7")
+	)
+	(fp_line
+		(start 1.54 -0.9)
+		(end 1.54 -1.84)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fe488081-03c3-490d-8801-f57d40fa92da")
+	)
+	(fp_line
+		(start 1.54 1.9)
+		(end 1.54 0.95)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fad4f497-5f47-4cfd-a05d-8aa84787d361")
+	)
+	(fp_line
+		(start 2.1 -4.1)
+		(end 2.1 4.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "5493666a-8bf2-460b-8379-72585152649f")
+	)
+	(fp_line
+		(start -2.6 4)
+		(end -2.6 -4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "3695b6bc-3f88-4631-939f-90af4cf5ca46")
+	)
+	(fp_line
+		(start 2.6 -4)
+		(end -2.6 -4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "f81e12c9-9766-4455-bbe3-d0f5dcd58b03")
+	)
+	(fp_line
+		(start 2.6 -4)
+		(end 2.6 -3.68)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "b3504872-7071-49bb-b06d-f6ad75f7f8e7")
+	)
+	(fp_line
+		(start 2.6 -3.68)
+		(end 12.12 -3.68)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "234422c6-8d2b-4c4a-adfc-656c36459f1f")
+	)
+	(fp_line
+		(start 2.6 3.68)
+		(end 2.6 4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "788a1da1-523b-492b-b530-12995c059cca")
+	)
+	(fp_line
+		(start 2.6 4)
+		(end -2.6 4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "30fe37ed-eadb-4dfc-a52d-13a508a23fbd")
+	)
+	(fp_line
+		(start 12.12 -3.68)
+		(end 12.12 3.68)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "a6214b1f-41b9-454a-8f71-35713ce0b288")
+	)
+	(fp_line
+		(start 12.12 3.68)
+		(end 2.6 3.68)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "5b9c6573-d388-4b48-8b6d-1b3aea13fca0")
+	)
+	(fp_line
+		(start -2.6 4)
+		(end -2.6 -4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "75e7329f-f188-4bd3-b442-6e86b72086fc")
+	)
+	(fp_line
+		(start 2.6 -4)
+		(end -2.6 -4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7af94a4f-6822-446f-9d52-e0e784c8e9a6")
+	)
+	(fp_line
+		(start 2.6 -3.68)
+		(end 2.6 -4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a53ea335-5498-4b57-b507-3bc732ce6d66")
+	)
+	(fp_line
+		(start 2.6 -3.68)
+		(end 12.12 -3.68)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6b3cb882-474e-4eaf-8f13-9ca8904fc02f")
+	)
+	(fp_line
+		(start 2.6 3.68)
+		(end 2.6 4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "140e24ba-39ef-4985-93a3-887caf1e659d")
+	)
+	(fp_line
+		(start 2.6 4)
+		(end -2.6 4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c339c60c-09e0-4dfb-ba90-622440be6463")
+	)
+	(fp_line
+		(start 12.12 -3.68)
+		(end 12.12 3.68)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "57ab35da-4999-4966-bfd2-ba3a6cf68536")
+	)
+	(fp_line
+		(start 12.12 3.68)
+		(end 2.6 3.68)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7ab213d3-d304-4b7e-ab54-eec1774721ec")
+	)
+	(fp_line
+		(start -1.71 -3.175)
+		(end -1.71 -2.365)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2f502230-cebb-4498-902f-c3ed54f4978e")
+	)
+	(fp_line
+		(start -1.71 -3.175)
+		(end 11.62 -3.175)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "30c091e0-d25c-4134-9f46-01cef9b28ada")
+	)
+	(fp_line
+		(start -1.71 -2.365)
+		(end 2.1 -2.365)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d50f694a-dda3-4b56-89f2-28178401dfdc")
+	)
+	(fp_line
+		(start -1.71 2.365)
+		(end -1.71 3.175)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "171fe551-25d2-4880-af37-e7ca68e1aa46")
+	)
+	(fp_line
+		(start -1.71 3.175)
+		(end 11.62 3.175)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11f4d425-60e5-465f-b8a1-1cf5242f8c24")
+	)
+	(fp_line
+		(start 2.1 -2.365)
+		(end 2.1 2.365)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b1fc22d1-e962-4e47-8c42-0e055579424a")
+	)
+	(fp_line
+		(start 2.1 -0.64)
+		(end 3.1 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "36fff8f1-55f8-4c6e-9205-5985c6c57487")
+	)
+	(fp_line
+		(start 2.1 2.365)
+		(end -1.71 2.365)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "88ee71da-cd4c-4823-8550-ae2440e724cb")
+	)
+	(fp_line
+		(start 3.1 0)
+		(end 2.1 0.64)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2a2e378c-cf47-4d04-92bf-413cf9bd3660")
+	)
+	(fp_line
+		(start 11.62 -3.165)
+		(end 11.62 3.165)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "817051c2-4543-4cf0-a2ca-84635b899734")
+	)
+	(fp_text user "PCB Edge"
+		(at 2.6 0 90)
+		(layer "Dwgs.User")
+		(uuid "5236f35d-9a70-4848-981c-984dfd90522a")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "50cc9656-9180-4987-b53b-12dc3d60db6b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0 0 90)
+		(size 1.27 3.2)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.1968503937)
+		(uuid "ee976c22-bd8b-423f-9f0c-1b0a3d78a7aa")
+	)
+	(pad "2" smd roundrect
+		(at -0.25 -2.825 90)
+		(size 1.35 3.7)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.1851851852)
+		(uuid "5027c4d8-22f5-4636-994d-229617829165")
+	)
+	(pad "2" smd roundrect
+		(at -0.25 -2.825 90)
+		(size 1.35 3.7)
+		(layers "B.Cu" "B.Mask")
+		(roundrect_rratio 0.1851851852)
+		(uuid "6a19bbcb-60ae-43e7-8e98-851f57a1208b")
+	)
+	(pad "2" smd roundrect
+		(at -0.25 2.825 90)
+		(size 1.35 3.7)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.1851851852)
+		(uuid "86bc4468-7392-4c0b-8748-2139b9c93059")
+	)
+	(pad "2" smd roundrect
+		(at -0.25 2.825 90)
+		(size 1.35 3.7)
+		(layers "B.Cu" "B.Mask")
+		(roundrect_rratio 0.1851851852)
+		(uuid "d66a0d2e-4310-4e0b-a35a-01a0a4d3df20")
+	)
+	(model "${KICAD8_3DMODEL_DIR}/Connector_Coaxial.3dshapes/SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
