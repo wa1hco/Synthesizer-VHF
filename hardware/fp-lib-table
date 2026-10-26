@@ -1,5 +1,4 @@
 (fp_lib_table
   (version 7)
-  (lib (name "MAX2870")(type "KiCad")(uri "/home/jeff/Downloads/MAX2870")(options "")(descr ""))
-  (lib (name "Synthesizer")(type "KiCad")(uri "/home/jeff/kicad/Synthesizer.pretty")(options "")(descr ""))
+  (lib (name "Synthesizer")(type "KiCad")(uri "${KIPRJMOD}/libraries/Synthesizer.pretty")(options "")(descr "Project footprints"))
 )
