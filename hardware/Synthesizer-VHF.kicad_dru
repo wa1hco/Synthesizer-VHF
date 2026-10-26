@@ -130,3 +130,20 @@
 	(condition "A.isPlated() && B.isPlated() && A.Net != B.Net")
 	(constraint clearance (min 0.127mm))
 )
+
+# 50 ohm grounded coplanar waveguide on F.Cu over the In1 GND plane.
+# JLCPCB default 7628 (0.2104 mm, Er 4.4) with 1.2 mil solder mask, Er 3.8.
+# Drawn width 0.22 mm, gap 0.20 mm. Zones RF_GCPW_N, RF_GCPW_M, and RF_GCPW_S
+# (priority 1, local clearance 0.20 mm) cover a corridor around these nets so
+# the F.Cu pour hugs them at the coplanar gap. The rest of the F.Cu GND zone
+# stays at 0.50 mm.
+(rule "RF_50 GCPW gap"
+	(condition "A.NetClass == 'RF_50'")
+	(constraint clearance (min 0.20mm))
+)
+
+(rule "RF_50 GCPW width"
+	(layer outer)
+	(condition "A.Type == 'track' && A.NetClass == 'RF_50'")
+	(constraint track_width (min 0.22mm))
+)

@@ -27,7 +27,30 @@ Passives, connectors, the ATtiny1616, the FT231X, and their 3D shapes come from 
 
 KiCad 10 may warn that some standard symbols and footprints differ from the copies stored in the schematic and board. Those stored copies are the ones the layout uses. The project libraries match the symbols and footprints this design places.
 
-The schematic, board, and these libraries stay in the KiCad 8 file format so KiCad 10 can open them without a conversion step. Saving any of those files from KiCad 10 rewrites them into the KiCad 10 format.
+The board and project files are KiCad 10 format, saved from KiCad 10.0.7. The symbol libraries are still the KiCad 8/9 library format, which KiCad 10 opens directly.
+
+## Stackup to order
+
+Order JLCPCB's default 4-layer 1.6 mm board (JLC04161H-7628). This is not the 3313 stackup and it is not an impedance-controlled order. Copper plus dielectric is 1.586 mm; KiCad's board-thickness field is 1.6472 mm because it also counts the solder mask on both sides. The fab still builds the nominal 1.6 mm board.
+
+| Layer | Thickness | Material | Er |
+| --- | --- | --- | --- |
+| F.Cu | 0.035 mm | copper | |
+| Prepreg | 0.2104 mm | 7628 | 4.4 |
+| In1.Cu | 0.0152 mm | copper, GND | |
+| Core | 1.065 mm | FR-4 | 4.6 |
+| In2.Cu | 0.0152 mm | copper, VCC | |
+| Prepreg | 0.2104 mm | 7628 | 4.4 |
+| B.Cu | 0.035 mm | copper | |
+| Solder mask | 0.0305 mm each side | JLC 1.2 mil mask | 3.8 |
+
+## RF traces
+
+The ADF4351 RF nets are net class `RF_50`: 0.22 mm traces with 0.20 mm clearance, drawn on F.Cu over the In1 ground plane as grounded coplanar waveguide. That is the 50 ohm geometry for this stackup with JLCPCB's solder mask.
+
+Hammerstad–Jensen microstrip on the 0.2104 mm / Er 4.4 prepreg, with 0.035 mm copper, puts a bare 0.22 mm trace in the mid-60s of ohms. A bare 50 ohm microstrip on the same dielectric is about 0.36 mm wide. The coplanar ground is then applied as a ratio: grounded-CPW impedance at a 0.20 mm gap, divided by the same formula's wide-gap limit, so a large gap still matches the microstrip number. KiCad's GCPW calculator skips that correction and reads this geometry about 20% high; that figure was not used. Solder mask (0.0305 mm, Er 3.8) lowers the result by roughly 1.5 ohms. JLCPCB etch, about 0.018 mm narrower at the top of the trace, raises it by about an ohm. The two nearly cancel, which is why the drawn size is 0.22 mm rather than the slightly wider bare-copper answer. A 0.33 mm trace with the same 0.20 mm gap would sit in the low 40s. This default stackup is not an impedance-controlled order, so the fab spread is the ordinary process tolerance. The minimum trace and space used here (0.20 mm) is above JLCPCB's 0.127 mm limit.
+
+The four southbound outputs leave the 0.5 mm LFCSP pitch on 0.22 mm traces. The copper gap between neighbors is 0.28 mm, so a ground web cannot fit between them and those few millimetres stay coupled. The pour returns to a 0.20 mm gap on the outer sides and once the runs separate. `REFIN` is on F.Cu except for a 3.7 mm hop on B.Cu under `/MUX`, `/LD`, and `/RF_EN`. That hop is short at the reference (250 MHz maximum). Ground vias fence the open runs at about 1 mm pitch, 0.65 mm off the trace centerline. The same fence cannot sit between the 0.5 mm pin escapes: a 0.3 mm drill needs more clearance than that web has. The SMA launches at J5, J7, and J9 taper 0.22 → 0.40 → 0.80 mm into the signal pad, with a copper keepout so the pour does not close up around the pad.
 
 ## Build the firmware
 
