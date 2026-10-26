@@ -20944,7 +20944,7 @@
 	)
 	(dimension
 		(type aligned)
-		(layer "F.Cu")
+		(layer "Dwgs.User")
 		(uuid "0f0dbcde-309e-4c86-be3f-154d46ba31f7")
 		(pts
 			(xy 134.55 113.7) (xy 168.6 113.7)
@@ -20968,7 +20968,7 @@
 		)
 		(gr_text "34.05 mm"
 			(at 151.9 129.65 0)
-			(layer "F.Cu")
+			(layer "Dwgs.User")
 			(uuid "0f0dbcde-309e-4c86-be3f-154d46ba31f7")
 			(effects
 				(font
@@ -20980,7 +20980,7 @@
 	)
 	(dimension
 		(type aligned)
-		(layer "F.Cu")
+		(layer "Dwgs.User")
 		(uuid "324bfb69-3c42-420d-a6a7-0ffe8d2d5d08")
 		(pts
 			(xy 153.7 113.7) (xy 168.6 113.7)
@@ -21004,7 +21004,7 @@
 		)
 		(gr_text "14.90 mm"
 			(at 161.4 125.05 0)
-			(layer "F.Cu")
+			(layer "Dwgs.User")
 			(uuid "324bfb69-3c42-420d-a6a7-0ffe8d2d5d08")
 			(effects
 				(font
@@ -21016,7 +21016,7 @@
 	)
 	(dimension
 		(type aligned)
-		(layer "F.Cu")
+		(layer "Dwgs.User")
 		(uuid "5e32923e-ae7d-4a4e-8495-dc1194817c17")
 		(pts
 			(xy 134.55 76) (xy 168 76)
@@ -21040,7 +21040,7 @@
 		)
 		(gr_text "33.45 mm"
 			(at 153.75 65.4 0)
-			(layer "F.Cu")
+			(layer "Dwgs.User")
 			(uuid "5e32923e-ae7d-4a4e-8495-dc1194817c17")
 			(effects
 				(font
@@ -21052,7 +21052,7 @@
 	)
 	(dimension
 		(type aligned)
-		(layer "F.Cu")
+		(layer "Dwgs.User")
 		(uuid "83d5c28c-4d03-4ec0-9afd-d18e85c9ec7a")
 		(pts
 			(xy 134.55 75.95) (xy 173.5 75.95)
@@ -21076,7 +21076,7 @@
 		)
 		(gr_text "38.95 mm"
 			(at 153.8 61.75 0)
-			(layer "F.Cu")
+			(layer "Dwgs.User")
 			(uuid "83d5c28c-4d03-4ec0-9afd-d18e85c9ec7a")
 			(effects
 				(font
@@ -21088,7 +21088,7 @@
 	)
 	(dimension
 		(type aligned)
-		(layer "F.Cu")
+		(layer "Dwgs.User")
 		(uuid "9b77b3fe-3d16-482d-b648-59bfe3650b35")
 		(pts
 			(xy 134.55 76) (xy 134.55 113.7)
@@ -21112,7 +21112,7 @@
 		)
 		(gr_text "37.70 mm"
 			(at 130.1 94.85 90)
-			(layer "F.Cu")
+			(layer "Dwgs.User")
 			(uuid "9b77b3fe-3d16-482d-b648-59bfe3650b35")
 			(effects
 				(font
@@ -21124,7 +21124,7 @@
 	)
 	(dimension
 		(type aligned)
-		(layer "F.Cu")
+		(layer "Dwgs.User")
 		(uuid "c53b55d1-f69e-44d8-a8bf-a241de0f45e8")
 		(pts
 			(xy 134.55 113.7) (xy 153.7 113.7)
@@ -21148,7 +21148,7 @@
 		)
 		(gr_text "19.15 mm"
 			(at 144.2 125.1 0)
-			(layer "F.Cu")
+			(layer "Dwgs.User")
 			(uuid "c53b55d1-f69e-44d8-a8bf-a241de0f45e8")
 			(effects
 				(font
