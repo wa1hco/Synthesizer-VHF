@@ -1,18 +1,41 @@
-Software/.pio
-Software/.vscode/.browse.c_cpp.db*
-Software/.vscode/c_cpp_properties.json
-Software/.vscode/launch.json
-Software/.vscode/ipch
-Software/output.map
-Hardware/jlcpcb/
-Hardware/production/
-Hardware/Synthesizer-VHF.bak
-Hardware/Synthesizer-VHF-backups/
-Hardware/Synthesizer-VHF.kicad_sch-bak
-Hardware/Synthesizer-VHF.kicad_prlHardware/fp-info-cache
-Hardware/fp-lib-table
-Hardware/fp-info-cache
-*.kicad_*.lck
+# KiCad temporary files
+# https://www.kicad.org/
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_sch_old
+*-backups
 *.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+~*.lck
+\#auto_saved_files#
+*.kicad_*.lck
 
+# Netlist, autorouter, and exported BOM files
+*.net
+*.dsn
+*.ses
+*.xml
+*.csv
 
+# Generated fabrication output. Files already tracked under hardware/jlcpcb/ stay in git.
+hardware/jlcpcb/
+hardware/production/
+hardware/*.bak
+hardware/*-backups/
+
+# PlatformIO
+software/.pio
+software/.vscode/.browse.c_cpp.db*
+software/.vscode/c_cpp_properties.json
+software/.vscode/launch.json
+software/.vscode/ipch
+software/output.map
