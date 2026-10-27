@@ -149,7 +149,7 @@
         "max_error": 0.005,
         "min_clearance": 0.127,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.0,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.127,
         "min_hole_to_hole": 0.25,
@@ -593,11 +593,19 @@
       },
       {
         "netclass": "RF_50",
-        "pattern": "Net-(X1-OUT)"
+        "pattern": "/REFIN_SRC"
       },
       {
         "netclass": "RF_50",
-        "pattern": "Net-(C3-Pad2)"
+        "pattern": "/REF_OUT"
+      },
+      {
+        "netclass": "RF_50",
+        "pattern": "Net-(JP1-A)"
+      },
+      {
+        "netclass": "RF_50",
+        "pattern": "Net-(C42-Pad1)"
       }
     ]
   },

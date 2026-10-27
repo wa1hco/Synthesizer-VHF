@@ -4576,7 +4576,342 @@
 				)
 			)
 		)
-	)
+	
+		(symbol "Connector:Barrel_Jack_MountingPin"
+			(pin_names (offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J" (at 0 5.08 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "Barrel_Jack_MountingPin" (at 0 -6.35 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "DC barrel jack with mounting pin" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "Barrel_Jack_MountingPin_0_1"
+				(rectangle (start -5.08 3.81) (end 5.08 -5.08)
+					(stroke (width 0.254) (type default))
+					(fill (type background))
+				)
+			)
+			(symbol "Barrel_Jack_MountingPin_1_1"
+			(pin passive line
+				(at 7.62 2.54 180)
+				(length 2.54)
+				(name "1"
+					(effects (font (size 1.27 1.27)))
+				)
+				(number "1"
+					(effects (font (size 1.27 1.27)))
+				)
+			)
+			(pin passive line
+				(at 7.62 -2.54 180)
+				(length 2.54)
+				(name "2"
+					(effects (font (size 1.27 1.27)))
+				)
+				(number "2"
+					(effects (font (size 1.27 1.27)))
+				)
+			)
+			(pin passive line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "MountPin"
+					(effects (font (size 1.27 1.27)))
+				)
+				(number "MP"
+					(effects (font (size 1.27 1.27)))
+				)
+			)
+			)
+		)
+		(symbol "Synthesizer:Filter_Feedthrough_3T"
+			(pin_names (offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FL" (at 0 3.81 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "Filter_Feedthrough_3T" (at 0 -5.08 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "3-terminal feedthrough EMI filter" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "Filter_Feedthrough_3T_0_1"
+				(rectangle (start -2.54 2.54) (end 2.54 -2.54)
+					(stroke (width 0.254) (type default))
+					(fill (type background))
+				)
+				(polyline (pts (xy 0 2.54) (xy 0 -1.27))
+					(stroke (width 0.254) (type default))
+					(fill (type none))
+				)
+			)
+			(symbol "Filter_Feedthrough_3T_1_1"
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "In"
+					(effects (font (size 1.27 1.27)))
+				)
+				(number "1"
+					(effects (font (size 1.27 1.27)))
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "Out"
+					(effects (font (size 1.27 1.27)))
+				)
+				(number "3"
+					(effects (font (size 1.27 1.27)))
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 2.54)
+				(name "GND"
+					(effects (font (size 1.27 1.27)))
+				)
+				(number "2"
+					(effects (font (size 1.27 1.27)))
+				)
+			)
+			)
+		)
+		(symbol "Synthesizer:CMC_DLW21"
+			(pin_names (offset 0.508))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L" (at 0 5.08 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "CMC_DLW21" (at 0 -5.08 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "USB common-mode choke, windings 1-2 and 4-3" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "CMC_DLW21_0_1"
+				(polyline (pts (xy -2.54 2.54) (xy 2.54 2.54))
+					(stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy -2.54 -2.54) (xy 2.54 -2.54))
+					(stroke (width 0) (type default)) (fill (type none)))
+				(arc (start -1.27 1.27) (mid 0 2.54) (end 1.27 1.27)
+					(stroke (width 0.254) (type default)) (fill (type none)))
+				(arc (start -1.27 -1.27) (mid 0 -2.54) (end 1.27 -1.27)
+					(stroke (width 0.254) (type default)) (fill (type none)))
+			)
+			(symbol "CMC_DLW21_1_1"
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 2.54)
+				(name "D+"
+					(effects (font (size 1.27 1.27)))
+				)
+				(number "1"
+					(effects (font (size 1.27 1.27)))
+				)
+			)
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "D+"
+					(effects (font (size 1.27 1.27)))
+				)
+				(number "2"
+					(effects (font (size 1.27 1.27)))
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 2.54)
+				(name "D-"
+					(effects (font (size 1.27 1.27)))
+				)
+				(number "4"
+					(effects (font (size 1.27 1.27)))
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 2.54)
+				(name "D-"
+					(effects (font (size 1.27 1.27)))
+				)
+				(number "3"
+					(effects (font (size 1.27 1.27)))
+				)
+			)
+			)
+		)
+		(symbol "Synthesizer:Shield_Can"
+			(pin_names (offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SH" (at 0 5.08 0) (effects (font (size 1.27 1.27))))
+			(property "Value" "Shield_Can" (at 0 -5.08 0) (effects (font (size 1.27 1.27))))
+			(property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(property "Description" "Shield frame, all pads pin 1" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+			(symbol "Shield_Can_0_1"
+				(rectangle (start -5.08 3.81) (end 5.08 -3.81)
+					(stroke (width 0.254) (type default))
+					(fill (type background))
+				)
+			)
+			(symbol "Shield_Can_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "GND"
+					(effects (font (size 1.27 1.27)))
+				)
+				(number "1"
+					(effects (font (size 1.27 1.27)))
+				)
+			)
+			)
+		)
+
+		(symbol "74xGxx:74LVC1GU04"
+			(pin_names (offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 7.62 0)
+				(effects (font (size 1.27 1.27)))
+			)
+			(property "Value" "74LVC1GU04"
+				(at 0 -7.62 0)
+				(effects (font (size 1.27 1.27)))
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1gu04.pdf"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(property "Description" "Single unbuffered inverter, 74LVC1GU04, SOT-23-5"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(property "ki_keywords" "inverter unbuffered LVC CMOS"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(symbol "74LVC1GU04_0_1"
+				(polyline
+					(pts (xy -7.62 6.35) (xy -7.62 -6.35) (xy 5.08 0) (xy -7.62 6.35))
+					(stroke (width 0.254) (type default))
+					(fill (type background))
+				)
+				(circle (center 6.35 0) (radius 1.27)
+					(stroke (width 0.254) (type default))
+					(fill (type none))
+				)
+			)
+			(symbol "74LVC1GU04_1_1"
+				(pin no_connect line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27))))
+				)
+				(pin input line
+					(at -15.24 0 0)
+					(length 7.62)
+					(name "A" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27))))
+				)
+				(pin power_in line
+					(at -5.08 -10.16 90)
+					(length 5.08)
+					(name "GND" (effects (font (size 1.27 1.27))))
+					(number "3" (effects (font (size 1.27 1.27))))
+				)
+				(pin output line
+					(at 12.7 0 180)
+					(length 7.62)
+					(name "Y" (effects (font (size 1.27 1.27))))
+					(number "4" (effects (font (size 1.27 1.27))))
+				)
+				(pin power_in line
+					(at -5.08 10.16 270)
+					(length 5.08)
+					(name "VCC" (effects (font (size 1.27 1.27))))
+					(number "5" (effects (font (size 1.27 1.27))))
+				)
+			)
+		)
+		(symbol "Jumper:SolderJumper_3_Bridged12"
+			(pin_names (offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 3.81 0)
+				(effects (font (size 1.27 1.27)))
+			)
+			(property "Value" "SolderJumper_3_Bridged12"
+				(at 0 -3.81 0)
+				(effects (font (size 1.27 1.27)))
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(property "Description" "3-pad solder jumper, pads 1 and 2 bridged. Pad 1 local TCXO, pad 3 external REF IN."
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(property "ki_keywords" "solder jumper"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(property "ki_fp_filters" "SolderJumper*Bridged12*"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(symbol "SolderJumper_3_Bridged12_0_1"
+				(polyline (pts (xy -2.54 0) (xy -1.27 0))
+					(stroke (width 0) (type default)) (fill (type none)))
+				(rectangle (start -1.27 -1.016) (end -0.254 1.016)
+					(stroke (width 0) (type default)) (fill (type outline)))
+				(rectangle (start -0.762 -1.016) (end 0.762 1.016)
+					(stroke (width 0) (type default)) (fill (type outline)))
+				(polyline (pts (xy -0.4 0) (xy 0.2 0))
+					(stroke (width 0.4) (type default)) (fill (type none)))
+				(rectangle (start 1.27 -1.016) (end 2.54 1.016)
+					(stroke (width 0) (type default)) (fill (type outline)))
+				(polyline (pts (xy 2.54 0) (xy 3.81 0))
+					(stroke (width 0) (type default)) (fill (type none)))
+				(polyline (pts (xy 0 -1.016) (xy 0 -2.54))
+					(stroke (width 0) (type default)) (fill (type none)))
+			)
+			(symbol "SolderJumper_3_Bridged12_1_1"
+				(pin passive line (at -5.08 0 0) (length 2.54)
+					(name "A" (effects (font (size 1.27 1.27))))
+					(number "1" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 0 -3.81 90) (length 2.54)
+					(name "C" (effects (font (size 1.27 1.27))))
+					(number "2" (effects (font (size 1.27 1.27)))))
+				(pin passive line (at 5.08 0 180) (length 2.54)
+					(name "B" (effects (font (size 1.27 1.27))))
+					(number "3" (effects (font (size 1.27 1.27)))))
+			)
+		)
+)
 	(junction
 		(at 252.73 78.74)
 		(diameter 0)
@@ -4684,12 +5019,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5b40bddc-0857-4b59-af11-f03eea52a97b")
-	)
-	(junction
-		(at 204.47 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "681023d7-a1cf-46ca-8147-b5cb8bdb9aa2")
 	)
 	(junction
 		(at 92.71 105.41)
@@ -4957,16 +5286,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 132.08) (xy 204.47 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02251f9c-2588-414a-9314-e1b1af0edd57")
-	)
-	(wire
-		(pts
 			(xy 82.55 106.68) (xy 82.55 105.41)
 		)
 		(stroke
@@ -5184,16 +5503,6 @@
 			(type default)
 		)
 		(uuid "229f80e4-5c3c-421a-bbbf-2a04625d7577")
-	)
-	(wire
-		(pts
-			(xy 45.72 229.87) (xy 49.53 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22cc3828-32fc-4216-b430-1a9fc31719ba")
 	)
 	(wire
 		(pts
@@ -5787,16 +6096,6 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 127) (xy 204.47 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66e3a0e6-5402-40e4-933e-8f66f8802202")
-	)
-	(wire
-		(pts
 			(xy 295.91 58.42) (xy 300.99 58.42)
 		)
 		(stroke
@@ -5804,16 +6103,6 @@
 			(type default)
 		)
 		(uuid "674a0dec-4c76-4378-b9a5-4f764f93595d")
-	)
-	(wire
-		(pts
-			(xy 204.47 133.35) (xy 240.03 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6908322c-6fbd-4047-a496-73fff66814d2")
 	)
 	(wire
 		(pts
@@ -5844,16 +6133,6 @@
 			(type default)
 		)
 		(uuid "6b0bc52d-48b3-4c8a-b72b-41ad085b8237")
-	)
-	(wire
-		(pts
-			(xy 204.47 139.7) (xy 204.47 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ddb623f-81a3-434a-b1a2-a8c0f3959d02")
 	)
 	(wire
 		(pts
@@ -5964,16 +6243,6 @@
 			(type default)
 		)
 		(uuid "78c11ddf-f809-4eb6-87b9-67ebcfe34f84")
-	)
-	(wire
-		(pts
-			(xy 45.72 227.33) (xy 63.5 227.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79a00948-c833-4990-8279-2644d743421b")
 	)
 	(wire
 		(pts
@@ -6157,7 +6426,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 107.95) (xy 29.21 107.95)
+			(xy 26.67 110.49) (xy 29.21 107.95)
 		)
 		(stroke
 			(width 0)
@@ -6174,16 +6443,6 @@
 			(type default)
 		)
 		(uuid "8fc4b8e2-2ea4-4505-99e0-49ca22ffe38c")
-	)
-	(wire
-		(pts
-			(xy 26.67 105.41) (xy 39.37 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91dd2a9b-c71f-4b07-ab0f-45355b9770ad")
 	)
 	(wire
 		(pts
@@ -6757,16 +7016,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 133.35) (xy 204.47 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6844484-ac7b-41a9-831c-94c4784a2580")
-	)
-	(wire
-		(pts
 			(xy 290.83 95.25) (xy 290.83 101.6)
 		)
 		(stroke
@@ -6874,16 +7123,6 @@
 			(type default)
 		)
 		(uuid "e4d99f85-d8b5-4632-b749-3363dc2af5d7")
-	)
-	(wire
-		(pts
-			(xy 201.93 143.51) (xy 204.47 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e60f79f3-adfd-4977-a915-0ba9bada75c6")
 	)
 	(wire
 		(pts
@@ -9488,9 +9727,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 21.59 105.41 0)
-		(mirror y)
+		(lib_id "Connector:Barrel_Jack_MountingPin")
+		(at 19.05 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9498,67 +9736,74 @@
 		(dnp no)
 		(uuid "2d10ce5a-f85d-4c7b-becb-914b748b9e8d")
 		(property "Reference" "J1"
-			(at 21.59 111.76 0)
+			(at 19.05 102.87 0)
 			(effects
-				(font
-					(size 1.27 1.27)
-				)
+			(font
+				(size 1.27 1.27)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 19.05 107.9499 0)
+		)
+		(property "Value" "PJ-063AH"
+			(at 19.05 113.03 0)
 			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
+			(font
+				(size 1.27 1.27)
 			)
 		)
-		(property "Footprint" "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal"
-			(at 21.59 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
 		)
-		(property "Datasheet" "~"
-			(at 21.59 105.41 0)
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal"
+			(at 19.05 107.95 0)
 			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+			(font
+				(size 1.27 1.27)
 			)
+			(hide yes)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 21.59 105.41 0)
+		)
+		(property "Datasheet" "https://www.cui.com/product/resource/pj-063ah.pdf"
+			(at 19.05 107.95 0)
 			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+			(font
+				(size 1.27 1.27)
 			)
+			(hide yes)
 		)
-		(property "LCSC" "C5188442"
-			(at 299.72 168.91 0)
+		)
+		(property "Description" "CUI PJ-063AH barrel jack, 5.5 mm OD, 2.0 mm ID, board-edge horizontal, mates with a 5.5x2.1 mm plug"
+			(at 19.05 107.95 0)
 			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+			(font
+				(size 1.27 1.27)
 			)
+			(hide yes)
 		)
-		(pin "2"
-			(uuid "4d86901e-a5b5-4abd-9a2c-1b87af09d808")
+		)
+		(property "LCSC" "~"
+			(at 19.05 107.95 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
 		)
 		(pin "1"
-			(uuid "190eb892-8846-4831-a522-3f8c1dd296bb")
+			(uuid "879a9365-e3b7-4d18-ada6-523bc09d2d88")
+		)
+		(pin "2"
+			(uuid "1cc47c5e-c623-4d7c-9aa9-8f8941945fbd")
+		)
+		(pin "MP"
+			(uuid "8d581dce-f8ff-41ea-b8d7-bea3d86b5b06")
 		)
 		(instances
 			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "J1")
 					(unit 1)
@@ -12069,82 +12314,6 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 204.47 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(uuid "6cde9d57-7d1b-43f8-88b6-187260d5cebe")
-		(property "Reference" "R26"
-			(at 207.772 136.144 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NP"
-			(at 207.264 138.684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 204.47 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 204.47 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 204.47 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C17168"
-			(at -5.08 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c67bf9f0-9fea-4db3-8136-ad1b8ba5ba57")
-		)
-		(pin "1"
-			(uuid "b44e71a4-71f8-4d8b-a0fa-23b36854064d")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
 		(at 328.93 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13518,7 +13687,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:SMA_Amphenol_901-143_Horizontal"
+		(property "Footprint" "Synthesizer:SMA_Cinch_142-0701-801"
 			(at 381 123.19 0)
 			(effects
 				(font
@@ -13994,82 +14163,6 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "C37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 204.47 129.54 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "97a7d45a-8ffb-477b-8f7d-1769b0de2d85")
-		(property "Reference" "R2"
-			(at 207.01 128.016 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 207.01 131.064 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 204.47 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 204.47 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 204.47 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C17168"
-			(at -5.08 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e058ba0a-f319-4174-baba-d9fc1969c97c")
-		)
-		(pin "1"
-			(uuid "46f38ccc-5dce-4f7d-bf96-a7ba5b23c56d")
-		)
-		(instances
-			(project "Synthesizer"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -17210,7 +17303,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:SMA_Amphenol_901-143_Horizontal"
+		(property "Footprint" "Synthesizer:SMA_Cinch_142-0701-801"
 			(at 167.64 143.51 0)
 			(effects
 				(font
@@ -18827,7 +18920,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:SMA_Amphenol_901-143_Horizontal"
+		(property "Footprint" "Synthesizer:SMA_Cinch_142-0701-801"
 			(at 381 135.89 0)
 			(effects
 				(font
@@ -19032,6 +19125,2446 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Synthesizer:Filter_Feedthrough_3T")
+		(at 406.4 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "826a94e6-5499-42bb-a31f-33dd1502bd05")
+		(property "Reference" "FL1"
+			(at 406.4 43.18 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Value" "NFM31KC104R1H3L"
+			(at 406.4 38.1 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Footprint" "Synthesizer:Filter_Murata_NFM31KC"
+			(at 406.4 40.64 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" "~"
+			(at 406.4 40.64 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "Murata NFM31KC104R1H3L 100 nF 50 V 6 A 3-terminal feedthrough EMI filter"
+			(at 406.4 40.64 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "f258818e-3537-44ee-a8ca-7fb7547493c0")
+		)
+		(pin "2"
+			(uuid "0b4476c2-d6c3-4642-919d-624d6847dadd")
+		)
+		(pin "3"
+			(uuid "942e932e-a4d3-4b74-bd3c-3752f8131956")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "FL1")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "FL1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 426.71999999999997 40.64 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8fb5edb6-cb82-4576-98cd-182f38f65b5d")
+		(property "Reference" "FB2"
+			(at 426.71999999999997 43.18 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Value" "BLM21PG221SN1D"
+			(at 426.71999999999997 38.1 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
+			(at 426.71999999999997 40.64 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" "~"
+			(at 426.71999999999997 40.64 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "Murata BLM21PG221SN1D 0805 ferrite, 220 ohm at 100 MHz, 2 A"
+			(at 426.71999999999997 40.64 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "b6787fcc-330c-4bb0-adb4-edc9acc32e23")
+		)
+		(pin "2"
+			(uuid "e18d1eac-200d-4b95-b6e2-b9d4087a2838")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "FB2")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "FB2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Synthesizer:CMC_DLW21")
+		(at 406.4 66.03999999999999 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1a3effec-0983-4c7f-923c-bfbae76ba255")
+		(property "Reference" "L1"
+			(at 406.4 68.58 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Value" "DLW21SN900SQ2L"
+			(at 406.4 63.49999999999999 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Footprint" "Synthesizer:CMC_DLW21_2012"
+			(at 406.4 66.03999999999999 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" "~"
+			(at 406.4 66.03999999999999 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "Murata DLW21SN900SQ2L USB 2.0 common-mode choke, 90 ohm, windings pin1-2 and pin4-3"
+			(at 406.4 66.03999999999999 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "6143d116-6ec0-48f0-97f8-cf8e74146e22")
+		)
+		(pin "2"
+			(uuid "e8f255d5-ed11-4e9c-b76f-b337f5c71b65")
+		)
+		(pin "3"
+			(uuid "13290944-8f0b-4df9-a668-abe993f5e042")
+		)
+		(pin "4"
+			(uuid "edcf4860-b571-4d44-b4e5-c28a25c3414b")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 66.04 212.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6088868f-c993-499c-8a0d-db7f983c3684")
+		(property "Reference" "C39"
+			(at 66.04 214.63 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Value" "100n"
+			(at 66.04 209.55 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Footprint" "Synthesizer:Cap_0402"
+			(at 66.04 212.09 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 212.09 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "VBUS connector-side bypass, 100 nF"
+			(at 66.04 212.09 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "LCSC" "C1525"
+			(at 66.04 212.09 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "80e3c6d4-fe99-4e4d-877d-fc8628952f78")
+		)
+		(pin "2"
+			(uuid "9a762dd0-67a4-4110-a2cc-0e0e88a46227")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "C39")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "C39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Synthesizer:Shield_Can")
+		(at 431.79999999999995 66.03999999999999 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c24edd1f-9096-404c-a5af-008456de8800")
+		(property "Reference" "SH1"
+			(at 431.79999999999995 68.58 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Value" "BMI-S-209-F"
+			(at 431.79999999999995 63.49999999999999 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Footprint" "Synthesizer:Shield_Laird_BMI-S-209-F"
+			(at 431.79999999999995 66.03999999999999 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" "~"
+			(at 431.79999999999995 66.03999999999999 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "Laird BMI-S-209-F shield frame over the ADF4351. Use BMI-S-209-F-20 if the slot is high."
+			(at 431.79999999999995 66.03999999999999 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "ed62beb1-7c12-4d13-b027-6b2aa1c5ae56")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "SH1")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "SH1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 29.21 105.41) (xy 39.37 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66ce0d22-991f-4c11-a949-da2ca5ccdd7d")
+	)
+	(wire
+		(pts
+			(xy 26.67 105.41) (xy 26.67 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85b2c6f8-fc3c-4eb6-8a4c-b15e0e215cea")
+	)
+	(label "12V_JACK"
+		(at 26.67 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bf6f3565-c2bf-4cb3-b4ab-9b131cf362ce")
+	)
+	(wire
+		(pts
+			(xy 401.32 40.64) (xy 398.78 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15fee51f-f2da-4e0e-ab98-45716270b9f0")
+	)
+	(label "12V_JACK"
+		(at 398.78 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "006ec594-5f18-414c-8e47-262bce3af2bf")
+	)
+	(wire
+		(pts
+			(xy 411.48 40.64) (xy 414.02 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61f83ac9-41ad-49a0-b81d-b5a68fecff69")
+	)
+	(label "12V_FILT"
+		(at 414.02 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c902ced6-0997-4f2a-a7ba-a419ea97f6b5")
+	)
+	(wire
+		(pts
+			(xy 424.18 40.64) (xy 421.64 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b77e0dd-ec95-458a-a1d7-f24ab87dcc8e")
+	)
+	(label "12V_FILT"
+		(at 421.64 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea96cc5e-f9d2-4f9d-8f12-93d6aba706a0")
+	)
+	(wire
+		(pts
+			(xy 429.26 40.64) (xy 431.8 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c052d1ad-69cd-4740-bda3-375987d04f89")
+	)
+	(label "12V"
+		(at 431.8 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "36709b14-c72c-4720-9a3a-e5564c9538b1")
+	)
+	(wire
+		(pts
+			(xy 406.4 45.72) (xy 406.4 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c60be9ee-39d0-406f-9340-d02e29b85857")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 406.4 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7fc5a92b-46f3-4b90-b90a-72dcdf9b6d0c")
+		(property "Reference" "#PWR076"
+			(at 406.4 54.61 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Value" "GND"
+			(at 406.4 52.07 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Footprint" ""
+			(at 406.4 48.26 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" ""
+			(at 406.4 48.26 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 406.4 48.26 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "fa7d208b-d4b0-4c12-82ed-d3045d1033b9")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 19.05 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "92b37d34-3ed6-41ff-b03e-17043a6e181e")
+		(property "Reference" "#PWR077"
+			(at 19.05 121.91999999999999 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Value" "GND"
+			(at 19.05 119.38 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Footprint" ""
+			(at 19.05 115.57 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" ""
+			(at 19.05 115.57 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 19.05 115.57 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "f2972a53-0af3-4742-8524-69c9075dcf02")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 45.72 229.87) (xy 43.18 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ba0e932-e117-43d8-9984-a0c86d74d541")
+	)
+	(label "USB_DP"
+		(at 43.18 229.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5f2f14f-5bc1-45ac-aeff-d327a591ad40")
+	)
+	(wire
+		(pts
+			(xy 401.32 63.5) (xy 398.78 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f491a6ef-2f85-4f66-acbb-7776e7c8c8a9")
+	)
+	(label "USB_DP"
+		(at 398.78 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "27f30a31-cea3-444c-88a0-7e7801807694")
+	)
+	(wire
+		(pts
+			(xy 411.48 63.5) (xy 414.02 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8184d344-7c67-499a-891c-befbc4cf027e")
+	)
+	(label "USB_DP_IC"
+		(at 414.02 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "181a945b-fbd9-4151-97f5-2a006927d1bd")
+	)
+	(label "USB_DP_IC"
+		(at 49.53 229.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "33e055fa-eedb-405c-8c16-fc1281ef3ed7")
+	)
+	(wire
+		(pts
+			(xy 45.72 227.33) (xy 43.18 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69015641-9990-4fcc-8eed-2cf908b2fbad")
+	)
+	(label "USB_DM"
+		(at 43.18 227.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "850babea-984d-4a0c-9540-ac780ed588d3")
+	)
+	(wire
+		(pts
+			(xy 401.32 68.58) (xy 398.78 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "759c1f40-0f5a-487c-b5a1-d89a0be2f89e")
+	)
+	(label "USB_DM"
+		(at 398.78 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e8023821-d545-4544-9f16-32fda7112fae")
+	)
+	(wire
+		(pts
+			(xy 411.48 68.58) (xy 414.02 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1347713-f170-433c-bce2-48cefda8e7f3")
+	)
+	(label "USB_DM_IC"
+		(at 414.02 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e36718f-1b73-42b1-9a4d-203f60534957")
+	)
+	(label "USB_DM_IC"
+		(at 63.5 227.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fc983737-4910-432a-82bb-ca53ad1987ab")
+	)
+	(wire
+		(pts
+			(xy 55.88 208.28) (xy 55.88 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f253f75-bcaf-483a-b953-ebc3e6ee4403")
+	)
+	(wire
+		(pts
+			(xy 55.88 203.2) (xy 66.04 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9962c91-dd32-495c-be6f-06c1469d889b")
+	)
+	(wire
+		(pts
+			(xy 66.04 203.2) (xy 66.04 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e48a0be5-518a-42f8-86fb-c1d05ee54227")
+	)
+	(junction
+		(at 55.88 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4adf7efd-71b7-4c74-89e0-9475a10a2ba3")
+	)
+	(wire
+		(pts
+			(xy 66.04 215.9) (xy 66.04 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6532ffca-a929-46b3-a4bd-8cae3a997b01")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 66.04 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7310328e-84fe-41c1-a1bf-a91543da731d")
+		(property "Reference" "#PWR078"
+			(at 66.04 224.79 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Value" "GND"
+			(at 66.04 222.25 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Footprint" ""
+			(at 66.04 218.44 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" ""
+			(at 66.04 218.44 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 66.04 218.44 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "3dc531bb-105d-4f44-9d46-a9a2b87d4840")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR078")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR078")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 424.18 66.04) (xy 421.64 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3842fac9-5d00-41a1-b692-8c3730a4c2c0")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 421.64 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9179de3-b85f-4423-b24b-0422175f63ba")
+		(property "Reference" "#PWR079"
+			(at 421.64 72.39 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Value" "GND"
+			(at 421.64 69.85000000000001 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Footprint" ""
+			(at 421.64 66.04 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" ""
+			(at 421.64 66.04 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 421.64 66.04 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "41973dde-436a-4ed9-b237-b39e82df8012")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR079")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR079")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "Enclosure entry: J1 PJ-063AH barrel, FL1 NFM31KC104R1H3L feedthrough, FB2 BLM21PG221SN1D, then the 12 V rail. L1 DLW21SN900SQ2L common-mode choke on USB D+/D- (windings 1-2 and 4-3). C39 on VBUS at the connector. SH1 BMI-S-209-F shield."
+		(at 401.4 32.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2b716c92-62a1-4a05-b3e1-95a411f99684")
+	)
+
+	(symbol
+		(lib_id "74xGxx:74LVC1GU04")
+		(at 381.0 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bfde7f28-9886-40ab-acdd-07bd1660970a")
+		(property "Reference" "U9"
+			(at 381.0 171.45 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Value" "74LVC1GU04"
+			(at 381.0 179.07 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 381.0 175.26 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" "~"
+			(at 381.0 175.26 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "SN74LVC1GU04 unbuffered inverter, self-biased, 3.3 V. Squares the TCXO for REFIN and REF OUT."
+			(at 381.0 175.26 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "24e3278d-9512-438e-a8e2-e78715092b2a")
+		)
+		(pin "2"
+			(uuid "fb1dcfc3-f05c-4761-8502-d363a09f6227")
+		)
+		(pin "3"
+			(uuid "4234e5d6-5712-472b-9a52-d3574cf61f73")
+		)
+		(pin "4"
+			(uuid "565ac2cd-262f-4798-9a20-5ec88983f158")
+		)
+		(pin "5"
+			(uuid "1c5645d2-bcd7-437f-b9db-e281ef3eae20")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Bridged12")
+		(at 408.94 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "54ca1637-47c1-4b99-ba37-2cdf2726da62")
+		(property "Reference" "JP1"
+			(at 408.94 171.45 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Value" "REF_SRC"
+			(at 408.94 179.07 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm"
+			(at 408.94 175.26 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" "~"
+			(at 408.94 175.26 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "REF source. Pads 1-2 bridged: local buffered TCXO. Cut 1-2 and bridge 2-3 for REF IN."
+			(at 408.94 175.26 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "cca6c810-963e-4a3f-8b2a-8fb9740c4882")
+		)
+		(pin "2"
+			(uuid "5454338c-db1b-49b7-9634-4d6e42e9b933")
+		)
+		(pin "3"
+			(uuid "b39e89b2-2e4e-447d-b0ca-92046bfb15af")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 421.64 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0a8232d0-fea1-4938-a58c-ba8fa8329829")
+		(property "Reference" "J10"
+			(at 421.64 181.61 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Value" "REF_OUT"
+			(at 421.64 189.23 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Footprint" "Synthesizer:SMA_Cinch_142-0701-801"
+			(at 421.64 185.42 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" "~"
+			(at 421.64 185.42 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "REF OUT edge-launch SMA, Cinch 142-0701-801, always live"
+			(at 421.64 185.42 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "31d0b2dd-37c7-47ca-883c-f5c7f8111757")
+		)
+		(pin "2"
+			(uuid "47e2cd8f-304a-4cdc-a169-b81443ad5002")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 358.14 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "26e0bac1-7f90-4a24-ac7f-30076330e427")
+		(property "Reference" "R31"
+			(at 358.14 173.99 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Value" "10k"
+			(at 358.14 181.61 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Footprint" "Synthesizer:Res_0402"
+			(at 358.14 177.8 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" "~"
+			(at 358.14 177.8 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "TCXO load resistor, 10 kOhm to GND"
+			(at 358.14 177.8 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "a993acfe-d7ed-4997-9a26-934da73f6908")
+		)
+		(pin "2"
+			(uuid "07889cc5-b167-441a-bb85-3421ae12dc56")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 379.73 152.4 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4c98ca54-c56e-4b60-9519-1c84460ba334")
+		(property "Reference" "R32"
+			(at 379.73 148.59 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Value" "1M"
+			(at 379.73 156.21 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Footprint" "Synthesizer:Res_0402"
+			(at 379.73 152.4 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" "~"
+			(at 379.73 152.4 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "Self-bias feedback, gate input to output"
+			(at 379.73 152.4 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "5f001c61-8b61-4c36-a882-a2e0e9a73216")
+		)
+		(pin "2"
+			(uuid "01d7d372-a66d-476a-bd25-a948eadb6178")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 393.7 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "899a67cd-20f5-44cb-abdf-8c14c26305ef")
+		(property "Reference" "R29"
+			(at 393.7 179.07 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Value" "47R"
+			(at 393.7 186.69 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Footprint" "Synthesizer:Res_0402"
+			(at 393.7 182.88 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" "~"
+			(at 393.7 182.88 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "REF OUT series source resistor, about 47 ohm"
+			(at 393.7 182.88 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "5f553d44-c885-4663-a703-f4dd3ea46825")
+		)
+		(pin "2"
+			(uuid "ba696113-bff0-428f-a625-45cb8f314642")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 401.32 185.42 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5209aaff-49b1-49e4-b467-1108a947ad5d")
+		(property "Reference" "R30"
+			(at 401.32 181.61 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Value" "0R"
+			(at 401.32 189.23 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Footprint" "Synthesizer:Res_0402"
+			(at 401.32 185.42 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" "~"
+			(at 401.32 185.42 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "REF OUT DC link. Fitted by default. Remove and fit C42 for AC coupling."
+			(at 401.32 185.42 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "53600fea-65ed-4734-88fe-0cce2f0b899e")
+		)
+		(pin "2"
+			(uuid "be886b6f-1566-417c-be41-4543f979246e")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R30")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 353.06 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b2f49fed-14af-4ce9-be66-4a9ae702e9ce")
+		(property "Reference" "C40"
+			(at 353.06 175.26 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Value" "10p"
+			(at 353.06 182.88 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Footprint" "Synthesizer:Cap_0402"
+			(at 353.06 179.07 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" "~"
+			(at 353.06 179.07 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "TCXO load capacitor, 10 pF to GND"
+			(at 353.06 179.07 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "LCSC" "C32949"
+			(at 353.06 179.07 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "e3949aec-710b-46e4-b0fb-6c0354009979")
+		)
+		(pin "2"
+			(uuid "5e5797df-532f-4102-a1f2-e62b819fb7b8")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "C40")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 361.95 175.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f70f2b05-5284-408b-b457-28c01e9d3e07")
+		(property "Reference" "C41"
+			(at 361.95 171.45 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Value" "100n"
+			(at 361.95 179.07 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Footprint" "Synthesizer:Cap_0402"
+			(at 361.95 175.26 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" "~"
+			(at 361.95 175.26 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "TCXO to buffer AC coupling"
+			(at 361.95 175.26 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "LCSC" "C1525"
+			(at 361.95 175.26 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "af105e38-1609-413c-a5d6-791878ddb5b4")
+		)
+		(pin "2"
+			(uuid "f7433832-4377-40a6-a3f1-eb49eda31062")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "C41")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 388.62 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "39313996-4178-4e53-b492-d1f5ac0f7ec2")
+		(property "Reference" "C43"
+			(at 388.62 160.02 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Value" "100n"
+			(at 388.62 167.64 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Footprint" "Synthesizer:Cap_0402"
+			(at 388.62 163.83 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" "~"
+			(at 388.62 163.83 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "U9 VCC bypass"
+			(at 388.62 163.83 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "LCSC" "C1525"
+			(at 388.62 163.83 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "d93a3221-17ca-4e1a-9fca-b17a5e5ca878")
+		)
+		(pin "2"
+			(uuid "1714a9cc-ef2f-47a5-b0a8-6744768cbd5a")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "C43")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "C43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 402.59 190.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "d50d2aad-9d9e-46fc-aec6-5c3cfbe9af1b")
+		(property "Reference" "C42"
+			(at 402.59 186.69 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Value" "100n"
+			(at 402.59 194.31 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		)
+		(property "Footprint" "Synthesizer:Cap_0402"
+			(at 402.59 190.5 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" "~"
+			(at 402.59 190.5 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "Optional REF OUT series capacitor. DNP. Fit only with R30 removed."
+			(at 402.59 190.5 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "LCSC" "C1525"
+			(at 402.59 190.5 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "28f3f177-2388-4e4c-bd39-e9cde6f37771")
+		)
+		(pin "2"
+			(uuid "edab6d5b-b389-4406-b0dd-7a1d52397f07")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "C42")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "C42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 195.58 127.0) (xy 198.12 127.0))
+		(stroke (width 0) (type default))
+		(uuid "e8688152-c1c6-4efb-805b-14c20aa16dd8")
+	)
+	(label "X1_OUT"
+		(at 198.12 127.0 0)
+		(effects
+			(font (size 1.27 1.27))
+			(justify left bottom)
+		)
+		(uuid "0e1f0071-982b-49c1-8583-2c5d1eae37f7")
+	)
+	(wire
+		(pts (xy 240.03 133.35) (xy 237.49 133.35))
+		(stroke (width 0) (type default))
+		(uuid "5747c0a5-c1c1-47df-94f4-f47d535c8d9c")
+	)
+	(label "REFIN_SRC"
+		(at 237.49 133.35 0)
+		(effects
+			(font (size 1.27 1.27))
+			(justify left bottom)
+		)
+		(uuid "6e301ac9-7aad-497e-b27b-acb7c84a4d52")
+	)
+	(label "REF_PAD"
+		(at 201.93 143.51 0)
+		(effects
+			(font (size 1.27 1.27))
+			(justify left bottom)
+		)
+		(uuid "6a37e7ca-8c4a-47cf-874c-d8cea75cf30a")
+	)
+	(wire
+		(pts (xy 353.06 175.26) (xy 358.14 175.26))
+		(stroke (width 0) (type default))
+		(uuid "018de2a5-9d8f-417f-b776-e0bed051a4d8")
+	)
+	(label "X1_OUT"
+		(at 358.14 175.26 0)
+		(effects
+			(font (size 1.27 1.27))
+			(justify left bottom)
+		)
+		(uuid "5293700b-25ec-416d-8e74-64a7b98e98fd")
+	)
+	(junction
+		(at 358.14 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83cfb022-4ffb-4465-b18c-7dd068f8ba58")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 358.14 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1132de4-25f3-46b3-86bf-9b1fcb1f6346")
+		(property "Reference" "#PWR080"
+			(at 358.14 189.23 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Value" "GND"
+			(at 358.14 186.69 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Footprint" ""
+			(at 358.14 182.88 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" ""
+			(at 358.14 182.88 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 358.14 182.88 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "388b6436-40db-429b-8bc8-efef75d1e02e")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 358.14 180.34) (xy 358.14 182.88))
+		(stroke (width 0) (type default))
+		(uuid "afc1846f-0743-4f78-9d80-c48b34708c8b")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 353.06 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "21dc63d5-f683-4bd9-9c57-805d7cbf7e5e")
+		(property "Reference" "#PWR081"
+			(at 353.06 191.77 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Value" "GND"
+			(at 353.06 189.23 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Footprint" ""
+			(at 353.06 185.42 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" ""
+			(at 353.06 185.42 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 353.06 185.42 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "3758f26a-b1f6-4ae5-b418-813736b1809d")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 353.06 182.88) (xy 353.06 185.42))
+		(stroke (width 0) (type default))
+		(uuid "a15cd0da-8a86-4bd4-90a6-f1516463cd2d")
+	)
+	(wire
+		(pts (xy 365.76 175.26) (xy 365.76 152.4))
+		(stroke (width 0) (type default))
+		(uuid "6f6b491e-8f68-40d5-bb7b-6f1cc32d3f8e")
+	)
+	(wire
+		(pts (xy 365.76 152.4) (xy 377.19 152.4))
+		(stroke (width 0) (type default))
+		(uuid "500c2676-415d-4ced-b99c-05dabe15458f")
+	)
+	(wire
+		(pts (xy 382.27 152.4) (xy 393.7 152.4))
+		(stroke (width 0) (type default))
+		(uuid "2f2ab905-25e6-4c1d-824a-489dc5f841d2")
+	)
+	(wire
+		(pts (xy 393.7 152.4) (xy 393.7 175.26))
+		(stroke (width 0) (type default))
+		(uuid "20eac1dc-4e17-4fcb-a51e-86332efcce7e")
+	)
+	(junction
+		(at 365.76 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80c7149f-9416-4f76-bd00-d503605f1122")
+	)
+	(junction
+		(at 393.7 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad0f4901-ad99-4f0d-ba73-d363e3bf0d9e")
+	)
+	(wire
+		(pts (xy 375.92 165.1) (xy 375.92 160.02))
+		(stroke (width 0) (type default))
+		(uuid "25da3b13-e612-4ad9-bd84-8a49db8b461f")
+	)
+	(wire
+		(pts (xy 375.92 160.02) (xy 388.62 160.02))
+		(stroke (width 0) (type default))
+		(uuid "ec34b599-3567-4409-b586-e16d8ac8cfcc")
+	)
+	(label "VCC_1"
+		(at 388.62 160.02 0)
+		(effects
+			(font (size 1.27 1.27))
+			(justify left bottom)
+		)
+		(uuid "ebab7a41-0152-4dd8-9046-6fe3167d698e")
+	)
+	(junction
+		(at 388.62 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1efbb107-b528-4a55-b3b5-9adb57ae9a0c")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 388.62 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "49387910-063d-467f-a803-4f43c6afdbdf")
+		(property "Reference" "#PWR082"
+			(at 388.62 176.53 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Value" "GND"
+			(at 388.62 173.99 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Footprint" ""
+			(at 388.62 170.18 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" ""
+			(at 388.62 170.18 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 388.62 170.18 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "270423ce-884d-49fa-80d5-51d6af9916bb")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR082")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR082")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 388.62 167.64) (xy 388.62 170.18))
+		(stroke (width 0) (type default))
+		(uuid "12fe3b1f-e179-4059-bbed-238f3096668b")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 375.92 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f1d8296a-676e-4fd5-98a4-d597f97ab86c")
+		(property "Reference" "#PWR083"
+			(at 375.92 194.31 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Value" "GND"
+			(at 375.92 191.77 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Footprint" ""
+			(at 375.92 187.96 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" ""
+			(at 375.92 187.96 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 375.92 187.96 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "531bec06-5a29-49f1-af69-cfa8a5ae1d21")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR083")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR083")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 375.92 185.42) (xy 375.92 187.96))
+		(stroke (width 0) (type default))
+		(uuid "8fbfa8d1-065d-4b73-87ef-4ff14316b719")
+	)
+	(wire
+		(pts (xy 393.7 175.26) (xy 403.86 175.26))
+		(stroke (width 0) (type default))
+		(uuid "151977c9-4df1-4a1b-b449-9cda08749ea2")
+	)
+	(wire
+		(pts (xy 408.94 179.07) (xy 408.94 184.15))
+		(stroke (width 0) (type default))
+		(uuid "bf142d28-7bf6-4463-91c5-e09e1215d230")
+	)
+	(label "REFIN_SRC"
+		(at 408.94 184.15 0)
+		(effects
+			(font (size 1.27 1.27))
+			(justify left bottom)
+		)
+		(uuid "0d764e3f-e182-4f71-8cb3-f002b7584a56")
+	)
+	(wire
+		(pts (xy 414.02 175.26) (xy 419.1 175.26))
+		(stroke (width 0) (type default))
+		(uuid "2cc3615f-d8ac-4a7a-ba51-85e70c095b60")
+	)
+	(label "REF_PAD"
+		(at 419.1 175.26 0)
+		(effects
+			(font (size 1.27 1.27))
+			(justify left bottom)
+		)
+		(uuid "b5ea85cc-5dd4-447e-a3be-3553a6417af0")
+	)
+	(wire
+		(pts (xy 393.7 175.26) (xy 393.7 180.34))
+		(stroke (width 0) (type default))
+		(uuid "d622392d-f861-48aa-b8bf-ccf4b47c5815")
+	)
+	(wire
+		(pts (xy 393.7 185.42) (xy 398.78 185.42))
+		(stroke (width 0) (type default))
+		(uuid "03919e29-809b-497a-96b4-96bcbff87901")
+	)
+	(junction
+		(at 393.7 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "088b6651-af69-4dc9-a05d-2ff9537dac7d")
+	)
+	(wire
+		(pts (xy 393.7 185.42) (xy 393.7 190.5))
+		(stroke (width 0) (type default))
+		(uuid "b8131410-b400-42b1-b2a3-04475329f59f")
+	)
+	(wire
+		(pts (xy 393.7 190.5) (xy 398.78 190.5))
+		(stroke (width 0) (type default))
+		(uuid "44154a4c-3257-422d-abb6-46ea41e95488")
+	)
+	(wire
+		(pts (xy 403.86 185.42) (xy 406.4 185.42))
+		(stroke (width 0) (type default))
+		(uuid "93eccc08-ab99-4a31-88de-47bc954cd44a")
+	)
+	(wire
+		(pts (xy 406.4 185.42) (xy 406.4 190.5))
+		(stroke (width 0) (type default))
+		(uuid "9d7f5a1b-5865-4a24-9b7f-fd0aa99b99d4")
+	)
+	(junction
+		(at 406.4 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b886d2c1-f998-44ba-989c-066179cb2833")
+	)
+	(wire
+		(pts (xy 406.4 185.42) (xy 411.48 185.42))
+		(stroke (width 0) (type default))
+		(uuid "a3743784-b725-43d9-b1e2-b21f43f03021")
+	)
+	(label "REF_OUT"
+		(at 411.48 185.42 0)
+		(effects
+			(font (size 1.27 1.27))
+			(justify left bottom)
+		)
+		(uuid "07ffd87e-2ef3-49c5-95a3-4eb540b3054b")
+	)
+	(wire
+		(pts (xy 411.48 185.42) (xy 416.56 185.42))
+		(stroke (width 0) (type default))
+		(uuid "444215b9-062e-4066-9311-492fe9ccc574")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 421.64 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4fc0891f-795d-4d14-9373-35dc1435ab07")
+		(property "Reference" "#PWR084"
+			(at 421.64 199.39 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Value" "GND"
+			(at 421.64 196.85 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Footprint" ""
+			(at 421.64 193.04 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Datasheet" ""
+			(at 421.64 193.04 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 421.64 193.04 0)
+			(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(hide yes)
+		)
+		)
+		(pin "1"
+			(uuid "fb755407-f991-4b94-9376-68587df2a401")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR084")
+					(unit 1)
+				)
+			)
+			(project "Synthesizer"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR084")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 421.64 190.5) (xy 421.64 193.04))
+		(stroke (width 0) (type default))
+		(uuid "20714a9b-f0c4-4102-8092-1f7d8f5e0ea8")
+	)
+	(text "Reference lock: X1 sees R31 10k || C40 10p, AC coupled by C41 into U9 74LVC1GU04 (self-biased by R32). JP1 pads 1-2 select the buffered TCXO (default); pad 3 is REF IN. R29 47R feeds REF OUT. R30 fitted links DC; C42 is the optional series cap (remove R30 to use it)."
+		(at 350.52 145.0 0)
+		(effects (font (size 1.27 1.27)))
+		(uuid "356badf9-765d-46ee-9be1-25a86b5ced7f")
+	)
+
 	(sheet_instances
 		(path "/"
 			(page "1")
