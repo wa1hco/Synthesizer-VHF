@@ -1,0 +1,374 @@
+(footprint "SMA_Cinch_142-0701-801_EdgeMount"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Cinch/Johnson 142-0701-801 SMA end-launch jack, round contact, gold, 0.062 in (1.57 mm) board. Lands from the Emerson/Johnson end-launch drawing (inches): ground pads outer width D=0.440, inner gap C=0.250, depth E=0.200, on F.Cu and B.Cu at the board edge; center land width B=0.090 on F.Cu only. Stitch holes are the drawing's 2x 0.018 in drills with 0.038 in pads. Origin is the signal-land center. Body is local -Y; the board edge is at y=-2.54 mm.")
+	(tags "SMA end launch edge-mount Cinch Johnson 142-0701-801")
+	(property "Reference" "J"
+		(at 0 6.2 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a1c0e5b2-7d44-4e1a-9c31-0b6f2a8d4e11")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "142-0701-801"
+		(at 0 -8.2 0)
+		(layer "F.Fab")
+		(uuid "b2d1f6c3-8e55-4f2b-ad42-1c703b9e5f22")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "Synthesizer:SMA_Cinch_142-0701-801_EdgeMount"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c3e207d4-9f66-403c-be53-2d814caf6033")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.cinch.com/products/rf-microwave/connectors/142-0701-801"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d4f318e5-a077-414d-cf64-3e925db07144")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "SMA end-launch jack, Cinch 142-0701-801, 1.57 mm board"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e50429f6-b188-425e-d075-4fa36ec18255")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "142-0701-801"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f6153a07-c299-436f-e186-50b47fd29366")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -5.84 -2.54)
+		(end -3.7 -2.54)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "11111111-0001-4000-8000-000000000001")
+	)
+	(fp_line
+		(start 3.7 -2.54)
+		(end 5.84 -2.54)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "11111111-0001-4000-8000-000000000002")
+	)
+	(fp_line
+		(start -6.1 -2.2)
+		(end -6.1 2.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "11111111-0001-4000-8000-000000000003")
+	)
+	(fp_line
+		(start 6.1 -2.2)
+		(end 6.1 2.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "11111111-0001-4000-8000-000000000004")
+	)
+	(fp_line
+		(start -4.76 0)
+		(end 4.76 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11111111-0001-4000-8000-000000000010")
+	)
+	(fp_line
+		(start 4.76 0)
+		(end 4.76 -4.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11111111-0001-4000-8000-000000000011")
+	)
+	(fp_line
+		(start 4.76 -4.75)
+		(end -4.76 -4.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11111111-0001-4000-8000-000000000012")
+	)
+	(fp_line
+		(start -4.76 -4.75)
+		(end -4.76 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11111111-0001-4000-8000-000000000013")
+	)
+	(fp_line
+		(start -3.96 -4.75)
+		(end -3.96 -9.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11111111-0001-4000-8000-000000000014")
+	)
+	(fp_line
+		(start 3.96 -4.75)
+		(end 3.96 -9.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11111111-0001-4000-8000-000000000015")
+	)
+	(fp_line
+		(start -3.96 -9.5)
+		(end 3.96 -9.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11111111-0001-4000-8000-000000000016")
+	)
+	(fp_line
+		(start -5.588 6.98)
+		(end -3.175 6.98)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11111111-0001-4000-8000-000000000017")
+	)
+	(fp_line
+		(start -5.588 -2.54)
+		(end -5.588 6.98)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11111111-0001-4000-8000-000000000018")
+	)
+	(fp_line
+		(start -3.175 -2.54)
+		(end -3.175 6.98)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11111111-0001-4000-8000-000000000019")
+	)
+	(fp_line
+		(start 3.175 -2.54)
+		(end 3.175 6.98)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11111111-0001-4000-8000-00000000001a")
+	)
+	(fp_line
+		(start 5.588 -2.54)
+		(end 5.588 6.98)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11111111-0001-4000-8000-00000000001b")
+	)
+	(fp_line
+		(start 3.175 6.98)
+		(end 5.588 6.98)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11111111-0001-4000-8000-00000000001c")
+	)
+	(fp_line
+		(start -6.09 -7.79)
+		(end 6.09 -7.79)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "11111111-0001-4000-8000-000000000020")
+	)
+	(fp_line
+		(start 6.09 -7.79)
+		(end 6.09 7.23)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "11111111-0001-4000-8000-000000000021")
+	)
+	(fp_line
+		(start 6.09 7.23)
+		(end -6.09 7.23)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "11111111-0001-4000-8000-000000000022")
+	)
+	(fp_line
+		(start -6.09 7.23)
+		(end -6.09 -7.79)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "11111111-0001-4000-8000-000000000023")
+	)
+	(fp_line
+		(start -6.2 -2.54)
+		(end 6.2 -2.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "11111111-0001-4000-8000-000000000030")
+	)
+	(fp_text user "PCB Edge"
+		(at 0 -3.3 0)
+		(layer "Dwgs.User")
+		(uuid "11111111-0001-4000-8000-000000000031")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "11111111-0001-4000-8000-000000000032")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 0)
+		(size 2.286 5.08)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "11111111-0001-4000-8000-000000000101")
+	)
+	(pad "2" smd rect
+		(at -4.3815 0)
+		(size 2.413 5.08)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "11111111-0001-4000-8000-000000000102")
+	)
+	(pad "2" smd rect
+		(at 4.3815 0)
+		(size 2.413 5.08)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "11111111-0001-4000-8000-000000000103")
+	)
+	(pad "2" smd rect
+		(at -4.3815 0)
+		(size 2.413 5.08)
+		(layers "B.Cu" "B.Mask" "B.Paste")
+		(uuid "11111111-0001-4000-8000-000000000104")
+	)
+	(pad "2" smd rect
+		(at 4.3815 0)
+		(size 2.413 5.08)
+		(layers "B.Cu" "B.Mask" "B.Paste")
+		(uuid "11111111-0001-4000-8000-000000000105")
+	)
+	(pad "2" thru_hole circle
+		(at -3.6322 1.651)
+		(size 0.9652 0.9652)
+		(drill 0.4572)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "11111111-0001-4000-8000-000000000106")
+	)
+	(pad "2" thru_hole circle
+		(at 3.6322 1.651)
+		(size 0.9652 0.9652)
+		(drill 0.4572)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "11111111-0001-4000-8000-000000000107")
+	)
+	(embedded_fonts no)
+)
