@@ -13518,7 +13518,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:SMA_Amphenol_901-143_Horizontal"
+		(property "Footprint" "Synthesizer:SMA_Cinch_142-0701-801_EdgeMount"
 			(at 381 123.19 0)
 			(effects
 				(font
@@ -13527,7 +13527,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.cinch.com/products/rf-microwave/connectors/142-0701-801"
 			(at 381 123.19 0)
 			(effects
 				(font
@@ -13545,7 +13545,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C496551"
+		(property "MPN" "142-0701-801"
+			(at 381 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 0 246.38 0)
 			(effects
 				(font
@@ -17210,7 +17219,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:SMA_Amphenol_901-143_Horizontal"
+		(property "Footprint" "Synthesizer:SMA_Cinch_142-0701-801_EdgeMount"
 			(at 167.64 143.51 0)
 			(effects
 				(font
@@ -17219,7 +17228,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.cinch.com/products/rf-microwave/connectors/142-0701-801"
 			(at 167.64 143.51 0)
 			(effects
 				(font
@@ -17237,7 +17246,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C496551"
+		(property "MPN" "142-0701-801"
+			(at 167.64 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 360.68 287.02 0)
 			(effects
 				(font
@@ -18827,7 +18845,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:SMA_Amphenol_901-143_Horizontal"
+		(property "Footprint" "Synthesizer:SMA_Cinch_142-0701-801_EdgeMount"
 			(at 381 135.89 0)
 			(effects
 				(font
@@ -18836,7 +18854,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.cinch.com/products/rf-microwave/connectors/142-0701-801"
 			(at 381 135.89 0)
 			(effects
 				(font
@@ -18854,7 +18872,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C496551"
+		(property "MPN" "142-0701-801"
+			(at 381 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 0 271.78 0)
 			(effects
 				(font
