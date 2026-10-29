@@ -21663,17 +21663,6 @@
 		(layer "F.Mask")
 		(uuid "9206d693-7f2a-48ef-9227-fc143b31cedb")
 	)
-	(gr_rect
-		(start 134.55 76)
-		(end 173.5 113.7)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill no)
-		(layer "Cmts.User")
-		(uuid "281a50a7-4690-40a8-88da-4e8fc9cf3366")
-	)
 	(gr_arc
 		(start 128.75 73.75)
 		(mid 129.9802 70.7802)
