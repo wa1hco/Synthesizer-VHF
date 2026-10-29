@@ -8707,7 +8707,7 @@
 		)
 		(uuid "277f9635-4fe6-428f-96bf-7de0ff486ba9")
 	)
-	(label "5V"
+	(label "VDD"
 		(at 49.53 138.43 0)
 		(effects
 			(font
