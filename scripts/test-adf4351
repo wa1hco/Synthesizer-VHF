@@ -1,0 +1,7 @@
+#!/bin/sh
+# Host test of the ADF4351 register math. No board and no PlatformIO target.
+set -eu
+cd "$(dirname "$0")/../software"
+g++ -std=c++17 -Wall -Wextra -Werror -I include -o /tmp/test_adf4351 \
+  src/adf4351_calc.cpp test/test_adf4351.cpp
+/tmp/test_adf4351

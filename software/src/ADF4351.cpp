@@ -5,7 +5,7 @@
 #include "HardwareConfig.h"
 #include "UserInterface.h"
 #include "Global.h"
-#include "rational_approximation.h"
+#include "adf4351_calc.h"
 
 // de SQ3SWF 2019
 // modified by wa1hco 2025
@@ -15,14 +15,12 @@
 
 // debug
 
-#define SHL(x,y) ((uint32_t)1<<y)*x
-
 char Msg[120];
 sConfig_t Config;
 
-// fpfd = REFin * (1 + dbl) / (R * (1 + divby2)))
-// RFout = fpfd * (INT + (FRAC/MOD))
-// INT 23 to 65535 for 4/5 prescaler, 75 to 65535 for 8/9 prescalar
+// fPFD = REFIN * (1 + D) / (R * (1 + T))
+// RFOUT = [INT + FRAC/MOD] * fPFD / RF_divider     (fundamental feedback)
+// INT 23 to 65535 for the 4/5 prescaler, 75 to 65535 for the 8/9 prescaler
 
 // declare user configuration
 uint32_t Fout;           // output frequency
@@ -89,7 +87,7 @@ uint8_t  ld_pinmode;          //   2 bits, 0 low, 1 digital LD, 2 low, 3 high
 // Initialize the register fields in global variables
 void InitFields() {
   Fout                 =      50200000; // 50.2 MHz
-  Fref                 =      25000000; // 25 MHz
+  Fref                 =      ADF4351_REF_HZ; // 25 MHz TCXO
   // Register 0: VCO to PFD, divide by N, N = INT + FRAC/MOD 
   INT                  =      0;   // 16 bit integer  {23, 75} to 65535
   FRAC                 =      0;   // 12 bit fraction 0 to (MOD - 1)
@@ -140,215 +138,119 @@ void InitFields() {
   ld_pinmode           =      1;  //   2 bits, 0 low, 1 digital LD, 2 low, 3 high
 }
 
-void calculate_fields() {
-  // divide vco range down to include output frequency
-  if(Fout >= 2200000000ul) rf_div_sel = 0;
-  if(Fout  < 2200000000ul) rf_div_sel = 1;
-  if(Fout  < 1100000000ul) rf_div_sel = 2;
-  if(Fout  <  550000000ul) rf_div_sel = 3;
-  if(Fout  <  275000000ul) rf_div_sel = 4;
-  if(Fout  <  137500000ul) rf_div_sel = 5;
-  if(Fout  <   68750000ul) rf_div_sel = 6; 
-  
-  // Fvco 2200 to 4400 MHz 
-  uint32_t Fvco = Fout * (1 << rf_div_sel);
-  float target;
+static void fields_from_globals(Adf4351Fields *f) {
+  f->INT = INT;
+  f->FRAC = FRAC;
+  f->phase_adj = phase_adj;
+  f->prescaler = prescaler;
+  f->phase = phase;
+  f->MOD = MOD;
+  f->noise_mode = noise_mode;
+  f->muxout = muxout;
+  f->ref_doubler = ref_doubler;
+  f->ref_by_2 = ref_by_2;
+  f->r_counter = r_counter;
+  f->dbl_buf = dbl_buf;
+  f->charge_pump_current = charge_pump_current;
+  f->ldf = ldf;
+  f->ldp = ldp;
+  f->pd_polarity = pd_polarity;
+  f->powerdown = powerdown;
+  f->cp_three_state = cp_three_state;
+  f->counter_reset = counter_reset;
+  f->band_sel_clk_mode = band_sel_clk_mode;
+  f->abp = abp;
+  f->chg_cancel = chg_cancel;
+  f->cycle_slip_reduce = cycle_slip_reduce;
+  f->clk_div_mode = clk_div_mode;
+  f->clock_divider = clock_divider;
+  f->feedback_sel = feedback_sel;
+  f->rf_div_sel = rf_div_sel;
+  f->band_select_clkdiv = band_select_clkdiv;
+  f->vco_pwrdown = vco_pwrdown;
+  f->mute_till_ld = mute_till_ld;
+  f->aux_out_sel = aux_out_sel;
+  f->aux_out_ena = aux_out_ena;
+  f->aux_out_pwr = aux_out_pwr;
+  f->rf_out_ena = rf_out_ena;
+  f->rf_out_pwr = rf_out_pwr;
+  f->ld_pinmode = ld_pinmode;
+}
 
-  // Fpfd common frequency after N and R dividers
+static void fields_to_globals(const Adf4351Fields *f) {
+  INT = f->INT;
+  FRAC = f->FRAC;
+  phase_adj = f->phase_adj;
+  prescaler = f->prescaler;
+  phase = f->phase;
+  MOD = f->MOD;
+  noise_mode = f->noise_mode;
+  muxout = f->muxout;
+  ref_doubler = f->ref_doubler;
+  ref_by_2 = f->ref_by_2;
+  r_counter = f->r_counter;
+  dbl_buf = f->dbl_buf;
+  charge_pump_current = f->charge_pump_current;
+  ldf = f->ldf;
+  ldp = f->ldp;
+  pd_polarity = f->pd_polarity;
+  powerdown = f->powerdown;
+  cp_three_state = f->cp_three_state;
+  counter_reset = f->counter_reset;
+  band_sel_clk_mode = f->band_sel_clk_mode;
+  abp = f->abp;
+  chg_cancel = f->chg_cancel;
+  cycle_slip_reduce = f->cycle_slip_reduce;
+  clk_div_mode = f->clk_div_mode;
+  clock_divider = f->clock_divider;
+  feedback_sel = f->feedback_sel;
+  rf_div_sel = f->rf_div_sel;
+  band_select_clkdiv = f->band_select_clkdiv;
+  vco_pwrdown = f->vco_pwrdown;
+  mute_till_ld = f->mute_till_ld;
+  aux_out_sel = f->aux_out_sel;
+  aux_out_ena = f->aux_out_ena;
+  aux_out_pwr = f->aux_out_pwr;
+  rf_out_ena = f->rf_out_ena;
+  rf_out_pwr = f->rf_out_pwr;
+  ld_pinmode = f->ld_pinmode;
+}
 
-  bool IntN = true; // is integer N mode feasible
-
-  // find a greatest common divsor between Fout and Fref, integer N mode
-  uint32_t Fpfd = binaryGCD(Fout, Fref);
-  uint16_t Ffrac;
-  INT = Fout / Fpfd;
-  uint16_t R = Fref / Fpfd;
-
-  if (Fpfd > 125000) {
-    band_select_clkdiv = Fpfd / 125000;
-    if (band_select_clkdiv > 256) {
-      Serial.print("calculate_fields: band_select_clkdiv ");
-      Serial.print(band_select_clkdiv);
-      Serial.println("greater than 255");
-    }
+bool calculate_fields() {
+  Adf4351Fields f;
+  fields_from_globals(&f);
+  Fref = ADF4351_REF_HZ;
+  if (!adf4351_calculate(Fout, Fref, &f)) {
+    Serial.println("calculate_fields: frequency out of range");
+    return false;
   }
-  
-  if (R > 1023) {
-    snprintf(Msg, 80, "calculate_fields: R %d > 1023", R);
-    Serial.println(Msg);
-    IntN = false;
-  }
-  else if (INT > 65356) {
-    snprintf(Msg, 80, "calculate_fields: INT %d > 65536", INT);
-    Serial.println(Msg);
-    IntN = false;
-  }
-  else if (Fpfd > 32000000) {
-    snprintf(Msg, 80, "calculate_fields: Fpdf %d > 32 MHz", Fpfd);
-    Serial.println(Msg);
-    IntN = false;
-  } 
-  else if (Fpfd < 100000) {
-    snprintf(Msg, 80, "calculate_fields: Fpdf %d < 100000", Fpfd);
-    Serial.println(Msg);
-    IntN = false;
-  }
-  else {
-    IntN = true;
-  }
+  fields_to_globals(&f);
+  Fpfd = (r_counter == 0) ? 0 : (Fref / r_counter);
 
-  if (IntN) {
-    Serial.println("calculate_fields: Integer N possible");
-    // calculate VCO to PFD divide by N
-    FRAC = 0;
-    ldf = 1; // monitor 40 pfd cycles
-    ldp = 1; // 6 ns
-    band_sel_clk_mode = 0; // Fpfd <= 125 KHz
-    abp = 1; // antibacklash pulse width 3 ns.
-  }
-  else  { // fractional N required
-    Serial.println("calculate_fields: Fractional N required");
-    ldf = 0; // monitor 5 pfd cycles
-    ldp = 0; // 10 ns
-
-    R = 25; // initial default for fractional N
-    Fpfd = Fref / (uint32_t) R;
-
-    band_sel_clk_mode = 1; // Fpfd > 125 KHz, band select clock divider <= 254
-    abp = 0; // antibacklash pulse width 6 ns
-
-    INT = Fout / Fpfd;         // floor(Fout/Fpfd)
-    Ffrac = (uint16_t) (Fout - (uint32_t) INT * Fpfd); // remainder
-    target = (float) Ffrac / (float) Fpfd;
-    rational_t result = rational_approximation(target, 4095);
-    // scale denominator up as much as possible
-    uint16_t scale = (uint16_t) 4095 / result.denominator; // floor, rounded down 
-    FRAC = scale * result.numerator;
-    MOD  = scale * result.denominator;  
-    snprintf(Msg, 80, "ass_reg: num %d, denom %d", result.numerator, result.denominator);
-    Serial.println(Msg);
-  }
-
-  snprintf(Msg, 80, "calculate_fields(): Fout %lu, Fpfd %lu, INT %d, R %d", Fout, Fpfd, INT, R);
-  Serial.print(Msg);
-  if(!IntN){
-    snprintf(Msg, 80, ", Ffrac %d, target %f, FRAC %d, MOD %d", Ffrac, target, FRAC, MOD);
-    Serial.print(Msg);
-  }
-  Serial.println();  
+  snprintf(Msg, 120,
+           "calculate_fields: %s Fout %lu Fpfd %lu INT %u R %u FRAC %u MOD %u div %u",
+           (FRAC == 0) ? "integer-N" : "fractional-N",
+           (unsigned long)Fout, (unsigned long)Fpfd,
+           INT, r_counter, FRAC, MOD, (unsigned)(1u << rf_div_sel));
+  Serial.println(Msg);
+  return true;
 }
 
 // assemble register fields
 void assemble_registers() {
-  // 38.375 to 68.75 MHz fed to N counter from 2200 to 4400 MHz VCO
-  if(Fout >= 2200000000ul) rf_div_sel = 0;
-  if(Fout  < 2200000000ul) rf_div_sel = 1;
-  if(Fout  < 1100000000ul) rf_div_sel = 2;
-  if(Fout  <  550000000ul) rf_div_sel = 3;
-  if(Fout  <  275000000ul) rf_div_sel = 4;
-  if(Fout  <  137500000ul) rf_div_sel = 5;
-  if(Fout  <   68750000ul) rf_div_sel = 6; 
-    
-  // Positions for register fields
-  // assemble the register fragments into register array
-  //Serial.println("prep_reg: ");
-  reg[0] = SHL(INT,                15) | // 16 bits /N from VCO to PFD
-           SHL(FRAC,                3) | // 12 bits
-           0b000;;
-
-  snprintf(Msg, 80, "assemble_registers: INT %d, FRAC %d, reg[0] %lx", INT, FRAC, reg[0]);
+  Adf4351Fields f;
+  fields_from_globals(&f);
+  adf4351_assemble(&f, reg);
+  snprintf(Msg, 80, "assemble_registers: INT %u, FRAC %u, R %u, reg[0] %lx",
+           INT, FRAC, r_counter, (unsigned long)reg[0]);
   Serial.println(Msg);
-
-  reg[1] = SHL(phase_adj,          28) | //  1 bit 0 off, 1 on
-           SHL(prescaler,          27) | //  1 bit 0 4/5, 1 8/9
-           SHL(phase,              15) | // 12 bits 
-           SHL(MOD,                 3) | // 12 bits
-           0b001;
-  //Serial.printHexln(reg[1]);
-  reg[2] = SHL(noise_mode,         29) | //  2 bits
-           SHL(muxout,             26) | //  3 bits
-           SHL(ref_doubler,        25) | //  1
-           SHL(ref_by_2,           24) | //  1
-           SHL(r_counter,          14) | // 10 bits
-           SHL(dbl_buf,            13) | //  1
-           SHL(charge_pump_current, 9) | //  4 bits
-           SHL(ldf,                 8) | //  1
-           SHL(ldp,                 7) | //  1
-           SHL(pd_polarity,         6) | //  1
-           SHL(powerdown,           5) | //  1
-           SHL(cp_three_state,      4) | //  1
-           SHL(counter_reset,       3) | //  1
-           0b010;
-  //Serial.printHexln(reg[2]);
-  reg[3] = SHL(band_sel_clk_mode,  23) | //  1
-           SHL(abp,                22) | //  1
-           SHL(chg_cancel,         21) | //  1
-           SHL(cycle_slip_reduce,  18) | //  1
-           SHL(clk_div_mode,       15) | //  2 bits
-           SHL(clock_divider,       3) | // 12 bits
-           0b011;
-  //Serial.printHexln(reg[3]);
-  reg[4] = SHL(feedback_sel,       23) | //  1
-           SHL(rf_div_sel,         20) | //  3 bits
-           SHL(band_select_clkdiv, 12) | //  8 bits
-           SHL(vco_pwrdown,        11) | //  1
-           SHL(mute_till_ld,       10) | //  1
-           SHL(aux_out_sel,         9) | //  1
-           SHL(aux_out_ena,         8) | //  1
-           SHL(aux_out_pwr,         6) | //  2 bits
-           SHL(rf_out_ena,          5) | //  1 bit
-           SHL(rf_out_pwr,          3) | //  2 bits
-           0b100;
-  //Serial.printHexln(reg[4]);
-  reg[5] = SHL(ld_pinmode,         22) | //  2 bits
-           SHL(0b11,               19) | //  2 bits datasheet reserved, but 0b11
-           0b101;
-  //Serial.printHexln(reg[5]);
 }
 
 // fill in global variables from register fields
 void disassemble_registers() {
-  INT                  = (reg[0] >> 15) & 0xFFFF;
-  FRAC                 = (reg[0] >>  3) & 0xFFF;
-
-  phase_adj            = (reg[1] >> 28) & 0x01;
-  prescaler            = (reg[1] >> 27) & 0x01;
-  phase                = (reg[1] >> 15) & 0xFFF;
-  MOD                  = (reg[1] >>  3) * 0xFFF;
-
-  noise_mode           = (reg[2] >> 29) & 0x03;
-  muxout               = (reg[2] >> 26) & 0x03;
-  ref_doubler          = (reg[2] >> 25) & 0x01;
-  ref_by_2             = (reg[2] >> 24) & 0x01;
-  r_counter            = (reg[2] >> 14) & 0x3FF;
-  dbl_buf              = (reg[2] >> 13) & 0x01;
-  charge_pump_current  = (reg[2] >>  9) & 0x0f;
-  ldf                  = (reg[2] >>  8) & 0x01;
-  ldp                  = (reg[2] >>  7) & 0x01;
-  pd_polarity          = (reg[2] >>  6) & 0x01; 
-  powerdown            = (reg[2] >>  5) & 0x01;
-  cp_three_state       = (reg[2] >>  4) & 0x01;
-  counter_reset        = (reg[2] >>  3) & 0x01;
-  
-  band_sel_clk_mode    = (reg[3] >> 23) & 0x01;
-  abp                  = (reg[3] >> 22) & 0x01; 
-  chg_cancel           = (reg[3] >> 21) & 0x01; 
-  cycle_slip_reduce    = (reg[3] >> 18) & 0x01; 
-  clk_div_mode         = (reg[3] >> 15) & 0x03;
-  clock_divider        = (reg[3] >>  3) & 0x0FFF;
-
-  feedback_sel         = (reg[4] >> 23) & 0x01;
-  rf_div_sel           = (reg[4] >> 20) & 0x07;
-  band_select_clkdiv   = (reg[4] >> 12) & 0xFF;
-  vco_pwrdown          = (reg[4] >> 11) & 0x01;
-  mute_till_ld         = (reg[4] >> 10) & 0x01;
-  aux_out_sel          = (reg[4] >>  9) & 0x01;
-  aux_out_ena          = (reg[4] >>  8) & 0x01;
-  aux_out_pwr          = (reg[4] >>  6) & 0x03;
-  rf_out_ena           = (reg[4] >>  5) & 0x01;
-  rf_out_pwr           = (reg[4] >>  3) & 0x03;
-
-  ld_pinmode           = (reg[5] >> 22) & 0x03;
+  Adf4351Fields f;
+  adf4351_disassemble(reg, &f);
+  fields_to_globals(&f);
 }
 
 void bitBangData(byte _send)  // This function transmit the data via bitbanging
@@ -372,11 +274,11 @@ void sendRegisterToAdf(uint16_t reg_id) {
   digitalWrite(SSPin, LOW);
   delayMicroseconds(10);
 
-  //bitBangData((uint8_t)(reg[reg_id] >> 24)); Serial.printHex((uint8_t) (reg[reg_id] >> 24)); Serial.print(" ");
-  //bitBangData((uint8_t)(reg[reg_id] >> 16)); Serial.printHex((uint8_t) (reg[reg_id] >> 16)); Serial.print(" ");
-  //bitBangData((uint8_t)(reg[reg_id] >> 8));  Serial.printHex((uint8_t) (reg[reg_id] >>  8)); Serial.print(" ");
-  //bitBangData((uint8_t)(reg[reg_id]     ));  Serial.printHex((uint8_t) (reg[reg_id]      )); Serial.print(" ");
-  //Serial.println();
+  // 32 bits, MSB first, latched on the rising edge of LE (datasheet p.12).
+  bitBangData((uint8_t)(reg[reg_id] >> 24));
+  bitBangData((uint8_t)(reg[reg_id] >> 16));
+  bitBangData((uint8_t)(reg[reg_id] >> 8));
+  bitBangData((uint8_t)(reg[reg_id]));
   
   digitalWrite(SSPin, HIGH);
   delayMicroseconds(5);
@@ -414,9 +316,10 @@ void setup() {
   // if bad, initialize global variables from program defaults, save to eeprom
   // display global variable and register status
 
-  calculate_fields();
-  assemble_registers();
-  updateAllRegisters();
+  if (calculate_fields()) {
+    assemble_registers();
+    updateAllRegisters();
+  }
 }
 
 char key, cwmode=0;
@@ -485,9 +388,10 @@ void loop() {
     sendRegisterToAdf(2); // prints bits and hex
   } 
   
-  calculate_fields();
-  assemble_registers();
-  updateAllRegisters();
+  if (calculate_fields()) {
+    assemble_registers();
+    updateAllRegisters();
+  }
   PrintConfig();    
 
   // LED debug
