@@ -143,7 +143,7 @@ void PrintConfig() {
   snprintf(Msg, 120, "Reg 1 prescaler %d, MOD    %d",  prescaler, MOD);  Serial.println(Msg);
   snprintf(Msg, 120, "Reg 2 nm        %d, muxout %d, ref*2   %d, ref/2        %d, R       %d, cpc %d, ldf %d, ldp %d", 
                            noise_mode, muxout, ref_doubler, ref_by_2, r_counter, charge_pump_current, ldf, ldp); Serial.println(Msg);
-  snprintf(Msg, 120, "Reg 3 bs_mode   %d, abp    %d, clk_div %d, ", 
+  snprintf(Msg, 120, "Reg 3 bs_mode   %d, abp    %d, chg_cancel %d, clk_div %d",
                            band_sel_clk_mode, abp, chg_cancel, clock_divider); Serial.println(Msg);
   snprintf(Msg, 120, "Reg 4 rf_dev    %d, band_sel_div %d, mute_ld %d, aux %d, rf %d", 
                            1<<rf_div_sel, band_select_clkdiv, mute_till_ld, aux_out_ena, rf_out_ena); Serial.println(Msg);

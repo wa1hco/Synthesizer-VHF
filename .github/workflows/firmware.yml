@@ -23,3 +23,11 @@ jobs:
       - name: Build firmware
         working-directory: software
         run: pio run
+
+      - name: ADF4351 host test
+        run: |
+          if ! command -v g++ >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y g++
+          fi
+          scripts/test-adf4351
