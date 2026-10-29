@@ -21663,6 +21663,72 @@
 		(layer "F.Mask")
 		(uuid "9206d693-7f2a-48ef-9227-fc143b31cedb")
 	)
+	(gr_rect
+		(start 128.75 69.55)
+		(end 136.675 77.5)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "6947f9f1-64ad-449e-8c72-008617ecbea3")
+	)
+	(gr_rect
+		(start 128.75 69.55)
+		(end 179.3 120.15)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "62727312-719b-480d-9f40-1b39ffbb2173")
+	)
+	(gr_rect
+		(start 128.75 112.2)
+		(end 136.675 120.15)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "64a481fc-1f8b-41e4-860c-1466464e963b")
+	)
+	(gr_rect
+		(start 131.175 72)
+		(end 176.875 117.7)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "24074386-dc2b-4da8-9ba3-575e6b21bcb2")
+	)
+	(gr_rect
+		(start 171.375 69.55)
+		(end 179.3 77.5)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "599791d4-af2c-4854-8be7-6beb67e5cbca")
+	)
+	(gr_rect
+		(start 171.375 112.2)
+		(end 179.3 120.15)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "905b9a9c-0458-4998-8e61-58827a56d1ed")
+	)
 	(gr_arc
 		(start 128.75 73.75)
 		(mid 129.9802 70.7802)
@@ -21817,6 +21883,17 @@
 				(thickness 0.12)
 			)
 			(justify left)
+		)
+	)
+	(gr_text "ENCLOSURE RIM / BOSS - keep pads & holes clear"
+		(at 154.025 67.8 0)
+		(layer "Dwgs.User")
+		(uuid "a41ceac1-41a4-41ca-b0d7-67851108600d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
 		)
 	)
 	(dimension
