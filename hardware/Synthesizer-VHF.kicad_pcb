@@ -7437,6 +7437,9 @@
 	(footprint "Synthesizer:MountingHole_3.9mm_Pad_D5.6"
 		(layer "F.Cu")
 		(uuid "509483e5-7f5b-4ef3-8431-cbe12c16429e")
+		(path "/4e9e982a-eae0-40a2-a1f2-94614b2230b5")
+		(sheetname "/")
+		(sheetfile "Synthesizer-VHF.kicad_sch")
 		(at 174.275 74.6)
 		(descr "Plated mounting hole, 3.9 mm (Hammond 1590LB lid hole, #6-32 screw), 5.6 mm pad")
 		(property "Reference" "H2"
@@ -16457,6 +16460,9 @@
 	(footprint "Synthesizer:MountingHole_3.9mm_Pad_D5.6"
 		(layer "F.Cu")
 		(uuid "d4d2a000-9059-4ca0-a7a7-74df35acda73")
+		(path "/f0205bb3-30d9-4d9d-b551-d614cd745d7d")
+		(sheetname "/")
+		(sheetfile "Synthesizer-VHF.kicad_sch")
 		(at 133.775 115.1)
 		(descr "Plated mounting hole, 3.9 mm (Hammond 1590LB lid hole, #6-32 screw), 5.6 mm pad")
 		(property "Reference" "H4"
@@ -16743,6 +16749,9 @@
 	(footprint "Synthesizer:MountingHole_3.9mm_Pad_D5.6"
 		(layer "F.Cu")
 		(uuid "dc9d38b6-2310-4f35-8d03-481db41b5af0")
+		(path "/f05e2813-c0e5-42aa-bf29-8c9c5406ee49")
+		(sheetname "/")
+		(sheetfile "Synthesizer-VHF.kicad_sch")
 		(at 174.275 115.1)
 		(descr "Plated mounting hole, 3.9 mm (Hammond 1590LB lid hole, #6-32 screw), 5.6 mm pad")
 		(property "Reference" "H3"
@@ -17030,6 +17039,9 @@
 	(footprint "Synthesizer:MountingHole_3.9mm_Pad_D5.6"
 		(layer "F.Cu")
 		(uuid "e761448e-2f7c-41aa-ac49-903aa7458e55")
+		(path "/70f2e1dc-18c0-451f-89f2-e109fc4609a6")
+		(sheetname "/")
+		(sheetfile "Synthesizer-VHF.kicad_sch")
 		(at 133.775 74.6)
 		(descr "Plated mounting hole, 3.9 mm (Hammond 1590LB lid hole, #6-32 screw), 5.6 mm pad")
 		(property "Reference" "H1"
