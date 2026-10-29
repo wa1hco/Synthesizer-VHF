@@ -41,7 +41,7 @@ That builds `software/` for an ATtiny1616 running at 20 MHz on the internal osci
 
 ## Flash the firmware
 
-Install `pymcuprog` as well. The serial port and the UPDI upload command are already set in `software/platformio.ini` (the port there is `/dev/ttyUSB0`). Connect the programmer, then from the repository root:
+Install `pymcuprog` as well. The serial port and the UPDI upload command are already set in `software/platformio.ini` (the port there is the FT231X by-id path for this board, not `/dev/ttyUSB0`). Connect the programmer, then from the repository root:
 
 ```
 scripts/flash-firmware
