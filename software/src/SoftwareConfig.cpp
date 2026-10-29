@@ -44,7 +44,7 @@ uint16_t CalcCRC(sConfig_t Config) {
 // delays specifiec in msec after key asserted
 sConfig_t InitDefaultConfig() {
   sConfig_t Config;
-  Config.Fout           = 50200000;  // Hz, 50.2 MHz
+  Config.Fout           = 144170000;  // Hz, 144.170 MHz
   Config.Fref           = ADF4351_REF_HZ;  // 25 MHz TCXO
   for (int ii = 0; ii < 6; ii++) {
     Config.reg[ii] = reg[ii];

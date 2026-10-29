@@ -86,7 +86,7 @@ uint8_t  ld_pinmode;          //   2 bits, 0 low, 1 digital LD, 2 low, 3 high
 
 // Initialize the register fields in global variables
 void InitFields() {
-  Fout                 =      50200000; // 50.2 MHz
+  Fout                 =     144170000; // 144.170 MHz
   Fref                 =      ADF4351_REF_HZ; // 25 MHz TCXO
   // Register 0: VCO to PFD, divide by N, N = INT + FRAC/MOD 
   INT                  =      0;   // 16 bit integer  {23, 75} to 65535
