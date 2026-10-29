@@ -130,3 +130,9 @@
 	(condition "A.isPlated() && B.isPlated() && A.Net != B.Net")
 	(constraint clearance (min 0.127mm))
 )
+
+# Zone thermal relief defaults (all zones, incl. new ones): gap 0.3mm, spoke 0.4mm
+(rule "Zone thermal relief"
+	(condition "A.Type == 'Zone'")
+	(constraint thermal_relief_gap (opt 0.3mm))
+	(constraint thermal_spoke_width (opt 0.4mm)))
