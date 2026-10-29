@@ -22,13 +22,13 @@
 (rule "Track width, outer layer (1oz copper)"
 	(layer outer)
 	(condition "A.Type == 'track'")
-	(constraint track_width (min 0.127mm))
+	(constraint track_width (min 0.09mm))
 )
 
 (rule "Track spacing, outer layer (1oz copper)"
 	(layer outer)
 	(condition "A.Type == 'track' && B.Type == A.Type")
-	(constraint clearance (min 0.127mm))
+	(constraint clearance (min 0.09mm))
 )
 
 (rule "Track width, inner layer"
@@ -58,7 +58,7 @@
 
 (rule "Edge (routed) to track clearance"
 	(condition "A.Type == 'track'")
-	(constraint edge_clearance (min 0.3mm))
+	(constraint edge_clearance (min 0.2mm))
 )
 
 #(rule "Edge (v-cut) to track clearance"
@@ -104,7 +104,7 @@
 (rule "Clearance: hole to hole (perimeter), same net"
 	(layer outer)
 	(condition "A.Net == B.Net")
-	(constraint hole_to_hole (min 0.254mm))
+	(constraint hole_to_hole (min 0.2mm))
 )
 
 (rule "Clearance: track to NPTH hole (perimeter)"
