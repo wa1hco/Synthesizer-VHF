@@ -6043,6 +6043,129 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Synthesizer:IQXT-220-2"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "X"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)))
+			)
+			(property "Value" "IQXT-220-2"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)))
+			)
+			(property "Footprint" "Synthesizer:Oscillator_SMD_3225_VCTCXO"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(property "Description" "IQD IQXT-220-2 10 MHz VCTCXO, 3225, consigned"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(property "ki_keywords" "VCTCXO 10MHz"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(property "ki_fp_filters" "Oscillator*3225*"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(symbol "IQXT-220-2_0_1"
+				(rectangle
+					(start -5.08 -5.08)
+					(end 5.08 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "IQXT-220-2_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "Vc"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "Comms"
 		(exclude_from_sim no)
@@ -6634,17 +6757,7 @@
 		)
 		(uuid "0561092d-e694-4c26-89a2-71fe504aa52a")
 	)
-	(wire
-		(pts
-			(xy 189.23 124.46) (xy 200.66 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "065e9a59-a51a-4e94-80fe-5024c2b585c2")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 359.41 39.37) (xy 359.41 120.65)
 		)
@@ -6694,27 +6807,7 @@
 		)
 		(uuid "0d879acc-01c5-418d-a1c3-5c4c39a0cbfd")
 	)
-	(wire
-		(pts
-			(xy 173.99 161.29) (xy 198.12 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0dc8f77b-f436-4a19-b36d-17abd9c10d08")
-	)
-	(wire
-		(pts
-			(xy 209.55 156.21) (xy 259.08 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f6d708f-791d-4f78-bbed-cbc655b1a3e0")
-	)
-	(wire
+			(wire
 		(pts
 			(xy 64.77 234.95) (xy 64.77 236.22)
 		)
@@ -6954,17 +7047,7 @@
 		)
 		(uuid "280b7023-47ad-48f0-b086-abd019e12038")
 	)
-	(wire
-		(pts
-			(xy 173.99 124.46) (xy 181.61 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29760ab4-9bc3-418c-a278-4c4237acf9ff")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 43.18 237.49) (xy 44.45 237.49)
 		)
@@ -7084,17 +7167,7 @@
 		)
 		(uuid "3092e764-c9fc-4b47-a7e2-ce46e1e69aba")
 	)
-	(wire
-		(pts
-			(xy 198.12 161.29) (xy 198.12 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31870dd0-0f7a-407d-89b9-0e161b4ab779")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 359.41 139.7) (xy 359.41 148.59)
 		)
@@ -7134,17 +7207,7 @@
 		)
 		(uuid "36d20f57-45a8-44c5-8564-18df17cf653a")
 	)
-	(wire
-		(pts
-			(xy 203.2 138.43) (xy 200.66 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36f91674-36b3-48c8-9b23-2351ca5174e8")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 267.97 148.59) (xy 289.56 148.59)
 		)
@@ -7394,17 +7457,7 @@
 		)
 		(uuid "512c30f0-4c9a-4e5a-9b48-6c9d063e4243")
 	)
-	(wire
-		(pts
-			(xy 200.66 124.46) (xy 200.66 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51ae4dbe-caa1-404d-aec8-42118cf8ac80")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 66.04 154.94) (xy 76.2 154.94)
 		)
@@ -7414,17 +7467,7 @@
 		)
 		(uuid "5317c089-b9a2-4170-8d97-edc83a900fe9")
 	)
-	(wire
-		(pts
-			(xy 200.66 156.21) (xy 200.66 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53e61985-3c2a-4515-a720-10926639ef2d")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 86.36 234.95) (xy 88.9 234.95)
 		)
@@ -7434,17 +7477,7 @@
 		)
 		(uuid "5608e2c1-4e0c-4deb-8eb4-36eff300cc31")
 	)
-	(wire
-		(pts
-			(xy 200.66 156.21) (xy 204.47 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57324925-1750-4c09-b593-e6d039feccd1")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 64.77 231.14) (xy 64.77 232.41)
 		)
@@ -7474,17 +7507,7 @@
 		)
 		(uuid "58ac1d5d-03f7-4937-aab4-363e88de59a1")
 	)
-	(wire
-		(pts
-			(xy 186.69 124.46) (xy 189.23 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "593d7a8c-cfa5-4d71-98e3-f99d4a604ce2")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 312.42 101.6) (xy 312.42 115.57)
 		)
@@ -8244,17 +8267,7 @@
 		)
 		(uuid "b07fb5e7-a539-45fc-a441-314c6ffe3ece")
 	)
-	(wire
-		(pts
-			(xy 200.66 140.97) (xy 203.2 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0d3f5ac-9828-4124-9e1f-24e9e8c1be5e")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 156.21 110.49) (xy 156.21 114.3)
 		)
@@ -8714,17 +8727,7 @@
 		)
 		(uuid "e0abc6ad-94cb-4305-b1a6-7b6eda5bdeda")
 	)
-	(wire
-		(pts
-			(xy 198.12 143.51) (xy 203.2 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0ed887e-c8ce-4e97-adb2-607917183e98")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 43.18 232.41) (xy 44.45 232.41)
 		)
@@ -8764,17 +8767,7 @@
 		)
 		(uuid "e4d99f85-d8b5-4632-b749-3363dc2af5d7")
 	)
-	(wire
-		(pts
-			(xy 160.02 143.51) (xy 165.1 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4f4dc81-0550-4292-a591-adae144ec613")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 359.41 120.65) (xy 359.41 132.08)
 		)
@@ -11881,7 +11874,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "100p"
 			(at 157.734 145.796 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11914,7 +11907,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "REF_OUT shunt edge softener"
 			(at 156.21 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -11925,7 +11918,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15195"
+		(property "LCSC" "C1546"
 			(at 12.7 367.03 0)
 			(hide yes)
 			(show_name no)
@@ -11951,99 +11944,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 189.23 127 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2a4642f7-08a2-42c8-8eed-0c00f40a8694")
-		(property "Reference" "R31"
-			(at 191.008 126.492 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "510R"
-			(at 191.008 128.778 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Synthesizer:Res_0402"
-			(at 189.23 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 189.23 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Shunt leg, JP1 pad 1 side of the local divider"
-			(at 189.23 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C276273"
-			(at 189.23 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4a889da1-0630-4541-9e36-c47e1d69aee7")
-		)
-		(pin "2"
-			(uuid "b2863402-14fe-4c6b-86d9-77986f0fef7c")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(symbol
 		(lib_id "Device:C")
 		(at 86.36 243.84 0)
 		(unit 1)
@@ -13736,7 +13637,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Oscillator:IQXO-70")
+		(lib_id "Synthesizer:IQXT-220-2")
 		(at 125.73 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -13756,7 +13657,7 @@
 				)
 			)
 		)
-		(property "Value" "HCI 8122S-25NQ33FTL"
+		(property "Value" "IQXT-220-2 10MHz"
 			(at 124.714 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13766,7 +13667,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Oscillator_SMD2520"
+		(property "Footprint" "Synthesizer:Oscillator_SMD_3225_VCTCXO"
 			(at 142.875 132.715 0)
 			(hide yes)
 			(show_name no)
@@ -13777,7 +13678,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2402211140_HCI-8122S-25-000NQ33FTL_C20623084.pdf"
+		(property "Datasheet" ""
 			(at 123.19 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -13788,7 +13689,7 @@
 				)
 			)
 		)
-		(property "Description" "Crystal Clock Oscillator, SMD package 2.5x2.0 mm"
+		(property "Description" "IQD IQXT-220-2 10 MHz VCTCXO, 3.2x2.5, consigned (no LCSC)"
 			(at 125.73 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -13799,7 +13700,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C20623084"
+		(property "LCSC" ""
 			(at 122.174 117.856 0)
 			(hide yes)
 			(show_name no)
@@ -16915,177 +16816,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 184.15 124.46 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7198a1d1-1c9e-48f5-812d-180488ce8bce")
-		(property "Reference" "R30"
-			(at 183.642 122.428 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220R"
-			(at 188.976 122.428 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Synthesizer:Res_0402"
-			(at 184.15 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 184.15 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Series leg, local REF_DRIVE to JP1 pad 1"
-			(at 184.15 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C112291"
-			(at 184.15 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "aadae648-9e60-49de-8ce4-a7eef3c66b7d")
-		)
-		(pin "2"
-			(uuid "495f6bd5-2aa6-456b-9574-a49549d89629")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 189.23 129.54 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "729f231d-b551-4fa2-9de0-9dd617eefaa4")
-		(property "Reference" "#PWR108"
-			(at 189.23 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 191.77 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 189.23 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 189.23 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 189.23 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "22a1163e-df93-4b25-8713-fb937c65e426")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR108")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+			(symbol
 		(lib_id "Device:C")
 		(at 331.47 115.57 90)
 		(unit 1)
@@ -18190,99 +17921,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 207.01 156.21 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "86789248-bc84-4094-bf1f-e63db2e4c1e0")
-		(property "Reference" "R32"
-			(at 206.502 154.178 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47R"
-			(at 211.836 154.178 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Synthesizer:Res_0402"
-			(at 207.01 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 207.01 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Series leg, local REF_DRIVE to JP1 pad 1"
-			(at 207.01 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C112291"
-			(at 207.01 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4c815d8e-7c75-4e70-b7d9-ed4af10b141a")
-		)
-		(pin "2"
-			(uuid "8fe8a5f4-7c77-4796-b85b-50848c89cae4")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(symbol
 		(lib_id "adf4350:ADF4350")
 		(at 309.88 153.67 0)
 		(unit 1)
@@ -20887,7 +20526,7 @@
 				)
 			)
 		)
-		(property "Value" "47R"
+		(property "Value" "39R"
 			(at 170.434 141.224 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20919,7 +20558,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "REF_OUT series edge softener"
 			(at 167.64 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -20930,7 +20569,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25076"
+		(property "LCSC" "C185420"
 			(at 167.64 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -21283,101 +20922,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
-		(at 208.28 140.97 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b77a5ecf-18b7-433d-8a84-f7f7e095159f")
-		(property "Reference" "J11"
-			(at 207.645 133.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Header 1x3"
-			(at 210.566 135.89 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 208.28 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 208.28 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C6332196"
-			(at 207.645 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "df62f063-b203-4737-94aa-6b57c2ef0ae5")
-		)
-		(pin "2"
-			(uuid "da923f66-76c1-4d34-a5a3-20d65296f5ed")
-		)
-		(pin "1"
-			(uuid "bfc757e1-3f97-4161-a98b-20ac68412aee")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "J11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(symbol
 		(lib_id "power:GND")
 		(at 302.26 181.61 0)
 		(mirror y)
@@ -24695,86 +24240,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 118.11 124.46 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ea67ef63-ba39-4d27-88c8-2eb28c665f2b")
-		(property "Reference" "#PWR103"
-			(at 118.11 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 118.11 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 118.11 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 118.11 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5e8377ad-51be-4881-b08b-58f22b10c200")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR103")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(symbol
 		(lib_id "Connector:Conn_Coaxial")
 		(at 139.7 143.51 0)
 		(mirror y)
@@ -26762,6 +26228,154 @@ UPDI is PA0 only, on J12 (UPDI, VDD, GND). Optiboot ersatz reset: DTR - 100 nF -
 			(justify left)
 		)
 		(uuid "c2b32757-1c60-4af0-aad5-c709b1d0e380")
+	)
+
+	(label "VC"
+		(at 118.11 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f331c978-e94c-468f-8e7a-9e1b5a648b23")
+	)
+
+	(label "XO"
+		(at 133.35 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4034b7eb-4351-4ba1-9bd7-c316a4a4bd00")
+	)
+
+	(label "XO"
+		(at 259.08 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c3161b6d-89a7-4399-91d3-1547a8d74189")
+	)
+
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 143.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa47ca9a-ad4a-4ebb-8f85-c12a9ad04e79")
+		(property "Reference" "#PWR201"
+			(at 160.02 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "66e2ebf9-a617-41fb-81b7-9d528561f103")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR201")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(label "REF_OUT"
+		(at 165.1 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "160dcb0d-8210-4708-b62b-2845caf90b8d")
+	)
+
+	(text "REF_OUT: after U11, 39 ohm series and 100 pF to GND. RC edge softener, not a sine filter.
+VCTCXO output (XO) is AC-coupled to ADF4351 REFIN (C3), and to U11."
+		(exclude_from_sim no)
+		(at 125.73 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3b89517c-ceac-44f4-8165-17bccdf90fb1")
+	)
+
+	(wire
+		(pts
+			(xy 168.91 161.29) (xy 176.53 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b36a3ad8-934c-4ecd-bbe5-da309c148447")
 	)
 
 	(sheet_instances
