@@ -6595,6 +6595,147 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Synthesizer:Conn_01x05_Pin"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)))
+			)
+			(property "Value" "Conn_01x05"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)))
+			)
+			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(property "Description" "1x5 2.54 mm header"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects (font (size 1.27 1.27)) (hide yes))
+			)
+			(symbol "Conn_01x05_Pin_0_1"
+				(rectangle
+					(start 0 -6.35)
+					(end 2.54 6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Conn_01x05_Pin_1_1"
+			(pin passive line
+				(at 5.08 5.08 180)
+				(length 2.54)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 2.54)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -5.08 180)
+				(length 2.54)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "Comms"
 		(exclude_from_sim no)
@@ -7344,17 +7485,7 @@
 		)
 		(uuid "1c005846-0240-4aaf-8aa4-e5d7dd8d7ea4")
 	)
-	(wire
-		(pts
-			(xy 66.04 162.56) (xy 71.12 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c56edf0-2ae4-49e3-bdb1-43c774805b86")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 148.59 212.09) (xy 148.59 218.44)
 		)
@@ -7614,17 +7745,7 @@
 		)
 		(uuid "35fc3e33-1612-4aed-97b7-d29e2214d695")
 	)
-	(wire
-		(pts
-			(xy 66.04 160.02) (xy 71.12 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36d20f57-45a8-44c5-8564-18df17cf653a")
-	)
-		(wire
+			(wire
 		(pts
 			(xy 267.97 148.59) (xy 289.56 148.59)
 		)
@@ -8414,17 +8535,7 @@
 		)
 		(uuid "8faf6e33-3506-4870-93ac-6ac4148fbc71")
 	)
-	(wire
-		(pts
-			(xy 330.2 138.43) (xy 336.55 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8fc4b8e2-2ea4-4505-99e0-49ca22ffe38c")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 55.88 201.93) (xy 60.96 201.93)
 		)
@@ -9224,17 +9335,7 @@
 		)
 		(uuid "e8b0a75c-1e0b-4a07-b3fa-2ca4f55955b8")
 	)
-	(wire
-		(pts
-			(xy 330.2 135.89) (xy 336.55 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8edfc1e-bdd5-46ba-8efb-b57d100da171")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 281.94 120.65) (xy 283.21 120.65)
 		)
@@ -15990,101 +16091,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
-		(at 341.63 138.43 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "65455f5f-9073-4a41-94d4-f60d642986ad")
-		(property "Reference" "J2"
-			(at 340.995 130.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Scope"
-			(at 339.344 133.096 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 341.63 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 341.63 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 341.63 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C6332196"
-			(at 340.995 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "8f307559-7c06-45a9-aff7-56ff33fd0c85")
-		)
-		(pin "2"
-			(uuid "388846cf-dc64-487b-8f7c-528b75118017")
-		)
-		(pin "1"
-			(uuid "1ae73e31-ff8f-4f27-9a20-561a818a1b3c")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(symbol
 		(lib_id "power:GND")
 		(at 353.06 139.7 0)
 		(unit 1)
@@ -19744,100 +19751,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
-		(at 76.2 162.56 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a2cc3beb-8599-4b15-abcf-76143973cf53")
-		(property "Reference" "J6"
-			(at 75.565 170.18 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Scope"
-			(at 75.946 167.386 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 76.2 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 76.2 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C6332196"
-			(at 75.565 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "c614b6f5-7126-4c9e-9050-11646ea26833")
-		)
-		(pin "2"
-			(uuid "84693e3a-7534-4963-ab99-8a091f1d0a7d")
-		)
-		(pin "1"
-			(uuid "1e20b3f3-54e1-4a7e-b31c-64add0dd92ca")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(symbol
 		(lib_id "Device:C")
 		(at 147.32 114.3 180)
 		(unit 1)
@@ -22533,86 +22447,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 336.55 140.97 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cc913da7-6e4e-468b-965d-2cfd6e52eaca")
-		(property "Reference" "#PWR018"
-			(at 336.55 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 336.55 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 336.55 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 336.55 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 336.55 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "908b2cee-c59c-469a-8167-420abb7128be")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(symbol
 		(lib_id "power:GND")
 		(at 255.27 173.99 0)
 		(unit 1)
@@ -25357,86 +25192,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 71.12 165.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f20ca1f5-1257-46e0-b8ac-7a0c03654a34")
-		(property "Reference" "#PWR020"
-			(at 71.12 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 71.12 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 71.12 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c973ae28-ad7c-4b31-a4ff-48655f25a0fc")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(symbol
 		(lib_id "Device:C")
 		(at 87.63 205.74 0)
 		(unit 1)
@@ -29455,6 +29211,277 @@ REFIN below 20 MHz needs slew > 50 V/us (ADF4002 datasheet). A 10 MHz sine shoul
 			(justify left)
 		)
 		(uuid "3bd473ae-4e8f-4b0a-9714-53887e17125b")
+	)
+
+	(symbol
+		(lib_id "Synthesizer:Conn_01x05_Pin")
+		(at 341.63 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f4340f9f-a150-46e3-b47e-421321696558")
+		(property "Reference" "J2"
+			(at 340.36 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Scope"
+			(at 342.9 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+			(at 341.63 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 341.63 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Test header: LD, MUX, DBG1, DBG2, GND. DBG1/DBG2 are pads only (PB4/PB5 drive LEDs)."
+			(at 341.63 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C124379"
+			(at 341.63 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bc0c681f-dd82-4e6e-9c72-7b01f5203b81")
+		)
+		(pin "2"
+			(uuid "0544c1cd-1be4-4097-88be-bfd0cc8d2276")
+		)
+		(pin "3"
+			(uuid "f81f6b13-e7f6-4425-8673-39f032e84ccd")
+		)
+		(pin "4"
+			(uuid "bfc148a9-81c3-422b-a49e-b551637ddfaa")
+		)
+		(pin "5"
+			(uuid "aa35c864-bab5-4581-bdac-af95eefcc58b")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(wire
+		(pts
+			(xy 346.71 95.25) (xy 346.71 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e2dd109-097a-4de4-a04a-5557376752a2")
+	)
+	(label "LD"
+		(at 346.71 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea1bdfb1-0377-48ff-b02e-c2da0e757d3f")
+	)
+	(wire
+		(pts
+			(xy 346.71 97.79) (xy 349.25 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8093194-a9e7-4541-bab8-093c4782e92e")
+	)
+	(label "MUX"
+		(at 349.25 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3b59a393-c053-49e9-91d5-0a69e632a724")
+	)
+	(wire
+		(pts
+			(xy 346.71 100.33) (xy 349.25 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfb7a2fe-1167-4f0a-a697-c3d1ecfad134")
+	)
+	(label "DBG1"
+		(at 349.25 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b72b13a8-ec20-46d3-bf9d-8aeb4af1c894")
+	)
+	(wire
+		(pts
+			(xy 346.71 102.87) (xy 349.25 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28c61fa5-2ac7-45f6-a88c-e8c12d7c06d4")
+	)
+	(label "DBG2"
+		(at 349.25 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "577eec5b-7784-4e9d-a77a-51e586283cc3")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 346.71 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dcd9e13e-0379-46f2-be8a-de996a2fc224")
+		(property "Reference" "#PWR201"
+			(at 346.71 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 346.71 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 346.71 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 346.71 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 346.71 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ba5d6df8-1f95-40c0-916d-e60c48c828d6")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR201")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(no_connect
+		(at 66.04 162.56)
+		(uuid "8e764bc0-c4f8-41aa-8396-8d36cf1e949b")
+	)
+
+	(no_connect
+		(at 66.04 160.02)
+		(uuid "c33369b9-6643-4ba1-af8d-af47461735b4")
 	)
 
 	(sheet_instances
