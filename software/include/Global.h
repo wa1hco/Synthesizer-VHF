@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 #ifndef GLOBAL_H
 #define GLOBAL_H
 

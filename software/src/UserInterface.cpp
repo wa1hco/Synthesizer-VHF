@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 // User Interface
 // Called from loop()
 // user enters a line of characters terminated by \r

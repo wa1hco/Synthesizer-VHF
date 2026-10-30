@@ -2,7 +2,7 @@
 
 VHF synthesizer board built around an Analog Devices ADF4351 PLL, an ATtiny1616, a TCXO reference, USB serial, and a 12 V input with onboard regulators. The board has two RF outputs. SPI between the ATtiny1616 and the PLL is wired to general-purpose pins, and the firmware bit-bangs it.
 
-The board design targets KiCad 10. The design is released under CC0 (see `LICENSE`).
+The board design targets KiCad 10.
 
 ## Directory layout
 
@@ -86,3 +86,8 @@ The serial console runs at 57600 baud. Single keys change the output:
 ## Updating a checkout that still has local board edits
 
 Commit or stash any edits to `Hardware/Synthesizer-VHF.kicad_pcb` before updating. That file now lives at `hardware/Synthesizer-VHF.kicad_pcb`.
+
+## License
+
+- Software (`software/`, `scripts/`): GPL-3.0-or-later, see `LICENSE`.
+- Hardware design files (`hardware/`): CERN-OHL-S-2.0, see `LICENSE-HARDWARE`.

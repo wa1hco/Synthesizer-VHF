@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 #ifndef HardwareConfig_h
 #define HardwareConfig_h
 
