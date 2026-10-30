@@ -6059,23 +6059,23 @@
 			)
 			(property "Footprint" "Synthesizer:Oscillator_SMD_3225_VCTCXO"
 				(at 0 0 0)
-				(effects (font (size 1.27 1.27)) (hide yes))
+				(effects (font (size 1.27 1.27))) (hide yes)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
-				(effects (font (size 1.27 1.27)) (hide yes))
+				(effects (font (size 1.27 1.27))) (hide yes)
 			)
 			(property "Description" "IQD IQXT-220-2 10 MHz VCTCXO, 3225, consigned"
 				(at 0 0 0)
-				(effects (font (size 1.27 1.27)) (hide yes))
+				(effects (font (size 1.27 1.27))) (hide yes)
 			)
 			(property "ki_keywords" "VCTCXO 10MHz"
 				(at 0 0 0)
-				(effects (font (size 1.27 1.27)) (hide yes))
+				(effects (font (size 1.27 1.27))) (hide yes)
 			)
 			(property "ki_fp_filters" "Oscillator*3225*"
 				(at 0 0 0)
-				(effects (font (size 1.27 1.27)) (hide yes))
+				(effects (font (size 1.27 1.27))) (hide yes)
 			)
 			(symbol "IQXT-220-2_0_1"
 				(rectangle
@@ -6182,23 +6182,23 @@
 			)
 			(property "Footprint" "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm"
 				(at 0 0 0)
-				(effects (font (size 1.27 1.27)) (hide yes))
+				(effects (font (size 1.27 1.27))) (hide yes)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
-				(effects (font (size 1.27 1.27)) (hide yes))
+				(effects (font (size 1.27 1.27))) (hide yes)
 			)
 			(property "Description" "ADF4002BCPZ PLL, LFCSP-20, LCSC C207536"
 				(at 0 0 0)
-				(effects (font (size 1.27 1.27)) (hide yes))
+				(effects (font (size 1.27 1.27))) (hide yes)
 			)
 			(property "ki_keywords" "ADF4002 PLL"
 				(at 0 0 0)
-				(effects (font (size 1.27 1.27)) (hide yes))
+				(effects (font (size 1.27 1.27))) (hide yes)
 			)
 			(property "ki_fp_filters" "QFN*4x4*P0.5*"
 				(at 0 0 0)
-				(effects (font (size 1.27 1.27)) (hide yes))
+				(effects (font (size 1.27 1.27))) (hide yes)
 			)
 			(symbol "ADF4002BCPZ_0_1"
 				(rectangle
@@ -6611,23 +6611,23 @@
 			)
 			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 				(at 0 0 0)
-				(effects (font (size 1.27 1.27)) (hide yes))
+				(effects (font (size 1.27 1.27))) (hide yes)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
-				(effects (font (size 1.27 1.27)) (hide yes))
+				(effects (font (size 1.27 1.27))) (hide yes)
 			)
 			(property "Description" "1x5 2.54 mm header"
 				(at 0 0 0)
-				(effects (font (size 1.27 1.27)) (hide yes))
+				(effects (font (size 1.27 1.27))) (hide yes)
 			)
 			(property "ki_keywords" "connector"
 				(at 0 0 0)
-				(effects (font (size 1.27 1.27)) (hide yes))
+				(effects (font (size 1.27 1.27))) (hide yes)
 			)
 			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
-				(effects (font (size 1.27 1.27)) (hide yes))
+				(effects (font (size 1.27 1.27))) (hide yes)
 			)
 			(symbol "Conn_01x05_Pin_0_1"
 				(rectangle
@@ -9015,17 +9015,7 @@
 		)
 		(uuid "d0932559-873e-465d-bca3-e53662998e0c")
 	)
-	(wire
-		(pts
-			(xy 93.98 139.7) (xy 92.71 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d21bd229-50da-48b5-bc93-0a99642c2e94")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 374.65 139.7) (xy 374.65 156.21)
 		)
@@ -9415,27 +9405,7 @@
 		)
 		(uuid "06a902f5-a3d5-4812-90fb-196e331d424b")
 	)
-	(label "TXD_M"
-		(at 160.02 229.87 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0c34c102-821d-4bf7-8b9a-a9176f504773")
-	)
-	(label "LD"
-		(at 331.47 135.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0d52a568-e410-42e4-acd7-c8b260436f1a")
-	)
-	(label "5V_USB"
+			(label "5V_USB"
 		(at 67.31 201.93 0)
 		(effects
 			(font
@@ -9555,17 +9525,7 @@
 		)
 		(uuid "4eab4dce-c894-44c4-b486-ca00e9d75a35")
 	)
-	(label "5V"
-		(at 166.37 241.3 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "597e386c-d88f-46bc-ba39-7ed4a19fb798")
-	)
-	(label "RF_EN"
+		(label "RF_EN"
 		(at 270.51 151.13 0)
 		(effects
 			(font
@@ -9845,27 +9805,7 @@
 		)
 		(uuid "c16a3617-e017-4062-96e6-07988489d51d")
 	)
-	(label "UPDI"
-		(at 160.02 218.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cb18eb43-9e55-413e-a5a9-c49371f0fd3b")
-	)
-	(label "TXLED{slash}"
-		(at 140.97 252.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dcff380a-0269-41f0-b493-0dde0b8c27f8")
-	)
-	(label "5V"
+			(label "5V"
 		(at 106.68 201.93 0)
 		(effects
 			(font
@@ -9895,17 +9835,7 @@
 		)
 		(uuid "f55355d1-e214-410d-bbf5-52b934696762")
 	)
-	(label "MUX"
-		(at 331.47 138.43 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fd971b8f-562a-46ae-8cd1-939fe08cc886")
-	)
-	(symbol
+		(symbol
 		(lib_id "Device:C")
 		(at 236.22 43.18 0)
 		(unit 1)
@@ -24870,8 +24800,7 @@
 		)
 	)
 
-	(text "Digital 3.3 V (VDD): ATtiny, FT231X VCCIO, ADF4002 DVDD, VCTCXO, REF buffer.
-Fed from the VRF LP5907 through FB2. VVCO is its own LP5907. ADF4351 AVDD/Vp are on VRF."
+	(text "Digital 3.3 V (VDD): ATtiny, FT231X VCCIO, ADF4002 DVDD, VCTCXO, REF buffer.\nFed from the VRF LP5907 through FB2. VVCO is its own LP5907. ADF4351 AVDD/Vp are on VRF."
 		(exclude_from_sim no)
 		(at 292.1 22.86 0)
 		(effects
@@ -25386,9 +25315,7 @@ Fed from the VRF LP5907 through FB2. VVCO is its own LP5907. ADF4351 AVDD/Vp are
 		(uuid "66c8abd7-1fcc-41dd-8b34-c87fc677cf5f")
 	)
 
-	(text "Programming: J8 removed. MCU TX (TXD_M, PB2) drives FT231X RXD.
-FT231X TXD still drives MCU RX (RXD_M, PB3) through R16.
-UPDI is PA0 only, on J12 (UPDI, VDD, GND). Optiboot ersatz reset: DTR - 100 nF - PA4, 10 k to VDD."
+	(text "Programming: J8 removed. MCU TX (TXD_M, PB2) drives FT231X RXD.\nFT231X TXD still drives MCU RX (RXD_M, PB3) through R16.\nUPDI is PA0 only, on J12 (UPDI, VDD, GND). Optiboot ersatz reset: DTR - 100 nF - PA4, 10 k to VDD."
 		(exclude_from_sim no)
 		(at 200.66 198.12 0)
 		(effects
@@ -25524,8 +25451,7 @@ UPDI is PA0 only, on J12 (UPDI, VDD, GND). Optiboot ersatz reset: DTR - 100 nF -
 		(uuid "160dcb0d-8210-4708-b62b-2845caf90b8d")
 	)
 
-	(text "REF_OUT: after U11, 39 ohm series and 100 pF to GND. RC edge softener, not a sine filter.
-VCTCXO output (XO) is AC-coupled to ADF4351 REFIN (C3), and to U11."
+	(text "REF_OUT: after U11, 39 ohm series and 100 pF to GND. RC edge softener, not a sine filter.\nVCTCXO output (XO) is AC-coupled to ADF4351 REFIN (C3), and to U11."
 		(exclude_from_sim no)
 		(at 125.73 100.33 0)
 		(effects
@@ -28189,16 +28115,7 @@ VCTCXO output (XO) is AC-coupled to ADF4351 REFIN (C3), and to U11."
 		(uuid "9270c3fb-7bfd-45ea-812b-d48e8b14bbdf")
 	)
 
-	(text "ADF4002 loop filter, about 20 Hz, 50 deg phase margin.
-Kvco = 10 MHz * 20 ppm / 2 V = 100 Hz/V.
-IQXT-220-2 pulling is +/-10 to +/-15 ppm over Vc = 1.5 V +/- 1 V, so Kv is about 100-150 Hz/V. Designed at 100 Hz/V.
-PFD = 10 kHz with R = N = 1000 (10 MHz / 10 kHz). Lowest CP current: CPI=000, RSET=5.1k, Icp=0.625 mA.
-T1=(sec phi - tan phi)/wc = 2.90 ms, T2=1/(wc^2*T1)=21.9 ms.
-C1=1.5 nF C0G (CP to GND), R=2.2 M, C2=10 nF C0G (Vc to GND).
-Free-run hold: ATtiny DAC PA6 through 100 k to Vc. Tri-state the charge pump to hold; while locking, Icp overrides the 100 k.
-ADF4002 REFIN is external /REF_IN (J5, existing attenuator, AC coupled). RFIN is the VCTCXO sample.
-SPI CLK/DATA shared with the ADF4351. LE is PA7. MUXOUT (digital lock detect) is PA5.
-REFIN below 20 MHz needs slew > 50 V/us (ADF4002 datasheet). A 10 MHz sine should be squared or > about 1.6 Vpp."
+	(text "ADF4002 loop filter, about 20 Hz, 50 deg phase margin.\nKvco = 10 MHz * 20 ppm / 2 V = 100 Hz/V.\nIQXT-220-2 pulling is +/-10 to +/-15 ppm over Vc = 1.5 V +/- 1 V, so Kv is about 100-150 Hz/V. Designed at 100 Hz/V.\nPFD = 10 kHz with R = N = 1000 (10 MHz / 10 kHz). Lowest CP current: CPI=000, RSET=5.1k, Icp=0.625 mA.\nT1=(sec phi - tan phi)/wc = 2.90 ms, T2=1/(wc^2*T1)=21.9 ms.\nC1=1.5 nF C0G (CP to GND), R=2.2 M, C2=10 nF C0G (Vc to GND).\nFree-run hold: ATtiny DAC PA6 through 100 k to Vc. Tri-state the charge pump to hold; while locking, Icp overrides the 100 k.\nADF4002 REFIN is external /REF_IN (J5, existing attenuator, AC coupled). RFIN is the VCTCXO sample.\nSPI CLK/DATA shared with the ADF4351. LE is PA7. MUXOUT (digital lock detect) is PA5.\nREFIN below 20 MHz needs slew > 50 V/us (ADF4002 datasheet). A 10 MHz sine should be squared or > about 1.6 Vpp."
 		(exclude_from_sim no)
 		(at 330.2 25.4 0)
 		(effects
@@ -29756,10 +29673,7 @@ REFIN below 20 MHz needs slew > 50 V/us (ADF4002 datasheet). A 10 MHz sine shoul
 		(uuid "0d3f2b14-ec15-4fe5-ac5b-93827962eb3b")
 	)
 
-	(text "PCB: 1.5 mm hole under each LED with GND via ring (waveguide below cutoff).
-Reverse-mount Kingbright KPTL-3216. Light exits the bottom face.
-PWR and COMM are green KPTL-3216CGCK-01 (C598390). REF LOCK and SYNTH LOCK are red KPTL-3216SURCK-01 (C598393).
-Blue KPTL-3216QBC-D-01 is on LCSC but Vf is 3.3 V, so it is not used on this 3.3 V rail."
+	(text "PCB: 1.5 mm hole under each LED with GND via ring (waveguide below cutoff).\nReverse-mount Kingbright KPTL-3216. Light exits the bottom face.\nPWR and COMM are green KPTL-3216CGCK-01 (C598390). REF LOCK and SYNTH LOCK are red KPTL-3216SURCK-01 (C598393).\nBlue KPTL-3216QBC-D-01 is on LCSC but Vf is 3.3 V, so it is not used on this 3.3 V rail."
 		(exclude_from_sim no)
 		(at 12.7 165.1 0)
 		(effects
@@ -29774,6 +29688,28 @@ Blue KPTL-3216QBC-D-01 is on LCSC but Vf is 3.3 V, so it is not used on this 3.3
 	(no_connect
 		(at 140.97 250.19)
 		(uuid "2560af93-858a-4c37-88f0-517159117434")
+	)
+
+	(label "LD"
+		(at 330.2 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "85b3e2ef-621a-41ba-bb6e-262e601bd921")
+	)
+
+	(label "MUX"
+		(at 330.2 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "af5d4d73-5c9e-4ee7-86ad-45f651ddca99")
 	)
 
 	(sheet_instances

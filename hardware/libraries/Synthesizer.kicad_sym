@@ -1941,23 +1941,23 @@
 		)
 		(property "Footprint" "Synthesizer:Oscillator_SMD_3225_VCTCXO"
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects (font (size 1.27 1.27))) (hide yes)
 		)
 		(property "Datasheet" ""
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects (font (size 1.27 1.27))) (hide yes)
 		)
 		(property "Description" "IQD IQXT-220-2 10 MHz VCTCXO, 3225, consigned"
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects (font (size 1.27 1.27))) (hide yes)
 		)
 		(property "ki_keywords" "VCTCXO 10MHz"
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects (font (size 1.27 1.27))) (hide yes)
 		)
 		(property "ki_fp_filters" "Oscillator*3225*"
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects (font (size 1.27 1.27))) (hide yes)
 		)
 		(symbol "IQXT-220-2_0_1"
 			(rectangle (start -5.08 -5.08) (end 5.08 5.08)
@@ -2052,23 +2052,23 @@
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm"
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects (font (size 1.27 1.27))) (hide yes)
 		)
 		(property "Datasheet" ""
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects (font (size 1.27 1.27))) (hide yes)
 		)
 		(property "Description" "ADF4002BCPZ PLL, LFCSP-20, LCSC C207536"
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects (font (size 1.27 1.27))) (hide yes)
 		)
 		(property "ki_keywords" "ADF4002 PLL"
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects (font (size 1.27 1.27))) (hide yes)
 		)
 		(property "ki_fp_filters" "QFN*4x4*P0.5*"
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects (font (size 1.27 1.27))) (hide yes)
 		)
 		(symbol "ADF4002BCPZ_0_1"
 			(rectangle (start -15.24 -15.24) (end 15.24 15.24)
@@ -2469,23 +2469,23 @@
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects (font (size 1.27 1.27))) (hide yes)
 		)
 		(property "Datasheet" ""
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects (font (size 1.27 1.27))) (hide yes)
 		)
 		(property "Description" "1x5 2.54 mm header"
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects (font (size 1.27 1.27))) (hide yes)
 		)
 		(property "ki_keywords" "connector"
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects (font (size 1.27 1.27))) (hide yes)
 		)
 		(property "ki_fp_filters" "Connector*:*_1x??_*"
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects (font (size 1.27 1.27))) (hide yes)
 		)
 		(symbol "Conn_01x05_Pin_0_1"
 			(rectangle (start 0 -6.35) (end 2.54 6.35)
