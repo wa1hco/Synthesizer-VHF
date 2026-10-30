@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 #ifndef SERIALREADLINE_H
 #define SERIALREADLINE_H
 

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 // ADF4351 frequency calculation and R0–R5 assembly.
 //
 // Board reference is a 25 MHz TCXO (ADF4351_REF_HZ). Output frequency follows

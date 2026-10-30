@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 // Host-side check of the ADF4351 tuner.
 //
 // Decodes R0–R5 from the packed words (datasheet Fig. 24–29) and checks
