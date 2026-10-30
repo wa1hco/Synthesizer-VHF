@@ -1,0 +1,157 @@
+(footprint "LED_KPTL-3216_ReverseMount"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Kingbright KPTL-3216 reverse-mount 1206 LED. Pin 1 cathode (left), pin 2 anode (right). Pads sit outside a 1.5 mm center hole so the lens can shine through the board. Confirm the land against the Kingbright drawing when placing.")
+	(tags "LED reverse-mount KPTL-3216 1206")
+	(property "Reference" "REF**"
+		(at 0 -1.8 0)
+		(layer "F.SilkS")
+		(uuid "11b2c3d4-e5f6-4789-a012-3216ref00001")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "LED_KPTL-3216_ReverseMount"
+		(at 0 1.8 0)
+		(layer "F.Fab")
+		(uuid "11b2c3d4-e5f6-4789-a012-3216val00001")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "11b2c3d4-e5f6-4789-a012-3216fp000001")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "11b2c3d4-e5f6-4789-a012-3216ds000001")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "11b2c3d4-e5f6-4789-a012-3216dc000001")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.15 -1.15)
+		(end -2.15 1.15)
+		(stroke (width 0.05) (type solid))
+		(layer "F.CrtYd")
+		(uuid "21b2c3d4-e5f6-4789-a012-3216cy000001")
+	)
+	(fp_line
+		(start -2.15 1.15)
+		(end 2.15 1.15)
+		(stroke (width 0.05) (type solid))
+		(layer "F.CrtYd")
+		(uuid "21b2c3d4-e5f6-4789-a012-3216cy000002")
+	)
+	(fp_line
+		(start 2.15 1.15)
+		(end 2.15 -1.15)
+		(stroke (width 0.05) (type solid))
+		(layer "F.CrtYd")
+		(uuid "21b2c3d4-e5f6-4789-a012-3216cy000003")
+	)
+	(fp_line
+		(start 2.15 -1.15)
+		(end -2.15 -1.15)
+		(stroke (width 0.05) (type solid))
+		(layer "F.CrtYd")
+		(uuid "21b2c3d4-e5f6-4789-a012-3216cy000004")
+	)
+	(fp_line
+		(start -1.6 -0.8)
+		(end 1.6 -0.8)
+		(stroke (width 0.1) (type solid))
+		(layer "F.Fab")
+		(uuid "31b2c3d4-e5f6-4789-a012-3216fb000001")
+	)
+	(fp_line
+		(start 1.6 -0.8)
+		(end 1.6 0.8)
+		(stroke (width 0.1) (type solid))
+		(layer "F.Fab")
+		(uuid "31b2c3d4-e5f6-4789-a012-3216fb000002")
+	)
+	(fp_line
+		(start 1.6 0.8)
+		(end -1.6 0.8)
+		(stroke (width 0.1) (type solid))
+		(layer "F.Fab")
+		(uuid "31b2c3d4-e5f6-4789-a012-3216fb000003")
+	)
+	(fp_line
+		(start -1.6 0.8)
+		(end -1.6 -0.8)
+		(stroke (width 0.1) (type solid))
+		(layer "F.Fab")
+		(uuid "31b2c3d4-e5f6-4789-a012-3216fb000004")
+	)
+	(fp_circle
+		(center -1.9 0)
+		(end -1.7 0)
+		(stroke (width 0.12) (type solid))
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "41b2c3d4-e5f6-4789-a012-3216sk000001")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "51b2c3d4-e5f6-4789-a012-3216tx000001")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.06)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.25 0)
+		(size 0.8 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "61b2c3d4-e5f6-4789-a012-3216pd000001")
+	)
+	(pad "2" smd rect
+		(at 1.25 0)
+		(size 0.8 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "61b2c3d4-e5f6-4789-a012-3216pd000002")
+	)
+)

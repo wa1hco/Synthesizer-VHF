@@ -6747,7 +6747,7 @@
 		)
 		(uuid "1e59667a-c007-4860-9ed8-3c330546ba96")
 	)
-	(text "CBUS signals use defaults\n"
+	(text "CBUS2 (pin 7) is the COMM LED, active low. Program it as TX&RXLED#.\n"
 		(exclude_from_sim no)
 		(at 153.67 259.334 0)
 		(effects
@@ -7305,17 +7305,7 @@
 		)
 		(uuid "0545f2b6-0457-43f1-a338-500c387e1319")
 	)
-	(wire
-		(pts
-			(xy 162.56 241.3) (xy 171.45 241.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0561092d-e694-4c26-89a2-71fe504aa52a")
-	)
-		(wire
+			(wire
 		(pts
 			(xy 359.41 39.37) (xy 359.41 120.65)
 		)
@@ -7615,17 +7605,7 @@
 		)
 		(uuid "2af894c6-7b11-4dfb-9cbf-630b7a6f9a77")
 	)
-	(wire
-		(pts
-			(xy 87.63 143.51) (xy 87.63 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b4608b4-bbc8-4590-9ecd-fa72c1fff371")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 369.57 132.08) (xy 374.65 132.08)
 		)
@@ -7635,17 +7615,7 @@
 		)
 		(uuid "2c06d379-0203-42af-a4eb-2b15bc2416eb")
 	)
-	(wire
-		(pts
-			(xy 140.97 250.19) (xy 153.67 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ca08d03-40b2-4884-856d-2910d5c66bde")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 332.74 171.45) (xy 339.09 171.45)
 		)
@@ -7725,17 +7695,7 @@
 		)
 		(uuid "33607073-c490-425b-b951-7ac12f552c71")
 	)
-	(wire
-		(pts
-			(xy 162.56 250.19) (xy 161.29 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3499d678-0999-440d-b944-1e6eaae1381c")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 359.41 120.65) (xy 369.57 120.65)
 		)
@@ -8055,17 +8015,7 @@
 		)
 		(uuid "5ae7db7b-a0b6-4459-bfd2-0a7a5d7a4579")
 	)
-	(wire
-		(pts
-			(xy 66.04 132.08) (xy 93.98 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b869c8f-0a34-478d-8fe3-5f8317581b71")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 307.34 124.46) (xy 309.88 124.46)
 		)
@@ -8425,17 +8375,7 @@
 		)
 		(uuid "8771d81b-f69a-4ba3-9e42-210f10e10557")
 	)
-	(wire
-		(pts
-			(xy 162.56 248.92) (xy 162.56 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88468a89-6796-47e5-978b-871c187538eb")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 44.45 229.87) (xy 44.45 232.41)
 		)
@@ -8595,17 +8535,7 @@
 		)
 		(uuid "96e9f222-0490-4181-9142-6e554a2be645")
 	)
-	(wire
-		(pts
-			(xy 93.98 143.51) (xy 93.98 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "995de2d4-e250-4b44-9ca8-cd94124f0fc9")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 327.66 120.65) (xy 326.39 120.65)
 		)
@@ -8675,17 +8605,7 @@
 		)
 		(uuid "a37e0592-51dc-44c0-b159-8366bf990a2d")
 	)
-	(wire
-		(pts
-			(xy 93.98 132.08) (xy 93.98 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a39b8311-e3e1-4854-b1af-487e67b1f784")
-	)
-		(wire
+			(wire
 		(pts
 			(xy 313.69 115.57) (xy 312.42 115.57)
 		)
@@ -8885,17 +8805,7 @@
 		)
 		(uuid "bb2ff51e-244c-43dd-87ff-ef1e62144cba")
 	)
-	(wire
-		(pts
-			(xy 171.45 248.92) (xy 171.45 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bbd5936d-f255-4239-a606-570bafc89049")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 374.65 134.62) (xy 374.65 132.08)
 		)
@@ -9365,17 +9275,7 @@
 		)
 		(uuid "edd761a1-9d62-4cb1-9d71-23888a886bd0")
 	)
-	(wire
-		(pts
-			(xy 161.29 252.73) (xy 171.45 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "edfc9042-334b-425e-a1dc-490f01aafc3b")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 125.73 115.57) (xy 125.73 116.84)
 		)
@@ -9415,17 +9315,7 @@
 		)
 		(uuid "f00782a8-51a7-4084-9444-7d321a299708")
 	)
-	(wire
-		(pts
-			(xy 140.97 252.73) (xy 153.67 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0a4ccbe-a1e9-43ed-91ee-a591c18a54f7")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 148.59 224.79) (xy 140.97 224.79)
 		)
@@ -9715,17 +9605,7 @@
 		)
 		(uuid "6af02350-b51c-469b-9d37-4d46dac6113e")
 	)
-	(label "RXLED{slash}"
-		(at 140.97 250.19 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "70fb19f3-93e0-439d-8577-e91085a9e584")
-	)
-	(label "3V3"
+		(label "3V3"
 		(at 101.6 224.79 0)
 		(effects
 			(font
@@ -10117,97 +9997,7 @@
 			)
 		)
 	)
-		(symbol
-		(lib_id "Device:LED")
-		(at 87.63 139.7 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "02386ad4-889e-4120-8722-d1d456e35dca")
-		(property "Reference" "D8"
-			(at 90.17 139.446 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PA3"
-			(at 89.662 136.398 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
-			(at 87.63 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 87.63 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C364550"
-			(at 157.48 269.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "5ee34171-add0-4634-88e1-9d1ca4334e34")
-		)
-		(pin "1"
-			(uuid "ad699066-9dca-4772-938f-23b0117f4550")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+			(symbol
 		(lib_id "Device:C")
 		(at 303.53 115.57 270)
 		(unit 1)
@@ -12118,98 +11908,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 87.63 149.86 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "23c2d42d-0e5a-4ef0-a550-057a8faabd04")
-		(property "Reference" "R17"
-			(at 90.678 149.098 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1K"
-			(at 90.17 151.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Res_0402"
-			(at 86.614 150.114 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 87.63 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C11702"
-			(at 90.678 149.098 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "243ca8ae-fe4c-41c8-9cee-4874b0fdcf43")
-		)
-		(pin "2"
-			(uuid "10e5f900-c841-4845-9fd8-6e47749563a8")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(symbol
 		(lib_id "power:GND")
 		(at 264.16 116.84 0)
 		(unit 1)
@@ -15195,98 +14894,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 93.98 149.86 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "597a7ccb-1122-43bd-af80-2a4bb7e5407a")
-		(property "Reference" "R10"
-			(at 97.028 149.098 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1K"
-			(at 96.52 151.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Res_0402"
-			(at 92.964 150.114 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 93.98 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C11702"
-			(at 97.028 149.098 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "23cf1f43-4478-497b-98e2-9569f8ab6692")
-		)
-		(pin "2"
-			(uuid "e65cb41e-9be8-4dc7-930d-2c3c98b0cd12")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(symbol
 		(lib_id "power:GND")
 		(at 400.05 151.13 0)
 		(unit 1)
@@ -16903,97 +16511,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 157.48 252.73 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6fd8aa6d-79cf-4af1-b3d6-29202421e5d6")
-		(property "Reference" "R19"
-			(at 155.956 255.27 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1K"
-			(at 160.274 255.27 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Res_0402"
-			(at 157.734 251.714 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.48 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 157.48 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C11702"
-			(at 155.956 255.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8a161f6d-420c-4e33-ada2-7f93c847bd81")
-		)
-		(pin "2"
-			(uuid "f7085d42-830e-4be2-aadc-bd5863d48dc1")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(symbol
 		(lib_id "Device:C")
 		(at 353.06 135.89 0)
 		(unit 1)
@@ -19053,97 +18571,7 @@
 			)
 		)
 	)
-		(symbol
-		(lib_id "Device:LED")
-		(at 93.98 139.7 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8fed08a1-515a-42e5-b596-d288d8095190")
-		(property "Reference" "D7"
-			(at 96.52 139.446 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PA2"
-			(at 96.012 136.398 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
-			(at 93.98 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 93.98 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C364550"
-			(at 163.83 269.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "85f3ffde-2674-40d1-be02-1e819cceacc6")
-		)
-		(pin "1"
-			(uuid "3b47fddd-a83e-40a6-93f5-f5c2eadb059b")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+			(symbol
 		(lib_id "power:GND")
 		(at 55.88 209.55 0)
 		(unit 1)
@@ -20084,98 +19512,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 162.56 245.11 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a75debea-75b7-49e2-928e-981b4fb6ebe5")
-		(property "Reference" "D4"
-			(at 159.512 244.856 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Yellow"
-			(at 165.354 244.856 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
-			(at 162.56 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 162.56 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 162.56 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C434449"
-			(at 300.99 406.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "9c4b4c89-80ed-44ee-a882-17745488d379")
-		)
-		(pin "1"
-			(uuid "c3b0fe8c-962a-4812-852f-b10bab7e7650")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(symbol
 		(lib_id "power:GND")
 		(at 264.16 72.39 0)
 		(unit 1)
@@ -21937,86 +21274,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 87.63 153.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c22c4478-cbed-4a19-a6c2-ce254183a785")
-		(property "Reference" "#PWR017"
-			(at 87.63 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 87.63 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 87.63 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "29d82088-f88b-4a4e-bef0-fea197fe76d3")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(symbol
 		(lib_id "Device:R_Small_US")
 		(at 369.57 137.16 180)
 		(unit 1)
@@ -22356,98 +21614,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 171.45 245.11 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cc113e36-3180-4598-add0-0c3d3745a4e5")
-		(property "Reference" "D5"
-			(at 168.402 244.856 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Yellow"
-			(at 174.244 244.856 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
-			(at 171.45 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 171.45 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C434449"
-			(at 309.88 415.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "608bfc1d-c93b-4ccc-89d1-940d43d28c60")
-		)
-		(pin "1"
-			(uuid "b95c2e39-9531-4f27-9eb9-e07c8a69e477")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-		(symbol
+			(symbol
 		(lib_id "power:GND")
 		(at 255.27 173.99 0)
 		(unit 1)
@@ -23447,86 +22614,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 93.98 153.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d8354c0d-98ea-407e-91f3-4d5698cbf3e8")
-		(property "Reference" "#PWR075"
-			(at 93.98 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 93.98 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 93.98 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2f6ec481-2184-42b6-b2c4-4afe173949c9")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR075")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(symbol
 		(lib_id "power:GND")
 		(at 241.3 173.99 0)
 		(unit 1)
@@ -24765,98 +23853,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 157.48 250.19 90)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "eea29efb-865f-4aa2-a362-f791c4d22cf2")
-		(property "Reference" "R8"
-			(at 155.956 247.65 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1K"
-			(at 160.274 247.65 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Res_0402"
-			(at 157.734 251.206 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.48 250.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 157.48 250.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C11702"
-			(at 155.956 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "94e898ec-8469-441b-8349-1a79b9951f4d")
-		)
-		(pin "2"
-			(uuid "55ffcd75-b3ac-464b-921b-eb3287b07527")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(symbol
 		(lib_id "Device:C")
 		(at 262.89 156.21 270)
 		(unit 1)
@@ -29474,14 +28471,1309 @@ REFIN below 20 MHz needs slew > 50 V/us (ADF4002 datasheet). A 10 MHz sine shoul
 		)
 	)
 
+	
+	
 	(no_connect
-		(at 66.04 162.56)
-		(uuid "8e764bc0-c4f8-41aa-8396-8d36cf1e949b")
+		(at 66.04 132.08)
+		(uuid "573637ce-b108-4fae-9b49-0b855538f1f9")
+	)
+	(no_connect
+		(at 66.04 134.62)
+		(uuid "29ae1a30-4e14-4005-b026-37bdc8009c69")
+	)
+	
+	(label "CBUS_ACT"
+		(at 140.97 252.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "40a2c03b-3052-46d7-a918-d7cf432218e2")
+	)
+
+	(label "SYNTH_LOCK"
+		(at 66.04 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e332783e-42ef-42d9-a4c7-578499e197e5")
+	)
+
+	(label "REF_LOCK"
+		(at 66.04 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "10bc29e3-bf48-4a8b-b2ed-c38dddaef0c0")
+	)
+
+	(symbol
+		(lib_id "Device:LED")
+		(at 393.7 210.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "857f5e59-87e5-4430-afd9-4b8074b18814")
+		(property "Reference" "D11"
+			(at 392.43 208.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR"
+			(at 394.97 214.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:LED_KPTL-3216_ReverseMount"
+			(at 393.7 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 393.7 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PWR green reverse-mount (KPTL-3216CGCK-01)"
+			(at 393.7 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C598390"
+			(at 393.7 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7414e236-ad0f-4749-9b6e-776d57b65a59")
+		)
+		(pin "1"
+			(uuid "30844bcc-8b30-4e2b-8276-cf8959a0eb2d")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(wire
+		(pts
+			(xy 397.51 210.82) (xy 400.05 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "437abe7b-0f59-4193-ac2e-f8f8e2479a9d")
+	)
+	(label "PWR_A"
+		(at 400.05 210.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3fce6088-44a8-47bb-8ad7-3f0567cc81be")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 389.89 210.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "502663c5-c035-4425-bff4-a960e15e6760")
+		(property "Reference" "#PWR201"
+			(at 389.89 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 389.89 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 389.89 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 389.89 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 389.89 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "db3336c6-b820-4494-9197-9bc01eb8a80a")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR201")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 411.48 210.82 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5e6b242-2aa7-446c-87c3-06fa365b0f88")
+		(property "Reference" "R37"
+			(at 410.21 208.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 412.75 214.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Res_0402"
+			(at 411.48 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 411.48 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PWR LED resistor, about 1.2 mA from 3.3 V"
+			(at 411.48 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 411.48 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fd435dfd-ab89-4f54-b7c3-effc7aeeb6a8")
+		)
+		(pin "2"
+			(uuid "8cca91a1-a6de-4260-8ddc-0662dc3e4a13")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R37")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(wire
+		(pts
+			(xy 408.94 210.82) (xy 406.4 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "454b216a-6143-45a6-a787-540e3840720c")
+	)
+	(label "VDD"
+		(at 406.4 210.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "40001bd4-755a-49c1-bfdd-f607e6a8d86d")
+	)
+	(wire
+		(pts
+			(xy 414.02 210.82) (xy 416.56 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "546fd40c-ee94-4319-a0c4-9c7523a43d0c")
+	)
+	(label "PWR_A"
+		(at 416.56 210.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "97090f91-077b-4c2e-aadf-c5817c92a939")
+	)
+
+	(symbol
+		(lib_id "Device:LED")
+		(at 393.7 223.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec4e6f04-3302-4965-a7de-4edeee49253a")
+		(property "Reference" "D12"
+			(at 392.43 220.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "REF LOCK"
+			(at 394.97 227.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:LED_KPTL-3216_ReverseMount"
+			(at 393.7 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 393.7 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "REF LOCK red reverse-mount (KPTL-3216SURCK-01)"
+			(at 393.7 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C598393"
+			(at 393.7 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "988873be-20af-4a5d-87b3-6891e47ad379")
+		)
+		(pin "1"
+			(uuid "81588667-c99a-4f0c-a461-6c73122e288d")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(wire
+		(pts
+			(xy 397.51 223.52) (xy 400.05 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ad7566e-fa90-420f-bb8c-cbc882ca0ce8")
+	)
+	(label "REFLED"
+		(at 400.05 223.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "66070f22-3dfd-4fc9-8547-01997cb0a790")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 389.89 223.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c59b85c-d37a-4017-ab69-7c29543d744f")
+		(property "Reference" "#PWR202"
+			(at 389.89 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 389.89 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 389.89 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 389.89 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 389.89 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dc04b0f0-8387-46f9-a3a9-51733c83650d")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR202")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 411.48 223.52 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c50d46e6-2edc-4fd5-b2ba-127a6dda52cf")
+		(property "Reference" "R38"
+			(at 410.21 220.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 412.75 227.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Res_0402"
+			(at 411.48 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 411.48 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "REF LOCK LED resistor, about 1.2 mA from 3.3 V"
+			(at 411.48 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 411.48 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ca85f6a4-b540-4d0f-ae87-275ebc4c7f83")
+		)
+		(pin "2"
+			(uuid "4bdeac1d-0cb5-4bb9-91e9-7ea65d662884")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(wire
+		(pts
+			(xy 408.94 223.52) (xy 406.4 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a9f4bcd-2da7-4b1d-980a-c858ab7efcc2")
+	)
+	(label "REF_LOCK"
+		(at 406.4 223.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7c3c8dca-075f-4cd5-bd9b-7753e68755b6")
+	)
+	(wire
+		(pts
+			(xy 414.02 223.52) (xy 416.56 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1de885a4-510d-4c7f-9343-7b16a56121fe")
+	)
+	(label "REFLED"
+		(at 416.56 223.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dddfa02e-51e7-4575-a072-debb1be2bef4")
+	)
+
+	(symbol
+		(lib_id "Device:LED")
+		(at 393.7 236.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1fdb9d4b-b41b-43cf-b2d7-f7ea0dc56a32")
+		(property "Reference" "D13"
+			(at 392.43 233.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SYNTH LOCK"
+			(at 394.97 240.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:LED_KPTL-3216_ReverseMount"
+			(at 393.7 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 393.7 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SYNTH LOCK red reverse-mount (KPTL-3216SURCK-01)"
+			(at 393.7 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C598393"
+			(at 393.7 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "abce0784-c7ae-453b-90e1-255239f4c5c0")
+		)
+		(pin "1"
+			(uuid "7f831f9e-7a8b-4dd3-b097-c6e261b4c601")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(wire
+		(pts
+			(xy 397.51 236.22) (xy 400.05 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0976aea1-2bc0-4f6d-8804-3c9f1339dbbf")
+	)
+	(label "SYNLED"
+		(at 400.05 236.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a66b8cc9-ced1-47f1-aab4-121196b2cecc")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 389.89 236.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a8f1334-38dc-4219-95d7-4e99cca93d5c")
+		(property "Reference" "#PWR203"
+			(at 389.89 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 389.89 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 389.89 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 389.89 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 389.89 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7fc56e5e-ec29-4dc8-b3b6-20a2b75e34c4")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR203")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 411.48 236.22 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "daea4786-2fbd-4897-8351-07330432f28f")
+		(property "Reference" "R39"
+			(at 410.21 233.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 412.75 240.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Res_0402"
+			(at 411.48 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 411.48 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SYNTH LOCK LED resistor, about 1.2 mA from 3.3 V"
+			(at 411.48 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 411.48 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5706086c-d34b-4b64-9f27-75694b56e2af")
+		)
+		(pin "2"
+			(uuid "ef74c3d2-a44a-44ce-a693-2a0098e0d9dd")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(wire
+		(pts
+			(xy 408.94 236.22) (xy 406.4 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b903e28-0fb8-45e4-8e03-f37dd75edd69")
+	)
+	(label "SYNTH_LOCK"
+		(at 406.4 236.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6cabe81b-f878-4d6d-ac4e-88bdc3a31833")
+	)
+	(wire
+		(pts
+			(xy 414.02 236.22) (xy 416.56 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "024302d4-a560-44dc-a828-c3f555818d51")
+	)
+	(label "SYNLED"
+		(at 416.56 236.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b844fc96-9350-4b11-89c9-8b46747b0b2a")
+	)
+
+	(symbol
+		(lib_id "Device:LED")
+		(at 393.7 248.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aec837df-5d38-488c-af11-fa53d7441cba")
+		(property "Reference" "D14"
+			(at 392.43 246.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "COMM"
+			(at 394.97 252.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:LED_KPTL-3216_ReverseMount"
+			(at 393.7 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 393.7 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "COMM green reverse-mount, CBUS2 active low (KPTL-3216CGCK-01)"
+			(at 393.7 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C598390"
+			(at 393.7 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c4ee49b3-8b8d-4705-96e5-ca4ce2414ded")
+		)
+		(pin "1"
+			(uuid "3ef8d27e-c876-4008-be81-6138a0a8d831")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(wire
+		(pts
+			(xy 397.51 248.92) (xy 400.05 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52127dd8-cee2-4860-861f-fcce116818fd")
+	)
+	(label "VDD"
+		(at 400.05 248.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d7cfa7a-afcf-48ba-8fbd-c9b0bb6a3e88")
+	)
+	(wire
+		(pts
+			(xy 389.89 248.92) (xy 387.35 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53b414a4-9f72-445b-bc18-6b049b2f93ba")
+	)
+	(label "COMM_K"
+		(at 387.35 248.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "de341ce7-7678-45f4-99d0-642bb6e8b2a8")
+	)
+
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 411.48 248.92 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1ded368-a7bb-4fe9-8ad2-d21fea8cffe0")
+		(property "Reference" "R40"
+			(at 410.21 246.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 412.75 252.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Res_0402"
+			(at 411.48 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 411.48 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "COMM LED resistor, about 1.2 mA from 3.3 V"
+			(at 411.48 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 411.48 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f5f97e4a-9f17-417c-b281-5c0bd8e0f41b")
+		)
+		(pin "2"
+			(uuid "0530b1f2-6b51-4588-92b0-55b93ad311b5")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(wire
+		(pts
+			(xy 408.94 248.92) (xy 406.4 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c972e722-f910-4777-84b2-5fd81f4c784b")
+	)
+	(label "COMM_K"
+		(at 406.4 248.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e0d33930-b145-4108-99ba-e19b40851b57")
+	)
+	(wire
+		(pts
+			(xy 414.02 248.92) (xy 416.56 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bef2ae3-dcbe-42f4-8d70-8c51e0944f9c")
+	)
+	(label "CBUS_ACT"
+		(at 416.56 248.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d3f2b14-ec15-4fe5-ac5b-93827962eb3b")
+	)
+
+	(text "PCB: 1.5 mm hole under each LED with GND via ring (waveguide below cutoff).
+Reverse-mount Kingbright KPTL-3216. Light exits the bottom face.
+PWR and COMM are green KPTL-3216CGCK-01 (C598390). REF LOCK and SYNTH LOCK are red KPTL-3216SURCK-01 (C598393).
+Blue KPTL-3216QBC-D-01 is on LCSC but Vf is 3.3 V, so it is not used on this 3.3 V rail."
+		(exclude_from_sim no)
+		(at 12.7 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6b95df42-fe13-4c1a-8400-ab8ab2fa5fd0")
 	)
 
 	(no_connect
-		(at 66.04 160.02)
-		(uuid "c33369b9-6643-4ba1-af8d-af47461735b4")
+		(at 140.97 250.19)
+		(uuid "2560af93-858a-4c37-88f0-517159117434")
 	)
 
 	(sheet_instances
