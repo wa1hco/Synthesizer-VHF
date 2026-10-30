@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 // Farey sequence-based rational approximation of numbers.
 // Per Magnusson, 2024, 2025
 // MIT licence, http://www.opensource.org/licenses/mit-license.php

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 // Type to represent (positive) rational numbers
 #ifndef RATIONAL_APPROXIMATION_H
 #define RATIONAL_APPROXIMATION_H
