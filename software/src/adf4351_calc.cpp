@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 #include "adf4351_calc.h"
 
 // ADF4351 Rev. A. PFD_FLOOR (125 kHz) is the operating floor this loop uses;
