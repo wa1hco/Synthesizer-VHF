@@ -6532,11 +6532,7 @@
 		(at 66.04 139.7)
 		(uuid "10ba8534-139f-4283-b540-0fcab44fb3fd")
 	)
-	(no_connect
-		(at 66.04 137.16)
-		(uuid "1ef58460-88c3-4df2-8a0e-6ff5639f6f9e")
-	)
-	(no_connect
+		(no_connect
 		(at 43.18 245.11)
 		(uuid "38484622-7bdf-45c9-8025-01c5c1809f54")
 	)
@@ -6552,11 +6548,7 @@
 		(at 140.97 232.41)
 		(uuid "9a02fe5a-e250-4089-a288-38c49a192444")
 	)
-	(no_connect
-		(at 140.97 234.95)
-		(uuid "9dc8de89-b7fc-464d-b53b-d053e57751e6")
-	)
-	(no_connect
+		(no_connect
 		(at 66.04 142.24)
 		(uuid "a1774d53-ed15-4798-b610-7c9844234b23")
 	)
@@ -7232,17 +7224,7 @@
 		)
 		(uuid "424a857f-b3fe-4bff-8bb3-beb516194e29")
 	)
-	(wire
-		(pts
-			(xy 140.97 227.33) (xy 172.72 227.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4320a92c-3c51-4b98-8452-502f0d3a722e")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 255.27 166.37) (xy 255.27 163.83)
 		)
@@ -7352,17 +7334,7 @@
 		)
 		(uuid "4ca83adf-c2c1-49e6-9afb-eb9bd90347fd")
 	)
-	(wire
-		(pts
-			(xy 148.59 218.44) (xy 151.13 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4cc074aa-606c-4337-aca4-7bceaeb862a9")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 144.78 143.51) (xy 152.4 143.51)
 		)
@@ -7402,17 +7374,7 @@
 		)
 		(uuid "4e12e22c-dfbc-4d99-b363-04a427f2c1c9")
 	)
-	(wire
-		(pts
-			(xy 160.02 218.44) (xy 177.8 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e92b6dc-c677-4966-b807-4278626d2405")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 307.34 125.73) (xy 307.34 124.46)
 		)
@@ -7772,17 +7734,7 @@
 		)
 		(uuid "78c11ddf-f809-4eb6-87b9-67ebcfe34f84")
 	)
-	(wire
-		(pts
-			(xy 158.75 218.44) (xy 160.02 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a0e9d6b-f111-4dc5-b34e-979d85fd873d")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 228.6 85.09) (xy 236.22 85.09)
 		)
@@ -7882,17 +7834,7 @@
 		)
 		(uuid "860585cb-31ee-4f88-ad01-cb2e9d2f8afe")
 	)
-	(wire
-		(pts
-			(xy 160.02 218.44) (xy 160.02 224.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "865f7913-8264-4d06-b4ee-638972fd0335")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 330.2 146.05) (xy 364.49 146.05)
 		)
@@ -8812,17 +8754,7 @@
 		)
 		(uuid "e3f8fd8f-f5ec-4899-bc3a-a1ac60de49c6")
 	)
-	(wire
-		(pts
-			(xy 172.72 224.79) (xy 160.02 224.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e43ab895-350b-46a8-a0dc-ca5dbf64b240")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 90.17 134.62) (xy 90.17 135.89)
 		)
@@ -9032,17 +8964,7 @@
 		)
 		(uuid "f5662d71-7910-4800-b457-f72d27a9e5e1")
 	)
-	(wire
-		(pts
-			(xy 160.02 229.87) (xy 172.72 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f60ceba1-2c31-43ad-9b77-dbfd36f460a7")
-	)
-	(wire
+		(wire
 		(pts
 			(xy 96.52 232.41) (xy 105.41 232.41)
 		)
@@ -9442,7 +9364,7 @@
 		)
 		(uuid "a53adc00-5c90-4d09-a1c5-d463925ef1d5")
 	)
-	(label "RXD_U"
+	(label "TXD_M"
 		(at 140.97 227.33 0)
 		(effects
 			(font
@@ -20944,98 +20866,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 154.94 218.44 90)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "adebf1cf-51d0-4ddd-8a77-152122fd5592")
-		(property "Reference" "R12"
-			(at 152.654 220.726 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1K"
-			(at 157.48 220.726 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Res_0402"
-			(at 155.194 219.456 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 154.94 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C11702"
-			(at 152.654 220.726 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "9144043b-5692-4aff-9562-56c4d3d6e255")
-		)
-		(pin "1"
-			(uuid "829477ba-5e13-4da3-83f0-74d0bf6cc9a4")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(symbol
 		(lib_id "Device:R_Small_US")
 		(at 167.64 143.51 90)
 		(unit 1)
@@ -23399,101 +23230,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
-		(at 177.8 227.33 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d1a5c8cd-d5b0-45c3-b328-70fee8adbd6a")
-		(property "Reference" "J8"
-			(at 177.165 219.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Header 1x3"
-			(at 180.086 222.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 177.8 227.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 227.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 177.8 227.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C6332196"
-			(at 177.165 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "953802d1-a1a3-46cb-924c-602ff5cb4c0b")
-		)
-		(pin "2"
-			(uuid "57d2d038-69bb-4b9e-b28f-af1687448f88")
-		)
-		(pin "1"
-			(uuid "962cbf91-db1b-4cec-8af5-16028471b17a")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-		(symbol
+			(symbol
 		(lib_id "power:GND")
 		(at 309.88 181.61 0)
 		(mirror y)
@@ -26508,6 +26245,523 @@ Fed from the VRF LP5907 through FB2. VVCO is its own LP5907. ADF4351 AVDD/Vp are
 			(justify left)
 		)
 		(uuid "21c47249-668b-487d-9b65-03795fbb163b")
+	)
+
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 200.66 210.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4876f0b6-d52b-4e76-acf4-6d9124d66e31")
+		(property "Reference" "J12"
+			(at 199.39 208.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "UPDI"
+			(at 201.93 214.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:TestPad_1x03_P2.54mm"
+			(at 200.66 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bare 3-pad UPDI/VDD/GND test footprint, not assembled"
+			(at 200.66 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 200.66 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a367e804-87a3-41d4-9636-2c829d1ca2a1")
+		)
+		(pin "2"
+			(uuid "3f66951f-d3ff-4097-9016-76233f385fbe")
+		)
+		(pin "3"
+			(uuid "17592929-d8fc-4bcb-b3c5-e3f79dbc86c0")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(wire
+		(pts
+			(xy 205.74 208.28) (xy 208.28 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "733872af-fa5a-4d03-a6ae-0ddc1b25561b")
+	)
+	(label "UPDI"
+		(at 208.28 208.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "194639f6-adc6-494e-8e71-b1c97684e3d5")
+	)
+	(wire
+		(pts
+			(xy 205.74 210.82) (xy 208.28 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a36b40f2-70a6-4833-98b4-456a7101ac19")
+	)
+	(label "VDD"
+		(at 208.28 210.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "40269977-a8ff-44d3-b4ec-5774ae25a886")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 205.74 213.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67ef39f8-3cbb-4cad-9efd-ee1fbf986d43")
+		(property "Reference" "#PWR201"
+			(at 205.74 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 205.74 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 205.74 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f5f79cc5-cc62-4965-a10b-afc686701bc9")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR201")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(label "DTR"
+		(at 140.97 234.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae598cf0-ce3f-474f-bba3-4ecb28af5531")
+	)
+
+	(symbol
+		(lib_id "Device:C")
+		(at 168.91 254 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c241e6fd-27ac-4768-bbb1-57f5738ba755")
+		(property "Reference" "C54"
+			(at 167.64 251.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 170.18 257.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Cap_0402"
+			(at 168.91 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Optiboot ersatz-reset coupling"
+			(at 168.91 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 168.91 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3b85ed0a-a76f-493e-a1e2-cecb4ace36d3")
+		)
+		(pin "2"
+			(uuid "f64285ed-ad32-4547-8667-b70a7d58d89a")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "C54")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(wire
+		(pts
+			(xy 165.1 254) (xy 162.56 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bc2f9b6-7f1c-42a6-84fe-5f13f4b7d508")
+	)
+	(label "DTR"
+		(at 162.56 254 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c78bbf8d-bb89-447c-a7b5-9d3f187dc646")
+	)
+	(wire
+		(pts
+			(xy 172.72 254) (xy 175.26 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e70ae93f-9f6a-494c-aec6-3832432f3083")
+	)
+	(label "RST"
+		(at 175.26 254 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae43d471-736f-448f-a7b9-cca2b6c6623f")
+	)
+
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 176.53 254 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e533c9a4-5b84-4329-9def-872ab601e5a2")
+		(property "Reference" "R33"
+			(at 175.26 251.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 177.8 257.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Res_0402"
+			(at 176.53 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PA4 ersatz-reset pull-up"
+			(at 176.53 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C60490"
+			(at 176.53 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf9b4b61-bc3e-4e93-8614-d8b785984a74")
+		)
+		(pin "2"
+			(uuid "0f0c5323-ec82-4451-9719-c0c66c6dbec2")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(wire
+		(pts
+			(xy 176.53 251.46) (xy 176.53 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e832e122-bf6b-47e6-b5de-dabdb0aadff0")
+	)
+	(label "VDD"
+		(at 176.53 248.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c3d93856-220f-4606-91fe-54984b98ddd6")
+	)
+	(wire
+		(pts
+			(xy 176.53 256.54) (xy 176.53 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b31446f1-d56a-4a09-b05e-6f3a009d672d")
+	)
+	(label "RST"
+		(at 176.53 259.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5db0423c-19c5-4e4b-b397-cf7fe35799c1")
+	)
+
+	(label "RST"
+		(at 66.04 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "66c8abd7-1fcc-41dd-8b34-c87fc677cf5f")
+	)
+
+	(text "Programming: J8 removed. MCU TX (TXD_M, PB2) drives FT231X RXD.
+FT231X TXD still drives MCU RX (RXD_M, PB3) through R16.
+UPDI is PA0 only, on J12 (UPDI, VDD, GND). Optiboot ersatz reset: DTR - 100 nF - PA4, 10 k to VDD."
+		(exclude_from_sim no)
+		(at 200.66 198.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c2b32757-1c60-4af0-aad5-c709b1d0e380")
 	)
 
 	(sheet_instances
