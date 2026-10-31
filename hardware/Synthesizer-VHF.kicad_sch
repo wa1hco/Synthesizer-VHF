@@ -6925,7 +6925,7 @@
 		)
 		(uuid "39cce39c-a871-40ce-bb1b-3c15c268081b")
 	)
-	(text "REF_OUT: after U11, 39 ohm series and 100 pF to GND. RC edge softener, not a sine filter.\nVCTCXO output (XO) is AC-coupled to ADF4351 REFIN (C3), and to U11."
+	(text "REF_OUT: after U11, 39 ohm series and 100 pF to GND. RC edge softener, not a sine filter.\nU11 pin 4 (net BUF, before R29) is AC-coupled by C3 into ADF4351 REFIN. XO still feeds U11."
 		(exclude_from_sim no)
 		(at 75.438 4.572 0)
 		(effects
@@ -6936,7 +6936,7 @@
 		)
 		(uuid "3b89517c-ceac-44f4-8165-17bccdf90fb1")
 	)
-	(text "ADF4002 loop filter, about 20 Hz, 50 deg phase margin.\nKvco = 10 MHz * 20 ppm / 2 V = 100 Hz/V.\nIQXT-220-2 pulling is +/-10 to +/-15 ppm over Vc = 1.5 V +/- 1 V, so Kv is about 100-150 Hz/V. Designed at 100 Hz/V.\nPFD = 10 kHz with R = N = 1000 (10 MHz / 10 kHz). Lowest CP current: CPI=000, RSET=5.1k, Icp=0.625 mA.\nT1=(sec phi - tan phi)/wc = 2.90 ms, T2=1/(wc^2*T1)=21.9 ms.\nC1=1.5 nF C0G (CP to GND), R=2.2 M, C2=10 nF C0G (Vc to GND).\nFree-run hold: ATtiny DAC PA6 through 100 k to Vc. Tri-state the charge pump to hold; while locking, Icp overrides the 100 k.\nADF4002 REFIN is external /REF_IN (J5, 74LVC1G17 squarer, 33 ohm, then C58). RFIN is the VCTCXO sample.\nSPI CLK/DATA shared with the ADF4351. LE is PA7. MUXOUT (digital lock detect) is PA5.\nREFIN below 20 MHz needs slew > 50 V/us (ADF4002 datasheet). The 1G17 squares the 10 MHz reference so that slew is met."
+	(text "ADF4002 loop. The drawn network was C55 shunt on CP, R34 series to Vc, C56 shunt on Vc. That has no zero (phase margin about -4 deg at Kv=10 Hz/V), so it is not a 3rd-order filter and the series R is not a 3rd pole. Vc and the DAC hold resistor are on the CP node; C56 is only the capacitor in series with R34 to GND.\nKv assumption for the design: 10 Hz/V. IQXT-220-2 pulling is +/-10 to +/-15 ppm over Vc = 1.5 V +/- 1 V, which is about 100-150 Hz/V if that datasheet range applies. Both are checked.\nPFD = 10 kHz, R = N = 1000, CPI=000, R35=5.1k, Icp=0.625 mA.\nG(s) = Icp*Kv*Z(s)/(s*N), Z(s) = (1+s*R34*C56)/(s*(C55+C56)*(1+s*R34*(C55||C56))).\nC55=150p C0G, R34=10M, C56=2.2n C0G. Kv=10 Hz/V: fc=11.1 Hz, PM=51 deg. Kv=100 Hz/V: fc=77 Hz, PM=50 deg. Kv=150 Hz/V: fc=103 Hz, PM=44 deg.\nDAC hold: R36 100k from the CP/Vc node to PA6. Tri-state the DAC while locking.\nREFIN is J5 through U13 74LVC1GU04, 33 ohm, then C58. RFIN is the VCTCXO sample."
 		(exclude_from_sim no)
 		(at 327.914 -3.048 0)
 		(effects
@@ -6997,12 +6997,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0c9da700-0eae-4899-84c1-a9f0e890a1bb")
-	)
-	(junction
-		(at 335.28 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0dbe36a3-f724-490a-a121-a84ad3c60309")
 	)
 	(junction
 		(at 273.05 74.93)
@@ -8528,16 +8522,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 100.33) (xy 209.55 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68f6eada-e663-4e91-abb1-4bc11a0a887d")
-	)
-	(wire
-		(pts
 			(xy 77.47 232.41) (xy 80.01 232.41)
 		)
 		(stroke
@@ -9185,16 +9169,6 @@
 			(type default)
 		)
 		(uuid "adac8432-b2f2-4717-8de9-b285e96274e4")
-	)
-	(wire
-		(pts
-			(xy 335.28 74.93) (xy 335.28 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af31ac6d-64b7-411e-a6f1-508dd2a0a42d")
 	)
 	(wire
 		(pts
@@ -10546,16 +10520,6 @@
 		)
 		(uuid "6a13c2d2-d813-4b69-834c-64a6f50909d5")
 	)
-	(label "VC"
-		(at 204.47 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6a7af49e-2879-44f3-ad35-44e72ea82cdb")
-	)
 	(label "RXD_M"
 		(at 67.31 157.48 0)
 		(effects
@@ -10936,7 +10900,7 @@
 		)
 		(uuid "c16a3617-e017-4062-96e6-07988489d51d")
 	)
-	(label "XO"
+	(label "BUF"
 		(at 269.24 140.97 0)
 		(effects
 			(font
@@ -11066,7 +11030,7 @@
 		)
 		(uuid "f20c4bb6-7906-4a38-8a95-f65aec512dcc")
 	)
-	(label "VC"
+	(label "CP"
 		(at 27.94 35.56 0)
 		(effects
 			(font
@@ -12512,7 +12476,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R bypass. LCSC C1525 basic"
 			(at 22.86 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -12523,7 +12487,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C15195"
+		(property "LCSC" "C1525"
 			(at 208.28 -81.28 0)
 			(hide yes)
 			(show_name no)
@@ -12887,7 +12851,7 @@
 				)
 			)
 		)
-		(property "Value" "D_Schottky"
+		(property "Value" "B5819W"
 			(at 206.502 46.736 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12897,7 +12861,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 207.01 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -12919,7 +12883,7 @@
 				)
 			)
 		)
-		(property "Description" "Schottky diode"
+		(property "Description" "Schottky 40V 1A SOD-123, 12V input OR. LCSC C8598 basic"
 			(at 207.01 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -12941,7 +12905,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C143772"
+		(property "LCSC" "C8598"
 			(at 238.76 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -13217,7 +13181,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100p"
+		(property "Value" "1n"
 			(at 394.97 135.382 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13250,7 +13214,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1nF 50V C0G RF output coupling. LCSC C76947"
 			(at 388.62 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -13261,7 +13225,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1546"
+		(property "LCSC" "C76947"
 			(at 514.35 -228.6 0)
 			(hide yes)
 			(show_name no)
@@ -13340,7 +13304,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "ADF4351 RSET 4.7k. Icp max = 25.5/4.7 = 5.43 mA. Loop uses code 0011 (1.36 mA) at Fpfd 10 MHz"
 			(at 304.8 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -15411,7 +15375,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7n"
+		(property "Value" "3.3n"
 			(at 366.014 162.306 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15444,7 +15408,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "3.3nF 50V C0G, ADF4351 loop C2. LCSC C107048"
 			(at 365.76 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -15455,7 +15419,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C513576"
+		(property "LCSC" "C107048"
 			(at 36.83 312.42 0)
 			(hide yes)
 			(show_name no)
@@ -15674,7 +15638,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "2.7K"
 			(at 377.952 154.432 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15706,7 +15670,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "2.7k 1% ADF4351 loop R3, CP node to Vtune. LCSC C13167 basic"
 			(at 374.65 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -15717,7 +15681,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C21190"
+		(property "LCSC" "C13167"
 			(at 523.24 -181.61 0)
 			(hide yes)
 			(show_name no)
@@ -18138,85 +18102,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 335.28 85.09 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6595fc43-89a7-40d4-a132-3a77fc79802c")
-		(property "Reference" "#PWR217"
-			(at 335.28 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 335.28 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 335.28 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 335.28 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 335.28 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "888447e7-aa1c-4e1e-b57f-01c42b2a2748")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR217")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 31.75 69.85 0)
 		(unit 1)
@@ -18979,7 +18864,7 @@
 				)
 			)
 		)
-		(property "Value" "560R"
+		(property "Value" "2.2K"
 			(at 369.316 168.656 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19011,7 +18896,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "2.2k 1% ADF4351 loop R2. R20 stays 0R in series. LCSC C4190 basic"
 			(at 365.76 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -19022,7 +18907,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C23204"
+		(property "LCSC" "C4190"
 			(at 36.83 327.66 0)
 			(hide yes)
 			(show_name no)
@@ -19994,7 +19879,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.7n"
+		(property "Value" "100p"
 			(at 356.87 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20027,7 +19912,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100pF 50V C0G, ADF4351 loop C1 (CP shunt). LCSC C14665"
 			(at 356.87 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -20038,7 +19923,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C541551"
+		(property "LCSC" "C14665"
 			(at 36.83 312.42 0)
 			(hide yes)
 			(show_name no)
@@ -22465,7 +22350,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2M"
+		(property "Value" "10M"
 			(at 199.644 98.298 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22498,7 +22383,7 @@
 				)
 			)
 		)
-		(property "Description" "ADF4002 loop R2"
+		(property "Description" "10M 1% ADF4002 loop zero resistor. LCSC C7250 basic"
 			(at 195.58 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -22509,7 +22394,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C137747"
+		(property "LCSC" "C7250"
 			(at 195.58 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -22769,96 +22654,6 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "#PWR069")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 335.28 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "acf88d47-dd0b-40ae-90b5-0783f9db6c2c")
-		(property "Reference" "C27"
-			(at 337.82 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1u 10V"
-			(at 339.344 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Cap_0402"
-			(at 335.28 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 335.28 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "VDD 1 uF decouple"
-			(at 335.28 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C52923"
-			(at 335.28 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3d035303-bb6a-4ca4-8de2-1968c8eeadfa")
-		)
-		(pin "2"
-			(uuid "336c8f69-5f23-44cb-86ba-8aeb84ab5814")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -23631,7 +23426,7 @@
 				)
 			)
 		)
-		(property "Value" "1.5n"
+		(property "Value" "150p"
 			(at 193.548 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23663,7 +23458,7 @@
 				)
 			)
 		)
-		(property "Description" "ADF4002 loop C1, C0G, CP node to GND"
+		(property "Description" "150pF 50V C0G, ADF4002 loop C1 on CP/Vc. LCSC C107038"
 			(at 190.5 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -23674,7 +23469,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C107039"
+		(property "LCSC" "C107038"
 			(at 190.5 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -24154,7 +23949,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100p"
+		(property "Value" "1n"
 			(at 395.224 143.002 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24187,7 +23982,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1nF 50V C0G RF output coupling. LCSC C76947"
 			(at 388.62 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -24198,7 +23993,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1546"
+		(property "LCSC" "C76947"
 			(at 521.97 -220.98 0)
 			(hide yes)
 			(show_name no)
@@ -26730,7 +26525,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "680p"
+		(property "Value" "150p"
 			(at 383.286 162.306 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26763,7 +26558,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "150pF 50V C0G, ADF4351 loop C3 (Vtune shunt). LCSC C107038"
 			(at 383.54 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -26774,7 +26569,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C107121"
+		(property "LCSC" "C107038"
 			(at 730.25 312.42 0)
 			(hide yes)
 			(show_name no)
@@ -27128,6 +26923,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C7519"
+			(at 58.42 242.00 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5a104fe3-a246-4cde-b8db-712afb89fa62")
 		)
@@ -27176,7 +26982,7 @@
 				)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "2.2n"
 			(at 204.216 108.204 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27208,7 +27014,7 @@
 				)
 			)
 		)
-		(property "Description" "ADF4002 loop C2, C0G, Vc to GND"
+		(property "Description" "2.2nF 50V C0G, ADF4002 loop C2. LCSC C107043"
 			(at 200.66 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -27219,7 +27025,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C85973"
+		(property "LCSC" "C107043"
 			(at 200.66 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -28837,6 +28643,1221 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "NEW - place me"
+		(exclude_from_sim no)
+		(at 175.26 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8c754ebb-bf37-4815-a479-7d3840ca81c5")
+	)
+	(text "U1 heatsink tab to enclosure, about 1.3 W at 12 V in."
+		(exclude_from_sim no)
+		(at 241.30 38.10 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "14677328-f5f5-4f1d-9388-25ad4a12d45e")
+	)
+	(text "ADF4351 3rd-order loop for integer-N transverter LOs (divider 1, VCO 2.2-4.4 GHz, then multiplied). Kv=40 MHz/V. Topology kept: C20 shunt on CP, R14+R20(0R)+C17 shunt, R25 series to Vtune, C31 shunt.\nG(s)=Icp*Kv*Z(s)/(s*N). R22=4.7k so Icp=(code+1)/16*25.5/4.7 mA. Fpfd 10 MHz uses code 0011 = 1.36 mA. Fpfd 2.5 MHz uses code 1111 = 5.43 mA (Icp and N both x4, same gain).\nC20=100p C0G, R14=2.2k, C17=3.3n C0G, R25=2.7k, C31=150p C0G. Third pole 1/(2*pi*R25*C31)=393 kHz.\nSame BW/PM at both PFD settings. At 2.2/2.7/3.1/3.6/4.0/4.4 GHz: 77.7/65.5/58.2/51.6/47.3/43.8 kHz, PM 50.1/50.9/51.0/50.6/50.1/49.4 deg. Third pole is 5.1x BW at 2.2 GHz. At Fpfd 2.5 MHz the sample delay takes about 3-6 deg; PM stays near 45."
+		(exclude_from_sim no)
+		(at 16.51 -36.00 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "521174e2-b3ac-46df-8c56-5cb29f4701f4")
+	)
+	(label "LE4002"
+		(at 175.26 190.50 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa307f09-adcd-41db-a45d-24398300087c")
+	)
+	(label "LE"
+		(at 190.50 190.50 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "25949c3f-84b9-4b24-a2ae-95fd206753e9")
+	)
+	(label "CE"
+		(at 205.74 190.50 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f11948f2-053d-480b-b219-5a0296dc1613")
+	)
+	(label "RF_EN"
+		(at 220.98 190.50 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "505ec3a8-2379-45fd-a3a7-6324d49b9fba")
+	)
+	(label "VRF"
+		(at 236.22 190.50 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9d9346d4-fae6-4b83-867b-25cf55b5f4bd")
+	)
+	(label "5V"
+		(at 251.46 190.50 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb853ed7-0818-41f2-ae14-6b9452cc883f")
+	)
+	(label "CP"
+		(at 209.55 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7faa85d3-0dad-457f-bc42-f4bf5be01567")
+	)
+	(label "BUF"
+		(at 93.98 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "42d15bb0-fc42-404a-9436-98327574f073")
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 175.26 193.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e1c5f57-9b6b-410c-b536-b1bc68efaccf")
+		(property "Reference" "R46"
+			(at 175.26 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 179.07 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 175.26 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10k pull-down on LE4002. Place near U12 pin 14. LCSC C25804 basic"
+			(at 175.26 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 175.26 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "399e0a2b-4a4f-41ed-9700-d34463190d5f")
+		)
+		(pin "2"
+			(uuid "427a44c6-35ea-47d2-99c9-d410b3402776")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 175.26 195.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9671db4c-7479-4346-a1b9-523370961b7e")
+		(property "Reference" "#PWR230"
+			(at 175.26 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.26 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GND"
+			(at 175.26 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d6e2df92-89cb-4ea2-be8e-6c63a3e6f4a7")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR230")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 190.50 193.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40ceaba5-526b-4671-89dd-b5c17b263263")
+		(property "Reference" "R47"
+			(at 190.50 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 194.31 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 190.50 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.50 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10k pull-down on LE. Place near U4 pin 3. LCSC C25804 basic"
+			(at 190.50 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 190.50 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7bd0a051-1ee7-4d16-a8c5-825e82e857bf")
+		)
+		(pin "2"
+			(uuid "6dd56937-40b6-4f34-957f-ca4977b8b795")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 190.50 195.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc7d5ec0-695d-4027-8a4e-5e24b77c659f")
+		(property "Reference" "#PWR231"
+			(at 190.50 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.50 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.50 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.50 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GND"
+			(at 190.50 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "90de01a5-8a9e-46e5-a2e4-d0025a460765")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR231")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 205.74 193.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b80e7a4-68d2-4ee4-a454-ac98aa05a036")
+		(property "Reference" "R48"
+			(at 205.74 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 209.55 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 205.74 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100k pull-down on CE. Place near U4 pin 4. LCSC C25803 basic"
+			(at 205.74 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 205.74 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "882cd081-53e2-4455-8d1e-ab37b2d32097")
+		)
+		(pin "2"
+			(uuid "19bced3a-a1e9-4680-a199-d8aeb87375f9")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 205.74 195.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "942383f5-46fd-49df-9dc7-823b1343f003")
+		(property "Reference" "#PWR232"
+			(at 205.74 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 205.74 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GND"
+			(at 205.74 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d1b44d9e-4b57-4061-9689-348fc841e0c7")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR232")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 220.98 193.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a1718a9-a4be-4b2f-8700-7065c7ae3552")
+		(property "Reference" "R49"
+			(at 220.98 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 224.79 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 220.98 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100k pull-down on RF_EN. Place near U4 pin 26. LCSC C25803 basic"
+			(at 220.98 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 220.98 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "67d35ade-cf7e-47e9-ae6e-c1be2b5ae8af")
+		)
+		(pin "2"
+			(uuid "cc84f59a-97a9-45b2-b9b9-bc6dbe390a2b")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 220.98 195.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1a1a796-6656-457b-a09f-31020a11d593")
+		(property "Reference" "#PWR233"
+			(at 220.98 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 220.98 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GND"
+			(at 220.98 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b9bbf8c9-b7d3-45c6-81e2-a388fc96a453")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR233")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 236.22 194.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc7dbb81-1d16-41a5-9358-b1918c1e085d")
+		(property "Reference" "C65"
+			(at 236.22 189.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 240.03 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Synthesizer:Cap_0402"
+			(at 236.22 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF bypass for ADF4002 VP. Place at U12 pin 18 (VRF). LCSC C1525 basic"
+			(at 236.22 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 236.22 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "42e66786-d440-4965-8c64-15f176b54585")
+		)
+		(pin "2"
+			(uuid "ff30efcb-eed7-4837-ad97-af5e6f250d60")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "C65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 236.22 198.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7a5ab24-8678-4936-80de-63e1cd8f32b4")
+		(property "Reference" "#PWR234"
+			(at 236.22 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 236.22 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GND"
+			(at 236.22 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87f8d374-b2a7-4279-95e8-5fd27bb06ea0")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR234")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 251.46 190.50 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8fee7be-8b98-4c78-afa0-d410fd8a7339")
+		(property "Reference" "#FLG03"
+			(at 251.46 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 256.54 190.50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 190.50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 190.50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PWR_FLAG on the diode-OR 5V rail. NEW - place me"
+			(at 251.46 190.50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5bcd57c8-56c2-4ea0-a2f0-98287319ccab")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 266.70 190.50 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2975b1dc-c1f2-4899-8287-63e94486a6fa")
+		(property "Reference" "#FLG04"
+			(at 266.70 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 271.78 190.50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.70 190.50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.70 190.50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PWR_FLAG on GND so power-input pins are driven. NEW - place me"
+			(at 266.70 190.50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6865aa5f-4cf6-42ec-b2c8-0793470e608d")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 266.70 190.50) (xy 266.70 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd423f3f-8502-4162-8e94-689f0433029f")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 266.70 195.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dde51829-b0fe-47c9-80f7-aaa9edd06b39")
+		(property "Reference" "#PWR235"
+			(at 266.70 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 266.70 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.70 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.70 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GND"
+			(at 266.70 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b6d17405-0346-42b3-82db-7ff622fb8f72")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR235")
 					(unit 1)
 				)
 			)
