@@ -136,3 +136,9 @@
 	(condition "A.Type == 'Zone'")
 	(constraint thermal_relief_gap (opt 0.3mm))
 	(constraint thermal_spoke_width (opt 0.4mm)))
+
+# USB-C J4 hangs over the board edge into the milled box slot; exempt only J4 from edge clearance.
+# Also exclude J4's "courtyard outside board" DRC marker once (right-click > Exclude).
+(rule "J4 USB-C overhang"
+	(condition "A.Parent.Reference == 'J4' || A.Reference == 'J4'")
+	(constraint edge_clearance (min 0mm)))
