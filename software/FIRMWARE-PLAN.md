@@ -1,41 +1,42 @@
 # Firmware rework plan for diecast-2x2
 
-Plan only. No code in this commit. The board is the diecast-2x2 schematic: 10 MHz VCTCXO, ADF4351, ADF4002, ATtiny1616, FT231X. The loop filters this firmware must match are the ones on that schematic.
+Plan only. The board is the diecast-2x2 schematic: ADF4351, an on-board 10 MHz TCXO with an external REF IN mux, ATtiny1616, FT231X. The ADF4351 loop filter on that schematic is the one this firmware must match. There is no ADF4002 and no REF OUT.
 
 Host checks stay behind `scripts/` (`scripts/test-adf4351`, `scripts/build-firmware`, `scripts/flash-firmware`). Launchers take no flags and no environment variables. A person runs the script; the script knows the paths. New checks are added the same way.
 
-`software/firmware-review.md` is not in this tree. The review items below are the ones this plan implements. Do not add that file from here.
+`software/firmware-review.md` is the review this plan implements.
 
 ## 1. Hardware baseline
 
 Reference chain:
 
-- X1 is an IQXT-220-2, 10 MHz. ADF4351 REFIN is U11 pin 4 (squared TCXO), through C3. The synthesizer reference is 10 MHz, not 25 MHz. `ADF4351_REF_HZ` is still `25000000`.
-- ADF4002 locks that VCTCXO to an external reference on J5 (U13 squarer, then C58 into ADF4002 REFIN). ADF4002 RFIN is a sample of the VCTCXO.
-- Design point already on the schematic: R = N = 1000, PFD = 10 kHz, CPI = 000, R35 = 5.1 kΩ, Icp = 0.625 mA. Loop about 11 Hz at Kv = 10 Hz/V.
-- There is no separate "external reference present" pin. Presence is ADF4002 lock on PA5.
-- R36 is 100 kΩ from PA6 (DAC) to the VCTCXO control node, which is the ADF4002 charge-pump pin. While the loop is closed, PA6 must be high-Z. A driven DAC behind 100 kΩ swamps the 10 MΩ loop resistor. When no external reference locks, tri-state the ADF4002 charge pump and drive PA6 to about 1.5 V (the center of the Vc range). Free-run is then the DAC, not the loop.
+- The synthesizer reference is 10 MHz, not 25 MHz. `ADF4351_REF_HZ` is still `25000000` until the firmware change.
+- J5 is external REF IN: 51 ohm to ground, 100 nF into U13. U13 is the 74LVC1GU04 already on the sheet, with a 1 MΩ feedback resistor. Its output net is REF_BUF.
+- X2 is the on-board fallback, YXC OW2EL89CEIUXK7YLC-10M (LCSC C55266004), 10 MHz clipped sine, 3.3 V. A 10 ohm resistor and 100 nF isolate its supply. U14 (74LVC1G17, mid-supply bias) squares it. Pin 1 is output-enable and is left open; this family treats a floating enable as on.
+- U15 is a 74LVC1G157. I0 is the squared TCXO, I1 is REF_BUF. S low selects I0. S is PA6, net REF_SEL, with a 10 kΩ pulldown, so a blank chip uses the TCXO. Drive PA6 high to select the external reference.
+- PA5, net REF_DET, is REF_BUF through 1 kΩ. Count edges there to decide that an external reference is present. U13 inverts, which does not matter for an edge count.
+- The mux output goes through 33 ohm and C3 into ADF4351 REFIN.
 - R22 on the ADF4351 is 4.7 kΩ, so Icp max = 25.5/4.7 = 5.43 mA at Register 2 DB[12:9] = 1111. Code 0011 is 1.36 mA. The 10 MHz integer-N filter was designed at 0011. The 2.5 MHz fine-step filter uses 1111, which is exactly 4× current for 4× N. The firmware comment that assumes a 5.1 kΩ RSET is wrong for this board.
 
 ATtiny1616 (U3), every pin, QFN-20. Chip pin numbers match the package drawing in `HardwareConfig.h`. Direction is MCU direction.
 
 | Chip | Port | Net | Use |
 |---|---|---|---|
-| 1 | PA2 | unconnected | Open. Old sequencer LED. Do not drive it. |
-| 2 | PA3 | unconnected | Open. Old sequencer LED. Do not drive it. |
+| 1 | PA2 | DBG1 | Test header J2 pin 3. |
+| 2 | PA3 | DBG2 | Test header J2 pin 4. |
 | 3 | GND | GND | |
 | 4 | VCC | VDD | 3.3 V |
 | 5 | PA4 | RST | Optiboot ersatz reset. FT231X DTR, C54 100 nF, PA4. R33 10 kΩ to VDD. |
-| 6 | PA5 | MUX4002 | ADF4002 MUXOUT, input. Program digital lock detect. |
-| 7 | PA6 | DAC_HOLD | DAC through R36 100 kΩ to VCTCXO Vc. High-Z while the ADF4002 loop is closed. |
-| 8 | PA7 | LE4002 | ADF4002 LE. Hardware pull-down R46 10 kΩ. Active high to latch. |
+| 6 | PA5 | REF_DET | Input. Squared REF IN through 1 kΩ. Edge-count to detect an external reference. |
+| 7 | PA6 | REF_SEL | Output. Mux select. Pulled down, so low selects the TCXO. High selects REF IN. |
+| 8 | PA7 | unconnected | No connection. Do not drive it. |
 | 9 | PB5 | SYNTH_LOCK | SYNTH LOCK LED D13, red, active high, R39 1 kΩ to the anode, cathode to GND. About 1.2 mA. |
 | 10 | PB4 | REF_LOCK | REF LOCK LED D12, red, active high, R38 1 kΩ. About 1.2 mA. |
 | 11 | PB3 | RXD_M | MCU RX from FT231X TXD through R16 1 kΩ. |
 | 12 | PB2 | TXD_M | MCU TX to FT231X RXD. |
 | 13 | PB1 | CE | ADF4351 CE. Hardware pull-down R48 100 kΩ. |
 | 14 | PB0 | LE | ADF4351 LE. Hardware pull-down R47 10 kΩ. |
-| 15 | PC0 | DATA | Shared SPI data to ADF4351 and ADF4002. |
+| 15 | PC0 | DATA | SPI data to the ADF4351. |
 | 16 | PC1 | CLK | Shared SPI clock. |
 | 17 | PC2 | MUX | ADF4351 MUXOUT, input. |
 | 18 | PC3 | RF_EN | ADF4351 RF output enable (PDBRF). Hardware pull-down R49 100 kΩ. Low mutes both RF outputs. |
@@ -50,7 +51,7 @@ The other two LEDs are not MCU pins:
 
 FT231X VCCIO is VDD (3.3 V). MCU serial is already 3.3 V. Boot is Optiboot on the UART (PB2/PB3) with the DTR capacitor reset. A failed flash is recovered on J12 with UPDI, not by bit-banging PA0 from the application.
 
-SPI rule: CLK and DATA are shared. Only one of PB0 and PA7 is high at a time. Both idle low, which is also the pull-down state, so a reset does not latch a partial word.
+SPI is the ADF4351 only. LE (PB0) idles low, which is also the pull-down, so a reset does not latch a partial word.
 
 ## 2. Tuning modes
 
@@ -137,14 +138,14 @@ H2. RF stays off until the registers are written and lock is real. Boot and retu
 1. PC3 low, and CE (PB1) low, before any register write. The pull-downs already do this at reset; the firmware holds it.
 2. Write all six ADF4351 registers with the RF muted.
 3. Poll PA1. ADF4351 MUXOUT and the LD pin are both digital lock detect (section M2). Timeout is short, on the order of a few milliseconds times a small constant, because the loop is 50–70 kHz. On timeout, leave RF off and SYNTH LOCK (PB5) off.
-4. Poll PA5 for the ADF4002. Timeout is about a second, because that loop is about 11 Hz. Lock: external reference is in use, PA6 high-Z, REF LOCK (PB4) on. No lock: tri-state the ADF4002 charge pump, drive the DAC to the 1.5 V hold, REF LOCK off.
+4. Count edges on PA5 (REF_DET) for a short window. Edges mean an external 10 MHz is present: drive PA6 high so the mux selects REF IN, and light REF LOCK (PB4). No edges: leave PA6 low (the pulldown already does this) so the mux stays on the TCXO, and leave REF LOCK off.
 5. Only then raise PC3.
 
-If the external reference disappears later, drop to DAC hold without turning the synthesizer RF off. The VCTCXO is still the ADF4351 reference; it is just no longer disciplined. Re-attempt ADF4002 lock on a slow cadence so a reference that comes and goes does not chatter the 11 Hz loop.
+If the external reference disappears later, drop PA6 and REF LOCK. The TCXO is still the ADF4351 reference. Check PA5 again on a slow cadence so a reference that comes and goes does not chatter the mux.
 
 M1. One frequency update is one local `Adf4351Fields`, validated, then one programming burst. Validation is: calculate returned true, the reassembled frequency matches the request within one output step, VCO is inside 2.2–4.4 GHz, and Icp and R are the mode's values. On failure, do not write the chip and do not publish the new frequency. The live globals (`Fout`, `Fvco`, `reg[]`) update only after that success. Today a key handler can call `sendRegisterToAdf` and then fall through into `updateAllRegisters`.
 
-M2. Default MUXOUT is digital lock detect (code 6), and the LD pin mode is digital lock detect (code 1). `InitFields` currently leaves `muxout` at 3, which is the R-divider output, so PA1 and PC2 do not mean lock until something changes it. The mode setup writes both explicitly. The ADF4002 MUXOUT on PA5 is the same idea: digital lock detect, not a test mux.
+M2. Default MUXOUT is digital lock detect (code 6), and the LD pin mode is digital lock detect (code 1). `InitFields` currently leaves `muxout` at 3, which is the R-divider output, so PA1 and PC2 do not mean lock until something changes it. The mode setup writes both explicitly. PA5 is REF_DET, not a mux output.
 
 Later, not in the first steps:
 
@@ -162,7 +163,7 @@ Add, in the same host binary so `scripts/test-adf4351` still runs everything:
 
 - Mode selection. A 3600 MHz transverter request is integer-N, R = 1, fPFD = 10 MHz, Icp code 0011, divider 1, low noise. A 144 MHz IMD request is R = 4, fPFD = 2.5 MHz, Icp code 1111, divider 16, MOD ≤ 4095, output step about 38 Hz. A 1152 MHz request may be fractional. A 3600 MHz request may not.
 - Spur check. A constructed pair whose integer-boundary or fractional offset lands within 10 Hz of delta or 2·delta is nudged, delta unchanged, and the nudged pair is clean. A pair that is already clean is unchanged. A pair that cannot be cleaned returns the failure the firmware will report.
-- Lock-policy unit check, without GPIO: RF-enable is false when calculate fails or when the lock flag is false, and true only after a successful program and a true lock flag. ADF4002 unlocked selects DAC-hold and charge-pump tri-state; locked selects DAC high-Z and charge pump active.
+- Lock-policy unit check, without GPIO: RF-enable is false when calculate fails or when the lock flag is false, and true only after a successful program and a true lock flag. REF_DET edges select REF IN (PA6 high); no edges leave PA6 low so the mux stays on the TCXO.
 
 The on-chip sweep over 35 MHz–4.4 GHz can stay as a "legal registers" property test, pointed at 10 MHz.
 
@@ -189,7 +190,7 @@ L ≈ −221 + 64.0 + 59.3 − 24.1 ≈ −122 dBc/Hz
 
 Fractional operation is several dB worse than that integer floor, so the in-band estimate at 144 MHz is about −115 to −122 dBc/Hz.
 
-Close-in, the reference dominates. The ADF4002 loop is about 11 Hz wide, so an offset of 100 Hz is outside that loop and follows the VCTCXO. A 10 MHz VCTCXO near −130 dBc/Hz at 100 Hz, brought up to 144 MHz, picks up `20·log10(144/10) ≈ 23 dB`, which lands near −107 dBc/Hz at 100 Hz. That number moves with the actual crystal. It is not the floor that sets IM3 at a tone spacing of kilohertz or more.
+Close-in, the reference dominates. There is no narrow disciplining loop anymore. A 10 MHz TCXO or external reference near −130 dBc/Hz at 100 Hz, brought up to 144 MHz, picks up `20·log10(144/10) ≈ 23 dB`, which lands near −107 dBc/Hz at 100 Hz. That number moves with the actual source. It is not the floor that sets IM3 at a tone spacing of kilohertz or more. These figures are estimates.
 
 IM3 margin at the 144 MHz synth output, −50 dBc products, 10 Hz RBW. Phase noise in that bin is `L + 10·log10(10) = L + 10`:
 
@@ -206,13 +207,13 @@ External multipliers add `20·log10(M)` to the LO phase noise and to spur level 
 
 Each step should leave `scripts/test-adf4351` passing. Golden words change only in the step that changes the reference.
 
-1. Pin map. Replace the sequencer table in `HardwareConfig.h` with section 1. Idle levels: LE, LE4002, CE, and RF_EN low; REF LOCK and SYNTH LOCK off; PA6 high-Z; PA2 and PA3 untouched. No frequency math yet.
+1. Pin map. Replace the sequencer table in `HardwareConfig.h` with section 1. Idle levels: LE, CE, and RF_EN low; REF LOCK and SYNTH LOCK off; PA6 low so the mux stays on the TCXO; PA7, PA2, and PA3 untouched. No frequency math yet.
 2. Reference constant 10 MHz. Regenerate the golden words for R = 1, fPFD = 10 MHz, on the frequencies the suite already cares about. Delete the assertion that the reference is 25 MHz.
 3. Mode struct: transverter versus IMD, with the R, Icp code, noise mode, and divider rule from section 2. Tests for 3600 MHz integer-N and 144 MHz fine-step. Calculator takes that R instead of searching.
 4. Remove the R sweep (H1) once step 3 is the only caller.
 5. MUXOUT and LD pin default to digital lock detect (M2), in the mode setup, covered by a register-word assertion.
 6. Atomic tune (M1): local fields, validate, then commit. Failed tune does not change published `Fout` or the chip image the test records.
-7. Lock policy (H2), still testable as a pure function of "program ok" and "LD bit": RF_EN and the two lock LEDs. ADF4002 unlocked maps to CP tri-state plus DAC hold; locked maps to CP active plus DAC high-Z.
-8. Wire the real GPIO and the ADF4002 register write behind that policy. Timeouts as in H2. This is the first step that needs the board.
+7. Lock policy (H2), still testable as a pure function of "program ok", "LD bit", and "REF_DET edges": RF_EN and the two lock LEDs. Edges map to PA6 high. No edges map to PA6 low.
+8. Wire the real GPIO behind that policy. This is the first step that needs the board.
 9. Spur check (section 3) and its host tests. Tone nudge preserves delta.
 10. Later cleanup: `UserInterface` parser, `Fvco` extern, the `p` fall-through. Only after steps 1–9 no longer call that path.

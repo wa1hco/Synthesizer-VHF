@@ -12,11 +12,11 @@ The PCB is the lid of a Hammond 1590LB. Parts sit on the inside face. The SMA co
 
 The synthesizer is an ADF4351. Its VCO covers 2.2–4.4 GHz, and the on-chip divider brings the outputs down to 35 MHz. Two RF jacks leave the box.
 
-The reference is a 10 MHz VCTCXO. An ADF4002 locks it to an external reference when that reference is there. REF IN is 50 ohm and is squared (inverter with feedback) before the ADF4002. With no external reference, the charge pump is tri-stated and the microcontroller holds the VCTCXO tune line from its DAC. REF OUT is the squared 10 MHz clock after a series resistor and a capacitor to ground, which softens the edges. It is not a sine-wave filter.
+The reference is an external 10 MHz on REF IN, shared when several boards must stay together. An on-board 10 MHz TCXO is the fallback. REF IN is 50 ohm and is squared before a 2:1 mux; the TCXO is squared the same way and is the other mux input. With no firmware, a pulldown on PA6 selects the TCXO. Firmware counts edges on PA5 to see that an external reference is present, then drives PA6 to select it. There is no ADF4002 and no REF OUT.
 
 The controller is an ATtiny1616. An FT231X provides USB-C serial. Everyday firmware updates use Optiboot: plugging in USB resets the chip through DTR and a capacitor. If that path is broken, the UPDI header (J12) is the recovery programmer. A 1×5 header (J2) brings lock detect, mux, and two debug lines out to one place, with ground.
 
-Power is 5 V from USB, or 12 V through a regulator, joined by Schottky diodes so either source can run the board. Two LP5907 regulators make 3.3 V: one for the VCO, and one for the PLL analog rail. The digital 3.3 V rail comes from that analog rail through a ferrite bead.
+Power is 5 V from USB. Two LP5907 regulators make 3.3 V: one for the VCO, and one for the PLL analog rail. The digital 3.3 V rail comes from that analog rail through a ferrite bead.
 
 Four reverse-mount LEDs shine through the lid: power, USB activity, reference lock, and synthesizer lock.
 
