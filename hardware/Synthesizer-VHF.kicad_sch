@@ -4587,6 +4587,364 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Synthesizer:74LVC1G157"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 11 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "74LVC1G157"
+				(at 0 -11 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "74LVC1G157_0_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "74LVC1G157_1_1"
+				(pin input line
+					(at -12.7 2.54 0)
+					(length 7.62)
+					(name "I1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -2.54 0)
+					(length 7.62)
+					(name "I0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 0 180)
+					(length 7.62)
+					(name "Y"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 10.16 270)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Synthesizer:74LVC1G17"
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 10 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "74LVC1G17"
+				(at 0 -10 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "74LVC1G17_0_1"
+				(rectangle
+					(start -5.08 6.35)
+					(end 5.08 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "74LVC1G17_1_1"
+				(pin no_connect line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 5.08)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 0 180)
+					(length 5.08)
+					(name "Y"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 3.81)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Synthesizer:ADF4002BCPZ"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -5405,6 +5763,159 @@
 					)
 				)
 				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Synthesizer:TCXO_3225"
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "X"
+				(at 0 8 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TCXO"
+				(at 0 -8 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TCXO_3225_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TCXO_3225_1_1"
+				(pin no_connect line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(hide yes)
+					(name "OE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 5.08)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 0 7.62 270)
 					(length 2.54)
 					(name "VDD"
@@ -6352,83 +6863,6 @@
 			)
 			(embedded_fonts no)
 		)
-	
-
-		(symbol "Synthesizer:TCXO_3225"
-			(pin_names (offset 0.254) (hide yes))
-			(exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "X" (at 0 8 0) (effects (font (size 1.27 1.27))))
-			(property "Value" "TCXO" (at 0 -8 0) (effects (font (size 1.27 1.27))))
-			(symbol "TCXO_3225_0_1"
-				(rectangle (start -5.08 5.08) (end 5.08 -5.08)
-					(stroke (width 0.254) (type default)) (fill (type background))))
-			(symbol "TCXO_3225_1_1"
-				(pin no_connect line (at -7.62 2.54 0) (length 2.54) (hide yes)
-					(name "OE" (effects (font (size 1.27 1.27))))
-					(number "1" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 0 -7.62 90) (length 2.54)
-					(name "GND" (effects (font (size 1.27 1.27))))
-					(number "2" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 10.16 0 180) (length 5.08)
-					(name "OUT" (effects (font (size 1.27 1.27))))
-					(number "3" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 0 7.62 270) (length 2.54)
-					(name "VDD" (effects (font (size 1.27 1.27))))
-					(number "4" (effects (font (size 1.27 1.27)))))))
-		(symbol "Synthesizer:74LVC1G17"
-			(pin_names (offset 0.254) (hide yes))
-			(exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U" (at 0 10 0) (effects (font (size 1.27 1.27))))
-			(property "Value" "74LVC1G17" (at 0 -10 0) (effects (font (size 1.27 1.27))))
-			(symbol "74LVC1G17_0_1"
-				(rectangle (start -5.08 6.35) (end 5.08 -6.35)
-					(stroke (width 0.254) (type default)) (fill (type background))))
-			(symbol "74LVC1G17_1_1"
-				(pin no_connect line (at -2.54 2.54 0) (length 2.54) (hide yes)
-					(name "NC" (effects (font (size 1.27 1.27))))
-					(number "1" (effects (font (size 1.27 1.27)))))
-				(pin input line (at -10.16 0 0) (length 5.08)
-					(name "A" (effects (font (size 1.27 1.27))))
-					(number "2" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -10.16 90) (length 3.81)
-					(name "GND" (effects (font (size 1.27 1.27))))
-					(number "3" (effects (font (size 1.27 1.27)))))
-				(pin output line (at 10.16 0 180) (length 5.08)
-					(name "Y" (effects (font (size 1.27 1.27))))
-					(number "4" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 10.16 270) (length 3.81)
-					(name "VCC" (effects (font (size 1.27 1.27))))
-					(number "5" (effects (font (size 1.27 1.27)))))))
-		(symbol "Synthesizer:74LVC1G157"
-			(pin_names (offset 0.254))
-			(exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U" (at 0 11 0) (effects (font (size 1.27 1.27))))
-			(property "Value" "74LVC1G157" (at 0 -11 0) (effects (font (size 1.27 1.27))))
-			(symbol "74LVC1G157_0_1"
-				(rectangle (start -5.08 7.62) (end 5.08 -7.62)
-					(stroke (width 0.254) (type default)) (fill (type background))))
-			(symbol "74LVC1G157_1_1"
-				(pin input line (at -12.7 2.54 0) (length 7.62)
-					(name "I1" (effects (font (size 1.27 1.27))))
-					(number "1" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -10.16 90) (length 2.54)
-					(name "GND" (effects (font (size 1.27 1.27))))
-					(number "2" (effects (font (size 1.27 1.27)))))
-				(pin input line (at -12.7 -2.54 0) (length 7.62)
-					(name "I0" (effects (font (size 1.27 1.27))))
-					(number "3" (effects (font (size 1.27 1.27)))))
-				(pin output line (at 12.7 0 180) (length 7.62)
-					(name "Y" (effects (font (size 1.27 1.27))))
-					(number "4" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 10.16 270) (length 2.54)
-					(name "VCC" (effects (font (size 1.27 1.27))))
-					(number "5" (effects (font (size 1.27 1.27)))))
-				(pin input line (at 7.62 10.16 270) (length 2.54)
-					(name "S" (effects (font (size 1.27 1.27))))
-					(number "6" (effects (font (size 1.27 1.27)))))))
 	)
 	(text "REF IN stays: J5, R41 51 ohm to GND, C4 into U13.\nU13 is the 74LVC1GU04 with R30 1M feedback. It is the REF IN buffer."
 		(exclude_from_sim no)
@@ -6528,6 +6962,17 @@
 		)
 		(uuid "6c39c1b3-5874-4de3-bf60-392c0b2151bb")
 	)
+	(text "NEW - place me. TCXO fallback, mux, REF_DET. Do not route until placed."
+		(exclude_from_sim no)
+		(at 25.4 72 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "6fa9c9c4-6fa3-4b5e-a732-033d0d730b39")
+	)
 	(text "Programming: J8 removed. MCU TX (TXD_M, PB2) drives FT231X RXD.\nFT231X TXD still drives MCU RX (RXD_M, PB3) through R16.\nUPDI is PA0 only, on J12 (UPDI, VDD, GND). Optiboot ersatz reset: DTR - 100 nF - PA4, 10 k to VDD."
 		(exclude_from_sim no)
 		(at 464.566 202.692 0)
@@ -6576,12 +7021,6 @@
 		(uuid "135845f5-03b6-4299-a093-6a8629ae476e")
 	)
 	(junction
-		(at 279.4 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "22679912-826c-4dbb-a75e-eab712dd49e6")
-	)
-	(junction
 		(at 74.93 200.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6592,12 +7031,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2aabc0d2-cb2b-4f7a-937b-34b9ce0139bb")
-	)
-	(junction
-		(at 163.83 24.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2eb428e8-965b-4f3d-b288-87f6e9c104dc")
 	)
 	(junction
 		(at 43.18 234.95)
@@ -6666,18 +7099,6 @@
 		(uuid "6f38d730-e246-4237-8e6d-e7fd7ae93ef9")
 	)
 	(junction
-		(at 91.44 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7562bffb-1844-4aae-82a2-295a3c9a47b5")
-	)
-	(junction
-		(at 267.97 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "781cd586-a7d9-4aae-a7b0-c3fb57e30c00")
-	)
-	(junction
 		(at 344.17 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6712,12 +7133,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "906b07a7-8c3a-4ea4-80bf-cfeb36f71329")
-	)
-	(junction
-		(at 223.52 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "90d648fc-fc14-4b61-9a5b-d09166472ef8")
 	)
 	(junction
 		(at 367.03 166.37)
@@ -6768,12 +7183,6 @@
 		(uuid "b0871bf3-8a17-49dd-b5e9-4f769530966e")
 	)
 	(junction
-		(at 143.51 24.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b1d29ce7-0a7a-44e9-9b10-6f2458324dbb")
-	)
-	(junction
 		(at 88.9 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6804,12 +7213,6 @@
 		(uuid "c4cbc61c-434e-47dd-a7c6-9daada4cc1cd")
 	)
 	(junction
-		(at 132.08 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c6d12f6d-6461-4057-8051-9fbda3ebc73e")
-	)
-	(junction
 		(at 41.91 215.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6832,12 +7235,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "df32362b-4e6a-4154-aed2-5f2728a4959c")
-	)
-	(junction
-		(at 240.03 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e41118ca-5bc4-4a37-85f9-bb0057e883c2")
 	)
 	(junction
 		(at 356.87 189.23)
@@ -6864,22 +7261,10 @@
 		(uuid "ec9c3e85-77fd-4a52-9b7d-5e074e211a05")
 	)
 	(junction
-		(at 194.31 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f6c643c6-4516-4670-b787-19594de6f9a5")
-	)
-	(junction
 		(at 77.47 231.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fc40f8ef-943c-4a7c-80e6-468b904916d2")
-	)
-	(junction
-		(at 185.42 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fd96e72f-e4c5-4c26-bc5e-e19189bc27e6")
 	)
 	(junction
 		(at 344.17 133.35)
@@ -6914,6 +7299,10 @@
 	(no_connect
 		(at 140.97 228.6)
 		(uuid "51a6e40d-fa4d-48c9-97a8-3930ee5234ca")
+	)
+	(no_connect
+		(at 66.04 144.78)
+		(uuid "83282cd9-2c1f-40fc-b8b4-c604d4b6c393")
 	)
 	(no_connect
 		(at 41.91 246.38)
@@ -6993,6 +7382,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 111.76) (xy 180.34 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d08a3a0-4da2-4e21-b307-22dba534bb51")
+	)
+	(wire
+		(pts
 			(xy 54.61 223.52) (xy 54.61 224.79)
 		)
 		(stroke
@@ -7040,6 +7439,16 @@
 			(type default)
 		)
 		(uuid "11174641-fbd9-4ebd-82b5-9461de42522d")
+	)
+	(wire
+		(pts
+			(xy 152.4 132.08) (xy 152.4 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14656f61-b8ef-4445-a20d-4ef188e5e60b")
 	)
 	(wire
 		(pts
@@ -7213,6 +7622,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 118.11) (xy 152.4 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26c90d08-96c0-4909-bbe8-2c036ed35ca6")
+	)
+	(wire
+		(pts
 			(xy 50.8 118.11) (xy 50.8 121.92)
 		)
 		(stroke
@@ -7293,6 +7712,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 72.39) (xy 187.96 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2db59f03-819d-4878-9ddf-690b9efdb6e1")
+	)
+	(wire
+		(pts
 			(xy 62.23 234.95) (xy 62.23 233.68)
 		)
 		(stroke
@@ -7370,6 +7799,16 @@
 			(type default)
 		)
 		(uuid "35fc3e33-1612-4aed-97b7-d29e2214d695")
+	)
+	(wire
+		(pts
+			(xy 121.92 36.83) (xy 127 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36f4f5e8-4676-4908-aaa0-5eb5bbf050d6")
 	)
 	(wire
 		(pts
@@ -7543,16 +7982,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 24.13) (xy 168.91 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a80531a-14a1-45e2-874e-2c9c43d072fc")
-	)
-	(wire
-		(pts
 			(xy 360.68 149.86) (xy 367.03 149.86)
 		)
 		(stroke
@@ -7570,6 +7999,16 @@
 			(type default)
 		)
 		(uuid "4dc23a55-162f-4435-8a4c-1ee89e6b725a")
+	)
+	(wire
+		(pts
+			(xy 91.44 44.45) (xy 100.33 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4df81aed-0198-4396-a7ef-db109552fdc3")
 	)
 	(wire
 		(pts
@@ -7770,6 +8209,16 @@
 			(type default)
 		)
 		(uuid "6efc9313-1d6e-4503-a74f-7cd13b878bec")
+	)
+	(wire
+		(pts
+			(xy 160.02 83.82) (xy 160.02 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71b7c108-da00-4b51-a55a-39dbe813324e")
 	)
 	(wire
 		(pts
@@ -8080,6 +8529,16 @@
 			(type default)
 		)
 		(uuid "939e340d-ac5f-42e1-9fa2-5da6e67dd73c")
+	)
+	(wire
+		(pts
+			(xy 200.66 72.39) (xy 200.66 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95d6b7e8-6270-4728-88f3-f1676b0243a5")
 	)
 	(wire
 		(pts
@@ -8433,6 +8892,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 102.87) (xy 147.32 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c584a8b3-2c51-4851-8d5d-a708dc6ef5e6")
+	)
+	(wire
+		(pts
 			(xy 308.61 138.43) (xy 311.15 138.43)
 		)
 		(stroke
@@ -8643,6 +9112,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 123.19) (xy 180.34 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d729b426-d377-41f9-8d50-7575c79f713d")
+	)
+	(wire
+		(pts
 			(xy 327.66 138.43) (xy 327.66 142.24)
 		)
 		(stroke
@@ -8713,6 +9192,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 97.79) (xy 147.32 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d95d08ab-48d0-4938-99f7-b04796ef0ad0")
+	)
+	(wire
+		(pts
 			(xy 88.9 146.05) (xy 88.9 149.86)
 		)
 		(stroke
@@ -8750,6 +9239,26 @@
 			(type default)
 		)
 		(uuid "dd02ed55-57e8-4a91-a152-7a9e5458e9a2")
+	)
+	(wire
+		(pts
+			(xy 114.3 57.15) (xy 118.11 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de0ce967-cab5-4d68-ad20-e18164c05b30")
+	)
+	(wire
+		(pts
+			(xy 127 46.99) (xy 133.35 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df0c7f68-f2ef-47ce-a690-1f1f52fa919a")
 	)
 	(wire
 		(pts
@@ -8850,16 +9359,6 @@
 			(type default)
 		)
 		(uuid "e8b0a75c-1e0b-4a07-b3fa-2ca4f55955b8")
-	)
-	(wire
-		(pts
-			(xy 143.51 24.13) (xy 163.83 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea6dad8b-756e-4dbb-80cb-02945c61fd92")
 	)
 	(wire
 		(pts
@@ -9043,7 +9542,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 24.13) (xy 143.51 24.13)
+			(xy 118.11 24.13) (xy 168.91 24.13)
 		)
 		(stroke
 			(width 0)
@@ -9081,6 +9580,16 @@
 		)
 		(uuid "02b5edfe-2f93-4512-891a-2a17857a8529")
 	)
+	(label "REF_SEL"
+		(at 167.64 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "047ac264-eaf5-4883-9b3f-1c3180ed15ce")
+	)
 	(label "VVCO"
 		(at 314.96 107.95 0)
 		(effects
@@ -9100,6 +9609,16 @@
 			(justify left bottom)
 		)
 		(uuid "08f03517-40ac-44c8-b4b6-3df48a869d9d")
+	)
+	(label "REF_DET"
+		(at 180.34 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ae5b717-11db-467e-be79-bb42ce57fc4a")
 	)
 	(label "REF_LOCK"
 		(at 78.74 160.02 180)
@@ -9121,6 +9640,16 @@
 		)
 		(uuid "13374ba6-c4c0-4a12-817e-7a503ec7046b")
 	)
+	(label "VDD"
+		(at 99.06 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "150682c4-e241-4002-abe9-677f020120c0")
+	)
 	(label "UPDI"
 		(at 72.39 175.26 0)
 		(effects
@@ -9131,6 +9660,16 @@
 		)
 		(uuid "194639f6-adc6-494e-8e71-b1c97684e3d5")
 	)
+	(label "VDD"
+		(at 200.66 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ccb9fff-5624-4d03-b3d3-c2bb31310214")
+	)
 	(label "5V"
 		(at 269.24 107.95 0)
 		(effects
@@ -9140,6 +9679,16 @@
 			(justify left bottom)
 		)
 		(uuid "25218cde-8555-48e7-bc31-b5b3e4acb83d")
+	)
+	(label "TCXO_IN"
+		(at 86.36 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "26003bf3-08d6-4def-b1fc-ccaf7bf6f4f2")
 	)
 	(label "LD"
 		(at 78.74 129.54 180)
@@ -9170,6 +9719,16 @@
 			(justify left bottom)
 		)
 		(uuid "2ddd6a5b-f2d6-40dd-b6da-1a897696f90b")
+	)
+	(label "VDD"
+		(at 160.02 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "314c4374-79ed-4022-a795-f464a4416d31")
 	)
 	(label "USB_DP"
 		(at 78.74 233.68 0)
@@ -9210,6 +9769,16 @@
 			(justify right bottom)
 		)
 		(uuid "3fde077c-2f68-4670-ad0c-fefd2e6176c3")
+	)
+	(label "REF_BUF"
+		(at 138.43 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "401220e5-fc97-4b2a-b168-d730798a92b3")
 	)
 	(label "VDD"
 		(at 72.39 177.8 0)
@@ -9311,6 +9880,16 @@
 		)
 		(uuid "62e85772-5bff-4865-977b-fa31f899081d")
 	)
+	(label "REF_AC"
+		(at 152.4 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "64da264b-1ba1-446a-868f-157ac702e39b")
+	)
 	(label "RST"
 		(at 78.74 137.16 180)
 		(effects
@@ -9350,6 +9929,56 @@
 			(justify right bottom)
 		)
 		(uuid "6af02350-b51c-469b-9d37-4d46dac6113e")
+	)
+	(label "TCXO_IN"
+		(at 104.14 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6fa81761-c85c-4811-909d-8aa20b56e653")
+	)
+	(label "TCXO_BUF"
+		(at 124.46 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6fc99d67-dd29-4922-96a2-1015c53b64f6")
+	)
+	(label "MUX_Y"
+		(at 172.72 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "75a6056c-50bf-471b-bca6-666ef1eff422")
+	)
+	(label "TCXO_BUF"
+		(at 138.43 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "75abd72d-3f03-4f74-b929-e055ad79e020")
+	)
+	(label "MUX_Y"
+		(at 152.4 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7ae9fee9-ef30-4074-9d3e-a524cd3944a9")
 	)
 	(label "3V3"
 		(at 101.6 223.52 0)
@@ -9421,6 +10050,16 @@
 		)
 		(uuid "875b5826-7a0a-4b08-9d46-9af936b0043c")
 	)
+	(label "TCXO_IN"
+		(at 99.06 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "94ca2c76-a621-4257-be08-83bfcd0be7f6")
+	)
 	(label "VRF"
 		(at 168.91 24.13 0)
 		(effects
@@ -9470,6 +10109,36 @@
 			(justify left bottom)
 		)
 		(uuid "a1d0f2b0-3669-4732-81ed-6135932bda64")
+	)
+	(label "VDD"
+		(at 114.3 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a4964e34-a4d3-4e24-8bb0-14b6b6871644")
+	)
+	(label "REF_SEL"
+		(at 187.96 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a7e1801d-2f72-467f-8d82-089bd8404240")
+	)
+	(label "TCXO_OUT"
+		(at 86.36 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a801beb4-bc41-4656-b6f3-fdee135e0a0d")
 	)
 	(label "TXD_M"
 		(at 140.97 226.06 0)
@@ -9571,6 +10240,16 @@
 		)
 		(uuid "bc8af96e-475c-4b63-99c2-4056a81ce838")
 	)
+	(label "TCXO_IN"
+		(at 99.06 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bc95f444-398a-465c-babb-d8bb3d6a14eb")
+	)
 	(label "VBUS_C"
 		(at 43.18 200.66 0)
 		(effects
@@ -9590,6 +10269,16 @@
 			(justify right bottom)
 		)
 		(uuid "bf5369dc-e001-4abe-9add-13d1b5e548dd")
+	)
+	(label "VDD"
+		(at 33.02 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c0df7e60-8dd1-4f42-ab7d-6822f138b3c5")
 	)
 	(label "D+M"
 		(at 100.33 233.68 0)
@@ -9611,6 +10300,16 @@
 		)
 		(uuid "c3161b6d-89a7-4399-91d3-1547a8d74189")
 	)
+	(label "REF_BUF"
+		(at 180.34 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c6eb449c-a242-4dd4-a91d-1729534ad1bc")
+	)
 	(label "DTR"
 		(at 88.9 149.86 0)
 		(effects
@@ -9621,6 +10320,16 @@
 		)
 		(uuid "c77f9056-96f1-45bb-8739-40e56d518da6")
 	)
+	(label "TCXO_VDD"
+		(at 33.02 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c78ba4c0-1c3d-45bf-983d-357dc1590516")
+	)
 	(label "DTR"
 		(at 140.97 233.68 0)
 		(effects
@@ -9630,6 +10339,46 @@
 			(justify left bottom)
 		)
 		(uuid "c78bbf8d-bb89-447c-a7b5-9d3f187dc646")
+	)
+	(label "TCXO_VDD"
+		(at 63.5 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb65cbfa-0572-4689-b466-5a2427e12eef")
+	)
+	(label "VDD"
+		(at 114.3 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d6460a30-636f-4da8-a855-cf1233a7e283")
+	)
+	(label "TCXO_VDD"
+		(at 48.26 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "df3d7df7-39e6-463e-91ab-e00fe139199c")
+	)
+	(label "TCXO_OUT"
+		(at 73.66 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e161306a-2d05-4290-95d8-9bde621cca57")
 	)
 	(label "5V"
 		(at 106.68 200.66 0)
@@ -9680,6 +10429,16 @@
 			(justify left bottom)
 		)
 		(uuid "f55355d1-e214-410d-bbf5-52b934696762")
+	)
+	(label "REF_BUF"
+		(at 91.44 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f8275ced-553a-4d96-a1aa-a12ca7e3bf07")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -10623,6 +11382,176 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 99.06 111.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0cc8a069-d45c-44d4-be09-aaca3a0b0a3c")
+		(property "Reference" "R52"
+			(at 99.06 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 101.6 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Res_0402"
+			(at 99.06 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "U14 input bias to GND. LCSC C60491"
+			(at 99.06 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C60491"
+			(at 99.06 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "82dac6d4-3cee-4eef-aa4b-ce8b6d2a09dd")
+		)
+		(pin "2"
+			(uuid "d48af8d7-ab72-4517-975b-f9915bb60c2a")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 187.96 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11a82fbf-c02e-4e1b-88ac-b689f826f2f2")
+		(property "Reference" "#PWR307"
+			(at 187.96 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.96 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GND"
+			(at 187.96 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7db72441-4157-4016-bf58-1777e06ad61c")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR307")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 26.67 254 0)
 		(unit 1)
@@ -10696,6 +11625,85 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 114.3 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "151800cb-838b-4af5-babf-40aadc69c161")
+		(property "Reference" "#PWR304"
+			(at 114.3 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GND"
+			(at 114.3 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6b123d0f-a168-4e90-b182-f75092a2a05b")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR304")
 					(unit 1)
 				)
 			)
@@ -11107,6 +12115,85 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 200.66 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b087961-72f9-47a1-b5f1-8393146fbb7a")
+		(property "Reference" "#PWR306"
+			(at 200.66 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GND"
+			(at 200.66 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "562597aa-cbb6-4fef-a764-a81756ea64ae")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR306")
 					(unit 1)
 				)
 			)
@@ -11542,6 +12629,96 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 180.34 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2b9f8eb7-175a-4716-a5a2-810176160976")
+		(property "Reference" "R55"
+			(at 183.642 115.824 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 183.134 117.856 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Res_0402"
+			(at 180.34 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "REF_BUF to PA5 REF_DET. LCSC C11702"
+			(at 180.34 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 180.34 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "79e59d28-321c-4f03-b127-75bd41224316")
+		)
+		(pin "2"
+			(uuid "c0c21860-4dcb-4184-8424-712e267ed7b8")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -12779,6 +13956,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 48.26 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40d60b06-69ad-4039-97c0-fd83a0aa07c0")
+		(property "Reference" "#PWR300"
+			(at 48.26 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 48.26 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GND"
+			(at 48.26 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8beea840-a3cb-4cf3-b75b-650e5f9c1545")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR300")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:FerriteBead_Small")
 		(at 63.5 200.66 90)
 		(unit 1)
@@ -12955,6 +14211,85 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "430d8ba5-83f2-4fb5-bda8-b41c719eedeb")
+		(property "Reference" "#PWR305"
+			(at 160.02 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GND"
+			(at 160.02 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "28bb4100-2ff6-42d9-bc27-6b7644f81362")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR305")
 					(unit 1)
 				)
 			)
@@ -13384,6 +14719,85 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "560e3b65-98c6-47f9-9c46-57a8a8fe1dbb")
+		(property "Reference" "#PWR302"
+			(at 99.06 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.06 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GND"
+			(at 99.06 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "66f786bd-7f63-422f-9442-8211f57cb885")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR302")
 					(unit 1)
 				)
 			)
@@ -15826,6 +17240,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 48.26 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76ee3c48-4e27-43a5-b228-d745fdf490e4")
+		(property "Reference" "C66"
+			(at 48.26 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 50.8 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Cap_0402"
+			(at 48.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF at TCXO VDD. LCSC C1525 basic"
+			(at 48.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 48.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8216e1a2-e657-42f9-bab2-895dc1169b9a")
+		)
+		(pin "2"
+			(uuid "51642614-3011-43a5-8589-04bda608154e")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "C66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 256.54 257.81 0)
 		(unit 1)
@@ -16155,6 +17660,85 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "#PWR083")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 114.3 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e996099-a591-4607-9d97-c51f77064531")
+		(property "Reference" "#PWR303"
+			(at 114.3 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GND"
+			(at 114.3 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b6fa635e-9ba8-48bf-b4f9-8abd0718c946")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR303")
 					(unit 1)
 				)
 			)
@@ -16946,6 +18530,96 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 200.66 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8c8a48f7-77dc-43dc-ac69-ed54ee809d7e")
+		(property "Reference" "C69"
+			(at 203.2 77.978 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 203.2 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Cap_0402"
+			(at 200.66 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "U15 VDD bypass. LCSC C1525 basic"
+			(at 200.66 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 200.66 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "133c1488-826e-47d0-9d70-29566bd11085")
+		)
+		(pin "2"
+			(uuid "7c0c0b4c-20d5-469e-96c6-cd4148435843")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "C69")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 54.61 208.28 0)
 		(unit 1)
@@ -17023,6 +18697,96 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 187.96 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "92414644-4ac9-43fa-a1fc-b224c9472f26")
+		(property "Reference" "R53"
+			(at 191.262 79.248 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 191.262 81.534 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Res_0402"
+			(at 187.96 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "REF_SEL pulldown. Default selects TCXO. LCSC C60490"
+			(at 187.96 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C60490"
+			(at 187.96 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de4e15a7-39d2-43f7-9c59-0170883332b5")
+		)
+		(pin "2"
+			(uuid "f4fd7487-51bb-4c94-93a2-532d5ef685e7")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -17634,6 +19398,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 86.36 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b1e58c6-f77c-421b-9952-1233859f1763")
+		(property "Reference" "C67"
+			(at 86.36 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10n"
+			(at 88.9 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Cap_0402"
+			(at 86.36 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10nF AC couple TCXO clipped sine into U14. LCSC C15195"
+			(at 86.36 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15195"
+			(at 86.36 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3746db1a-397d-4489-9cd6-3e53c7db346b")
+		)
+		(pin "2"
+			(uuid "e2554172-c7a2-424c-b633-5c7452d38a92")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "C67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 73.66 54.61 0)
 		(unit 1)
@@ -18127,6 +19982,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 33.02 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7878ce2-d2b6-41f6-bede-479bb0c7485f")
+		(property "Reference" "R50"
+			(at 33.02 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10R"
+			(at 35.56 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Res_0402"
+			(at 33.02 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 ohm into TCXO VDD. LCSC C25077 basic"
+			(at 33.02 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25077"
+			(at 33.02 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "89a1385a-729f-49fc-9416-35f21fa7553b")
+		)
+		(pin "2"
+			(uuid "ce0b24cb-aff2-4684-be72-a242ed51d3ef")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 95.25 160.02 90)
 		(unit 1)
@@ -18439,6 +20385,108 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Synthesizer:74LVC1G157")
+		(at 160.02 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "acfb61c1-b4a8-4538-8405-8a89faaa30ea")
+		(property "Reference" "U15"
+			(at 155.194 90.932 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC1G157GW"
+			(at 160.02 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+			(at 160.02 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2:1 mux. S low = I0 TCXO, S high = I1 REF IN. Nexperia SOT-363. LCSC C135822"
+			(at 160.02 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C135822"
+			(at 160.02 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4e0215d5-cdce-45e7-84c5-1aa5a5780c1a")
+		)
+		(pin "2"
+			(uuid "3484ba16-dfa0-4b06-afbc-f11ddfe69d7c")
+		)
+		(pin "3"
+			(uuid "e872083d-f2c6-4901-b967-2a22691a24e0")
+		)
+		(pin "4"
+			(uuid "6f06b958-8871-43ae-a3d8-08c9fd95e305")
+		)
+		(pin "5"
+			(uuid "d98b4841-54d4-49da-bd45-aa84a47078d7")
+		)
+		(pin "6"
+			(uuid "879ad33c-77d6-4dec-a45a-c6f7da42aa42")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "U15")
 					(unit 1)
 				)
 			)
@@ -19272,6 +21320,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Synthesizer:TCXO_3225")
+		(at 63.5 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb4ec21d-1ed0-43cd-8ba2-8b3059a6e94e")
+		(property "Reference" "X2"
+			(at 63.5 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OW2EL89CEIUXK7YLC-10M"
+			(at 63.5 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Oscillator_SMD_3225_VCTCXO"
+			(at 63.5 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "YXC 10 MHz TCXO, 3225, 3.3V, clipped sine, +/-0.5 ppm. Pin 1 OE open = enabled. LCSC C55266004"
+			(at 63.5 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C55266004"
+			(at 63.5 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0cae24a5-cd03-4ad7-b060-6b5d0186a047")
+		)
+		(pin "2"
+			(uuid "ad3da268-f4b1-4299-bd39-9233380f1c0c")
+		)
+		(pin "3"
+			(uuid "c76bec91-9a8c-48c5-8e24-83dbfccf0191")
+		)
+		(pin "4"
+			(uuid "a694acec-f549-4709-b0eb-f862c60bf57d")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "X2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 154.94 210.82 90)
 		(unit 1)
@@ -19435,6 +21580,106 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "#PWR231")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Synthesizer:74LVC1G17")
+		(at 114.3 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be6fa62b-1209-46b3-83c3-c870bba9f0ec")
+		(property "Reference" "U14"
+			(at 114.3 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SN74LVC1G17DBVR"
+			(at 114.3 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 114.3 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Schmitt buffer, squares the TCXO. LCSC C7836"
+			(at 114.3 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7836"
+			(at 114.3 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73ab5fe1-95a8-462e-afa7-3e4557d35a51")
+		)
+		(pin "2"
+			(uuid "e34d3309-a4f1-4fb9-b07c-263f41544bf0")
+		)
+		(pin "3"
+			(uuid "a1580a27-f13b-4a52-916b-8b4e7d2ec332")
+		)
+		(pin "4"
+			(uuid "fb564452-6a4b-40fa-995c-d793127b2f2b")
+		)
+		(pin "5"
+			(uuid "6079b2c4-c76a-44d3-9987-872f65a48de3")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "U14")
 					(unit 1)
 				)
 			)
@@ -19693,6 +21938,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 114.3 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c33dd8f4-9d49-4504-be75-fa71069862f2")
+		(property "Reference" "C68"
+			(at 114.3 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 116.84 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Cap_0402"
+			(at 114.3 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "U14 VDD bypass. LCSC C1525 basic"
+			(at 114.3 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 114.3 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f4322b3b-9c5a-413f-8d55-49e846d95a07")
+		)
+		(pin "2"
+			(uuid "f139a3bb-ad13-46bd-bf57-564c1cfa523d")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "C68")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 351.79 111.76 0)
 		(unit 1)
@@ -19870,6 +22206,96 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 152.4 125.73 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c63d3e64-d9fd-4a54-b684-80b6a6288f97")
+		(property "Reference" "R54"
+			(at 155.702 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33R"
+			(at 155.448 126.746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Res_0402"
+			(at 152.4 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mux output series into C3 / ADF4351 REFIN. LCSC C25105"
+			(at 152.4 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25105"
+			(at 152.4 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cc127b18-9377-4e50-a50f-a1c85ba164ee")
+		)
+		(pin "2"
+			(uuid "36bc4ad1-4f74-4dd9-b743-b3fb0c0743ed")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -20715,6 +23141,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 99.06 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2902d5a-f6a6-4af1-be85-d686e0f0870a")
+		(property "Reference" "R51"
+			(at 99.06 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 101.6 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:Res_0402"
+			(at 99.06 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "U14 input bias to VDD. LCSC C60491"
+			(at 99.06 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C60491"
+			(at 99.06 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "196cb356-0de3-4dff-a68c-c897019579e2")
+		)
+		(pin "2"
+			(uuid "358020ed-323f-4cac-9741-3e9c04012847")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "R51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 327.66 199.39 0)
 		(mirror y)
@@ -21493,6 +24010,85 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 63.5 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e31f998d-b97d-47d0-9c30-706f84addce7")
+		(property "Reference" "#PWR301"
+			(at 63.5 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GND"
+			(at 63.5 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cffd53de-d913-4a2a-abea-c4a385b8fcbe")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR301")
 					(unit 1)
 				)
 			)
@@ -23033,2281 +25629,6 @@
 				)
 			)
 		)
-	)
-	(text "NEW - place me. TCXO fallback, mux, REF_DET. Do not route until placed."
-		(exclude_from_sim no)
-		(at 25.40 72.00 0)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left)
-		)
-		(uuid "6fa9c9c4-6fa3-4b5e-a732-033d0d730b39")
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 33.02 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a7878ce2-d2b6-41f6-bede-479bb0c7485f")
-		(property "Reference" "R50"
-			(at 33.02 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10R"
-			(at 35.56 99.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Res_0402"
-			(at 33.02 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "10 ohm into TCXO VDD. LCSC C25077 basic"
-			(at 33.02 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25077"
-			(at 33.02 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "89a1385a-729f-49fc-9416-35f21fa7553b")
-		)
-		(pin "2"
-			(uuid "ce0b24cb-aff2-4684-be72-a242ed51d3ef")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R50")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 48.26 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "76ee3c48-4e27-43a5-b228-d745fdf490e4")
-		(property "Reference" "C66"
-			(at 48.26 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 50.80 99.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Cap_0402"
-			(at 48.26 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 48.26 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "100nF at TCXO VDD. LCSC C1525 basic"
-			(at 48.26 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C1525"
-			(at 48.26 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8216e1a2-e657-42f9-bab2-895dc1169b9a")
-		)
-		(pin "2"
-			(uuid "51642614-3011-43a5-8589-04bda608154e")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C66")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Synthesizer:TCXO_3225")
-		(at 63.50 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bb4ec21d-1ed0-43cd-8ba2-8b3059a6e94e")
-		(property "Reference" "X2"
-			(at 63.50 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "OW2EL89CEIUXK7YLC-10M"
-			(at 63.50 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Oscillator_SMD_3225_VCTCXO"
-			(at 63.50 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.50 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "YXC 10 MHz TCXO, 3225, 3.3V, clipped sine, +/-0.5 ppm. Pin 1 OE open = enabled. LCSC C55266004"
-			(at 63.50 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C55266004"
-			(at 63.50 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0cae24a5-cd03-4ad7-b060-6b5d0186a047")
-		)
-		(pin "2"
-			(uuid "ad3da268-f4b1-4299-bd39-9233380f1c0c")
-		)
-		(pin "3"
-			(uuid "c76bec91-9a8c-48c5-8e24-83dbfccf0191")
-		)
-		(pin "4"
-			(uuid "a694acec-f549-4709-b0eb-f862c60bf57d")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "X2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 86.36 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9b1e58c6-f77c-421b-9952-1233859f1763")
-		(property "Reference" "C67"
-			(at 86.36 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10n"
-			(at 88.90 99.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Cap_0402"
-			(at 86.36 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "10nF AC couple TCXO clipped sine into U14. LCSC C15195"
-			(at 86.36 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C15195"
-			(at 86.36 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3746db1a-397d-4489-9cd6-3e53c7db346b")
-		)
-		(pin "2"
-			(uuid "e2554172-c7a2-424c-b633-5c7452d38a92")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C67")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Synthesizer:74LVC1G17")
-		(at 114.30 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "be6fa62b-1209-46b3-83c3-c870bba9f0ec")
-		(property "Reference" "U14"
-			(at 114.30 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SN74LVC1G17DBVR"
-			(at 114.30 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 114.30 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.30 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Schmitt buffer, squares the TCXO. LCSC C7836"
-			(at 114.30 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C7836"
-			(at 114.30 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "73ab5fe1-95a8-462e-afa7-3e4557d35a51")
-		)
-		(pin "2"
-			(uuid "e34d3309-a4f1-4fb9-b07c-263f41544bf0")
-		)
-		(pin "3"
-			(uuid "a1580a27-f13b-4a52-916b-8b4e7d2ec332")
-		)
-		(pin "4"
-			(uuid "fb564452-6a4b-40fa-995c-d793127b2f2b")
-		)
-		(pin "5"
-			(uuid "6079b2c4-c76a-44d3-9987-872f65a48de3")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "U14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 99.06 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d2902d5a-f6a6-4af1-be85-d686e0f0870a")
-		(property "Reference" "R51"
-			(at 99.06 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 101.60 88.90 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Res_0402"
-			(at 99.06 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 99.06 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U14 input bias to VDD. LCSC C60491"
-			(at 99.06 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C60491"
-			(at 99.06 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "196cb356-0de3-4dff-a68c-c897019579e2")
-		)
-		(pin "2"
-			(uuid "358020ed-323f-4cac-9741-3e9c04012847")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R51")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 99.06 111.76 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0cc8a069-d45c-44d4-be09-aaca3a0b0a3c")
-		(property "Reference" "R52"
-			(at 99.06 106.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 101.60 114.30 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Res_0402"
-			(at 99.06 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 99.06 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U14 input bias to GND. LCSC C60491"
-			(at 99.06 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C60491"
-			(at 99.06 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "82dac6d4-3cee-4eef-aa4b-ce8b6d2a09dd")
-		)
-		(pin "2"
-			(uuid "d48af8d7-ab72-4517-975b-f9915bb60c2a")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R52")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 114.30 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c33dd8f4-9d49-4504-be75-fa71069862f2")
-		(property "Reference" "C68"
-			(at 114.30 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 116.84 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Cap_0402"
-			(at 114.30 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.30 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U14 VDD bypass. LCSC C1525 basic"
-			(at 114.30 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C1525"
-			(at 114.30 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f4322b3b-9c5a-413f-8d55-49e846d95a07")
-		)
-		(pin "2"
-			(uuid "f139a3bb-ad13-46bd-bf57-564c1cfa523d")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C68")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Synthesizer:74LVC1G157")
-		(at 160.02 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "acfb61c1-b4a8-4538-8405-8a89faaa30ea")
-		(property "Reference" "U15"
-			(at 160.02 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LVC1G157GW"
-			(at 160.02 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 160.02 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "2:1 mux. S low = I0 TCXO, S high = I1 REF IN. Nexperia SOT-363. LCSC C135822"
-			(at 160.02 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C135822"
-			(at 160.02 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4e0215d5-cdce-45e7-84c5-1aa5a5780c1a")
-		)
-		(pin "2"
-			(uuid "3484ba16-dfa0-4b06-afbc-f11ddfe69d7c")
-		)
-		(pin "3"
-			(uuid "e872083d-f2c6-4901-b967-2a22691a24e0")
-		)
-		(pin "4"
-			(uuid "6f06b958-8871-43ae-a3d8-08c9fd95e305")
-		)
-		(pin "5"
-			(uuid "d98b4841-54d4-49da-bd45-aa84a47078d7")
-		)
-		(pin "6"
-			(uuid "879ad33c-77d6-4dec-a45a-c6f7da42aa42")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "U15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 160.02 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8c8a48f7-77dc-43dc-ac69-ed54ee809d7e")
-		(property "Reference" "C69"
-			(at 160.02 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 162.56 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Cap_0402"
-			(at 160.02 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U15 VDD bypass. LCSC C1525 basic"
-			(at 160.02 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C1525"
-			(at 160.02 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "133c1488-826e-47d0-9d70-29566bd11085")
-		)
-		(pin "2"
-			(uuid "7c0c0b4c-20d5-469e-96c6-cd4148435843")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C69")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 180.34 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "92414644-4ac9-43fa-a1fc-b224c9472f26")
-		(property "Reference" "R53"
-			(at 180.34 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 182.88 88.90 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Res_0402"
-			(at 180.34 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "REF_SEL pulldown. Default selects TCXO. LCSC C60490"
-			(at 180.34 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C60490"
-			(at 180.34 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "de4e15a7-39d2-43f7-9c59-0170883332b5")
-		)
-		(pin "2"
-			(uuid "f4fd7487-51bb-4c94-93a2-532d5ef685e7")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R53")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 180.34 101.60 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c63d3e64-d9fd-4a54-b684-80b6a6288f97")
-		(property "Reference" "R54"
-			(at 180.34 96.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "33R"
-			(at 182.88 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Res_0402"
-			(at 180.34 101.60 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 101.60 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mux output series into C3 / ADF4351 REFIN. LCSC C25105"
-			(at 180.34 101.60 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25105"
-			(at 180.34 101.60 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cc127b18-9377-4e50-a50f-a1c85ba164ee")
-		)
-		(pin "2"
-			(uuid "36bc4ad1-4f74-4dd9-b743-b3fb0c0743ed")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R54")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 180.34 116.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2b9f8eb7-175a-4716-a5a2-810176160976")
-		(property "Reference" "R55"
-			(at 180.34 111.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 182.88 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Synthesizer:Res_0402"
-			(at 180.34 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "REF_BUF to PA5 REF_DET. LCSC C11702"
-			(at 180.34 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C11702"
-			(at 180.34 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "79e59d28-321c-4f03-b127-75bd41224316")
-		)
-		(pin "2"
-			(uuid "c0c21860-4dcb-4184-8424-712e267ed7b8")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R55")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "VDD"
-		(at 33.02 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c0df7e60-8dd1-4f42-ab7d-6822f138b3c5")
-	)
-	(label "TCXO_VDD"
-		(at 33.02 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c78ba4c0-1c3d-45bf-983d-357dc1590516")
-	)
-	(label "TCXO_VDD"
-		(at 48.26 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "df3d7df7-39e6-463e-91ab-e00fe139199c")
-	)
-	(label "TCXO_VDD"
-		(at 63.50 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cb65cbfa-0572-4689-b466-5a2427e12eef")
-	)
-	(label "TCXO_OUT"
-		(at 73.66 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e161306a-2d05-4290-95d8-9bde621cca57")
-	)
-	(label "TCXO_OUT"
-		(at 86.36 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a801beb4-bc41-4656-b6f3-fdee135e0a0d")
-	)
-	(label "TCXO_IN"
-		(at 86.36 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "26003bf3-08d6-4def-b1fc-ccaf7bf6f4f2")
-	)
-	(label "VDD"
-		(at 99.06 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "150682c4-e241-4002-abe9-677f020120c0")
-	)
-	(label "TCXO_IN"
-		(at 99.06 88.90 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bc95f444-398a-465c-babb-d8bb3d6a14eb")
-	)
-	(label "TCXO_IN"
-		(at 99.06 109.22 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "94ca2c76-a621-4257-be08-83bfcd0be7f6")
-	)
-	(label "TCXO_IN"
-		(at 104.14 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6fa81761-c85c-4811-909d-8aa20b56e653")
-	)
-	(label "TCXO_BUF"
-		(at 124.46 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6fc99d67-dd29-4922-96a2-1015c53b64f6")
-	)
-	(label "VDD"
-		(at 114.30 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a4964e34-a4d3-4e24-8bb0-14b6b6871644")
-	)
-	(label "VDD"
-		(at 114.30 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d6460a30-636f-4da8-a855-cf1233a7e283")
-	)
-	(label "REF_BUF"
-		(at 147.32 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "401220e5-fc97-4b2a-b168-d730798a92b3")
-	)
-	(label "TCXO_BUF"
-		(at 147.32 102.87 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "75abd72d-3f03-4f74-b929-e055ad79e020")
-	)
-	(label "MUX_Y"
-		(at 172.72 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "75a6056c-50bf-471b-bca6-666ef1eff422")
-	)
-	(label "VDD"
-		(at 160.02 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "314c4374-79ed-4022-a795-f464a4416d31")
-	)
-	(label "REF_SEL"
-		(at 167.64 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "047ac264-eaf5-4883-9b3f-1c3180ed15ce")
-	)
-	(label "VDD"
-		(at 160.02 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1ccb9fff-5624-4d03-b3d3-c2bb31310214")
-	)
-	(label "REF_SEL"
-		(at 180.34 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a7e1801d-2f72-467f-8d82-089bd8404240")
-	)
-	(label "MUX_Y"
-		(at 180.34 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7ae9fee9-ef30-4074-9d3e-a524cd3944a9")
-	)
-	(label "REF_AC"
-		(at 180.34 104.14 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "64da264b-1ba1-446a-868f-157ac702e39b")
-	)
-	(label "REF_BUF"
-		(at 180.34 114.30 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c6eb449c-a242-4dd4-a91d-1729534ad1bc")
-	)
-	(label "REF_DET"
-		(at 180.34 119.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0ae5b717-11db-467e-be79-bb42ce57fc4a")
-	)
-	(label "REF_BUF"
-		(at 91.44 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f8275ced-553a-4d96-a1aa-a12ca7e3bf07")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 48.26 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "40d60b06-69ad-4039-97c0-fd83a0aa07c0")
-		(property "Reference" "#PWR300"
-			(at 48.26 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 48.26 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 48.26 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 48.26 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "GND"
-			(at 48.26 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8beea840-a3cb-4cf3-b75b-650e5f9c1545")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR300")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 63.50 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e31f998d-b97d-47d0-9c30-706f84addce7")
-		(property "Reference" "#PWR301"
-			(at 63.50 114.30 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 63.50 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.50 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.50 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "GND"
-			(at 63.50 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cffd53de-d913-4a2a-abea-c4a385b8fcbe")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR301")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 99.06 114.30 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "560e3b65-98c6-47f9-9c46-57a8a8fe1dbb")
-		(property "Reference" "#PWR302"
-			(at 99.06 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 99.06 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 99.06 114.30 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 99.06 114.30 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "GND"
-			(at 99.06 114.30 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "66f786bd-7f63-422f-9442-8211f57cb885")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR302")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 114.30 110.49 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7e996099-a591-4607-9d97-c51f77064531")
-		(property "Reference" "#PWR303"
-			(at 114.30 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 114.30 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.30 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.30 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "GND"
-			(at 114.30 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b6fa635e-9ba8-48bf-b4f9-8abd0718c946")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR303")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 114.30 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "151800cb-838b-4af5-babf-40aadc69c161")
-		(property "Reference" "#PWR304"
-			(at 114.30 88.90 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 114.30 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.30 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.30 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "GND"
-			(at 114.30 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6b123d0f-a168-4e90-b182-f75092a2a05b")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR304")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 160.02 110.49 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "430d8ba5-83f2-4fb5-bda8-b41c719eedeb")
-		(property "Reference" "#PWR305"
-			(at 160.02 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 160.02 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "GND"
-			(at 160.02 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "28bb4100-2ff6-42d9-bc27-6b7644f81362")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR305")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 160.02 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1b087961-72f9-47a1-b5f1-8393146fbb7a")
-		(property "Reference" "#PWR306"
-			(at 160.02 88.90 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 160.02 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "GND"
-			(at 160.02 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "562597aa-cbb6-4fef-a764-a81756ea64ae")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR306")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 180.34 88.90 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "11a82fbf-c02e-4e1b-88ac-b689f826f2f2")
-		(property "Reference" "#PWR307"
-			(at 180.34 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 180.34 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 180.34 88.90 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 88.90 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "GND"
-			(at 180.34 88.90 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7db72441-4157-4016-bf58-1777e06ad61c")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR307")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 200.66 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "37cb9210-9e9e-4212-bbe0-70f8e38fa005")
-		(property "Reference" "#FLG04"
-			(at 200.66 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 206.66 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "PWR_FLAG on GND"
-			(at 200.66 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9dc99eec-7f31-42db-9441-a2aba6dcec38")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#FLG04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 200.66 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5b41179d-8447-4a33-8cd8-007b4cf24b27")
-		(property "Reference" "#PWR340"
-			(at 200.66 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 200.66 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "GND"
-			(at 200.66 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4def0662-e1f6-4d3d-a59a-e1e6fe3147e7")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR340")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(no_connect
-		(at 66.04 144.78)
-		(uuid "83282cd9-2c1f-40fc-b8b4-c604d4b6c393")
 	)
 	(sheet_instances
 		(path "/"
