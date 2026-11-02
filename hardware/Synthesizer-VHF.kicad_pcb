@@ -25998,9 +25998,9 @@
 		(keepout
 			(tracks not_allowed)
 			(vias not_allowed)
-			(pads not_allowed)
+			(pads allowed)
 			(copperpour allowed)
-			(footprints not_allowed)
+			(footprints allowed)
 		)
 		(placement
 			(enabled no)
@@ -26061,9 +26061,9 @@
 		(keepout
 			(tracks not_allowed)
 			(vias not_allowed)
-			(pads not_allowed)
+			(pads allowed)
 			(copperpour allowed)
-			(footprints not_allowed)
+			(footprints allowed)
 		)
 		(placement
 			(enabled no)
@@ -28319,9 +28319,9 @@
 		(keepout
 			(tracks not_allowed)
 			(vias not_allowed)
-			(pads not_allowed)
+			(pads allowed)
 			(copperpour allowed)
-			(footprints not_allowed)
+			(footprints allowed)
 		)
 		(placement
 			(enabled no)
@@ -28351,9 +28351,9 @@
 		(keepout
 			(tracks not_allowed)
 			(vias not_allowed)
-			(pads not_allowed)
+			(pads allowed)
 			(copperpour allowed)
-			(footprints not_allowed)
+			(footprints allowed)
 		)
 		(placement
 			(enabled no)
@@ -28445,9 +28445,9 @@
 		(keepout
 			(tracks not_allowed)
 			(vias not_allowed)
-			(pads not_allowed)
+			(pads allowed)
 			(copperpour allowed)
-			(footprints not_allowed)
+			(footprints allowed)
 		)
 		(placement
 			(enabled no)
@@ -28507,9 +28507,9 @@
 		(keepout
 			(tracks not_allowed)
 			(vias not_allowed)
-			(pads not_allowed)
+			(pads allowed)
 			(copperpour allowed)
-			(footprints not_allowed)
+			(footprints allowed)
 		)
 		(placement
 			(enabled no)
@@ -28573,9 +28573,9 @@
 		(keepout
 			(tracks not_allowed)
 			(vias not_allowed)
-			(pads not_allowed)
+			(pads allowed)
 			(copperpour allowed)
-			(footprints not_allowed)
+			(footprints allowed)
 		)
 		(placement
 			(enabled no)
@@ -29401,9 +29401,9 @@
 		(keepout
 			(tracks not_allowed)
 			(vias not_allowed)
-			(pads not_allowed)
+			(pads allowed)
 			(copperpour allowed)
-			(footprints not_allowed)
+			(footprints allowed)
 		)
 		(placement
 			(enabled no)

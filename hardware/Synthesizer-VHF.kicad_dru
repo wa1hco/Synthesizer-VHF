@@ -1,4 +1,24 @@
 (version 1)
+
+# Boss keepouts allow pads and footprints in the zone so these rules can
+# make the exceptions. Tracks and vias stay banned by the zones. These
+# rules are first so they are the ones DRC applies.
+(rule "Front boss: no footprints except mounting holes"
+	(constraint disallow footprint)
+	(condition "A.intersectsArea('KO_BOSS_F') && A.Type == 'footprint' && A.Reference != 'H1' && A.Reference != 'H2' && A.Reference != 'H3' && A.Reference != 'H4'"))
+
+(rule "Front boss: no pads except mounting holes"
+	(constraint disallow pad)
+	(condition "A.intersectsArea('KO_BOSS_F') && A.Type == 'pad' && !A.memberOfFootprint('H1') && !A.memberOfFootprint('H2') && !A.memberOfFootprint('H3') && !A.memberOfFootprint('H4')"))
+
+(rule "Bottom washer: non-GND pads"
+	(constraint disallow pad)
+	(condition "A.intersectsArea('KO_BOSS_B') && A.Type == 'pad' && A.NetName != 'GND'"))
+
+(rule "Bottom washer: no other bottom footprints"
+	(constraint disallow footprint)
+	(condition "A.intersectsArea('KO_BOSS_B') && A.Type == 'footprint' && A.Layer == 'B.Cu' && A.Reference != 'J5' && A.Reference != 'J9' && A.Reference != 'H1' && A.Reference != 'H2' && A.Reference != 'H3' && A.Reference != 'H4'"))
+
 # Custom Design Rules (DRC) for KiCAD 7.0 (Stored in '<project>.kicad_dru' file).
 #
 # Matching JLCPCB capabilities: https://jlcpcb.com/capabilities/pcb-capabilities
