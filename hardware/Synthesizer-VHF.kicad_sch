@@ -10034,7 +10034,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 274.0152 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -10203,7 +10203,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 82.55 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -10295,7 +10295,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 317.5 134.3152 0)
 			(hide yes)
 			(show_name no)
@@ -10974,7 +10974,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 68.58 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -11622,7 +11622,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 396.24 167.3352 0)
 			(hide yes)
 			(show_name no)
@@ -11791,7 +11791,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 304.8 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -12136,7 +12136,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 80.9752 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -12226,7 +12226,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 104.14 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -12398,7 +12398,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 325.12 139.3952 0)
 			(hide yes)
 			(show_name no)
@@ -12488,7 +12488,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 63.5 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -12579,7 +12579,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 45.466 222.504 90)
 			(hide yes)
 			(show_name no)
@@ -12910,7 +12910,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 96.2152 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -13102,7 +13102,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 287.9852 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -14290,7 +14290,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 101.6 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -14381,7 +14381,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 92.456 204.216 90)
 			(hide yes)
 			(show_name no)
@@ -14738,7 +14738,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 137.16 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -15547,7 +15547,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 45.466 221.996 90)
 			(hide yes)
 			(show_name no)
@@ -16466,7 +16466,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 360.3752 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -16713,7 +16713,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 353.06 132.3848 0)
 			(hide yes)
 			(show_name no)
@@ -17062,7 +17062,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 22.86 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -17228,7 +17228,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 153.67 251.46 0)
 			(hide yes)
 			(show_name no)
@@ -17644,7 +17644,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 88.646 232.156 90)
 			(hide yes)
 			(show_name no)
@@ -17894,7 +17894,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.25x3.25mm"
+		(property "Footprint" "Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.25x3.25mm"
 			(at 331.47 217.932 0)
 			(hide yes)
 			(show_name no)
@@ -18350,7 +18350,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 149.86 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -18523,7 +18523,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 132.08 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -18773,7 +18773,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 301.9552 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -18864,7 +18864,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 367.03 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -19128,7 +19128,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 72.6948 246.38 0)
 			(hide yes)
 			(show_name no)
@@ -19218,7 +19218,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 62.23 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -19620,7 +19620,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 331.47 137.4648 0)
 			(hide yes)
 			(show_name no)
@@ -19802,7 +19802,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 58.42 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -20787,7 +20787,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 50.8 43.4848 0)
 			(hide yes)
 			(show_name no)
@@ -20959,7 +20959,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 300.99 139.3952 0)
 			(hide yes)
 			(show_name no)
@@ -21140,7 +21140,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Oscillator_SMD_3225_VCTCXO"
+		(property "Footprint" "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm"
 			(at 38.1 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -21236,7 +21236,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 142.494 222.504 90)
 			(hide yes)
 			(show_name no)
@@ -21666,7 +21666,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 396.24 174.9552 0)
 			(hide yes)
 			(show_name no)
@@ -21756,7 +21756,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 91.44 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -21849,7 +21849,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 351.79 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -21939,7 +21939,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 379.73 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -22029,7 +22029,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 157.48 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -22605,7 +22605,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 109.22 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -22697,7 +22697,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 393.3952 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -22789,7 +22789,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 280.3652 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -22958,7 +22958,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 68.58 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -23129,7 +23129,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 88.646 232.664 90)
 			(hide yes)
 			(show_name no)
@@ -23378,7 +23378,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 102.87 127 0)
 			(hide yes)
 			(show_name no)
@@ -23560,7 +23560,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 301.9552 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -23652,7 +23652,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 28.9052 127 0)
 			(hide yes)
 			(show_name no)
@@ -23742,7 +23742,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 81.28 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -23914,7 +23914,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 345.44 137.4648 0)
 			(hide yes)
 			(show_name no)
@@ -24328,7 +24328,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 386.08 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -24527,7 +24527,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 339.09 132.3848 0)
 			(hide yes)
 			(show_name no)
@@ -24800,7 +24800,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 289.56 174.9552 0)
 			(hide yes)
 			(show_name no)
@@ -24892,7 +24892,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 274.0152 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -25236,7 +25236,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 300.99 134.3152 0)
 			(hide yes)
 			(show_name no)
@@ -25420,7 +25420,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Synthesizer:Cap_0402"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 294.3352 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -25510,7 +25510,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:Res_0402"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 373.38 154.94 0)
 			(hide yes)
 			(show_name no)

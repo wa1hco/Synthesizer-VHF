@@ -55,7 +55,7 @@ Project libraries sit next to the board. The library tables refer to them with `
 
 - `hardware/libraries/Synthesizer.kicad_sym` — project symbols. The ADP150 symbol remains from the first board. This variant uses LP5907 regulators.
 - `hardware/libraries/adf4350.kicad_sym` — ADF4350 symbol.
-- `hardware/libraries/Synthesizer.pretty` — project footprints (0402 passives, the edge-mount SMA, the USB-C receptacle, the 2.5×2.0 mm oscillator, and the ADF4351 LFCSP).
+- `hardware/libraries/Synthesizer.pretty` — the footprints that are not in KiCad's libraries: the reverse-mount Kingbright LEDs, the 1590LB mounting holes, the LED light-pipe holes, the UPDI test pads, and the G-Switch USB-C receptacle. 0402 parts, the ADF4351 LFCSP, and the 3225 oscillator use KiCad's own footprints.
 
 Passives, connectors, the ATtiny1616, the FT231X, and their 3D shapes come from KiCad's standard libraries. Where a footprint has a 3D model, the path uses `${KICAD8_3DMODEL_DIR}`. KiCad 10 resolves that older name to its own 3D library (`KICAD10_3DMODEL_DIR`) unless `KICAD8_3DMODEL_DIR` is set on its own. This board has no separate project 3D model. The old MAX2870 download is not used, so it is not in the library tables.
 

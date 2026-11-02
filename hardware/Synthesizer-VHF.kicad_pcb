@@ -167,7 +167,7 @@
 			(outputdirectory "")
 		)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "04776834-0db8-47ce-a1df-9ca3cd0b524a")
 		(at 159.1 103.5)
@@ -359,7 +359,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
+			(at -0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -368,7 +368,7 @@
 			(uuid "1e2daf02-b64d-49d7-a7d0-006b21b0072e")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
+			(at 0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -378,7 +378,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "04d54c77-8d6c-41d5-afb6-03d132c866d1")
 		(at 109.285893 101.393426)
@@ -571,8 +571,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
-			(size 0.56 0.62)
+			(at -0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D14-K)")
@@ -580,8 +580,8 @@
 			(uuid "1e2ded6f-fd82-40c7-9fbf-7be90aa4fd1c")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
-			(size 0.56 0.62)
+			(at 0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/CBUS_ACT")
@@ -590,7 +590,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "0bb62786-ed12-4909-92f6-5d76c22de06f")
 		(at 158.2 106.5)
@@ -782,8 +782,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
-			(size 0.56 0.62)
+			(at -0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U4-RF_OUT_B-)")
@@ -791,8 +791,8 @@
 			(uuid "05109b2c-862b-4fae-8aac-57632f0ce134")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
-			(size 0.56 0.62)
+			(at 0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VRF")
@@ -1177,7 +1177,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "12ed2b13-50a2-434b-9a56-b7264d060338")
 		(at 157 95.4 180)
@@ -1369,7 +1369,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 180)
+			(at -0.48 0 180)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -1378,7 +1378,7 @@
 			(uuid "9906731a-25f9-4bba-af14-299fec6e24f5")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 180)
+			(at 0.48 0 180)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -2008,7 +2008,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "17492dee-4a90-476e-9a9d-c8fc9c14f69a")
 		(at 154.2 82.9 90)
@@ -2201,7 +2201,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 90)
+			(at -0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -2210,7 +2210,7 @@
 			(uuid "620997f6-13aa-4d6c-809c-13525124940e")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 90)
+			(at 0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -2220,7 +2220,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "1ad5ed21-c107-4dd0-90fb-e08131ac3d77")
 		(at 133.8 103.45)
@@ -2413,8 +2413,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
-			(size 0.56 0.62)
+			(at -0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/TXD_U")
@@ -2422,8 +2422,8 @@
 			(uuid "9d424229-c631-4517-b29f-d690e66262f5")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
-			(size 0.56 0.62)
+			(at 0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/RXD_M")
@@ -2432,7 +2432,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "270d3473-74e1-42b3-b239-304446d008a1")
 		(at 160.198426 107.019107 90)
@@ -2624,7 +2624,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 90)
+			(at -0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -2633,7 +2633,7 @@
 			(uuid "9724f970-49a6-4286-a1da-e605f3334471")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 90)
+			(at 0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -2843,7 +2843,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "3518fc9e-a6bd-42af-8dd3-2b17e7e02b1d")
 		(at 161.4 99.298426)
@@ -3036,7 +3036,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
+			(at -0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -3045,7 +3045,7 @@
 			(uuid "7d0d55f7-515c-4d1d-9c3b-f44036fa9869")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
+			(at 0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -3055,7 +3055,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "373ebbab-7427-4575-a385-35b3f420021e")
 		(at 157.2 108 -90)
@@ -3247,7 +3247,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 270)
+			(at -0.48 0 270)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -3256,7 +3256,7 @@
 			(uuid "a7209320-9638-4c16-b444-faee897ea368")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 270)
+			(at 0.48 0 270)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -3599,7 +3599,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "3cc566d1-b684-404c-92df-bd5218fdd276")
 		(at 109.285893 97.453426)
@@ -3792,8 +3792,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
-			(size 0.56 0.62)
+			(at -0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/REF_LOCK")
@@ -3801,8 +3801,8 @@
 			(uuid "10833159-026f-4e37-aea9-2775a1cdab5e")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
-			(size 0.56 0.62)
+			(at 0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D12-A)")
@@ -3811,7 +3811,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "3d11fc1b-6a5e-4e47-8b6a-b9449024fe70")
 		(at 135.5 93.5 180)
@@ -4004,7 +4004,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 180)
+			(at -0.48 0 180)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -4013,7 +4013,7 @@
 			(uuid "cdb06d6d-1423-40e6-9d65-d02438e13299")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 180)
+			(at 0.48 0 180)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -4023,7 +4023,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "3e972252-cdeb-4e1c-acf5-e287cece5da5")
 		(at 167.585926 108.191607 90)
@@ -4216,7 +4216,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 90)
+			(at -0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -4225,7 +4225,7 @@
 			(uuid "90cdd505-ab05-48c4-83ba-5fee00a5c508")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 90)
+			(at 0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -4644,7 +4644,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "40d03b76-a73e-441f-89ef-ee4790bb86c3")
 		(at 154.279107 103.101574 180)
@@ -4836,7 +4836,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 180)
+			(at -0.48 0 180)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -4845,7 +4845,7 @@
 			(uuid "db7db327-7a19-43cb-9bf7-53310b301c3d")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 180)
+			(at 0.48 0 180)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -5028,7 +5028,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "42cac074-a053-457c-a191-34fb1c1088bd")
 		(at 138.5 90.7 180)
@@ -5221,8 +5221,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 180)
-			(size 0.56 0.62)
+			(at -0.51 0 180)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -5230,8 +5230,8 @@
 			(uuid "05dfe877-3c50-4d13-80c1-e8c7340bfc4e")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 180)
-			(size 0.56 0.62)
+			(at 0.51 0 180)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(J4-CC1)")
@@ -5617,7 +5617,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "4791508a-b03a-442a-8109-84cef4d95424")
 		(at 136 95.2 90)
@@ -5810,8 +5810,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 90)
-			(size 0.56 0.62)
+			(at -0.51 0 90)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D-M")
@@ -5819,8 +5819,8 @@
 			(uuid "2e1e836a-9a0b-4f2e-b853-1ca2fad0559c")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 90)
-			(size 0.56 0.62)
+			(at 0.51 0 90)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/USB_DM")
@@ -5829,7 +5829,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "47994afb-11e5-4874-a975-62ef6369b3bc")
 		(at 154.6 107.5 180)
@@ -6021,8 +6021,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 180)
-			(size 0.56 0.62)
+			(at -0.51 0 180)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U4-RF_OUT_A-)")
@@ -6030,8 +6030,8 @@
 			(uuid "db558077-325a-42b1-aa22-daf5b10a690c")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 180)
-			(size 0.56 0.62)
+			(at 0.51 0 180)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VRF")
@@ -6243,7 +6243,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.25x3.25mm"
+	(footprint "Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.25x3.25mm"
 		(layer "F.Cu")
 		(uuid "48950378-9d19-45c7-a64f-e7c58232bc99")
 		(at 156.2 99.45)
@@ -6544,7 +6544,7 @@
 			(layers "F.Paste")
 			(uuid "7c35b10d-c600-4fd8-934a-63801ff3119c")
 		)
-		(pad "1" smd roundrect
+		(pad "1" smd rect
 			(at -2.4 -1.75)
 			(size 0.8 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
@@ -6608,7 +6608,7 @@
 			(pintype "input")
 			(uuid "9d69129d-e4be-4ab7-bf8d-34da440fa2bb")
 		)
-		(pad "8" smd roundrect
+		(pad "8" smd rect
 			(at -2.4 1.75)
 			(size 0.8 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
@@ -6618,7 +6618,7 @@
 			(pintype "power_in")
 			(uuid "00d67683-f6c5-46a9-97bf-676fc5a46c56")
 		)
-		(pad "9" smd roundrect
+		(pad "9" smd rect
 			(at -1.75 2.4 90)
 			(size 0.8 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
@@ -6682,7 +6682,7 @@
 			(pintype "output")
 			(uuid "b0bc3c3d-f7c4-47e5-a089-f442ccd4928a")
 		)
-		(pad "16" smd roundrect
+		(pad "16" smd rect
 			(at 1.75 2.4 90)
 			(size 0.8 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
@@ -6692,7 +6692,7 @@
 			(pintype "power_in")
 			(uuid "bd999324-39c0-498d-8493-ee7563595a3f")
 		)
-		(pad "17" smd roundrect
+		(pad "17" smd rect
 			(at 2.4 1.75)
 			(size 0.8 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
@@ -6756,7 +6756,7 @@
 			(pintype "input")
 			(uuid "7b5ec594-5c8a-4293-bca9-49ca7d75449f")
 		)
-		(pad "24" smd roundrect
+		(pad "24" smd rect
 			(at 2.4 -1.75)
 			(size 0.8 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
@@ -6766,7 +6766,7 @@
 			(pintype "input")
 			(uuid "5a1e5808-37fc-4a20-ba88-1f77131dc281")
 		)
-		(pad "25" smd roundrect
+		(pad "25" smd rect
 			(at 1.75 -2.4 90)
 			(size 0.8 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
@@ -6830,7 +6830,7 @@
 			(pintype "power_in")
 			(uuid "9bebd09c-0b60-4c75-b65d-45ceb9e3bcd4")
 		)
-		(pad "32" smd roundrect
+		(pad "32" smd rect
 			(at -1.75 -2.4 90)
 			(size 0.8 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
@@ -7152,7 +7152,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "5286230c-0c5a-44a8-873f-57a93d5758f2")
 		(at 157 94.4)
@@ -7344,7 +7344,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
+			(at -0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -7353,7 +7353,7 @@
 			(uuid "1db1b05d-9343-4af2-bf05-8e08eb898d3a")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
+			(at 0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -7536,7 +7536,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "599d2bfa-07e9-4a20-b53b-73b2fa73a447")
 		(at 163 96.8 180)
@@ -7728,8 +7728,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 180)
-			(size 0.56 0.62)
+			(at -0.51 0 180)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -7737,8 +7737,8 @@
 			(uuid "28cfc3b4-c6bb-40f9-b316-81a40a77e844")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 180)
-			(size 0.56 0.62)
+			(at 0.51 0 180)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U4-RSET)")
@@ -7747,7 +7747,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "5aadbc53-dd11-4116-b6d8-4d771994cd88")
 		(at 117.935893 89.453426)
@@ -7940,8 +7940,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
-			(size 0.56 0.62)
+			(at -0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VDD")
@@ -7949,8 +7949,8 @@
 			(uuid "4d0e7075-1dec-4778-a1de-b5aff00752e9")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
-			(size 0.56 0.62)
+			(at 0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/RST")
@@ -7959,7 +7959,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "5da5cf25-b529-4864-8c7d-078ed5425f6c")
 		(at 172.8 100.2 90)
@@ -8152,7 +8152,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 90)
+			(at -0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8161,7 +8161,7 @@
 			(uuid "4b621fb3-60de-4a3d-89f8-0fd8e6d90335")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 90)
+			(at 0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8171,7 +8171,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "5f04447b-7f5b-4486-abed-eacfa8694816")
 		(at 147.6 92.2)
@@ -8364,7 +8364,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
+			(at -0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8373,7 +8373,7 @@
 			(uuid "1bc24cb9-7f35-4689-8911-f2c6cf52f9c0")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
+			(at 0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8742,7 +8742,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "64f8b7dd-ebd9-4dfd-8f2d-e0e0e3dd74be")
 		(at 132.677 94.75 -90)
@@ -8935,8 +8935,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 270)
-			(size 0.56 0.62)
+			(at -0.51 0 270)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D3-A)")
@@ -8944,8 +8944,8 @@
 			(uuid "89fb7fa6-59f2-4297-9db1-87786519225f")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 270)
-			(size 0.56 0.62)
+			(at 0.51 0 270)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/5V")
@@ -8954,7 +8954,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "663498b2-279c-4a41-8001-68b574edb2fb")
 		(at 159.801574 102 -90)
@@ -9146,7 +9146,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 270)
+			(at -0.48 0 270)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -9155,7 +9155,7 @@
 			(uuid "2ec442a2-7e13-4b9c-93b5-394a6be51b01")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 270)
+			(at 0.48 0 270)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -9165,7 +9165,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "6bfed936-da40-4f17-bfed-51b23bf1cbe9")
 		(at 155.2 106.5 180)
@@ -9357,8 +9357,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 180)
-			(size 0.56 0.62)
+			(at -0.51 0 180)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U4-RF_OUT_A+)")
@@ -9366,8 +9366,8 @@
 			(uuid "0731e462-eeea-4913-a146-edf439a04930")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 180)
-			(size 0.56 0.62)
+			(at 0.51 0 180)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VRF")
@@ -9549,7 +9549,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "71ad3ea5-d4cb-44ef-875a-1ac4c1a50514")
 		(at 167.548426 100.219107 90)
@@ -9742,7 +9742,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 90)
+			(at -0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -9751,7 +9751,7 @@
 			(uuid "0dfe4633-dc0b-4b36-9c50-08411ffc6063")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 90)
+			(at 0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -10189,7 +10189,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "74549787-77ec-4a32-9c28-c4f56515980e")
 		(at 117.935893 87.483426)
@@ -10382,7 +10382,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
+			(at -0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -10391,7 +10391,7 @@
 			(uuid "0ebf49c2-29f1-4469-be78-99000710a851")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
+			(at 0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -10401,7 +10401,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "8461195d-b9be-498d-bd41-f9b0dc059e53")
 		(at 151.798426 78.919107 90)
@@ -10594,7 +10594,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 90)
+			(at -0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -10603,7 +10603,7 @@
 			(uuid "eefff41f-8099-42b2-8c77-6271f417a090")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 90)
+			(at 0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -10613,7 +10613,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "87eb8a71-80d9-4b7f-abfb-ee679301b27f")
 		(at 160.7 95.998426)
@@ -10806,7 +10806,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
+			(at -0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -10815,7 +10815,7 @@
 			(uuid "4d0faae3-7753-41b2-8cf1-55a9e3014d21")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
+			(at 0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -11206,7 +11206,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "954245cc-07d9-48ac-bea3-db7360960ea9")
 		(at 134.478574 96.2 180)
@@ -11399,7 +11399,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 180)
+			(at -0.48 0 180)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -11408,7 +11408,7 @@
 			(uuid "96d40b28-de36-4806-b0bd-bf3126420854")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 180)
+			(at 0.48 0 180)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -12008,7 +12008,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "98aea366-5f7b-4033-b003-22087a928eda")
 		(at 153.5 95.9 180)
@@ -12200,7 +12200,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 180)
+			(at -0.48 0 180)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -12209,7 +12209,7 @@
 			(uuid "2c3a0830-3a13-4245-97bb-a3f667e68d3f")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 180)
+			(at 0.48 0 180)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -12508,7 +12508,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "9b3edbf8-dd19-4ad1-8f88-f956b4a2e157")
 		(at 154.279107 104.101574 180)
@@ -12700,7 +12700,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 180)
+			(at -0.48 0 180)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -12709,7 +12709,7 @@
 			(uuid "7eaff205-68f4-47d8-ab34-600e2305f969")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 180)
+			(at 0.48 0 180)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -12892,7 +12892,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "9edb2e43-33f1-4f0b-b3a9-cfbaf932b019")
 		(at 160.3 97)
@@ -13084,7 +13084,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
+			(at -0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -13093,7 +13093,7 @@
 			(uuid "6c049e72-948c-4988-a95c-0ce39afe5fb1")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
+			(at 0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -13103,7 +13103,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "9f8a109f-fd84-457a-81a5-eff2c8443b7f")
 		(at 139.1 102.7)
@@ -13296,7 +13296,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
+			(at -0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -13305,7 +13305,7 @@
 			(uuid "720bfeb1-ea54-4262-b9bf-6ac9a70f4760")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
+			(at 0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -13315,7 +13315,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "a3f5db06-d689-4681-b9eb-3952757047b2")
 		(at 137.7 93.5)
@@ -13508,7 +13508,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
+			(at -0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -13517,7 +13517,7 @@
 			(uuid "82baa891-e2a3-45f5-bbdd-d6fcdf1d7472")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
+			(at 0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -13527,7 +13527,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "ae9f5058-cede-490f-8459-0047d4e26089")
 		(at 153.5 94.9)
@@ -13719,7 +13719,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
+			(at -0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -13728,7 +13728,7 @@
 			(uuid "96e14463-1b34-4fe6-a9c2-635e21165be0")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
+			(at 0.48 0)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -13738,7 +13738,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "b56fbe16-e993-4b04-b761-02c4140b7176")
 		(at 158.7 107.498426)
@@ -13930,8 +13930,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
-			(size 0.56 0.62)
+			(at -0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U4-RF_OUT_B+)")
@@ -13939,8 +13939,8 @@
 			(uuid "c71fcc52-a264-4100-95b9-737801844a73")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
-			(size 0.56 0.62)
+			(at 0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VRF")
@@ -13949,7 +13949,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "be08817e-162f-4ed0-a117-daee27beca75")
 		(at 109.285893 95.483426)
@@ -14142,8 +14142,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
-			(size 0.56 0.62)
+			(at -0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VDD")
@@ -14151,8 +14151,8 @@
 			(uuid "c6e03aed-86da-4d25-b8b2-d85021dd035a")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
-			(size 0.56 0.62)
+			(at 0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D11-A)")
@@ -14161,7 +14161,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "c00f70a3-878b-435f-adcd-3805b50834ab")
 		(at 133.6 90.7)
@@ -14354,8 +14354,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
-			(size 0.56 0.62)
+			(at -0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -14363,8 +14363,8 @@
 			(uuid "4a5d5b24-8f82-4052-8e10-8bc0c8e10d9e")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
-			(size 0.56 0.62)
+			(at 0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(J4-CC2)")
@@ -14373,7 +14373,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "ccd9a90c-f19e-48be-8633-15dbee7903f5")
 		(at 163.198426 93.519107 90)
@@ -14565,7 +14565,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 90)
+			(at -0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -14574,7 +14574,7 @@
 			(uuid "c54ec9a7-beb6-4926-abde-5a499d075fc2")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 90)
+			(at 0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -14584,7 +14584,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "cda996f4-17ae-4afd-869c-2ccc61dde234")
 		(at 156.1 107.980893 -90)
@@ -14776,7 +14776,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 270)
+			(at -0.48 0 270)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -14785,7 +14785,7 @@
 			(uuid "3e969103-49a6-42dc-ad9f-3a252d45ddf8")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 270)
+			(at 0.48 0 270)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -15323,7 +15323,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "d47c2848-cf56-48fb-a1e5-4a92f37990e9")
 		(at 149.501574 82.180893 -90)
@@ -15516,8 +15516,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 270)
-			(size 0.56 0.62)
+			(at -0.51 0 270)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(C4-Pad1)")
@@ -15525,8 +15525,8 @@
 			(uuid "93ea2985-bebe-48b9-8410-1cae50b701c6")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 270)
-			(size 0.56 0.62)
+			(at 0.51 0 270)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/REF_BUF")
@@ -15622,7 +15622,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "d79163e7-48b5-4298-9085-af265deb8c9c")
 		(at 153.098426 107.019107 90)
@@ -15814,7 +15814,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 90)
+			(at -0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -15823,7 +15823,7 @@
 			(uuid "0ab5f07b-a715-4346-8b88-2251d529af59")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 90)
+			(at 0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -16180,7 +16180,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "f293ce60-6791-4a0d-b604-51e06d0af7ab")
 		(at 109.285893 99.423426)
@@ -16373,8 +16373,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
-			(size 0.56 0.62)
+			(at -0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/SYNTH_LOCK")
@@ -16382,8 +16382,8 @@
 			(uuid "912fb375-356b-4e95-b5f5-152e1d6cf8bc")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
-			(size 0.56 0.62)
+			(at 0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D13-A)")
@@ -16392,7 +16392,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "f2a1b270-35ce-4ef9-acd0-561b3e02a90d")
 		(at 137.178574 95.2 90)
@@ -16585,8 +16585,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 90)
-			(size 0.56 0.62)
+			(at -0.51 0 90)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D+M")
@@ -16594,8 +16594,8 @@
 			(uuid "c208805c-4429-4354-a4ad-92190b589e85")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 90)
-			(size 0.56 0.62)
+			(at 0.51 0 90)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/USB_DP")
@@ -18012,7 +18012,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "fbce2e6b-e49f-47fd-b8ea-1f7e92eb6ec6")
 		(at 172.810926 108.181607 90)
@@ -18205,7 +18205,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 90)
+			(at -0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -18214,7 +18214,7 @@
 			(uuid "c46f5b71-e675-4947-9b54-4cd4c7338c63")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 90)
+			(at 0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -20047,7 +20047,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "bf9c3355-8f86-4bab-b6b9-909677f06bd6")
 		(at 130.0000 148.0000)
@@ -20240,8 +20240,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
-			(size 0.56 0.62)
+			(at -0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VDD")
@@ -20249,8 +20249,8 @@
 			(uuid "1e819e3e-fe10-4c41-bf8a-49fa06d3e158")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
-			(size 0.56 0.62)
+			(at 0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/TCXO_VDD")
@@ -20259,7 +20259,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "d613b9fb-e62d-4006-84a2-7ccd03ee6725")
 		(at 138.0000 148.0000)
@@ -20452,7 +20452,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 90)
+			(at -0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -20461,7 +20461,7 @@
 			(uuid "1f0b5acf-d483-4a04-9adb-7d75fa52e4f1")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 90)
+			(at 0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -20471,7 +20471,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Oscillator_SMD_3225_VCTCXO"
+	(footprint "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm"
 		(layer "F.Cu")
 		(uuid "458372f4-31cb-4c1c-a7a4-0d8530c3fbd0")
 		(at 146.0000 148.0000)
@@ -20674,16 +20674,16 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -1.1 0.8)
-			(size 1.3 1)
+			(at -1.05 0.825)
+			(size 1.3 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(pinfunction "Vc_1")
 			(pintype "passive")
 			(uuid "57477c2f-6218-4277-98ed-72c6592d8061")
 		)
 		(pad "2" smd rect
-			(at 1.1 0.8)
-			(size 1.3 1)
+			(at 1.05 0.825)
+			(size 1.3 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
 			(pinfunction "GND_2")
@@ -20691,8 +20691,8 @@
 			(uuid "1cd97067-4706-44c0-ad44-909e0db3d2b8")
 		)
 		(pad "3" smd rect
-			(at 1.1 -0.8)
-			(size 1.3 1)
+			(at 1.05 -0.825)
+			(size 1.3 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/TCXO_OUT")
 			(pinfunction "OUT_3")
@@ -20700,8 +20700,8 @@
 			(uuid "f73e96d5-bb4c-4aeb-8c5e-67fd751e46db")
 		)
 		(pad "4" smd rect
-			(at -1.1 -0.8)
-			(size 1.3 1)
+			(at -1.05 -0.825)
+			(size 1.3 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/TCXO_VDD")
 			(pinfunction "VDD_4")
@@ -20710,7 +20710,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "381c18af-70a4-41e3-87f4-b606f78e373e")
 		(at 154.0000 148.0000)
@@ -20903,7 +20903,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 90)
+			(at -0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -20912,7 +20912,7 @@
 			(uuid "1ce02acb-1ac7-4a05-b4a8-822b309d997e")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 90)
+			(at 0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -21349,7 +21349,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "f4d9cc86-da8d-42d8-9ae5-1a4975ab60ca")
 		(at 170.0000 148.0000)
@@ -21542,8 +21542,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
-			(size 0.56 0.62)
+			(at -0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VDD")
@@ -21551,8 +21551,8 @@
 			(uuid "4c54a5a0-a5fb-4a21-aaf5-33ba6454bd73")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
-			(size 0.56 0.62)
+			(at 0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/TCXO_IN")
@@ -21561,7 +21561,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "7ae44bcb-b4a7-4b80-ad22-2647aaa810fa")
 		(at 178.0000 148.0000)
@@ -21754,8 +21754,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
-			(size 0.56 0.62)
+			(at -0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/TCXO_IN")
@@ -21763,8 +21763,8 @@
 			(uuid "af62bdf5-55b1-4466-b2ed-a97a9e3ccafb")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
-			(size 0.56 0.62)
+			(at 0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -21773,7 +21773,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "12ae4cc4-3441-416f-92a9-11692d85251c")
 		(at 186.0000 148.0000)
@@ -21966,7 +21966,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 90)
+			(at -0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -21975,7 +21975,7 @@
 			(uuid "f69590d9-a87d-4c75-a836-49f147025950")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 90)
+			(at 0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -22305,7 +22305,7 @@
 			)
 		)
 	)
-	(footprint "Synthesizer:Cap_0402"
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "2a358bed-8eaf-4dcb-be8d-9af20b962329")
 		(at 138.0000 160.0000)
@@ -22498,7 +22498,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574 90)
+			(at -0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -22507,7 +22507,7 @@
 			(uuid "2383bc79-f81d-4388-9994-7ca8dfbc0cc3")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574 90)
+			(at 0.48 0 90)
 			(size 0.56 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -22517,7 +22517,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "392407e3-7ac9-4606-8f66-b09421cd4d85")
 		(at 146.0000 160.0000)
@@ -22710,8 +22710,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
-			(size 0.56 0.62)
+			(at -0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/REF_SEL")
@@ -22719,8 +22719,8 @@
 			(uuid "4a153fc1-81cb-489b-abd1-2e08f00e2a6f")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
-			(size 0.56 0.62)
+			(at 0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -22729,7 +22729,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "da4a7c53-7e88-461f-bae7-174f9fe25566")
 		(at 154.0000 160.0000)
@@ -22922,8 +22922,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
-			(size 0.56 0.62)
+			(at -0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/MUX_Y")
@@ -22931,8 +22931,8 @@
 			(uuid "cf65e494-cfad-481f-8f30-a6274e161415")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
-			(size 0.56 0.62)
+			(at 0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/REF_AC")
@@ -22941,7 +22941,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Synthesizer:Res_0402"
+	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "db1e385d-9f85-46e1-8fa0-8a74c1f49401")
 		(at 162.0000 160.0000)
@@ -23134,8 +23134,8 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.480893 0.001574)
-			(size 0.56 0.62)
+			(at -0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/REF_BUF")
@@ -23143,8 +23143,8 @@
 			(uuid "aa2d1527-a933-4d01-9ab7-d9b308c2d100")
 		)
 		(pad "2" smd roundrect
-			(at 0.479107 0.001574)
-			(size 0.56 0.62)
+			(at 0.51 0)
+			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/REF_DET")
