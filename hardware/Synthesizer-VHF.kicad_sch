@@ -6932,6 +6932,337 @@
 		(color 0 0 0 0)
 		(uuid "ffcffc08-13d8-4d96-9da6-e7e754853b61")
 	)
+	(text "NEW - place me. H_LED1-4 are LED reflector holes under D11-D14: PTH, no fill, no mask, bare copper. Not on a net."
+		(exclude_from_sim no)
+		(at 25.4 8.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bf9b62a4-c5fe-4c14-aa06-2661b19c99ae")
+	)
+	(no_connect
+		(at 30.48 20.32)
+		(uuid "e2348452-b23e-4e02-8109-99e86e06dabd")
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 30.48 17.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e92a5a1f-e58a-4b0b-a56d-98e296aeb7fc")
+		(property "Reference" "H_LED1"
+			(at 30.48 12.70 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED reflector"
+			(at 30.48 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:MountingHole_1.5mm_Pad"
+			(at 30.48 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "LED reflector hole: PTH, no fill, no mask, bare copper. Not on a net."
+			(at 30.48 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e0a4c5d9-383b-4cc8-be14-425e1b02435f")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "H_LED1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(no_connect
+		(at 43.18 20.32)
+		(uuid "cca3cc63-629c-4ad2-af79-2999c09d11a1")
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 43.18 17.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "65e03421-47ba-4090-8ee0-025291b4e53a")
+		(property "Reference" "H_LED2"
+			(at 43.18 12.70 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED reflector"
+			(at 43.18 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:MountingHole_1.5mm_Pad"
+			(at 43.18 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "LED reflector hole: PTH, no fill, no mask, bare copper. Not on a net."
+			(at 43.18 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f5ad16e0-587f-46fe-935f-5215dcebeba0")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "H_LED2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(no_connect
+		(at 55.88 20.32)
+		(uuid "1d6bc1dd-be7d-477a-8844-67ec014df1d4")
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 55.88 17.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e78faa6c-4149-4f60-acba-af6ccde9999d")
+		(property "Reference" "H_LED3"
+			(at 55.88 12.70 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED reflector"
+			(at 55.88 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:MountingHole_1.5mm_Pad"
+			(at 55.88 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "LED reflector hole: PTH, no fill, no mask, bare copper. Not on a net."
+			(at 55.88 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "04f23d24-5528-466b-8340-83a64b23d40e")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "H_LED3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(no_connect
+		(at 68.58 20.32)
+		(uuid "62f88014-813b-42bb-8e78-5379640ba678")
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 68.58 17.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "44b2dcb9-bd21-4fae-9f4b-a29458a60f79")
+		(property "Reference" "H_LED4"
+			(at 68.58 12.70 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED reflector"
+			(at 68.58 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:MountingHole_1.5mm_Pad"
+			(at 68.58 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "LED reflector hole: PTH, no fill, no mask, bare copper. Not on a net."
+			(at 68.58 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "989b8c5a-2f6f-4d10-be7c-43412d53b56f")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "H_LED4")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(no_connect
 		(at 137.16 241.3)
 		(uuid "0fe38bcb-5c2b-46ec-9a92-8090c48aa412")

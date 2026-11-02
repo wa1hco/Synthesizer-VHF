@@ -19500,6 +19500,326 @@
 		(layer "Edge.Cuts")
 		(uuid "64ee38c8-d8a2-47eb-8563-4e6230e1c497")
 	)
+	(footprint "Synthesizer:MountingHole_1.5mm_Pad"
+		(layer "F.Cu")
+		(uuid "9b3f25fe-0f10-44bf-a7d0-4f98554ca7ac")
+		(at 130.0000 172.0000)
+		(descr "LED reflector / light pipe. Plated 1.5 mm drill, 2.1 mm pad. Not filled, not tented, mask open both sides, bare copper. No net.")
+		(property "Reference" "H_LED1"
+			(at 0 -1.9 0)
+			(layer "F.SilkS")
+			(uuid "48a29e8b-1c34-4b26-ad6e-9d6a96f29b6c")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Value" "LED reflector"
+			(at 0 1.9 0)
+			(layer "F.Fab")
+			(uuid "bc31f3be-2754-46e2-95ac-dffa98930788")
+			(effects
+				(font
+					(size 0.7 0.7)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "444e4d65-ae93-4145-8295-15feb712852c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "LED reflector hole: PTH, no fill, no mask, bare copper. Not on a net."
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "400ed552-a0f5-40bf-b74f-71522c8b3c44")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 1.3 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "4fa2b910-04ba-45f9-86f5-e97254950562")
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 2.1 2.1)
+			(drill 1.5)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(zone_connect 0)
+			(pinfunction "1_1")
+			(pintype "input")
+			(uuid "3e885cbb-b81f-4ec2-9d82-decac446cb1a")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "Synthesizer:MountingHole_1.5mm_Pad"
+		(layer "F.Cu")
+		(uuid "51862c1e-fc58-4916-bc99-3cf58fbf266e")
+		(at 138.0000 172.0000)
+		(descr "LED reflector / light pipe. Plated 1.5 mm drill, 2.1 mm pad. Not filled, not tented, mask open both sides, bare copper. No net.")
+		(property "Reference" "H_LED2"
+			(at 0 -1.9 0)
+			(layer "F.SilkS")
+			(uuid "6f445e63-a5ff-43b9-a1e5-987d54d017b7")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Value" "LED reflector"
+			(at 0 1.9 0)
+			(layer "F.Fab")
+			(uuid "f017ec6b-07f5-41af-8385-bcba671f5d3e")
+			(effects
+				(font
+					(size 0.7 0.7)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "27896731-7083-44ca-9674-2d0329d8d755")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "LED reflector hole: PTH, no fill, no mask, bare copper. Not on a net."
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "35804cb7-9fa7-4d08-9a80-206eb9d2d6b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 1.3 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "95cd95c9-626c-4a62-9410-c7cefd3f71c3")
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 2.1 2.1)
+			(drill 1.5)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(zone_connect 0)
+			(pinfunction "1_1")
+			(pintype "input")
+			(uuid "09f72ff0-efc4-405b-9b67-3b88296fb423")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "Synthesizer:MountingHole_1.5mm_Pad"
+		(layer "F.Cu")
+		(uuid "f0ebed0c-ce6d-49d1-81f7-2b6fa8b8fd14")
+		(at 146.0000 172.0000)
+		(descr "LED reflector / light pipe. Plated 1.5 mm drill, 2.1 mm pad. Not filled, not tented, mask open both sides, bare copper. No net.")
+		(property "Reference" "H_LED3"
+			(at 0 -1.9 0)
+			(layer "F.SilkS")
+			(uuid "5d6318c0-d200-4b36-92c0-8d8c0527b769")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Value" "LED reflector"
+			(at 0 1.9 0)
+			(layer "F.Fab")
+			(uuid "89c0ef79-b69e-4345-be42-3656d9154514")
+			(effects
+				(font
+					(size 0.7 0.7)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "04a239de-3bc8-412a-a139-7225c263f0da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "LED reflector hole: PTH, no fill, no mask, bare copper. Not on a net."
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d7e8256c-ca11-4978-8244-4f0b420ab762")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 1.3 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "6016a080-2756-41e0-8e7e-0a568709fe12")
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 2.1 2.1)
+			(drill 1.5)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(zone_connect 0)
+			(pinfunction "1_1")
+			(pintype "input")
+			(uuid "640c8626-800f-42ba-85cc-1fe6fee00d4d")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "Synthesizer:MountingHole_1.5mm_Pad"
+		(layer "F.Cu")
+		(uuid "5d261ae2-200f-4d79-b0b0-61426b7ee132")
+		(at 154.0000 172.0000)
+		(descr "LED reflector / light pipe. Plated 1.5 mm drill, 2.1 mm pad. Not filled, not tented, mask open both sides, bare copper. No net.")
+		(property "Reference" "H_LED4"
+			(at 0 -1.9 0)
+			(layer "F.SilkS")
+			(uuid "326038cc-3e0d-4ea7-b9fc-8dae85069187")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Value" "LED reflector"
+			(at 0 1.9 0)
+			(layer "F.Fab")
+			(uuid "ed1ad844-6653-42ef-be0b-ebf422c8a6b0")
+			(effects
+				(font
+					(size 0.7 0.7)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d97acd22-79ec-4efd-99f8-b22e3d2529c6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "LED reflector hole: PTH, no fill, no mask, bare copper. Not on a net."
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6261062b-cce3-4bb0-8bd0-3d86f055b768")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 1.3 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "55f7575b-47f2-4b5f-a22a-f4604f0ec490")
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 2.1 2.1)
+			(drill 1.5)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(zone_connect 0)
+			(pinfunction "1_1")
+			(pintype "input")
+			(uuid "a8e8a5f9-135e-4ab3-8870-a54a4015e0ab")
+		)
+		(embedded_fonts no)
+	)
+	(gr_text "H_LED1-4: plated, not filled, not tented, no solder mask, bare copper finish visible"
+		(at 121.55 136.85 0)
+		(layer "Dwgs.User")
+		(uuid "60469776-5573-4d8c-9dac-927e5038ba9e")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+			(justify left)
+		)
+	)
 	(gr_text "HAMMOND 1590LB: PCB REPLACES LID, MOUNTED UPSIDE DOWN: F (SMD) side faces INTO box, B is outside"
 		(at 121.55 139.85 0)
 		(layer "Dwgs.User")

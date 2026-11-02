@@ -18,7 +18,7 @@ The controller is an ATtiny1616. An FT231X provides USB-C serial. Everyday firmw
 
 Power is 5 V from USB. Two LP5907 regulators make 3.3 V: one for the VCO, and one for the PLL analog rail. The digital 3.3 V rail comes from that analog rail through a ferrite bead.
 
-Four reverse-mount LEDs shine through the lid: power, USB activity, reference lock, and synthesizer lock.
+Four reverse-mount LEDs shine through the lid: power, USB activity, reference lock, and synthesizer lock. H_LED1–H_LED4 are the light-pipe holes under those LEDs. They are plated, not filled, not tented, with no solder mask, so the bare copper finish stays visible. They are parked off the board until placed.
 
 ## Intended uses
 
