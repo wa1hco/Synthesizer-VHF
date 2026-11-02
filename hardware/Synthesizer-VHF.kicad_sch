@@ -5,6 +5,129 @@
 	(uuid "a4b38a6b-9d72-449e-ac14-b68a50e767e1")
 	(paper "B")
 	(lib_symbols
+	(symbol "Connector:TestPoint"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.762)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "TP"
+			(at 0 6.858 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 5.08 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 5.08 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "test point tp"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Pin* Test*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "TestPoint_0_1"
+			(circle
+				(center 0 3.302)
+				(radius 0.762)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "TestPoint_1_1"
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 		(symbol "74xGxx:74LVC1G04"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -6590,7 +6713,7 @@
 		)
 		(uuid "bf9b62a4-c5fe-4c14-aa06-2661b19c99ae")
 	)
-	(text "Programming: J8 removed. MCU TX (TXD_M, PB2) drives FT231X RXD.\nFT231X TXD still drives MCU RX (RXD_M, PB3) through R16.\nUPDI is PA0 only, on J12 (UPDI, VDD, GND). Optiboot ersatz reset: DTR - 100 nF - PA4, 10 k to VDD."
+	(text "Programming: J8 removed. MCU TX (TXD_M, PB2) drives FT231X RXD.\nFT231X TXD still drives MCU RX (RXD_M, PB3) through R16.\nUPDI is PA0 only, on three top-side SMD pads at 2.54 mm (UPDI, VDD, GND). Optiboot ersatz reset: DTR - 100 nF - PA4, 10 k to VDD."
 		(exclude_from_sim no)
 		(at 464.566 202.692 0)
 		(effects
@@ -7120,16 +7243,6 @@
 			(type default)
 		)
 		(uuid "0e0c27c0-c87d-41e2-96dd-09ce1e049f6f")
-	)
-	(wire
-		(pts
-			(xy 63.5 173.99) (xy 57.15 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e9d9bc1-b287-4bfa-b33d-cd15e2e082bc")
 	)
 	(wire
 		(pts
@@ -8273,7 +8386,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 127) (xy 88.9 127)
+			(xy 66.04 127) (xy 81.28 127)
 		)
 		(stroke
 			(width 0)
@@ -8400,16 +8513,6 @@
 			(type default)
 		)
 		(uuid "a2f713d2-e71e-43f2-9fa6-be0e69402ae0")
-	)
-	(wire
-		(pts
-			(xy 88.9 129.54) (xy 86.36 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a36b40f2-70a6-4833-98b4-456a7101ac19")
 	)
 	(wire
 		(pts
@@ -8540,16 +8643,6 @@
 			(type default)
 		)
 		(uuid "b669e2ba-4cc3-4d1e-b140-f563f276bbd1")
-	)
-	(wire
-		(pts
-			(xy 63.5 171.45) (xy 57.15 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6ec2028-5717-4f1c-a20b-ea69cfc17f5c")
 	)
 	(wire
 		(pts
@@ -8783,16 +8876,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 176.53) (xy 57.15 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf02df21-4002-4b73-b0f4-6618f77b8457")
-	)
-	(wire
-		(pts
 			(xy 300.99 83.82) (xy 330.2 83.82)
 		)
 		(stroke
@@ -8873,16 +8956,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 132.08) (xy 88.9 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2e9fc90-d5ca-498f-afd8-6c9d610167ac")
-	)
-	(wire
-		(pts
 			(xy 327.66 107.95) (xy 327.66 133.35)
 		)
 		(stroke
@@ -8940,16 +9013,6 @@
 			(type default)
 		)
 		(uuid "d841ccac-3f99-42d1-bf29-dcc5474d9630")
-	)
-	(wire
-		(pts
-			(xy 63.5 179.07) (xy 57.15 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d84f235a-c1ad-4b95-9d28-04d4eeb12ded")
 	)
 	(wire
 		(pts
@@ -9190,16 +9253,6 @@
 			(type default)
 		)
 		(uuid "edd136ba-7bef-4a16-a349-f6d2ced00e6e")
-	)
-	(wire
-		(pts
-			(xy 86.36 118.11) (xy 86.36 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef021ec8-8a61-4643-ad13-9f3e25c9ccf5")
 	)
 	(wire
 		(pts
@@ -9501,16 +9554,6 @@
 		)
 		(uuid "3ac6c39d-e3b3-4bd1-b220-c0ac8ebbcb2a")
 	)
-	(label "MUX"
-		(at 57.15 173.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3b59a393-c053-49e9-91d5-0a69e632a724")
-	)
 	(label "TXD_M"
 		(at 78.74 154.94 180)
 		(effects
@@ -9600,16 +9643,6 @@
 			(justify right bottom)
 		)
 		(uuid "4eab4dce-c894-44c4-b486-ca00e9d75a35")
-	)
-	(label "DBG2"
-		(at 57.15 179.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "577eec5b-7784-4e9d-a77a-51e586283cc3")
 	)
 	(label "RF_EN"
 		(at 306.07 168.91 180)
@@ -9841,16 +9874,6 @@
 		)
 		(uuid "b6c11125-2f83-4ce5-b5e1-a9465e6cccbd")
 	)
-	(label "DBG1"
-		(at 57.15 176.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b72b13a8-ec20-46d3-bf9d-8aeb4af1c894")
-	)
 	(label "DBG2"
 		(at 78.74 134.62 180)
 		(effects
@@ -9960,16 +9983,6 @@
 			(justify right bottom)
 		)
 		(uuid "e332783e-42ef-42d9-a4c7-578499e197e5")
-	)
-	(label "LD"
-		(at 57.15 171.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ea1bdfb1-0377-48ff-b02e-c2da0e757d3f")
 	)
 	(label "VRF"
 		(at 372.11 138.43 0)
@@ -10858,86 +10871,6 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 63.5 181.61 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0cc660a3-e52b-4b99-91b4-fb989f23d2de")
-		(property "Reference" "#PWR066"
-			(at 63.5 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 63.5 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2808da13-8cf2-41b3-b4a1-02f754c4dd43")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -14005,100 +13938,6 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "H_LED4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
-		(at 93.98 129.54 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "4876f0b6-d52b-4e76-acf4-6d9124d66e31")
-		(property "Reference" "J12"
-			(at 90.424 123.444 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "UPDI"
-			(at 92.71 133.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical_SMD_Pin1Left"
-			(at 93.98 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpopulated SMD 1x03 2.54 mm header, top pads only: UPDI, VDD, GND. Samtec TSM-103-01-T-SV, LCSC C5967212."
-			(at 93.98 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C5967212"
-			(at 93.98 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a367e804-87a3-41d4-9636-2c829d1ca2a1")
-		)
-		(pin "2"
-			(uuid "3f66951f-d3ff-4097-9016-76233f385fbe")
-		)
-		(pin "3"
-			(uuid "17592929-d8fc-4bcb-b3c5-e3f79dbc86c0")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -19351,86 +19190,6 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "#PWR215")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 85.09 132.08 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a3a527dd-3dc5-429b-bd15-c2076f7821c4")
-		(property "Reference" "#PWR063"
-			(at 85.09 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 85.09 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 85.09 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 85.09 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "37d4d1a4-15de-4427-bba0-be509df58be0")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -25104,106 +24863,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x05_Pin")
-		(at 68.58 176.53 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f4340f9f-a150-46e3-b47e-421321696558")
-		(property "Reference" "J2"
-			(at 67.564 169.164 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Scope"
-			(at 67.31 184.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical_SMD_Pin1Left"
-			(at 68.58 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Test header: LD, MUX, DBG1, DBG2, GND. DBG1/DBG2 are pads only (PB4/PB5 drive LEDs)."
-			(at 68.58 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C5804093"
-			(at 68.58 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bc0c681f-dd82-4e6e-9c72-7b01f5203b81")
-		)
-		(pin "2"
-			(uuid "0544c1cd-1be4-4097-88be-bfd0cc8d2276")
-		)
-		(pin "3"
-			(uuid "f81f6b13-e7f6-4425-8673-39f032e84ccd")
-		)
-		(pin "4"
-			(uuid "bfc148a9-81c3-422b-a49e-b551637ddfaa")
-		)
-		(pin "5"
-			(uuid "aa35c864-bab5-4581-bdac-af95eefcc58b")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 304.8 133.35 270)
 		(unit 1)
@@ -25568,6 +25227,1007 @@
 				)
 			)
 		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 30.48 22.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d01b8ac0-d2cd-44ba-975a-3bea2ec59f81")
+		(property "Reference" "TP1"
+			(at 30.48 29.718 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LD"
+			(at 30.48 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
+			(at 30.48 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Scope loop, Keystone 5015 / Ronghe RH-5015, LCSC C5199798. Net LD."
+			(at 30.48 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5199798"
+			(at 30.48 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "83909510-70d5-421b-b705-bd4fef73fe34")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 25.4 22.86) (xy 30.48 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1749c94e-3f21-476e-bdf5-65b429df8662")
+	)
+	(label "LD"
+		(at 25.4 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9aed353a-d0bb-4477-a8c6-597ecf22bb04")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 45.72 22.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "08b0ed23-fee4-4429-8c22-3cb8210460e9")
+		(property "Reference" "TP2"
+			(at 45.72 29.718 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MUX"
+			(at 45.72 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
+			(at 45.72 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Scope loop, Keystone 5015 / Ronghe RH-5015, LCSC C5199798. Net MUX."
+			(at 45.72 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5199798"
+			(at 45.72 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6f748d59-12b2-4f83-b898-cde252ab1031")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 40.64 22.86) (xy 45.72 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b66c34e0-bdcb-407f-9b53-c3248b599cfd")
+	)
+	(label "MUX"
+		(at 40.64 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "03881c95-f80f-4a8e-b1b3-6c3bdb4a4573")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 60.96 22.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "33e68d17-cfd3-4b24-96b4-c460356edfd4")
+		(property "Reference" "TP3"
+			(at 60.96 29.718 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DBG1"
+			(at 60.96 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
+			(at 60.96 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Scope loop DBG1 (PA2). PB4/PB5 drive the lock LEDs, not this net. Keystone 5015, LCSC C5199798."
+			(at 60.96 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5199798"
+			(at 60.96 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5f4edd88-6e6b-4e77-8efc-e5b9e6308fe6")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 55.88 22.86) (xy 60.96 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "799fa688-53d2-4bd1-81ab-082b86671527")
+	)
+	(label "DBG1"
+		(at 55.88 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9c0925bc-fdff-458c-83e6-7cdc1fc6888f")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 76.2 22.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fe9dd426-bb05-4218-b0ed-9c0d04dddd12")
+		(property "Reference" "TP4"
+			(at 76.2 29.718 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DBG2"
+			(at 76.2 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
+			(at 76.2 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Scope loop DBG2 (PA3). PB4/PB5 drive the lock LEDs, not this net. Keystone 5015, LCSC C5199798."
+			(at 76.2 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5199798"
+			(at 76.2 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e7519c79-2889-411f-b1a0-c11b01f20a5c")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 71.12 22.86) (xy 76.2 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e70a3546-e7a6-4254-9c81-b067cdcb2b23")
+	)
+	(label "DBG2"
+		(at 71.12 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "be484d9e-42f5-4cb5-a4dc-f39371bffffa")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 91.44 22.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b1640dcb-7773-4d01-8118-b60ecf4817a3")
+		(property "Reference" "TP5"
+			(at 91.44 29.718 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 91.44 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
+			(at 91.44 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Scope ground loop, Keystone 5015 / Ronghe RH-5015, LCSC C5199798."
+			(at 91.44 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5199798"
+			(at 91.44 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2cfc247c-3f32-47a4-bc5f-bfa6b890c70b")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 91.44 22.86) (xy 91.44 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7b45ce3-de79-404f-8eae-2dc08d75cf53")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 91.44 17.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dab32a48-b1b0-4d42-a9c2-c78b7ca59fbd")
+		(property "Reference" "#PWR301"
+			(at 91.44 11.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 91.44 13.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 91.44 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4134879f-94ce-4619-9b38-b0820b3f4738")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR301")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 114.3 22.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "f2dad16b-bb50-4b98-b578-530d64494301")
+		(property "Reference" "TP6"
+			(at 114.3 29.718 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "UPDI"
+			(at 114.3 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 114.3 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "UPDI pogo pad, top copper only, 1.5 mm square, 2.54 mm pitch. Not assembled."
+			(at 114.3 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 114.3 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "927e282f-e90b-42a5-807c-38180700f581")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 109.22 22.86) (xy 114.3 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0219024d-e8af-463f-bb8f-abef002f367c")
+	)
+	(label "UPDI"
+		(at 109.22 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "985af6bf-f50f-436e-8cb5-f8f742ada3f7")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 129.54 22.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "cbe69c48-6e15-4693-ac1c-2fe5613b66d4")
+		(property "Reference" "TP7"
+			(at 129.54 29.718 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 129.54 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 129.54 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "VDD pogo pad, top copper only, 1.5 mm square, 2.54 mm from UPDI. Not assembled."
+			(at 129.54 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 129.54 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cab3cbea-997b-4ceb-8fcb-2474a9d4961e")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 22.86) (xy 129.54 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f87ededd-bacd-4b96-9ce0-f32384219f95")
+	)
+	(label "VDD"
+		(at 124.46 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "65d6fa67-c8e0-46fa-93f2-e96079f0ef4d")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 144.78 22.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "08d8096e-327e-4647-b3fc-73070b6e011d")
+		(property "Reference" "TP8"
+			(at 144.78 29.718 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 144.78 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 144.78 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GND pogo pad, top copper only, 1.5 mm square, 2.54 mm pitch. Not assembled."
+			(at 144.78 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 144.78 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f64a638c-489f-4210-8dce-c699ecc0bacd")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 144.78 22.86) (xy 144.78 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1052eeb2-d47a-4e8b-afc9-a7a64cab50f2")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 144.78 17.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "309acf56-70aa-4ac3-9a1c-c7d06dba71ee")
+		(property "Reference" "#PWR302"
+			(at 144.78 11.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 144.78 13.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 144.78 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eea72ee0-954a-4949-a84e-50642e51b7a5")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "#PWR302")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "NEW - place me. Scope loops TP1-TP5 (LD, MUX, DBG1, DBG2, GND) and UPDI pads TP6-TP8 (UPDI, VDD, GND) at 2.54 mm."
+		(exclude_from_sim no)
+		(at 25.4 12.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d954f93f-6354-44d8-bde0-2df8e275c14e")
 	)
 	(sheet_instances
 		(path "/"
