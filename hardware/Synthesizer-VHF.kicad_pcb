@@ -20375,7 +20375,183 @@
 			)
 		)
 	)
-	(gr_text "NEW - place me. Scope loops TP1-TP5 (LD, MUX, DBG1, DBG2, GND)."
+	(footprint "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
+		(layer "F.Cu")
+		(uuid "d9b7f26d-9778-46d9-b5ce-69f71ebd9c39")
+		(at 218 78)
+		(descr "Keystone SMT Micro Mini Test Point 5015, http://www.keyelco.com/product-pdf.cfm?p=1353")
+		(tags "Test Point")
+		(property "Reference" "TP7"
+			(at 0 -2.25 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "457064ea-00e9-4000-bab5-e6d25bb0013d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 0 2.25 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b31aa818-b4f0-4fe9-ae9f-e42c93ee04b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9558b4df-3c96-4012-b827-61783e6550f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Scope loop on MCU VDD (3.3 V), Keystone 5015 / Ronghe RH-5015, LCSC C5199798."
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46ae5a12-db3d-4f24-8e6a-f5c6f5cd8470")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C5199798"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "62b8b1d2-e84e-4a16-a746-efaf80f2faf3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/8c7da768-6b01-422d-bf26-a2cad451f203")
+		(sheetname "/")
+		(sheetfile "Synthesizer-VHF.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -1.9 -1.1)
+			(end 1.9 1.1)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "707962b1-5aa3-40d6-87c6-773173565752")
+		)
+		(fp_line
+			(start -2.15 -1.35)
+			(end 2.15 -1.35)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5c93cc62-98a6-435c-ad6e-428473cf5f52")
+		)
+		(fp_line
+			(start -2.15 1.35)
+			(end -2.15 -1.35)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4c2ff374-b775-46e8-8a60-08029c9c2479")
+		)
+		(fp_line
+			(start 2.15 -1.35)
+			(end 2.15 1.35)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b3d6944e-ca79-42b5-9bc9-de85d388984b")
+		)
+		(fp_line
+			(start 2.15 1.35)
+			(end -2.15 1.35)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "28c4a3de-b700-4398-bdcd-dc33e3690fe5")
+		)
+		(fp_rect
+			(start -1.35 -0.5)
+			(end 1.35 0.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "bae831b5-9c9d-40b5-a3d3-79ee13530333")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "f00337e1-7037-4948-93a7-5bfd3ea03741")
+			(effects
+				(font
+					(size 0.6 0.6)
+					(thickness 0.09)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at 0 0)
+			(size 3.4 1.8)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.1388888889)
+			(net "/VDD")
+			(pinfunction "1_1")
+			(pintype "passive")
+			(uuid "0e031be0-9a2a-412a-b9b6-cc591192ec8b")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Keystone_5015_Micro_Mini.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(gr_text "NEW - place me. Scope loops TP1-TP5 (LD, MUX, DBG1, DBG2, GND) and TP7 (VDD)."
 		(at 188 72 0)
 		(layer "Dwgs.User")
 		(uuid "166cb9ad-53d5-4795-a124-04de9f965a88")

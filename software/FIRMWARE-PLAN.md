@@ -25,7 +25,7 @@ ATtiny1616 (U3), every pin, QFN-20. Chip pin numbers match the package drawing i
 | 1 | PA2 | DBG1 | Scope loop TP3. |
 | 2 | PA3 | DBG2 | Scope loop TP4. |
 | 3 | GND | GND | |
-| 4 | VCC | VDD | 3.3 V |
+| 4 | VCC | VDD | 3.3 V. Scope loop TP7, parked off the board. |
 | 5 | PA4 | RST | Optiboot ersatz reset. FT231X DTR, C54 100 nF, PA4. R33 10 kΩ to VDD. |
 | 6 | PA5 | REF_DET | Input. Squared REF IN through 1 kΩ. Edge-count to detect an external reference. |
 | 7 | PA6 | REF_SEL | Output. Mux select. Pulled down, so low selects the TCXO. High selects REF IN. |

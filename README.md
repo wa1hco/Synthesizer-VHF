@@ -14,7 +14,7 @@ The synthesizer is an ADF4351. Its VCO covers 2.2–4.4 GHz, and the on-chip div
 
 The reference is an external 10 MHz on REF IN, shared when several boards must stay together. An on-board 10 MHz TCXO is the fallback. REF IN is 50 ohm and is squared before a 2:1 mux; the TCXO is squared the same way and is the other mux input. With no firmware, a pulldown on PA6 selects the TCXO. Firmware counts edges on PA5 to see that an external reference is present, then drives PA6 to select it. There is no ADF4002 and no REF OUT.
 
-The controller is an ATtiny1616. An FT231X provides USB-C serial. Everyday firmware updates use Optiboot: plugging in USB resets the chip through DTR and a capacitor. If that path is broken, UPDI is a single SMD scope loop. Lock detect, mux, DBG1, DBG2, and a scope ground are the same kind of loop. Ground for a probe is that ground loop.
+The controller is an ATtiny1616. An FT231X provides USB-C serial. Everyday firmware updates use Optiboot: plugging in USB resets the chip through DTR and a capacitor. If that path is broken, UPDI is a single SMD scope loop. Lock detect, mux, DBG1, DBG2, MCU 3.3 V, and a scope ground are the same kind of loop. Ground for a probe is that ground loop.
 
 Power is 5 V from USB. Two LP5907 regulators make 3.3 V: one for the VCO, and one for the PLL analog rail. The digital 3.3 V rail comes from that analog rail through a ferrite bead.
 
