@@ -6713,7 +6713,7 @@
 		)
 		(uuid "bf9b62a4-c5fe-4c14-aa06-2661b19c99ae")
 	)
-	(text "Programming: J8 removed. MCU TX (TXD_M, PB2) drives FT231X RXD.\nFT231X TXD still drives MCU RX (RXD_M, PB3) through R16.\nUPDI is PA0 only, on three top-side SMD pads at 2.54 mm (UPDI, VDD, GND). Optiboot ersatz reset: DTR - 100 nF - PA4, 10 k to VDD."
+	(text "Programming: J8 removed. MCU TX (TXD_M, PB2) drives FT231X RXD.\nFT231X TXD still drives MCU RX (RXD_M, PB3) through R16.\nUPDI is PA0 only, on scope loop TP6. Ground uses the scope GND loop. Optiboot ersatz reset: DTR - 100 nF - PA4, 10 k to VDD."
 		(exclude_from_sim no)
 		(at 464.566 202.692 0)
 		(effects
@@ -8386,7 +8386,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 127) (xy 81.28 127)
+			(xy 66.04 127) (xy 88.9 127)
 		)
 		(stroke
 			(width 0)
@@ -25832,17 +25832,17 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 114.3 22.86 0)
+		(at 88.9 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(in_pos_files no)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "f2dad16b-bb50-4b98-b578-530d64494301")
 		(property "Reference" "TP6"
-			(at 114.3 29.718 0)
+			(at 88.9 133.858 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25852,7 +25852,7 @@
 			)
 		)
 		(property "Value" "UPDI"
-			(at 114.3 27.94 0)
+			(at 88.9 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25861,8 +25861,8 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 114.3 22.86 0)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
+			(at 88.9 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25873,7 +25873,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 22.86 0)
+			(at 88.9 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25883,8 +25883,8 @@
 				)
 			)
 		)
-		(property "Description" "UPDI pogo pad, top copper only, 1.5 mm square, 2.54 mm pitch. Not assembled."
-			(at 114.3 22.86 0)
+		(property "Description" "UPDI scope loop, Keystone 5015 / Ronghe RH-5015, LCSC C5199798. UPDI net only."
+			(at 88.9 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25894,8 +25894,8 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 114.3 22.86 0)
+		(property "LCSC" "C5199798"
+			(at 88.9 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25917,308 +25917,7 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 109.22 22.86) (xy 114.3 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0219024d-e8af-463f-bb8f-abef002f367c")
-	)
-	(label "UPDI"
-		(at 109.22 22.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "985af6bf-f50f-436e-8cb5-f8f742ada3f7")
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 129.54 22.86 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "cbe69c48-6e15-4693-ac1c-2fe5613b66d4")
-		(property "Reference" "TP7"
-			(at 129.54 29.718 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VDD"
-			(at 129.54 27.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 129.54 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "VDD pogo pad, top copper only, 1.5 mm square, 2.54 mm from UPDI. Not assembled."
-			(at 129.54 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 129.54 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cab3cbea-997b-4ceb-8fcb-2474a9d4961e")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "TP7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 124.46 22.86) (xy 129.54 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f87ededd-bacd-4b96-9ce0-f32384219f95")
-	)
-	(label "VDD"
-		(at 124.46 22.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "65d6fa67-c8e0-46fa-93f2-e96079f0ef4d")
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 144.78 22.86 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "08d8096e-327e-4647-b3fc-73070b6e011d")
-		(property "Reference" "TP8"
-			(at 144.78 29.718 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 144.78 27.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 144.78 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "GND pogo pad, top copper only, 1.5 mm square, 2.54 mm pitch. Not assembled."
-			(at 144.78 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 144.78 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f64a638c-489f-4210-8dce-c699ecc0bacd")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "TP8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 144.78 22.86) (xy 144.78 17.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1052eeb2-d47a-4e8b-afc9-a7a64cab50f2")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 144.78 17.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "309acf56-70aa-4ac3-9a1c-c7d06dba71ee")
-		(property "Reference" "#PWR302"
-			(at 144.78 11.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 144.78 13.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 144.78 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "eea72ee0-954a-4949-a84e-50642e51b7a5")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR302")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(text "NEW - place me. Scope loops TP1-TP5 (LD, MUX, DBG1, DBG2, GND) and UPDI pads TP6-TP8 (UPDI, VDD, GND) at 2.54 mm."
+	(text "NEW - place me. Scope loops TP1-TP5 (LD, MUX, DBG1, DBG2, GND)."
 		(exclude_from_sim no)
 		(at 25.4 12.7 0)
 		(effects

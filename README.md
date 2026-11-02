@@ -14,7 +14,7 @@ The synthesizer is an ADF4351. Its VCO covers 2.2–4.4 GHz, and the on-chip div
 
 The reference is an external 10 MHz on REF IN, shared when several boards must stay together. An on-board 10 MHz TCXO is the fallback. REF IN is 50 ohm and is squared before a 2:1 mux; the TCXO is squared the same way and is the other mux input. With no firmware, a pulldown on PA6 selects the TCXO. Firmware counts edges on PA5 to see that an external reference is present, then drives PA6 to select it. There is no ADF4002 and no REF OUT.
 
-The controller is an ATtiny1616. An FT231X provides USB-C serial. Everyday firmware updates use Optiboot: plugging in USB resets the chip through DTR and a capacitor. If that path is broken, UPDI is on three top-side pads (UPDI, 3.3 V, ground) at 2.54 mm. Lock detect, mux, DBG1, DBG2, and a scope ground are individual SMD test loops.
+The controller is an ATtiny1616. An FT231X provides USB-C serial. Everyday firmware updates use Optiboot: plugging in USB resets the chip through DTR and a capacitor. If that path is broken, UPDI is a single SMD scope loop. Lock detect, mux, DBG1, DBG2, and a scope ground are the same kind of loop. Ground for a probe is that ground loop.
 
 Power is 5 V from USB. Two LP5907 regulators make 3.3 V: one for the VCO, and one for the PLL analog rail. The digital 3.3 V rail comes from that analog rail through a ferrite bead.
 
@@ -55,7 +55,7 @@ Project libraries sit next to the board. The library tables refer to them with `
 
 - `hardware/libraries/Synthesizer.kicad_sym` — project symbols. The ADP150 symbol remains from the first board. This variant uses LP5907 regulators.
 - `hardware/libraries/adf4350.kicad_sym` — ADF4350 symbol.
-- `hardware/libraries/Synthesizer.pretty` — the footprints that are not in KiCad's libraries: the reverse-mount Kingbright LEDs, the 1590LB mounting holes, the LED light-pipe holes, and the G-Switch USB-C receptacle. 0402 parts, the ADF4351 LFCSP, the 3225 oscillator, the scope loops, and the UPDI pads use KiCad's own footprints.
+- `hardware/libraries/Synthesizer.pretty` — the footprints that are not in KiCad's libraries: the reverse-mount Kingbright LEDs, the 1590LB mounting holes, the LED light-pipe holes, and the G-Switch USB-C receptacle. 0402 parts, the ADF4351 LFCSP, the 3225 oscillator, and the scope loops use KiCad's own footprints.
 
 Passives, connectors, the ATtiny1616, the FT231X, and their 3D shapes come from KiCad's standard libraries. Where a footprint has a 3D model, the path uses `${KICAD8_3DMODEL_DIR}`. KiCad 10 resolves that older name to its own 3D library (`KICAD10_3DMODEL_DIR`) unless `KICAD8_3DMODEL_DIR` is set on its own. This board has no separate project 3D model. The old MAX2870 download is not used, so it is not in the library tables.
 
@@ -85,7 +85,7 @@ Install `pymcuprog` as well. The serial port is already set in `software/platfor
 scripts/flash-firmware
 ```
 
-Optiboot on the USB serial port is the usual path. Three top-side pads (UPDI, 3.3 V, ground) at 2.54 mm are there when the serial bootloader cannot take an update.
+Optiboot on the USB serial port is the usual path. Scope loop TP6 is UPDI when the serial bootloader cannot take an update. Use the scope ground loop with it.
 
 The current firmware still speaks the as-built serial console at 57600 baud. Single keys change the output:
 

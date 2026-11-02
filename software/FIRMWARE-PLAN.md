@@ -40,7 +40,7 @@ ATtiny1616 (U3), every pin, QFN-20. Chip pin numbers match the package drawing i
 | 16 | PC1 | CLK | Shared SPI clock. |
 | 17 | PC2 | MUX | ADF4351 MUXOUT, input. |
 | 18 | PC3 | RF_EN | ADF4351 RF output enable (PDBRF). Hardware pull-down R49 100 kΩ. Low mutes both RF outputs. |
-| 19 | PA0 | UPDI | Pad TP6. TP6–TP8 are UPDI, VDD, GND at 2.54 mm, top side only. Recovery programming. Not a GPIO. |
+| 19 | PA0 | UPDI | Scope loop TP6. Recovery programming. Not a GPIO. |
 | 20 | PA1 | LD | ADF4351 lock-detect pin, input. Scope loop TP1. |
 | EP | | GND | Exposed pad. |
 
@@ -49,7 +49,7 @@ The other two LEDs are not MCU pins:
 - D11 PWR, green, anode to VDD through R37 1 kΩ, cathode to GND. On whenever 3.3 V is up.
 - D14 COMM, green, anode to VDD, cathode through R40 1 kΩ to FT231X CBUS2 (pin 7). Active low. Program CBUS2 as TX&RXLED#.
 
-FT231X VCCIO is VDD (3.3 V). MCU serial is already 3.3 V. Boot is Optiboot on the UART (PB2/PB3) with the DTR capacitor reset. A failed flash is recovered on the UPDI pads (TP6, with VDD and GND beside it), not by bit-banging PA0 from the application.
+FT231X VCCIO is VDD (3.3 V). MCU serial is already 3.3 V. Boot is Optiboot on the UART (PB2/PB3) with the DTR capacitor reset. A failed flash is recovered on the UPDI loop (TP6) with the scope ground loop, not by bit-banging PA0 from the application.
 
 SPI is the ADF4351 only. LE (PB0) idles low, which is also the pull-down, so a reset does not latch a partial word.
 

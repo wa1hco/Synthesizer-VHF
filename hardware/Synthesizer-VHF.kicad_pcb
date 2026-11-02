@@ -20199,17 +20199,17 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm"
+	(footprint "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
 		(layer "F.Cu")
-		(uuid "3d23019e-969d-4ef1-ab43-4f06f19b99b2")
-		(at 188 86)
-		(descr "SMD rectangular pad as test Point, square 1.5mm side length")
-		(tags "test point SMD pad rectangle square")
+		(uuid "5734c353-74cc-4650-b702-175f3654fff5")
+		(at 140.3 106.2)
+		(descr "Keystone SMT Micro Mini Test Point 5015, http://www.keyelco.com/product-pdf.cfm?p=1353")
+		(tags "Test Point")
 		(property "Reference" "TP6"
-			(at 0 -1.648 0)
+			(at 0 -2.25 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "5dc60bdf-5be2-482a-9b32-edfed15781db")
+			(uuid "4cebc908-b110-4487-baeb-55f1ec12ff02")
 			(effects
 				(font
 					(size 1 1)
@@ -20218,10 +20218,10 @@
 			)
 		)
 		(property "Value" "UPDI"
-			(at 0 1.75 0)
+			(at 0 2.25 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bd1b0f05-79c3-4958-bfea-ffa5efa369fe")
+			(uuid "20cfbfa8-8289-4d78-b545-14d5470988fe")
 			(effects
 				(font
 					(size 1 1)
@@ -20234,7 +20234,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b11d24bf-40b4-41ab-aa1d-4480b2dc7812")
+			(uuid "bb6d62b6-093c-4811-9f74-c1a0df1dd6ef")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20242,12 +20242,12 @@
 				)
 			)
 		)
-		(property "Description" "UPDI pogo pad, top copper only, 1.5 mm square, 2.54 mm pitch. Not assembled."
+		(property "Description" "UPDI scope loop, Keystone 5015 / Ronghe RH-5015, LCSC C5199798. UPDI net only."
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fd372504-f432-4af8-b50f-b240fa64e94c")
+			(uuid "d8ba1ff3-1624-4d95-a068-e80a520136a9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20255,12 +20255,12 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C5199798"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "07214326-344c-4999-a125-c39d0cc44e0c")
+			(uuid "90b38e66-807c-4f5c-aad2-630bcf136c83")
 			(effects
 				(font
 					(size 1 1)
@@ -20277,475 +20277,105 @@
 				(pins "1")
 			)
 		)
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -0.95 -0.95)
-			(end 0.95 -0.95)
+		(fp_rect
+			(start -1.9 -1.1)
+			(end 1.9 1.1)
 			(stroke
 				(width 0.12)
-				(type solid)
+				(type default)
 			)
+			(fill no)
 			(layer "F.SilkS")
-			(uuid "b23b36ae-1a23-4147-9f33-b0e72697bae9")
+			(uuid "77f89c02-5b2c-4bf7-8ff0-a988b7617ceb")
 		)
 		(fp_line
-			(start -0.95 0.95)
-			(end -0.95 -0.95)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f697be0d-52de-41d7-804a-611a11dbaa35")
-		)
-		(fp_line
-			(start 0.95 -0.95)
-			(end 0.95 0.95)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "79948165-f20b-49ad-9f14-95950f8ec552")
-		)
-		(fp_line
-			(start 0.95 0.95)
-			(end -0.95 0.95)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "68fc822b-c4e8-4f7f-96e4-4d5ef8f7c2ee")
-		)
-		(fp_line
-			(start -1.25 -1.25)
-			(end -1.25 1.25)
+			(start -2.15 -1.35)
+			(end 2.15 -1.35)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "fb93718f-b87e-4e00-82c1-1d3559f6eb01")
+			(uuid "3dd862b2-a584-4428-ada6-f90d8f8baf2a")
 		)
 		(fp_line
-			(start -1.25 -1.25)
-			(end 1.25 -1.25)
+			(start -2.15 1.35)
+			(end -2.15 -1.35)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "574715c9-1a9e-42f8-a985-3907b40fcd01")
+			(uuid "fd32c169-bc23-42cb-9d36-8d96156c7f68")
 		)
 		(fp_line
-			(start 1.25 1.25)
-			(end -1.25 1.25)
+			(start 2.15 -1.35)
+			(end 2.15 1.35)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "b1587275-7f9c-4524-b9d4-0479582e12dc")
+			(uuid "6675482f-2351-452e-a1c1-556a8dc5b0d1")
 		)
 		(fp_line
-			(start 1.25 1.25)
-			(end 1.25 -1.25)
+			(start 2.15 1.35)
+			(end -2.15 1.35)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "ee26ef42-3065-4b98-95d3-766adac4c66e")
+			(uuid "db204892-79bc-4e6c-9987-ec6afdaa77f6")
+		)
+		(fp_rect
+			(start -1.35 -0.5)
+			(end 1.35 0.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "b9358738-5332-4f1b-9470-aeea4b6df51b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.65 0)
+			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "c3edb5f3-7c29-4cc6-9bdf-45948c8e38ac")
+			(uuid "5adc16a5-3ba0-4d3d-80ea-e71de5836478")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.6 0.6)
+					(thickness 0.09)
 				)
 			)
 		)
-		(pad "1" smd rect
+		(pad "1" smd roundrect
 			(at 0 0)
-			(size 1.5 1.5)
-			(layers "F.Cu" "F.Mask")
+			(size 3.4 1.8)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.1388888889)
 			(net "/UPDI")
 			(pinfunction "1_1")
 			(pintype "passive")
-			(uuid "b2feda30-445a-4cbd-85b1-f5515b391ff2")
+			(uuid "5bd8c3b0-c015-4e44-8b25-ff0e8e46ea16")
 		)
 		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/TestPoint.3dshapes/TestPoint_Keystone_5015_Micro_Mini.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
-	(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm"
-		(layer "F.Cu")
-		(uuid "42e40790-9456-4397-b421-90859ce724b0")
-		(at 190.54 86)
-		(descr "SMD rectangular pad as test Point, square 1.5mm side length")
-		(tags "test point SMD pad rectangle square")
-		(property "Reference" "TP7"
-			(at 0 -1.648 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "90c1f49d-a15e-4187-93a0-b02f0efc1db9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "VDD"
-			(at 0 1.75 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6ec77e81-13b3-4d8e-bd0c-7a8bc159a6e5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2fc7d1ee-535c-4db5-9c68-a0713ff32864")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "VDD pogo pad, top copper only, 1.5 mm square, 2.54 mm from UPDI. Not assembled."
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "99c94e84-7b6c-4bfb-ac76-267529edd0d7")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "846dfb28-db6b-4804-9e9f-87ac59469e78")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/cbe69c48-6e15-4693-ac1c-2fe5613b66d4")
-		(sheetname "/")
-		(sheetfile "Synthesizer-VHF.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr exclude_from_pos_files exclude_from_bom)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -0.95 -0.95)
-			(end 0.95 -0.95)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "9befedc3-433f-4528-9482-0f8c6d5849a1")
-		)
-		(fp_line
-			(start -0.95 0.95)
-			(end -0.95 -0.95)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "57e6ccc2-681e-4fc4-acac-307a888ec216")
-		)
-		(fp_line
-			(start 0.95 -0.95)
-			(end 0.95 0.95)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "fda2ef29-885b-40d4-900e-619118c9448f")
-		)
-		(fp_line
-			(start 0.95 0.95)
-			(end -0.95 0.95)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "e3e43ec0-98b7-43d0-9f8f-b13dacaf7174")
-		)
-		(fp_line
-			(start -1.25 -1.25)
-			(end -1.25 1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "b0e22f31-715f-4851-8fe1-c04a420d5f86")
-		)
-		(fp_line
-			(start -1.25 -1.25)
-			(end 1.25 -1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "ec270d87-1487-4b1e-b74b-783b370ce0f3")
-		)
-		(fp_line
-			(start 1.25 1.25)
-			(end -1.25 1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "9db9725b-69af-4438-8090-005b5bf45686")
-		)
-		(fp_line
-			(start 1.25 1.25)
-			(end 1.25 -1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "7f168840-34bf-4241-9d1c-fe49cc1791e7")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -1.65 0)
-			(layer "F.Fab")
-			(uuid "1b0c26a0-21fe-4cbc-b202-a6abc1d1f8fa")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" smd rect
-			(at 0 0)
-			(size 1.5 1.5)
-			(layers "F.Cu" "F.Mask")
-			(net "/VDD")
-			(pinfunction "1_1")
-			(pintype "passive")
-			(uuid "4e49e0c9-9706-4548-9bfc-07a3d1a3ca4d")
-		)
-		(embedded_fonts no)
-	)
-	(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm"
-		(layer "F.Cu")
-		(uuid "e4f8a885-a1c8-4928-9a1b-e3fc915a4296")
-		(at 193.08 86)
-		(descr "SMD rectangular pad as test Point, square 1.5mm side length")
-		(tags "test point SMD pad rectangle square")
-		(property "Reference" "TP8"
-			(at 0 -1.648 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "041bc0bf-04c7-4a9b-9706-23c740f595b1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 0 1.75 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "dec20027-cfaa-498a-80fb-7f174bb3722f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4fcec888-2156-4916-8827-46933f448260")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "GND pogo pad, top copper only, 1.5 mm square, 2.54 mm pitch. Not assembled."
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cf8e434e-ea24-4928-9243-17a07a817c4c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6cc3162c-9618-4757-ac53-0c0f0a042727")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/08d8096e-327e-4647-b3fc-73070b6e011d")
-		(sheetname "/")
-		(sheetfile "Synthesizer-VHF.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1")
-			)
-		)
-		(attr exclude_from_pos_files exclude_from_bom)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -0.95 -0.95)
-			(end 0.95 -0.95)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "1699832d-a41f-4013-af83-33728e071eaf")
-		)
-		(fp_line
-			(start -0.95 0.95)
-			(end -0.95 -0.95)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "5be8817c-3b47-4b6d-b1a1-12ba9ce9f3ca")
-		)
-		(fp_line
-			(start 0.95 -0.95)
-			(end 0.95 0.95)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "bd529d11-2969-4e1d-9710-b4c8753d91f1")
-		)
-		(fp_line
-			(start 0.95 0.95)
-			(end -0.95 0.95)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "6d3428cb-58a8-4d0f-ac9f-9ea3a1f4d641")
-		)
-		(fp_line
-			(start -1.25 -1.25)
-			(end -1.25 1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "3fd09c1b-d4d6-4f6d-8f45-5a79ef25983e")
-		)
-		(fp_line
-			(start -1.25 -1.25)
-			(end 1.25 -1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "e4351257-3995-42bc-8715-b2d3a2992856")
-		)
-		(fp_line
-			(start 1.25 1.25)
-			(end -1.25 1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "38d3d47f-c13c-421f-88db-ca0f2f32e78e")
-		)
-		(fp_line
-			(start 1.25 1.25)
-			(end 1.25 -1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "cc353212-6915-48fe-8149-5bcfeff69eb8")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -1.65 0)
-			(layer "F.Fab")
-			(uuid "d17f82a7-313c-455d-872d-a0aa7d59213c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" smd rect
-			(at 0 0)
-			(size 1.5 1.5)
-			(layers "F.Cu" "F.Mask")
-			(net "GND")
-			(pinfunction "1_1")
-			(pintype "passive")
-			(uuid "1e9edefc-1f61-461e-9918-a47dbc71e205")
-		)
-		(embedded_fonts no)
-	)
-	(gr_text "NEW - place me. Scope loops TP1-TP5 and UPDI pads TP6-TP8 (2.54 mm)."
+	(gr_text "NEW - place me. Scope loops TP1-TP5 (LD, MUX, DBG1, DBG2, GND)."
 		(at 188 72 0)
 		(layer "Dwgs.User")
 		(uuid "166cb9ad-53d5-4795-a124-04de9f965a88")
