@@ -14042,7 +14042,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:TestPad_1x03_P2.54mm"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical_SMD_Pin1Left"
 			(at 93.98 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -14064,7 +14064,7 @@
 				)
 			)
 		)
-		(property "Description" "Bare 3-pad UPDI/VDD/GND test footprint, not assembled"
+		(property "Description" "Unpopulated SMD 1x03 2.54 mm header, top pads only: UPDI, VDD, GND. Samtec TSM-103-01-T-SV, LCSC C5967212."
 			(at 93.98 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -14075,7 +14075,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C5967212"
 			(at 93.98 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -25135,7 +25135,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical_SMD_Pin1Left"
 			(at 68.58 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -25168,7 +25168,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C124379"
+		(property "LCSC" "C5804093"
 			(at 68.58 176.53 0)
 			(hide yes)
 			(show_name no)
