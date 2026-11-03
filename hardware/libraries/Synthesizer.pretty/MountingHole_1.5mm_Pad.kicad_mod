@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "LED reflector / light pipe. Plated through hole, 1.5 mm drill, 2.1 mm pad. Not filled, not tented, solder mask open on both sides so the barrel and annular ring stay bare copper. No net. JLCPCB standard PTH: annular ring 0.3 mm, no via fill, no plugging.")
+	(descr "LED reflector / light pipe. Plated through hole, 1.6 mm finished drill, 2.1 mm pad (0.25 mm annular ring). Not filled, not tented, solder mask open on both sides so the barrel and annular ring stay bare copper. No net. JLCPCB standard PTH, no via fill, no plugging.")
 	(tags "mountinghole LED reflector light pipe PTH")
 	(property "Reference" "REF**"
 		(at 0 -1.9 0)
@@ -29,7 +29,7 @@
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_circle
 		(center 0 0)
-		(end 1.5 0)
+		(end 1.6 0)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -60,7 +60,7 @@
 	(pad "1" thru_hole circle
 		(at 0 0)
 		(size 2.1 2.1)
-		(drill 1.5)
+		(drill 1.6)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(zone_connect 0)

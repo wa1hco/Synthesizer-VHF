@@ -6680,7 +6680,7 @@
 		)
 		(uuid "521174e2-b3ac-46df-8c56-5cb29f4701f4")
 	)
-	(text "PCB: 1.5 mm hole under each LED with GND via ring (waveguide below cutoff).\nReverse-mount Kingbright KPTL-3216. Light exits the bottom face.\nPWR and COMM are green KPTL-3216CGCK-01 (C598390). \nREF LOCK and SYNTH LOCK are red KPTL-3216SURCK-01 (C598393).\nBlue KPTL-3216QBC-D-01 is on LCSC but Vf is 3.3 V, so it is not used on this 3.3 V rail."
+	(text "PCB: 1.6 mm hole under each LED with GND via ring (waveguide below cutoff).\nReverse-mount Kingbright KPTL-3216. Light exits the bottom face.\nPWR and COMM are green KPTL-3216CGCK-01 (C598390). \nREF LOCK and SYNTH LOCK are red KPTL-3216SURCK-01 (C598393).\nBlue KPTL-3216QBC-D-01 is on LCSC but Vf is 3.3 V, so it is not used on this 3.3 V rail."
 		(exclude_from_sim no)
 		(at -97.282 181.61 0)
 		(effects

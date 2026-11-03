@@ -1386,7 +1386,7 @@
 		(layer "F.Cu")
 		(uuid "11e2e41a-e503-46e5-acce-56ea21301585")
 		(at 148.4 100.5)
-		(descr "Kingbright KPTL-3216 reverse-mount 1206 LED. Pin 1 cathode (left), pin 2 anode (right). Pads sit outside a 1.5 mm center hole so the lens can shine through the board. Confirm the land against the Kingbright drawing when placing.")
+		(descr "Kingbright KPTL-3216 reverse-mount 1206 LED. Pin 1 cathode (left), pin 2 anode (right). Pads sit outside a 1.6 mm center hole so the lens can shine through the board. Confirm the land against the Kingbright drawing when placing.")
 		(tags "LED reverse-mount KPTL-3216 1206")
 		(property "Reference" "D13"
 			(at 0 -1.8 0)
@@ -2112,7 +2112,7 @@
 		(layer "F.Cu")
 		(uuid "15077add-b256-4d38-a8ae-1a7b2a92e722")
 		(at 106.625 67.375)
-		(descr "LED reflector / light pipe. Plated through hole, 1.5 mm drill, 2.1 mm pad. Not filled, not tented, solder mask open on both sides so the barrel and annular ring stay bare copper. No net. JLCPCB standard PTH: annular ring 0.3 mm, no via fill, no plugging.")
+		(descr "LED reflector / light pipe. Plated through hole, 1.6 mm finished drill, 2.1 mm pad (0.25 mm annular ring). Not filled, not tented, solder mask open on both sides so the barrel and annular ring stay bare copper. No net. JLCPCB standard PTH, no via fill, no plugging.")
 		(tags "mountinghole LED reflector light pipe PTH")
 		(property "Reference" "H_LED2"
 			(at 0 -1.9 0)
@@ -2174,7 +2174,7 @@
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
-			(end 1.5 0)
+			(end 1.6 0)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -2208,7 +2208,7 @@
 		(pad "1" thru_hole circle
 			(at 0 0)
 			(size 2.1 2.1)
-			(drill 1.5)
+			(drill 1.6)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(H_LED2-Pad1)")
@@ -2640,7 +2640,7 @@
 		(layer "F.Cu")
 		(uuid "16bb0c3f-55dc-4c9c-8234-c7c095c6c5c9")
 		(at 137.25 105.1)
-		(descr "Kingbright KPTL-3216 reverse-mount 1206 LED. Pin 1 cathode (left), pin 2 anode (right). Pads sit outside a 1.5 mm center hole so the lens can shine through the board. Confirm the land against the Kingbright drawing when placing.")
+		(descr "Kingbright KPTL-3216 reverse-mount 1206 LED. Pin 1 cathode (left), pin 2 anode (right). Pads sit outside a 1.6 mm center hole so the lens can shine through the board. Confirm the land against the Kingbright drawing when placing.")
 		(tags "LED reverse-mount KPTL-3216 1206")
 		(property "Reference" "D14"
 			(at 0 -1.8 0)
@@ -7084,7 +7084,7 @@
 		(layer "F.Cu")
 		(uuid "479c26fb-bb3e-4415-b32c-71566b4dd254")
 		(at 171.75 93.1)
-		(descr "Kingbright KPTL-3216 reverse-mount 1206 LED. Pin 1 cathode (left), pin 2 anode (right). Pads sit outside a 1.5 mm center hole so the lens can shine through the board. Confirm the land against the Kingbright drawing when placing.")
+		(descr "Kingbright KPTL-3216 reverse-mount 1206 LED. Pin 1 cathode (left), pin 2 anode (right). Pads sit outside a 1.6 mm center hole so the lens can shine through the board. Confirm the land against the Kingbright drawing when placing.")
 		(tags "LED reverse-mount KPTL-3216 1206")
 		(property "Reference" "D11"
 			(at 0 -1.8 0)
@@ -7898,7 +7898,7 @@
 		(layer "F.Cu")
 		(uuid "48d3fcc4-6ceb-4035-be0f-c45243a957d2")
 		(at 144.2 93.6)
-		(descr "Kingbright KPTL-3216 reverse-mount 1206 LED. Pin 1 cathode (left), pin 2 anode (right). Pads sit outside a 1.5 mm center hole so the lens can shine through the board. Confirm the land against the Kingbright drawing when placing.")
+		(descr "Kingbright KPTL-3216 reverse-mount 1206 LED. Pin 1 cathode (left), pin 2 anode (right). Pads sit outside a 1.6 mm center hole so the lens can shine through the board. Confirm the land against the Kingbright drawing when placing.")
 		(tags "LED reverse-mount KPTL-3216 1206")
 		(property "Reference" "D12"
 			(at 0 -1.8 0)
@@ -16661,7 +16661,7 @@
 		(layer "F.Cu")
 		(uuid "cdf8c990-fc36-45bd-ac36-8be93220caf0")
 		(at 94.1 63.2)
-		(descr "LED reflector / light pipe. Plated through hole, 1.5 mm drill, 2.1 mm pad. Not filled, not tented, solder mask open on both sides so the barrel and annular ring stay bare copper. No net. JLCPCB standard PTH: annular ring 0.3 mm, no via fill, no plugging.")
+		(descr "LED reflector / light pipe. Plated through hole, 1.6 mm finished drill, 2.1 mm pad (0.25 mm annular ring). Not filled, not tented, solder mask open on both sides so the barrel and annular ring stay bare copper. No net. JLCPCB standard PTH, no via fill, no plugging.")
 		(tags "mountinghole LED reflector light pipe PTH")
 		(property "Reference" "H_LED1"
 			(at 0 -1.9 0)
@@ -16723,7 +16723,7 @@
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
-			(end 1.5 0)
+			(end 1.6 0)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -16757,7 +16757,7 @@
 		(pad "1" thru_hole circle
 			(at 0 0)
 			(size 2.1 2.1)
-			(drill 1.5)
+			(drill 1.6)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(H_LED1-Pad1)")
@@ -20655,7 +20655,7 @@
 		(layer "B.Cu")
 		(uuid "9aba412d-89bf-45e5-bef1-88d3900c6644")
 		(at 148.4 100.5)
-		(descr "LED reflector / light pipe. Plated through hole, 1.5 mm drill, 2.1 mm pad. Not filled, not tented, solder mask open on both sides so the barrel and annular ring stay bare copper. No net. JLCPCB standard PTH: annular ring 0.3 mm, no via fill, no plugging.")
+		(descr "LED reflector / light pipe. Plated through hole, 1.6 mm finished drill, 2.1 mm pad (0.25 mm annular ring). Not filled, not tented, solder mask open on both sides so the barrel and annular ring stay bare copper. No net. JLCPCB standard PTH, no via fill, no plugging.")
 		(tags "mountinghole LED reflector light pipe PTH")
 		(property "Reference" "H_LED3"
 			(at 0 1.9 180)
@@ -20721,7 +20721,7 @@
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
-			(end 1.5 0)
+			(end 1.6 0)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -20756,7 +20756,7 @@
 		(pad "1" thru_hole circle
 			(at 0 0)
 			(size 2.1 2.1)
-			(drill 1.5)
+			(drill 1.6)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(H_LED3-Pad1)")
@@ -20771,7 +20771,7 @@
 		(layer "B.Cu")
 		(uuid "b56616e0-0906-4738-972f-7b28744c581a")
 		(at 144.2 93.6)
-		(descr "LED reflector / light pipe. Plated through hole, 1.5 mm drill, 2.1 mm pad. Not filled, not tented, solder mask open on both sides so the barrel and annular ring stay bare copper. No net. JLCPCB standard PTH: annular ring 0.3 mm, no via fill, no plugging.")
+		(descr "LED reflector / light pipe. Plated through hole, 1.6 mm finished drill, 2.1 mm pad (0.25 mm annular ring). Not filled, not tented, solder mask open on both sides so the barrel and annular ring stay bare copper. No net. JLCPCB standard PTH, no via fill, no plugging.")
 		(tags "mountinghole LED reflector light pipe PTH")
 		(property "Reference" "H_LED4"
 			(at 0 1.9 180)
@@ -20837,7 +20837,7 @@
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
-			(end 1.5 0)
+			(end 1.6 0)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -20872,7 +20872,7 @@
 		(pad "1" thru_hole circle
 			(at 0 0)
 			(size 2.1 2.1)
-			(drill 1.5)
+			(drill 1.6)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(H_LED4-Pad1)")

@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-	(descr "Kingbright KPTL-3216 reverse-mount 1206 LED. Pin 1 cathode (left), pin 2 anode (right). Pads sit outside a 1.5 mm center hole so the lens can shine through the board. Confirm the land against the Kingbright drawing when placing.")
+	(descr "Kingbright KPTL-3216 reverse-mount 1206 LED. Pin 1 cathode (left), pin 2 anode (right). Pads sit outside a 1.6 mm center hole so the lens can shine through the board. Confirm the land against the Kingbright drawing when placing.")
 	(tags "LED reverse-mount KPTL-3216 1206")
 	(property "Reference" "REF**"
 		(at 0 -1.8 0)
