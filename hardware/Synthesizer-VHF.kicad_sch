@@ -7086,7 +7086,7 @@
 		(uuid "1136b611-5a85-42bc-ac13-9fd6dd17e3a9")
 	)
 	(no_connect
-		(at 91.44 179.07)
+		(at 72.39 179.07)
 		(uuid "1d6bc1dd-be7d-477a-8844-67ec014df1d4")
 	)
 	(no_connect
@@ -7106,7 +7106,7 @@
 		(uuid "51a6e40d-fa4d-48c9-97a8-3930ee5234ca")
 	)
 	(no_connect
-		(at 109.22 179.07)
+		(at 116.84 179.07)
 		(uuid "62f88014-813b-42bb-8e78-5379640ba678")
 	)
 	(no_connect
@@ -7897,7 +7897,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 160.02) (xy 101.6 166.37)
+			(xy 100.33 160.02) (xy 100.33 166.37)
 		)
 		(stroke
 			(width 0)
@@ -8407,7 +8407,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 160.02) (xy 101.6 160.02)
+			(xy 66.04 160.02) (xy 100.33 160.02)
 		)
 		(stroke
 			(width 0)
@@ -12236,7 +12236,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 101.6 175.26 90)
+		(at 100.33 175.26 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12246,7 +12246,7 @@
 		(dnp no)
 		(uuid "28d5e852-e569-4f08-8cff-8c00bb531872")
 		(property "Reference" "D12"
-			(at 103.886 175.006 0)
+			(at 104.394 173.736 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12256,7 +12256,7 @@
 			)
 		)
 		(property "Value" "REF LOCK"
-			(at 98.806 175.514 0)
+			(at 107.188 176.022 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12266,7 +12266,7 @@
 			)
 		)
 		(property "Footprint" "Synthesizer:LED_KPTL-3216_ReverseMount"
-			(at 101.6 175.26 0)
+			(at 100.33 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12277,7 +12277,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 175.26 0)
+			(at 100.33 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12288,7 +12288,7 @@
 			)
 		)
 		(property "Description" "REF LOCK red reverse-mount (KPTL-3216SURCK-01)"
-			(at 101.6 175.26 0)
+			(at 100.33 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12299,7 +12299,7 @@
 			)
 		)
 		(property "LCSC" "C598393"
-			(at 101.6 175.26 0)
+			(at 100.33 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14545,7 +14545,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 109.22 176.53 0)
+		(at 116.84 176.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14555,7 +14555,7 @@
 		(dnp no)
 		(uuid "44b2dcb9-bd21-4fae-9f4b-a29458a60f79")
 		(property "Reference" "H_LED4"
-			(at 109.22 171.45 0)
+			(at 116.84 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14565,7 +14565,7 @@
 			)
 		)
 		(property "Value" "LED reflector"
-			(at 109.22 181.61 0)
+			(at 116.84 181.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14575,7 +14575,7 @@
 			)
 		)
 		(property "Footprint" "Synthesizer:MountingHole_1.5mm_Pad"
-			(at 109.22 176.53 0)
+			(at 116.84 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14586,7 +14586,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 176.53 0)
+			(at 116.84 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14597,7 +14597,7 @@
 			)
 		)
 		(property "Description" "LED reflector hole: PTH, no fill, no mask, bare copper. Not on a net."
-			(at 109.22 176.53 0)
+			(at 116.84 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14776,7 +14776,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 101.6 168.91 0)
+		(at 100.33 168.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14786,7 +14786,7 @@
 		(dnp no)
 		(uuid "4f558fd4-f3e1-4348-b274-b8f9683607f7")
 		(property "Reference" "R38"
-			(at 103.886 166.878 90)
+			(at 102.616 166.878 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14796,7 +14796,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 103.886 170.688 90)
+			(at 102.616 170.688 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14806,7 +14806,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 101.6 168.91 0)
+			(at 100.33 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14817,7 +14817,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 168.91 0)
+			(at 100.33 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14828,7 +14828,7 @@
 			)
 		)
 		(property "Description" "REF LOCK LED resistor, about 1.2 mA from 3.3 V"
-			(at 101.6 168.91 0)
+			(at 100.33 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14839,7 +14839,7 @@
 			)
 		)
 		(property "LCSC" "C11702"
-			(at 101.6 168.91 0)
+			(at 100.33 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14850,7 +14850,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 101.6 168.91 0)
+			(at 100.33 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15850,7 +15850,7 @@
 		(dnp no)
 		(uuid "5f006384-aa79-4941-9683-5f6cec662939")
 		(property "Reference" "D13"
-			(at 85.09 175.514 0)
+			(at 86.614 173.736 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15860,7 +15860,7 @@
 			)
 		)
 		(property "Value" "SYNTH LOCK"
-			(at 79.502 175.514 0)
+			(at 90.678 176.53 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16601,6 +16601,96 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "#PWR087")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 91.44 212.09 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6b883991-8332-4b1b-8ffd-05b009ebe7f7")
+		(property "Reference" "D15"
+			(at 95.25 210.566 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 95.25 213.106 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Synthesizer:LED_KPTL-3216_ReverseMount"
+			(at 91.44 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "COMM green reverse-mount, CBUS2 active low (KPTL-3216CGCK-01)"
+			(at 91.44 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C598390"
+			(at 91.44 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "eaa1a7b6-e05c-43e9-9924-ff0820dd6753")
+		)
+		(pin "1"
+			(uuid "0eb6e5c3-3c85-4ceb-af34-fae5af112202")
+		)
+		(instances
+			(project "Synthesizer-VHF"
+				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
+					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -20582,7 +20672,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 101.6 179.07 0)
+		(at 100.33 179.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20593,7 +20683,7 @@
 		(fields_autoplaced yes)
 		(uuid "a7e96a2c-e604-417c-8a47-2fbb72f5121a")
 		(property "Reference" "#PWR0237"
-			(at 101.6 185.42 0)
+			(at 100.33 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20604,7 +20694,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 101.6 181.61 0)
+			(at 100.33 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20615,7 +20705,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 101.6 179.07 0)
+			(at 100.33 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20626,7 +20716,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 179.07 0)
+			(at 100.33 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20637,7 +20727,7 @@
 			)
 		)
 		(property "Description" "GND"
-			(at 101.6 179.07 0)
+			(at 100.33 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21852,97 +21942,6 @@
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
 					(reference "C24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 91.44 212.09 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b9ba21ae-78dc-4784-b53a-f229c3354a56")
-		(property "Reference" "D3"
-			(at 94.488 210.566 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "blue"
-			(at 95.758 212.09 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
-			(at 91.44 212.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 212.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 91.44 212.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C364550"
-			(at 215.9 278.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "1609da2d-5338-4955-bf9e-6859c2f70adc")
-		)
-		(pin "1"
-			(uuid "897d90a1-927a-4c6a-9f53-dafe3d40ca18")
-		)
-		(instances
-			(project "Synthesizer-VHF"
-				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -25292,7 +25291,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 91.44 176.53 0)
+		(at 72.39 176.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25302,7 +25301,7 @@
 		(dnp no)
 		(uuid "e78faa6c-4149-4f60-acba-af6ccde9999d")
 		(property "Reference" "H_LED3"
-			(at 91.44 171.45 0)
+			(at 72.39 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25312,7 +25311,7 @@
 			)
 		)
 		(property "Value" "LED reflector"
-			(at 91.44 181.61 0)
+			(at 72.39 181.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25322,7 +25321,7 @@
 			)
 		)
 		(property "Footprint" "Synthesizer:MountingHole_1.5mm_Pad"
-			(at 91.44 176.53 0)
+			(at 72.39 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25333,7 +25332,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 176.53 0)
+			(at 72.39 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25344,7 +25343,7 @@
 			)
 		)
 		(property "Description" "LED reflector hole: PTH, no fill, no mask, bare copper. Not on a net."
-			(at 91.44 176.53 0)
+			(at 72.39 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
