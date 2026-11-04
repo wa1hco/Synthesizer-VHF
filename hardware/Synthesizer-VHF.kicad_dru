@@ -3,6 +3,10 @@
 # Boss keepouts allow pads and footprints in the zone so these rules can
 # make the exceptions. Tracks and vias stay banned by the zones. These
 # rules are first so they are the ones DRC applies.
+(rule "Top placement: no footprints except mounting holes"
+	(constraint disallow footprint)
+	(condition "A.intersectsArea('KO_TOP_PLACEMENT') && A.Type == 'footprint' && A.Reference != 'H1' && A.Reference != 'H2' && A.Reference != 'H3' && A.Reference != 'H4'"))
+
 (rule "Front boss: no footprints except mounting holes"
 	(constraint disallow footprint)
 	(condition "A.intersectsArea('KO_BOSS_F') && A.Type == 'footprint' && A.Reference != 'H1' && A.Reference != 'H2' && A.Reference != 'H3' && A.Reference != 'H4'"))
