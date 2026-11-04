@@ -159,19 +159,8 @@
 	(constraint thermal_relief_gap (min 0.3mm) (opt 0.3mm))
 	(constraint thermal_spoke_width (min 0.4mm) (opt 0.4mm)))
 
-# USB-C J4 hangs over the board edge into the milled box slot; exempt only J1 (USB-C) from edge clearance.
-# A.Parent.Reference is a syntax error: the expression '.' operator does not chain.
-# Reference on a pad or graphic resolves to its parent footprint, and memberOfFootprint
-# covers the same children, so both the footprint and its copper are exempt.
-# Also exclude J4's "courtyard outside board" DRC marker once (right-click > Exclude).
-(rule "J1 USB-C overhang"
-	(condition "A.Reference == 'J1' || A.memberOfFootprint('J1')")
-	(constraint edge_clearance (min 0mm)))
-
-# Each reflector hole may overlap only its own LED. This is not a global waiver.
-# H_LED4/D5, H_LED2/D3, H_LED1/D1, H_LED3/D4 (same parts after reannotation).
-# Courtyard overlap is allowed for that pair. Hole-to-copper clearance is the
-# JLCPCB minimum, 0.2 mm. Reference matches the footprint and its pads.
+# USB-C J1 (was J4) is on F.Cu and sits 3.5 mm inside the 1550Q outline, so it
+# no longer needs an edge-clearance exemption.
 (rule "LED reflector and its own LED"
 	(condition "(A.Reference == 'H_LED4' && B.Reference == 'D5') || (A.Reference == 'H_LED2' && B.Reference == 'D3') || (A.Reference == 'H_LED1' && B.Reference == 'D1') || (A.Reference == 'H_LED3' && B.Reference == 'D4')")
 	(constraint courtyard_clearance (min -3mm))
