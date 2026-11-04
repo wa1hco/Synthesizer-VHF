@@ -21789,7 +21789,7 @@
 		(layer "Dwgs.User")
 		(uuid "1951bb80-3506-4dde-9d0f-00000c0b7306")
 		(pts
-			(xy 128.75 69.55) (xy 179.3 69.55)
+			(xy 129.025 67.35) (xy 179.0249 67.35)
 		)
 		(height -6)
 		(format
@@ -21808,8 +21808,8 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "50.55 mm"
-			(at 154.025 62.4 0)
+		(gr_text "50.00 mm"
+			(at 154.02495 60.2 0)
 			(layer "Dwgs.User")
 			(uuid "1951bb80-3506-4dde-9d0f-00000c0b7306")
 			(effects
@@ -21825,9 +21825,9 @@
 		(layer "Dwgs.User")
 		(uuid "3b73235e-e7fc-4153-ba44-14c147cf6f13")
 		(pts
-			(xy 128.75 74.6) (xy 128.75 115.1)
+			(xy 129.0251 72.3501) (xy 129.025 117.35)
 		)
-		(height 5)
+		(height 7.4)
 		(format
 			(prefix "")
 			(suffix "")
@@ -21844,8 +21844,8 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "40.50 mm"
-			(at 122.6 94.85 90)
+		(gr_text "45.00 mm"
+			(at 120.47505 94.850031 89.99987268)
 			(layer "Dwgs.User")
 			(uuid "3b73235e-e7fc-4153-ba44-14c147cf6f13")
 			(effects
@@ -21861,9 +21861,9 @@
 		(layer "Dwgs.User")
 		(uuid "5570f665-9d88-4aff-8062-21c1bdc6ec28")
 		(pts
-			(xy 133.775 120.15) (xy 174.275 120.15)
+			(xy 129.0251 117.3499) (xy 179.0249 117.3499)
 		)
-		(height 14.2)
+		(height 8.9001)
 		(format
 			(prefix "")
 			(suffix "")
@@ -21880,8 +21880,8 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "40.50 mm"
-			(at 154.025 133.2 0)
+		(gr_text "50.00 mm"
+			(at 154.025 125.1 0)
 			(layer "Dwgs.User")
 			(uuid "5570f665-9d88-4aff-8062-21c1bdc6ec28")
 			(effects
@@ -21897,7 +21897,7 @@
 		(layer "Dwgs.User")
 		(uuid "b209655a-b716-40e4-832c-fb78fb067f25")
 		(pts
-			(xy 179.3 69.55) (xy 179.3 120.15)
+			(xy 184.025 72.35) (xy 184.025 117.35)
 		)
 		(height -6)
 		(format
@@ -21916,8 +21916,8 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "50.60 mm"
-			(at 184.15 94.85 90)
+		(gr_text "45.00 mm"
+			(at 188.875 94.85 90)
 			(layer "Dwgs.User")
 			(uuid "b209655a-b716-40e4-832c-fb78fb067f25")
 			(effects
