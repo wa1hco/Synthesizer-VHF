@@ -10106,7 +10106,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0115ddec-3cbb-44d0-a4c4-5743ef309468")
-		(property "Reference" "C33"
+		(property "Reference" "C16"
 			(at 252.476 85.344 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10192,7 +10192,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C33")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -10210,7 +10210,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01aede01-7baa-4c91-bd55-8f69bb59c9c7")
-		(property "Reference" "#PWR0219"
+		(property "Reference" "#PWR030"
 			(at 137.16 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -10271,7 +10271,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR0219")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -10288,7 +10288,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "039ccd69-a2bb-4429-ba62-b9101bc44c64")
-		(property "Reference" "R39"
+		(property "Reference" "R8"
 			(at 85.09 166.878 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10372,7 +10372,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R39")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -10389,7 +10389,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0499cbd1-5509-4d78-a083-b874ef2def53")
-		(property "Reference" "C18"
+		(property "Reference" "C26"
 			(at 294.386 131.826 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10475,7 +10475,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C18")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -10493,7 +10493,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "075ce2b8-6679-4133-92a7-8da39bb828ed")
-		(property "Reference" "#PWR213"
+		(property "Reference" "#PWR07"
 			(at 45.72 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10554,7 +10554,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR213")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -10571,7 +10571,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "07a0190b-fafa-47c8-9e07-3e5d88f7f3f2")
-		(property "Reference" "C42"
+		(property "Reference" "C7"
 			(at 69.088 202.438 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10661,7 +10661,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C42")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -10678,7 +10678,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "08227a55-d62e-4c14-b5ce-3de7d0c25eea")
-		(property "Reference" "C41"
+		(property "Reference" "C4"
 			(at 55.118 202.184 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10768,7 +10768,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C41")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -10785,7 +10785,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "08b0ed23-fee4-4429-8c22-3cb8210460e9")
-		(property "Reference" "TP2"
+		(property "Reference" "TP7"
 			(at 335.026 156.21 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10856,7 +10856,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "TP2")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -10874,7 +10874,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b1bf6c6-2c0c-468a-9454-58f720dd150f")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR051"
 			(at 288.29 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -10935,7 +10935,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR02")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -10953,7 +10953,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0bad17c2-f182-42b5-94b2-a361410d4625")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR063"
 			(at 325.12 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -11014,7 +11014,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR027")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -11032,7 +11032,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "0c428903-4e79-428a-a721-66457cc5962d")
-		(property "Reference" "R18"
+		(property "Reference" "R24"
 			(at 332.232 201.676 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11105,7 +11105,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R18")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -11122,7 +11122,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0cc8a069-d45c-44d4-be09-aaca3a0b0a3c")
-		(property "Reference" "R52"
+		(property "Reference" "R6"
 			(at 71.628 95.758 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11206,7 +11206,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R52")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -11224,7 +11224,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "11a82fbf-c02e-4e1b-88ac-b689f826f2f2")
-		(property "Reference" "#PWR307"
+		(property "Reference" "#PWR029"
 			(at 132.08 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -11285,7 +11285,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR307")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -11303,7 +11303,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13f8c88a-677e-41eb-abe1-ff3ed46f9919")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR03"
 			(at 26.67 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -11364,7 +11364,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR061")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -11382,7 +11382,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "151800cb-838b-4af5-babf-40aadc69c161")
-		(property "Reference" "#PWR304"
+		(property "Reference" "#PWR022"
 			(at 91.44 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -11443,7 +11443,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR304")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -11460,7 +11460,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "15d1aacd-da66-4de2-8cdb-aff919ae2daa")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR014"
 			(at 68.58 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -11526,7 +11526,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR078")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -11544,7 +11544,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "160ca943-6ae3-471d-86b7-01c11ad25443")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR043"
 			(at 271.78 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -11605,7 +11605,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR010")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -11622,7 +11622,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "16381ae8-6810-4759-9ba7-c0cffe76e6bf")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR056"
 			(at 302.26 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -11681,7 +11681,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR084")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -11699,7 +11699,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "169a2db7-8097-4454-884f-452177a11ace")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR067"
 			(at 342.9 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -11761,7 +11761,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR06")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -11779,7 +11779,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1997b2ff-147a-49fc-98d0-077ba8ea900c")
-		(property "Reference" "C12"
+		(property "Reference" "C37"
 			(at 375.412 164.846 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11865,7 +11865,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C12")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -11883,7 +11883,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b087961-72f9-47a1-b5f1-8393146fbb7a")
-		(property "Reference" "#PWR306"
+		(property "Reference" "#PWR032"
 			(at 149.86 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -11944,7 +11944,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR306")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -12062,7 +12062,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "22314c5a-d076-47c3-a4c1-b7e999312cf7")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR017"
 			(at 74.93 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -12128,7 +12128,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR079")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -12147,7 +12147,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "251686eb-4b3d-4011-99df-f6e15b9357a4")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR059"
 			(at 308.61 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -12208,7 +12208,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR038")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -12225,7 +12225,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "28d5e852-e569-4f08-8cff-8c00bb531872")
-		(property "Reference" "D12"
+		(property "Reference" "D3"
 			(at 104.394 173.736 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12298,7 +12298,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "D12")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -12315,7 +12315,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2a986750-a1ad-451c-a899-324dab7b0ad2")
-		(property "Reference" "C11"
+		(property "Reference" "C10"
 			(at 80.772 240.03 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12401,7 +12401,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C11")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -12418,7 +12418,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2b9f8eb7-175a-4716-a5a2-810176160976")
-		(property "Reference" "R55"
+		(property "Reference" "R14"
 			(at 101.854 51.308 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12502,7 +12502,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R55")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -12520,7 +12520,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c00ac18-5b34-4c29-ba27-f721852c41e7")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR046"
 			(at 271.78 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -12581,7 +12581,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR025")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -12599,7 +12599,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2c85248a-c99e-4906-9439-fe79a5765372")
-		(property "Reference" "C28"
+		(property "Reference" "C27"
 			(at 298.45 136.906 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12685,7 +12685,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C28")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -12702,7 +12702,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2db295d0-0276-4fbf-aaaa-5e10d2e0d3c9")
-		(property "Reference" "#FLG0202"
+		(property "Reference" "#FLG01"
 			(at 30.48 251.46 0)
 			(hide yes)
 			(show_name no)
@@ -12763,7 +12763,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#FLG0202")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -12781,7 +12781,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e53f1b0-4c8f-4ddb-a783-abdea03f3548")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR068"
 			(at 344.17 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -12842,7 +12842,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR029")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -12859,7 +12859,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2f77409b-9bc8-4114-82ad-1163ee1e3220")
-		(property "Reference" "C62"
+		(property "Reference" "C6"
 			(at 67.056 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12943,7 +12943,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C62")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -12961,7 +12961,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "31e75dde-38f4-41e1-bc6c-0f276ae2fbd6")
-		(property "Reference" "R1"
+		(property "Reference" "R3"
 			(at 42.418 222.504 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13045,7 +13045,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R1")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -13062,7 +13062,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "33e68d17-cfd3-4b24-96b4-c460356edfd4")
-		(property "Reference" "TP3"
+		(property "Reference" "TP2"
 			(at 85.344 132.08 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13133,7 +13133,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "TP3")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -13151,7 +13151,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "348b73f0-cd12-4b0b-adb0-193c0240bf31")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR047"
 			(at 279.4 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -13213,7 +13213,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR094")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -13230,7 +13230,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "359594b3-f2fd-4e76-ba30-5b4825c54f49")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG02"
 			(at 49.53 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -13291,7 +13291,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#FLG05")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -13309,7 +13309,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3636b81e-ce2d-4675-903c-162d753f31ee")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR034"
 			(at 251.46 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -13371,7 +13371,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR093")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -13389,7 +13389,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "367f1653-a80f-46cd-b0c1-bef876b9f130")
-		(property "Reference" "C7"
+		(property "Reference" "C12"
 			(at 99.06 241.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13475,7 +13475,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C7")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -13493,7 +13493,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36ddbcf0-c4b1-42d4-92f1-d758a04c6618")
-		(property "Reference" "U8"
+		(property "Reference" "U7"
 			(at 266.7 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13586,7 +13586,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "U8")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -13603,7 +13603,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "392b8913-f203-421b-92e8-8d1c8adca5e5")
-		(property "Reference" "C36"
+		(property "Reference" "C19"
 			(at 266.192 185.674 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13689,7 +13689,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C36")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -13707,7 +13707,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ae7acef-a568-4a9d-beeb-467bfe3b3fa2")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR010"
 			(at 54.61 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -13768,7 +13768,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR064")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -13785,7 +13785,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3b80e7a4-68d2-4ee4-a454-ac98aa05a036")
-		(property "Reference" "R48"
+		(property "Reference" "R19"
 			(at 257.81 165.354 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13870,7 +13870,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R48")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -13887,7 +13887,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3c710d7f-e343-417d-b672-e0980c9075a0")
-		(property "Reference" "C17"
+		(property "Reference" "C34"
 			(at 351.028 191.008 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13973,7 +13973,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C17")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -13992,7 +13992,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ef1950c-32eb-4bfa-8fbe-6170afa37bfd")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR061"
 			(at 313.69 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -14053,7 +14053,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR070")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -14070,7 +14070,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "40ceaba5-526b-4671-89dd-b5c17b263263")
-		(property "Reference" "R47"
+		(property "Reference" "R20"
 			(at 268.224 160.02 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14155,7 +14155,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R47")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -14173,7 +14173,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "40d60b06-69ad-4039-97c0-fd83a0aa07c0")
-		(property "Reference" "#PWR300"
+		(property "Reference" "#PWR02"
 			(at 22.86 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -14234,7 +14234,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR300")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -14354,7 +14354,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "41378dc3-9b1d-445d-871b-d978a88e05ae")
-		(property "Reference" "R25"
+		(property "Reference" "R29"
 			(at 354.838 187.706 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14438,7 +14438,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R25")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -14456,7 +14456,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "430d8ba5-83f2-4fb5-bda8-b41c719eedeb")
-		(property "Reference" "#PWR305"
+		(property "Reference" "#PWR031"
 			(at 139.7 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -14517,7 +14517,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR305")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -14534,7 +14534,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "44b2dcb9-bd21-4fae-9f4b-a29458a60f79")
-		(property "Reference" "H_LED4"
+		(property "Reference" "H_LED3"
 			(at 116.84 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14593,7 +14593,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "H_LED4")
+					(reference "H_LED3")
 					(unit 1)
 				)
 			)
@@ -14687,7 +14687,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ec6b3a9-4454-4a84-b104-0da96e6cb24c")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR024"
 			(at 95.25 254 0)
 			(hide yes)
 			(show_name no)
@@ -14748,7 +14748,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR071")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -14765,7 +14765,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4f558fd4-f3e1-4348-b274-b8f9683607f7")
-		(property "Reference" "R38"
+		(property "Reference" "R12"
 			(at 102.616 166.878 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14849,7 +14849,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R38")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -14867,7 +14867,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4fda1eb0-8fa9-4955-876f-29577c03c229")
-		(property "Reference" "R9"
+		(property "Reference" "R11"
 			(at 94.488 203.454 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14951,7 +14951,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R9")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -14969,7 +14969,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "560e3b65-98c6-47f9-9c46-57a8a8fe1dbb")
-		(property "Reference" "#PWR302"
+		(property "Reference" "#PWR013"
 			(at 68.58 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -15030,7 +15030,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR302")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -15047,7 +15047,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5645507b-5812-4435-bdb1-e1d57ee75df5")
-		(property "Reference" "#FLG201"
+		(property "Reference" "#FLG04"
 			(at 322.58 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -15108,7 +15108,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#FLG201")
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -15125,7 +15125,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "58134321-c354-484f-a0a5-c3ee93014555")
-		(property "Reference" "U13"
+		(property "Reference" "U3"
 			(at 80.264 40.132 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15229,7 +15229,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "U13")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -15246,7 +15246,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "58610195-ffce-4f7e-9fe5-eacde03b6fd4")
-		(property "Reference" "C63"
+		(property "Reference" "C14"
 			(at 139.446 209.804 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15330,7 +15330,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C63")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -15347,7 +15347,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5931acd5-a8e0-4bb6-95ed-d7e0ed378dce")
-		(property "Reference" "C43"
+		(property "Reference" "C9"
 			(at 75.692 202.438 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15437,7 +15437,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C43")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -15455,7 +15455,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59a74c56-a310-4d36-8164-50cba79e785e")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR072"
 			(at 392.43 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -15517,7 +15517,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR04")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -15535,7 +15535,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b7c7c6a-8390-48ab-9533-adaffe394d3a")
-		(property "Reference" "J4"
+		(property "Reference" "J1"
 			(at 26.67 208.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15653,7 +15653,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "J4")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -15671,7 +15671,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ce6d9e0-6e8d-401a-8b5c-2aec55dd1222")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR08"
 			(at 50.8 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -15732,7 +15732,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR062")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -15751,7 +15751,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d0a1115-77d2-40bb-9ab7-93fb17a62bf6")
-		(property "Reference" "#PWR109"
+		(property "Reference" "#PWR05"
 			(at 38.1 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -15812,7 +15812,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR109")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -15829,7 +15829,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5f006384-aa79-4941-9683-5f6cec662939")
-		(property "Reference" "D13"
+		(property "Reference" "D1"
 			(at 86.614 173.736 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15902,7 +15902,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "D13")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -15920,7 +15920,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5fcbe7b0-2328-41a3-a80e-9d858da99f5d")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR052"
 			(at 288.29 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -15981,7 +15981,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR05")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -15999,7 +15999,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6348a1a2-31c4-46d7-8995-3b876e8d4b73")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR073"
 			(at 392.43 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -16060,7 +16060,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR042")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -16077,7 +16077,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "643dd1d5-8fbc-4063-a973-b500ad7ec7e4")
-		(property "Reference" "R3"
+		(property "Reference" "R2"
 			(at 42.164 219.964 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16161,7 +16161,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R3")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -16254,7 +16254,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "661822cd-b11b-488c-b129-ab03c68bb77d")
-		(property "Reference" "R41"
+		(property "Reference" "R1"
 			(at 49.276 46.736 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16349,7 +16349,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R41")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -16367,7 +16367,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69d0436a-cb9a-48dc-beb0-9b0115d716da")
-		(property "Reference" "U3"
+		(property "Reference" "U1"
 			(at 52.9941 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16500,7 +16500,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "U3")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -16518,7 +16518,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6af2ce46-808f-4743-83e9-3fb852caf967")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR042"
 			(at 266.7 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -16580,7 +16580,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR087")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -16597,7 +16597,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6b883991-8332-4b1b-8ffd-05b009ebe7f7")
-		(property "Reference" "D15"
+		(property "Reference" "D2"
 			(at 95.25 210.566 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16670,7 +16670,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "D15")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -16687,7 +16687,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6cead588-d8f7-448b-9fa5-172275c571e6")
-		(property "Reference" "R14"
+		(property "Reference" "R25"
 			(at 353.568 199.644 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16771,7 +16771,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R14")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -16789,7 +16789,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d342637-a365-4a80-b592-43c0a58ebe93")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR033"
 			(at 251.46 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -16851,7 +16851,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR085")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -16868,7 +16868,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6ddf09fc-83bd-4210-bebf-a9062909808a")
-		(property "Reference" "R20"
+		(property "Reference" "R26"
 			(at 353.568 204.724 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16952,7 +16952,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R20")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -16970,7 +16970,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6e0fe8d4-1478-46e0-9e82-2664903d6436")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR049"
 			(at 283.21 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -17032,7 +17032,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR019")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -17049,7 +17049,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7006ae86-f986-406a-be82-fb953915a66e")
-		(property "Reference" "C15"
+		(property "Reference" "C33"
 			(at 339.852 151.384 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17135,7 +17135,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C15")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -17153,7 +17153,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "70cec6b3-0774-47bf-90a0-9607bd47db38")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR01"
 			(at 19.05 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -17214,7 +17214,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR059")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -17307,7 +17307,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "73a64b99-10d1-4c5a-8b50-57fe3c6baf0e")
-		(property "Reference" "C13"
+		(property "Reference" "C30"
 			(at 326.39 131.826 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17393,7 +17393,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C13")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -17411,7 +17411,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "761baa41-a19f-43a1-8fd0-dbb8b98dd261")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR048"
 			(at 279.4 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -17473,7 +17473,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR086")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -17491,7 +17491,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "766951ba-b56c-411c-bff9-9e2a7bbec876")
-		(property "Reference" "U6"
+		(property "Reference" "U8"
 			(at 266.7 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17584,7 +17584,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "U6")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -17602,7 +17602,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76a2f7d6-f4fe-4ee7-b0d1-d7c210c769e3")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR023"
 			(at 91.44 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -17663,7 +17663,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR065")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -17680,7 +17680,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "76ee3c48-4e27-43a5-b228-d745fdf490e4")
-		(property "Reference" "C66"
+		(property "Reference" "C1"
 			(at 24.892 80.264 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17764,7 +17764,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C66")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -17781,7 +17781,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7703e327-0e0a-445a-b40d-0e4c742d5206")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR036"
 			(at 256.54 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -17840,7 +17840,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR081")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -17857,7 +17857,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7a11fa30-f9f6-4da5-bc57-7c203eda8cde")
-		(property "Reference" "R40"
+		(property "Reference" "R17"
 			(at 151.638 249.174 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17941,7 +17941,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R40")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -17958,7 +17958,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7c321d29-ec39-4ca0-afa4-cfccc95860b6")
-		(property "Reference" "C20"
+		(property "Reference" "C32"
 			(at 343.154 190.754 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18044,7 +18044,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C20")
+					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -18061,7 +18061,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7deaa73e-38ac-45cb-a681-c71c3259d53d")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR050"
 			(at 287.02 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -18120,7 +18120,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR083")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -18138,7 +18138,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e996099-a591-4607-9d97-c51f77064531")
-		(property "Reference" "#PWR303"
+		(property "Reference" "#PWR019"
 			(at 81.28 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -18199,7 +18199,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR303")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -18217,7 +18217,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81ca3afd-91a2-45fd-9251-6794ab5fc523")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR012"
 			(at 64.77 245.11 0)
 			(hide yes)
 			(show_name no)
@@ -18278,7 +18278,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR080")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -18295,7 +18295,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "829dd954-61dc-4966-8b1b-ce1f4c888d46")
-		(property "Reference" "R24"
+		(property "Reference" "R9"
 			(at 90.424 228.6 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18379,7 +18379,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R24")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -18397,7 +18397,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86570b7e-ae44-47d6-9261-856df0df142a")
-		(property "Reference" "#PWR216"
+		(property "Reference" "#PWR011"
 			(at 63.5 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -18458,7 +18458,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR216")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -18476,7 +18476,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "865d86e1-e98c-43a6-ad42-608fdb97291f")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR062"
 			(at 325.12 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -18537,7 +18537,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR026")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -18554,7 +18554,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "87443be2-67a5-45e4-8cce-3cf7ca8c2bdc")
-		(property "Reference" "U4"
+		(property "Reference" "U9"
 			(at 289.56 144.526 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18722,7 +18722,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "U4")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -18740,7 +18740,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "87717bd6-6cd9-4a7e-8884-61529a5ad620")
-		(property "Reference" "J5"
+		(property "Reference" "J2"
 			(at 34.29 44.704 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18824,7 +18824,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "J5")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -18841,7 +18841,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "885f2f5d-611e-4710-83eb-a86f50e28a85")
-		(property "Reference" "J7"
+		(property "Reference" "J3"
 			(at 388.874 160.782 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18916,7 +18916,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "J7")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -18934,7 +18934,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "887f70ce-0ddc-4e34-99f7-4dad96293611")
-		(property "Reference" "#PWR0238"
+		(property "Reference" "#PWR020"
 			(at 82.55 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -18995,7 +18995,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR0238")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -19012,7 +19012,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8c7da768-6b01-422d-bf26-a2cad451f203")
-		(property "Reference" "TP7"
+		(property "Reference" "TP5"
 			(at 114.808 22.86 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19083,7 +19083,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "TP7")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -19100,7 +19100,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8c8a48f7-77dc-43dc-ac69-ed54ee809d7e")
-		(property "Reference" "C69"
+		(property "Reference" "C15"
 			(at 152.4 34.798 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19184,7 +19184,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C69")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -19201,7 +19201,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "923098ea-e7ce-4a83-a56e-bc7a988c1bad")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR09"
 			(at 54.61 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -19267,7 +19267,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR077")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -19284,7 +19284,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "92414644-4ac9-43fa-a1fc-b224c9472f26")
-		(property "Reference" "R53"
+		(property "Reference" "R15"
 			(at 135.382 60.198 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19368,7 +19368,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R53")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -19386,7 +19386,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "930c8fc0-0d70-4813-a86d-e4e8a8e2535a")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR04"
 			(at 27.94 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -19447,7 +19447,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR060")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -19465,7 +19465,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "942383f5-46fd-49df-9dc7-823b1343f003")
-		(property "Reference" "#PWR232"
+		(property "Reference" "#PWR035"
 			(at 250.19 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -19526,7 +19526,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR232")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -19543,7 +19543,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "99af3914-be32-4fb1-b7db-c4603859d18a")
-		(property "Reference" "C39"
+		(property "Reference" "C23"
 			(at 280.416 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19629,7 +19629,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C39")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -19647,7 +19647,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "99b6a8ba-e8b3-4f61-b356-487d0bff1524")
-		(property "Reference" "R23"
+		(property "Reference" "R27"
 			(at 349.504 151.638 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19731,7 +19731,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R23")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -19748,7 +19748,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9a1718a9-a4be-4b2f-8700-7065c7ae3552")
-		(property "Reference" "R49"
+		(property "Reference" "R21"
 			(at 267.97 167.894 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19833,7 +19833,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R49")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -19852,7 +19852,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a2d36af-b9ec-4472-8787-6adabc53e1ac")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR060"
 			(at 311.15 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -19913,7 +19913,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR058")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -19931,7 +19931,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9a50bcfa-ab07-4fba-bf5c-c7b4f1937da6")
-		(property "Reference" "C9"
+		(property "Reference" "C8"
 			(at 72.898 240.03 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20017,7 +20017,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C9")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -20034,7 +20034,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9b1e58c6-f77c-421b-9952-1233859f1763")
-		(property "Reference" "C67"
+		(property "Reference" "C5"
 			(at 59.69 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20118,7 +20118,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C67")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -20136,7 +20136,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9dae3c8d-0ac1-4a3e-a6e0-419e1e81c722")
-		(property "Reference" "#PWR215"
+		(property "Reference" "#PWR015"
 			(at 73.66 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -20197,7 +20197,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR215")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -20215,7 +20215,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4359f76-3ba7-40a4-b0dd-780868f0cce6")
-		(property "Reference" "U2"
+		(property "Reference" "U5"
 			(at 124.1141 214.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20347,7 +20347,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "U2")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -20365,7 +20365,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a4c9e134-1785-4c1c-b4cd-88914e3bfad8")
-		(property "Reference" "C21"
+		(property "Reference" "C29"
 			(at 309.118 137.16 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20451,7 +20451,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C21")
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -20468,7 +20468,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a6cea759-0800-41a0-b43e-7eed5dec226a")
-		(property "Reference" "D11"
+		(property "Reference" "D5"
 			(at 332.486 117.602 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20543,7 +20543,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "D11")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -20560,7 +20560,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a7878ce2-d2b6-41f6-bede-479bb0c7485f")
-		(property "Reference" "R50"
+		(property "Reference" "R4"
 			(at 56.642 75.184 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20644,7 +20644,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R50")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -20662,7 +20662,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7e96a2c-e604-417c-8a47-2fbb72f5121a")
-		(property "Reference" "#PWR0237"
+		(property "Reference" "#PWR025"
 			(at 100.33 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -20723,7 +20723,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR0237")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -20741,7 +20741,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a939d750-47f9-4e84-9f9e-5b23e37e2765")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR041"
 			(at 266.7 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -20803,7 +20803,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR089")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -20822,7 +20822,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9f71213-47d4-4e06-be69-d10af7941040")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR055"
 			(at 300.99 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -20883,7 +20883,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR014")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -20901,7 +20901,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aa0e74d4-12b1-47e2-a727-1559ea24ef7a")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR018"
 			(at 80.01 254 0)
 			(hide yes)
 			(show_name no)
@@ -20962,7 +20962,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR069")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -20979,7 +20979,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "acfb61c1-b4a8-4538-8405-8a89faaa30ea")
-		(property "Reference" "U15"
+		(property "Reference" "U6"
 			(at 129.794 37.592 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21076,7 +21076,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "U15")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -21094,7 +21094,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad3ffff6-a35f-44a8-a3a1-3540919e38e4")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR027"
 			(at 119.38 267.97 0)
 			(hide yes)
 			(show_name no)
@@ -21155,7 +21155,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR073")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -21172,7 +21172,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b1640dcb-7773-4d01-8118-b60ecf4817a3")
-		(property "Reference" "TP5"
+		(property "Reference" "TP4"
 			(at 91.186 17.526 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21242,7 +21242,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "TP5")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -21260,7 +21260,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b18f2b21-1ec2-4319-822b-8bccc3aa527c")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR071"
 			(at 377.19 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -21321,7 +21321,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR028")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -21339,7 +21339,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1a1a796-6656-457b-a09f-31020a11d593")
-		(property "Reference" "#PWR233"
+		(property "Reference" "#PWR039"
 			(at 259.08 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -21400,7 +21400,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR233")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -21417,7 +21417,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b3151bd0-d67d-4d77-b034-fd49d001c4a4")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR044"
 			(at 271.78 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -21476,7 +21476,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR082")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -21494,7 +21494,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3284fb5-5cbb-4a18-b67a-a908f5ccb36e")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR065"
 			(at 339.09 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -21555,7 +21555,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR07")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -21652,7 +21652,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b6b80577-64e6-4fd0-b19d-fd14c828254a")
-		(property "Reference" "C4"
+		(property "Reference" "C3"
 			(at 50.292 42.418 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21738,7 +21738,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C4")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -21757,7 +21757,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b83ccc8b-f27a-4e07-b03b-dc5a587250cf")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR054"
 			(at 298.45 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -21818,7 +21818,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR013")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -21835,7 +21835,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b922d0cf-3aec-47c0-95f1-8f21d521b46e")
-		(property "Reference" "C24"
+		(property "Reference" "C25"
 			(at 277.876 136.906 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21921,7 +21921,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C24")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -21938,7 +21938,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bb4ec21d-1ed0-43cd-8ba2-8b3059a6e94e")
-		(property "Reference" "X2"
+		(property "Reference" "X1"
 			(at 34.798 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22028,7 +22028,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "X2")
+					(reference "X1")
 					(unit 1)
 				)
 			)
@@ -22147,7 +22147,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc7d5ec0-695d-4027-8a4e-5e24b77c659f")
-		(property "Reference" "#PWR231"
+		(property "Reference" "#PWR038"
 			(at 259.08 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -22208,7 +22208,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR231")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -22225,7 +22225,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "be6fa62b-1209-46b3-83c3-c870bba9f0ec")
-		(property "Reference" "U14"
+		(property "Reference" "U4"
 			(at 84.328 85.852 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22318,7 +22318,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "U14")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -22336,7 +22336,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c00923be-03dc-434c-ba8e-e6292206e97f")
-		(property "Reference" "#PWR0236"
+		(property "Reference" "#PWR064"
 			(at 330.2 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -22397,7 +22397,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR0236")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -22416,7 +22416,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c08bc395-1b40-4a55-848b-ce5daa88157e")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR070"
 			(at 368.3 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -22477,7 +22477,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR033")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -22495,7 +22495,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c115b06b-6243-4e13-af7d-6aebc33fb97e")
-		(property "Reference" "C23"
+		(property "Reference" "C38"
 			(at 375.158 172.212 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22581,7 +22581,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C23")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -22598,7 +22598,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c33dd8f4-9d49-4504-be75-fa71069862f2")
-		(property "Reference" "C68"
+		(property "Reference" "C11"
 			(at 93.98 79.248 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22682,7 +22682,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C68")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -22700,7 +22700,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3861d6a-c04d-4ff6-965f-0595e37a0b63")
-		(property "Reference" "R37"
+		(property "Reference" "R23"
 			(at 332.74 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22786,7 +22786,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R37")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -22803,7 +22803,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c4f8c580-b1ef-4bee-afa3-d5e8bcc9066e")
-		(property "Reference" "R15"
+		(property "Reference" "R30"
 			(at 362.204 151.892 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22887,7 +22887,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R15")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -22904,7 +22904,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c63d3e64-d9fd-4a54-b684-80b6a6288f97")
-		(property "Reference" "R54"
+		(property "Reference" "R18"
 			(at 155.448 44.196 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22988,7 +22988,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R54")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -23108,7 +23108,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "caadf5d5-8b42-43d2-9620-194cd1d0327f")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR057"
 			(at 303.53 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -23169,7 +23169,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR015")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -23187,7 +23187,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cbaa4496-f26e-4a60-b625-1b262e84df78")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR040"
 			(at 265.43 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -23248,7 +23248,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR048")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -23266,7 +23266,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cc947062-8eaf-45c5-b3dd-2a4d11318c76")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR037"
 			(at 257.81 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -23327,7 +23327,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR052")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -23345,7 +23345,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cdb0d5c7-fe8b-464e-9b95-20c9adac9502")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR066"
 			(at 339.09 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -23406,7 +23406,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR08")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -23424,7 +23424,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce7701c3-10a7-4db6-acfa-fd118f2270a5")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR069"
 			(at 350.52 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -23485,7 +23485,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR035")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -23502,7 +23502,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ce863665-4b78-46f1-b7a7-5e714976000a")
-		(property "Reference" "C54"
+		(property "Reference" "C13"
 			(at 107.442 133.858 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23586,7 +23586,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C54")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -23603,7 +23603,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ceff7e4e-c386-4d53-bd37-31e053ef60c7")
-		(property "Reference" "C22"
+		(property "Reference" "C36"
 			(at 377.952 151.638 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23689,7 +23689,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C22")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -23706,7 +23706,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cf0643bd-de8a-45cc-8263-813b293176cb")
-		(property "Reference" "C38"
+		(property "Reference" "C18"
 			(at 257.81 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23792,7 +23792,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C38")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -23810,7 +23810,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d017b560-8e04-4120-a860-6e459c34a97c")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR028"
 			(at 121.92 267.97 0)
 			(hide yes)
 			(show_name no)
@@ -23871,7 +23871,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR074")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -23888,7 +23888,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d01b8ac0-d2cd-44ba-975a-3bea2ec59f81")
-		(property "Reference" "TP1"
+		(property "Reference" "TP6"
 			(at 335.026 153.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23959,7 +23959,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "TP1")
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -23976,7 +23976,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d2902d5a-f6a6-4af1-be85-d686e0f0870a")
-		(property "Reference" "R51"
+		(property "Reference" "R5"
 			(at 71.374 84.328 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24060,7 +24060,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R51")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -24079,7 +24079,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2cb9e4e-aedf-4619-82e9-5791d559702e")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR058"
 			(at 306.07 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -24140,7 +24140,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR016")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -24158,7 +24158,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d4b9e986-20f6-44aa-8468-eaf9676a4992")
-		(property "Reference" "R13"
+		(property "Reference" "R10"
 			(at 90.424 236.22 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24242,7 +24242,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R13")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -24260,7 +24260,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7529721-fb5b-4cbb-9ec9-98157f219bfd")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR045"
 			(at 271.78 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -24321,7 +24321,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR024")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -24338,7 +24338,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dab32a48-b1b0-4d42-a9c2-c78b7ca59fbd")
-		(property "Reference" "#PWR301"
+		(property "Reference" "#PWR021"
 			(at 91.44 17.78 0)
 			(hide yes)
 			(show_name no)
@@ -24398,7 +24398,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR301")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -24417,7 +24417,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db366235-1000-4ba3-80a4-74d4c18ee078")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR053"
 			(at 295.91 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -24478,7 +24478,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR041")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -24495,7 +24495,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dc1f77ac-603c-4134-a931-8cf1f360ebd1")
-		(property "Reference" "R33"
+		(property "Reference" "R13"
 			(at 106.426 125.476 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24579,7 +24579,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R33")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -24596,7 +24596,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "df51301f-0a31-4107-b6a9-d080768d0ef1")
-		(property "Reference" "D14"
+		(property "Reference" "D4"
 			(at 159.004 249.174 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24669,7 +24669,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "D14")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -24686,7 +24686,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "df6ba916-a3a2-4b26-bc29-8f961bb3f741")
-		(property "Reference" "C14"
+		(property "Reference" "C22"
 			(at 280.416 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24772,7 +24772,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C14")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -24789,7 +24789,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e18eaa2a-bdca-417e-ad78-198a2e14bf4f")
-		(property "Reference" "C29"
+		(property "Reference" "C2"
 			(at 29.21 120.904 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24875,7 +24875,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C29")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -24892,7 +24892,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e26f5aca-7bc6-4f05-a456-2dd031e36c68")
-		(property "Reference" "R30"
+		(property "Reference" "R7"
 			(at 79.248 57.658 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24976,7 +24976,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R30")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -24994,7 +24994,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e333c08a-9703-4129-91cc-a6b58e11f4c4")
-		(property "Reference" "C19"
+		(property "Reference" "C31"
 			(at 322.834 137.16 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25080,7 +25080,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C19")
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -25098,7 +25098,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e423ffd1-cdc0-48e6-8795-a8533a468ea8")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR016"
 			(at 73.66 254 0)
 			(hide yes)
 			(show_name no)
@@ -25159,7 +25159,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR067")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -25177,7 +25177,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e58ba9c7-4cda-4764-8c64-6e95d66eaf5f")
-		(property "Reference" "C31"
+		(property "Reference" "C35"
 			(at 367.792 191.008 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25263,7 +25263,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C31")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -25280,7 +25280,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e78faa6c-4149-4f60-acba-af6ccde9999d")
-		(property "Reference" "H_LED3"
+		(property "Reference" "H_LED1"
 			(at 72.39 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25339,7 +25339,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "H_LED3")
+					(reference "H_LED1")
 					(unit 1)
 				)
 			)
@@ -25356,7 +25356,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e92a5a1f-e58a-4b0b-a56d-98e296aeb7fc")
-		(property "Reference" "H_LED1"
+		(property "Reference" "H_LED4"
 			(at 173.99 246.38 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25415,7 +25415,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "H_LED1")
+					(reference "H_LED4")
 					(unit 1)
 				)
 			)
@@ -25432,7 +25432,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e9586557-5b0a-4e54-8818-f81d491cb1cf")
-		(property "Reference" "R11"
+		(property "Reference" "R31"
 			(at 368.808 151.892 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25516,7 +25516,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R11")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -25533,7 +25533,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e9cba8f2-fd27-41ee-8f92-02e4dddf354a")
-		(property "Reference" "U5"
+		(property "Reference" "U2"
 			(at 60.96 225.552 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25634,7 +25634,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "U5")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -25651,7 +25651,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ed1d56a2-e077-4a38-9957-dce73f5a0ed8")
-		(property "Reference" "C30"
+		(property "Reference" "C28"
 			(at 312.928 130.81 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25737,7 +25737,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C30")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -25868,7 +25868,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee95f883-c524-432d-99ba-1ed023906b5d")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR026"
 			(at 116.84 267.97 0)
 			(hide yes)
 			(show_name no)
@@ -25929,7 +25929,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR072")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -25946,7 +25946,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "efb1b67c-1471-4ff8-b1cb-387089722dff")
-		(property "Reference" "C3"
+		(property "Reference" "C20"
 			(at 267.462 172.212 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26032,7 +26032,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C3")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -26049,7 +26049,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "efbef877-94ad-489a-b0f1-9b34d9d920d1")
-		(property "Reference" "C35"
+		(property "Reference" "C17"
 			(at 251.968 109.728 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26135,7 +26135,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C35")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -26229,7 +26229,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f02531af-6079-4734-98bd-4602f0c8d608")
-		(property "Reference" "#PWR0308"
+		(property "Reference" "#PWR06"
 			(at 38.1 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -26290,7 +26290,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "#PWR0308")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -26383,7 +26383,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f2dad16b-bb50-4b98-b578-530d64494301")
-		(property "Reference" "TP6"
+		(property "Reference" "TP1"
 			(at 85.344 127 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26454,7 +26454,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "TP6")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -26471,7 +26471,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f9621009-35c6-45ad-b04e-fc477e5eb46b")
-		(property "Reference" "C25"
+		(property "Reference" "C24"
 			(at 277.876 131.826 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26557,7 +26557,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C25")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -26574,7 +26574,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fa77396b-82fa-44b9-a44e-eafaf8a4cf02")
-		(property "Reference" "J9"
+		(property "Reference" "J4"
 			(at 388.366 173.736 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26649,7 +26649,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "J9")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -26666,7 +26666,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fb76f0c2-94c1-4da6-a9da-035c75518668")
-		(property "Reference" "C10"
+		(property "Reference" "C21"
 			(at 272.288 185.674 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26752,7 +26752,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "C10")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -26769,7 +26769,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fd384e3b-6baf-408a-b597-186d1a6a985a")
-		(property "Reference" "R21"
+		(property "Reference" "R28"
 			(at 356.108 151.638 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26853,7 +26853,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "R21")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -26870,7 +26870,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fe9dd426-bb05-4218-b0ed-9c0d04dddd12")
-		(property "Reference" "TP4"
+		(property "Reference" "TP3"
 			(at 85.09 134.62 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26941,7 +26941,7 @@
 		(instances
 			(project "Synthesizer-VHF"
 				(path "/a4b38a6b-9d72-449e-ac14-b68a50e767e1"
-					(reference "TP4")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
