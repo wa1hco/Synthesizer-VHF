@@ -14620,7 +14620,7 @@
 				)
 			)
 		)
-		(property "Value" "MountingHole_6-32"
+		(property "Value" "M3.5"
 			(at 274.32 256.54 0)
 			(hide yes)
 			(show_name no)
@@ -14631,7 +14631,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:MountingHole_3.9mm_Pad_D5.6"
+		(property "Footprint" "Synthesizer:MountingHole_4.1mm_M3.5_Pad"
 			(at 271.78 255.27 0)
 			(hide yes)
 			(show_name no)
@@ -17241,7 +17241,7 @@
 				)
 			)
 		)
-		(property "Value" "MountingHole_6-32"
+		(property "Value" "M3.5"
 			(at 259.08 256.54 0)
 			(hide yes)
 			(show_name no)
@@ -17252,7 +17252,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:MountingHole_3.9mm_Pad_D5.6"
+		(property "Footprint" "Synthesizer:MountingHole_4.1mm_M3.5_Pad"
 			(at 256.54 255.27 0)
 			(hide yes)
 			(show_name no)
@@ -26162,7 +26162,7 @@
 				)
 			)
 		)
-		(property "Value" "MountingHole_6-32"
+		(property "Value" "M3.5"
 			(at 304.8 256.54 0)
 			(hide yes)
 			(show_name no)
@@ -26173,7 +26173,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:MountingHole_3.9mm_Pad_D5.6"
+		(property "Footprint" "Synthesizer:MountingHole_4.1mm_M3.5_Pad"
 			(at 302.26 255.27 0)
 			(hide yes)
 			(show_name no)
@@ -26317,7 +26317,7 @@
 				)
 			)
 		)
-		(property "Value" "MountingHole_6-32"
+		(property "Value" "M3.5"
 			(at 289.56 256.54 0)
 			(hide yes)
 			(show_name no)
@@ -26328,7 +26328,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Synthesizer:MountingHole_3.9mm_Pad_D5.6"
+		(property "Footprint" "Synthesizer:MountingHole_4.1mm_M3.5_Pad"
 			(at 287.02 255.27 0)
 			(hide yes)
 			(show_name no)
