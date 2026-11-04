@@ -6636,7 +6636,7 @@
 		)
 		(uuid "23a4f049-6c5e-46cd-ac00-cd3667b38965")
 	)
-	(text "Mounting holes H1-H4 (Hammond 1590LB, #6-32, 40.5 mm square) - bonded to GND"
+	(text "Mounting holes H1-H4 (Hammond 1550Q, M3.5-0.6, 50 x 45 mm) - bonded to GND"
 		(exclude_from_sim no)
 		(at 259.334 244.348 0)
 		(effects

@@ -1,6 +1,6 @@
-# Firmware rework plan for diecast-2x2
+# Firmware rework plan for hammond-1550Q
 
-Plan only. The board is the diecast-2x2 schematic: ADF4351, an on-board 10 MHz TCXO with an external REF IN mux, ATtiny1616, FT231X. The ADF4351 loop filter on that schematic is the one this firmware must match. There is no ADF4002 and no REF OUT.
+Plan only. The board is the hammond-1550Q schematic: ADF4351, an on-board 10 MHz TCXO with an external REF IN mux, ATtiny1616, FT231X. The ADF4351 loop filter on that schematic is the one this firmware must match. There is no ADF4002 and no REF OUT.
 
 Host checks stay behind `scripts/` (`scripts/test-adf4351`, `scripts/build-firmware`, `scripts/flash-firmware`). Launchers take no flags and no environment variables. A person runs the script; the script knows the paths. New checks are added the same way.
 
