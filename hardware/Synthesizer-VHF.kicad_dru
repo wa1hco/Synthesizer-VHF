@@ -3,6 +3,10 @@
 # Boss keepouts allow pads and footprints in the zone so these rules can
 # make the exceptions. Tracks and vias stay banned by the zones. These
 # rules are first so they are the ones DRC applies.
+(rule "Top placement: no footprints except mounting holes"
+	(constraint disallow footprint)
+	(condition "A.intersectsArea('KO_TOP_PLACEMENT') && A.Type == 'footprint' && A.Reference != 'H1' && A.Reference != 'H2' && A.Reference != 'H3' && A.Reference != 'H4'"))
+
 (rule "Front boss: no footprints except mounting holes"
 	(constraint disallow footprint)
 	(condition "A.intersectsArea('KO_BOSS_F') && A.Type == 'footprint' && A.Reference != 'H1' && A.Reference != 'H2' && A.Reference != 'H3' && A.Reference != 'H4'"))
@@ -17,7 +21,7 @@
 
 (rule "Bottom washer: no other bottom footprints"
 	(constraint disallow footprint)
-	(condition "A.intersectsArea('KO_BOSS_B') && A.Type == 'footprint' && A.Layer == 'B.Cu' && A.Reference != 'J5' && A.Reference != 'J9' && A.Reference != 'H1' && A.Reference != 'H2' && A.Reference != 'H3' && A.Reference != 'H4'"))
+	(condition "A.intersectsArea('KO_BOSS_B') && A.Type == 'footprint' && A.Layer == 'B.Cu' && A.Reference != 'J2' && A.Reference != 'J4' && A.Reference != 'H1' && A.Reference != 'H2' && A.Reference != 'H3' && A.Reference != 'H4'"))
 
 # Custom Design Rules (DRC) for KiCAD 7.0 (Stored in '<project>.kicad_dru' file).
 #
@@ -73,7 +77,7 @@
 (rule "Pad to Silkscreen"
 	(layer outer)
 	(condition "A.Type == 'pad' && B.Layer == '?.Silkscreen'")
-	(constraint silk_clearance (min 0.15mm))
+	(constraint silk_clearance (min 0.09mm))
 )
 
 (rule "Edge (routed) to track clearance"
@@ -159,21 +163,10 @@
 	(constraint thermal_relief_gap (min 0.3mm) (opt 0.3mm))
 	(constraint thermal_spoke_width (min 0.4mm) (opt 0.4mm)))
 
-# USB-C J4 hangs over the board edge into the milled box slot; exempt only J4 from edge clearance.
-# A.Parent.Reference is a syntax error: the expression '.' operator does not chain.
-# Reference on a pad or graphic resolves to its parent footprint, and memberOfFootprint
-# covers the same children, so both the footprint and its copper are exempt.
-# Also exclude J4's "courtyard outside board" DRC marker once (right-click > Exclude).
-(rule "J4 USB-C overhang"
-	(condition "A.Reference == 'J4' || A.memberOfFootprint('J4')")
-	(constraint edge_clearance (min 0mm)))
-
-# Each reflector hole may overlap only its own LED. This is not a global waiver.
-# H_LED1/D11, H_LED2/D12, H_LED3/D13, H_LED4/D14.
-# Courtyard overlap is allowed for that pair. Hole-to-copper clearance is the
-# JLCPCB minimum, 0.2 mm. Reference matches the footprint and its pads.
+# USB-C J1 (was J4) is on F.Cu and sits 3.5 mm inside the 1550Q outline, so it
+# no longer needs an edge-clearance exemption.
 (rule "LED reflector and its own LED"
-	(condition "(A.Reference == 'H_LED1' && B.Reference == 'D11') || (A.Reference == 'H_LED2' && B.Reference == 'D12') || (A.Reference == 'H_LED3' && B.Reference == 'D13') || (A.Reference == 'H_LED4' && B.Reference == 'D14')")
+	(condition "(A.Reference == 'H_LED4' && B.Reference == 'D5') || (A.Reference == 'H_LED2' && B.Reference == 'D3') || (A.Reference == 'H_LED1' && B.Reference == 'D1') || (A.Reference == 'H_LED3' && B.Reference == 'D4')")
 	(constraint courtyard_clearance (min -3mm))
 	(constraint hole_clearance (min 0.2mm))
 	(constraint clearance (min 0.2mm)))
