@@ -1,0 +1,123 @@
+                                                                      TCXO Specification
+                                                                      Part No. + Packaging: LFTCXO075801Cutt
+
+Customer Part:
+
+Description
+
+  Temperature compensated crystal oscillator (TCXO) in a              Outline (mm)
+  hermetically sealed 3.2x2.5mm SMD package.
+  Model                           IQXT-220-1
+  Model Issue number              3
+
+Frequency Parameters
+  Frequency                         40.0MHz
+  Frequency Tolerance               ±1.00ppm
+  Frequency Stability               ±0.28ppm
+  Operating Temperature Range      -40.00 to 85.00°C
+  Ageing                             ±0.02ppm max/day, ±1ppm
+                                     max/year
+  Frequency Tolerance: Measurement referenced to frequency
+  observed with TA=25°C, Vs=3.3V and load=10kΩ//10pF, within
+  30 days after ex-works.
+  Frequency Stability: TA varied across the operating
+  temperature range, measurement referenced to frequency
+  observed with fref=(fmax+fmin)/2, Vs=3.3V. load=10kΩ//10pF
+  and temperature variable speed less than 2°C/min.
+  Ageing: Vs, TA and load constant, measurement referenced to
+  frequency observed with TA=25°C, Vs=3.3V, load=10kΩ//10pF
+  and after 1hr of operation.
+  Supply Voltage Variation (measurement referenced to
+  frequency observed TA=25°C, Vs varied from 3.13V to 3.47V
+  and load=10kΩ//10pF): ±0.1ppm max
+  Load Variation (measurement referenced to frequency
+  observed with TA=25°C, Vs=3.3V and load
+  change=10kΩ//10pF ±5%): ±0.1ppm max
+
+ Electrical Parameters
+
+  Supply Voltage                 3.3V ±5%
+  Current Draw                   5.000mA
+  Current Consumption (@ TA=25°C, Vs=3.3V and
+  load=10kΩ//10pF): 5mA max
+
+Output Details
+  Output Compatibility             Clipped Sine
+  Drive Capability                  10kΩ//10pF
+  Output Voltage Level: 0.8V pk-pk min
+
+Noise Parameters
+  Phase Noise @ 25°C (F=10.0MHz, typ):
+  -90dBc/Hz @ 10Hz
+  -120dBc/Hz @ 100Hz
+  -140dBc/Hz @ 1kHz
+  -145dBc/Hz @ 10kHz
+  -148dBc/Hz @ 100kHz
+
+
+
+
+Sales Office Contact Details:
+UK: +44 (0)1460 270200                         France: 0800 901 383                     Email: info@iqdfrequencyproducts.com
+Germany: 0800 1808 443                         USA: +1.760.318.2824                      Web: www.iqdfrequencyproducts.com
+
+ Printed on 4 Aug 21 17:13 using Part Data Sheet V1.0018                                                         Page 1 of 2
+                                                                         TCXO Specification
+                                                                         Part No. + Packaging: LFTCXO075801Cutt
+
+Customer Part:
+
+Environmental Parameters
+
+  Operable Temperature Range: -40 to 85°C
+  Storage Temperature Range: -55 to 105°C
+  ESD Levels:
+  ESD Human Body Model (JEDEC JS-001-2010): Class 2:
+  2000V to 4000V
+  ESD Machine Model (JEDEC JESD22-A115C): Class B: 200V
+  to 400V
+  Shock: IEC 60068-2-27, Test Ea, Severity 50A: 100G
+  acceleration for 6ms, half sine wave, 3 times in 3 mutually
+  perpendicular planes.
+  Vibration: IEC 60068-2-06, Test Fc: 10Hz-2000Hz, 0.75mm
+  amplitude, 10G acceleration, 30mins per cycle, 3 times in 3
+  mutually perpendicular planes, test duration 2hrs.
+
+Manufacturing Details
+   Storage Conditions:
+   Temperature: -10 to 35°C
+   Humidity: 20 to 70% RH
+   RoHS Terminations                     Ni (1μm~9μm), Au (0.5μ~1μm)
+   RoHS Reflow Temp                      260°C max for 30sec max
+
+Compliance
+  RoHS Status (2015/863/EU)          Compliant
+  REACh Status                       Compliant
+  MSL Rating (JDEC-STD-033):         2
+
+ Packaging Details
+  Pack Style: Cutt      Cut tape
+  Pack Size: 100
+  Alternative packing option available
+
+
+
+
+Sales Office Contact Details:
+UK: +44 (0)1460 270200                            France: 0800 901 383                     Email: info@iqdfrequencyproducts.com
+Germany: 0800 1808 443                            USA: +1.760.318.2824                      Web: www.iqdfrequencyproducts.com
+
+ Printed on 4 Aug 21 17:13 using Part Data Sheet V1.0018                                                            Page 2 of 2
+Mouser Electronics
+
+Authorized Distributor
+
+
+
+Click to View Pricing, Inventory, Delivery & Lifecycle Information:
+
+
+
+IQD Frequency Products:
+ LFTCXO075801Cutt
+

@@ -1,0 +1,201 @@
+                                                                                                               Ceramic SMT 4 Pad CMOS (VC)TCXO
+                                                                                                                                          STC53C Series
+                                                                                                                                            5.0mm x 3.2mm
+                               Features                                                   Applications
+• ±1.0ppm (Frequency Stability) Available                              • Base Stations
+• CMOS                                                                 • IP networking
+• (VC)TCXO                                                             • Cellular and Cordless Phones
+• Tape and Reel
+
+
+
+                                                                       Part Numbering Guide
+
+                                                    STC 53 C 33 R 48 V E - 19.440M
+   SUNTSU TCXO                                                                                                                                    FREQUENCY
+                                                                                                                                                     MHz
+
+           5.0mm x 3.2mm                                                                                                                  PULLABILITY
+                                                                                                                                          BLANK : TCXO
+                                  CMOS                                                                                TCXO/VCTCXO          E : ±12.0ppm
+                                                                                                 OPERATING            BLANK : TCXO         F : ±8.0ppm
+                                          SUPPLY VOLTAGE                                                                                   G : ±5.0ppm
+                                                                                            TEMPERATURE RANGE          V : VCTCXO
+                                            25 : 2.5V±5%
+                                                                 FREQUENCY STABILITY            07 : 0°C - +70°C
+                                            27 : 2.7V±5%
+                                                                     N : ±5.0ppm               16 : -10°C - +60°C
+                                            30 : 3.0V±5%
+                                                                     O : ±2.5ppm               17 : -10°C - +70°C
+                                            33 : 3.3V±5%
+                                                                     P : ±2.0ppm              27 : -20°C - +70°C
+   CO M P L I A N T                                                  Q : ±1.5ppm              38 : -30°C - +85°C
+                                                                     R : ±1.0ppm              48 : -40°C - +85°C
+Cage Code: 4GUT4
+To customize your parameters contact a Suntsu representative.
+
+Electrical Parameters                      Units           Minimum               Typical         Maximum                           Remarks
+Frequency Range                             MHz                    6                                 40
+
+Frequency Tolerance at +25ºC                ppm                   -1.5                               +1.5           I hour after Reflow
+
+Freq. Stability vs. Op Temp.                ppm                   -1.0                               +1.0           See part numbering guide for options.
+
+Freq. Stability vs. Supply Voltage          ppm                  -0.3                               +0.3            VDD ±5% Change
+
+Freq. Stability vs. Load                    ppm                  -0.3                               +0.3            ±5% Change
+
+Freq. Stability vs. Aging                   ppm                   -1.0                               +1.0           1 Year
+
+Operating Temperature                        °C                  -40                                 +85            See part numbering guide for options.
+
+Storage Temperature                          °C                   -55                               +125
+
+Supply Voltage (VDD)                         V                   3.135             3.3              3.465           See part numbering guide for options.
+
+Current (IDD)                               mA                                                           6
+
+Current Voltage (VC, VCTCXO)                 V                     0                                 VDD            Center Voltage: VDD*50%
+
+Pullability (VCTCXO)                        ppm                  ±5.0                               ±12.0           See part numbering guide for options.
+
+Linearity (VCTCXO)                           %                                                       10
+
+Output Load (CMOS)                           pF                                                       15
+
+Output Logic HIGH Level (VOH)                V                  0.8*VDD
+
+Output Logic LOW Level (VOL)                 V                                                     0.2*VDD
+
+Rise (TR) And Fall (TF) Time                 ns                                                          5
+
+Symmetry (Duty Cycle)                        %                    40                                 60
+Start-Up Time                                ms                                                          3
+VC Input Impedance (VCTCXO)                  kΩ                   100
+
+Phase Noise (Typical) 10Hz Offset          dBc/Hz                                  -85
+Phase Noise (Typical) 100Hz Offset         dBc/Hz                                  -115
+
+Phase Noise (Typical) 1KHz Offset          dBc/Hz                                  -135
+
+Phase Noise (Typical) 10KHz Offset         dBc/Hz                                  -145
+
+Phase Noise (Typical) 100KHz Offset        dBc/Hz                                  -150
+
+
+                                                                                                        Suntsu Electronics, Inc.
+       www.suntsu.com                                                                              142 TECHNOLOGY DR., SUITE 150
+       Specifications are subject                                                                          IRVINE, CA 92618
+       to change without notice.
+                                                                                            Call: +1-949-783-7300 | Fax: +1-949-783-7301
+                                                                                                           Ceramic SMT 4 Pad CMOS (VC)TCXO
+                                                                                                                             STC53C Series
+                                                                                                                                 5.0mm x 3.2mm
+                                                       Outline Drawing & Land Pattern
+                             All dimensions are in millimeters (mm) unless otherwise noted. Drawings are not to scale.
+
+
+
+
+                      Test Circuit (CMOS)                                                              Waveform (CMOS)
+
+
+
+
+                                    Typical Phase Noise Performance (Measured By Agilent E5052A)
+
+
+
+
+                     Frequency - 19.440MHz                                                               Frequency - 40.000MHz
+
+
+                                                                                                   Suntsu Electronics, Inc.
+www.suntsu.com                                                                                142 TECHNOLOGY DR., SUITE 150
+Specifications are subject                                                                            IRVINE, CA 92618
+to change without notice.
+                                                                                      Call: +1-949-783-7300 | Fax: +1-949-783-7301
+                                                                                                                                  Ceramic SMT 4 Pad CMOS (VC)TCXO
+                                                                                                                                                        STC53C Series
+                                                                                                                                                          5.0mm x 3.2mm
+
+                                                                        Typical Jitter Performance (Measured By Agilent E5052A)
+
+
+
+
+                                      Frequency - 19.440MHz                                                                     Frequency - 40.000MHz
+
+                                              Reflow Profile                                                                     Part Marking
+
+                                                                           Tp (Time At 260°C. 20-40 Sec)
+                        260
+
+                              Rup (Ramp Up, 3°C/Sec Max)
+
+                        217
+
+                        200
+                                                                               TI (Time Above 217°C.
+                                                                                     60-150Sec)
+
+
+
+
+     Temperature (°C)
+                        150
+                                                                                        Rdn (Ramp Down,
+                                                                                        6°C/Sec Max)
+                                          Ts (Preheat Time.
+                                             60-180Sec)
+
+
+
+
+                              T 25°C to Peak (480Sec Max)
+
+
+
+
+                                                           Time (sec)
+
+
+
+
+                                                                                             Tape And Reel Dimensions
+                                                    All dimensions are in millimeters (mm) unless otherwise noted. Drawings are not to scale.
+
+3,000pcs/Reel
+
+
+
+
+                                                                                                                             Suntsu Electronics, Inc.
+    www.suntsu.com                                                                                                      142 TECHNOLOGY DR., SUITE 150
+    Specifications are subject                                                                                                  IRVINE, CA 92618
+    to change without notice.
+                                                                                                                  Call: +1-949-783-7300 | Fax: +1-949-783-7301
+                                                                                                          Ceramic SMT 4 Pad CMOS (VC)TCXO
+                                                                                                                               STC53C Series
+                                                                                                                                    5.0mm x 3.2mm
+
+Environmental Specifications                                              Mechanical Specifications
+Temperature Cycling               MIL-STD-883, Method 1010, Condition B   Mechanical Shock               MIL-STD-202, Method 213, Condition B
+
+Fine Leak Test                    MIL-STD-883, Method 1014, Condition A   Vibration                      MIL-STD-883, Method 2007, Condition A
+
+Gross Leak Test                   MIL-STD-883, Method 1014, Condition C   Moisture Resistance            MIL-STD-883, Method 1004
+
+Solderability                     MIL-STD-883, Method 2003                Resistance to Solvents         MIL-STD-202, Method 215
+
+Moisture Sensitivity              J-STD-020, MSL 1                        Resistance to Soldering Heat   MIL-STD-202, Method 210, Condition K
+
+
+
+
+                                                                                                  Suntsu Electronics, Inc.
+     www.suntsu.com                                                                          142 TECHNOLOGY DR., SUITE 150
+     Specifications are subject                                                                      IRVINE, CA 92618
+     to change without notice.
+                                                                                      Call: +1-949-783-7300 | Fax: +1-949-783-7301
+

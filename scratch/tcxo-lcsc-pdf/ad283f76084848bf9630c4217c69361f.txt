@@ -1,0 +1,194 @@
+        Crystal oscillator
+
+                                                                                                                                        Product Number
+ TCXO / VC-TCXO                                                                                                                         TG5032CFN :X1G005391xxxxxx
+ HIGH STABILITY                                                                                                                         TG5032SFN :X1G005401xxxxxx
+
+
+
+ TG5032CFN / TG5032SFN
+   Frequency range     : 10 MHz to 40 MHz
+   Supply voltage      : 3.3 V Typ.
+   Frequency / temperature characteristics
+                        : ±0.1 × 10-6 Max. (-40 ºC to +85 ºC)
+                                                                                                                            TG5032CFN                  TG5032SFN
+   Frequency aging    : ±3.0 × 10-6 Max. / 20years
+                                                                                                                             (CMOS)                   (Clipped Sine)
+   External dimensions : 5.0 × 3.2 × 1.45 mm (4 pins)
+   Applications        : Small Cells, Stratum3, SyncE, IEEE1588
+   Features            : High stability, Wide temperature range
+
+
+
+
+    Specifications (characteristics)
+                                               TG5032CFN (CMOS output)              TG5032SFN(Clipped sine wave)
+                     Item                                       Symbol                                                         Conditions / Remarks
+                                                  TCXO            VC-TCXO              TCXO            VC-TCXO
+                                                                         10 MHz to 40 MHz
+Output frequency range                  fo
+                                             10, 12.8, 19.2, 20, 24.576, 25, 25.6, 26, 30.72, 38.4, 38.88, 40 MHz Standard frequency
+Supply voltage                         VCC         C: 3.3 V ± 5 % (Supply voltage range: 2.375 V to 3.63 V)
+Storage temperature                 T_stg                                -40 ºC to +90 ºC                             Storage as single product
+Operating temperature               T_use                               G: -40 ºC to +85 ºC                           Standard temp. range
+a) Frequency tolerance                f_tol                              ±1.0 × 10-6 Max.                             After reflow, +25 ºC
+                                                             A: ±0.1 × 10-6 Max. / -40 ºC to +85 ºC
+b) Frequency/temperature
+                                     fo-Tc                   H: ±0.25 × 10-6 Max. / -40 ºC to +85 ºC                  Reference to (fmax + fmin) / 2
+   Characteristics
+                                                             B: ±0.28 × 10-6 Max. / -40 ºC to +85 ºC
+                                                                                    -6
+c) Frequency/load coefficient      fo-Load                               ±0.1 × 10 Max.                               Load ± 10 %
+d) Frequency/voltage coefficient    fo-VCC                               ±0.1 × 10-6 Max.                             VCC ± 5%
+                                                                         ±0.5 × 10-6 Max.                             +25 °C, First year
+e) Frequency aging                  f_age
+                                                                         ±3.0 × 10-6 Max.                             +25 °C, 20 years
+Holdover stability                                           ±0.01 × 10-6 Max. ( +25 °C , 24 hours)                   After 10 days of continuous operation.
+                                         -
+(Constant temperature)                                       ±0.04 × 10-6 Max. ( +25 °C , 24 hours)                   After 48 hours of continuous operation.
+Wander generation                                                                                                     Compliant with
+                                         -                                        -
+(MTIE, TDEV)                                                                                                          GR-1244CORE , ITU-T G.8262
+Free-run accuracy                        -                               ±4.6 × 10-6 Max.                             This includes Item a), b), c), d) and e)
+                                                        5.0 mA Max.                                                   10 MHz ≤ fo ≤ 26 MHz
+Current consumption                    ICC                                                   5.0 mA Max.
+                                                        6.0 mA Max.                                                   26 MHz < fo ≤ 40 MHz
+Input resistance                       Rin          -            100 kΩ Min.              -           100 kΩ Min.     VC- GND (DC)
+                                                                  ±5 ×10-6 to                          ±5 ×10-6 to    D :Vc = 1.5 V ± 1.0 V at VCC = 3.3 V
+Frequency control range             f_cont          -                                     -
+                                                                   ±10 ×10-6                            ±10 ×10-6     E :Vc = 1.65 V ± 1.0 V at VCC = 3.3 V
+Frequency change polarity                -          -           Positive polarity         -         Positive polarity
+Symmetry                             SYM                45 % to 55 %                               -                  50 % VCC level, L_CMOS  15 pF
+                                       VOH             90 % VCC Min.                               -
+Output voltage
+                                       VOL             10 % VCC Max.                               -
+Output level                          Vpp                      -                              0.8 V Min.              Peak to Peak
+Rise time / Fall time                  tr/tf             8.0 ns Max.                               -                  10 % VCC to 90 % VCC level, Load: 15 pF
+Start-up time                         t_str                                 5.0 ms Max.                               t = 0 at 90% VCC
+Output load condition                Load                   15 pF                           10 kΩ // 10 pF
+ * Note : Please contact us for requirements not listed in this specification.
+    Product Name               TG5032 C FN 30.720000MHz C A G N D A
+    (Standard form)              ①      ②      ③               ④ ⑤ ⑥ ⑦ ⑧ ⑨
+                            ①Model ②Output (C: CMOS, S: Clipped sine wave) ③Frequency ④Supply voltage (C: 3.3 V Typ.)
+                            ⑤Frequency / temperature characteristics (A: 0.1  10-6 Max., H: 0.25  10-6 Max., B: ±0.28 × 10-6 Max.)
+                            ⑥Operating temperature (G: -40 C to +85 C) ⑦OE function (N: Non)
+                            ⑧Vc function (A: Vc =any, D: Vc =1.5 V, E: Vc =1.65 V, N: Non) ⑨Internal identification code (“A” is default)
+     External dimensions                                              (Unit : mm)             Footprint (Recommended)                             (Unit: mm)
+               #4                    #3
+
+                                                                                                                                                       1.10
+                                                    3.20±0.2
+                      Marking                                                                                               #4                                 #3
+
+
+
+                                                                                                                                                                    1.10 1.30
+                #1                  #2                                   0.30
+                        5.00±0.2
+
+
+
+
+                                                     1.45±0.2
+        0.30
+
+
+                                   0.75
+                                             0.95
+                                                                                Pin map
+                                                                                               Connection
+                                                                                                                         #1                                 #2
+                                                                                   Pin
+               #1                  #2
+                                                                                   1
+                                                                                          TCXO
+                                                                                           N.C
+                                                                                                    VC-TCXO
+                                                                                                        Vc
+                                                                                                                                         4.40
+                                                                                   2             GND
+                                                                                   3             OUT
+                                                                                                              To maintain stable operation, provide a 0.1 μF by-pass capacitor at
+                                                                                   4              VCC         a location as near as possible to the power source terminal of the
+                                                                                                              crystal product (between VCC - GND).
+               #4                       #3
+PROMOTION OF ENVIRONMENTAL MANAGEMENT SYSTEM
+CONFORMING TO INTERNATIONAL STANDARDS
+  At Seiko Epson, all environmental initiatives operate under the
+Plan-Do-Check-Action (PDCA) cycle designed to achieve continuous                    ISO 14000 is an international standard for environmental
+improvements. The environmental management system (EMS)                             management that was established by the International
+operates under the ISO 14001 environmental management standard.                     Standards Organization in 1996 against the background of
+  All of our major manufacturing and non-manufacturing sites, in                    growing concern regarding global warming, destruction of
+Japan and overseas, completed the acquisition of ISO 14001                          the ozone layer, and global deforestation.
+certification.
+
+
+WORKING FOR HIGH QUALITY
+    In order provide high quality and reliable products and services
+than meet customer needs, Seiko Epson made early efforts towards                    IATF 16949 is the international standard that added the
+obtaining ISO9000 series certification and has acquired ISO9001 for                 sector-specific supplemental requirements for automotive
+all business establishments in Japan and abroad. We have also                       industry based on ISO9001.
+acquired IATF 16949 certification that is requested strongly by major
+automotive manufacturers as standard.
+►Explanation of the mark that are using it for the catalog
+
+                     ►Pb free.
+
+                     ►Complies with EU RoHS directive.
+                       *About the products without the Pb-free mark.
+                        Contains Pb in products exempted by EU RoHS directive.
+                        (Contains Pb in sealing glass, high melting temperature type solder or other.)
+
+                     ►Designed for automotive applications such as Car Multimedia, Body Electronics, Remote Keyless Entry etc.
+
+
+                     ►Designed for automotive applications related to driving safety (Engine Control Unit, Air Bag, ESC etc ).
+
+
+  NOTICE：PLEASE READ CAREFULLY BELOW BEFORE THE USE OF THIS DOCUMENT ©Seiko Epson Corporation 2020
+  ――――――――――――――――――――――――――――――――――――――――――――――――――――
+  1. The content of this document is subject to change without notice.         Before purchasing or using Epson products, please contact with sales
+      representative of Seiko Epson Corporation (“Epson”) for the latest information and be always sure to check the latest information
+      published on Epson’s official web sites and resources.
+  2. This document may not be copied, reproduced, or used for any other purposes, in whole or in part, without Epson’s prior consent.
+  3. Information provided in this document including, but not limited to application circuits, programs and usage, is for reference purpose only.
+      Epson makes no guarantees against any infringements or damages to any third parties’ intellectual property rights or any other rights
+      resulting from the information. This document does not grant you any licenses, any intellectual property rights or any other rights with
+      respect to Epson products owned by Epson or any third parties.
+  4. Using Epson products, you shall be responsible for safe design in your products; that is, your hardware, software, and/or systems shall be
+      designed enough to prevent any critical harm or damages to life, health or property, even if any malfunction or failure might be caused by
+      Epson products. In designing your products with Epson products, please be sure to check and comply with the latest information
+      regarding Epson products (including, but not limited to this document, specifications, data sheets, manuals, and Epson’s web site).
+      Using technical contents such as product data, graphic and chart, and technical information, including programs, algorithms and
+      application circuit examples under this document, you shall evaluate your products thoroughly both in stand-alone basis and within your
+      overall systems. You shall be solely responsible for deciding whether to adopt/use Epson products with your products.
+  5. Epson has prepared this document carefully to be accurate and dependable, but Epson does not guarantee that the information is always
+      accurate and complete. Epson assumes no responsibility for any damages you incurred due to any misinformation in this document.
+  6. No dismantling, analysis, reverse engineering, modification, alteration, adaptation, reproduction, etc., of Epson products is allowed.
+  7. Epson products have been designed, developed and manufactured to be used in general electronic applications and specifically
+      designated applications (“Anticipated Purpose”). Epson products are NOT intended for any use beyond the Anticipated Purpose that
+      requires particular quality or extremely high reliability in order to refrain from causing any malfunction or failure leading to critical harm to
+      life and health, serious property damage, or severe impact on society, including, but not limited to listed below (“Specific Purpose”).
+      Therefore, you are strongly advised to use Epson products only for the Anticipated Purpose. Should you desire to purchase and use
+      Epson products for Specific Purpose, Epson makes no warranty and disclaims with respect to Epson products, whether express or
+      implied, including without limitation any implied warranty of merchantability or fitness for any Specific Purpose. Please be sure to
+      contact our sales representative in advance, if you desire Epson products for Specific Purpose:
+          Space equipment (artificial satellites, rockets, etc.)/ Transportation vehicles and their control equipment (automobiles, aircraft, trains,
+          ships, etc.) / Medical equipment/ Relay equipment to be placed on sea floor/ Power station control equipment / Disaster or crime
+          prevention equipment/Traffic control equipment/ Financial equipment
+          Other applications requiring similar levels of reliability as the above
+  8. Epson products listed in this document and our associated technologies shall not be used in any equipment or systems that laws and
+      regulations in Japan or any other countries prohibit to manufacture, use or sell. Furthermore, Epson products and our associated
+      technologies shall not be used for the purposes of military weapons development (e.g. mass destruction weapons), military use, or any
+      other military applications. If exporting Epson products or our associated technologies, please be sure to comply with the Foreign
+      Exchange and Foreign Trade Control Act in Japan, Export Administration Regulations in the U.S.A (EAR) and other export-related laws
+      and regulations in Japan and any other countries and to follow their required procedures.
+  ９. Epson assumes no responsibility for any damages (whether direct or indirect) caused by or in relation with your non-compliance with the
+      terms and conditions in this document or for any damages (whether direct or indirect) incurred by any third party that you give, transfer or
+      assign Epson products.
+  10. For more details or other concerns about this document, please contact our sales representative.
+  11. Company names and product names listed in this document are trademarks or registered trademarks of their respective companies.
+
+
+  ©Seiko Epson Corporation 2020                                Seiko Epson Corporation
+

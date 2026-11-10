@@ -1,0 +1,313 @@
+Model 535
+High Stability Clipped Sine TCXO
+Features
+        Fundamental Crystal Design
+        Frequency Range 10 – 54MHz *
+        Operating Voltage +3.3V                                                                                                                                          Part Dimensions:
+                                                                                                                                                                          5.0 × 3.2 × 2.0mm
+        Frequency Stability, Overall ±4.6ppm [-40°C to +85°C]
+        Operating Temperature Range to -40°C to +105°C
+        Voltage Control Option for Frequency Tuning [VCTCXO]
+                                                                                                                               Standard Frequencies – see Page 7 for common frequencies.
+        Enable Function Option Available                                                                                      * Check with factory for availability of frequencies not listed.
+        Tape and Reel Packaging, EIA-418
+
+Applications
+        5G, 4G, LTE                                                               Autonomous Technologies                                            Stratum 3
+        Femtocells, RRU, BBU                                                      Synchronous Ethernet                                               IEEE 1588 Timing
+        Military Radio [Manpack]                                                  IP Networking                                                      Wireless Communication
+        Inflight Entertainment                                                    Medical Imaging                                                    Test and Measurement
+
+
+Description
+CTS Model 535 is a high performance Temperature Compensated Crystal Oscillator [TCXO] suitable for
+applications requiring tight stability, Stratum 3 performance and more. Employing IC technology with Clipped
+Sine output and analog temperature compensation engine; coupled with a fundamental quartz crystal M535 has
+excellent stability and low jitter/phase noise performance.
+
+Ordering Information
+                 Output                  Supply                Frequency Code                    Frequency                   Temperature
+Model                                                                                                                                                         Frequency Tuning                     Packaging
+                 Enable                  Voltage                      [MHz]                      Stability 2                    Range
+ 535                                        L                          XXX                          X2                            I                                      T                            5
+
+
+
+        Code Function                                  Code         Frequency                                      Code   Temp. Range                                                      Code Packing
+        Blank No Enable                                                                                             C    -10°C to +70°C                                                     5 500 pcs./reel
+                                                       Product Frequency Code 1
+          E Enable, Pin 3                                                                                            I   -40°C to +85°C
+                                                                                                                    G   -40°C to +105°C 3
+
+                               Code      Voltage                                       Code        Stability                                       Code  Frequency Deviation
+                                 L       +3.3Vdc                                        01        ±0.10ppm                                           T  TCXO [No Voltage Control]
+                                                                                        X2        ±0.28ppm                                          A ±5ppm - ±10ppm [VCTCXO ]
+                                                                                        05        ±0.50ppm
+ Notes:
+     1] Refer to document 016-1454-0, Frequency Code Tables. 3-digits for frequencies <100MHz, 4-digits for frequencies 100MHz or greater.
+     2] Frequency vs. Temperature only.
+     3] Available with stability code X2 and 05 only.
+                                                      Not all performance combinations and frequencies may be available.
+                                                  Contact your local CTS Representative or CTS Customer Service for availability.
+              This product is specified for use only in standard commercial applications. Supplier disclaims all express and implied warranties and liability in connection with any use of this
+               product in any non-commercial applications or in any application that may expose the product to conditions that are outside of the tolerances provided in its specification.
+
+
+
+
+DOC# 008-0587-0 Rev. D                                                                                                                                                                         Page 1 of 7
+©2017 CTS® Corporation. Information/product(s) subject to change. No warranty that product(s) will meet the stated specifications for customer specific applications or test
+equipment. Visit www.ctscorp.com for list of applicable patent(s), more information, or to request a quote.
+                                                                                                                                                  Model 535
+                                                                                                                           High Stability Clipped Sine TCXO
+
+Electrical Specifications
+Operating Conditions
+ P ARAMETER                             SYMBO L                          CO NDITIO NS                         MIN            TYP          MAX           UNIT
+ Maximum Supply Voltage                    VCC                                    -                           -0.5            -            4.6             V
+ Maximum Control Voltage                    VC                                    -                           -0.3            -            VCC             V
+ Supply Voltage                            VCC                                   ±5%                          3.14           3.3           3.47            V
+ Supply Current                             ICC                                   -                             -             -             10            mA
+ O utput Load                             RL//CL                                  -                                   10k Ohm//10pF                        -
+                                                                                                               -10                         +70
+ O perating Temperature                     TA                                    -                            -40           +25           +85            °C
+                                                                                                               -40                        +105
+ Storage Temperature                       TSTG                                   -                            -55            -           +125            °C
+
+
+Frequency Stability
+ P ARAMETER                             SYMBO L                          CO NDITIO NS                         MIN            TYP          MAX           UNIT
+ Frequenc y Range                           fO                   Frequency stability ±0.10ppm                              10 - 40
+                                                                                                                                                         MHz
+                                                          Frequency stability ±0.28ppm or ±0.50ppm                         10 - 54
+ Frequenc y Stability                                  -1 0 °C to +7 0 °C & -4 0 °C to +8 5 °C
+   O verall Frequenc y Stability                  Ref. fO, 20 Years Aging, ±0.28ppm over -40°C to +85°C       -4.6            -            4.6           ppm
+   Initial Calibration                    Δf/fO        Initial Calibration @ +25°C, At Time of Shipment       -0.9            -            0.9           ppm
+   Temperature O nly                                       [fmax - fmin]/2, Over Temperature Range                    0.10, 0.28, 0.50                  ±ppm
+   Voltage Coeffic ient                   Δf/f25                      Supply Voltage, ±5%                     -0.2            -            0.2
+                                                                                                                                                         ppm
+   Load Coeffic ient                                                          Load, ±10%                      -0.2            -            0.2
+                                                            First Year @ +25°C, nominal VCC and VC            -1.0            -            1.0
+   Aging                                  Δf/f25                                                                                                         ppm
+                                                            20 Years @ +25°C, nominal VCC and VC              -3.0            -            3.0
+ Frequenc y Stability                                  -4 0 °C to +1 0 5 °C
+   O verall Frequenc y Stability                 Ref. fO, 20 Years Aging, ±0.28ppm over -40°C to +105°C       -4.7            -            4.7           ppm
+   Initial Calibration                    Δf/fO        Initial Calibration @ +25°C, At Time of Shipment       -0.9            -            0.9           ppm
+   Temperature O nly                                       [fmax - fmin]/2, Over Temperature Range                        0.28, 0.5                     ±ppm
+   Voltage Coeffic ient                   Δf/f25                      Supply Voltage, ±5%                     -0.2            -            0.2
+                                                                                                                                                         ppm
+   Load Coeffic ient                                                          Load, ±10%                      -0.2            -            0.2
+                                                            First Year @ +25°C, nominal VCC and VC            -1.0            -            1.0
+   Aging                                  Δf/f25                                                                                                         ppm
+                                                            20 Years @ +25°C, nominal VCC and VC              -3.0            -            3.0
+
+
+
+
+DOC# 008-0587-0 Rev. D                                                                                                                                         Page 2 of 7
+©2017 CTS® Corporation. Information/product(s) subject to change. No warranty that product(s) will meet the stated specifications for customer specific applications or test
+equipment. Visit www.ctscorp.com for list of applicable patent(s), more information, or to request a quote.
+                                                                                                                                                  Model 535
+                                                                                                                           High Stability Clipped Sine TCXO
+
+Electrical Specifications
+Output Parameters
+ P ARAMETER                             SYMBO L                        CO NDITIO NS                           MIN            TYP          MAX           UNIT
+ O utput Type                                -                          DC Coupled                                      Clipped Sine                       -
+ O utput Voltage Levels                     VO                                -                                0.8            -              -           Vp-p
+ Start Up Time                              TS                       Application of VCC                         -             2             5             ms
+ Enable Func tion
+   Enable Input Voltage                    VIH                Pin 3Logic '1', Output Enabled                 0.8VCC           -             -              V
+   Disable Input Voltage                    VIL               Pin 3 Logic '0', Output Disabled                  -             -          0.2VCC            V
+   Disabled Current                        ISTB               Pin 3 Logic '0', Output Disabled                  -             -            3.5            mA
+   Enable Time                             TPLZ                        Pin 3 Logic '1'                          -             -             5             ms
+ P hase Noise                                -                        See Typical Plots                         -             -              -             -
+
+
+Control Voltage
+ P ARAMETER                             SYMBO L                        CO NDITIO NS                           MIN            TYP          MAX           UNIT
+ Control Voltage                            VC                           VCC = +3.3V                           0.0          1.65           3.3             V
+ Frequenc y Tuning                        Δf/fO                      Specified VC Range                                   ±5 to ±10                      ppm
+  [VCTCXO Only]
+
+ Input Impedanc e                          ZVc                                -                               100             -              -         kOhms
+
+ Linearity                                  L                       Best Straight Line Fit                      -            ±5            ±10            %
+ Transfer Func tion                          -                                -                                            Positive                        -
+
+
+
+
+Test Circuit
+Clipped Sine
+
+
+
+
+DOC# 008-0587-0 Rev. D                                                                                                                                         Page 3 of 7
+©2017 CTS® Corporation. Information/product(s) subject to change. No warranty that product(s) will meet the stated specifications for customer specific applications or test
+equipment. Visit www.ctscorp.com for list of applicable patent(s), more information, or to request a quote.
+                                                                                                                                                Model 535
+                                                                                                                           High Stability Clipped Sine TCXO
+
+Electrical Specifications
+Performance Data
+Phase Noise [typical]
+50MHz, VCC = +3.3V, TA = +25°C
+
+
+
+
+DOC# 008-0587-0 Rev. D                                                                                                                                      Page 4 of 7
+©2017 CTS® Corporation. Information/product(s) subject to change. No warranty that product(s) will meet the stated specifications for customer specific applications or test
+equipment. Visit www.ctscorp.com for list of applicable patent(s), more information, or to request a quote.
+                                                                                                                                                Model 535
+                                                                                                                           High Stability Clipped Sine TCXO
+
+Mechanical Specifications
+Package Drawing                                                                                    Marking Information
+                                                                                                     1. xxxx – Frequency Code, 4-digits. See Page 7.
+                                                                                                     2. ● – Pin 1 Identifier.
+       xxxx                                                                                          3. ** – Manufacturing Site Code.
+     ● **YM                                                                                          4. YM – Date Code; Y – year [last digit], M – month.
+                                                                                                     [See Table I for month codes.]
+
+                                                                                                     5.     – Area for Crystal Lot Code or Date Code.
+
+
+
+
+Recommended Pad Layout                                                                             Notes
+                                                                                                     1. DO NOT make connections to non-labeled pins or
+                                                                                                        castellations as they may have internal
+                                                                                                        connections used in the manufacturing process.
+                                                                                                     2. JEDEC termination code (e4). Barrier-plating is
+                                                                                                        nickel [Ni] with gold [Au] flash plate.
+                                                                                                     3. Reflow conditions per JEDEC J-STD-020; +260°C
+                                                                                                        maximum, 10 seconds.
+                                                                                                     4. MSL = 1.
+
+
+
+
+Pin Assignments
+     Pin             Symbol                           Function
+      1                 Vc                Voltage Control Note 1
+      2                  -                    Do Not Connect
+      3                EOH             Enable, Pin 3 [Optional] Note 2
+      4               GND                      Circuit & Package
+      5                -                        Do Not Connect
+      6              Output                       Clipped Sine
+      7                    -                        Vcfilter
+      8                    -                    Do Not Connect
+     9                  VCC                     Supply Voltage
+     10                  -                      Do Not Connect
+    Notes
+     1.    Do not connect to Pin 1, if Voltage Control function is not used [TCXO].
+     2.    Do not connect to Pin 3, if Output Enable function is not used.
+     3.    Add 0.1µF capacitor between Pin 7 and ground.
+     4.    DC-Cut Capacitor Required. Add 1000pF capacitor between TCXO output and input of load.
+
+Table I - Month Code
+                      1         2      3        4        5        6        7       8        9      10        11      12
+MO NTH
+                     JAN       FEB    MAR      AP R     MAY      JUN      JUL     AUG      SEP     O CT     NO V     DEC
+MO NTH CO DE          1         2      3        4        5        6        7       8        9       X         Y       Z
+
+
+DOC# 008-0587-0 Rev. D                                                                                                                                      Page 5 of 7
+©2017 CTS® Corporation. Information/product(s) subject to change. No warranty that product(s) will meet the stated specifications for customer specific applications or test
+equipment. Visit www.ctscorp.com for list of applicable patent(s), more information, or to request a quote.
+                                                                                                                                                Model 535
+                                                                                                                           High Stability Clipped Sine TCXO
+
+Packaging - Tape and Reel
+Tape Drawing
+
+
+
+
+Reel Drawing
+
+
+
+
+Notes
+  1. Device quantity is 500 pieces maximum per 180mm reel.
+  2. Complete CTS part number, frequency value and date code information must appear on reel and carton labels.
+
+
+
+
+DOC# 008-0587-0 Rev. D                                                                                                                                      Page 6 of 7
+©2017 CTS® Corporation. Information/product(s) subject to change. No warranty that product(s) will meet the stated specifications for customer specific applications or test
+equipment. Visit www.ctscorp.com for list of applicable patent(s), more information, or to request a quote.
+                                                                                                                                                Model 535
+                                                                                                                           High Stability Clipped Sine TCXO
+
+Addendum
+Available Frequencies for Stability ±0.50ppm – MHz
+                      O RDERING        MARK ING                                  O RDERING        MARK ING                                 O RDERING         MARK ING
+   FREQ UENCY                                                FREQ UENCY                                                 FREQ UENCY
+                         CO DE          CO DE                                       CO DE          CO DE                                      CO DE           CO DE
+     10.000000            100            1000                   38.880000            388            3888
+     19.200000            192            1920                   40.000000            400            4000
+     20.000000            200            2000
+     25.000000            250            2500
+     38.400000            384            3840
+
+
+Available Frequencies for Stability ±0.28ppm – MHz
+                      O RDERING        MARK ING                                  O RDERING        MARK ING                                 O RDERING         MARK ING
+   FREQ UENCY                                                FREQ UENCY                                                 FREQ UENCY
+                         CO DE          CO DE                                       CO DE          CO DE                                      CO DE           CO DE
+     10.000000            100            1000                   38.880000            388            3888
+     19.200000            192            1920                   40.000000            400            4000
+     20.000000            200            2000
+     25.000000            250            2500
+     38.400000            384            3840
+
+
+Available Frequencies for Stability ±0.10ppm – MHz
+                      O RDERING        MARK ING                                  O RDERING        MARK ING                                 O RDERING         MARK ING
+   FREQ UENCY                                                FREQ UENCY                                                 FREQ UENCY
+                         CO DE          CO DE                                       CO DE          CO DE                                      CO DE           CO DE
+     10.000000            100            1000
+     20.000000            200            2000
+     25.000000            250            2500
+
+
+
+
+DOC# 008-0587-0 Rev. D                                                                                                                                      Page 7 of 7
+©2017 CTS® Corporation. Information/product(s) subject to change. No warranty that product(s) will meet the stated specifications for customer specific applications or test
+equipment. Visit www.ctscorp.com for list of applicable patent(s), more information, or to request a quote.
+Mouser Electronics
+
+Authorized Distributor
+
+
+
+Click to View Pricing, Inventory, Delivery & Lifecycle Information:
+
+
+
+CTS:
+ 535EL10001IA5 535EL10001IT5 535EL10005GA5 535EL10005GT5 535EL10005IA5 535EL10005IT5
+535EL100X2GA5 535EL100X2GT5 535EL100X2IA5 535EL100X2IT5 535EL12805GA5 535EL12805GT5
+535EL12805IA5 535EL12805IT5 535EL128X2GA5 535EL128X2GT5 535EL128X2IA5 535EL128X2IT5
+535EL13005GA5 535EL13005GT5 535EL13005IA5 535EL13005IT5 535EL130X2GA5 535EL130X2GT5
+535EL130X2IA5 535EL130X2IT5 535EL19205GA5 535EL19205GT5 535EL19205IA5 535EL19205IT5
+535EL192X2GA5 535EL192X2GT5 535EL192X2IA5 535EL192X2IT5 535EL20001IA5 535EL20001IT5
+535EL20005GA5 535EL20005GT5 535EL20005IA5 535EL20005IT5 535EL200X2GA5 535EL200X2GT5
+535EL200X2IA5 535EL200X2IT5 535EL24C01IA5 535EL24C01IT5 535EL24C05GA5 535EL24C05GT5
+535EL24C05IA5 535EL24C05IT5 535EL24CX2GA5 535EL24CX2GT5 535EL24CX2IA5 535EL24CX2IT5
+535EL25001IA5 535EL25001IT5 535EL25005GA5 535EL25005GT5 535EL25005IA5 535EL25005IT5
+535EL250X2GA5 535EL250X2GT5 535EL250X2IA5 535EL250X2IT5 535EL26005GA5 535EL26005GT5
+535EL26005IA5 535EL26005IT5 535EL260X2GA5 535EL260X2GT5 535EL260X2IA5 535EL260X2IT5
+535EL30701IA5 535EL30701IT5 535EL30705GA5 535EL30705GT5 535EL30705IA5 535EL30705IT5
+535EL307X2GA5 535EL307X2GT5 535EL307X2IA5 535EL307X2IT5 535EL32005GA5 535EL32005GT5
+535EL32005IA5 535EL32005IT5 535EL320X2GA5 535EL320X2GT5 535EL320X2IA5 535EL320X2IT5
+535EL38401IA5 535EL38401IT5 535EL38805GA5 535EL38805GT5 535EL38805IA5 535EL38805IT5
+535EL388X2GA5 535EL388X2GT5 535EL388X2IA5 535EL388X2IT5
+

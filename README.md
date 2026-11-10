@@ -1,6 +1,6 @@
 # Synthesizer-VHF
 
-An ADF4351 synthesizer, 35 MHz to 4.4 GHz, with an ATtiny1616 and USB. This branch, `hammond-1550Q`, is the Hammond 1550Q version: the board is the lid of the box. Designed by Jeffrey Millar (WA1HCO).
+An ADF4351 synthesizer, 35 MHz to 4.4 GHz, with an ATtiny3216-M and USB. This branch, `hammond-1550Q`, is the Hammond 1550Q version: the board is the lid of the box. Designed by Jeffrey Millar (WA1HCO).
 
 The first board in this repository was built and sent to fab with a TCXO, two RF outputs, USB serial, and a 12 V input. SPI between the microcontroller and the PLL is wired to ordinary pins, and the firmware bit-bangs it. That built board is the `as-built` branch. `main` carries the later layout of that same board, including the four-layer stackup and the 50 ohm coplanar RF routes. `hammond-1550Q` is the new enclosure and a new 10 MHz reference chain. It has not been built. The previous lid design remains on `diecast-2x2`.
 
@@ -12,11 +12,11 @@ The PCB is the lid of a Hammond 1550Q. Parts sit on the inside face. The SMA con
 
 The synthesizer is an ADF4351. Its VCO covers 2.2–4.4 GHz, and the on-chip divider brings the outputs down to 35 MHz. Two RF jacks leave the box.
 
-The reference is an external 10 MHz on REF IN, shared when several boards must stay together. An on-board 10 MHz TCXO is the fallback. REF IN is 50 ohm and is squared before a 2:1 mux; the TCXO is squared the same way and is the other mux input. With no firmware, a pulldown on PA6 selects the TCXO. Firmware counts edges on PA5 to see that an external reference is present, then drives PA6 to select it. There is no ADF4002 and no REF OUT.
+The reference is an external 10 MHz on REF IN, shared when several boards must stay together. An on-board 10 MHz TCXO is the fallback. REF IN is 51 ohm and is squared before a 2:1 mux; the TCXO is squared the same way and is the other mux input. With no firmware, a pulldown on PA6 selects the TCXO. Firmware counts edges on PA5 to see that an external reference is present, then drives PA6 to select it. There is no ADF4002 and no REF OUT.
 
-The controller is an ATtiny1616. An FT231X provides USB-C serial. Everyday firmware updates use Optiboot: plugging in USB resets the chip through DTR and a capacitor. If that path is broken, UPDI is a single SMD scope loop. Lock detect, mux, DBG1, DBG2, MCU 3.3 V, and a scope ground are the same kind of loop. Ground for a probe is that ground loop.
+The schematic controller value is ATtiny3216-M. The footprint is the ATtiny1616 VQFN-20, 3 mm by 3 mm. ATtiny3216-M is not sold in that package. The symbol is still ATtiny1616-M. Its description says 32 kB flash. ATtiny3226-MF fits this footprint and has 32 kB flash. It is not a hex drop-in. The firmware still builds for an ATtiny1616. An FT231X provides USB-C serial. The first program is Optiboot over UPDI on scope loop TP1. After that, a USB plug-in starts Optiboot. DTR through C13 does not. Lock detect is scope loop TP6. Mux, DBG1, DBG2, MCU 3.3 V, and a scope ground are the same kind of loop. Ground for a probe is that ground loop.
 
-Power is 5 V from USB. Two LP5907 regulators make 3.3 V: one for the VCO, and one for the PLL analog rail. The digital 3.3 V rail comes from that analog rail through a ferrite bead.
+Power is 5 V from USB. Three LP5907 regulators make 3.3 V. U10 is VREF for the reference chain. U8 is VVCO. U7 is VRF. FB2 feeds VDD from VRF. VDD supplies the controller, the FT231X VCCIO, and the ADF4351 DVDD and SDVDD pins.
 
 Four reverse-mount LEDs shine through the lid: power, USB activity, reference lock, and synthesizer lock. H_LED1–H_LED4 are the light-pipe holes under those LEDs. They are plated, not filled, not tented, with no solder mask, so the bare copper finish stays visible. They are parked off the board until placed.
 
@@ -57,7 +57,7 @@ Project libraries sit next to the board. The library tables refer to them with `
 - `hardware/libraries/adf4350.kicad_sym` — ADF4350 symbol.
 - `hardware/libraries/Synthesizer.pretty` — the footprints that are not in KiCad's libraries: the reverse-mount Kingbright LEDs, the 1550Q mounting holes, the LED light-pipe holes, and the G-Switch USB-C receptacle. 0402 parts, the ADF4351 LFCSP, the 3225 oscillator, and the scope loops use KiCad's own footprints.
 
-Passives, connectors, the ATtiny1616, the FT231X, and their 3D shapes come from KiCad's standard libraries. Where a footprint has a 3D model, the path uses `${KICAD8_3DMODEL_DIR}`. KiCad 10 resolves that older name to its own 3D library (`KICAD10_3DMODEL_DIR`) unless `KICAD8_3DMODEL_DIR` is set on its own. This board has no separate project 3D model. The old MAX2870 download is not used, so it is not in the library tables.
+Passives, connectors, the ATtiny1616-M symbol, the FT231X, and their 3D shapes come from KiCad's standard libraries. Where a footprint has a 3D model, the path uses `${KICAD8_3DMODEL_DIR}`. KiCad 10 resolves that older name to its own 3D library (`KICAD10_3DMODEL_DIR`) unless `KICAD8_3DMODEL_DIR` is set on its own. This board has no separate project 3D model. The old MAX2870 download is not used, so it is not in the library tables.
 
 KiCad 10 may warn that some standard symbols and footprints differ from the copies stored in the schematic and board. Those stored copies are the ones the layout uses.
 
@@ -79,13 +79,11 @@ scripts/test-adf4351
 
 ## Flash the firmware
 
-Install `pymcuprog` as well. The serial port is already set in `software/platformio.ini` for the FT231X on this project. Connect USB, then from the repository root run:
+The first boards need Optiboot installed over UPDI before the USB port can load an application. The adapter wiring, fuse values, and avrdude command are in `software/INITIAL-PROGRAMMING.md`.
 
-```
-scripts/flash-firmware
-```
+`scripts/flash-firmware` runs `pymcuprog` on the FT231X port in `software/platformio.ini`. That port is the application UART. It does not program Optiboot.
 
-Optiboot on the USB serial port is the usual path. Scope loop TP6 is UPDI when the serial bootloader cannot take an update. Use the scope ground loop with it.
+Scope loop TP1 is UPDI. TP6 is lock detect. Use the scope ground loop with the UPDI loop.
 
 The current firmware still speaks the as-built serial console at 57600 baud. Single keys change the output:
 

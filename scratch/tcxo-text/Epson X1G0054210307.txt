@@ -1,0 +1,890 @@
+ Temperature Compensated Crystal Oscillator (TCXO)
+· Package size (2.5 mm × 2.0 mm × 0.8 mm)
+· High stability TCXO
+· Output waveform : Clipped sine wave
+
+
+[ 1 ] Product Number / Product Name
+(1-1) Product Number / Ordering Code
+     X1G0054210307xx
+        last 2 digits code(xx) define Quantity.
+       The standard is "27", 10 000 pcs/Reel.
+(1-2) Product Name / Model Name
+     TG2520SMN 40.000000 MHz MCGNNM
+[ 2 ] Operating Conditions
+                                                       Specifications
+            Parameter             Symbol                                            Unit               Conditions
+                                               Min.         Typ.        Max.
+                                     Vcc       2.66           -        3.465          V                     -
+Supply voltage
+                                    GND          0            -           0           V                     -
+Operating temperature range        T_use        -40           -         +85          °C                     -
+                                  Load_R         9           10          11          kΩ                     -
+Output load                       Load_C         9           10          11          pF                     -
+                                     Cc        0.01           -           -          μF            DC-cut capacitor *
+* DC-cut capacitor is not included in this TCXO. Please attach an external DC-cut capacitor to the out pin.
+[ 3 ] Frequency Characteristics                        (Vcc = 2.66 to 3.465 V, GND = 0.0 V, Load = 10 kΩ // 10 pF, T_use = +25 °C)
+                                                            Specifications
+            Parameter             Symbol                                                    Unit               Conditions
+                                                  Min.          Typ.          Max.
+Output Frequency                     fo            -             40            -            MHz
+                                                                                                      T_use = +25 °C ± 2 °C
+Frequency tolerance                 f_tol         -0.5             -          +0.5         x10⁻⁶
+                                                                                                     Before reflow
+                                                                                                      T_use = +25 °C ± 2 °C
+Frequency tolerance *1              f_tol         -1.5             -          +1.5         x10⁻⁶
+                                                                                                      After 2 reflows *2
+Frequency / temperature                                                                              T_use = -40 °C to +85 °C
+                                   fo-Tc          -0.5             -          +0.5         x10⁻⁶
+characteristics                                                                                      (Reference to +25 °C)
+Frequency / load coefficient      fo-Load       -0.1             -          +0.1      x10⁻⁶          Load ± 10 %
+Frequency / voltage coefficient    fo-Vcc       -0.1             -          +0.1      x10⁻⁶          Vcc ± 5 % *3
+                                                -0.5             -          +0.5      x10⁻⁶          T_use = +25 °C first year
+Frequency aging *4                   f_age
+                                                -3.5             -          +3.5      x10⁻⁶          T_use = +25 °C 10 years
+*1 Include initial frequency tolerance and frequency deviation after reflow cycles.
+*2 Measured in the elapse of 24 hours after reflow soldering.
+*3 Vcc ± 5 % must be in operating supply voltage range (2.66 V to 3.465 V)
+*4 Aging stability is estimated from environmental reliability tests; expected amount of the frequency variation.
+[ 4 ] Electrical Characteristics                       (Vcc = 2.66 to 3.465 V, GND = 0.0 V, Load = 10 kΩ // 10 pF, T_use = +25 °C)
+                                                            Specifications
+            Parameter             Symbol                                                    Unit               Conditions
+                                                  Min.          Typ.          Max.
+Current consumption                  Icc           -               -          1.8           mA                     -
+Output level                        Vpp           0.8              -            -           V        Peak to peak voltage
+Symmetry                            SYM           45             50            55           %        GND level (DC-cut)
+                                                                                                     Until frequency has been reached
+                                                   -               -           2.0          ms       within ±0.5 x 10⁻⁶ of final freq.
+Start up time                       t_str
+                                                                                                     Until output signal has been
+                                                   -               -           1.0          ms       reached min 90 % of final amp.
+Harmonics                             -            -               -           -5.0         dBc      3rd harmonics
+
+
+
+
+[ For other general specifications, please refer to the attached Full Data Sheet below ]
+   High stability and Low phase noise temperature compensated crystal oscillator (TCXO)
+   Product name : TG2016SMN / TG2520SMN
+
+   Features
+   • High stability
+   • Frequency range          : 10 MHz to 55 MHz
+   • Output                   : Clipped Sine
+   • Supply voltage           : 1.7 V to 3.63 V
+   • Frequency / temperature characteristic
+                                                                      -6                   TG2016SMN               TG2520SMN
+                                                            : ±0.5 x10 Max.                (2.0 × 1.6 × 0.73 mm)   (2.5 × 2.0 × 0.8 mm)
+        • Operating temperature                             : -40 °C to +85 °C
+        • Phase Noise                                       : -161 dBc/Hz
+                                                (fo = 26 MHz, 100 kHz offset) Description
+   Applications                                                                   TG2016SMN / TG2520SMN are high stability and low phase
+   • GNSS                                                                         noise TCXOs using an Epson-developed and fabricated IC
+   • RF                                                                           and MHz fundamental crystal .
+   • Wireless communication devices                                               The phase noise is the lowest of Epson’s compact TCXO
+   • LTE, WiMAX, Wi-Fi, W-LAN                                                     products lineup, making it an ideal reference clock for GNSS
+   • IoT etc..                                                                    and other wireless communication devices.
+
+   Outline dimensions
+   TG2016SMN                                                  TG2520SMN                        Characteristics
+                   #4
+                             2.0±0.15
+                                           #3
+                                                                                                 Frequency / temperature characteristics
+                                                                                                  fo = 26 MHz, n = 40 pcs
+
+        1.6±0.15
+
+
+
+                   #1                      #2
+
+        (0.27)
+       (0.25)
+                                                0.73±0.07
+
+
+                             1.58±0.1
+                    #1                     #2
+C0.15
+
+
+
+
+  1.18±0.1                                      0.40±0.1
+
+
+
+
+                   #4
+                             1.2±0.1
+                                           #3                                                    Frequency slope
+                                                                                                  fo = 26 MHz, n = 40 pcs
+
+
+
+
+   Pin information
+                        Pin #           Connection
+                                        N.C. (TCXO)
+                         1
+                                        Vc (VC-TCXO)
+                         2                    GND
+                         3                    OUT
+                         4                    VCC
+
+
+
+
+                                                                                 Page 2 / 18          Spec No : TG2016/2520SMN_EN_ver.1.3
+[ 1 ] Product Number / Product Name
+ (1) Product Name (Standard Form)
+
+
+①Model (TG2016, TG2520) ②Output (S: Clipped sine) ③Frequency ④Supply voltage (Refer to symbol table)
+⑤Frequency / temperature characteristics (C: ±0.5 × 10-6 Max., F: ±2.0 × 10-6 Max.) ⑥Operating temperature (G: -40 °C to +85 °C)
+⑦Standby function (N: Non) ⑧VC function(Refer to symbol table, N: Non for TCXO) ⑨Internal identification code ("M" is default)
+
+
+
+
+ (2) Product Number / Ordering Code            Please refer to the web site for the latest information
+ Frequency             Part number
+ [MHz]          TG2520SMN (Size: 2.5 x 2.0)                            TG2016SMN (Size: 2.0 x 1.6)
+                ±0.5 ppm (-40 to +85 °C), without VC function          ±0.5 ppm (-40 to +85 °C), without VC function
+                       VCC = 1.8 V            VCC = 2.66 to 3.465 V            VCC = 1.8 V               VCC = 2.66 to 3.465 V
+                    Suffix: ECGNNM              Suffix: MCGNNM              Suffix: ECGNNM                Suffix: MCGNNM
+      16           X1G005421020827             X1G005421030827             X1G005441020825               X1G005441030825
+    16.368         X1G005421020127             X1G005421030127             X1G005441020125               X1G005441030125
+    16.369         X1G005421020227             X1G005421030227             X1G005441020225               X1G005441030225
+     19.2          X1G005421020327             X1G005421030327             X1G005441020325               X1G005441030325
+      20           X1G005421021127             X1G005421031127             X1G005441021125               X1G005441031125
+      24           X1G005421021227             X1G005421031227             X1G005441021225               X1G005441031225
+      25           X1G005421021327             X1G005421031327             X1G005441021325               X1G005441031325
+      26           X1G005421020427             X1G005421030427             X1G005441020425               X1G005441030425
+      27           X1G005421021427             X1G005421031427             X1G005441021425               X1G005441031425
+     27.6          X1G005421022127             X1G005421032127             X1G005441022125               X1G005441032125
+      30           X1G005421021527             X1G005421031527             X1G005441021525               X1G005441031525
+      32           X1G005421020527             X1G005421030527             X1G005441020525               X1G005441030525
+     38.4          X1G005421020627             X1G005421030627             X1G005441020625               X1G005441030625
+      40           X1G005421020727             X1G005421030727             X1G005441020725               X1G005441030725
+      48           X1G005421021627             X1G005421031627             X1G005441021625               X1G005441031625
+      50           X1G005421022227             X1G005421032227             X1G005441022225               X1G005441032225
+      52           X1G005421022027             X1G005421032027             X1G005441022025               X1G005441032025
+
+
+
+
+                                                           Page 3 / 18                Spec No : TG2016/2520SMN_EN_ver.1.3
+[ 2 ] Absolute maximum ratings
+                                                              Specifications
+            Parameter                 Symbol                                                         Unit                 Conditions
+                                                     Min.         Typ.         Max.
+ Supply voltage                      VCC-GND         -0.5            -         +4.0                   V
+ Frequency control voltage           Vc-GND          -0.5            -       VCC + 0.5                V           Vc Terminal
+                                                                                                                  Storage as single
+ Storage temperature range             T_stg         -40              -            +90                °C
+                                                                                                                  product
+
+[ 3 ] Recommended operating conditions
+                                                        Specifications
+            Parameter                 Symbol                                           Unit               Conditions
+                                                Min.         Typ.        Max.
+                                                 1.7          1.8         1.9            V         VCC = 1.8 V ± 0.1 V
+                                                -5 %          2.8        +5 %            V         VCC = 2.8 V ± 5 %
+ Supply voltage                       VCC
+                                                -5 %          3.0        +5 %            V         VCC = 3.0 V ± 5 %
+                                                -5 %          3.3        +5 %            V         VCC = 3.3 V ± 5 %
+ Supply voltage                      GND          0            -            0            V
+                                                GND          N.C           －             V         Vc Terminal / TCXO
+                                                 0.3          0.9         1.5            V         Vc = 0.9 V ± 0.6 V
+ Frequency control voltage            Vc         0.4          1.4         2.4            V         Vc = 1.4 V ± 1.0 V
+                                                 0.5          1.5         2.5            V         Vc = 1.5 V ± 1.0 V
+                                                0.65         1.65        2.65            V         Vc = 1.65 V ± 1.0 V
+ Operating temperature range        T_use        -40         +25          +85           °C
+                                   Load_R         9           10           11          kΩ
+ Output load                       Load_C         9           10           11          pF
+                                      Cc        0.01           -            -          μF          DC-cut capacitor *
+ * DC-cut capacitor is not included in this TCXO. Please attach an external DC-cut capacitor to the out pin.
+[ 4 ] Frequency characteristics
+ (4-1) Frequency characteristics                                          (VCC = Typ., Vc = Typ., Output Load = 10 kΩ // 10 pF, T_use = +25 °C)
+                                                              Specifications
+            Parameter                 Symbol                                                         Unit                 Conditions
+                                                     Min.         Typ.            Max.
+                                                     10              -             55
+ Output Frequency                        fo       16, 16.368, 16.369, 19.2, 20, 24, 25, 26,         MHz
+                                                    27, 27.6, 30, 32, 38.4, 40, 48, 50, 52
+                                                                                                                  Standard Frequency
+ Frequency tolerance(before                                                                                       T_use = +25 °C ± 2 °C
+                                      f_tol          -0.5             -            +0.5             x10⁻⁶
+ reflow)                                                                                                          Before reflow
+ Frequency tolerance(after                                                                                        T_use = +25 °C ± 2 °C
+                                      f_tol          -1.5             -            +1.5             x10⁻⁶
+ reflow) *                                                                                                        After reflow *
+ Frequency / temperature                                                                                          T_use = -40 °C to +85 °C
+                                     fo-Tc           -0.5             -            +0.5             x10⁻⁶         (Reference to +25 °C)
+ characteristics
+ Frequency / load coefficient      fo-Load           -0.1             -            +0.1             x10⁻⁶         Load ± 10 %
+ Frequency / voltage coefficient    fo-VCC           -0.1             -            +0.1             x10⁻⁶         VCC ± 5 % **
+ Frequency aging_1year ***        f_age_1y           -0.5             -            +0.5             x10⁻⁶
+                                                                                                                  10 MHz,
+ Frequency aging_3year            f_age_3y           -1.5             -            +1.5             x10⁻⁶
+                                                                                                                  12 MHz < fo < 20 MHz,
+ Frequency aging_5year            f_age_5y           -2.0             -            +2.0             x10⁻⁶         24 MHz < fo < 40 MHz,
+ Frequency aging_10year          f_age_10y           -3.5             -            +3.5             x10⁻⁶
+ Frequency aging_1year ***        f_age_1y           -1.5             -            +1.5             x10⁻⁶
+                                                                                                                  10 MHz < fo < 12 MHz,
+ Frequency aging_3year            f_age_3y           -2.5             -            +2.5             x10⁻⁶
+                                                                                                                  20 MHz < fo < 24 MHz,
+ Frequency aging_5year            f_age_5y            -3              -             +3              x10⁻⁶         40 MHz < fo < 55 MHz
+ Frequency aging_10year          f_age_10y            -5              -             +5              x10⁻⁶
+* Measured in the elapse of 2 hours after reflow soldering.
+** VCC ± 5 % must be in operating supply voltage range (1.7 V to 3.63 V)
+*** Aging stability is estimated from environmental reliability tests; expected amount of the frequency variation.
+    This does not intend to guarantee the product-life cycle
+
+
+
+
+                                                             Page 4 / 18                  Spec No : TG2016/2520SMN_EN_ver.1.3
+ (4-2) Frequency control characteristics *VC-TCXO only                            (VCC = Typ., Vc = Typ., Output Load = 10 kΩ // 10 pF, T_use = +25 °C)
+                                                                     Specifications
+              Parameter                    Symbol                                                            Unit                   Conditions
+                                                           Min.          Typ.             Max.
+                                                                                                                          Vc = 0.9 V - 0.6 V at VCC = 1.8 V
+                                                                                                                          Vc = 1.4 V - 1.0 V at VCC = 2.8 V
+                                                                -            -             -5.0             x10⁻⁶         Vc = 1.5 V - 1.0 V at VCC = 3.0 V
+                                                                                                                          Vc = 1.65 V - 1.0 V at VCC = 3.3 V
+ Frequency control range                   f_cont                                                                         Vc = 0.9 V + 0.6 V at VCC = 1.8 V
+                                                                                                                          Vc = 1.4 V + 1.0 V at VCC = 2.8 V
+                                                           +5.0              -               -              x10⁻⁶         Vc = 1.5 V + 1.0 V at VCC = 3.0 V
+                                                                                                                          Vc = 1.65 V +1.0 V at VCC = 3.3 V
+
+ Input impedance                             Zin               500           -               -                kΩ          Vc-GND (DC)
+ Frequency change polarity                    -                      Positive polarity                         -
+[ 5 ] Electrical characteristics                                                  (VCC = Typ., Vc = Typ., Output Load = 10 kΩ // 10 pF, T_use = +25 °C)
+                                                                     Specifications
+              Parameter                    Symbol                                                            Unit                   Conditions
+                                                           Min.          Typ.             Max.
+                                                            -               -             1.5                mA           10 MHz < fo < 26 MHz
+
+                                              ICC           -               -             1.8                mA           26 MHz < fo < 40 MHz
+ Current consumption
+                                                            -               -             2.0                mA           40 MHz < fo < 50 MHz
+                                                            -               -             2.1                mA           50 MHz < fo < 55 MHz
+ Output voltage                              Vpp           0.8              -              -                 Vpp          Peak to peak voltage
+                                                                                                                          Until output signal has been
+ Start-up time                               t_str          -               -             1.0                ms           reached min 90% of final amp.
+                                                                                                                          Until frequency has been reached
+ Start-up time                               t_str              -            -              2.0              ms           within ±0.5 x 10⁻⁶ of final
+                                                                                                                          frequency.
+
+                                                                -             -           0.050                           from 0.1 s to 0.6 s
+ Frequency drift rate                      fo-dfift             -             -           0.014             x10⁻⁶         from 0.6 s to 1.6 s
+                                                                -             -           0.005                           from 1.6 s and up to 40 s
+ Symmetry                                   SYM                40            50             60                %           GND level (DC-cut)
+ Harmonics                                  Hm                  -             -           -10.0              dBc
+                                                                -           -66              -                            1 Hz offset
+                                                                -           -94              -                            10 Hz offset
+                                                                -          -120              -                            100 Hz offset
+ Phase noise fo = 26 MHz *                   L(f)               -          -142              -             dBc/Hz         1 kHz offset
+                                                                -          -157              -                            10 kHz offset
+                                                                -          -161              -                            100 kHz offset
+                                                                -          -163              -                            1 MHz offset
+ * For other frequencies, refer to Charts (6-8), Phase Noise
+
+
+
+
+                                                                     Page 5 / 18                  Spec No : TG2016/2520SMN_EN_ver.1.3
+[ 6 ] Characteristic Data
+ (6-1) "Frequency / temperature characteristics" & "Frequency slope"
+   16.368 MHz (n = 40 pcs)
+
+
+
+
+   19.2 MHz (n = 40 pcs)
+
+
+
+
+   24 MHz (n = 40 pcs)
+
+
+
+
+   26 MHz (n = 40 pcs)
+
+
+
+
+                                                Page 6 / 18            Spec No : TG2016/2520SMN_EN_ver.1.3
+32 MHz (n = 40 pcs)
+
+
+
+
+38.4 MHz (n = 40 pcs)
+
+
+
+
+48 MHz (n = 40 pcs)
+
+
+
+
+52 MHz (n = 40 pcs)
+
+
+
+
+                        Page 7 / 18   Spec No : TG2016/2520SMN_EN_ver.1.3
+(6-2) "Frequency / load coefficient" & "Frequency / voltage coefficient"
+26 MHz
+
+
+
+
+55 MHz
+
+
+
+
+(6-3) Frequency Aging    *Aging stability is estimated from environmental reliability tests; expected amount of the frequency variation.
+                          This does not intend to guarantee the product-life cycle.
+
+
+
+
+(6-4) G-sensitivity (26 MHz)
+
+
+
+
+                                                                  Page 8 / 18                          Spec No : TG2016/2520SMN_EN_ver.1.3
+(6-5) Frequency control range (26 MHz, T_use = 25 °C, VC-TCXO only)
+
+
+
+
+(6-6) "Current consumption" & "Output voltage peak to peak"        (T_use = 25 °C)
+
+
+
+
+(6-7) Start-up time (T_use = 25 °C, X axis Scale = 0.2 msec/div)
+
+
+      26 MHz
+
+
+
+
+      40 MHz
+
+
+
+
+                                               Page 9 / 18            Spec No : TG2016/2520SMN_EN_ver.1.3
+(6-8) Phase Noise
+ (1) fo = 16 MHz, T_use = +25 °C, n = 5 pcs           (2) fo = 16.368 MHz, T_use = +25 °C, n = 5 pcs
+
+
+
+
+ (3) fo = 16.369 MHz, T_use = +25 °C, n = 5 pcs       (4) fo = 19.2 MHz, T_use = +25 °C, n = 5 pcs
+
+
+
+
+ (5) fo = 20 MHz, T_use = +25 °C, n = 5 pcs           (6) fo = 24 MHz, T_use = +25 °C, n = 5 pcs
+
+
+
+
+ (7) fo = 25 MHz, T_use = +25 °C, n = 5 pcs           (8) fo = 26 MHz, T_use = +25 °C, n = 5 pcs
+
+
+
+
+                                                  Page 10 / 18          Spec No : TG2016/2520SMN_EN_ver.1.3
+(6-8) Phase Noise
+ (9) fo = 27 MHz, T_use = +25 °C, n = 5 pcs          (10) fo = 27.6 MHz, T_use = +25 °C, n = 5 pcs
+
+
+
+
+ (11) fo = 30 MHz, T_use = +25 °C, n = 5 pcs         (12) fo = 32 MHz, T_use = +25 °C, n = 5 pcs
+
+
+
+
+ (13) fo = 38.4 MHz, T_use = +25 °C, n = 5 pcs       (14) fo = 40 MHz, T_use = +25 °C, n = 5 pcs
+
+
+
+
+ (15) fo = 48 MHz, T_use = +25 °C, n = 5 pcs         (16) fo = 52 MHz, T_use = +25 °C, n = 5 pcs
+
+
+
+
+                                                 Page 11 / 18          Spec No : TG2016/2520SMN_EN_ver.1.3
+(6-9) Short term stability [ADEV] (26 MHz, n = 18 pcs)
+
+
+
+
+                                               Page 12 / 18   Spec No : TG2016/2520SMN_EN_ver.1.3
+[ 7 ] Test circuit
+ (7-1) Output Load : Load = 10 kΩ // 10 pF
+                                                           DC-cut
+   (1)TCXO Connection Example                             Capacitor
+                                                                            Test Point
+                                   Vcc              OUT
+
+                                   N.C.             GND
+                      By-pass
+                      Capacitor                             Load_C       Load_R
+        Supply
+                        0.01μF
+                      0.01    to
+        Voltage
+                          0.1μF
+                      to0.1    F
+
+
+
+
+   (2)VC-TCXO Connection Example                           DC-cut
+                                                          Capacitor
+                                                                             Test Point
+                                   Vcc              OUT
+
+                                   Vc               GND
+        Supply       By-pass
+        Voltage      Capacitor
+                                                           Load_C        Load_R
+                       0.01μF
+                      0.01   to
+                      to 0.1F
+                       0.1    μF
+                                          Control
+                                          Voltage
+
+
+
+
+ (7-2) Current Consumption
+                                                           DC-cut
+   (1)TCXO Connection Example                             Capacitor
+
+                     A             Vcc              OUT
+
+                                   N.C.             GND
+                     By-pass
+                     Capacitor                              Load_C        Load_R
+      Supply
+                      0.01μF
+                     0.01   to
+      Voltage
+                     to 0.1F
+                      0.1   μF
+
+
+
+
+   (2)VC-TCXO Connection Example                            DC-cut
+                                                           Capacitor
+
+                     A             Vcc              OUT
+
+                                   Vc.              GND
+       Supply        By-pass
+       Voltage       Capacitor
+                                                            Load_C         Load_R
+                       0.01μF
+                     0.01   to
+                        0.1μF
+                     to0.1   F            Control
+                                          Voltage
+
+
+
+ (7-3) Conditions
+   (1) Oscilloscope: Impedance Min. 1 MΩ
+                    Input capacitance Max. 10 pF
+                    Band width Min. 300 MHz
+          Impossible to measure both frequency and wave form at the same time.
+          (In case of using oscilloscope's amplifier output, possible to measure both at the same time.)
+   (2) Load_C includes probe capacitance.
+   (3) A capacitor (By-pass: 0.01 µF to 0.1 µF) is placed between VCC and GND,and closely to TCXO.
+   (4) Use the current meter whose internal impedance value is small.
+   (5) Power Supply       Impedance of power supply should be as low as possible.
+
+
+                                                          Page 13 / 18      Spec No : TG2016/2520SMN_EN_ver.1.3
+[ 8 ] Outline Drawing / Recommended Foot Print
+    (1)TG2016SMN                                                                                                   0.6
+                                          2.0±0.15                                                     #4                            #3           unit : mm
+                               #4                           #3
+
+
+                                                                                                     0.75
+
+
+                    1.6±0.15                                                                                                           1.13
+
+
+
+                               #1                          #2
+                                                                                                        #1                           #2
+                   (0.27)
+                    (0.25)
+
+                                                                                0.73±0.07
+                                                                                                                           1.65
+
+
+                                                                                                                   Pin #   Connection
+                                          1.58±0.1                                                                         N.C. (TCXO)
+        C0.15
+                                #1                        #2                                                       1
+                                                                                                                           Vc (VC-TCXO)
+                                                                                                                   2             GND
+
+
+              1.18±0.1                                                          0.40±0.1
+                                                                                                                   3             OUT
+                                                                                                                   4             VCC
+                                                                                                              Please keep “N.C.” pin OPEN condition
+                                                                                                               or GND connection.
+                               #4                         #3                                                  "N.C." pin doesn’t work as a ground pin.
+                                           1.2±0.1
+
+                                                                                                              For stable operation, please add a bypass
+          Terminal coating : Au plating                                                                       capacitor(0.01 μF to 0.1 μF) between Vcc and GND.
+                                                                                                              Please place it as close to TCXO as possible.
+
+                                                                                                              Please do not place any pattern between
+                                                                                                              footprint pads.
+  (2)TG2520SMN                                                                                              #4      0.8
+                  #4                                 #3                                                                              #3
+                                                                                                                                                  unit : mm
+                                                                                                        1.0
+
+
+                                                          2.0±0.2                                                                     1.4
+
+
+
+
+                  #1                    2.5±0.2      #2
+                                                                                                              #1            2.1      #2
+
+
+         (0.38)                                                                                                    Pin #   Connection
+                                                                    0.8±0.1                                                N.C (TCXO)
+                                                                                                                   1
+                                                                                                                           Vc (VC-TCXO)
+                                         0.5±0.1                                                                   2             GND
+                                                                                                                   3             OUT
+                  #1                                 #2
+                                                                                                                   4             VCC
+                                                          (0.75)                                              Please keep “N.C.” pin OPEN condition
+
+                                                                      0.6±0.1
+                                                                                                               or GND connection.
+        C0.2
+                                                                                                              "N.C." pin doesn’t work as a ground pin.
+
+
+                  #4                                 #3
+                                                                                                              For stable operation, please add a bypass
+                               (0.55)    1.5±0.1
+                                                                                                              capacitor(0.01 μF to 0.1 μF) between Vcc and GND.
+                                                                                                              Please place it as close to TCXO as possible.
+          Terminal coating : Au plating                                                                       Please do not place any pattern between
+                                                                                                              footprint pads.
+
+
+                                                                                            Page 14 / 18                   Spec No : TG2016/2520SMN_EN_ver.1.3
+[ 9 ] Marking
+   TG2016SMN / TG2520SMN common
+                                                                                                  【Model ID Example】
+                                                                                                    product Freq.[MHz]   (4)model ID
+                                                      (1) 1Pin Mark
+                                                                                           TG2016SMN            16.368      6A0
+                  6xx                                 (2) Arbitrary marking area (2digits) TG2016SMN            16.369      6A1
+                                                      (3) Lot No. (3digits)                TG2016SMN             19.2       6A2
+                                                      (4) model ID                 →       TG2016SMN              26        6A3
+                                                                                           TG2016SMN              32        6A4
+                                                      (5) Image recognition mark           TG2016SMN             38.4       6A5
+                                                                                                  TG2016SMN       40        6A6
+
+[ 10 ] Moisture Sensitivity Level , Electro-Static Discharge
+ (10-1) Moisture Sensitivity Level (MSL)
+          Parameter                Specifications                                   Conditions
+            MSL                      LEVEL1           JEDEC J-STD-020D
+ (10-2) Electro-Static Discharge (ESD)
+         Parameter                 Specifications                             Conditions
+   Human Body Model (HBM)          2 000 V Min.       EIAJ ED-4701-1 C111A, 100 pF, 1.5 kΩ, 3 times
+     Machine Model (MM)             200 V Min.        EIAJ ED-4701-1 C111, 200 pF, 0 Ω, 1 time
+
+[ 11 ] Reflow Profile (follow to IPC / JEDEC J-STD-020D.1)
+                      Temperature [ C ]
+
+                      300
+                              TP         ; +260 C
+                                           +255 C
+                                                                                              tp ; 20 s to 40 s
+                      250                                 Avg. Ramp-up
+                              TL     ; +217 C            3 C / s Max.              tL
+                                                                                                         Ramp-down
+                              Ts max ; +200 C                                 60 s to 150 s
+                                                                                                         6 C / s Max.
+                      200                                                      ( +217 C over )
+
+
+                              Ts min ; +150 C                ts
+                      150                               60 s to 180 s
+                                                     ( +150 C to +200 C )
+
+                      100
+
+
+                       50
+                                         Time +25 C to Peak
+
+                        0     60     120 180 240 300 360 420 480 540 600 660 720 780
+                                                                             Time [ s ]
+
+
+
+
+                                                    Page 15 / 18              Spec No : TG2016/2520SMN_EN_ver.1.3
+[ 12 ] Packing Information
+ TG2016SMN
+ (12-1) Product number last 2 digits code(xx) define Quantity. The standard is "25", 12 000 pcs/Reel.
+   X1G005441xxxxxx
+ (12-2) Taping Specification
+            Subject to EIA-481 & IEC-60286
+               (1) Tape Dimensions TE0804L
+                   Material of the Carrier Tape : PS                                                Material of the Top Tape                                                             : PET+PE
+                                        4 .0 ±0 .1                                                                                                     1 .0±0 .1
+                                                                                                                                                                                                                       unit : mm
+                                                                                                                         1 .75±0 .1
+                                                                                         +0 .1
+                     2 .0±0 .1                                                     φ1 .5                                                              0 .25±0 .05
+
+
+
+
+                                                                                                                                       3 .5±0 .1
+                                                                  Epson                            Epson
+                                                                                                                                                     8 .0±0 .2
+
+
+
+
+                                                                                                                                                                 2 .25±0 .1
+                                                                                                                 +0 .1
+                                                                                                   φ1 .0
+                                   4 .0±0 .1
+                                                             1 .85±0 .1                                                                                                                             User direction of feed
+
+
+
+ TG2520SMN
+ (12-1) Product number last 2 digits code(xx) define Quantity. The standard is "27", 10 000 pcs/Reel.
+   X1G005421xxxxxx
+ (12-2) Taping Specification
+   Subject to EIA-481 & IEC-60286
+   (1) Tape Dimensions TE0804L
+       Material of the Carrier Tape : PS
+       Material of the Top Tape : PET+PE                                                                                                                                                                               unit : mm
+                                                       10 P: 400.1
+
+
+                                                                                        1.750.1
+                      2.00.1          4.00.1                                                                                                                                1.150.1
+             +0.1
+      φ1.5   -0                                                                                                      0.250.005
+
+
+
+                                                                                       3.50.1
+                                                                                                           8.00.2
+                                                     Epson                Epson                                                       2.80.1
+
+
+                                 4.00.1
+       φ1.0+0.1/-0                                               2.30.1
+                                                                                                                                                                                   User direction of feed
+
+
+ TG2016SMN / TG2520SMN Common                                                                                                                                       13.41. 0
+  (2) Reel Dimensions                                                                                                                                                                                                  unit : mm
+                                                                                                                                                                     9.41.0
+      Center material    : PS
+      Material of the Reel : PS
+
+
+
+
+                                                                                                                                                                                           φ13.00. 2   φ100.0
+                                                                                                                                                                                                                 φ330.0  2 . 0
+
+
+                                                                                                                                                   2.0  0 . 5
+
+
+
+
+                                                                                  Page 16 / 18                                                          Spec No : TG2016/2520SMN_EN_ver.1.3
+[ 13 ] Handling Precautions
+ Prior to using this product, please carefully read the section entitled “Precautions” on our Web site
+ ( https://www5.epsondevice.com/en/information/#precaution ) for instructions on how to handle and use
+ the product properly to ensure optimal performance of the product in your equipment.
+ Before using the product under any conditions other than those specified therein,
+ please consult with us to verify and confirm that the performance of the product will not be negatively
+ affected by use under such conditions.
+ In addition to the foregoing precautions, in order to avoid the deteriorating performance of the product,
+ we strongly recommend that you DO NOT use the product under ANY of the following conditions:
+(1) Do not expose this product to excessive mechanical shock or vibration.
+(2) This product can be damaged by mechanical shock during the soldering process depending on the equipment
+    used, process conditions, and any impact forces experienced. Always follow appropriate procedures,
+    particularly when changing the assembly process in anyway and be sure to follow applicable process
+    qualification standards before starting production.
+(3) These devices are sensitive to ESD, please use appropriate precautions during handling, assembly,
+     test, shipment, and installation.
+(4) This product contains semiconductor content that should not be exposed to electromagnetic waves.
+(5) The use of ultrasonic technology for cleaning, bonding, etc. can damage the Xtal unit inside this product.
+     Please carefully check for this consideration before using ultrasonic equipment for volume production with this product.
+(6) Noise and ripple on the power supply may have undesirable affects on operation and cause degradation
+    of phase noise characteristics. Evaluate the operation of this device with appropriate power supplies carefully before use.
+(7) When applying power, ensure that the supply voltage increases monotonically for proper operation.
+     On power down, do not reapply power until the supplies, bypass capacitors, and any bulk capacitors
+      are completely discharged since that may cause the unit to malfunction.
+(8) Aging specifications are estimated from environmental reliability tests and expected frequency variation
+     over time. They do not provide a guarantee of aging over the product lifecycle.
+(9) The metal cap on top of the device is directly connected to the GND terminal (pin #2). Take necessary
+     precautions to prevent any conductor not at ground potential from contacting the cap as that could cause a short circuit to GN
+(10)Do not route any signal lines, supply voltage lines, or GND lines underneath the area where the oscillators
+     are mounted including any internal layers and on the opposite side of the PCB.
+     To avoid any issues due to interference of other signal lines, please take care not to place signal lines
+     near the product as this may have an adverse affect on the performance of the product.
+(11)A bypass capacitor of the recommended value(s) must be connected between the VCC and GND terminals
+     of the product. Whenever possible, mount the capacitor(s) on the same side of the PCB and as close to the
+     product as possible to keep the routing traces short.
+(12)Power supply connections to Vcc and GND pins should be routed as thick as possible while keeping the
+     high frequency impedance low in order to get the best performance.
+(13) The use of a filter or similar element in series with the power supply connections to protect from
+     electromagnetic radiation noise may increase the high frequency impedance of the power supply line
+     and may cause the oscillator to not operate properly. Please verify the design to ensure sufficient
+     operational margin prior to use.
+(14) Keep PCB routing from the output terminal(s) to the load as short as possible for best performance.
+(15) Do not short the output to GND as that will damage the product. Always use with an appropriate
+      load resistor connected.
+(16) Product failures during the warranty period only apply when the product is used according to the
+      recommended operating conditions described in the specifications. Products that have been opened
+      for analysis or damaged will not be covered. It is recommended to store and use in normal temperature
+      and humidity environments described in the specifications to ensure frequency accuracy and prevent
+      moisture condensation. If the product is stored for more than one year, please confirm the pin solderability prior to use.
+(17) If the oscillation circuit is exposed to condensation, the frequency may change or oscillation may stop.
+     Do not use in any conditions where condensation occurs.
+(18) Do not store or use the product in an environment where it can be exposed to chemical substances
+     that are corrosive to metal or plastics such as salt water, organic solvents, chemical gasses, etc.
+    Do not use the product when it is exposed to sunlight, dust, corrosive gasses, or other materials for long periods of time.
+(19) When using water-soluble solder flux make sure to completely remove the flux residue after soldering.
+     Pay particular attention when the residues contain active halogens which will negatively affect the
+     product and its performance.
+(20) Do not touch the surface of the IC with tweezers or other hard tools.
+(21) Do not use adhesives with this product as this will cause the oscillation to stop if the IC is damaged by
+     adhesive. This product uses an underfill material on the bottom side of package where adhesive near
+      the bottom side may cause the TCXO to be damaged by thermal expansion.
+
+
+
+
+                                                     Page 17 / 18             Spec No : TG2016/2520SMN_EN_ver.1.3
+PROMOTION OF ENVIRONMENTAL MANAGEMENT SYSTEM
+CONFORMING TO INTERNATIONAL STANDARDS
+   At Seiko Epson, all environmental initiatives operate under the
+Plan-Do-Check-Action (PDCA) cycle designed to achieve continuous                        ISO 14000 is an international standard for environmental
+                                                                                        management that was established by the International Standards
+improvements. The environmental management system (EMS)
+                                                                                        Organization in 1996 against the background of growing concern
+operates under the ISO 14001 environmental management standard.
+                                                                                        regarding global warming, destruction of the ozone layer, and
+   All of our major manufacturing and non-manufacturing sites, in                       global deforestation.
+Japan and overseas, completed the acquisition of ISO 14001 certification.
+
+WORKING FOR HIGH QUALITY
+In order provide high quality and reliable products and services
+than meet customer needs, Seiko Epson made early efforts towards
+obtaining ISO9000 series certification and has acquired ISO9001 for                     IATF 16949 is the international standard that added the sector-specific
+all business establishments in Japan and abroad. We have also                           supplemental requirements for automotive industry based on ISO9001.
+acquired IATF 16949 certification that is requested strongly by major
+manufacturers as standard.
+■ Explanation of marks used in this datasheet
+
+
+                                          ●Pb free.
+
+
+                                          ●Complies with EU RoHS directive.
+                                          *About the products without the Pb-free mark.
+                                          Contains Pb in products exempted by EU RoHS directive
+                                                           (Contains Pb in sealing glass, high melting temperature type solder or other)
+
+
+NOTICE: PLEASE READ CAREFULLY BELOW BEFORE THE USE OF THIS DOCUMENT ©Seiko Epson Corporation 2020
+1. The content of this document is subject to change without notice. Before purchasing or using Epson products, please contact with sales
+   representative of Seiko Epson Corporation (“Epson”) for the latest information and be always sure to check the latest information
+   published on Epson’s official web sites and resources.
+2. This document may not be copied, reproduced, or used for any other purposes, in whole or in part, without Epson’s prior consent.
+3. Information provided in this document including, but not limited to application circuits, programs and usage, is for reference purpose only.
+   Epson makes no guarantees against any infringements or damages to any third parties’ intellectual property rights or any other rights
+   resulting from the information. This document does not grant you any licenses, any intellectual property rights or any other rights with
+   respect to Epson products owned by Epson or any third parties.
+4. Using Epson products, you shall be responsible for safe design in your products; that is, your hardware, software, and/or systems shall be
+   designed enough to prevent any critical harm or damages to life, health or property, even if any malfunction or failure might be caused by
+   Epson products. In designing your products with Epson products, please be sure to check and comply with the latest information
+   regarding Epson products (including, but not limited to this document, specifications, data sheets, manuals, and Epson’s web site).
+   Using technical contents such as product data, graphic and chart, and technical information, including programs, algorithms and
+   application circuit examples under this document, you shall evaluate your products thoroughly both in stand-alone basis and within your
+   overall systems. You shall be solely responsible for deciding whether to adopt/use Epson products with your products.
+5. Epson has prepared this document carefully to be accurate and dependable, but Epson does not guarantee that the information is always
+   accurate and complete. Epson assumes no responsibility for any damages you incurred due to any misinformation in this document.
+6. No dismantling, analysis, reverse engineering, modification, alteration, adaptation, reproduction, etc., of Epson products is allowed.
+7. Epson products have been designed, developed and manufactured to be used in general electronic applications and specifically
+   requires particular quality or extremely high reliability in order to refrain from causing any malfunction or failure leading to critical harm to
+   life and health, serious property damage, or severe impact on society, including, but not limited to listed below (“Specific Purpose”).
+   Therefore, you are strongly advised to use Epson products only for the Anticipated Purpose. Should you desire to purchase and use
+   Epson products for Specific Purpose, Epson makes no warranty and disclaims with respect to Epson products, whether express or
+   implied, including without limitation any implied warranty of merchantability or fitness for any Specific Purpose. Please be sure to
+   contact our sales representative in advance, if you desire Epson products for Specific Purpose:
+       Space equipment (artificial satellites, rockets, etc.)/ Transportation vehicles and their control equipment (automobiles, aircraft, trains,
+       ships, etc.) / Medical equipment/ Relay equipment to be placed on sea floor/ Power station control equipment / Disaster or crime
+       prevention equipment/Traffic control equipment/ Financial equipment
+       Other applications requiring similar levels of reliability as the above
+8. Epson products listed in this document and our associated technologies shall not be used in any equipment or systems that laws and
+   regulations in Japan or any other countries prohibit to manufacture, use or sell. Furthermore, Epson products and our associated
+   technologies shall not be used for the purposes of military weapons development (e.g. mass destruction weapons), military use, or any
+   other military applications. If exporting Epson products or our associated technologies, please be sure to comply with the Foreign
+   Exchange and Foreign Trade Control Act in Japan, Export Administration Regulations in the U.S.A (EAR) and other export-related laws
+   and regulations in Japan and any other countries and to follow their required procedures.
+9. Epson assumes no responsibility for any damages (whether direct or indirect) caused by or in relation with your non-compliance with the
+   terms and conditions in this document or for any damages (whether direct or indirect) incurred by any third party that you give, transfer or
+   assign Epson products.
+10. For more details or other concerns about this document, please contact our sales representative.
+11. Company names and product names listed in this document are trademarks or registered trademarks of their respective companies.
+
+
+
+
+                                                                     Page 18 / 18                   Spec No : TG2016/2520SMN_EN_ver.1.3
+

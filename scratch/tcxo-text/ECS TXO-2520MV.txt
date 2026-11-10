@@ -1,0 +1,96 @@
+                                                                                               ECS-TXO-2520MV
+                                                                                               MultiVolt™ CMOS TCXO
+  ECS-TXO-2520MV CMOS SMD TCXO MultiVolt™ capability of
+  1.7 ~ 3.6V. The 2.5 x 2.0 x 0.9 mm ceramic package is ideal for                                            Request a Sample
+  portable, wireless applications where stability is critical.
+
+
+
+
+                                             OPERATING CONDITIONS / ELECTRICAL CHARACTERISTICS
+
+          ECS-TXO-2520MV                                                                                                  ECS-TXO-2520MV
+                                                      Parameters                        Conditions                                                         Units
+                                                                                                                    MIN         TYP          MAX
+                                             Frequency Range                                                      10.000                    60.000         MHz
+                                             Operating Temperature                       N Option                   -40                       +85             °C
+                                             Storage Temperature                                                    -40                       +90             °C
+                                             Input Voltage                                 VDD                     +1.7                      +3.6          VDC
+                                                                               Vs. Temp (AN -40 ~ +85°C)                                     ±2.5          PPM
+                                                                               Vs. Supply Change (±5%)                                       ±0.3          PPM
+                                             Frequency Stability
+                                                                                   Vs. Load Change (±5%)                                     ±0.3          PPM
+                                                                                      Vs. Aging/Year                                         ±1.0          PPM
+                                             Frequency Tolerance                      @ +25°C ±2°C                                           ±1.5          PPM
+    •     HCMOS TCXO
+    •     2.5 x 2.0 mm Footprint             Current Consumption                                                                              6.0             mA
+    •     PbFree/RoHS Compliant              “0” Level                                     VOL                                              10% Vdd        VDC
+    •     MSL 1
+                                             “1” Level                                     VOH                    90% Vdd                                  VDC
+    •     Lead Finish Au
+    •     MultiVolt™ Compatible with
+          1.8V, 2.5V or 3.3V Power           Output Symmetry                         @50% VDD Level                                          45/55            %
+          Supply
+    •                                        Rise and Fall Times                   10% VDD to 90% Level                                        5              ns
+                                             Output Load                                  CMOS                                                15              pF
+                                             Start-up Time                                                                                    10              mS
+                                             Phase Noise                              @ 10 KHz Offset                           -145                      dBc/Hz
+                                             Phase Jitter (12 KHz ~ 20 MHz)             @ 50 MHz                                254                           fs
+
+
+                                                                              CURRENT CONSUMPTION , mA Max.
+                                                      FREQ.        3.2~ 10 MHz         10.1~ 20 MHz       20.1~ 30 MHz         30.1~ 40 MHz         40.1 ~55 MHz
+                                                     +1.8V             2.7                 3.3                    3.8                 4.1               5.0
+                                                     +2.5V             3.1                 3.7                    4.2                 4.6               5.5
+                                                     +2.8V             3.4                 4.1                    4.7                 5.2               6.0
+                                                     +3.3V             4.0                 4.8                    5.5                 6.0               6.0
+
+                              Part Numbering Guide: Example ECS-TXO-2520MV-250-AN-TR
+        ECS   -      Series     -      Frequency Abbreviations - Stability Tolerance       -        Temperature            -    Packaging
+
+
+        ECS       TXO-2520MV = TCXO         250 = 25.000 MHz        A = ±2.5 ppm                L = -10 ~ +70°C                  TR = Tape & Reel
+                                                                                                M = -20 ~ +70°C                       1K/reel
+                                            See Developed                                       Y = -30 ~ +85°C
+                                            Frequencies                                         N = -40 ~ +85°C
+
+
+
+
+15351 West 109th Street | Lenexa, KS 66219 | Phone: 913.782.7787 | Fax: 913.782.6991 | www.ecsxtal.com
+                                                         ECS-TXO-2520MV
+                                                         MultiVolt™ CMOS TCXO
+
+
+
+Package Dimensions (mm)
+
+
+
+
+                                                                         Figure 2) Land Pattern
+
+            Figure 1) Top, Side, and Bottom views
+
+                                                                 Developed Frequencies
+                                                        * Abbreviation       Frequency (MHz)
+                          Pin Connections               100                  10.000
+                  #1      Tri-State                     120                  12.000
+                  #2      Ground                        160                  16.000
+                  #3      Output                        200                  20.000
+
+                  #4      VDD                           240                  24.000
+                                                        250                  25.000
+                                                        320                  32.000
+                          Tri-State Function
+                                                        400                  40.000
+                  Pin 1         Output
+                                                        500                  50.000
+                  High or NC    Active
+                  Low           Disable High-Z
+
+
+
+
+15351 West 109th Street | Lenexa, KS 66219 | Phone: 913.782.7787 | Fax: 913.782.6991 | www.ecsxtal.com
+

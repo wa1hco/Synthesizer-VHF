@@ -1,0 +1,320 @@
+Model 581
+Stratum 3 HCMOS TCXO/VC-TCXO
+Features
+         Ceramic Surface Mount Package
+         Fundamental Crystal Design
+         Frequency Range 10 – 52MHz *
+         Operating Voltage +2.5V, +3.0V and +3.3V                                                                                                                                Part Dimensions:
+                                                                                                                                                                            5.0 × 3.2 × 1.65mm • 83mg
+         Frequency Stability, Overall ±4.6ppm
+         Operating Temperature Range to -40°C to +85°C                                                                             Standard Frequencies – see Page 8 for common frequencies.
+         Voltage Control Option for Frequency Tuning [VC-TCXO]                                                                     * Check with factory for availability of frequencies not listed.
+         Enable Function Option
+         Tape and Reel Packaging, EIA-481
+
+Applications
+         Sub 6GHz 5G Small Cell                                               Base Stations, Femtocells                                                 IoT and IIoT
+         IEEE 1588 Timing                                                     Mobile Communication                                                      GPS
+         Synchronous Ethernet                                                 Wireless Connectivity                                                     Test and Measurement
+
+Description
+CTS Model 581 is a high performance Temperature Compensated Crystal Oscillator [TCXO] suitable for
+applications requiring Stratum 3 performance. Employing analog IC technology with HCMOS output and high
+order temperature compensation engine; coupled with a fundamental quartz crystal M581 has excellent stability
+and low jitter/phase noise performance.
+
+Ordering Information
+                            Supply                    Frequency Code                      Frequency                             Temperature                                Frequency
+Model                                                                                                                                                                                                   Packaging
+                            Voltage                          [MHz]                        Stability 2                              Range                                     Tuning
+ 5 81      E                   L                              X XX                            X2                                     C                                         T                             T
+
+
+
+ Code     Function                           Code          Frequency                                         Code      Temp. Range         Code      Temp. Range                                Code      Packing
+ Blank    No Enable                                                       1                                   W        0°C to +50°C         D       -30°C to +85°C                               T      1k pcs./reel
+                                             Product Frequency Code
+   E       Enable                                                                                             H       -10°C to +60°C         I      -40°C to +85°C
+                                                                                                              C       -20°C to +70°C
+
+                          Code         Voltage                                           Code         Stability                                                Code   Frequency Deviation
+                           N           +2.5Vdc                                            X5        ±0.05ppm 3                                                   T   TCXO [No Voltage Control]
+                                                                                                                4
+                           R           +3.0Vdc                                            01        ±0.10ppm                                                    A   ±5ppm - ±15ppm [VCTCXO ]
+                           L           +3.3Vdc                                            02         ±0.20ppm
+                                                                                          X2         ±0.28ppm
+                                                                                          05         ±0.50ppm
+ Notes:
+     1] Refer to document 016-1454-0, Frequency Code Tables. 3-digits for frequencies <100MHz.
+     2] Frequency vs. Temperature only.
+     3] Available with operating temperature range code "W".
+     4] Available with operating temperature range code "W" and "H".
+                                                          Not all performance combinations and frequencies may be available.
+                                                      Contact your local CTS Representative or CTS Customer Service for availability.
+                  This product is specified for use only in standard commercial applications. Supplier disclaims all express and implied warranties and liability in connection with any use of this
+                   product in any non-commercial applications or in any application that may expose the product to conditions that are outside of the tolerances provided in its specification.
+
+
+
+
+DOC# 008-0541-0 Rev. C                                                                                                                                                                                 Page 1 of 9
+©2017 CTS® Corporation. Information/product(s) subject to change. No warranty that product(s) will meet the stated specifications for customer specific applications or test
+equipment. Visit www.ctscorp.com for list of applicable patent(s), more information, or to request a quote.
+                                                                                                                                                Model 581
+                                                                                                                          Stratum 3 HCMOS TCXO/VC-TCXO
+
+Electrical Specifications
+Operating Conditions
+ P ARAMETER                                      SYMBO L                     CO NDITIO NS                         MIN             TYP            MAX            UNIT
+ Maximu m Sup ply Vo ltage                          VCC                              -                            -0.6             -              4.6             V
+ Maximu m Con trol Voltage                           VC                              -                            -0.5             -              VCC             V
+                                                                                                                  2.36            2.5            2.63
+ Sup ply Vo ltage                                   VCC                            ±5%                            2.85            3.0            3.15             V
+                                                                                                                  3.14            3.3            3.47
+ Sup ply Cu rren t                                   ICC              Typical Measured @ 26MHz                      -             4.5             9.5            mA
+ O utput Lo ad                                       CL                              -                              -              -              15              pF
+                                                                                                                   0                             +50
+                                                                                                                  -10                            +60
+ O perating Temperature                              TA                              -                            -20             +25            +70              °C
+                                                                                                                  -30                            +85
+                                                                                                                  -40                            +85
+ Storage Temperatu re                               TSTG                             -                            -40              -              +85             °C
+
+
+Frequency Stability
+ P ARAMETER                                      SYMBO L                     CO NDITIO NS                         MIN             TYP            MAX            UNIT
+ Frequ en c y Range                                  fO                              -                                          10 - 52                          MHz
+ Frequ en c y Stability
+  O v erall Frequenc y Stab ility                               Reference to fO, Including 20 Years Aging         -4.6             -              4.6            ppm
+                                                   Δf/fO
+  Initial Calibration                                          Calibration @ +25°C, At Time of Shipment           -0.8             -              0.8            ppm
+                          1                        Δf/f25        [Fmax - Fmin]/2, Over -40°C to +85°C            -0.28             -             0.28            ppm
+  Temperatu re O nly
+  Vo ltage Co effic ient                                                   Supply Voltage, ±5%                   -0.16             -             0.16            ppm
+                                                   Δf/f25
+  Lo ad Coeffic ient                                                           Load, ±10%                        -0.30             -             0.30            ppm
+  Agin g                                           Δf/f25        20 Years @ +40°C, Nominal VCC and VC             -3.0             -              3.0            ppm
+ Holdo ver                                         Δf/fO            [Fmax - Fmin]/2, Over 24 Hours                -0.4             -              0.4            ppm
+1 .] See O rdering Information for ad dition al stab ility o ptio ns.
+
+
+Output Parameters
+ P ARAMETER                                      SYMBO L                     CO NDITIO NS                         MIN             TYP            MAX            UNIT
+ O utput Ty pe                                        -                              -                                          HCMOS                              -
+                                                    VOH                 Logic '1' Level, CMOS Load              0.9*VCC            -               -
+ O utput Vo ltage Levels                                                                                                                                          V
+                                                    VOL                 Logic '0' Level, CMOS Load                  -              -            0.1*VCC
+ O utput Duty Cyc le                                SYM                       @ 50% Level                          45              -              55              %
+ Rise and Fall Time                                TR, TF                  @ 20%/80% Levels                         -              3               6              ns
+ Start Up Time                                       TS                              -                              -              5              10              ms
+ Enable Fu nc tion                                            Standby
+  En ab le Inp ut Voltage                           VIH              Pin 6 Logic '1', Output Enabled             0.7VCC            -               -              V
+  Disable Inp ut Voltage                             VIL            Pin 6 Logic '0', Output Disabled                -              -            0.3VCC            V
+  En ab le Current                                  ISTB            Pin 6 Logic '0', Output Disabled                -              -              10              µA
+  En ab le Time                                     TPLZ                      Pin 6 Logic '1'                       -              -              10              ms
+ P hase Noise                                         -                      See Typical Plots                      -              -               -               -
+
+
+
+
+DOC# 008-0541-0 Rev. C                                                                                                                                      Page 2 of 9
+©2017 CTS® Corporation. Information/product(s) subject to change. No warranty that product(s) will meet the stated specifications for customer specific applications or test
+equipment. Visit www.ctscorp.com for list of applicable patent(s), more information, or to request a quote.
+                                                                                                                                                Model 581
+                                                                                                                        Stratum 3 HCMOS TCXO/VC-TCXO
+
+Electrical Specifications
+Control Voltage
+ P ARAMETER                                      SYMBO L                     CO NDITIO NS                        MIN              TYP            MAX            UNIT
+ Con trol Voltage                                    VC                       Nominal VCC                         0.5             1.5             2.5             V
+
+ Frequ en c y Tuning
+  [V CT CX O O nly]
+                                                   Δf/fO                   Specified VC Range                      ±5              -             ±15             ppm
+
+ Linearity                                           L                    Best Straight Line Fit                    -              -             ±10              %
+ In put Imp ed anc e                                ZVc                              -                            100              -               -           kOhms
+ Transfer Func tio n                                  -                              -                                          Positive                           -
+
+
+
+Enable Truth Table
+         Pin 6                    Pin 5
+       Logic ‘1’            Output Enabled
+         Open              Output Enabled
+                           Output Disabled,
+       Logic ‘0’
+                           High Impedance
+
+
+Test Circuit
+HCMOS – w/o Enable Function
+
+
+
+
+HCMOS – w/ Enable Function
+
+
+
+
+DOC# 008-0541-0 Rev. C                                                                                                                                      Page 3 of 9
+©2017 CTS® Corporation. Information/product(s) subject to change. No warranty that product(s) will meet the stated specifications for customer specific applications or test
+equipment. Visit www.ctscorp.com for list of applicable patent(s), more information, or to request a quote.
+                                                                                                                                                Model 581
+                                                                                                                        Stratum 3 HCMOS TCXO/VC-TCXO
+
+Electrical Specifications
+Performance Data
+Phase Noise [typical]
+24.5760MHz, VCC = +3.3V, TA = +25°C
+
+
+
+
+DOC# 008-0541-0 Rev. C                                                                                                                                      Page 4 of 9
+©2017 CTS® Corporation. Information/product(s) subject to change. No warranty that product(s) will meet the stated specifications for customer specific applications or test
+equipment. Visit www.ctscorp.com for list of applicable patent(s), more information, or to request a quote.
+                                                                                                                                                Model 581
+                                                                                                                        Stratum 3 HCMOS TCXO/VC-TCXO
+
+Electrical Specifications
+Performance Data
+Phase Noise [typical]
+40MHz, VCC = +3.3V, TA = +25°C
+
+
+
+
+DOC# 008-0541-0 Rev. C                                                                                                                                      Page 5 of 9
+©2017 CTS® Corporation. Information/product(s) subject to change. No warranty that product(s) will meet the stated specifications for customer specific applications or test
+equipment. Visit www.ctscorp.com for list of applicable patent(s), more information, or to request a quote.
+                                                                                                                                                Model 581
+                                                                                                                        Stratum 3 HCMOS TCXO/VC-TCXO
+
+Mechanical Specifications
+Package Drawing – 8-Pad                                                                            Marking Information
+                                                                                                     1. xxx – Frequency Code.
+                                                                                                         3-digits for frequencies <100MHz
+     xxxyyy                                                                                          [See document 016-1454-0, Frequency Code Tables.]
+                                                                                                     2. yyy – Crystal Lot Code or Date Code [optional].
+     ● **D                                                                                           3. ● – Pin 1 identifier.
+                                                                                                     4. ** – Manufacturing Site Code.
+                                                                                                     5. D – Date Code. See Table I for codes.
+
+
+
+
+Recommended Pad Layout – w/o Enable Function                                                       Notes
+                                                                                                     1. DO NOT make connections to non-labeled pins or
+                                                                                                        castellations as they may have internal
+                                                                                                        connections used in the manufacturing process.
+                                                                                                     2. JEDEC termination code (e4). Barrier-plating is
+                                                                                                        nickel [Ni] with gold [Au] flash plate.
+                                                                                                     3. Reflow conditions per JEDEC J-STD-020; +260°C
+                                                                                                        maximum, 20 seconds.
+                                                                                                     4. MSL = 1.
+
+
+
+
+Recommended Pad Layout – w/ Enable Function
+
+
+
+
+DOC# 008-0541-0 Rev. C                                                                                                                                      Page 6 of 9
+©2017 CTS® Corporation. Information/product(s) subject to change. No warranty that product(s) will meet the stated specifications for customer specific applications or test
+equipment. Visit www.ctscorp.com for list of applicable patent(s), more information, or to request a quote.
+                                                                                                                                                  Model 581
+                                                                                                                        Stratum 3 HCMOS TCXO/VC-TCXO
+
+Mechanical Specifications
+Pin Assignments – 8-Pad Solder Attach                                                        Pin Assignments – 4-Pad Solder Attach
+        Pin            Symbol                          Function                                      Pin              Symbol                        Function
+                                           GND or NC – TCXO [Note 1]                                                                    GND or NC – TCXO [Note 1]
+        1                  VC                                                                         1                 VC
+                                           Control Voltage – VCTCXO                                                                      Control Voltage – VCTCXO
+        2                  NC                     No Connect                                          2                GND               Circuit & Package Ground
+        3                NC                           No Connect                                      3               Output                        RF Output
+        4               GND                   Circuit & Package Ground                                4                VCC                        Supply Voltage
+        5              Output                          RF Output
+        6            NC or EOH          No Connect or Optional Enable
+        7               NC                      No Connect
+        8                  VCC                     Supply Voltage
+
+    Notes
+     1. Connect to ground for TCXO, no frequency tuning. Pin can be left floating.
+
+
+
+
+Table I - Date Code, Beginning year 2021
+                           MO NTH
+                                                 JAN     FEB      MAR      AP R     MAY       JUN      JUL      AUG      SEP      O CT     NO V       DEC
+               YEAR
+ 2021       2025    2029        2033   2037       A        B        C        D        E        F          G       H          J      K        L         M
+ 2022       2026    2030        2034   2038       N        P        Q        R        S        T          U       V       W         X        Y         Z
+ 2023       2027    2031        2035   2039       a        b        c        d        e         f          g      h          j      k         l        m
+ 2024       2028    2032        2036   2040       n        p        q        r        s         t         u       v          w      x        y         z
+
+
+
+
+DOC# 008-0541-0 Rev. C                                                                                                                                      Page 7 of 9
+©2017 CTS® Corporation. Information/product(s) subject to change. No warranty that product(s) will meet the stated specifications for customer specific applications or test
+equipment. Visit www.ctscorp.com for list of applicable patent(s), more information, or to request a quote.
+                                                                                                                                                Model 581
+                                                                                                                        Stratum 3 HCMOS TCXO/VC-TCXO
+
+Packaging - Tape and Reel
+Tape Drawing
+
+
+
+
+Reel Drawing
+
+
+
+
+Notes
+  1. Device quantity is 1k pieces per 180mm reel.
+  2. Complete CTS part number, frequency value and date code information must appear on reel and carton labels.
+
+
+
+
+DOC# 008-0541-0 Rev. C                                                                                                                                      Page 8 of 9
+©2017 CTS® Corporation. Information/product(s) subject to change. No warranty that product(s) will meet the stated specifications for customer specific applications or test
+equipment. Visit www.ctscorp.com for list of applicable patent(s), more information, or to request a quote.
+                                                                                                                                                Model 581
+                                                                                                                         Stratum 3 HCMOS TCXO/VC-TCXO
+
+Addendum
+Common Frequencies and Frequency Codes – MHz
+                          O RDERING                                       O RDERING                                       O RDERING
+    FREQ UENCY                                      FREQ UENCY                                     FREQ UENCY
+                             CO DE                                           CO DE                                           CO DE
+      1 0 .0 0 0 0 0 0        100                       25.000000             250                     5 0 .0 0 0 0 0 0        500
+        12.800000             128                       26.000000             260                       52.000000             520
+        13.000000             130                       27.000000             270
+        16.000000             160                       30.000000             300
+        16.384000             163                     3 0 .7 2 0 0 00         307
+        16.800000             168                       32.000000             320
+      1 9 .2 0 0 0 0 0        192                       36.000000             360
+        19.440000             194                       38.400000             384
+      2 0 .0 0 0 0 0 0        200                       38.880000             388
+        20.480000             204                     4 0 .0 0 0 0 00         400
+        24.000000             240                       48.000000             480
+      2 4 .5 7 6 0 0 0        24C                       49.152000             491
+
+Frequencies in bold are standard.
+
+
+
+
+DOC# 008-0541-0 Rev. C                                                                                                                                      Page 9 of 9
+©2017 CTS® Corporation. Information/product(s) subject to change. No warranty that product(s) will meet the stated specifications for customer specific applications or test
+equipment. Visit www.ctscorp.com for list of applicable patent(s), more information, or to request a quote.
+

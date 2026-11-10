@@ -1,0 +1,65 @@
+                                                                             TEMPERATURE COMPENSATED
+                                                                             CRYSTAL OSCILLATOR
+
+                                                                                                   8121S
+TCXO UNIT WITH CLIPPED SINE WAVE OUTPUT IN SMD 2.0X1.6MM CERAMIC SEAM SEAL PACKAGE.
+
+PRODUCT FEATURES                                                                        PRODUCT PHOTO (NOT IN SCALE)
+ Small dimensions 2.0x1.6x0.8 with 4 solder pads.
+ Tight stabilities over temperature range.
+ RoHS compliant, LEAD-FREE, HALOGEN-FREE and REACH compliant.
+
+
+
+APPLICATIONS
+ WiMAX / WLAN / Ethernet                 Mobil applications
+ Telecommunication
+
+PRODUCT SPECIFICATIONS
+                                                              SUPPLY VOLTAGE
+PARAMETER                                      1.8V              2.5V        2.8/ 3.0/ 3.3V
+                                                                                                      REMARKS
+Frequency range                                                10 ~ 52MHz                             —-
+
+Frequency tolerance                                               ±1.0ppm                             Initial tol. @+25°C
+
+Frequency stability                       ±0.5ppm; ±1.0ppm; 1.5ppm; ±2.0ppm; ±2.5ppm See note below table
+                                                                                                      In combination to
+Operating temperature range –20 to +70°C / –30 to +85°C / –40 to +85°C                                above stabilities.
+
+Aging per year                                                    ±1.0ppm                             @+25°C
+
+Output waveform                                           Clipped Sine Wave                           —-
+
+Output load                                                     10kΩ/10pF                             —-
+
+Output voltage level                                              0.8Vp-p                             Minimum
+
+Phase noise (example
+                                           -115dBc/Hz / -135dBc/Hz / -148dBc/Hz                       @100Hz / 1kHz / 10kHz
+19.2MHz)
+Phase jitter RMS                                                   <1ps                               12kHz≤Fj≤20MHz
+                                                                                                      @10kΩ/10pF (higher value
+Supply current                                            1.5mA       /     2.0mA                     >26MHz)
+
+Note: Frequency stability is the frequency deviation over temperature range in reference to +25°C
+
+
+
+PACKAGE OUTLINE / DIMENSIONS                                                 PACKAGING INFORMATION
+                                                                              Tape & Reel compliant to EIA-481.
+                                                                              Embossed carrier width 8mm.
+                                                                              Component pitch in carrier 4mm.
+                                                                              Reel diameter 180mm.
+                                                                              QTY per reel: 3,000pcs
+
+
+                                                                             RECOMMENDED REFLOW PROFILE
+
+
+
+
+    Suzhou HangJing Elec&Tech Co., Ltd. ◆ Http://www.hci.com.hk ◆ No.1,First Qunxing Rd,Suzhou Industrial Park,Jiangsu,China
+
+                  Telephone:+86 (0)512 6591 6689 ◆ Mobile phone:+86 (0)13819495058 ◆ e-mail: tony@hci.com.hk
+

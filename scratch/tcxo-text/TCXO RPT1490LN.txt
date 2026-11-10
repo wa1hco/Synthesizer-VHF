@@ -1,0 +1,96 @@
+Pluto+™ Ultra-Low Noise (LNO) TCXO
+
+
+RPT1490LN
+The RPT1490LN is a high-performance ultra-low noise (ULN) TCXO in a compact package size of 14.5 x 9.5 x 6.0 mm. It is designed
+for clock reference applications where ultra-low phase noise and low wander generation performance are crucial. The RPT1490LN is
+a QUALCOMM qualified reference part supporting the 5G FSM100xx platform. The registered QUALCOMM design reference
+numbers are FSM10055 and FSM10056.
+High bandwidth applications performing QAM-like modulation require low phase noise at large frequency offsets. The RPT1490LN
+achieves a noise floor as low as -175 dBc/Hz. The unique combination of ±0.3 ppm stability over -40 to 95°C and low phase noise
+enables the device to be the single reference oscillator for network synchronisation and phase noise clean up.
+
+ Features                                          Applications                           14.5 x 9.5 x 6.0 mm
+    Ultra-low noise floor: -175 dBc/Hz             5G RRUs and 5G small cells
+    Frequency: 10 to 50 MHz                        Microwave & millimetre wave
+    Stability: ±0.3 ppm over -40 to 95°C            systems
+    High-Q XMEMS® crystal technology               Test & measurement equipment
+    Patent "Tilt Compensation" in voltage          Coherent optical modules
+     control.
+
+
+Standard Specifications
+ Parameter                                 Min.         Typ.      Max.        Unit       Test Condition / Description
+ Nominal frequency (Fn)                                 10 – 50               MHz        Standard frequency 38.4 MHz
+
+ Frequency calibration                                            ±1          ppm        At 25°C ±2°C
+ Reflow shift                                                     ±0.5        ppm        After 1 hour of recovery at 25°C
+ Operating temperature range               -40                    95          °C         -40 to 105°C available on request
+ Frequency stability over                                         ±0.3        ppm        Reference to (FMAX + FMIN)/2
+ temperature in still air
+ Supply voltage stability                                         ±0.1        ppm        ±5% variation, reference to frequency at
+                                                                                         3.3V
+ Load sensitivity                                                 ±0.1        ppm        ±10% variation, reference to frequency
+                                                                                         at 15pF
+ Long term stability (ageing at 25°C)                             ±1          ppm         First year
+                                                                  ±4                     15 years
+ Supply voltage (VCC)                      3.135        3.3       3.465       V
+ Input current                                          10        15          mA         At nominal condition, 15 pF
+
+ Control voltage (Vc)                      0.5                    2.5         V          0 to 3.3V operational
+ Frequency tuning                          ±6                     ±10         ppm        Reference to the frequency at Vc = 1.5 V
+ Slope                                                  +7                    ppm/V
+ Input impedance                           1                                  MΩ
+ Linearity                                                        1           %          Deviation from the straight line curve fit
+ Port input impedance                      1                                  MΩ
+ Modulation bandwidth                                   3.5                   Hz
+ Oscillator output – CMOS
+              Output voltage low (VOL)                            0.4         V
+             Output voltage high (VOH)     2.7                    3           V
+                      Rise and fall time   1                      2           ns         10% to 90% level
+                             Duty cycle    49                     51          %          Measured at 50% level
+                           Output load                  15                    pF
+
+
+
+
+ Issue: B, 21 October 2024
+ Specifications are subject to change without notice                                                                    Page 1 of 2
+ Copyright © 2022 to 2024 Rakon Limited. All rights reserved                                                            Contact Us
+Pluto+™ Ultra-Low Noise (LNO) TCXO
+
+
+
+SSB Phase Noise and RMS Phase Jitter (Typical value at 25°C)
+
+                            38.4 MHz RPT1490LN TCXO phase noise with CMOS Output
+
+
+
+
+                                        RMS Jitter = 21 fs
+                                        (12 kHz – 20 MHz)
+
+
+
+
+Model Outline and Recommended Pad Layout
+
+
+
+
+                                                             PIN CONNECTIONS
+                                                     1       Control Voltage (Vc)
+                                                     2       GND                    NOTE:
+                                                     3       GND                    • Plastic cap, RF4 base.
+                                                     4       RF Output              • Finish: 0.05 ~ 0.13 µm
+                                                     5       Do not connect           Gold over 3 ~ 6 µm Nickel
+                                                     6       Supply Voltage (Vcc)   • Unit: mm
+
+
+
+
+ Issue: B, 21 October 2024
+ Specifications are subject to change without notice                                                          Page 2 of 2
+ Copyright © 2022 to 2024 Rakon Limited. All rights reserved                                                  Contact Us
+

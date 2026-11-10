@@ -1,0 +1,116 @@
+         产品特点                                           应用领域
+   ● 频率稳定                                               ● 基站
+   ● 工业级温度（宽温可定制）                                       ● 仪器仪表
+   ● SMD 封装((5.2*3.4mm)                                 ● 合成器
+                                                        ● SDH/SONET
+                                                        ● 医疗电子
+
+                                   NT0503E 系列
+                                  参数值
+          参数                                             单位                    条件
+                     最小值          典型值         最大值
+                          –         3.3            –      V      Vcc±5%
+工作电压
+                          –          5             –      V      Vcc±5%
+                          –          –             8     mA      10MHz~26MHz（含26MHz)
+工作电流
+                          –          –            12     mA      26MHz~60MHz
+频率范围                              10 ~ 60                MHz
+                    10, 16.384, 19.2, 20, 24.576, 25,
+常规频率                                                     MHz
+                    26, 30.72, 40, 50
+初始频率精度                  ±0.5         –          ±1.5     ppm     出厂时校准 +25℃
+                        ±0.2         –          ±1.5     ppm     -20℃~+70℃
+                       ±0.28         –          ±1.5     ppm     -40℃~+85℃
+频率温度稳定度
+                          ±1         –          ±2.5     ppm     -50℃~+90℃
+                        ±2.5         –          ±3.5     ppm     -55℃~+95℃
+          输出电平           0.8         –             –     Vp-p
+削顶正弦波
+          负载                    10kΩ//10pF
+          高电平            2.4         –             –      V      方波输出, 负载=15pf
+          低电平             –          –           0.4      V      方波输出, 负载=15pf
+方波        占空比            45          –            55      %      ( VOH - VOL)/2
+          上升下降沿           –          –             6      ns     方波输出, 负载=15pf
+          负载              –          –            15      pf
+相位抖动 (E5052B)             –          –           1.3      ps   12KHz~5MHz
+电源特性                      –          –           ±0.1          Vcc±5%
+负载特性                      –          –           ±0.2          负载±5%
+                                                         ppm
+                          –          –           ±1.0          标准
+老化/第一年
+                        ±0.3         –          ±0.8           定制
+                          –          –           -95           Offset 10Hz
+                          –          –          -120           Offset 100Hz
+相位噪声
+                          –          –          -140    dBc/Hz Offset 1kHz      At +25℃
+@10MHz
+                          –          –          -145           Offset 10kHz
+                          –          –          -150           Offset 100kHz
+电压控制范围                           1.5 ± 1.0                V
+频率牵引范围                   ±5          –             –     ppm
+斜率                                 正斜率
+线性度                       –          –            10      %
+                                   相位噪声 @1KHz
+       频率范围       <-125dBc <-130dBc          <-135dBc <-140dBc
+        10MHz        ○        ○                 ○        ○
+                                                                   ○=可以供货
+     12.8~20MHz      ○        ○                 ○         X
+                                                                   X= 不可供货
+    20.48~38.4MHz    ○        ○                  X        X
+       ≥40MHz        ○         X                 X        X
+备注： 最小值~最大值为可提供的指标范围
+                                                  封装图
+
+
+   封装 E:
+
+
+
+
+                    备注: 不使用压控功能请将1脚悬空
+                                                 环境条件
+工作温度范围                            -40℃ ~ +85℃
+存储温度范围                            -55℃ ~ +125℃
+                                                 最大额定值
+               参数                   符号                                额定值
+工作电压                                Vcc                              -0.5V / 6V
+压控电压                                Vcon                              0V / 3V
+静电敏感等级 HBM/CDM/MM                                                 4KV/ 2KV/ 200V
+                                                  可靠性
+                         参数                                            标准
+温度应力测试                                     IEC60068, GJB360B
+机械应力测试                                     IEC60068, GJB360B
+EMC测试                                      IEC61000, JESD22
+可焊性测试                                      EIA/JESD22-B102-C
+接触焊盘                                       金镍
+RoHS                                       RoHS Directive 2011/65/EU Annex II Recasting 2002/95/EC
+
+                                                 选型指南
+
+                              NT 0503 X X X X XXX X X XX.XX
+       Product:                                                          Frequency:
+       TCXO                                                              xx MHz
+                                                                          e.g.: 10 (10MHz)
+       Outline:
+       5.2mm x 3.4mm                                                     Tuning Range:
+                                                                         N:No Tuning
+       Package Type:                                                     A: ±5ppm min.
+       E: Package E                                                      B: ±7ppm min.
+
+                                                                         Phase Noise:
+       Output:                                                           A: -120dBc/Hz@1kHz
+       H: CMOS                                                           B: -125dBc/Hz@1kHz
+       C: Clipped Sine Wave                                              C: -130dBc/Hz@1kHz
+                                                                         D: -135dBc/Hz@1kHz
+       Supply Voltage:                                                   E: -140dBc/Hz@1kHz
+       3: 3.3 Vdc                                                        G: -145dBc/Hz@1kHz
+       5: 5.0 Vdc
+                                                                         Temp. Stability:
+       Temp. Range:                                                      206: ±2.0ppm
+       C: -20℃～+70℃                                                      106: ±1.0ppm
+       I: -40℃～+85℃                                                      507: ±0.5ppm
+       F: Customized                                                     287: ±0.28ppm
+
+         例如: NT0503EH3C287CA19.2
+

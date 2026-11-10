@@ -1,0 +1,170 @@
+                                                                                       ] .
+
+
+
+Crystal oscillator
+SMD TCXO Module 2.5×2.0×0.9 7W Series                                                   ..
+
+
+
+              深圳市晶科鑫实业有限公司
+
+                               样品承认书
+   客户代码：
+   物料名称：           温度补偿晶体振荡器TCXO
+
+   规格型号：           SMD2520    4pin    25.000MHz 3.3V ±1ppm -30~85℃
+   P N/ SJK：       7W25000I33XFA
+   环保属性：           ■RoHS ■REACH ■HF □PAHS □其它
+   版      次：       A1    2025-7-29 初版               最小包装： 3000pcs/real
+
+   湿敏等级：           一级
+
+
+                              承       认       签      章
+          供     应       商 承       认                 （        ）公 司 承
+
+        制定              审 核           核 准     工 程 师            审 核               批 准
+
+     贺丹斌            李相同              刘惠光
+
+
+    SJK 支持                                    盖章签署
+
+    FAE_EMAIL                                 日     期
+
+    日     期                                       批示： □接受             □有条件接受
+
+  备注:
+
+
+
+        22507042
+电话：0755-8           传真：0755-88353718               http://www.q-crystal.com.cn
+公司地址: 深圳市龙岗区天安云谷产业园一期3 栋C 座12 楼1204～1206 室
+                                  Page: 1/5
+                                                                                                 ] .
+
+
+
+Crystal oscillator
+SMD TCXO Module 2.5×2.0×0.9 7W Series                                                             ..
+
+
+ELECTRICAL SPECIFICATIONS
+                                                             Electrical Specifications
+Parmeters                       Condition
+                                                      MIN        TYP       MAX       UNITS
+Nominal Frequency                                               25.000                MHZ
+Operating Temperature
+                                                      -30                    85          ℃
+Rangequency
+Supply Voltage                                        3.135       3.3      3.465         V
+Current Drain                                                                2.0         MA
+Output Level                                           0.8                            Vp-p
+Output Type                                             Clipped sine wave
+                                Resistance                        10                     kΩ
+Output Load
+                                Capacitance                       10                     pF
+Frequency Tolerance             After 2times reflow                        ±1.5       ppm
+               vs:Temperature   -30 ~ 85 ℃                                 ±1.0       ppm
+Frequency
+               vs:Load          10kΩ/10pF ±10%                              ±0.2      ppm
+Stability
+               vs:Supply Voltage VDD±5%                                     ±0.2      ppm
+Storage Temperature                                   -40                   85           ℃
+Start-up Time                                                               2.0          ms
+Aging                                                                       ±1.0     ppm/1year
+
+Phase noise at 1KHz offset                                                  -130    dBc/Hz
+
+
+
+
+电话：0755-82507042         传真：0755-88353718                     http://www.q-crystal.com.cn
+公司地址: 深圳市龙岗区天安云谷产业园一期3 栋C 座12 楼1204～1206 室
+                                     Page: 2/5
+                                                                                     ] .
+
+
+
+Crystal oscillator
+SMD TCXO Module 2.5×2.0×0.9 7W Series                                                 ..
+
+
+ DIMENSION（Unit：mm）
+
+
+            EXTERNAL DIMENSIONS                 RECOMMENDED SOLDERING PATTERN
+
+
+
+
+    PIN CONNECTION
+      P/N     Function
+
+       1      Ground Recommended
+
+       2      Ground
+
+       3      Output
+
+       4      Vcc
+
+
+
+
+电话：0755-82507042         传真：0755-88353718              http://www.q-crystal.com.cn
+公司地址: 深圳市龙岗区天安云谷产业园一期3 栋C 座12 楼1204～1206 室
+                                    Page: 3/5
+                                                                                                        ] .
+
+
+
+Crystal oscillator
+SMD TCXO Module 2.5×2.0×0.9 7W Series                                                                    ..
+
+
+MEASUREMENT CIRCUIT
+
+
+
+
+ REFLOW CONDITION
+
+
+
+
+ The reflow temperature profile may vary depending on the product model, specifications and frequency
+ range.Refer to the individual product specifications for details
+
+
+
+
+电话：0755-82507042              传真：0755-88353718                           http://www.q-crystal.com.cn
+公司地址: 深圳市龙岗区天安云谷产业园一期3 栋C 座12 楼1204～1206 室
+                                                  Page: 4/5
+                                                                        ] .
+
+
+
+Crystal oscillator
+SMD TCXO Module 2.5×2.0×0.9 7W Series                                    ..
+
+
+
+
+ CARRIER TYPE
+
+
+
+
+ REEL
+
+
+
+
+电话：0755-82507042   传真：0755-88353718       http://www.q-crystal.com.cn
+公司地址: 深圳市龙岗区天安云谷产业园一期3 栋C 座12 楼1204～1206 室
+                              Page: 5/5
+

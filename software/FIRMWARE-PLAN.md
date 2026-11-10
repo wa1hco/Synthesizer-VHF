@@ -1,6 +1,6 @@
 # Firmware rework plan for hammond-1550Q
 
-Plan only. The board is the hammond-1550Q schematic: ADF4351, an on-board 10 MHz TCXO with an external REF IN mux, ATtiny1616, FT231X. The ADF4351 loop filter on that schematic is the one this firmware must match. There is no ADF4002 and no REF OUT.
+Plan only. The board is the hammond-1550Q schematic: ADF4351, an on-board 10 MHz TCXO with an external REF IN mux, and an FT231X. The schematic value is ATtiny3216-M. It sits on the ATtiny1616 VQFN-20 footprint, 3 mm by 3 mm. The symbol description says 32 kB flash, 2 kB SRAM, and 256 B EEPROM. ATtiny3216-M is not sold in that package. ATtiny3226-MF fits this footprint. It has 32 kB flash and 3 kB SRAM. It is not a hex drop-in. The firmware in this branch still builds for an ATtiny1616. The ADF4351 loop filter on that schematic is the one this firmware must match. There is no ADF4002 and no REF OUT.
 
 Host checks stay behind `scripts/` (`scripts/test-adf4351`, `scripts/build-firmware`, `scripts/flash-firmware`). Launchers take no flags and no environment variables. A person runs the script; the script knows the paths. New checks are added the same way.
 
@@ -11,45 +11,45 @@ Host checks stay behind `scripts/` (`scripts/test-adf4351`, `scripts/build-firmw
 Reference chain:
 
 - The synthesizer reference is 10 MHz, not 25 MHz. `ADF4351_REF_HZ` is still `25000000` until the firmware change.
-- J5 is external REF IN: 51 ohm to ground, 100 nF into U13. U13 is the 74LVC1GU04 already on the sheet, with a 1 MΩ feedback resistor. Its output net is REF_BUF.
-- X2 is the on-board fallback, YXC OW2EL89CEIUXK7YLC-10M (LCSC C55266004), 10 MHz clipped sine, 3.3 V. A 10 ohm resistor and 100 nF isolate its supply. U14 (74LVC1G17, mid-supply bias) squares it. Pin 1 is output-enable and is left open; this family treats a floating enable as on.
-- U15 is a 74LVC1G157. I0 is the squared TCXO, I1 is REF_BUF. S low selects I0. S is PA6, net REF_SEL, with a 10 kΩ pulldown, so a blank chip uses the TCXO. Drive PA6 high to select the external reference.
-- PA5, net REF_DET, is REF_BUF through 1 kΩ. Count edges there to decide that an external reference is present. U13 inverts, which does not matter for an edge count.
-- The mux output goes through 33 ohm and C3 into ADF4351 REFIN.
+- J2 is external REF IN: R1 is 51 ohm to ground, and C3 is 100 nF into U3. U3 is the SN74LVC1GU04, with R7 as a 1 MΩ feedback resistor. Its output net is REF_BUF.
+- X1 is the on-board fallback, YXC OW2EL89CEIUXK7YLC-10M (LCSC C55266004), 10 MHz clipped sine, 3.3 V. R4 is 10 ohm, and C1 is 100 nF at the TCXO supply. U4 (SN74LVC1G17, mid-supply bias) squares it. U4 pin 1 is NC and is left open. X1 pin 1 is output-enable and is left open. This YXC part treats a floating OE as enabled.
+- U6 is a 74LVC1G157. I0 is the squared TCXO, I1 is REF_BUF. S low selects I0. S is PA6, net REF_SEL, with R15 as a 10 kΩ pulldown, so a blank chip uses the TCXO. Drive PA6 high to select the external reference.
+- PA5, net REF_DET, is REF_BUF through R14, 1 kΩ. Count edges there to decide that an external reference is present. U3 inverts, which does not matter for an edge count.
+- The mux output goes through R18, 33 ohm, and C20, 10 nF, into ADF4351 REFIN. C3 is the REF IN series cap into U3.
 - R22 on the ADF4351 is 4.7 kΩ, so Icp max = 25.5/4.7 = 5.43 mA at Register 2 DB[12:9] = 1111. Code 0011 is 1.36 mA. The 10 MHz integer-N filter was designed at 0011. The 2.5 MHz fine-step filter uses 1111, which is exactly 4× current for 4× N. The firmware comment that assumes a 5.1 kΩ RSET is wrong for this board.
 
-ATtiny1616 (U3), every pin, QFN-20. Chip pin numbers match the package drawing in `HardwareConfig.h`. Direction is MCU direction.
+U1, every pin. The schematic value is ATtiny3216-M on the ATtiny1616 VQFN-20 footprint. Package pin numbers match the drawing in `HardwareConfig.h`. The pin use in that file is the old sequencer board. Direction is MCU direction.
 
 | Chip | Port | Net | Use |
 |---|---|---|---|
-| 1 | PA2 | DBG1 | Scope loop TP3. |
-| 2 | PA3 | DBG2 | Scope loop TP4. |
+| 1 | PA2 | DBG1 | Scope loop TP2. |
+| 2 | PA3 | DBG2 | Scope loop TP3. |
 | 3 | GND | GND | |
-| 4 | VCC | VDD | 3.3 V. Scope loop TP7, parked off the board. |
-| 5 | PA4 | RST | Optiboot ersatz reset. FT231X DTR, C54 100 nF, PA4. R33 10 kΩ to VDD. |
+| 4 | VCC | VDD | 3.3 V. Scope loop TP5. |
+| 5 | PA4 | RST | Optiboot ersatz reset. FT231X DTR, C13 100 nF, PA4. R13 10 kΩ to VDD. |
 | 6 | PA5 | REF_DET | Input. Squared REF IN through 1 kΩ. Edge-count to detect an external reference. |
 | 7 | PA6 | REF_SEL | Output. Mux select. Pulled down, so low selects the TCXO. High selects REF IN. |
 | 8 | PA7 | unconnected | No connection. Do not drive it. |
-| 9 | PB5 | SYNTH_LOCK | SYNTH LOCK LED D13, red, active high, R39 1 kΩ to the anode, cathode to GND. About 1.2 mA. |
-| 10 | PB4 | REF_LOCK | REF LOCK LED D12, red, active high, R38 1 kΩ. About 1.2 mA. |
+| 9 | PB5 | SYNTH_LOCK | SYNTH LOCK LED D1, red, active high, R8 1 kΩ to the anode, cathode to GND. About 1.2 mA. |
+| 10 | PB4 | REF_LOCK | REF LOCK LED D3, red, active high, R12 1 kΩ. About 1.2 mA. |
 | 11 | PB3 | RXD_M | MCU RX from FT231X TXD through R16 1 kΩ. |
 | 12 | PB2 | TXD_M | MCU TX to FT231X RXD. |
-| 13 | PB1 | CE | ADF4351 CE. Hardware pull-down R48 100 kΩ. |
-| 14 | PB0 | LE | ADF4351 LE. Hardware pull-down R47 10 kΩ. |
+| 13 | PB1 | CE | ADF4351 CE. Hardware pull-down R19 100 kΩ. |
+| 14 | PB0 | LE | ADF4351 LE. Hardware pull-down R20 10 kΩ. |
 | 15 | PC0 | DATA | SPI data to the ADF4351. |
 | 16 | PC1 | CLK | Shared SPI clock. |
 | 17 | PC2 | MUX | ADF4351 MUXOUT, input. |
-| 18 | PC3 | RF_EN | ADF4351 RF output enable (PDBRF). Hardware pull-down R49 100 kΩ. Low mutes both RF outputs. |
-| 19 | PA0 | UPDI | Scope loop TP6. Recovery programming. Not a GPIO. |
-| 20 | PA1 | LD | ADF4351 lock-detect pin, input. Scope loop TP1. |
+| 18 | PC3 | RF_EN | ADF4351 RF output enable (PDBRF). Hardware pull-down R21 100 kΩ. Low mutes both RF outputs. |
+| 19 | PA0 | UPDI | Scope loop TP1. Recovery programming. Not a GPIO. |
+| 20 | PA1 | LD | ADF4351 lock-detect pin, input. Scope loop TP6. |
 | EP | | GND | Exposed pad. |
 
 The other two LEDs are not MCU pins:
 
-- D11 PWR, green, anode to VDD through R37 1 kΩ, cathode to GND. On whenever 3.3 V is up.
-- D14 COMM, green, anode to VDD, cathode through R40 1 kΩ to FT231X CBUS2 (pin 7). Active low. Program CBUS2 as TX&RXLED#.
+- D5 PWR, green, anode through R23 1 kΩ to 5 V, cathode to GND. On when USB 5 V is up.
+- D4 COMM, green, anode to VDD, cathode through R17 1 kΩ to FT231X CBUS2 (pin 7). Active low. Factory default of CBUS2 is TXLED#. TX&RXLED# needs an EEPROM change.
 
-FT231X VCCIO is VDD (3.3 V). MCU serial is already 3.3 V. Boot is Optiboot on the UART (PB2/PB3) with the DTR capacitor reset. A failed flash is recovered on the UPDI loop (TP6) with the scope ground loop, not by bit-banging PA0 from the application.
+FT231X VCCIO is VDD (3.3 V). MCU serial is already 3.3 V. Boot is Optiboot on the UART (PB2/PB3) with the DTR capacitor reset. A failed flash is recovered on the UPDI loop (TP1) with the scope ground loop (TP4), not by bit-banging PA0 from the application.
 
 SPI is the ADF4351 only. LE (PB0) idles low, which is also the pull-down, so a reset does not latch a partial word.
 

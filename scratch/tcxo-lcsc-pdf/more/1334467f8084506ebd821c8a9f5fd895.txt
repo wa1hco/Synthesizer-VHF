@@ -1,0 +1,88 @@
+                                                                               ECS-TXO-2016
+                                                                               SMD HCMOS TCXO
+ The sub miniature ECS-TXO-2016 is a miniatue SMD CMOS
+ TCXO. The 2.0 x 1.6 x 0.8 mm ceramic package is ideal for LoRa                     Request a Sample
+ WAN, and wireless IoT applications where stability is critical.
+
+                                              OPERATING CONDITIONS / ELECTRICAL CHARACTERISTICS
+   ECX-2016 SMD HCMOS TCXO                            PARAMETERS                CONDITIONS                     ECS-TXO-2016             UNITS
+                                                                                                         MIN        TYP     MAX
+                                                Frequency Range                                          9.500              60.000 MHz
+                                                                               Tolerance at +25°C                            ± 2.0 ppm
+                                                                             Vs. Temp (-30 ~ +85°C)                          ±2.0  ppm
+                                                Frequency Stability          Vs. Temp (-40 ~ +85°C)                          ± 2.5 ppm
+                                                                            Voltage Change Vdd ±5%                           ±0.2  ppm
+                                                                              Load Change (±10%)                             ±0.2  ppm
+                                                Aging                        Per year @ +25°C                                ±1.0  ppm
+                                                Supply Voltage (Vdd)            Specify in P/N        +1.8, +2.5, +2.8, +3.3 ±10%  V DC
+• Low Profile                                   Standby Current                                                              10     µA
+• 2.0 x 1.6 mm Footprint
+• Extended Temp Range                           Output                              CMOS                          15                pF
+• RoHS Compliant                                Output voltage Level                           VOL:10%Vdd max./VOH:90%Vdd min.V DC
+                                                Rise & Fall time              10%Vdd – 90%Vdd                                 5     ns
+                                                Duty Cycle                         @ ½ Vdd                                 45/55    %
+  DIMENSIONS (mm)                               Phase Noise                   @ 10 KHz offset                   -145              dBc/Hz
+
+                                                                      CURRENT CONSUMPTION , mA Max.
+                                               FREQ.          9.5~ 10 MHz        10.1~ 20 MHz       20.1~ 30 MHz       30.1~ 40 MHz   40.1 ~60 MHz
+                                           +1.8V & +2.5V           3.1                3.7                4.2               4.6             5.5
+                                           +2.8V & +3.3V           4.0                4.8                5.5               6.0             7.0
+
+
+                                                                             PAD CONNECTIONS
+                                                                            1        Tri-state
+                                                                            2          Gnd
+                                                                            3         Output
+                                                                            4          Vdd
+
+                                                                            Tri State Function
+                                                                         Pin 1           Output
+                                                                      High or NC          Active
+ Figure 1) Top, Side, and Bottom views                                                                             Figure 2) Suggested Land Pattern
+                                                                         Low           Disable Hi-Z
+PART NUMBERING GUIDE: Example ECS-TXO-2016-33-160-TR
+               ECS -    SERIES             Voltage              FREQUENCY                           PACKAGING
+                                                               ABBREVIATION
+
+                  TXO-2016               18 = +1.8V           160 = 16.000 MHz                         TR = Tape
+                                         25 = +2.5V
+             2.0 x 1.60 mm TCXO          28= +2.8V            See Developed                             & Reel
+                                         33 = +3.3V           Frequencies Pg.2                          1K/Reel
+
+
+
+                                                                         * Standard specification, contact ECS for custom Options         Rev.2019
+
+
+       15351 West 109th Street | Lenexa, KS 66219 | Phone: 913.782.7787 | Fax: 913.782.6991 | www.ecsxtal.com
+                ECS-TXO-2016
+                SMD HCMOS TCXO
+
+
+FREQUENCY ABBREVIATIONS
+  FREQUENCY MHz          CODE
+      10.000              100
+      12.000              120
+      16.000              160
+      20.000              200
+      25.000              250
+      32.000              320
+      40.000              400
+      50.000              500
+
+
+
+
+              SOLDER PROFILE
+                                                            Figure 1) Suggested Reflow Profile
+ Peak solder Temp +260°C Max 10 sec Max.
+               2 Cycles Max.
+           MSL 1, Lead Finish Au
+
+ POCKET TAPE DIMENSIONS (mm)
+
+
+
+
+     15351 West 109th Street | Lenexa, KS 66219 | Phone: 913.782.7787 | Fax: 913.782.6991 | www.ecsxtal.com
+

@@ -1,0 +1,177 @@
+                                                                                         TX - T                                                                                                  RoHS
+                                                                                                                                                                                                Compliant
+
+
+TCXO/VCTCXO MINIATURE SMD (5.0 x 3.2 x 1.5mm)
+FEATURES:
+• WIDE FREQUENCY RANGES
+•    TIGHT STABILITY AVAILABLE
+•    STANDARD PACKAGE
+
+■ SPECIFICATION
+
+                            PARAMETER                                                MIN.             TYP.             MAX.             UNIT                                  NOTE
+
+                                                       CMOS                            4                                 54             MHz
+FREQUENCY RANGE
+                                                       CSW                             6                                 45             MHz
+
+STANDARD FREQUENCIES                                                                  10.000MHz, 13.000MHz, 19.200MHz, 19.680MHz, 25.000MHz, 26.000MHz
+
+FREQUENCY TOLERANCE                                                                                                    ±1.5              ppm         @ 25°C ± 2°C
+
+                        vs. TEMPERATURE RANGE                                                                          ±2.5              ppm         See P/N guide for other options
+
+FREQUENCY               vs. LOAD ± 5%                                                                                  ±0.3              ppm
+STABILITY
+                        vs. SUPPLY VOLTAGE ± 5%                                                                        ±0.3              ppm
+
+                        vs. AGING                                                                                      ±1.0          ppm/year
+
+OPERATING TEMPERATURE RANGE                                                           -30                                85               °C         See P/N guide for other options
+
+STORAGE TEMPERATURE RANGE                                                             -40                                85               °C
+
+SUPPLY VOLTAGE ±5%                                                                    1.8                               3.3                V         See P/N guide for other options
+
+                                                      CMOS                                                              8.0              mA
+SUPPLY CURRENT
+                                                      CSW                                                               2.0              mA
+
+                        LOGIC FAMILY                                                         CMOS / Clipped Sine wave
+
+                                                      CMOS                                                    15pF
+                        LOAD
+                                                      CSW                                               10kΩ//10pF
+
+                                                      CMOS (VOH)                 0.8 x VDD                                                 V
+
+OUTPUT                  LEVEL                         CMOS (VOL)                                                    0.2 x VDD              V
+
+                                                      CSW                             0.8                                                VP-P
+
+                        SYMMETRY (DUTY CYCLE)                                         40                                 60                %
+
+                        RISE AND FALL TIME (Tr/Tf)                                                                       10               nS         For CMOS
+
+                        START-UP TIME                                                                                   2.0              mS
+
+FREQUENCY DEVIATION                                                                  ±3.0                             ±20.0              ppm         See P/N guide for other options
+
+CONTROL VOLTAGE                                                                        0           0.5 x VDD           VDD                 V         Contact Factory for Details
+
+SLOPE                                                                                                      Positive
+
+INPUT IMPEDANCE                                                                      100                                                  kΩ
+
+PHASE NOISE @ 13MHZ                                    1kHz                                                            -130           dBc/Hz
+    Transko Electronics, Inc reserves the right to make changes to the product (s), service (s), and specification (s) described herein without notice. See “Terms of Sale” for details on our website.
+
+
+                                                                                                                                                                                        Ver.
+                                                                                                                                                                                        Rev. 2:
+                                                                                                                                                                                             2: Sep.
+                                                                                                                                                                                                Jul. 2015
+                                                                                                                                                                                                     2013
+Transko Electronics, Inc. 3981 E. Miraloma Ave. CA
+                                                Anaheim,
+                                                   92806 CA
+                                                         USA92806 USA
+Tel: 714-528-8080
+     714-528-8000 Fax: 714-528-8017 Website: www.transko.com E-mail: sales@transko.com
+                                                                                        TX - T                                                                                                    RoHS
+                                                                                                                                                                                                 Compliant
+
+
+■ PACKAGE DIMENSIONS                                                                                                              ■ SOLDER PATTERN
+
+
+                                                                                                                                                              1.4
+                                        4                     3
+                                                                                                                                                  1.1
+                                               TRANSKO
+                                                                                                                                                                                               2.3
+                           TOP
+                                              Part Number                    3.2
+                                                Frequency
+
+
+                                    1                              2
+                                                5.0                                                                                                                      3.8
+                                                                                                                                                                                                 Unit : mm
+
+                           SIDE
+                                                                              1.5max.
+                                                                                                                                  ■ REFLOW PROFILE
+                                                1.27
+
+                                        1       1.1
+                                                                   2                                                                                                           Soldering
+                                                                                                                                                                                             255 ±5°C
+
+
+
+                           BOTTOM
+                                                                             1.6                          Unit : mm
+                                                                                                                                                        170 ±5°C
+                                                                                                                                          150 ±5°C
+                                                                                                                                                           Pre-heating
+                                                                                              Pin Configuration
+
+                                        4                      3                                1      GND or Vc
+                                                2.6                    0.7                      2          GND
+                                                                                                                                                          <120 Sec         <10 Sec
+                                                                                                3         Output
+                                                                                                4          VDD                                       Note: Consult factory for detail
+
+
+
+
+■ PART NUMBERING GUIDE
+
+                           TX               T           30                     25        J            P            05                   19.44M                           TR
+
+
+                      TYPE                                                                                                          FREQUENCY                 TAPE & REEL
+                 TX: TCXO
+                 VTX: VCTCXO                                                                                                                                TR:   1000/reel
+                                                                                                                                  M: MHz                    Blank: Cut tape
+
+                             PACKAGE
+                                                                                                                                             PULLABILITY (VTX Option)
+                                                                                                                                          Please Specify in 2 Digits
+                      SUPPLY VOLTAGE                                                                                                      05: ± 5ppm
+                                                                                                                                          10: ± 10ppm
+                  18 :          1.8V                                                                                                      Call for Higher Pullability
+                  25 :          2.5V
+                  28 :          2.8V
+                  20 :          3.0V                                                                                                                     OUTPUT
+                  30 :          3.3V
+                                                                                                                                          P: Clipped Sine Wave
+                                                                                                                                          R: CMOS
+
+                             STABILITY                                                                                                          OPERATING TEMP.
+                  10: ± 1.0ppm                                                                                                            H: 0º to 50ºC            I: -10º to 60ºC
+                  20: ± 2.0ppm
+                                                                                                                                          J: -10º to 70ºC        K: -20º to 70ºC
+                  25: ± 2.5ppm
+                  50: ± 5.0ppm                                                                                                            L: -30º to 70ºC        M: -40º to 85ºC
+                  XX: Two digit for Stability                                                                                             N: -30º to 75ºC        O: -30º to 85ºC
+
+
+
+  Transko Electronics, Inc reserves the right to make changes to the product (s), service (s), and specification (s) described herein without notice. See “Terms of Sale” for details on our website.
+
+
+                                                                                                                                                                                           Ver.
+                                                                                                                                                                                           Rev. 2:
+                                                                                                                                                                                                2: Sep.
+                                                                                                                                                                                                   Jul. 2015
+                                                                                                                                                                                                        2013
+Transko Electronics, Inc. 3981 E. Miraloma Ave. CA
+                                                Anaheim,
+                                                   92806 CA
+                                                         USA92806 USA
+Tel: 714-528-8080
+     714-528-8000 Fax: 714-528-8017 Website: www.transko.com E-mail: sales@transko.com
+

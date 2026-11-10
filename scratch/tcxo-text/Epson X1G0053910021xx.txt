@@ -1,0 +1,922 @@
+ Temperature Compensated Crystal Oscillator (TCXO)
+ · Package size (5.0 mm × 3.2 mm × 1.45 mm)
+ · Ultra high stability VC-TCXO
+ · Output waveform : CMOS
+ · Reference weight Typ.72 mg
+
+ [ 1 ] Product Number / Product Name
+ (1-1) Product Number / Ordering Code
+        X1G0053910021xx
+        last 2 digits code(xx) define Quantity.
+        The standard is "00", 1 000 pcs/Reel.
+ (1-2) Product Name / Model Name
+        TG5032CFN 10.000000 MHz CAGNDA
+ [ 2 ] Operating range
+                                                                       Specifications
+               Parameter                    Symbol                                                           Unit                  Conditions
+                                                             Min.          Typ.             Max.
+                                             Vcc            3.135           3.3             3.465              V        -
+ Supply voltage
+                                            GND               0               -               0                V        -
+ Frequency control voltage                   Vc              0.5            1.5              2.5               V        Vc = 1.5 ±1.0 V
+ Operating temperature range                T_use            -40              -              +85              °C        -
+ Output load                               Load_C           13.5            15              16.5              pF        -
+
+ [ 3 ] Frequency characteristics
+ ( 1 ) Frequency characteristics                                         (Vcc = 3.3 V, GND = 0.0 V, Vc = 1.5 V, Load = 15 pF, T_use = +25 °C)
+                                                                       Specifications
+               Parameter                    Symbol                                                           Unit                  Conditions
+                                                             Min.          Typ.              Max.
+ Output Frequency                              fo             -             10                -              MHz        -
+                                                                                                                        T_use = +25 °C ±2 °C
+ Frequency tolerance *1                       f_tol          -1.0              -             +1.0           x10⁻⁶
+                                                                                                                        After 2 reflows *2
+ Frequency / temperature                                                                                                T_use = -40 °C to +85 °C
+                                             fo-Tc           -0.1              -             +0.1           x10⁻⁶
+ characteristics                                                                                                         (Reference to (fmax+fmin)/2)
+ Frequency / load coefficient               fo-Load          -0.1              -             +0.1           x10⁻⁶       Load ±10 %
+ Frequency / voltage coefficient             fo-Vcc          -0.1              -             +0.1           x10⁻⁶       Vcc ±5 %
+                                                             -0.5              -             +0.5           x10⁻⁶       T_use = +25 °C first year
+ Frequency aging                             f_age
+                                                             -3.0              -             +3.0           x10⁻⁶       T_use = +25 °C 20 years
+                                                                                                                        T_use = +25 °C, 24 hours
+ Holdover stability,
+                                                -           -0.01              -            +0.01           x10⁻⁶       (after 10 days of continuous
+ constant temperature                                                                                                   operation)
+                                                                                                                        T_use = +25 °C, 24 hours
+ Holdover stability,
+                                                -           -0.04              -            +0.04           x10⁻⁶       (after 48 hours of continuous
+ constant temperature                                                                                                   operation)
+ Holdover stability
+                                                -            -4.6              -             +4.6           x10⁻⁶       *3
+ (Free-run accuracy)
+ *1 Include initial frequency tolerance and frequency deviation after reflow cycles.
+ *2 Measured in the elapse of 24 hours after reflow soldering.
+ *3 This includes initial frequency tolerance, frequency / temperature characteristics, frequency / load coefficient, frequency/voltage coefficient and
+ frequency aging (+25 °C, 20 years) .
+
+ ( 2 ) Frequency control characteristics                                 (Vcc = 3.3 V, GND = 0.0 V, Vc = 1.5 V, Load = 15 pF, T_use = +25 °C)
+               Parameter                    Symbol                    Specifications                         Unit                  Conditions
+                                                             Min.          Typ.        Max.
+                                                             -10             -          -5                  x10⁻⁶       Vc = 0.5 V
+ Frequency control range                    f_cont
+                                                              +5             -         +10                  x10⁻⁶       Vc = 2.5 V
+ Input impedance                              Zin            100             -           -                   kΩ         Vc = 1.5 V
+ Frequency change polarity                     -                     Positive polarity                        -         -
+ [ 4 ] Electrical characteristics                                        (Vcc = 3.3 V, GND = 0.0 V, Vc = 1.5 V, Load = 15 pF, T_use = +25 °C)
+                                                                       Specifications
+               Parameter                    Symbol                                                           Unit                  Conditions
+                                                            Min.           Typ.             Max.
+ Current consumption                          Icc             -               -              5.0              mA        -
+ High level output voltage                   Voʜ            90 %              -                -               V        -
+ Low level output voltage                    Voʟ              -               -             10 %               V        -
+ Rise time                                     tr             -               -              8.0              ns        10 % Vcc to 90 % Vcc level
+ Fall time                                     tf             -               -              8.0              ns        90 % Vcc to 10 % Vcc level
+ Symmetry                                    SYM             45               -               55              %         50 % Vcc Level
+
+[ For other general specifications, please refer to the attached Full Data Sheet below ]
+
+                                                                                                                     No.: TG5032CFN ver1.0
+                                                                      1/21 Page
+        Ultra high stability temperature compensated crystal oscillator
+                                         Product name : TG5032CFN / TG5032SFN
+Features
+ ⚫        Ultra high stability (< 0.1 x 10-6 )
+ ⚫        Low phase noise
+ ⚫        Frequency range : 10 MHz to 40 MHz
+ ⚫        Output : CMOS, Clipped sine wave
+ ⚫        Supply voltage : 2.375 to 3.63 V
+ ⚫        External dimensions : 5.0 × 3.2 × 1.45 mm
+ ⚫        Small size package (4 pads)
+ ⚫        Pb free.
+ ⚫        Complies with EU RoHS directive.                                              TG5032CFN (CMOS output)
+
+                                                                                        TG5032SFN (Clipped sine wave output)
+Applications
+ ⚫        Small Cells
+ ⚫        Stratum3                                                              Description
+ ⚫        Femtocell                                                               This product is ultra high stability temperature
+ ⚫        Network system etc..                                                  compensated crystal oscillator of CMOS and Clipped
+                                                                                sine wave outputs using fundamental oscillation of
+Outline dimensions                                                              Crystal unit. This has realized a low phase noise in
+         #4                      #3                                             frequency 10 to 40 MHz, and it is suitable for the
+                                                                                reference clock include Small Cells.
+                 Marking                        3.20±0.2
+                                                                                This allows the product to be compliant with various
+                                                                                standards including GR-1244-CORE Stratum3,
+         #1                     #2                                 0.30         G.8262.1, G.8273.2 (Class A,B).
+                  5.00±0.2
+
+
+                                                                                Characteristics
+                                                                                 Frequency / temperature characteristics
+
+
+                                                 1.45±0.2
+ 0.30
+
+
+                               0.75
+                                         0.95
+        #1                     #2
+
+
+
+
+        #4                          #3
+Pin information
+                                                                                                   Temperature [°C]
+                             Connections
+         Pin
+                    VC-TCXO                                 TCXO
+             1           VC                                 N.C.
+             2                  GND
+             3                  OUT
+             4                   VCC
+
+
+
+
+                                                                                                   Temperature [°C]
+
+
+                                                                                                           No.: TG5032xFN_AE_Ver. 1.07
+                                                                          2/21 Page
+1. Product Number / Product Name
+(1-1) Product Number / Ordering Code
+  TG5032CFN: X1G005391xxxx00                      (Please contact Epson for details of number xxxx)
+  TG5032SFN: X1G005401xxxx00                  (The last 2 digits code (00) define Quantity. 1 000 pcs/Reel)
+(1-2) Product Name / Model Name (Standard form)
+T G 5 0 3 2 C F N 10.000000MHz C A G N D A
+     ①          ②                  ③               ④⑤⑥⑦⑧⑨
+
+① Model
+
+② Output                                 ② Output                  ⑤ Frequency / temperature   ⑧ Vc function Filter option
+
+③ Frequency                               C CMOS                    A ±0.1 x 10-6              N Non Vc
+
+④ Supply voltage                          S Clipped sine Wave       B ±0.28 x 10-6             E Vc = 1.65 V   Non Filter
+
+⑤ Frequency / temperature                                                                      D Vc = 1.5 V
+
+⑥ Operation temperature                  ④ Supply voltage          ⑥ Operation temperature
+
+⑦ OE function (H: Non)                    C 3.3 V                   G -40 ºC to +85 ºC
+
+⑧ Vc function (Non Filter)
+
+⑨ Internal identification code ("A" is default)                    ⑦ OE function
+
+                                                                    N Non OE function
+
+
+
+
+                                                                                               No.: TG5032xFN_AE_Ver. 1.07
+                                                            3/21 Page
+2. Electrical characteristics
+   1) Absolute maximum ratings
+          Parameter                Symbol      Unit        Min.        Typ.        Max                       Notes
+ Supply voltage                   VCC-GND       V          -0.5         -          +4.0
+ Storage temperature                T_stg      C          -40          -           +90       Store as bare product after packing
+ Frequency control voltage        VC-GND        V          -0.5         -         VCC+0.5      VC Terminal
+ 2) Operating conditions
+           Parameter               Symbol      Unit         Min.       Typ.         Max                     Notes
+                                                           2.375        -           3.63      Supply voltage range
+                                     VCC
+ Supply voltage                                  V          2.85       3.0          3.15      VCC = 3.0 V Type
+                                    GND                      0.0        -            0.0
+ Operating temperature range        T_use       °C          -40        +25          +85       Standard
+                                                           GND         N.C.           -       VC Terminal / TCXO
+ Frequency control voltage            VC         V          0.5         1.5          2.5
+                                                                                              VC Terminal / VC-TCXO
+                                                           0.65        1.65         2.65
+                                   Load_C       pF         13.5         15          16.5      CMOS output
+                                   Load_C       pF           9          10           11
+                                                                                              Clipped sine wave
+ Output load condition             Load_R       kΩ           9          10           11
+                                                                                              DC-cut capacitor *1
+                                      Cc        μF         0.01          -            -
+                                                                                              Clipped sine wave
+ *1 DC-cut capacitor is not included in this TCXO. Please attach an external DC-cut capacitor (0.01 μF Min.) to the out pin.
+
+
+
+
+ 3-1) Frequency characteristics                             (VCC = Typ., GND = 0.0 V, Vc = Typ. V, Load = Typ., T_use = +25 °C)
+           Parameter              Symbol        Unit         Min.       Typ.        Max                   Notes
+                                                             10          -           40
+ Output frequency                    fo         MHz        10, 12.8, 19.2, 20, 24,576, 25,
+                                                                                            Standard frequency list
+                                                           25.6, 26, 30.72, 38.4, 38.88, 40
+ Frequency tolerance *2
+  (T_use=+25 °C ±2 °C)              f_tol       × 10-6       -1.0        -        +1.0
+  (Reflow cycles : 2 times)
+                                                             -0.10       -        +0.10     T_use = -40 °C to +85 °C (Standard)
+ Frequency / temperature
+                                                      -6     -0.14       -        +0.14     T_use = -40 °C to +85 °C
+ characteristics                    fo-Tc       × 10
+                                                             -0.25       -        +0.25     T_use = -40 °C to +85 °C
+  (Reference to (fmax+fmin)/2.)
+                                                             -0.28       -        +0.28     T_use = -40 °C to +85 °C
+                                                             -0.10       -        +0.10     Load ±10 %
+ Frequency / load coefficient     fo-Load       × 10-6
+                                                             -0.05       -        +0.05     Load ±2 %
+ Frequency / voltage                                         -0.10       -        +0.10     VCC ±5 %
+                                   fo- VCC      × 10-6
+ coefficient                                                 -0.05       -        +0.05     VCC ±2 %
+                                                                                            Minimum of 1 frequency reading every
+                                                × 10-6
+ Frequency slope                      -                      -0.10       -        +0.10     2 °C, over the operating temperature
+                                                 /°C
+                                                                                            range (1 °C/minute max.)
+                                                                                            Frequency measured before and
+ Hysteresis                           -         × 10-6       -0.20       -        +0.20
+                                                                                            after at +25 °C.
+                                                              -0.5       -        +0.5      T_use = +25 °C, First year
+ Frequency aging     *6            f_age        × 10-6
+                                                              -3.0       -        +3.0      T_use = +25 °C, 20 years
+  Holdover stability                                         -0.01       -        +0.01     T_use = +25 °C, 1 day      *3
+                                        -         × 10-6
+  (Constant temperature)                                     -0.04       -        +0.04     T_use = +25 °C, 1 day      *4
+  Holdover stability
+                                        -         × 10-6      -4.6         -        +4.6                                *5
+  (Free‐run accuracy)
+                                                    -9
+  Acceleration sensitivity              -       × 10 / G        -         2.0         -       3 axes, 30-1500 Hz
+ *2 Measured 24 hours after reflow soldering.
+ *3 After 10 days of continuous operation.
+ *4 After 48 hours of continuous operation.
+ *5 This includes initial frequency tolerance, frequency / temperature characteristics, frequency / load coefficient,
+    frequency/voltage coefficient and frequency aging (+25 °C , 20 years)
+ *6 Aging stability is estimated from environmental reliability tests and the expected amount of the frequency variation over time.
+    It is not intend as a guarantee of performance over the product-life cycle
+
+
+
+
+                                                                                                    No.: TG5032xFN_AE_Ver. 1.07
+                                                           4/21 Page
+3-2) Frequency control characteristics                   (VCC = Typ., GND = 0.0 V, Vc = Typ. V, Load = Typ., T_use = +25 °C)
+            Parameter         Symbol       Unit       Min.       Typ.         Max                   Notes
+                                                     -10.0         -          -5.0
+Frequency control range       f_cont       × 10-6                                   Vc = 1.5 V±1.0 V, Vc = 1.65 V±1.0 V
+                                                     +5.0          -         +10.0
+Linearity                           -       %         -10          -          +10
+Input impedance                    ZIN      kΩ        100          -            -   VC-GND(DC), VC = Typ.
+Frequency change polarity           -        -             Positive polarity
+4) Electrical Characteristics                              (VCC = Typ., GND = 0.0 V, Vc = Typ. V, Load = Typ., T_use = +25 °C)
+            Parameter       Symbol        Unit        Min.          Typ.          Max                    Notes
+                                                       -             -            5.0      Clipped sine wave (Standard)
+                                                       -             -            3.0      Clipped sine wave (Option)
+Current consumption          ICC          mA
+                                                       -             -            5.0      CMOS (~26 MHz)
+                                                       -             -            6.0      CMOS (~40 MHz)
+Start up time                t_str        ms           -            1.0           5.0      t=0 at 90 %Vcc
+                                                                                           10 %VCC to 90 %VCC level
+Rise time                     tr           ns          -              -           8.0
+                                                                                           CMOS output
+                                                                                           90 %VCC to 10 %VCC level
+Fall time                     tf           ns          -              -           8.0
+                                                                                           CMOS output
+                                                                                           50 % VCC level
+                                                      45             50            55
+                                                                                           CMOS output
+Symmetry                     SYM           %
+                                                                                           GND level (DC-cut)
+                                                      40             50            60
+                                                                                           Clipped sine wave (Option)
+High output voltage          VOH           V        90 % VCC          -            -       CMOS output
+Low output voltage           VOL           V            -             -        10 % VCC    CMOS output
+Output level                 Vpp           V           0.8            -            -       Clipped sine wave
+                                                        -            -69           -       1 Hz offset
+                                                        -            -98           -       10 Hz offset
+Phase Noise 10 MHz                                      -           -125           -       100 Hz offset
+TCXO mode                    L(f)        dBc/Hz         -           -144           -       1 kHz offset
+                                                        -           -152           -       10 kHz offset
+                                                        -           -153           -       100 kHz offset
+                                                        -           -154           -       1 MHz offset
+                                                        -         -63 (-60)        -       1 Hz offset
+                                                        -         -92 (-90)        -       10 Hz offset
+Phase Noise 19.2 MHz                                    -        -119 (-116)       -       100 Hz offset
+TCXO mode                    L(f)        dBc/Hz         -        -140 (-139)       -       1 kHz offset
+() is VC-TCXO mode                                      -        -153 (-152)       -       10 kHz offset
+                                                        -        -154 (-154)       -       100 kHz offset
+                                                        -        -155 (-154)       -       1 MHz offset
+                                                        -         -62 (-62)        -       1 Hz offset
+                                                        -         -92 (-90)        -       10 Hz offset
+Phase Noise 20 MHz                                      -        -119 (-117)       -       100 Hz offset
+TCXO mode                    L(f)        dBc/Hz         -        -140 (-138)       -       1 kHz offset
+() is VC-TCXO mode                                      -        -152 (-152)       -       10 kHz offset
+                                                        -        -154 (-154)       -       100 kHz offset
+                                                        -        -154 (-155)       -       1 MHz offset
+                                                        -         -62 (-60)        -       1 Hz offset
+                                                        -         -93 (-90)        -       10 Hz offset
+Phase Noise 25 MHz                                      -        -118 (-116)       -       100 Hz offset
+TCXO mode                    L(f)        dBc/Hz         -        -139 (-137)       -       1 kHz offset
+() is VC-TCXO mode                                      -        -153 (-152)       -       10 kHz offset
+                                                        -        -154 (-154)       -       100 kHz offset
+                                                        -        -156 (-156)       -       1 MHz offset
+                                                        -         -59 (-54)        -       1 Hz offset
+                                                        -         -89 (-83)        -       10 Hz offset
+Phase Noise 40 MHz                                      -        -114 (-110)       -       100 Hz offset
+TCXO mode                    L(f)        dBc/Hz         -        -135 (-132)       -       1 kHz offset
+() is VC-TCXO mode                                      -        -150 (-149)       -       10 kHz offset
+                                                        -        -152 (-152)       -       100 kHz offset
+                                                        -        -155 (-155)       -       1 MHz offset
+
+
+
+
+                                                                                               No.: TG5032xFN_AE_Ver. 1.07
+                                                      5/21 Page
+3. Characteristics
+
+  3-1) “Frequency / Temperature Characteristics”
+    3-1-1) Standard spec : ±0.1 × 10-6 Max. (T_use = -40 °C to +85 °C)
+
+     19.2 MHz [N = 40 pcs]
+
+
+
+
+                       Temperature [°C]                                  Temperature [°C]
+
+
+
+     30.72 MHz [N = 40 pcs]
+
+
+
+
+                       Temperature [°C]                                  Temperature [°C]
+
+
+
+     40 MHz [N = 40 pcs]
+
+
+
+
+                       Temperature [°C]                                  Temperature [°C]
+
+
+
+
+                                                                                 No.: TG5032xFN_AE_Ver. 1.07
+                                              6/21 Page
+   3-2) Frequency Aging (40 MHz) [N = 5 pcs]
+* Aging is estimated from environmental reliability tests and the expected amount of frequency variation over time.
+   It is not intended as a guarantee of performance over the product-life cycle.
+
+
+
+
+   3-3) Holdover Stability (19.2 MHz) [N = 40 pcs]
+
+
+
+
+   3-4) Frequency Control Characteristics [N = 40 pcs]
+
+
+
+
+                                                                                                    No.: TG5032xFN_AE_Ver. 1.07
+                                                          7/21 Page
+3-5) Current Consumption
+
+
+
+
+3-6) Rise time / Fall time (at CMOS output)
+
+
+
+
+3-7) Output voltage [VOH, VOL] (at CMOS output)
+
+
+
+
+3-8) Symmetry (at CMOS output)                2-9) Output level [VPP] (at Clipped sine wave)
+
+
+
+
+                                                                      No.: TG5032xFN_AE_Ver. 1.07
+                                       8/21 Page
+3-10) Start up time (19.2 MHz, 40 MHz)
+
+
+                  19.2 MHz
+
+
+
+
+                 40 MHz
+
+
+
+
+                                                     No.: TG5032xFN_AE_Ver. 1.07
+                                         9/21 Page
+3-11) Phase noise (10 MHz, 19.2 MHz, 20 MHz) [N = 25 pcs]
+10 MHz
+
+
+
+
+19.2 MHz
+
+
+
+
+20 MHz
+
+
+
+
+                                                            No.: TG5032xFN_AE_Ver. 1.07
+                                     10/21 Page
+3-11) Phase noise (25 MHz, 30.72 MHz, 40 MHz) [n = 25 pcs]
+25 MHz
+
+
+
+
+30.72 MHz
+
+
+
+
+ 40 MHz
+
+
+
+
+                                                             No.: TG5032xFN_AE_Ver. 1.07
+                                      11/21 Page
+ 3-12) Short term stability [ADEV] (19.2 MHz) TCXO mode
+
+
+
+
+  3-13) TDEV (19.2 MHz, Loop BW = 0.1 Hz)
+    Constant temperature : +25 °C                   Constant temperature : +70 °C
+
+
+
+
+   3-14) MTIE (19.2 MHz, Loop BW = 0.1 Hz)
+    Constant temperature : +25 °C                   Constant temperature : +70 °C
+
+
+
+
+Compliant with G.813 option1 and 2
+
+
+
+
+                                                                        No.: TG5032xFN_AE_Ver. 1.07
+                                       12/21 Page
+4. Outline
+  4-1) Outline dimensions and Pin information
+
+    TG5032CFN / SFN
+
+               #4                           #3
+
+
+
+                      Marking                              3.20±0.2
+
+
+                #1                         #2                                        0.30
+                          5.00±0.2
+
+                                                                              Unit: mm
+
+
+
+
+                                                            1.45±0.2
+     0.30                                                                                                 Connections
+                                                                                         Pin
+                                                                                                VC-TCXO               TCXO
+                                         0.75                                            1              VC            N.C.
+                                                    0.95                                 2                      GND
+              #1                          #2
+                                                                                         3                      OUT
+                                                                                         4                      VCC
+
+
+
+                                                                                Do not connect “N.C.” pin with any other pins (also mutually)
+
+              #4                               #3
+
+
+  4-2) Soldering pattern
+            Example of patterning design indicated as follows. In an actual design, please consider mounting density, the reliability of
+
+            soldering, etc. and check whether performance is optimal.
+
+
+
+    Soldering pattern of TG5032CFN / SFN                                                     unit : mm
+
+                                      Please set By-pass capacitor
+                                      (0.1μF) near the Vcc pad
+
+
+                                               To GND
+                                                                                    1.10
+                                                     #4                                        #3
+
+
+                                                                                                    1.10 1.30
+
+
+
+                                                 #1                                       #2
+                                                                       4.40
+
+                         To maintain stable operation, provide a 0.1uF by-pass capacitor at a location as near as
+                         possible to the power source terminal of the crystal product (between VCC - GND).
+
+
+
+
+                                                                                                                             No.: TG5032xFN_AE_Ver. 1.07
+                                                                       13/21 Page
+5. Timing chart
+  5-1) Output waveform (CMOS output)
+
+                           tr                          tf
+
+
+                                                                                     VCC
+
+              90 % VCC
+
+              50 % VCC
+
+              10 % VCC
+
+                                                                                   GND
+                                                                                   GND
+                                         tW
+                                                                VOH
+               SYM=tw/t×100 %                                                  VOL
+                                               t
+
+
+  5-2) Output waveform (Clipped sine wave output)
+
+
+
+
+                                                                Vp-p
+                                                                                  GND
+
+
+
+
+                                        tW
+
+                                               t                       SYM=tw/t×100 %
+
+
+
+
+                                                                                      No.: TG5032xFN_AE_Ver. 1.07
+                                                   14/21 Page
+6. Test circuit
+ 6-1) CMOS output for TCXO
+
+    1) Output Load : 15 pF
+                                                                                               Test Point
+                                              VCC          OUT
+
+           Supply            By-pass          N.C.         GND
+                                                                               Load_C
+           Voltage           Capacitor
+                                                                                 15 pF
+
+                               0.1 F
+
+
+
+
+    2) Current consumption
+
+                           A                  VCC          OUT
+
+          Supply           By-pass            N.C.         GND
+                                                                              Load_C
+          Voltage          Capacitor
+                                                                                15 pF
+
+                               0.1 F
+
+
+
+
+   3) Conditions
+        1. Oscilloscope: Impedance                  Min. 1 MΩ
+                          Input capacitance         Max. 10 pF
+                          Band width                Min. 300 MHz
+        2. Load_C includes probe capacitance.
+        3. A capacitor (By-pass: 0.1 F) is placed between VCC and GND, and closely to TCXO.
+        4. Use the current meter whose internal impedance value is small.
+        5. Power Supply
+           Impedance of power supply should be as low as possible.
+        6. GND pin should be connected to low impedance GND.
+
+
+
+
+                                                                                    No.: TG5032xFN_AE_Ver. 1.07
+                                                    15/21 Page
+6-2) CMOS output for VC-TCXO
+
+ 1) Output Load : 15 pF
+                                                                                            Test Point
+                                           VCC             OUT
+
+      Supply           By-pass             Vc              GND
+                                                                          Load_C
+      Voltage          Capacitor
+                                                                            15 pF
+
+                        0.1 F                   Control
+                                                 Voltage
+
+
+
+
+ 2) Current consumption
+
+
+
+                       A                   VCC             OUT
+
+       Supply          By-pass             Vc              GND
+                                                                          Load_C
+       Voltage         Capacitor
+                                                                            15 pF
+
+                           0.1 F                 Control
+                                                  Voltage
+
+
+
+
+ 3) Conditions
+     1. Oscilloscope: Impedance                   Min. 1 MΩ
+                       Input capacitance          Max. 10 pF
+                       Band width                 Min. 300 MHz
+     2. Load_C includes probe capacitance.
+     3. A capacitor (By-pass: 0.1 F) is placed between VCC and GND, and closely to TCXO.
+     4. Use the current meter whose internal impedance value is small.
+     5. Power Supply
+         Impedance of power supply should be as low as possible.
+     6. GND pin should be connected to low impedance GND.
+
+
+
+
+6-3) Clipped sine wave output for TCXO
+
+
+                                                                                 No.: TG5032xFN_AE_Ver. 1.07
+                                                  16/21 Page
+1) Output Load : 10 kΩ // 10 pF
+                                                                 DC-cut
+                                                                Capacitor
+                                                                0.01 F                    Test Point
+                                          VCC         OUT
+
+                                          N.C.        GND
+                      By-pass
+                      Capacitor                                   Load_C            Load_R
+    Supply
+                                                                    10 pF             10 kΩ
+    Voltage           0.1 F
+
+
+
+
+2) Current consumption
+
+                                                                 DC-cut
+                                                                Capacitor
+                                                                0.01 F
+                    A                     VCC         OUT
+
+                                          N.C.        GND
+                      By-pass
+                      Capacitor                                  Load_C
+     Supply                                                                         Load_R
+                                                                   10 pF              10 kΩ
+     Voltage
+                      0.1 F
+
+
+
+
+3) Conditions
+    1. Oscilloscope: Impedance                   Min. 1 MΩ
+                      Input capacitance          Max. 10 pF
+                      Band width                 Min. 300 MHz
+    2. Load_C includes probe capacitance.
+    3. A capacitor (By-pass: 0.1 F) is placed between VCC and GND, and closely to TCXO.
+    4. Use the current meter whose internal impedance value is small.
+    5. Power Supply
+        Impedance of power supply should be as low as possible.
+    6. GND pin should be connected to low impedance GND.
+
+
+
+
+                                                                                No.: TG5032xFN_AE_Ver. 1.07
+                                                 17/21 Page
+6-4) Clipped sine wave output for VC-TCXO
+
+ 1) Output Load : 10 kΩ // 10 pF
+
+                                                                  DC-cut
+                                                                 Capacitor
+                                                                 0.01 F
+                                                                                            Test Point
+                                           VCC             OUT
+
+         Supply         By-pass            Vc              GND
+         Voltage        Capacitor
+                                                                   Load_C               Load_R
+                        0.1 F                                       10 pF                10 kΩ
+                                                 Control
+                                                 Voltage
+
+
+
+
+ 2) Current consumption
+
+                                                                  DC-cut
+                                                                 Capacitor
+                                                                 0.01 F
+                        A                  VCC             OUT
+
+        Supply          By-pass            Vc.             GND
+        Voltage         Capacitor
+                                                                  Load_C                Load_R
+                                                                    10 pF                 10 kΩ
+                          0.1 F                 Control
+                                                 Voltage
+
+
+
+ 3) Conditions
+     1. Oscilloscope: Impedance                  Min. 1 MΩ
+                       Input capacitance         Max. 10 pF
+                       Band width                Min. 300 MHz
+     2. Load_C includes probe capacitance.
+     3. A capacitor (By-pass: 0.1 F) is placed between VCC and GND, and closely to TCXO.
+     4. Use the current meter whose internal impedance value is small.
+     5. Power Supply
+         Impedance of power supply should be as low as possible.
+     6. GND pin should be connected to low impedance GND.
+
+
+
+
+                                                                                 No.: TG5032xFN_AE_Ver. 1.07
+                                                 18/21 Page
+7. Reflow profile (follow to IPC / JEDEC J-STD-020D.1)
+         Temperature [ C ]
+
+         300
+                  TP     ; +260 C
+                           +255 C
+                                                                             tp ; 20 s to 40 s
+         250                              Avg. Ramp-up
+                  TL    ; +217 C         3 C / s Max.             tL
+                                                                                       Ramp-down
+                  Ts max ; +200 C                            60 s to 150 s
+                                                                                       6 C / s Max.
+         200                                                  ( +217 C over )
+
+
+                  Ts min ; +150 C            ts
+         150                            60 s to 180 s
+                                     ( +150 C to +200 C )
+
+         100
+
+
+          50
+                         Time +25 C to Peak
+
+           0      60   120 180 240 300 360 420 480 540 600 660 720 780
+                                                               Time [ s ]
+
+8. Packing information
+(8-1) Product number last 2 digits code (00) define Quantity. 1 000 pcs/Reel.
+    TG5032CFN: X1G005391xxxx00 (Please contact Epson for details of number xxxx)
+    TG5032SFN: X1G005401xxxx00
+(8-2) Taping specification           Subject to EIA-481 IEC-60286 JIS C0806
+       (1) Tape dimensions
+               Material of the Carrier Tape: PS conduct / Material of the Top Tape: PET
+
+
+
+
+    (2) Reel dimensions                            Material of the reel: Conductive polystyrene
+
+
+
+
+                                                                                                       No.: TG5032xFN_AE_Ver. 1.07
+                                                                         19/21 Page
+9. Moisture Sensitivity Level, Electro-Static Discharge
+(9-1) Moisture Sensitivity Level (MSL)
+             Parameter             Specifications                         Conditions
+                MSL                      LEVEL1      JEDEC J-STD-020D
+(9-2) Electro-Static Discharge (ESD)
+             Parameter            Specifications                          Conditions
+    Human Body Model (HBM)         2 000 V Min       EIAJ ED-4701-1 C111A, 100 pF, 1.5 kΩ, 3 times
+       Machine Model (MM)              200 V Min     EIAJ ED-4701-1 C111, 200 pF, 0 Ω, 1 time
+
+
+
+
+                                                                                       No.: TG5032xFN_AE_Ver. 1.07
+                                                    20/21 Page
+10. Handling precautions
+
+  Prior to using this product, please carefully read the section entitled “Precautions” on our Web site
+  ( https://www5.epsondevice.com/en/information/#precaution ) for instructions on how to handle and use
+  the product properly to ensure optimal performance of the product in your equipment.
+  Before using the product under any conditions other than those specified therein,
+  please consult with us to verify and confirm that the performance of the product will not be negatively
+  affected by use under such conditions.
+
+  In addition to the foregoing precautions, in order to avoid the deteriorating performance of the product,
+  we strongly recommend that you DO NOT use the product under ANY of the following conditions:
+
+  (1) Do not expose this product to excessive mechanical shock or vibration.
+  (2) This product can be damaged by mechanical shock during the soldering process depending on the equipment
+     used, process conditions, and any impact forces experienced. Always follow appropriate procedures,
+     particularly when changing the assembly process in anyway and be sure to follow applicable process
+     qualification standards before starting production.
+  (3) These devices are sensitive to ESD, please use appropriate precautions during handling, assembly,
+     test, shipment, and installation.
+  (4) This product contains semiconductor content that should not be exposed to electromagnetic waves.
+  (5) The use of ultrasonic technology for cleaning, bonding, etc. can damage the Xtal unit inside this product.
+     Please carefully check for this consideration before using ultrasonic equipment for volume production with this product.
+  (6) Noise and ripple on the power supply may have undesirable affects on operation and cause degradation
+     of phase noise characteristics. Evaluate the operation of this device with appropriate power supplies carefully before use.
+  (7) When applying power, ensure that the supply voltage increases monotonically for proper operation.
+     On power down, do not reapply power until the supplies, bypass capacitors, and any bulk capacitors
+     are completely discharged since that may cause the unit to malfunction.
+  (8) Aging specifications are estimated from environmental reliability tests and expected frequency variation
+     over time. They do not provide a guarantee of aging over the product lifecycle.
+  (9) The metal cap on top of the device is directly connected to the GND terminal (pin #2). Take necessary precautions to prevent
+  any conductor not at ground potential from contacting the cap as that could cause a short circuit to GND.
+  (10)Do not route any signal lines, supply voltage lines, or GND lines underneath the area where the oscillators
+     are mounted including any internal layers and on the opposite side of the PCB.
+     To avoid any issues due to interference of other signal lines, please take care not to place signal lines
+     near the product as this may have an adverse affect on the performance of the product.
+  (11)A bypass capacitor of the recommended value(s) must be connected between the V CC and GND terminals
+     of the product. Whenever possible, mount the capacitor(s) on the same side of the PCB and as close to the
+     product as possible to keep the routing traces short.
+  (12)Power supply connections to VCC and GND pins should be routed as thick as possible while keeping the
+     high frequency impedance low in order to get the best performance.
+  (13) The use of a filter or similar element in series with the power supply connections to protect from electromagnetic radiation
+      noise may increase the high frequency impedance of the power supply line and may cause the oscillator to not
+      operate properly. Please verify the design to ensure sufficient operational margin prior to use.
+  (14) Keep PCB routing from the output terminal(s) to the load as short as possible for best performance.
+  (15) Do not short the output to GND as that will damage the product. Always use with an appropriate load resistor connected.
+  (16) Product failures during the warranty period only apply when the product is used according to the
+     recommended operating conditions described in the specifications. Products that have been opened
+     for analysis or damaged will not be covered. It is recommended to store and use in normal temperature
+     and humidity environments described in the specifications to ensure frequency accuracy and prevent
+     moisture condensation. If the product is stored for more than one year, please confirm the pin solderability prior to use.
+  (17) If the oscillation circuit is exposed to condensation, the frequency may change or oscillation may stop.
+     Do not use in any conditions where condensation occurs.
+  (18) Do not store or use the product in an environment where it can be exposed to chemical substances
+     that are corrosive to metal or plastics such as salt water, organic solvents, chemical gasses, etc.
+     Do not use the product when it is exposed to sunlight, dust, corrosive gasses, or other materials for long periods of time.
+  (19) When using water-soluble solder flux make sure to completely remove the flux residue after soldering.
+     Pay particular attention when the residues contain active halogens which will negatively affect the product and its performance.
+
+
+
+
+                                                                                                     No.: TG5032xFN_AE_Ver. 1.07
+                                                          21/21 Page
+

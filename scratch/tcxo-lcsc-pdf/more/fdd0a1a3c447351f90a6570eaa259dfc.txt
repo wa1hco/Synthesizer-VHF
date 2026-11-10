@@ -1,0 +1,120 @@
+                                                                                                   ECS-TXO32-S3 &
+                                                                                                  ECS-VC-TXO32-S3
+                                                                                             Stratum 3 Clipped Sine Wave
+ ECS-TXO32-S3 Stratum 3, Clipped Sine Wave SMD TCXO /                                              TCXO / VCTCXO
+ VCTCXO. The 3.2 x 2.5 x 0.9 mm ceramic package S3 TCXO
+ ideal for Femtocell, Nanocell and Instrumentation applications.                                                    Request a Sample
+
+
+
+
+                                                     OPERATING CONDITIONS / ELECTRICAL CHARACTERISTICS
+                                                                                                    ECS-TXO32-S3
+     ECS-TXO32-S3
+                                                    Parameters                  MIN        TYP         MAX       Units                   Test Conditions
+                                            Frequency Range                    9.600                  50.000      MHz
+                                                                                                                            Ref to freq @ +25°C ±2°C, Vcc = 3.3V,
+                                            Frequency Tolerance                                         ±1.0      ppm
+                                                                                                                            within 30 days ex-works
+                                                            Temperature                                ±280        ppb      See Note 1
+
+                                                                                                                            Vs. Supply Change (±5%), with 10KΩ//10
+                                                            Supply                                      ±0.1      ppm
+                                                                                                                            pF load
+                                                                                                                            Vs. Load Change (±5%), Ref +25°C, Vcc
+                                            Frequency       Load                                        ±0.1      ppm
+                                                                                                                            3.3V
+                                            Stability
+                                                            Aging/day                                  ±0.02      ppm       Vs. Aging @ +25°C, Vcc = 3.3V, after 1hr
+                                                                                                                            of operation
+                                                            Aging/ year                                 ±1.0      ppm
+                                                            Overall                                                         See Note 2
+•    Clipped Sine Wave Output                                                   -4.6                    +4.6      ppm
+                                                            Stability
+•    Stratum 3
+•    TCXO / VCTCXO                          Supply Voltage                    +3.135       +3.3       +3.465      VDC       VDD (33 Option)
+•    280ppb Stability                                                                                                       Ref 25°C, Vcc=3.3V, Vc=1.5V
+•    3.2 x 2.5 mm Footprint                 Current Consumption                                          3.0       mA
+                                                                                                                            Cload=10KΩ//10pF.
+•    PbFree/RoHS Compliant
+                                            Output Waveform                           Clipped Sinewave
+•    MSL 1
+•    Lead Finish Au                         Output Level                        0.8                              V p-p      Clipped Sine Wave
+                                            Output Load                                 10KΩ//10 pF
+Notes:
+                                            Start-up Time                                                2         mS
+1.   Over temp (-40 ~ +85°C)
+     varied less than 2°C per                                                               -90         -85      dBc/Hz     @ 10 Hz Offset
+     minute. Ref to                                                                        -120         -115     dBc/Hz     @ 100 Hz Offset
+     Fref=(Fmax+Fmin)/2, Vcc                Phase Noise
+     3.3V, Load 10KΩ//10 pF.                                                               -140         -135     dBc/Hz     @ 1 KHz Offset
+                                            @ 10.000 MHz                                   -145         -140     dBc/Hz     @ 10 KHz Offset
+2.   Inclusive of initial tolerance
+     at 25°C, temperature,                                                                 -148         -143     dBc/Hz     @ 100 KHz Offset
+     supply voltage ±5%, load               VC-TXO32-S3                                                                     VC-TCXO Option
+     ±5%, reflow soldering and
+     ageing 15 years                        Control Voltage Range              +0.5        +1.5         +2.5       V        Input Impedance 100kΩ Min.
+                                            Pullability                         ±10                     ±15       ppm       Positive Slope ≤10% Linearity
+                                            Operating Temperature               -40                     +85        °C       * N Option
+                                                                                                                            Vs. Temp (-40 ~ +85°C)
+                                            Storage Temperature                 -55                    +105        °C
+                                                                                                                            BN Option
+
+
+
+                                Part Numbering Guide: Example ECS-TXO32-S3-33-200-BN-TR
+         ECS    -        Series         -    Frequency Abbreviations         - Voltage              Stability            Temperature           Packaging
+
+
+      ECS           TXO32-S3 = Clipped            200 = 20.000 MHz        33 = 3.3V ±5%           B = ±280 ppb      M= -20 ~ +70°C           TR = Tape &
+                    Sine Wave TCXO                                        30 = 3.0V ±5%                             Y = -30 ~ +85°C          Reel
+                                                                                                                    N = -40 ~ +85°C
+                    VC-TXO32-S3 =
+                    Clipped Sine Wave
+                    VC-TCXO
+
+
+
+
+15351 West 109th Street | Lenexa, KS 66219 | Phone: 913.782.7787 | Fax: 913.782.6991 | www.ecsxtal.com
+                                                               ECS-TXO32-S3 &
+                                                              ECS- VC-TXO32-S3
+                                                              Clipped Sine Wave TCXO /
+                                                                      VCTCXO
+
+
+
+Package Dimensions (mm)
+
+
+
+
+                                                                       Figure 2) Land Pattern
+
+
+
+
+              Figure 1) Top, Side, and Bottom views
+
+          ECS-TXO32-S3              ECS-VC-TXO32-S3                          Developed Frequencies
+          Pin Connections               Pin Connections             * Abbreviation     Frequency (MHz)
+
+     #1       N/C                  #1       Voltage Control         100                10.000
+                                   #2       Ground                  128                12.800
+     #2       Ground
+                                   #3       Output                  192                19.200
+     #3       Output
+     #4       VDD                  #4       VDD                     200                20.000
+                                                                    400                40.000
+                                                                    500                50.000
+
+
+
+
+           Figure 3) Suggested Reflow Profile
+
+
+
+
+15351 West 109th Street | Lenexa, KS 66219 | Phone: 913.782.7787 | Fax: 913.782.6991 | www.ecsxtal.com
+

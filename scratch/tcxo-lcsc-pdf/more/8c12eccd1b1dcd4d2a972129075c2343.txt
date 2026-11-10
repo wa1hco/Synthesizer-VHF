@@ -1,0 +1,63 @@
+                                                                                       TEMPERATURE            COMPENSATED
+                                                                                       CRYSTAL                OSCILLATOR
+
+                                                                                         8132P6
+TCXO UNIT WITH LVPECL OUTPUT IN SMD 3.2X2.5MM CERAMIC SEAM SEAL PACKAGE.
+
+
+PRODUCT FEATURES                                                                           PRODUCT PHOTO (NOT IN SCALE)
+ Small dimensions 3.2x2.5x1.3 with 6 solder pads.
+ Highly reliable seam sealed ceramic package.
+ Wide frequency range.
+ Low jitter and phase noise.
+ RoHS compliant, LEAD-FREE and HALOGEN-FREE.
+
+
+APPLICATIONS
+ High speed communication                 Handheld equipment
+ Telecom equipment
+
+PRODUCT SPECIFICATIONS
+PARAMETER                                                       8132P6                           CONDITIONS / REMARKS
+
+Nominal frequency range                                         10 ~ 800MHz                      Fund., Overtone or PLL
+
+Supply voltage                                            2.5VDC      /       3.3VDC             Other option possible
+
+Supply current                                                     100mA                         Maximum, Fund mode lower ICC
+
+Frequency stability                             ±25ppm      /    ±50ppm         /    ±100ppm     See note below.
+
+Operating temperature range                      –10 to +70°C or –40 to 85°C                     Other options available.
+
+Output waveform and load                                    LVPECL        /    50Ω               Into VCC–2
+
+Output voltage level HIGH                           VCC–1.025V       /        VCC–0.880V         Minimum / Maximum
+
+Output voltage level LOW                            VCC–1.810V       /        VCC–1.620V         Minimum / Maximum
+
+Rise and Fall times                                                1.5ns                         @ 20~80~20%VCC
+
+Symmetry (duty cycle)                                             45~55%                         @ outputs cross point
+
+Phase Jitter RMS                                                   <1ps                          Integrated 12kHz≤Fj≤20MHz
+
+Note: Stability includes frequency deviations at +25°C, over temperature range, due to supply voltage
+changes, output load changes, shock and vibration.
+
+
+PACKAGE OUTLINE / DIMENSIONS                                                     PACKAGING INFORMATION
+                                                                                  Tape & Reel compliant to EIA-481.
+                                                                                  Embossed carrier width 8mm.
+                                                                                  Component pitch in carrier 4mm.
+                                                                                  Reel diameter 180mm.
+                                                                                  QTY per reel: 3,000pcs
+
+
+                                                                                 RECOMMENDED REFLOW PROFILE
+
+
+
+
+     Suzhou HangJing Elec&Tech Co., Ltd. ◆ Http://www.hci.com.hk ◆ No.1,First Qunxing Rd,Suzhou Industrial Park,Jiangsu,China
+
