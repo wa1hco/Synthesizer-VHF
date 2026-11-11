@@ -333,6 +333,14 @@ void loop() {
   Serial.print("key ");
   Serial.println(key);
 
+  // '!' restarts the chip with a software reset. Optiboot sees the reset
+  // flag and waits 8 seconds for a new upload, so no replug is needed.
+  if(key == '!') {
+    Serial.println("rebooting into the bootloader");
+    Serial.flush();
+    _PROTECTED_WRITE(RSTCTRL.SWRR, 1);
+  }
+
   if(key =='x') Fout -= 10;
   if(key =='c') Fout += 10;
   if(key =='s') Fout -= 100;
