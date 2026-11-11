@@ -1,0 +1,25 @@
+#!/bin/sh
+# Called by PlatformIO (env ATtiny1616_optiboot). Run scripts/upload-firmware instead.
+# Sends '!' to restart the running firmware into Optiboot, then uploads the hex.
+set -u
+PORT="$1"
+HEX="$2"
+CONF="$HOME/.platformio/packages/framework-arduino-megaavr-megatinycore/avrdude.conf"
+AVRDUDE="avrdude"
+[ -x "$HOME/.platformio/packages/tool-avrdude/avrdude" ] && AVRDUDE="$HOME/.platformio/packages/tool-avrdude/avrdude"
+
+# Ask the running firmware to reboot into the bootloader. Harmless if it is not running.
+stty -F "$PORT" 57600 raw -echo -hupcl 2>/dev/null && printf '!' > "$PORT"
+sleep 0.5
+
+echo "Waiting for the bootloader. If nothing happens, unplug and replug the board (USB and 12 V)."
+n=0
+while [ "$n" -lt 60 ]; do
+  n=$((n + 1))
+  if "$AVRDUDE" -C "$CONF" -v -pattiny1616 -carduino -D -P"$PORT" -b115200 -Uflash:w:"$HEX":i; then
+    exit 0
+  fi
+  sleep 1
+done
+echo "Upload failed: the bootloader never answered." >&2
+exit 1

@@ -1,0 +1,84 @@
+ FT5HN                                                                     5.0mm x 3.2mm
+ (Former FOX924B)                                                             HCMOS TCXO
+     Features
+         •    Digital Temperature Compensation
+
+                   STANDARD SPECIFICATIONS                                           DIMENSIONS / MECHANICAL
+             PARAMETERS                               MAX                                 SPECIFICATIONS
+                                            (Unless otherwise noted)
+Frequency Range (MHz)                     8.000 ~ 40.000
+Temperature Range
+Operating (TOPR)                      See table below
+Storage (TSTG)                        -40°C ~ +85°C
+Supply Voltage (VDD)                  3.3 VDC±5%
+Input Current (IDD)                   6.0 mA
+Initial Frequency Tolerance @ 25°C
+(after reflow) (T5CV: Vc = 1.65V)1    ±2.0 PPM
+Frequency Stability
+ Over Temperature Range               See table below
+ Over Supply Voltage Change (3.3V±5%) ±0.3 PPM
+ Over Load Change (15pF ±5%)          ±0.3 PPM
+Rise Time          (0.5V ~ 80% VDD)       10 nS
+Fall Time           (80% VDD ~ 0.5V)      10 nS
+Symmetry            (50% VDD)             40% ~ 60%
+Output Voltage    (VOL)                   0.5V
+                  (VOH)                   80% VDD Min
+Output Load                               15pF
+Aging per year                            ±1.0 PPM
+Startup Time (TS)                         2.0 mS Max
+Phase Noise
+@ 1kHz offset                             -130 dBc/Hz Typical
+Reflow Soldering Temp                     260˚C / 10 Seconds x 2
+Moisture Sensitivity Level (MSL)          1
+Termination Finish                        Au over Ni
+Lead-Free                                 Yes
+                                                                                     TCXO
+RoHS/REACH Compliant                      Yes
+
+
+
+
+                                   Available Options by Stability & Operating Temp
+      Operating Temperature                   ±1 PPM                ±1.5 PPM                ±2 PPM        ±2.5 PPM
+            -30 ~+85˚C                           O                      O                      O              O
+           -40 ~+85˚C                            X                      O                      O              O
+                                              Key: O = Available, X =Not Available
+     1
+       All specifications subject to change without notice.
+
+
+
+
+     Revised A: 09/03/2019                              Page 1 of 2                              www.foxonline.com
+FT5HN                                                                          5.0mm x 3.2mm
+(Former FOX924B)                                                                  HCMOS TCXO
+                     TAPE SPECIFICATIONS (mm)                                           REEL SPECIFICATIONS (mm)
+ A            B       C       D        E         F       REEL QTY          G        H        I        J       K         L      M
+
+ø1.5         4.0     8.0     5.5     12.0       1.7     -T1 = 1,000       2.0       Ø13    Ø21      Ø80      Ø180     13.5     2.0
+
+
+
+
+                           Available Options & Part Identification for TCXO Model T5HN 1
+                                                Sample PN: FT5HNBPK25.0-T1
+         F            T5HN                  B                P                  K                  25.0                  -T1
+     Fox              Model            Voltage            Stability       Operating              Frequency          Values Added
+                     Number         B = +3.3V±5%       T = ±1.0 PPM     Temperature                (MHz)               Options
+                   T5HN = TCXO                         S = ±1.5 PPM    K = -30 to +85°C                              Blank = Bulk
+                                                       R = ±2.0 PPM    M = -40 to +85°C                             T1 = 1,000 pcs
+                                                       P = ±2.5 PPM
+     1
+         Not all frequencies in the frequency range, or every combination of stability, temp range, and voltage available.
+         See stabilities/operating temp table.
+
+
+
+                                                                              Reliability Test Conditions
+                                                                 Please contact Abracon Quality Assurance department
+
+
+
+
+     Revised A: 09/03/2019                                Page 2 of 2                                www.foxonline.com
+

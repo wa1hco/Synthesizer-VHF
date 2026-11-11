@@ -1,0 +1,240 @@
+                                                                                          ] .
+
+
+
+Crystal oscillator
+SMD TCXO Module 3.2×2.5×1.0 8W Series                                                      ..
+
+
+
+              深圳市晶科鑫实业有限公司
+
+                                 样品承认书
+   客户代码：
+   物料名称：           温度补偿晶体振荡器TCXO
+
+   规格型号：           SMD3225       4pin    40.000MHz 3.3V     ±1PPM -30~85℃
+   P N/ SJK：       8W40000P33XCA
+   环保属性：           ■RoHS         ■REACH         ■HF    □PAHS          □其它
+   版      次：       A1       2025-7-2 9 初版             最小包装：          3000pcs/real
+
+   湿敏等级：           一级
+
+
+                              承          认       签        章
+          供      应      商    承     认                  （        ）公 司 承
+
+        制定              审 核             核 准      工 程 师           审 核                批 准
+
+     贺丹斌             李相同            刘惠光
+
+    SJK 支持                                       盖章签署
+
+    FAE_EMAIL                                    日      期
+
+    日        期                                    批示： □接受               □有条件接受
+
+  备注:
+
+
+
+电话：0755-82507042        传真：0755-88353718              http://www.q-crystal.com.cn
+公司地址: 深圳市龙岗区天安云谷产业园一期 3 栋 C 座 12 楼 1204～1206 室
+                                    Page: 1/6
+                                                                                                  ] .
+
+
+
+Crystal oscillator
+SMD TCXO Module 3.2×2.5×1.0 8W Series                                                              ..
+
+
+ ELECTRICAL SPECIFICATIONS
+
+                                                              Electrical Specifications
+ Parmeters                        Condition
+                                                        MIN       TYP        MAX      UNITS
+ Nominal Frequency                                                40.000               MHZ
+ Operating Temperature
+                                                        -30                   85          ℃
+ Rangequency
+ Supply Voltage                                         3.135      3.3      3.465           V
+ Current Drain                                                                 2          MA
+ Output Level                                           0.8                            Vp-p
+ Output Type                                              Clipped sine wave
+                                  Resistance                       10                     kΩ
+ Output Load
+                                  Capacitance                      10                     Pf
+ Frequency Tolerance              After 2times reflow                        ±2.0      ppm
+                vs:Temperature    -30 ~ 85 ℃                                 ±1.0      ppm
+ Frequency
+                vs:Load           10kΩ/10pF ±10%                             ±0.2      ppm
+ Stability
+                vs:Supply Voltage VDD±5%                                     ±0.2      ppm
+ Storage Temperature                                    -40                   85          ℃
+
+ Start-up    Time                                                             3.0         ms
+
+ Aging                                                                       ±1.0     ppm/5year
+
+  Harmonics                                                                   -5       dBc
+
+ Phase noise at 1KHz offset                                                 -130     dBc/Hz
+
+
+
+
+电话：0755-82507042          传真：0755-88353718                    http://www.q-crystal.com.cn
+公司地址: 深圳市龙岗区天安云谷产业园一期 3 栋 C 座 12 楼 1204～1206 室
+                                     Page: 2/6
+                                                                                ] .
+
+
+
+Crystal oscillator
+SMD TCXO Module 3.2×2.5×1.0 8W Series                                            ..
+
+
+ DIMENSION（Unit：mm）
+        EXTERNAL DIMENSIONS           RECOMMENDED SOLDERING PATTERN
+
+
+
+
+ MARK
+
+
+            SJK
+          .40.000
+
+
+ MEASUREMENT CIRCUIT
+
+
+
+
+电话：0755-82507042   传真：0755-88353718               http://www.q-crystal.com.cn
+公司地址: 深圳市龙岗区天安云谷产业园一期 3 栋 C 座 12 楼 1204～1206 室
+                              Page: 3/6
+                                                                                                        ] .
+
+
+
+Crystal oscillator
+SMD TCXO Module 3.2×2.5×1.0 8W Series                                                                    ..
+
+
+
+ WAVEFORM CONDITIONS
+
+
+
+
+ REFLOW CONDITION
+
+
+
+
+ The reflow temperature profile may vary depending on the product model, specifications and frequency
+ range.Refer to the individual product specifications for details
+
+
+
+
+电话：0755-82507042             传真：0755-88353718                             http://www.q-crystal.com.cn
+公司地址: 深圳市龙岗区天安云谷产业园一期 3 栋 C 座 12 楼 1204～1206 室
+                                               Page: 4/6
+                                                                       ] .
+
+
+
+Crystal oscillator
+SMD TCXO Module 3.2×2.5×1.0 8W Series                                   ..
+
+
+
+
+ CARRIER TYPE
+
+
+
+
+ REEL
+
+
+
+
+电话：0755-82507042   传真：0755-88353718      http://www.q-crystal.com.cn
+公司地址: 深圳市龙岗区天安云谷产业园一期 3 栋 C 座 12 楼 1204～1206 室
+                             Page: 5/6
+                                                                                                  ] .
+
+
+
+Crystal oscillator
+SMD TCXO Module 3.2×2.5×1.0 8W Series                                                              ..
+
+
+
+ RELIABILITY TEST SPECIFICA TIONS
+
+     Test item             Equipment                    Condition                 Specification
+                                             TP:260℃ TsMax：200℃ TsMin：150℃
+                                             2 time
+
+
+
+
+ 1.SOLDERABILITY                                                                MIL-STD-883E
+                       SJK-REL001、RC-328A
+  TEST                                                                          Method 2003.7
+
+
+
+
+                                                                                MIL-STD-883E
+ 2. HERMETICITY                              Pressurized 0.4~0.5Mpa ethanol
+                       HELIOT-306S                                              Method 1014.10
+   TEST                                      sealed tank for 10 minutes
+
+                                             Enable Crystal(10g) from 10-55-    MIL-STD-883E
+ 3. VIBRATION TEST HG-V4、S&A 250B            10Hz,X、Y、Z horizontal,1 Minute     Method 2007.3
+                                             vibration/time, 1time/ 2 hours.
+                                             Enable Crystal 50G(490m/s2)
+ 4. MECHANICAL
+                       HPC-200、S&A 250B      time=11 ms speed=3.4 m/s half sine JIS C6701
+   SHOCK
+                                             wave oscillation
+
+                                                                                MIL-STD-202F
+ 5. DROP TEST          HARD BOARD.S&A250B 75cm High,3 times on hard board
+                                                                                Method 213B
+
+ 6. HIGH&LOW                                 High temperature: 125℃±2
+                       H-PTH-80CK & HM101-                                   MIL-STD883C,
+   TEMP STORAGE                              ℃,1000hr；Low temperature:-40℃±3
+                       3ABN，S&A 350B/250B                                    METHOD 1011.8
+   TEST(Static test)                         ℃,1000hrs
+                                          Temperature:-10℃±2℃～65℃±2             MIL-STD-883E
+ 7. TEMP &HUM          H-PTH-80CK CHAMBE，
+                                          ℃,Humidity:93±3%,1 cycle need 24      Method 1005.8
+   CYCLING TEST        S&A 350B/250B
+                                          hrs. 5cycles.
+
+ 8. HIGH TEM.
+                 H-PTH-80CK CHAMBE， Temperature:85℃±2，                          JIS C6701
+   & HUM.STORAGE
+                 S&A350B/250B       Humidity:85+3,-2%,Store 96 hrs
+   TEST
+
+                       H-PTH-80CK CHAMBE， Temperature:85℃±2，Store 1000          JIS C5023
+ 9. AGING TEST
+                       S&A350B/250        hrs
+
+
+
+
+电话：0755-82507042          传真：0755-88353718                     http://www.q-crystal.com.cn
+公司地址: 深圳市龙岗区天安云谷产业园一期 3 栋 C 座 12 楼 1204～1206 室
+                                        Page: 6/6
+

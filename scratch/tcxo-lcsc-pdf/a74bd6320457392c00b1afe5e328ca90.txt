@@ -1,0 +1,287 @@
+   Precision SMD VCTCXO/TCXO
+
+                          AST3TDA53                                           Request Samples                Check Inventory                    5.0 x 3.2 x 0.7 mm
+                                                                                                                                                RoHS/RoHS II Compliant
+                                                                                                                                                MSL Level = 3
+
+ Features                                                                                          Applications
+  •     Wide operating temperature range with high stability:                                      •     Stratum 3
+        -40ºC to +105ºC @ ±280ppb                                                                  •     Network routers and switches
+  •     Standard available frequencies: 10, 12.8, 16.384,                                          •     COTS Military Radios & other Communication
+        19.2, 19.44, 20, 30.72, 38.88, 40, 50MHz                                                         Hardware
+  •     CMOS or Clipped Sine Wave output                                                           •     Wireless Communication
+  •     Voltage-control option available                                                           •     GPS Tracking with Hold-Over Accuracy
+                                                                                                   •     Test & Measurement Equipment
+                                                                                                   •     Autonomous Technologies
+
+
+  Maximum Ratings
+
+
+                                                     Parameters                                        Notes
+                                                     Storage Temperature Range                    -55 to +105°C
+                                                     Supply Voltage                                 -0.5 to 6V
+                                                     Control Voltage                                 0 to 3.3V
+                                                     ESD, HBM/CDM/MM                           4kV/2kV/200V/400V
+  Electrical Specifications
+
+
+Parameters                                                          Min.            Typ.             Max.                   Units                      Notes
+Frequency Range                                                      10                                50                   MHz
+                                                                    10, 12.8, 16.384, 19.2, 19.44, 20, 30.72,
+Standard Frequencies                                                                                                        MHz
+                                                                                  38.88, 40, 50
+Operating Temperature Range                                          -40                              +105                   ℃         See options
+                                                                                                                                       @ TA = 25℃, Vcc= 3.3V, Vc=1.65V
+Initial Frequency Tolerance at shipping                                -1                                   +1              ppm        within 30 days after ex-works
+Frequency Stability over Operating Temperature
+                                                                     -280                                  +280              ppb
+Range [Note 1]
+Frequency Stability vs.                                                                                                                @ TA=25℃, Vcc varied from
+                                                                     -100                                  +100              ppb       3.13V to 3.47V, Vc=1.65V
+Supply Voltage Change (Vdd±5%)
+Frequency Stability vs.                                                                                                                5% load change @ TA= 25℃,
+                                                                     -100                                  +100              ppb       Vcc=3.3V, Vc=1.65V, OLoad= 15pF
+Load Change (Load±5%)
+Short Term Stability                                                                                       200              ppb        after power for 1hour ref. to 25℃
+Aging (first year)                                                     -1                                   +1              ppm        TA=25℃, Vcc=3.3V, after 1h of operation
+Aging (20 years @+25°C)                                                -3                                   +3              ppm
+Supply Voltage (Vdd)                                                  3.13              3.3                3.47              V         See options
+Supply Current (Icc)                                                                                        10              mA         25°C, Vcc=3.3V, OLoad= 15pF
+Start-up Time                                                                                                5               ms
+Control Port (Applicable for VCTCXO only)
+Control Voltage Range (Vc)                                             0                                    3.3              V
+Center Control Voltage (Vc)                                                             1.65                                 V
+                                                                                                            -8              ppm       Vc=0V, referenced to Vc=1.65V
+Frequency Tuning Range
+                                                                       -1                                   +1              ppm       Vc=1.65V, referenced to carrier frequency
+(Carrier Frequency <=20MHz)
+                                                                       +8                                                   ppm       Vc=3.3V, referenced to Vc=1.65V
+                                                                                                            -5              ppm       Vc=0V, referenced to Vc=1.65V
+Frequency Tuning Range
+                                                                   -1                                      +1               ppm        Vc=1.65V, referenced to carrier frequency
+(Carrier Frequency >20MHz)
+                                                                   +5                                                       ppm       Vc=3.3V, referenced to Vc=1.65V
+Note 1:   TA varied from -40℃ to 105℃, measurement referenced to frequency observed with fref=(fmax+fmin )/2, Vcc= 3.3V, Vc=1.65V, temperature variable speed less than 2℃/min.
+
+
+
+
+                                                                    5101 Hidden Creek Ln Spicewood TX 78669                                                      ABRACON IS
+                                                                    Phone: 512-371-6159 | Fax: 512-351-8858                REVISED: 06-07-21                     ISO9001-2015
+                                                                    For terms and conditions of sales, please visit:
+                                                                                                                                                                   CERTIFIED
+                                                                    www.abracon.com
+ Precision SMD VCTCXO/TCXO
+
+                  AST3TDA53                     Request Samples                Check Inventory              5.0 x 3.2 x 0.7 mm
+                                                                                                            RoHS/RoHS II Compliant
+                                                                                                            MSL Level = 3
+
+
+Electrical Specifications continued
+
+ Parameters                                     Min.             Typ.               Max.         Units               Notes
+ Tuning Slope                                                   Positive
+ Linearity                                                                           10           %
+ Port Impedance                                  100                                              kΩ
+                                                                   -95               -90                 Offset @10Hz
+                                                                  -120              -115                 Offset @100Hz
+                                                                  -145              -140                 Offset @1kHz
+ Phase Noise @ 19.2MHz (@25°C):                                                               dBc/Hz
+                                                                  -157              -152                 Offset @10kHz
+                                                                  -159              -154                 Offset @100kHz
+                                                                  -159              -154                 Offset @1MHz
+                                                                   -93               -88                 Offset @10Hz
+                                                                  -120              -115                 Offset @100Hz
+                                                                  -145              -140                 Offset @1kHz
+ Phase Noise @ 20MHz (@25°C):                                                                 dBc/Hz
+                                                                  -157              -152                 Offset @10kHz
+                                                                  -159              -154                 Offset @100kHz
+                                                                  -159              -154                 Offset @1MHz
+                                                                   -90               -85                 Offset @10Hz
+                                                                  -115              -110                 Offset @100Hz
+                                                                  -135              -130                 Offset @1kHz
+ Phase Noise @ 38.88MHz (@25°C):                                                              dBc/Hz
+                                                                  -148              -143                 Offset @10kHz
+                                                                  -150              -145                 Offset @100kHz
+                                                                  -151              -146                 Offset @1MHz
+ Clipped Sine Wave Output
+ Output Level                                    0.8                                             Vp-p
+ Output Load                                                  10kΩ//10pF
+ CMOS (Square Wave) Output
+ VOH                                             2.4                                              V      Vcc=3.3V, Oload=15 pF
+ VOL                                                                                 0.4          V      Vcc=3.3V, Oload=15 pF
+ Output Load                                                       15                             pF
+ Duty Cycle                                      45                50                55           %      @50%
+ Rise / Fall Time (10%~90%)                                                          8            ns     @25℃
+
+
+
+
+                                      5101 Hidden Creek Ln Spicewood TX 78669                                                ABRACON IS
+                                      Phone: 512-371-6159 | Fax: 512-351-8858              REVISED: 06-07-21                 ISO9001-2015
+                                      For terms and conditions of sales, please visit:
+                                                                                                                                 CERTIFIED
+                                      www.abracon.com
+  Precision SMD VCTCXO/TCXO
+
+                   AST3TDA53                          Request Samples             Check Inventory               5.0 x 3.2 x 0.7 mm
+                                                                                                                RoHS/RoHS II Compliant
+                                                                                                                MSL Level = 3
+
+
+
+
+   Part Identification
+
+
+
+
+AST3TDA53                                                                                           -
+
+           Pullability                 Output                                          Stability                                  Packaging
+           T = TCXO                  C: CMOS                                          2: ±280ppb                                 Blank: Bulk
+          V = VCTCXO               SW: Clipped Sine                                                                             T2: 250pcs/reel
+                                                                                                                                T5: 500pcs/reel
+
+
+
+                          Vdd                              Operating Temp.                                  Frequency
+                         A: 3.3V                           J: -40ºC to +105ºC                            Please specify the
+                                                           D: -40ºC to +85ºC                            frequency in MHz
+                                                                                                           out to 4 digits
+                                                           N: -30ºC to +85ºC                             after the decimal.
+                                                           B: -20ºC to +70ºC                                 Example:
+                                                                                                        “10.0000”=10MHz
+
+
+
+
+                                         5101 Hidden Creek Ln Spicewood TX 78669                                              ABRACON IS
+                                         Phone: 512-371-6159 | Fax: 512-351-8858               REVISED: 06-07-21              ISO9001-2015
+                                         For terms and conditions of sales, please visit:
+                                                                                                                              CERTIFIED
+                                         www.abracon.com
+Precision SMD VCTCXO/TCXO
+
+             AST3TDA53                   Request Samples                Check Inventory        5.0 x 3.2 x 0.7 mm
+                                                                                               RoHS/RoHS II Compliant
+                                                                                               MSL Level = 3
+
+
+
+Mechanical Dimensions
+
+
+
+
+                                                                       Pin #                Function
+                                                                                   Do not connect (for TCXO)
+                                                                          1
+                                                                                  Voltage control (for VCTCXO)
+                                                                          2                   GND
+                                                                          3                  Output
+                                                                          4                    Vdd
+                                                                          *              Do not connect
+
+
+
+
+     Dimensions: inches [mm]
+     Tolerance ±0.2mm
+
+
+                               5101 Hidden Creek Ln Spicewood TX 78669                                    ABRACON IS
+                               Phone: 512-371-6159 | Fax: 512-351-8858            REVISED: 06-07-21       ISO9001-2015
+                               For terms and conditions of sales, please visit:
+                                                                                                           CERTIFIED
+                               www.abracon.com
+Precision SMD VCTCXO/TCXO
+
+             AST3TDA53                                                    Request Samples                       Check Inventory                       5.0 x 3.2 x 0.7 mm
+                                                                                                                                                      RoHS/RoHS II Compliant
+                                                                                                                                                      MSL Level = 3
+
+
+
+Reflow Profile [JEDEC J-STD-020]
+
+
+
+
+                                                                                                                  Table 1
+                                                                                                                  SnPb Eutectic Process
+                                                                                                                  Classification Temperatures (Tc)
+                                                                                                                    Package       Volume mm3           Volume mm3
+                                                                                                                   Thickness          <350                 >350
+                                                                                                                    <2.5 mm            235 °C             220 °C
+                                                                                                                    >2.5 mm            220 °C             220 °C
+                                                                                                           Table 2
+                                                                                                           Pb-Free Process
+                                                                                                           Classification Temperatures (Tc)
+                                                                                                                 Package       Volume mm3         Volume mm3       Volume mm3
+                                                                                                                Thickness          <350            350-2000           >2000
+                                                                                                                <1.6 mm           260 °C             260 °C          260 °C
+                                                                                                           1.6 mm - 2.5 mm        260 °C             250 °C          245 °C
+                                                                                                               >2.5 mm            250 °C             245 °C          245 °C
+
+
+
+
+                                                                                                                    Sn-Pb Eutectic                Pb-Free
+            Profile Feature
+                                                                                                                      Assembly                   Assembly
+            Preheat / soak
+              Temperature minimum (Tsmin)                                                                                 100°C                    150°C
+              Temperature maximum (Tsmax)                                                                                 150°C                    200°C
+              Time (Tsmin to Tsmax) (ts)                                                                               60 - 120 sec.            60 - 120 sec.
+            Average ramp-up rate (Tsmax to TP)                                                                         3°C/sec. max             3°C/sec. max
+            Liquidous temperature (TL)                                                                                    183°C                    217°C
+            Time at liquidous (tL)                                                                                     60 - 150 sec.            60 - 150 sec.
+            Peak package body temperature (TP)*                                                                         see Table 1              see Table 2
+            Time (tp)** within 5°C of the specified classification temperature (TC)                                       20 sec.                  30 sec.
+            Ramp-down rate (Tp to Tsmax)                                                                               6°C/sec. max             6°C/sec. max
+            Time 25°C to peak temperature                                                                               6 min. max               8 min. max
+            Reflow cycles                                                                                                 2 max                    2 max
+            *Tolerance for peak profile temperature (TP) is defined as a supplier minimum and a user maximum.
+            **Tolerance for time at peak profile temperature (tp) is defined as supplier minimum and a user maximum.
+
+
+
+
+                                                              5101 Hidden Creek Ln Spicewood TX 78669                                                                  ABRACON IS
+                                                              Phone: 512-371-6159 | Fax: 512-351-8858                          REVISED: 06-07-21                       ISO9001-2015
+                                                              For terms and conditions of sales, please visit:
+                                                                                                                                                                        CERTIFIED
+                                                              www.abracon.com
+             Precision SMD VCTCXO/TCXO
+
+                                     AST3TDA53                                             Request Samples                 Check Inventory                     5.0 x 3.2 x 0.7 mm
+                                                                                                                                                               RoHS/RoHS II Compliant
+                                                                                                                                                               MSL Level = 3
+
+
+
+              Packaging
+
+                      T2: 250pcs/reel
+                      T5: 500pcs/reel
+
+
+
+
+                      Dimensions: mm
+
+ATTENTION: Abracon LLC’s products are COTS – Commercial-Off-The-Shelf products; suitable for Commercial, Industrial and, where designated, Automotive Applications. Abracon’s products
+are not specifically designed for Military, Aviation, Aerospace, Life-dependent Medical applications or any application requiring high reliability where component failure could result in loss of life
+and/or property. For applications requiring high reliability and/or presenting an extreme operating environment, written consent and authorization from Abracon LLC is required. Please contact
+Abracon LLC for more information.
+
+
+                                                                                5101 Hidden Creek Ln Spicewood TX 78669                                                         ABRACON IS
+                                                                                Phone: 512-371-6159 | Fax: 512-351-8858                  REVISED: 06-07-21                      ISO9001-2015
+                                                                                For terms and conditions of sales, please visit:
+                                                                                                                                                                                 CERTIFIED
+                                                                                www.abracon.com
+

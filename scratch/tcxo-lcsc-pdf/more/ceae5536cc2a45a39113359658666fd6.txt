@@ -1,0 +1,163 @@
+                   Temperature Compensated Crystal Oscillators                                        [ TCXO " M " and VCTCXO " VM " ]
+                                                               TCXO                                                VCTCXO                                    Min.             Max.
+
+                                           MQF _ T           MQF _ P          MQF _ D          VMQF _ T           VMQF _ P              VMQF _ D                10            1,500
+                                             CMOS              PECL            LVDS               CMOS               PECL                  LVDS              MHz               MHz
+
+   Features                                                                            1.5 pS Phase Jitter ( typical )
+The (V)MQF326T , (V)MQF326P and (V)MQF326D Series are members of Mercury’s Q-Family Quick-Turn
+Temperature Compensated oscillators that can be delivered within days. With low current consumption
+(44 mA for PECL 212.500 MHz at 3.3V) and an integrated phase jitter performance of 1.0 pS RMS,
+they have gained its precision frequency control market position by providing engineers with next-day
+samples for prototypes and low cost, fast delivery for volume production ( ± 2.5 ppm over -30°C to +85°C ) .
+
+   General specifications , at Ta=+25°C
+
+
+                 Model                               (V)MQF326T                                       (V)MQF326P                                      (V)MQF326D
+             Output Logic                                    CMOS                                            PECL                                           LVDS
+                                            + 2.5 V ± 5% ( voltage code " 25 " )             + 2.5 V ± 5% ( voltage code " 25 " )             + 2.5 V ± 5% ( voltage code " 25 " )
+Supply Voltage VDD ( code )
+                                            + 3.3 V ± 5% ( voltage code " 33 " )             + 3.3 V ± 5% ( voltage code " 33 " )             + 3.3 V ± 5% ( voltage code " 33 " )
+
+Available Frequency Range                                 10 ~ 250 MHz                                 10 ~ 1,500 MHz                                  10 ~ 1,500 MHz
+                                                                                                     50 Ω into Vcc - 2V or
+Output Load                                                   15 pF                                                                                         100 Ω
+                                                                                                     Thevenin equiralent
+Output Logic " High " , " 1 "                               90 % VDD                         VDD - 1.03 ( min.) , VDD - 0.6 ( max.)               1.4 V ( Typ.) , 1.6 V ( max.)
+Output Logic " Low " , " 0 "                                10 % VDD                         VDD - 1.85 ( min.) , VDD - 1.6 ( max.)               1.1 V ( Typ.) , 0.9 V ( min.)
+( VDD = + 2.5V )                                     50 MHz : 24 mA                                  156 MHz : 36 mA                                 156 MHz : 22 mA
+Current Consumption ( max.)                         125 MHz : 28 mA                                  600 MHz : 40 mA                                 600 MHz : 28 mA
+                                                    200 MHz : 30 mA                                1,000 MHz : 50 mA                               1,000 MHz : 34 mA
+( VDD = + 3.3V )                                     50 MHz : 26 mA                                  156 MHz : 40 mA                                 156 MHz : 25 mA
+Current Consumption ( max.)                         125 MHz : 30mA                                   600 MHz : 45 mA                                 600 MHz : 30 mA
+                                                    200 MHz : 34 mA                                1,000 MHz : 52 mA                               1,000 MHz : 36 mA
+Current with Output Disabled                              18 mA ( Typ.)                                 18 mA ( Typ.)                                   18 mA ( Typ.)
+
+                                            1.5 nsec. ( Typ.) , 3.0 nsec. ( max.)          0.2 nsec. ( Typ.) , 0.5 nsec. ( max.)             0.2 nsec. ( Typ.) , 0.4 nsec. ( max.)
+Rise Time / Fall Time
+                                              Tr / Tf : 10% ↔ 90% waveform                    Tr / Tf : 20% ↔ 80% waveform                      Tr / Tf : 20% ↔ 80% waveform
+Initial Calibration Tolerance            ±1.0 ppm ( max.) at +25°C±2°C ( at the shipment )
+                                         Temperature                          ± 2.5 ppm over -30°C to +85°C ( default for Quick - Turn )
+                                         ( refer to +25°C)                    ± 1.0 ppm over -40°C to +85°C ( available )
+                                         Aging at Ta = +25°C                  ± 2.0 ppm ( max.) first year ; ± 10 ppm ( max.) over 10 years
+Frequency Stability Codes
+                                         Voltage Change                       ± 0.2 ppm ( max.) , for a ±5% input voltage change.
+                                         Load Change                          ± 0.2 ppm ( max.) , for a ±10% load condition change.
+                                         Reflow                               ± 1.0 ppm ( max.) , 1 reflow and measured 24 hours afterwards.
+Duty Cycle                               50 % ± 5%
+Start-up Time                            5 msec. ( max.)
+Storage Temperature                      -55°C to + 150°C
+RMS Jitter [ 12 kHz ~ 20 MHz ]           1.5 psec ( typ.)
+                                                Offset                10 Hz         100 Hz            1K Hz           10K Hz          100K Hz            1M Hz           10M Hz
+                                            156.250 MHz                -65           -92              -108             -114               -117           -139               -147
+Phase Noise [ dBc / Hz ( typ.) ]
+                                            212.500 MHz                -61           -90              -106             -110               -112           -133               -142
+                                            312.500 MHz                -51           -79               -97             -102               -103           -125               -134
+Storage Temperature                      -55°C to + 150°C
+
+                           Control Voltage Function on Pad 1                                                           Output Enable Function on pad 2
+Control Voltage Center and Range         +1.5V ± 1.0V for both VDD = 2.5V and 3.3V                                                    70% of VDD (min.) to enable output.
+Frequency Pulling Range                  ± 8 ppm ( min.)                                                                              (Open connection prohibit.)
+                                                                                                     OE Control on Pad 2
+Linearity                                ± 1 % ( typ.) ± 10% ( max.)
+                                                                                                                                      30% of VDD (max.) to disable output.
+Transfer Function                        Positive Transfer
+Absolute Voltage                         4.0 V ( max.)                                               Output Enable Time
+                                                                                                                                      200 nsec. ( max.) / 50 nsec. ( max.)
+Input Impedance                          770 KΩ ( typ.)                                                / Disable Time
+
+
+                          Mercury www.mercury-crystal.com               ■Taiwan : Tel: (+886)-2-2406-2779 / sales-tw@mercury-crystal.com
+                ■USA : Tel: (+1)-909-466-0427 / sales-us@mercury-crystal.com        ■China : Tel: (+86)-512-5763-8100 / sales-cn@mercury-crystal.com
+                                                                                  1 of 3                                                     version: a3
+            Temperature Compensated Crystal Oscillators [ TCXO " M " and VCTCXO " VM " ]
+               TCXO                                        VCTCXO
+                                                                                                    F                                         Min.         Max.
+MQF _ T       MQF _ P       MQF _ D           VMQF _ T     VMQF _ P            VMQF _ D
+                                                                                                                SMD    2.5 V 3.3 V             10          1,500
+                                                                                                 series
+CMOS            PECL          LVDS             CMOS           PECL                LVDS                                                        MHz          MHz
+
+ Part Number Format and Example
+
+ Example : VMQF326D33 - 622.080 - 2.0 / -40+85
+
+           VMQF                  326               D               33             -            622.080           -         2.0            /           -40+85
+
+       Hold Type              Package          T : CMOS     Supply Voltage                                                                           Operating
+
+ " MQF "    : TCXO             " 326 "         P : PECL      " 33 " for 3.3V      -      Center Freq. ( MHz )    -    Freq. Stability     /     Temperature
+
+ " VMQF " : VCTCXO         ( 3.2 * 2.5 mm )    D : LVDS      " 25 " for 2.5V                                                                          Range
+
+
+           Outline Dimensions ( Unit : mm ) , Suggested pad Layout for SMDs
+
+                                              [ (V)MQF326T ] , [ (V)MQF326P ] , [ (V)MQF326D ]
+
+
+
+
+ Test Circuits and Output Waveforms
+
+
+                     CMOS                                                 PECL                                                   LVDS
+
+
+
+
+                       Mercury www.mercury-crystal.com          ■Taiwan : Tel: (+886)-2-2406-2779 / sales-tw@mercury-crystal.com
+             ■USA : Tel: (+1)-909-466-0427 / sales-us@mercury-crystal.com      ■China : Tel: (+86)-512-5763-8100 / sales-cn@mercury-crystal.com
+                                                                               2 of 3                                       version: a3
+                                               Emboss Taping and Reel Specifications
+                                 [ VCXO ]                                                                [ ( VC )TCXO ]
+
+
+
+
+ Carrier Type Dimensions ( unit : mm ) ±0.3mm
+
+                     A              B            C              D               E            F              G                H         I        pcs / reel
+G_324 ( 6 )         8.0            3.4          2.7            4.0             1.4          0.3           4.0              Ø 1.50    1.75        3000
+  G_534            12.0            5.3          3.6            8.0             1.4          0.3           4.0              Ø 1.55    1.75        1000
+  G_576            16.0            7.3          5.3            8.0             1.9          0.3           4.0              Ø 1.55    1.75        1000
+  G_42             24.0           11.8          10.0          16.0             5.0          0.3           4.0              Ø 1.50    1.75         500
+  G_43             24.0           11.8          10.0          16.0             5.0          0.3           4.0              Ø 1.55    1.75         500
+  G_62             24.0           11.8          10.0          16.0             5.0          0.3           4.0              Ø 1.55    1.75         500
+  G_63             24.0           11.8          10.0          16.0             5.0          0.3           4.0              Ø 1.55    1.75         500
+ (V)M_22            8.0            2.8          2.3            4.0             1.1          0.3           4.0              Ø 1.50    1.75        3000
+ (V)M_32            8.0            3.4          2.7            4.0             1.4          0.3           4.0              Ø 1.50    1.75        3000
+(V)MQ_326          12.0            3.6          2.9            4.0             1.7          0.3           4.0              Ø 1.50    1.75        3000
+ (V)M_53           12.0            5.3          3.6            8.0             1.4          0.3           4.0              Ø 1.55    1.75        1000
+ (V)M_57           16.0            7.4          5.5            8.0             2.8          0.4           4.0              Ø 1.50    1.75         500
+ (V)M_42           24.0           11.8          10.0          16.0             5.0          0.3           4.0              Ø 1.50    1.75         500
+ (V)M_43           24.0           11.8          10.0          16.0             5.0          0.3           4.0              Ø 1.50    1.75         500
+ (V)M_62           24.0           11.8          10.0          16.0             5.0          0.3           4.0              Ø 1.50    1.75         500
+ (V)M_63           24.0           11.8          10.0          16.0             5.0          0.3           4.0              Ø 1.50    1.75         500
+
+ Reel Dimensions ( unit : mm ) ±2mm
+
+                     J              K             L             P               Q            R          pcs / reel
+G_324 ( 6 )       180.0            9.0          12.0          13.2             2.1            -           3000
+  G_534           180.0           13.0          16.0          13.2             2.5            -           1000
+  G_576           180.0           17.2          19.3          13.3             2.2         22.0           1000
+  G_42            330.0           24.5          29.1          13.0             2.2         17.3           500
+  G_43            330.0           24.5          29.1          13.0             2.2         17.3           500
+  G_62            330.0           24.5          29.1          13.0             2.2         17.3           500
+  G_63            330.0           24.5          29.1          13.0             2.2         17.3           500
+ (V)M_22          178.00          8.40         11.40          13.0             2.5         20.5           3000
+ (V)M_32          180.0            9.0          12.0          13.2             2.1            -           3000
+(V)MQ_326         180.0           13.0          16.0          13.2             2.5            -           3000
+ (V)M_53          180.0           13.0          16.0          13.2             2.5            -           1000
+ (V)M_57          180.0           17.2          19.3          13.3             2.2         22.0           500
+ (V)M_42          330.0           24.5          29.1          13.0             2.2         17.3           500
+ (V)M_43          330.0           24.5          29.1          13.0             2.2         17.3           500
+ (V)M_62          330.0           24.5          29.1          13.0             2.2         17.3           500
+ (V)M_63          330.0           24.5          29.1          13.0             2.2         17.3           500
+
+
+                          Mercury www.mercury-crystal.com        ■Taiwan : Tel: (+886)-2-2406-2779 / sales-tw@mercury-crystal.com
+              ■USA : Tel: (+1)-909-466-0427 / sales-us@mercury-crystal.com   ■China : Tel: (+86)-512-5763-8100 / sales-cn@mercury-crystal.com
+                                                                             3 of 3                                  version: a3
+

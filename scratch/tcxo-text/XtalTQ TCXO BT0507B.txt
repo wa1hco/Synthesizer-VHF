@@ -1,0 +1,114 @@
+          Features                                                       Applications
+     ● Ultra Stable                                                    ● Base Stations
+     ● Wide Temperature Range                                          ● Instrumentations
+     ● SMD Package (7.0×5.0mm)                                         ● Synthesizer
+     ● Provide Stratum Ⅲ Level Frequency Stability                     ● SDH/SONET
+                                                                       ● Medical Electronics
+
+                                             BT0507B Specifications
+                                                Value
+         Parameter                                                       Unit                  Conditions
+                                    Min.        Typ.          Max.
+                                      –           3.3            –         V
+Supply Voltage
+                                      –            5             –         V
+                                      –            –             8        mA      10MHz~26MHz（Including 26MHz)
+Supply Current
+                                      –             –            12       mA      26MHz~60MHz
+Frequency Range                                  10 ~ 52                  MHz
+                                 10, 12.8, 13, 15.36, 16, 16.32,
+Nominal Frequency                16.384, 19.2, 20, 24.576, 25, 26,        MHz
+                                 30.72, 40, 50
+Initial Frequency Tolerance           –            –           ±0.5       ppm     At shipment, nominal EFC, +25℃
+                                    ±0.05          –           ±0.5       ppm     -20℃~+70℃
+                                     ±0.1          –           ±0.5       ppm     -40℃～+85℃
+Freq. Stability Vs. Temp.
+                                     ±0.2          –           ±1.0       ppm     -50℃～+90℃
+                                     ±0.5          –           ±1.0       ppm     -55℃～+95℃（except for 10MHz）
+Clipped   Output Level               0.8          –              –       Vp-p
+Sine Wave Load                                10kΩ//10pF
+          VOH                        2.4           –             –         V      HCMOS Output, Load=15pf
+                VOL                   –            –            0.4        V      HCMOS Output, Load=15pf
+HCMOS           Duty Cycle           45            –            55         %      ( VOH - VOL)/2
+                Rise/Fall Edge        –            –             6         ns     HCMOS Output, Load=15pf
+            Load                      –            –            15         pf
+RMS Jitter(By E5052B)                0.4           –            1.3        ps     12KHz~5MHz
+Supply Sensitivity                    –            –           ±0.1               Vcc±5%
+Load Sensitivity                      –            –           ±0.2       ppm     Load±5%
+Aging/ First Year                     –            –           ±1.0               Standard
+                                      –            –            -95               Offset 10Hz
+                                      –            –           -120               Offset 100Hz
+SSB Phase Noise
+                                      –            –           -140     dBc/Hz    Offset 1kHz        At +25℃
+@10MHz
+                                      –            –           -145               Offset 10kHz
+                                      –            –           -150               Offset 100kHz
+Control Voltage Range                          1.5 ± 1.0                   V
+Frequency Turning Range              ±5            –           ±12        ppm
+Tuning Slope                                    positive
+Non-linearity                         –            –            10         %
+                                                 Phase Noise @1KHz
+       Frequency Range            <-125dBc     <-130dBc     <-135dBc   <-140dBc
+            10MHz                    ○            ○            ○          ○
+                                                                                      ○=Available
+         12.8~20MHz                  ○            ○            ○           X
+                                                                                      X= Not Available
+        20.48~38.4MHz                ○            ○             X          X
+           ≥40MHz                    ○             X            X          X
+                                                   Environmental Conditions
+Operating Temperature Range -55℃～+95℃
+Storage Temperature Range   -55℃ ~ +125℃
+                                          Outline Dimension & Pin Connections
+
+
+
+Package B
+
+
+
+
+               Note:
+               1. The pins with ‘*’ are for factory test.
+               2. Leave pin 1 unconnected If Vcon is not used.
+                                                        Maximum Ratings
+          Parameter                    Symbol                                     Rating
+Supply Voltage                          Vdd                                     -0.5V / 6V
+Control Voltage                         Vcon                                     0V / 3V
+ESD, HBM/CDM/MM                                                               4KV/ 2KV/ 200V
+                                                              Reliability
+                Parameter                                                       Condition
+Temperature Stress Test                             IEC60068, GJB360B
+Mechanical Stress Test                              IEC60068, GJB360B
+EMC Test (ESD)                                      IEC61000, JESD22
+Solderability                                       EIA/JESD22-B102-C
+Contact Pads                                        Gold over Nickel
+RoHS                                                RoHS Directive 2011/65/EU Annex II Recasting 2002/95/EC
+                                                            Ordering Guide
+
+                           BT 0507 X X X X XXX X X XX.XX
+    Product:                                                                                Frequency:
+    TCXO                                                                                    xx MHz
+    Outline:                                                                                Tuning Range:
+    7.0mm x 5.0mm                                                                           N:No Tuning
+    Package:                                                                                A: ±5ppm
+    A: Pakcage A                                                                            B: ±7ppm
+    B: package B                                                                            C: ±12ppm
+
+    Output:                                                                                 Phase Noise:
+    H: CMOS                                                                                 A: -120dBc/Hz@1kHz
+    C: Clipped Sine Wave                                                                    B: -125dBc/Hz@1kHz
+    Supply Voltage:                                                                         C: -130dBc/Hz@1kHz
+    3: 3.3 Vdc                                                                              D: -135dBc/Hz@1kHz
+    5: 5.0 Vdc                                                                              E: -140dBc/Hz@1kHz
+
+    Temp. Range:                                                                            Temp. Stability:
+    C: -20 ～+70                                                                             106: ±1.0ppm
+    I: -40 ～+85                                                                             507: ±0.5ppm
+    M: -50 ～+90                                                                             207: ±0.2ppm
+    U: -55 ～+95                                                                             107: ±0.1ppm
+    F: Customized                                                                           508: ±0.05ppm
+
+
+
+  Example: BT0507BH3M287DN16.384
+

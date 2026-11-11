@@ -1,0 +1,273 @@
+                            SUZHOU HANGJING ELEC&TECH CO.,LTD
+                                      苏州杭晶电子科技有限公司
+
+
+
+             产 品 规 格 书
+         Product Specification
+
+       CUSTOMER                           客户:
+
+       CUSTOMER PN                      客户 PN:
+
+
+       HANG CRYSTAL P/N               杭晶物料编码:    TH53H4-40.000NQ33DTL
+
+       MODEL                            产品型号:    TCXO SMD 5.0x3.2, CMOS, 3.3V
+
+       NOMINAL FREQUENCY                  频率:    40.000MHz
+
+
+       ISSUE DATE                         日期:    2023 / 02 / 10
+
+
+
+
+              CUSTOMER’S APPROVAL                     APPROVED                           QA
+
+                     客户确认
+
+                                                       MB.                          James J
+
+
+                                                   SUZHOU HANGJING ELEC&TECH CO.,LTD
+                                                       苏州杭晶电子科技有限公司
+                                                 No. 207, Blk. B, Chenlei Science &
+      (PLEASE RETURN A COPY WITH APPOVAL)        Technology Park, No. 1, First Qunxing Road,
+             （请将确认的复印件返回我司）                      Suzhou Industrial Park, Jiangsu, China
+                                                 TEL 86 (0)512
+                                                 FAX 86 (0)512 65918005
+
+    Revision      Description / ECN                        Prepared       Approved       Date
+          1       Initial release                              MB          James Jiang   2023-02-10
+          2       Not issued
+          3       Not issued
+          4       Not issued
+
+HCI-FRM-Spec-2                                                                                  Page 1 of 6
+                                   SUZHOU HANGJING ELEC&TECH CO.,LTD
+                                              苏州杭晶电子科技有限公司
+
+    1. NOMINAL AND MAXIMUM RATINGS, OPERATING AND STORAGE CONDITIONS
+
+         PARAMETER                                  SYMB.        MIN      TYP       MAX       Unit      Conditions / Remarks
+       1 Nominal frequency                             FN               40.000             MHz          --
+
+       2 Maximum supply voltage                       VMAX      –0.3                +4.0   VDC          Between VCC and GND
+
+       3 Operating supply voltage range               VCC      3.135      3.30     3.465 VDC
+       4 Output load capacitance                       CL                           15     pF
+       5 Operating temperature range                  TOP        –40      +25       +85    °C           Note 1
+
+       6 Storage Temperature Range                    TST        –40                +90    °C           --
+  Note 1: over the whole range, the unit stays within all relevant parameter limits as specified under point 2.
+
+
+    2. ELECTRICAL PARAMETER LIMITS
+
+         PARAMETER                                  SYMB.        MIN      TYP       MAX       Unit      Conditions / Remarks
+       1 Frequency tolerance                         ∆f/FN      –1.0               +1.0    ppm          Offset from nominal at +25°C
+
+       2 Frequency stability                        ∆f/FRFL     –0.5               +0.5    ppm          Note 1
+
+       3 Frequency VS voltage changes                ∆f/FV      –0.2               +0.2    ppm          Vcc ±5% at +25°C
+
+       4 Frequency VS load changes                    ∆f/FL     –0.2               +0.2    ppm
+       5 Aging first year                            ∆f/FA1     –1.0               +1.0    ppm          at +25°C
+
+       6 Output voltage level HIGH                    VOH       2.97                       VDC
+       7 Output voltage level LOW                     VOL                          0.33    VDC
+       8 Output amplitude rise time                    tR                           5.0    ns           At 20~80%VCC / 15pF / +25°C
+
+       9 Output amplitude fall time                     tF                          5.0    ns           At 80~20%VCC / 15pF / +25°C
+
+     10 Output symmetry (Duty Cycle)                  DC         45                 55     %            GND level (DC cut)
+
+     11 Phase noise                                   LRMS                 -88      –80    dBc/Hz       at 10Hz offset / at +25°C
+
+                                                                          -115     –110                 at 100Hz offset / at +25°C
+
+                                                                          -135     –130                 at 1kHz offset / at +25°C
+
+                                                                          -148     –145                 at 10kHz offset / at +25°C
+
+                                                                          -150     –145                 at 100KHz offset / at +25°C
+     12 Startup time                                  tSTRT                         5.0    ms           VP-P reach >90% of amplitude
+
+     13 Current consumption                            ICC                          10     mA           Under CL 15pF
+ Note 1:Frequency stability is the frequency deviation over operating temperature range TOP in reference to the frequency reading
+ at +25°C.
+
+
+   3. RODUCT MARKING
+         To be defined.
+
+
+
+
+HCI-FRM-Spec-2                                                                                                               Page 2 of 6
+                            SUZHOU HANGJING ELEC&TECH CO.,LTD
+                                    苏州杭晶电子科技有限公司
+
+   4. OUTLINE DRAWING
+
+         Package description                           Package model   Remarks
+      1 Ceramic seam seal SMD package 5.0x3.2mm with   TH53H8h17       --
+        4pads
+
+
+
+
+                                                            PAD             FUNCTION
+                                                            2、3、6、7         NC
+                                                            1               NC
+                                                            2               GND
+                                                            3               Fout
+                                                            4               Vcc
+
+
+
+
+HCI-FRM-Spec-2                                                                         Page 3 of 6
+                              SUZHOU HANGJING ELEC&TECH CO.,LTD
+                                        苏州杭晶电子科技有限公司
+    5. RECOMMENDED SOLDERING INFORMATION
+
+
+
+
+    6. RELIABILITY TEST INFORMATION
+
+                   Test item                                  Test conditions                            Criteria
+      1 High temperature storage         Temperature: +125°C ±5°C                                         ±1.0ppm
+                                         Time:            240 ±4 Hours
+                                         Tested after 4 to 12h at room temperature.
+      2 Low temperature storage          Temperature: –55°C ±5°C                                          ±1.0ppm
+                                         Time:            240 ±4 Hours
+                                         Tested after 4 to 12h at room temperature.
+      3 Temperature humidity bias THB    Temperature: +85°C ±5°C                                          ±1.0ppm
+                                         Humidity:        85% ±5% RH
+                                         Time:            240 ±4 Hours
+                                         BIAS:            Supply Voltage
+                                         Tested after 4 to 12h at room temperature.
+      4 Temperature cycling              Low Temp. cycle:          –55°C ±2°C                             ±1.0ppm
+                                         High Temp. cycle:         +85°C ±5°C
+                                         Time:                     30min each cycle
+                                         Number of cycles:         1,000
+                                         Tested after 4 to 12h at room temperature.
+      5 Aging                            Temperature: +85°C ±5°C                                          ±1.0ppm
+                                         Time:            30d
+                                         Tested after 4 to 12h at room temperature.
+      6 Resistance to solder heat        Reflow peak temp.:        +260°C ±5°C (refer to rec. profile)    ±1.0ppm
+                                         Number of cycles:         3 times
+                                         Tested after 4 to 12h at room temperature.
+      7 Solderability                    Dip in flux:     5~10 Seconds                                   >95% cover.
+        (MIL-STD-883E)                   Temperature: 230℃±10℃
+                                         Time:            5 Seconds
+                                         Tested after 4 to 12h at room temperature.
+
+
+HCI-FRM-Spec-2                                                                                            Page 4 of 6
+                               SUZHOU HANGJING ELEC&TECH CO.,LTD
+                                        苏州杭晶电子科技有限公司
+
+      8 Drop test                        Drop height:             120cm                                            ±1.0ppm
+                                         Number of cycles:        12 times
+                                         Drop height:             150cm
+                                         Number of cycles:        9 times
+                                         With jig (120~150g) onto iron plate
+                                         Tested after 24h at room temperature.
+      9 Vibration                        Frequency Range:          20~2000Hz                                       ±1.0ppm
+                                         PSD:                      0.053g2
+                                         Time:            40min each direction (X,Y,Z)
+                                         Tested after 4 to 12h at room temperature.
+     10 ESD-HBM                          HBM, V=±1KV, C=100pF, R1=10M, R2=1.5K, 3times                             ±1.0ppm
+
+
+
+
+    7. ENVIRONMENTAL COMPLIANCE INFORMATION
+
+                                         Compliance information
+      1 RoHS                             This product is fully RoHS compliant, 6/6 compliant per EU legislation.
+
+      2 RoHS 2                           In regards of RoHS 2, CE marking directive for finished products, we can provide
+                                         RoHS test reports and MDS to show compliance, but since our product is not a
+                                         final application we have no CE mark.
+      3 Lead-Free                        This product is considered Lead-Free, Lead (Pb) contamination is controlled to
+                                         be below 200ppm.
+      4 Halogen-Free                     This product is compliant to IEC 61249-2-21:2003 (Br<800ppm / Cl<800ppm).
+
+      5 REACH (SVHC)                     This product does not contain substances (SVHC) listed by REACH, we
+                                         continuously monitor updates of the list of SVHC’s
+      6 PFOS / PFOA Free                 This product is free of any PFOS / PFOA.
+
+      7 Electrostatic Discharge (ESD)    This product is ESD sensitive and requires precautions for handling and storage.
+        sensitivity                      Follow JEITA EIAJ ED-4701 or JSD22 or ANSI-ESD-S20-20 or IEC 61000-4-2.
+
+      8 Moisture Sensitivity             This product is hermetically sealed and does NOT fall under the classification of
+                                         moisture sensitivity per J-STD-020C (Standard is for non-hermetically sealed
+                                         components). If required we suggest to use LEVEL 1
+
+
+
+
+HCI-FRM-Spec-2                                                                                                     Page 5 of 6
+                                  SUZHOU HANGJING ELEC&TECH CO.,LTD
+                                             苏州杭晶电子科技有限公司
+    8. PACKAGING
+
+
+          Carrier
+          Parameter            STANDARD                ALTERNATE
+                              PACKAGING                PACKAGING
+      1          A0             3.6±0.1
+      2          B0             5.4±0.1
+      3          K0             2.4±0.1
+      4          B1             6.0±0.1
+      5          P0             4.0±0.1
+      6          P1             4.0±0.1
+      7          T             0.25±0.05
+      8          W              12.0±0.2
+  Note 1: All dimensions in [mm].
+  Note 2: All dimensions not specified or not being shown follow EIA-481 standard.
+
+
+          Reel
+          QTY per reel:             1,000pcs MAX
+                               STANDARD                ALTERNATE
+          Parameter
+                              PACKAGING                PACKAGING
+                                    +0
+                                180
+                 A
+                                    –1.5.
+      9
+
+     10          B              2.0±0.5
+     11          ØC              13±0.2
+     12          ØD              21±0.8
+     13          N                60±2
+
+                 W1             12.4+2.0
+                                    –0 .
+     14
+
+     15          W2            16 4 +2.0 .
+                                    –0
+  Note 1: All dimensions in [mm]. Dimension W1 is measured near the Hub (N).
+  Note 2: All dimensions not specified or not being shown follow EIA-481 standard.
+
+
+          Unreeling information
+          Oscillator product’s orientation
+     16 This product is a polarized component which requires a
+        certain orientation; Pin 1 is identified on top side marking
+        with a DOT. In the carrier tape is the component oriented
+        with pin 1 towards the sprocket holes. (per EIA-481)
+
+
+
+
+HCI-FRM-Spec-2                                                                       Page 6 of 6
+

@@ -1,0 +1,92 @@
+                                                                                                       ECS-TXO-5032
+                                                                                                       HCMOS TCXO
+  ECS-TXO-5032 (3.3V) HCMOS SMD TCXO and ECS-VTXO-5032
+  (3.3V) HCMOS SMD VC-TCXO are ideal for portable, wireless
+  applications where stability is critical.                                                                     Request a Sample
+
+
+
+
+                                             OPERATING CONDITIONS / ELECTRICAL CHARACTERISTICS
+
+            ECS-TXO-5032                                                                                                          ECS-TXO-5032
+                                                       Parameters                        Conditions                                                        Units
+                                                                                                                       MIN           TYP          MAX
+                                               Frequency Range                                                       6.400                       38.400     MHz
+                                               Operating Temperature                      * Standard                   -30                         +85       °C
+                                               Storage Temperature                                                     -40                         +90       °C
+                                               Input Voltage                                VDD                      +3.135          +3.3        +3.465     VDC
+                                                                                 Vs. Temp (-30 ~ +85°C)                                            ±2.5     PPM
+                                                                                Vs. Supply Change (±5%)                                            ±0.3     PPM
+                                               Frequency Stability
+                                                                                 Vs. Load Change (±5%)                                             ±0.3     PPM
+                                                                                        Vs. Aging/Year                                             ±1.0     PPM
+                                               Frequency Tolerance                      @ +25°C ±2°C                                               ±1.5     PPM
+     •     HCMOS TCXO/VC-TCXO
+     •     5.0 x 3.2 mm Footprint              Current Consumption                                                                                 6.0      mA
+     •     PbFree/RoHS Compliant               “0” Level                                    VOL                                                    0.5      VDC
+     •     Peak solder temp +260°C
+           (10 sec)                            “1” Level                                    VOH                   80% VDD                                   VDC
+     •     MSL 1                               Output Symmetry                        @50% VDD Level                                              40/60      %
+     •     Lead Finish Au
+                                               Rise and Fall Times               10% VDD to 90% Level                                               10       ns
+                                               Output Load                                 CMOS                                                     15      pF
+                                               Start-up Time                                                                                       2.0      mS
+                                               Phase Noise                              @ 1 KHz Offset                                            -135     DBc/Hz
+                                               ECS-VTXO-5032 Option
+                                               Control Voltage                              Pin 1                    +0.15           +1.65        +3.15     VDC
+                                               Pullability                                                             ±5                                   PPM
+
+
+
+
+                      Part Numbering Guide: Example ECS-TXO-5032-250-TR
+     ECS     -      Series     -       Frequency Abbreviations - Stability Tolerance         -       Temperature              -       Packaging
+
+
+    ECS          TXO-5032 = TCXO            250 = 25.000 MHz         Standard                    Standard                             TR = Tape & Reel
+                 VTXO-5032 = VC-TCXO                                 Blank = ±2.5 ppm            Blank = -30 ~ +85°C
+
+                                                                     Custom Options              Custom Options
+                                                                     B = ±1.5 ppm                * N = -40 ~ +85°C
+                                                                     C = ±1.0 ppm
+
+
+
+
+                                                                                                 * Consult Factory for availability of ±1 ppm -40 ~ 85°C
+
+
+
+
+15351 West 109th Street | Lenexa, KS 66219 | Phone: 913.782.7787 | Fax: 913.782.6991 | www.ecsxtal.com
+                                                              ECS-TXO-5032
+                                                              HCMOS TCXO
+
+
+Package Dimensions (mm)
+
+
+
+
+                                                                       Figure 2) Suggested Land Pattern
+            Figure 1) Top, Side, and Bottom views
+
+
+
+                         Pin Connections                       Developed Frequencies
+                  #1    N/C or VCONT                  * Abbreviation       Frequency (MHz)
+                  #2    Ground                        100                  10.000
+                  #3    Output                        120                  12.000
+                  #4    VDD                           122.8                12.288
+                                                      147.4                14.7456
+                                                      160                  16.000
+                                                      200                  20.000
+                                                      250                  25.000
+                                                      270                  27.000
+
+
+
+
+15351 West 109th Street | Lenexa, KS 66219 | Phone: 913.782.7787 | Fax: 913.782.6991 | www.ecsxtal.com
+

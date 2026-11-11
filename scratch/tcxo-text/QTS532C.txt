@@ -1,0 +1,156 @@
+                                                                         QTS532C
+                            Temperature Compensated Crystal Oscillator
+Fuel The Digital World
+
+
+
+Features                                                 Applications
+ ●   Frequency range : 10MHz to 52MHz                     ●   Wireless communications,
+ ●   SMD seam sealing ceramic package                         Smallcell, Base station
+ ●   Supply voltage : 3.3V                                ●   Precise timing & synchronization
+ ●   Free Run Stability for 20 Years :                        network (IEEE1588, Sync.E),
+     ±4.6ppm (Stratum 3)                                      OTN, PTN, Switch
+ ●   CMOS output                                          ●   Test and measurement equipment
+ ●   Voltage control function available                   ●   Smart grid
+ ●   Tri‐state function available                         ●   Stratum 3
+ ●   External dimensions (mm)
+     L : 5.0 x W : 3.2 x H : 2.1
+ ●   RoHS compliant & Pb free
+
+Electrical Characteristics
+                     Item                              QTS532C                   Conditions
+Nominal Frequency Range (F 0)                     10MHz ~ 52MHz
+
+Frequency Tolerance (Ftol)                         ±2.0 ppm Max.           Note [1]
+
+                         vs Temperature      ±0.1ppm, ±0.28ppm, ±0.5ppm    Note [2]
+
+Frequency Stability      vs Load                   ±0.1 ppm Max.           Load ±5%
+
+                         vs Supply Voltage         ±0.1 ppm Max.           VDD ±5%
+
+Operating Temperature Range (T OTR)                -40°C ~ +85°C
+
+Supply Voltage (VDD)                                      3.3V
+
+Current Consumption (IDD)                              5.0 mA Max.
+
+Output Type                                               CMOS
+
+Output Load                                               15 pF
+                   High (VOH)                      90% VDD Min.
+Output Voltage
+                   Low (VOL)                       10% VDD Max.
+                   High (output enable)            80% VDD Min.
+Tri-state Input
+                   Low (output disable)            20% VDD Max.
+Start-up Time                                       2.5 ms Max.
+                                                                           VCTCXO, optional
+Auto Frequency Control (AFC) Range                ±5ppm ~ ±16ppm
+                                                                           VC = 1.5±1.0V
+Phase Noise                                       -135 dBc/Hz Typ.         at 1kHz offset
+
+Aging (Faging)                                         ±1 ppm Max.         at 25°C, first year
+
+24 Hours Holdover Stability                            ±40 ppb Max.        Note [3]
+
+Free Run Stability for 20 Years                    ±4.6 ppm Max.           Note [4]
+Storage Temperature Range (T STR)                  -55°C ~ +125°C
+
+
+Rev. 1.03                                     Page 1                           www.qstproducts.com
+                                                                                      QTS532C
+                              Temperature Compensated Crystal Oscillator
+Fuel The Digital World
+
+
+Notes:
+[1] Refer to nominal frequency, operation after 2 times of reflow at 25°C.
+[2] Refer to (Fmax + Fmin)/2.
+[3] 24 hours at constant temerature after 48 hours operation
+[4] Inclusive of initial tolerence at 25°C, variations over temerature, supply voltage, load, reflow
+    soldering and aging for 20 years.
+
+Dimensions
+                                                                                  Pin function
+                                                                                         Function
+                                                                   Pin
+                                                                                  TCXO               VCTCXO
+                                                                  Pin 1         GND or NC             AFC
+                                                                  Pin 2              Do not connection
+                                                                  Pin 3                  Tri‐state
+                                                                  Pin 4                     GND
+                                                                  Pin 5              Do not connection
+                                                                  Pin 6                  OUTPUT
+                                                                  Pin 7              Do not connection
+                                                                  Pin 8              Do not connection
+                                                                  Pin 9                     VDD
+                                                                  Pin 10             Do not connection
+
+                                                                           Recommended pad layout
+
+
+
+
+                                                (Unit: mm)
+
+
+
+Ordering Information
+
+            QTS532C - 19.200M B P                                   -       T
+                              Frequency in Hz                              Packaging Method
+
+                         Please contact us for                             T     Tape & Reel
+                         available frequencies
+
+                                                                        Frequency Stability (over Temp.)
+
+                         Supply Voltage                       F     ± 0.5 ppm ( -40°C ~ +85°C ),      VCTCXO
+                                                              G     ± 0.5 ppm ( -40°C ~ +85°C ),      TCXO
+                          B      3.3 V                        O     ± 0.28 ppm ( -40°C ~ +85°C ),     VCTCXO
+                                                              P     ± 0.28 ppm ( -40°C ~ +85°C ),     TCXO
+                                                              T     ± 0.1 ppm ( -40°C ~ +85°C ),      VCTCXO
+                                                              U     ± 0.1 ppm ( -40°C ~ +85°C ),      TCXO
+
+
+
+Rev. 1.03                                            Page 2                                    www.qstproducts.com
+                                                                         QTS532C
+                         Temperature Compensated Crystal Oscillator
+Fuel The Digital World
+
+
+
+Packing
+
+
+
+
+                                                                                      (Unit: mm)
+
+Reflow Profile
+
+                (°C)                              10 sec
+
+                260
+
+                220
+                180
+
+                150
+
+
+
+                                                             Time (sec)
+                              120 sec             60 sec
+
+Notes:
+[1] Period while temperature exceeds the solder melting point 220°C should be less than 200 sec.
+[2] Period while temperature stays at the top melting point 260°C should be less than 30 sec.
+
+
+
+
+Rev. 1.03                                     Page 3                            www.qstproducts.com
+

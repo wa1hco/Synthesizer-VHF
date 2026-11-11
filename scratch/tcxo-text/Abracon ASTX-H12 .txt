@@ -1,0 +1,155 @@
+HCMOS OUTPUT SMD TCXO
+        ASTX-H12                                   ESD Sensitive             Pb    RoHS/RoHS II compliant
+                                                                                                                       2.5 x 2.0 x 0.9mm
+                                                                                                                          | | | | | | | | | | | | | | |
+      Moisture Sensitivity Level (MSL)–1
+  FEATURES:                                             APPLICATIONS:
+  • HCMOS Output                                        • Cellular and cordless phones
+  • Compact and low in height                           • Standard OSC for exact equipment
+  • Low current consumption; IR reflow possible         • Mobile communication equipment
+  • Suitable for high-density SMT                       • Portable radio equipment and music player
+
+
+  STANDARD SPECIFICATIONS:
+                     Parameters                   Minimum          Typical         Maximum            Units           Notes
+   Frequency Range                                  3.200                            55.000           MHz
+   Standard Frequencies                                5, 10, 12, 16, 20, 24, 32, 40, 44              MHz
+   Operating Temperature                             -30                               +75             °C
+   Storage Temperature:                              -40                              +125             °C
+   Frequency Stability ∆f/f0
+                   vs Tolerance (@+25°C)            -2.0                              +2.0                    1 hr after reflow
+                vs Temperature (ref. to +25°C)      -2.5                              +2.5                    See option (Table 1)
+
+      vs Supply Voltage Change (Vdd±5%)             -0.2                              +0.2            ppm
+
+                     vs Load Change (ZL±10%)        -0.2                              +0.2
+
+            vs Aging (first year @+25°C)             -1.0                             +1.0
+   Supply Voltage (Vdd)                             +2.97            +3.3             +3.63            V           See option
+                                                                                       4.0                          4~10MHz
+                                                                                       4.8                           ~20MHz
+   Supply Current (Icc)                                                                5.5            mA             ~30MHz
+                                                                                       6.0                           ~40MHz
+                                                                                       7.0                           ~54MHz
+   Rise and Fall Time (Tr/Tf)                                                           5              ns         10%-90%Vdd
+   Symmetry                                          45                                55                           @1/2 Vdd
+                                     VOH          90%Vdd
+   Output Voltage                                                                                      V
+                                     VOL                                            10%Vdd
+   Load                                                                               15               pF
+   Waveform                                                        HCMOS
+                                                                    -130                                      @1kHz offset
+   Phase Noise (Frequency dependant)                                                                  dBc
+                                                                   -158                                       @100kHz offset
+                                                  "1" (VIH≥0.75*Vdd) or Open: Oscillation
+   Tri-state Function (Stand-by) :                                                                     V
+                                                         "0" (VIL<0.25*Vdd) : Hi Z
+
+
+
+
+    ABRACON IS
+                                                                            2 Faraday, Suite# B | Irvine | CA 92618 Revised: 05.13.15
+   ISO
+ ISO   9001
+     9001 / :
+           QS2008
+              9000                                                   LLC
+                                                                            Ph. 949.546.8000 | Fax. 949.546.8001
+     CERTIFIED                                                              Visit www.abracon.com for Terms and Conditions of Sale
+HCMOS OUTPUT SMD TCXO
+        ASTX-H12                                                                 Pb       RoHS/RoHS II compliant
+                                                                                                                             2.5 x 2.0 x 0.9mm
+                                                                                                                                | | | | | | | | | | | | | | |
+
+
+  OPTIONS & PART IDENTIFICATION:
+ (Left blank if standard)
+                                            ASTX-H12-           -                MHz -               -
+
+                             Vdd (V)             Frequency in MHz                                           Packaging
+                         Blank: 3.3V±10%        Please specify the                                          Blank: Bulk
+                           A: 2.8V±10%          frequency in MHz.                                         T: 1000pcs/reel
+                           B: 2.5V±10%          e.g. 19.200MHz
+
+
+                                                                ±2.5ppm         ±3.0ppm      ±4ppm       ±5ppm
+                                               0°C ~ +50°C        D25             D30         D40         D50
+                                              -10°C ~ +60°C       E25             E30         E40         E50
+                                               -0°C ~ +70°C       F25             F30         F40         F50
+                                              -20°C ~ +75°C       G25             G30         G40         G50
+                                              -30°C ~ +75°C    Blank(STD)         H30         H40         H50
+                                              -40°C ~ +85°C        I25             I30         I40         I50
+
+                                                                              Table 1
+  OUTLINE DIMENSIONS:
+
+
+
+
+                                                     Recommended Land Pattern
+                                                                                                 Tri-state pin              Output
+                                                                                                High or floating            Active
+                                                                                                     Low                Hi-impedance
+
+                                                                                           Note: Recommend using an approximately 0.01µF
+                                                                                           bypass capacitor between Pin 2 and 4.
+
+
+
+
+                PIN           FUNCTION
+                     1          Tri-state
+                     2           GND
+                     3          Output
+                     4            Vdd                                                                              Dimensions: mm
+
+
+
+    ABRACON IS
+                                                                                2 Faraday, Suite# B | Irvine | CA 92618 Revised: 05.13.15
+   ISO
+ ISO   9001
+     9001 / :
+           QS2008
+              9000                                                      LLC
+                                                                                Ph. 949.546.8000 | Fax. 949.546.8001
+     CERTIFIED                                                                  Visit www.abracon.com for Terms and Conditions of Sale
+ HCMOS OUTPUT SMD TCXO
+            ASTX-H12                                                                                  Pb       RoHS/RoHS II compliant
+                                                                                                                                                           2.5 x 2.0 x 0.9mm
+                                                                                                                                                               | | | | | | | | | | | | | | |
+
+
+      REFLOW PROFILE:
+
+
+
+
+      TAPE & REEL:
+        T: 1,000pcs/reel
+
+
+
+
+                                                                                                                                                     Dimensions: mm
+
+
+
+
+ ATTENTION: Abracon Corporation’s products are COTS – Commercial-Off-The-Shelf products; suitable for Commercial, Industrial and, where designated, Automotive Applica-
+tions. Abracon’s products are not specifically designed for Military, Aviation, Aerospace, Life-dependant Medical applications or any application requiring high reliability where
+component failure could result in loss of life and/or property. For applications requiring high reliability and/or presenting an extreme operating environment, written consent and
+authorization from Abracon Corporation is required. Please contact Abracon Corporation for more information.
+
+
+        ABRACON IS
+                                                                                                    2 Faraday, Suite# B | Irvine | CA 92618 Revised: 05.13.15
+       ISO
+     ISO   9001
+         9001 / :
+               QS2008
+                  9000                                                                       LLC
+                                                                                                    Ph. 949.546.8000 | Fax. 949.546.8001
+         CERTIFIED                                                                                  Visit www.abracon.com for Terms and Conditions of Sale
+

@@ -1,0 +1,738 @@
+                                                                                                                                                                             Serial No. : 2017-0165
+                                                                                                                                                                                                         DATE : 2017/03/01
+
+
+
+
+ITEM :                   CRYSTAL OSCILLATOR
+
+TYPE :                                                                                                                  DSA321SDN
+                        - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - -
+
+
+
+
+NOMINAL FREQUENCY :                                                                                                          10.000MHz
+                        - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - -
+
+
+
+
+SPEC No. :                                                                                                  1XTV10000MDA
+                        - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - -
+
+
+
+
+                        - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - - - - - -- - - -
+
+
+
+
+                                                                  RECEIPT
+
+             DATE
+
+
+
+
+             RECEIVED                                                                                                                                              (signature)
+
+                                                                                                                                                                                            (name)
+
+
+
+
+                                                                                                                                                     General Manufacture of Quartz Devices
+
+
+                                                                                                                                                   1389 Shinzaike, Hiraoka-cho, Kakogawa, Hyogo
+                                                                                                                                                   675-0194 Japan
+                                                                                                                                                   Phone (81)79-425-3141 Fax (81)79-425-1134
+                                                                                                                                                   http://www.kds.info/index_en.htm
+
+                                                                                                                                              C.ENG.
+                                                                                                                                              ENG.
+                                                                                                         Serial No.2017-0165
+
+
+1. Device Name          VC-TCXO
+2. Model Name           DSA321SDN
+3. Nominal Frequency    10.000 MHz
+4. Mass                 0.03g max.
+5. Absolute Maximum Ratings
+                        Item                          Symbol                  Rating                      unit
+  1     Supply Voltage                                  VCC                 -0.3~+4.6                      V
+  2     Storage Temperature Range                      T_STG                 -40~+85                      C
+6. Recommended Operating Conditions
+                         Item                         Symbol        min.      typ.         max.           unit
+  1     Supply Voltage                                  VCC        +3.135     +3.3        +3.465           V
+  2     Load Impedance (resistance part)              LOAD_R         9         10           11            kΩ
+                           (parallel capacitance)     LOAD_C         9         10           11            pF
+  3     Control Voltage Range                          VCONT        +0.5      +1.5         +2.5            V
+  4     Operating Temperature Range                    T_OPR        -40         -          +85            C
+7. Electrical Characteristics
+                               (TA=-40~+85C, LOAD_R//C=10kΩ//10pF, VCC=+3.3V, VCONT=+1.5V, unless otherwise noted)
+                                                                                          Limits
+                  Item                              Conditions                                                    unit    Notes
+                                                                               min.        typ       max.
+  1     Current Consumption                                                     -           -        +1.5         mA
+  2     Output Level                                                           0.8          -          -          VP-P      1
+  3     Symmetry                    GND level (DC cut)                        40/60         -        60/40         %
+  4     Frequency Stability
+         1.Tolerance                After 2 times reflow
+                                                                                 -          -         ±1.5        ppm      2,3
+                                    Ref. to nominal frequency
+         2.vs Temperature           TA=-40~+85C
+                                                                                 -          -         ±0.5        ppm
+                                    Ref. to frequency (TA=+25C)
+         3.vs Supply Voltage        VCC=+3.3V±5%                                 -          -         ±0.2     ppm
+         4.vs Load Variation        LOAD_R//C=(10kΩ//10pF)±10%                   -          -         ±0.2     ppm
+         5.vs Aging                 TA=Room ambient                              -          -         ±1.0   ppm/year
+  5     Start Up Time               @90% of final Vout level                     -          -          2.0      ms
+  6     Frequency Control
+         1.Control Range            VCONT=+1.5V±1.0V                           ±8           -         ±15         ppm       4
+         2.Input Resistance                                                    500          -           -          kΩ
+  7     SSB Phase Noise             Relative to f0 level offset 1kHz            -           -         -135       dBc/Hz
+Notes
+1. Clipped sine wave (DC-coupled)
+2. TA=+25C
+3. Please leave after reflow in 2h or more at room ambient.
+4. Positive slope (Frequency becomes high in proportion to frequency control voltage.)
+
+
+
+
+TITLE                                                              Remark
+DSA321SDN TYPE SPECIFICATION
+Date                                                                          Spec. No.                      Rev.         Page
+2017/03/01                                                             1XTV10000MDA                              -         1/13
+
+                                                                                                   DM-Z0002: Style-010 Ver.1
+                                               DAISHINKU CORP.
+                                                                                                  Serial No.2017-0165
+
+
+8. Outline, Pin Connections
+  Outline
+                                                                       Pin Connections
+                                                                             Pin No.          Connection
+                                                                               #1               VCONT
+                                                                               #2                GND
+                      (1)        (2)
+                                                                               #3               Output
+                                                                               #4                VCC
+                      D         (3)
+                                                                       Marking
+                                                                       (1) Frequency       10.00 (MHz, 4digits)
+                                                                       (2) Model code      AN
+ #1 Index
+                                                                       (3) Date code       Year (1digit) +Week (2digits)
+                                                                                           e.g.2017/01/01       701
+                                                                       unit: mm
+                                                                       Dimensional Tolerance: ±0.15
+                                                                       (Unless otherwise noted)
+
+
+
+
+9. Measurement Circuit
+
+                                                                            1000pF
+
+                 mA                                                                                               T.P.
+                                                   #4                  #3
+            +
+                                      10000pF       Vcc        Output
+        Power
+        Supply              V                           VC-TCXO
+                                                    VCONT        GND
+            -                                                                               LOAD_R           LOAD_C
+                                                   #1                  #2
+
+
+
+                 VCONT                                      LOAD_R=10kΩ
+                                                            LOAD_C=10pF (Include Jig stray capacitance)
+
+
+
+
+TITLE                                                         Remark
+DSA321SDN TYPE SPECIFICATION
+Date                                                                        Spec. No.                 Rev.        Page
+2017/03/01                                                       1XTV10000MDA                           -             2/13
+
+                                                                                           DM-Z0002: Style-010 Ver.1
+                                                DAISHINKU CORP.
+                                                                                                      Serial No.2017-0165
+
+
+10. Mechanical Characteristics
+                         All test is performed after 3times reflow (Clause.13) except 10.10 (Resistance to soldering heat)
+                Item                               Description                                  Requirements
+  1     Drop                Natural drop (On concrete)
+                            Mounting on the set or test fixture.(Total weight 100g)
+                            Height : 150cm
+                                                                                         df/f=<±1.0ppm
+                            Direction : X,Y,Z, 6directions
+                            Test cycle : 3cycles
+                            Reference specification : EIAJ-ED-4702A Method5
+  2     Vibration           Sweep range : 10~500Hz
+                            Sweep speed : 11min/cycle
+                            Amplitude : 1.5mm (10~55Hz)
+                                                   2
+                            Acceleration : 200m/s (55~500Hz)                             df/f=<±0.5ppm
+                            Direction : X,Y,Z, 3directions
+                            Test cycle : 10cycles
+                            Reference specification : IEC 60068-2-6
+                                                     2
+  3     Shock               Acceleration : 1000m/s
+                            Direction : X,Y,Z, 6directions
+                            Duration : 6ms                                               df/f=<±0.5ppm
+                            Test cycle : 3cycles/each directions
+                            Reference specification : IEC 60068-2-27
+  4     PCB bend            PWB : t=1.6mm
+        strength            Pressure speed : 1.0mm/s                                     df/f=<±0.5ppm
+                            Bend width : 1 2 3mm                                         No visible damage.
+                            Duration : 10±1s                                             No leak damage.
+                            Reference specification : IEC 60068-2-21 Ue1
+  5     Adherence nature    PWB : t=1.6mm
+                            Direction : X,Y, 2directions                                 df/f=<±0.5ppm
+                            Pressure : 10N                                               No visible damage.
+                            Duration : 10±1s                                             No leak damage.
+                            Reference specification : IEC 60068-2-21 Ue3
+  6     Package strength    Pressure : 10N                                               df/f=<±0.5ppm
+                            Duration : 10±1s                                             No mechanical damage.
+                            Reference specification : IEC 60068-2-77                     No leak damage.
+  7     Gross leak          It is immersed for 3min into +125±5C
+                            Chlorofluorocarbon (CFCs) liquid.                            No continuous air bubbles.
+                            Reference specification : IEC 60068-2-17
+  8     Fine leak           It shall be measured by the helium leak detector
+                            after pressurization for 60min by the pressure                                -9       3
+                                                5                                        Less than 1.0x10 Pa m /s.
+                            of (3.92±0.49) x10 Pa in a helium gas atmosphere.
+                            Reference specification : IEC 60068-2-17
+  9     Solderability       Solder bath temperature : +245±5C                           A new uniform coating of solder
+                            Duration : 3±0.3s                                            shall cover a minimum of 95%
+                            Reference specification : IEC 60068-2-58                     of the surface being immersed.
+ 10     Resistance to       1) Solder iron method
+        soldering heat      Bit size : B(φ3) Bit temperature : +350±10C                 df/f=<±0.5ppm
+                            Duration : 3+1/-0s /each terminal                            dVOUT=<±0.2VP-P
+                            It shall be measured after 2h at room temperature,           No visible damage.
+                            humidity. Reference specification : IEC 60068-2-20
+                            2) Reflow
+                            In refer to temperature profile shown in clause13.           df/f=<±1.0ppm
+                            Test cycle : 3cycles                                         dVOUT=<±0.2VP-P
+                            It shall be measured after 2h at room temperature,           No visible damage.
+                            humidity. Reference specification : IEC 60068-2-58
+
+
+
+TITLE                                                            Remark
+DSA321SDN TYPE SPECIFICATION
+Date                                                                         Spec. No.                   Rev.          Page
+2017/03/01                                                          1XTV10000MDA                               -        3/13
+
+                                                                                              DM-Z0002: Style-010 Ver.1
+                                            DAISHINKU CORP.
+                                                                                                    Serial No.2017-0165
+
+
+11. Environmental Characteristics
+                                                                    All test is performed after 3times reflow (Clause13)
+               Item                             Description                                   Requirements
+  1     Low temperature    Temperature : -40±3C                                      df/f=<±1.0ppm
+        storage            Duration : 1000h                                           dVOUT=<±0.2VP-P
+                           It shall be measured after 2h at room temperature,         The electrical characteristics
+                           humidity. Reference specification : IEC 60068-2-1 Ab       are satisfied.
+  2     High temperature   Temperature : +85±2C                                      df/f=<±1.0ppm
+        storage            Duration : 1000h                                           dVOUT=<±0.2VP-P
+                           It shall be measured after 2h at room temperature,         The electrical characteristics
+                           humidity. Reference specification : IEC 60068-2-2 Bb       are satisfied.
+  3     Humidity           Temperature : +85±2C
+                                                                                      df/f=<±1.0ppm
+                           R.H. 85±5%
+                                                                                      dVOUT=<±0.2VP-P
+                           Duration : 1000h
+                                                                                      The electrical characteristics
+                           It shall be measured after 2h at room temperature,
+                                                                                      are satisfied.
+                           humidity. Reference specification : IEC 60068-2-3
+  4     HTB                Temperature : +85±2C
+                                                                                      df/f=<±1.0ppm
+                           Duration : 1000h
+                                                                                      dVOUT=<±0.2VP-P
+                           BIAS : Max value of supply voltage
+                                                                                      The electrical characteristics
+                           It shall be measured after 2h at room temperature,
+                                                                                      are satisfied.
+                           humidity. Reference specification : IEC 60068-2-2 Bb
+  5     THB                Temperature : +40±2C
+                           R.H. 90~95%                                                df/f=<±1.0ppm
+                           Duration : 1000h                                           dVOUT=<±0.2VP-P
+                           BIAS : Max value of supply voltage                         The electrical characteristics
+                           It shall be measured after 2h at room temperature,         are satisfied.
+                           humidity. Reference specification : IEC 60068-2-3
+  6     Thermal shock      Thermal shock : -40±3C : 0.5h ⇔ +85±2C : 0.5h
+                                                                                      df/f=<±1.0ppm
+                           Test cycle : 200cycles                                     dVOUT=<±0.2VP-P
+                           Shift time : 2~3min                                        The electrical characteristics
+                           It shall be measured after 2h at room temperature,         are satisfied.
+                           humidity. Reference specification : IEC pub.68-2-14.Na
+  7     ESD                Model : Machine Model (MM)
+                           V=±200V (C=200pF, R=0Ω)                                    df/f=<±1.0ppm
+                           Number of times : 3times                                   dVOUT=<±0.2VP-P
+                           Each terminal except common terminal.                      The electrical characteristics
+                           (Connect to test terminal)                                 are satisfied.
+                           Reference specification : EIA/JESD22-A115
+                           Model : Human Body Model (HBM)
+                           V=±1500V (C=100pF, R=1500Ω)                                df/f=<±1.0ppm
+                           Number of times : 3times                                   dVOUT=<±0.2VP-P
+                           Each terminal except common terminal.                      The electrical characteristics
+                           (Connect to test terminal)                                 are satisfied.
+                           Reference specification : EIA/JESD22-A114
+
+
+
+
+TITLE                                                         Remark
+DSA321SDN TYPE SPECIFICATION
+Date                                                                      Spec. No.                   Rev.         Page
+2017/03/01                                                       1XTV10000MDA                            -             4/13
+
+                                                                                           DM-Z0002: Style-010 Ver.1
+                                          DAISHINKU CORP.
+                                                                                                     Serial No.2017-0165
+
+
+12. Flatness of Terminal
+       When the component is placed on the flat surface, the gap from the connecting terminal shall not exceed 0.05 mm.
+
+
+
+                                                                        Gap : 0.05mm max.
+
+
+
+
+13. Reflow Profile
+
+
+
+
+                                                  +260 C
+
+
+
+
+                                                  +220C
+
+
+
+
+                Temperature
+                                          +160~+180 C                      3
+
+
+
+
+                                                   1                       2
+
+
+
+
+                                                       Time
+
+                                    1     Preheat           +160~+180C    120s
+                                    2     Primary Heat      +220C         60s
+                                    3     Peak              +260C         10s max.
+
+
+
+
+TITLE                                                            Remark
+DSA321SDN TYPE SPECIFICATION
+Date                                                                            Spec. No.               Rev.        Page
+2017/03/01                                                           1XTV10000MDA                          -         5/13
+
+                                                                                              DM-Z0002: Style-010 Ver.1
+                                              DAISHINKU CORP.
+                                                                                                     Serial No.2017-0165
+
+
+14. Terminals / Land Pattern Layout / Metal Mask Hole
+   14.1 Terminals
+         A through hole is not located on the bottom (mounting side).
+
+
+
+
+                                                                                 unit: mm
+                                                                                 Dimensional Tolerance: ±0.15mm
+
+
+
+
+                                                                                         Mounting Terminal
+
+
+
+
+   14.2 Land Pattern Layout / Metal Mask Hole
+         Please do not place any conductor pattern in the area of the TCXO bottom as shown in FIG.
+         When placing conductor patterns in the substrate inner layer, please keep away it from the bottom of the TCXO at
+         least 0.5mm or more.
+
+                0.78
+                                      2.0
+
+
+  0.90                                                                              unit: mm
+                                                                                    Dimensional Tolerance: ±0.15mm
+
+                                                                    1.40   2.5
+
+
+
+
+                                    3.02
+
+
+
+TITLE                                                             Remark
+DSA321SDN TYPE SPECIFICATION
+Date                                                                         Spec. No.                 Rev.        Page
+2017/03/01                                                              1XTV10000MDA                      -         6/13
+
+                                                                                             DM-Z0002: Style-010 Ver.1
+                                               DAISHINKU CORP.
+                                                                                                                      Serial No.2017-0165
+
+15. Packing Condition
+   15.1 Taping package
+        (1) Emboss tape format and dimensions
+           See Fig.1
+        (2) Quantity on reel
+           2000pcs. max. / reel
+        (3) Taping specification
+           See Fig.2
+                                                                             Taping material List
+           No lack of a product.
+        (4) Reel specification                                               Cover Tape : PET + Olefin Resin (Conductivity)
+           See Fig.3                                                         Emboss : PS (Conductivity)
+        (5) Taping material list                                             Reel : PS (Conductivity)
+           See right table.
+   15.2 Packing
+          The products packed in the antistatic bag.
+          *Moisture sensitivity level : IPC/JEDEC Standard J-STD-033 / Level 1
+          No dry pack required and baking after re-storage is unnecessary.
+   15.3 Packing box
+          Max 10 reels/packing box. However, in the case of less than 10 reels, It is contained by any boxes.
+          The space in a box is fill up with a cushion.
+   15.4 Label detail
+          A Lot label is put on a reel and a shipping label and Pb-Free label is put on a packing box.
+
+        Lot label                                            Shipping label                                                  Pb-free Label
+         TYPE         (Model Name)                            ITEM                      (Model Name)
+         SPEC NO.      (Spec. Number)                         SPEC                      (Spec. Number)
+         PARTS NO. (User’s Parts Number)                      DELIVERY DATE             (Delivery Date)
+         LOT NO.      (Lot Number)                            Q’TY                      (Quantity)
+         FREQ.        (Nominal Frequency)                     NOTES                     (User’s Parts Number)
+         Q’TY         (Quantity)                              DAISHINKU CORP.
+         KDS          DAISHINKU CORP.
+
+
+
+ Lot label (Example)                       Formation of a lot number
+                                              e.g. AH7101001
+ TYPE     XXXXXXXX                                   A                        H                       7101                   001
+ SPEC NO. XXXXXXXXXXXX                     Manufacturing site code       Product code            year/ month/ day          Serial No.
+
+ PARTS NO. XXXXXXXXXXXX
+                                           The notation method of a manufacture year, month, and day. (4digits alphanumeric character)
+ LOT NO.        XXXXXXXXX                         YMDD                (4digits)       e.g.) 2017 /01 /01→ 7101
+                                                         Y            Year            1digit (Last digit of Year)
+ FREQ           XX.XXX MHz
+                                                         M            Month           1digit alphanumeric symbol
+                2000pcs.
+ Q'TY                                                    DD           Day             2digits numerical characters of day
+                      Made in Japan
+                                            Month Jan.         Feb.   Mar.    Apr.     May.   Jun.    Jul.   Aug.   Sep.    Oct.   Nov.      Dec.
+                                            Symbol       1       2      3         4       5      6      7      8      9       O         N      D
+
+
+
+
+TITLE                                                                   Remark
+DSA321SDN TYPE SPECIFICATION
+Date                                                                                      Spec. No.                        Rev.             Page
+2017/03/01                                                                    1XTV10000MDA                                   -               7/13
+
+                                                                                                             DM-Z0002: Style-010 Ver.1
+                                               DAISHINKU CORP.
+                                                                                                    Serial No.2017-0165
+
+
+
+
+        Lot Label
+
+
+
+
+                    Reel
+
+
+
+
+                                                         Air Cushion
+
+
+
+         Antistatic Bag
+
+
+                                                         Pb-free Label
+
+
+                                                         Shipping Label
+
+
+
+
+         The product is packed up with the method which does not break in the handling by a shipping agent.
+
+
+
+
+TITLE                                                           Remark
+DSA321SDN TYPE SPECIFICATION
+Date                                                                        Spec. No.                 Rev.       Page
+2017/03/01                                                         1XTV10000MDA                          -         8/13
+
+                                                                                            DM-Z0002: Style-010 Ver.1
+                                            DAISHINKU CORP.
+                                                  Date                                        TITLE
+
+                                     2017/03/01
+
+
+
+
+                                                              DSA321SDN TYPE SPECIFICATION
+
+
+
+
+                                                                                             Remark
+DAISHINKU CORP.
+                                                                                                      Fig.1. Emboss tape format and dimensions
+
+
+                                                  Spec. No.
+
+
+
+                                                                                                                                                            1. Clearance of an embossing tape, and a product unit: mm
+                                 1XTV10000MDA
+
+                                                                                                                                                             Direction     Pocket size       TCXO size      Clearance
+                                                                                                                                                                 L           3.5±0.1          3.2±0.15       0.3±0.25
+                                                                                                                                                 unit: mm
+
+                                   -              Rev.                                                                                                           W           2.8±0.1          2.5±0.15       0.3±0.25
+                                                                                                                                                                 H           1.5±0.1          1.0 max.       0.5 min.
+
+                                                                                                                                                            2. Quality : Polystyrene(Conductivity)
+
+                                                  Page                                                                                                      3. Tensile strength of an embossing tape : more than 14N
+                                                                                                                                                                                                                        Serial No.2017-0165
+     DM-Z0002: Style-010 Ver.1
+
+                                   9/13
+                                                                                                                                               Serial No.2017-0165
+
+
+                      Trailer                                                                                         Leader
+                   (350mm Min)                                                         Components                  (350mm Min)
+
+
+
+
+                                                                                                                                        Top Cover tape
+                                                                   User Direction of Feed                                         No Components
+                                                                                                                                   (150mm Min)
+
+
+                                                                                                                                      Top Cover Tape
+
+                                                                                                                            Enbossed Carrier
+
+        Directionmark
+
+
+                           ******      *****   ******      *****   ******      *****
+                           ***    **           ***    **           ***    **
+
+
+
+
+                                                                                                      User Direction of Feed
+
+
+
+
+         When a tape end is taken out to the front, sprocket holes becomes right hand side.
+
+         Peel strength
+         Pulling angle 165~180, pulling speed at 300mm/min, strength should be 0.2~0.7N.
+
+                        Pulling direction
+
+
+
+                                                                                                    165~180°
+
+
+
+
+                                                                                       Fig.2. Taping specification
+
+
+
+
+TITLE                                                                                                     Remark
+DSA321SDN TYPE SPECIFICATION
+Date                                                                                                                  Spec. No.                  Rev.       Page
+2017/03/01                                                                                                     1XTV10000MDA                        -         10/13
+
+                                                                                                                                      DM-Z0002: Style-010 Ver.1
+                                                                                       DAISHINKU CORP.
+                                                                                                                         Serial No.2017-0165
+
+
+
+
+                   A
+
+
+
+
+                                                                     12
+                                                                      0°
+
+
+
+
+                                                                0°
+                                                           12
+
+
+
+
+                                                                                                9±0.3
+
+
+
+
+                                             Φ60 +1/-0                                                  11.4±1.0
+
+                                             Φ180 +0/-3
+
+
+                                                                      Material:Polystyrene (Conductivity)
+                                                                      unit:mm
+
+
+                       Section A
+                                   Φ13±0.5
+
+                                                           3-2.0±0.5
+
+
+
+
+                                                                1
+                                                           1±
+                                                      Φ2
+
+
+
+
+                                      Fig.3. Reel specification
+
+
+
+TITLE                                                               Remark
+DSA321SDN TYPE SPECIFICATION
+Date                                                                               Spec. No.                                Rev.      Page
+2017/03/01                                                             1XTV10000MDA                                           -        11/13
+
+                                                                                                                   DM-Z0002: Style-010 Ver.1
+                                   DAISHINKU CORP.
+                                                                                                          Serial No.2017-0165
+
+
+16. Notes on mounting and handling
+   16.1 Storage environment
+        (1) The temperature and humidity of a storage place, Please give +5~+40C and 40~85% as a standard.
+        (2) Please use this product within one year from the packing label date of issue.
+        (3) Please avoid the place which generates corrosive gas, and the place with much dirt.
+        (4) Please keep it in a place with little temperature change.
+           Dew condensation arises owing to a rapid temperature change and solderability becomes bad.
+   16.2 Be cautions to static electricity and high voltage.
+   16.3 This product has sufficient durability to fall and vibration. However, conditions may change to the fall after
+           mounting to a PWB, and vibration. When you should drop on a floor the PWB which mounted the product or too
+           much shock is added. Please use after a performance check.
+   16.4 Please check that the curvature of the substrate at the time of substrate cutting does not affect product. Moreover,
+           especially when a product is near the position of a PWB guide pin, and the position of PWB break, be careful.
+   16.5 The part concerned does not correspond to washing.
+   16.6 Please repair at +260C in 10s with hot air or +350C in 5s with solder Iron.
+
+
+17. Mandatory control
+   17.1 Ozone-depleting substance
+           It regulates by the U.S. air purifying method (November, 1990 establishment). ODS of CLASS1 and CLASS2 is
+           not contained or used.
+   17.2 PBDE, PBBs
+           PBDE, PBBs are not contained into all the material currently used for this product.
+   17.3 RoHS
+           Following material restricted by RoHS (2011/65/EU) is not included or used. Lead, mercury, cadmium,
+           hexavalent , chromium ,PBB and PBDE.
+   17.4 Law Concerning Examination and Regulation of Manufacture, etc. of Chemical Substances
+           All the material currently used for this product is based on "Law Concerning Examination and Regulation of
+           Manufacture, etc. of Chemical Substances". It is a registered material.
+   17.5 Lead
+           Leads, such as solder, are not used for this product. (Lead Free)
+   17.6 About the existence of silver and mercury use
+           The silver of very small quantity is contained in the conductive adhesives used for adhesion of Blank.
+           Moreover, mercury is used. It does not get down.
+
+
+18. The country of origin / factory name / address
+           Country of origin:     Japan
+           Factory name:          DAISHINKU Corp. Tottori Production Div.
+           Address:               7-3-21 Wakabadai minami, Tottori 689-1112
+
+
+
+
+TITLE                                                               Remark
+DSA321SDN TYPE SPECIFICATION
+Date                                                                            Spec. No.                   Rev.         Page
+2017/03/01                                                              1XTV10000MDA                           -         12/13
+
+                                                                                                 DM-Z0002: Style-010 Ver.1
+                                                DAISHINKU CORP.
+                         2017-0165 REVERSION RECORD
+Rev. No.      Date      Reason                     Contents   Approved   Checked    Drawn
+
+   -       2017/03/01     -      Initial Release               T.Soga    T.Soga    E.Kameda
+
+
+
+
+                                                                 DM-Z0002: Style-008 Ver.1
+                                              -13/13-
+

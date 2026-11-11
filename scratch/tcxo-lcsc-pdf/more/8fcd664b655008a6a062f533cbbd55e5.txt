@@ -1,0 +1,279 @@
+MQF326 Series Temperature Compensated Crystal Oscillators (TCXOs)                                            MERCURY
+VMQF326 Series TCXOs with Voltage Control Function (VCTCXOs)                                                    Since 1973
+
+
+ MQF326 and VMQF326 are 3.2 x 2.5 x 1.6 mm miniature SMD TCXOs and
+ VCTCXOs, the supply voltage can be either 2.5 V or 3.3 V, and output logics
+ include CMOS (up to 250 MHz), differential LVEPCL or LVDS (up to 1.5 GHz).
+ The product flexibility makes the custom (VC)TCXO frequencies more readily
+ available than any other series, and a short lead time. The 0.8 ~ 1.6 ps typical
+ phase jitter and lower current consumption (43 mA typical for LVPECL 622.080
+ MHz at 3.3 V) compared to competitions make the series ideal for multimedia,
+ Ethernet, and networking applications.
+
+Relevant Categories:
+
+■ QMQF326 and QVMQF326 are QuikXO™ (quick-turn delivery) versions of the MQF326 and VMQF326 series
+  respectively. QuikXO™ products, either standard or custom frequencies, are produced and shipped from
+  California USA in 3 to 5 days. Click to check our inventory and place your order online.
+■ For lower phase noise and phase jitter (0.6 p. sec. typical), please refer to the MQN326 and VMQN326 series.
+■ For 7.0 x 5.0 x 2.5 mm with the same electrical performance, please refer to the MQF574 and VMQF574 (CMOS; 4-pad)
+  and the MQF576 and VMQF576 (LVPECL or LVDS; 6-pad) series.
+
+General Specifications: at Ta=+25°C
+ Output Logic Type                 CMOS (code “T”)                  LVPECL (code “P”)                  LVDS (code “D”)
+ TCXO Models                  MQF326T25            MQF326T33    MQF326P25        MQF326P33        MQF326D25         MQF326D33
+
+ VCTCXO Models                VMQF326T25       VMQF326T33      VMQF326P25        VMQF326P33      VMQF326D25        VMQF326D33
+
+ Frequency Range                    10 ~ 250 MHz                     10 ~ 1500 MHz                      10 ~ 1500 MHz
+                             +2.5 V ±5%        +3.3 V ±5%      +2.5 V ±5%       +3.3 V ±5%       +2.5 V ±5%        +3.3 V ±5%
+ Supply Voltage (VDD)
+                              Code “25”        Code “33”        Code “25”        Code “33”        Code “25”         Code “33”
+                             25 MHz: 17       10 MHz: 21       18 MHz: 28      18 MHz: 35        11 MHz: 19       11 MHz: 22
+                             45 MHz: 20       50 MHz: 24       156 MHz: 30     156 MHz: 38       190 MHz: 23      155.5 MHz: 26
+ Current Consumption
+                             50 MHz: 21       77 MHz: 25       622 MHz: 33     622 MHz: 43       390 MHz: 24      250 MHz: 28
+ (mA; typical)               125 MHz: 24      125 MHz: 29      1289 MHz: 37    1289 MHz: 51      1289 MHz: 31     1080 MHz: 32
+                             250 MHz: 25      250 MHz: 34      1500 MHz: 43    1500 MHz: 52      1500 MHz: 34     1500 MHz: 35
+                                                                  50 Ω into Vcc - 2.0 V or
+ Load; typical                             15 pF                                                   100 Ω across the outputs
+                                                                    Thevenin equivalent
+ Output “High” Voltage;
+                              90% VDD min.                     VDD-1.03 V min.; VDD-0.6 V max.    1.4 V typical; 1.6 V max.
+ (VOH)
+
+ Output “Low” Voltage; VOL    10% VDD max.                     VDD-1.85 V min.; VDD-1.6 V max     1.1 V typical; 0.9 V min.
+
+ Rise Time (Tr) /            1.5 nS. Typ.; 3.0 nS. max.        0.2 nS Typ.; 0.5 nS max.          0.2 nS Typ.; 0.4 nS max.
+ Fall Time (Tf)              (10% ↔ 90% waveform )             (20% ↔ 80% waveform )             (20% ↔ 80% waveform )
+
+
+
+                                 MERCURY               www.mercury-crystal.com
+         Taiwan: TEL (886)-2-2406-2779, e-mail: sales-tw@mercury-crystal.com
+         U.S.A.: TEL (1)-909-466-0427, e-mail: sales-us@MercuryUnited.com
+      MERCURY                  Page 1 of 6              April 22, 2021                             Version: a3
+                                                                      Differential Output Voltage (VOD): 175 mV min.; 350 mV typical
+Additional Output AC
+                                                                                          VOD Magnitude Change (ΔVOD): 50 mV max.
+Characteristics for LVDS
+                                                                                                  Offset Voltage (Vos): 1.25 V typical
+output (LVDS only)
+                                                                                        Vos Magnitude Change (ΔVos): 50 mV max.
+                                       Stability
+                                Temperature
+                                                   ±0.5 ppm          ±1.0 ppm        ±1.5 ppm           ±2.0 ppm                  ±2.5 ppm
+                                0 to +55°C             Available       Available         Available             Available           Available
+                                -10 to +60°C           Available       Available         Available             Available           Available
+                                -20 to +70°C           Available       Available         Available             Available           Available
+                                -30 to +85°C       Contact Mercury     Available         Available             Available           Available
+Frequency Stability             -40 to +85°C       Contact Mercury     Available         Available             Available           Available
+                                Voltage Change               ±0.2 ppm max. for a ±5% input voltage change
+                                Load Change                  ±0.2 ppm max. for a ±10% load condition change
+                                Aging at Ta =+25°C           ±2 ppm max. first-year; ±10 ppm max. over 10 years
+                                Reflow                       ±1.0 ppm max., one reflow and measured 24 hours afterward.
+Initial Calibration Tolerance
+                                ±1.0 ppm typical; ±2.0 ppm. max. at +25°C±2°C.
+(Initial Frequency Accuracy)
+Duty Cycle                      50% ±5%. At 50% VDD.
+Current with Output
+                                18 mA typical
+Disabled
+Start-up Time                   5 m. sec. max.
+Output Enable Time              200 ns max.
+Output Disable Time             50 ns max.
+                                Frequency (MHz)      16        25    49.152    50     54      156.250   600      1030      1080   1270   1450
+                                Supply Voltage      3.3       3.3     3.3     3.3    3.3        3.3     3.3       3.3      3.3    3.3    3.3
+                                Output Logic         T         T       T       T      T          P       P         P        D      D      D
+                                     10 Hz           -92       -88     -85     -80    -77       -63      -59      -53       -49    -49    -52
+Single Side-band                     100 Hz         -116      -109    -108    -103   -106       -91      -81      -75       -81    -78    -78
+                                     1 kHz          -131      -125    -121    -117   -119      -109      -96      -93       -93    -91    -89
+Phase Noise
+                                     10 kHz         -139      -132    -126    -124   -125      -115     -102      -94       -98    -94    -92
+(dBc/Hz; typical)
+                                Offset
+                                     100 kHz        -140      -134    -127    -127   -126      -116     -104      -97       -99    -97    -94
+                                     1 MHz          -158      -151    -146    -145   -145      -137     -125     -119      -120   -117   -118
+                                     5 MHz          -163      -157    -154    -148   -153      -147     -132     -129      -128   -128   -129
+                                     10 MHz           –         –     -157    -150   -157      -150     -136     -133      -133   -133   -133
+                                     20 MHz           –         –     -160    -152   -160      -155     -139       –       -142   -142     –
+Integrated Phase Jitter, RMS                        0.76      0.9     1.0     1.1    1.1        1.1     1.1       1.4      1.1    1.2    1.4
+12 kHz to 20 MHz, picosecond
+                                         Control Voltage Function on Pad 1 (VCTCXOs only)
+Control Voltage (Vcontrol)      Vcontol center and range: +1.5 V ± 1.0 V. For both 2.5 VDD and 3.3 VDD
+                                High pull: +8 ppm min. for Vcontol from 1.5 V to +2.5V
+Frequency Pulling Range
+                                Low pull: - 8 ppm min. for Vcontol from 0.5 V to +1.5V
+Linearity                       ±5% typical. ±10% max.
+Transfer Function               Positive Transfer
+Input Impedance                 500 KΩ min.
+Bandwidth                       10 kHz min. Measured at -3 dB.
+
+
+
+
+      MERCURY                            Page 2 of 6                    April 22, 2021                    Version: a3
+                                                  Tri-State function on Pad 2
+                               70% of VDD (min.) to enable output. CMOS level. Do not leave this pin floating. If no connection is
+ Output Enable (OE)
+                               desired, please contact Mercury.
+ Control
+                               30% of VDD (max.) to disable the output. Output is high impedance.
+ Output Enable Time            200 n. sec. max.
+ Output Disable Time           50 n. sec. max.
+
+Absolute Maximum Rating:
+
+ Input Voltage                -0.5 V to VDD+0.5 V
+ Output Voltage               -0.5 V to VDD+0.5 V
+ Positive Supply Voltage      4.2 V
+                              Human Body Model (HBM): Exceeds 2000 V. Class 2 per MIL-STD-1686C
+ Electrostatic Discharge      Machine Model (MM): Exceeds 120 V. Class M2 per MIL-STD-1686C.
+ (ESD)                        Note: Power, ground, and outputs are 200 V.
+                              Charged-Device Model (CDM): Exceeds 2000 V. Class C6 per MIL-STD-1686C
+
+Environmental Performance Specifications
+
+                                    RoHS compliant, Pb (lead) free per EU Directive 2002/95/EC
+ Green Requirement                  6/6 (2002/95/EC) and WEEE (2002/96/EC). Free of halide, cadmium, hexavalent
+                                    chromium, lead, mercury, PBBs, and PBDEs.
+ Moisture Sensitivity Level         Level 2 per IPC/JEDEC J-STD-020D.1
+ Storage temperature range          -55 to +125°C
+ Humidity                           85% RH, 85°C, 48 hours
+ Fine Leak / Gross Leak             MIL-Std-883, method 1014, condition A / MIL-Std-883, method 1014, condition C
+ Solderability                      MIL-STD-202F method 208E
+ Reflow                             260°C for 10 sec. 2X.
+ Vibration                          MIL-STD-202F method 204, 35G, 50 to 2000 Hz
+ Shock                              MIL-STD-202F method 213B, test condition. E, 1000GG ½ sine wave
+ Resistance to Solvent              MIL-STD-202, method 215
+ Temperature Cycling                MIL-STD-883, method 1010
+ Pad Surface Finish                 Gold (0.3 um to 1.0 um) over nickel (1.27 um to 8.89 um)
+
+Part Number Format and Examples:
+
+  Example 1: VMQF326D33-622.080-2.0/-40+85;               Example 2: MQF326T25-148.500-2.5/-30+85
+
+       VMQF                326                D               33          - 622.080          -        2.0         /     -40+85
+         MQF               326                T               23          - 148.500          -        2.5         /     -30+85
+                                                                              The nominal
+                      Package Code       Output Logic                         Frequency in
+ Main Series                                          Supply Voltage                             Frequency            Operating
+                      “326”: 3.2x2.5     “T”: CMOS                            MHz. 3
+ “MQF”: TCXO                                          “33” for 3.3V                              Stability. One       Temperature
+                      mm 6-pad SMD       “P”: LVPECL                          places or
+ “VMQF”: VCTCXO                                       “25” for 2.5V           more after         decimal place.       Range (ºC)
+                                         “D”: LVDS
+                                                                              the decimal.
+
+
+
+      MERCURY                          Page 3 of 6                 April 22, 2021                     Version: a3
+Output OE Function on pad 2 Note: Do not leave this pad floating. If “no-connection” is desired, please contact Mercury.
+
+        VDD
+       Pad 2                                                      VIH
+                           VIL
+    OE Function
+                                    Disable Time                                   Enable Time
+
+
+
+                                           High Impedance
+
+
+Phase Noise Plot of MQF326T33-89.376 MHz, VDD=+3.3V, CMOS
+
+
+
+
+       MERCURY                         Page 4 of 6                   April 22, 2021                    Version: a3
+Package Dimensions and Recommended Solder Pad Layout                    unit: (mm)
+
+
+
+
+                                       Pad 1   TCXO: No Connection; VCTCXO: Control Voltage
+                                       Pad 2   ♦ 70% of VDD (min.) to enable the output(s). CMOS level. Do not leave
+                                               this pad floating. If “no-connection” is desired, please contact Mercury.
+                                               ♦ 30% of VDD (max.) to disable the output. Output is high impedance.
+                                       Pad 3   Ground
+                                       Pad 4   Output: CMOS, LVPECL or LVDS
+                                       Pad 5   ♦ No connection for CMOS
+                                               ♦ Complementary LVPECL or LVDS output
+                                       Pad 6   Supply Voltage
+
+
+
+Test Circuits and Output Waveforms                      𝑇1
+                                         Duty cycle=(𝑇2) ∗ 100%.                Measured at 50% VDD
+
+ CMOS
+                                                               CMOS                      T2
+                                                                                    T1
+                                                                                                                      VOH
+                                                               90%VDD
+
+
+                                                               50%VDD
+
+
+                                                               10%VDD
+                                                                                                                       VOL
+
+                                                                           Tr                 Tf
+
+ LVPECL
+
+
+
+
+     MERCURY                   Page 5 of 6                   April 22, 2021                        Version: a3
+ LVDS
+
+
+
+
+Recommended Solder Reflow Profile (per IPC/JEDEC J-STD-020D.1)
+
+        Tp
+                          Max. Ramp Up Rate=3°C/s               tp          Tc-5°C
+                          Max. Ramp Down Rate=6°C/s                                                   User Tp≤Tc
+        TL
+               Tsmax
+                                                               tL
+     Te
+     m
+     pe
+     rat
+     ur
+     e                       Preheat Area                                             Tc
+
+               Tsmin                                                               Tc-5°C
+                                                                                                           User tp
+                                ts
+
+
+        25
+                               Time 25°C to Peak
+                                                   Time
+
+   Profile Feature                                             Sn-Pb Eutectic Assembly         Pb-free Assembly
+   Preheat/Soak
+   - Temperature min. (Ts min.)                                100⁰C                           150⁰C
+   - Temperature max. (Ts max.)                                150⁰C                           200⁰C
+   - Time (ts) (Ts min. to Ts max.)                            60 to 120 seconds               60 to 180 seconds
+   Ramp-up rate (TL to Tp)                                     3⁰C / sec. max.                 3⁰C / sec. max.
+   Liquidous temperature (TL )                                 183⁰C                           217⁰C
+   Time (tL) maintained above TL                               60 to 150 seconds               60 to 150 seconds
+   Peak package body temperature (Tp)                          235⁰C                           260⁰C
+   Time (Tp) within 5⁰C of the classification temperature Tc   10 to 30 seconds                20 to 40 seconds
+   Ramp-down rate (Tp to TL)                                   6⁰C / second max.               6⁰C / second max.
+   Time 25⁰C to peak temperature                               6 minutes max.                  8 minutes max.
+ All temperatures refer to the topside of the package, measured on the package body surface.
+
+
+
+
+       MERCURY                          Page 6 of 6                     April 22, 2021                     Version: a3
+

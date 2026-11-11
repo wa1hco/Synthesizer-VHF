@@ -21,7 +21,10 @@
 // CLOCK    |   |EXT|   |   |   |   |   |   |   |   |OSC|OSC|   |   |   |   |   |   |   |   |
 //----------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
-// Sequencer board use of pins
+// Sequencer board use of pins.
+// This table is not the hammond-1550Q pin use.
+// That pin use is in software/FIRMWARE-PLAN.md section 1.
+// Current firmware still builds against the defines below.
 //----------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 // Pins     |1  |2  |3  |4  |5  |6  |7  |8  |9  |10 |11 |12 |13 |14 |15 |16 |17 |18 |19 |20 |  
 // Port     |PA2|PA3|GND|VCC|PA4|PA5|PA6|PA7|PB5|PB4|PB3|PB2|PB1|PB0|PC0|PC1|PC2|PC3|PA0|PA1|

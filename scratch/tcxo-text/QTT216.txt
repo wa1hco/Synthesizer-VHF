@@ -1,0 +1,160 @@
+                                                                               QTT216
+                            Temperature Compensated Crystal Oscillator
+Fuel The Digital World
+
+
+
+Features                                                    Applications
+ ●   Frequency range : 10MHz to 70MHz                        ●   Mobile communications
+ ●   SMD seam sealing ceramic package                        ●   GNSS
+ ●   Supply voltage : 1.8V & 3.3V                            ●   Smartphone, Mobile phone
+ ●   Clipped Sinewave output                                 ●   Wearables
+ ●   Low power consumption                                   ●   IoT devices
+ ●   Voltage control function available                      ●   Portable radio communications
+ ●   External dimensions (mm)
+     L : 2.0 x W : 1.6 x H : 0.8
+ ●   RoHS compliant & Pb free
+
+Electrical Characteristics
+                     Item                                  QTT216                   Conditions
+Nominal Frequency Range (F0)                          10MHz ~ 70MHz
+
+Frequency Tolerance (Ftol)                             ±2.0 ppm Max.          Note [1]
+
+                         vs Temperature              ±0.5ppm, ±2.0ppm         Note [2]
+
+ Frequency Stability vs Load                           ±0.2 ppm Max.          Load ±10%
+
+                         vs Supply Voltage             ±0.2 ppm Max.          VDD ±5%
+
+Operating Temperature Range (T OTR)                    -30°C ~ +85°C
+
+Supply Voltage (VDD)                                       1.8V, 3.3V
+
+Current Consumption (IDD)                                 2.0 mA Max.
+
+Output Type                                          Clipped Sinewave
+
+Output Load                                               10kΩ // 10pF
+
+Output Level                                           0.8 V(p-p) Min.        Note [3]
+
+Start-up Time                                              5 ms Max.
+
+Auto Frequency Control (AFC) Range                   ±7ppm ~ ±16ppm           VCTCXO, optional, Note [4]
+
+Phase Noise                                          -135 dBc/Hz Typ.         at 1kHz offset
+
+Aging (Faging)                                            ±1 ppm Max.         at 25°C, first year
+
+Storage Temperature Range (TSTR)                      -55°C ~ +125°C
+
+
+Notes:
+[1] Refer to nominal frequency after 2 times of reflow at 25°C.
+[2] Refer to frequency at 25°C±2°C.
+[3] Decoupling capacitor is required in external circuit.
+[4] If supply voltage VDD = 3.3V, control voltage Vcon = 0.5*VDD ± 1.0V.
+    If supply voltage VDD = 1.8V, control voltage Vcon = 0.5*VDD ± 0.8V.
+
+
+Rev. 1.04                                        Page 1                           www.qstproducts.com
+                                                                                            QTT216
+                              Temperature Compensated Crystal Oscillator
+Fuel The Digital World
+
+
+
+Dimensions
+                                                                                  Pin function
+
+                                                                                        Function
+                                                                       Pin
+                                                                                    TCXO          VCTCXO
+                                                                          1       GND or NC        AFC
+                                                                          2                 GND
+                                                                          3             OUTPUT
+                                                                          4                 VDD
+
+
+
+                                                                          Recommended pad layout
+
+
+
+
+                                                 (Unit: mm)
+
+
+
+
+Ordering Information
+
+            QTT216            -      26.000M B G                  -           T
+
+                           Frequency in Hz                            Packaging Method
+
+                         Please contact us for                        T       Tape & Reel
+                         available frequencies
+
+
+
+                          Supply Voltage
+
+                          B       3.3 V
+                          D       1.8 V                     Frequency Stability (over Temp.)
+
+                                                    N   ± 2.0 ppm ( -30°C ~ +85°C ),          TCXO
+                                                    S   ± 2.0 ppm ( -30°C ~ +85°C ),          VCTCXO
+                                                    G   ± 0.5 ppm ( -30°C ~ +85°C ),          TCXO
+                                                    V   ± 0.5 ppm ( -30°C ~ +85°C ),          VCTCXO
+
+
+
+
+Rev. 1.04                                          Page 2                                      www.qstproducts.com
+                                                                               QTT216
+                           Temperature Compensated Crystal Oscillator
+Fuel The Digital World
+
+
+
+Packing
+
+
+
+
+                                                                                     (Unit: mm)
+
+
+
+
+                                                                        (Unit: mm)
+
+
+
+Reflow Profile
+                   Solder melting point : 220°C, 60 sec. Min., 200 sec. Max.
+                   Peak temperature : 260°C, 10 sec. Min., 30 sec. Max.
+
+
+            (°C)                               10 sec
+
+            260
+
+            220
+
+            180
+
+            150
+
+
+
+                                                          Time (sec)
+                            120 sec            60 sec
+
+
+
+
+Rev. 1.04                                      Page 3                          www.qstproducts.com
+

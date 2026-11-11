@@ -1,0 +1,56 @@
+                                                                             TEMPERATURE COMPENSATED
+                                                                             CRYSTAL OSCILLATOR
+
+                                                                                                      8122H
+TCXO UNIT WITH HCMOS OUTPUT IN SMD 2.5X2.0MM CERAMIC SEAM SEAL PACKAGE.
+
+PRODUCT FEATURES                                                                        PRODUCT PHOTO (NOT IN SCALE)
+ Small dimensions 2.5x2.0x0.9 with 4 solder pads.
+ Tight stabilities over temperature range.
+ RoHS compliant, LEAD-FREE, HALOGEN-FREE and REACH compliant.
+
+
+
+APPLICATIONS
+ WiMAX / WLAN / Ethernet                 Mobil applications
+ Telecommunication
+
+PRODUCT SPECIFICATIONS
+                                                              SUPPLY VOLTAGE
+PARAMETER                                      1.8V              2.5V                  3.3V
+                                                                                                     REMARKS
+Frequency range                                                9.5 ~ 55MHz                           —-
+Frequency tolerance                                               ±1.0ppm                            Initial tol. @+25°C
+Frequency stability                             ±2.0ppm       /    2.5ppm      /     ±3.0ppm         See note below table
+                                                                                                     In combination to
+Operating temperature range                –40 to +85°C / –40 to +90°C / –40 to +105°C
+                                                                                                     above stabilities.
+Aging per year                                                    ±1.0ppm                            @+25°C
+Output waveform and load                                       LVCMOS 15pF                           —-
+Output voltage level HIGH                                         90%Vcc                             Minimum
+Output voltage level LOW                                          10%Vcc                             Maximum
+Rise and Fall times                             8ns               8ns                  8ns           @10~90% of VCC
+Symmetry (duty cycle)                                             45~55%                             @ 50%VCC
+Phase noise (example 26MHz)                   -110dBc/Hz / -130dBc/Hz / -145dBc/Hz                   @100Hz / 1kHz / 10kHz
+Phase jitter RMS                                                    <1ps                             12kHz≤Fj≤20MHz
+Supply current                                  5mA               7mA                  10mA          @15pF
+Note: Frequency stability is the frequency deviation over temperature range in reference to +25°C
+
+
+PACKAGE OUTLINE / DIMENSIONS                                                 PACKAGING INFORMATION
+                                                                              Tape & Reel compliant to EIA-481.
+                                                                              Embossed carrier width 8mm.
+                                                                              Component pitch in carrier 4mm.
+                                                                              Reel diameter 180mm.
+                                                                              QTY per reel: 3,000pcs
+
+
+                                                                             RECOMMENDED REFLOW PROFILE
+
+
+
+
+    Suzhou HangJing Elec&Tech Co., Ltd. ◆ Http://www.hci.com.hk ◆ No.1,First Qunxing Rd,Suzhou Industrial Park,Jiangsu,China
+
+                  Telephone:+86 (0)512 6591 6689 ◆ Mobile phone:+86 (0)13819495058 ◆ e-mail: tony@hci.com.hk
+

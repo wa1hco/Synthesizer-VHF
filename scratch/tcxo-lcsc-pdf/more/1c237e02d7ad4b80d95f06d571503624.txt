@@ -1,0 +1,89 @@
+                                                                              ECS-TXO-2520
+                                                                              SMD HCMOS TCXO
+ The sub miniature ECS-TXO-2520 is a miniatue SMD HCMOS
+ TCXO. The 2.5 x 2.0 x 0.9 mm ceramic package is ideal for LoRa                            Request a Sample
+ WAN and wireless IoT applications where stability is critical.
+
+                                                            OPERATING CONDITIONS / ELECTRICAL CHARACTERISTICS
+   ECX-2520 SMD HCMOS TCXO                        PARAMETERS                 CONDITIONS                      ECS-TXO-2520            UNITS
+                                                                                                       MIN      TYP      MAX
+                                              Frequency Range                                          3.200     55.000   MHz
+                                                                            Tolerance at +25°C                    ± 2.0   ppm
+                                                                        Vs. Temp (-40 ~ +85°C)                    ± 2.5   ppm
+                                              Frequency Stability
+                                                                       Voltage Change Vdd ±5%                     ±0.2    ppm
+                                                                         Load Change (±10%)                       ±0.2    ppm
+                                              Aging                     Per year @ +25°C                          ±1.0    ppm
+                                              Supply Voltage (Vdd)         Specify in P/N        +2.5, +2.8, +3.3 ±10%    V DC
+• Low Profile                                 Standby Current                                                      10      µA
+• 2.5 x 2.0 mm Footprint                      Output                          HCMOS                       15               pF
+• Extended Temp Range                         Output voltage Level                        VOL:10%Vdd max./VOH:90%Vdd min.V DC
+• RoHS Compliant                              Rise & Fall time           10%Vdd – 90%Vdd                            5      ns
+                                              Duty Cycle                      @ ½ Vdd                            45/55     %
+                                              Phase Noise                @ 10 KHz offset                 -145            dBc/Hz
+  DIMENSIONS (mm)
+                                                                      CURRENT CONSUMPTION , mA Max.
+                                              FREQ.     3.2~ 10 MHz    10.1~ 20 MHz       20.1~ 30 MHz         30.1~ 40 MHz    40.1 ~55 MHz
+                                             +2.5V         3.1               3.7                 4.2               4.6              5.5
+                                             +2.8V         3.4               4.1                 4.7               5.2              6.0
+                                             +3.3V         4.0               4.8                 5.5               6.0              7.0
+
+                                                                         PAD CONNECTIONS
+                                                                        1        Tri-state
+                                                                        2          Gnd
+                                                                        3         Output
+                                                                        4          Vdd
+
+                                                                          Tri State Function
+                                                                       Pin 1           Output
+                                                                    High or NC          Active
+ Figure 1) Top, Side, and Bottom views                                                                          Figure 2) Suggested Land Pattern
+                                                                       Low           Disable Hi-Z
+                       PART NUMBERING GUIDE: Example ECS-TXO-2520-33-160-AN-TR
+        ECS -      SERIES                               FREQUENCY                     STABILITY                  TEMP RANGE          PACKAGING
+                                                       ABBREVIATION
+
+                    TXO-2520             25 = +2.5V      160 = 16.000 MHz              A = ±2.5 ppm               N = -40 ~ +85°C         TR = Tape
+                                         28= +2.8V       See Developed                                                                     & Reel
+                2.5 x 2.0 mm TCXO        33 = +3.3V
+                                                         Frequencies Pg.2                                                                  1K/Reel
+
+
+
+
+                                                                                                                                           Rev.2020
+
+
+       15351 West 109th Street | Lenexa, KS 66219 | Phone: 913.782.7787 | Fax: 913.782.6991 | www.ecsxtal.com
+                ECS-TXO-2520
+                SMD HCMOS TCXO
+
+
+FREQUENCY ABBREVIATIONS
+ FREQUENCY MHz          CODE
+     5.000               050
+     10.000              100
+     12.000              120
+     16.000              160
+     20.000              200
+     24.000              240
+     25.000              250
+     32.000              320
+     40.000              400
+     44.000              440
+
+
+
+             SOLDER PROFILE
+                                                             Figure 1) Suggested Reflow Profile
+Peak solder Temp +260°C Max 10 sec Max.
+              2 Cycles Max.
+          MSL 1, Lead Finish Au
+
+  POCKET TAPE DIMENSIONS (mm)
+
+
+
+
+      15351 West 109th Street | Lenexa, KS 66219 | Phone: 913.782.7787 | Fax: 913.782.6991 | www.ecsxtal.com
+
